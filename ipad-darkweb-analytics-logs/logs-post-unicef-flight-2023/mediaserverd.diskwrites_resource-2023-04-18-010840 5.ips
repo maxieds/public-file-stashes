@@ -1,0 +1,104 @@
+{"duration_ms":"1343610","share_with_app_devs":0,"roots_installed":0,"bug_type":"145","os_version":"iPhone OS 16.4.1 (20E252)","slice_uuid":"1AAA7E19-B09E-36E9-90C1-752DDCEE26CB","is_first_party":0,"incident_id":"17E5BB98-D838-401F-90D8-596D3224A3A0","timestamp":"2023-04-18 01:08:40.00 -0400","app_name":"mediaserverd","name":"mediaserverd"}
+Date/Time:        2023-04-18 00:46:15.922 -0400
+End time:         2023-04-18 01:08:39.532 -0400
+OS Version:       iPhone OS 16.4.1 (Build 20E252)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: 17E5BB98-D838-401F-90D8-596D3224A3A0
+
+Data Source:      Microstackshots
+Shared Cache:     4F1FAD1F-32AF-3CEA-9C76-FE6EE686419D slid base address 0x18d42c000, slide 0xd42c000
+
+Command:          mediaserverd
+Path:             /usr/sbin/mediaserverd
+Resource Coalition ID: 15
+Architecture:     arm64
+PID:              33
+
+Event:            disk writes
+Action taken:     none
+Writes:           1073.82 MB of file backed memory dirtied over 1344 seconds (799.21 KB per second average), exceeding limit of 12.43 KB per second over 86400 seconds
+Writes limit:     1073.74 MB
+Limit duration:   86400s
+Writes caused:    1073.82 MB
+Writes duration:  1344s
+Duration:         1343.61s
+Duration Sampled: 1339.86s
+Steps:            119 (10.49 MB/step)
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+OS Cryptex File Extents: 9
+
+Heaviest stack for the target process:
+  104  ??? (libsystem_pthread.dylib + 2952) [0x1f328eb88]
+  104  ??? (libsystem_pthread.dylib + 5816) [0x1f328f6b8]
+  104  ??? (CoreMedia + 404508) [0x19f5b7c1c]
+  103  ??? (MediaToolbox + 363592) [0x1a3371c48]
+  103  ??? (MediaToolbox + 366556) [0x1a33727dc]
+  103  ??? (MediaToolbox + 3148288) [0x1a3619a00]
+  103  ??? (MediaToolbox + 367692) [0x1a3372c4c]
+  103  ??? (MediaToolbox + 536796) [0x1a339c0dc]
+  103  ??? (MediaToolbox + 5626984) [0x1a3876c68]
+  54   ??? (MediaToolbox + 5629552) [0x1a3877670]
+  54   ??? (CoreMedia + 231324) [0x19f58d79c]
+  54   ??? (CoreMedia + 44468) [0x19f55fdb4]
+  54   ??? (CoreMedia + 360208) [0x19f5acf10]
+  54   ??? (libsystem_kernel.dylib + 11492) [0x1d27d6ce4]
+
+
+Powerstats for:   mediaserverd [33]
+UUID:             1AAA7E19-B09E-36E9-90C1-752DDCEE26CB
+Path:             /usr/sbin/mediaserverd
+Resource Coalition ID: 15
+Architecture:     arm64
+Footprint:        104.33 MB -> 111.55 MB (+7392 KB)
+Pageins:          194 pages
+Start time:       2023-04-18 00:58:41.259 -0400
+End time:         2023-04-18 01:08:39.531 -0400
+Num samples:      104 (87%)
+Primary state:    55 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 104 samples Active
+Power Source:     104 samples on Battery, 0 samples on AC
+  104  ??? (libsystem_pthread.dylib + 2952) [0x1f328eb88]
+    104  ??? (libsystem_pthread.dylib + 5816) [0x1f328f6b8]
+      104  ??? (CoreMedia + 404508) [0x19f5b7c1c]
+        103  ??? (MediaToolbox + 363592) [0x1a3371c48]
+          103  ??? (MediaToolbox + 366556) [0x1a33727dc]
+            103  ??? (MediaToolbox + 3148288) [0x1a3619a00]
+              103  ??? (MediaToolbox + 367692) [0x1a3372c4c]
+                103  ??? (MediaToolbox + 536796) [0x1a339c0dc]
+                  103  ??? (MediaToolbox + 5626984) [0x1a3876c68]
+                    54   ??? (MediaToolbox + 5629552) [0x1a3877670]
+                      54   ??? (CoreMedia + 231324) [0x19f58d79c]
+                        54   ??? (CoreMedia + 44468) [0x19f55fdb4]
+                          54   ??? (CoreMedia + 360208) [0x19f5acf10]
+                            54   ??? (libsystem_kernel.dylib + 11492) [0x1d27d6ce4]
+                    49   ??? (MediaToolbox + 5629732) [0x1a3877724]
+                      49   ??? (CoreMedia + 231324) [0x19f58d79c]
+                        49   ??? (CoreMedia + 44468) [0x19f55fdb4]
+                          49   ??? (CoreMedia + 360208) [0x19f5acf10]
+                            49   ??? (libsystem_kernel.dylib + 11492) [0x1d27d6ce4]
+                              49   <Effective Thread QoS Utility, Requested Thread QoS Utility>
+        1    ??? (MediaToolbox + 363164) [0x1a3371a9c]
+          1    ??? (MediaToolbox + 3142560) [0x1a36183a0]
+            1    ??? (MediaToolbox + 366556) [0x1a33727dc]
+              1    ??? (MediaToolbox + 3148288) [0x1a3619a00]
+                1    ??? (MediaToolbox + 367692) [0x1a3372c4c]
+                  1    ??? (MediaToolbox + 536796) [0x1a339c0dc]
+                    1    ??? (MediaToolbox + 5626984) [0x1a3876c68]
+                      1    ??? (MediaToolbox + 5629552) [0x1a3877670]
+                        1    ??? (CoreMedia + 231324) [0x19f58d79c]
+                          1    ??? (CoreMedia + 44468) [0x19f55fdb4]
+                            1    ??? (CoreMedia + 360208) [0x19f5acf10]
+                              1    ??? (libsystem_kernel.dylib + 11492) [0x1d27d6ce4]
+
+  Binary Images:
+           0x102e5c000 -                ???  mediaserverd            <1AAA7E19-B09E-36E9-90C1-752DDCEE26CB>  /usr/sbin/mediaserverd
+           0x19f555000 -        0x19f68dfff  CoreMedia               <DC9C021E-2D8A-370F-A004-219996DAA4C4>  /System/Library/Frameworks/CoreMedia.framework/CoreMedia
+           0x1a3319000 -        0x1a3be2fff  MediaToolbox            <54BADFE6-59BA-3CA4-B502-D2496B515904>  /System/Library/Frameworks/MediaToolbox.framework/MediaToolbox
+           0x1d27d4000 -        0x1d280bff7  libsystem_kernel.dylib  <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x1f328e000 -        0x1f3299ff3  libsystem_pthread.dylib <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
