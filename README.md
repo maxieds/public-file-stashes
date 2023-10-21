@@ -1,6 +1,11 @@
 # public-file-stashes
 
-## Additional links to image galleries
+## Misc links pinned to Github profile
+
+* [Github/maxieds ChameleonMiniLiveDebugger issue &num;26 last post](https://github.com/maxieds/ChameleonMiniLiveDebugger/issues/26#issuecomment-1722385007)
+* [YouTube channel: @maxieschmidt](https://www.youtube.com/@maxieschmidt/community)
+
+## Links to image galleries
 
 * [@Kevin - OpenWall Safari Hell Pit Corroboration Preview](https://postimg.cc/gallery/BXyjp93)
 * [Gloriously another @Kevin: Florida (REAP) documents backups and misc artifacts from the darkweb ipad tablet](https://postimg.cc/gallery/3HzqQzKy)
