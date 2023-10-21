@@ -1,0 +1,119 @@
+{"app_name":"com.apple.StreamingUnzipService","timestamp":"2023-04-17 16:52:08.00 -0400","app_version":"1.0","slice_uuid":"A1402318-9545-3C08-A697-47A4A546AFE4","build_version":"1","bundleID":"com.apple.StreamingUnzipService","duration_ms":"171538","share_with_app_devs":0,"is_first_party":0,"bug_type":"145","os_version":"iPhone OS 16.3.1 (20D67)","roots_installed":0,"incident_id":"6C09376F-79C2-445C-BDC7-96357FD3EBDD","name":"com.apple.StreamingUnzipService"}
+Date/Time:        2023-04-17 16:49:14.884 -0400
+End time:         2023-04-17 16:52:06.422 -0400
+OS Version:       iPhone OS 16.3.1 (Build 20D67)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: 6C09376F-79C2-445C-BDC7-96357FD3EBDD
+
+Data Source:      Microstackshots
+Shared Cache:     202665E3-D47C-3270-A725-558C7C6EA550 slid base address 0x1b2054000, slide 0x32054000
+
+Command:          com.apple.StreamingUnzipService
+Path:             /System/Library/PrivateFrameworks/StreamingZip.framework/XPCServices/com.apple.StreamingUnzipService.xpc/com.apple.StreamingUnzipService
+Identifier:       com.apple.StreamingUnzipService
+Version:          1.0 (1)
+Resource Coalition ID: 255
+Architecture:     arm64e
+Parent:           launchd [1]
+PID:              256
+
+Event:            disk writes
+Action taken:     none
+Writes:           1073.75 MB of file backed memory dirtied over 172 seconds (6259.53 KB per second average), exceeding limit of 12.43 KB per second over 86400 seconds
+Writes limit:     1073.74 MB
+Limit duration:   86400s
+Writes caused:    1073.75 MB
+Writes duration:  172s
+Duration:         171.54s
+Duration Sampled: 169.38s
+Steps:            128 (10.49 MB/step)
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 3, User -> 3, ThermalPressure -> 0, Combined -> 3
+Free disk space:  46.92 GB/59.59 GB, low space threshold 150 MB
+Low Power Mode:   Enabled
+Vnodes Available: 50.90% (5090/10000)
+
+Preferred User Language: en-US
+Country Code:     US
+Keyboards:        en_US QWERTY
+OS Cryptex File Extents: 29
+
+Heaviest stack for the target process:
+  99  ??? (libsystem_pthread.dylib + 2968) [0x206814b98]
+  99  ??? (libsystem_pthread.dylib + 3576) [0x206814df8]
+  99  ??? (libdispatch.dylib + 93712) [0x1c053be10]
+  99  ??? (libdispatch.dylib + 49600) [0x1c05311c0]
+  99  ??? (libdispatch.dylib + 46360) [0x1c0530518]
+  99  ??? (libdispatch.dylib + 136524) [0x1c054654c]
+  99  ??? (libdispatch.dylib + 46360) [0x1c0530518]
+  99  ??? (libdispatch.dylib + 133168) [0x1c0545830]
+  99  ??? (libdispatch.dylib + 16456) [0x1c0529048]
+  99  ??? (libxpc.dylib + 72652) [0x206869bcc]
+  99  ??? (libxpc.dylib + 71580) [0x20686979c]
+  99  ??? (Foundation + 6599156) [0x1b39391f4]
+  99  ??? (Foundation + 6600584) [0x1b3939788]
+  99  ??? (Foundation + 6594440) [0x1b3937f88]
+  99  ??? (Foundation + 670308) [0x1b3391a64]
+  99  ??? (com.apple.StreamingUnzipService + 91716) [0x1045ea644]
+  99  ??? (Foundation + 321536) [0x1b333c800]
+  99  ??? (com.apple.StreamingUnzipService + 92268) [0x1045ea86c]
+  75  ??? (com.apple.StreamingUnzipService + 75876) [0x1045e6864]
+  75  ??? (libsystem_kernel.dylib + 10108) [0x1f617477c]
+
+
+Powerstats for:   com.apple.StreamingUnzipService (com.apple.StreamingUnzipService) [256]
+UUID:             A1402318-9545-3C08-A697-47A4A546AFE4
+Path:             /System/Library/PrivateFrameworks/StreamingZip.framework/XPCServices/com.apple.StreamingUnzipService.xpc/com.apple.StreamingUnzipService
+Identifier:       com.apple.StreamingUnzipService
+Version:          1.0 (1)
+Resource Coalition ID: 255
+Architecture:     arm64e
+Parent:           launchd [1]
+UID:              501
+Sudden Term:      Tracked (allows idle exit)
+Footprint:        2032 KB -> 2304 KB (+272 KB) (max 2816 KB )
+Pageins:          1 pages
+Start time:       2023-04-17 16:49:48.449 -0400
+End time:         2023-04-17 16:52:06.116 -0400
+Num samples:      99 (77%)
+Primary state:    98 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Utility, Requested Thread QoS Utility, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 99 samples Active
+Power Source:     0 samples on Battery, 99 samples on AC
+  99  ??? (libsystem_pthread.dylib + 2968) [0x206814b98]
+    99  ??? (libsystem_pthread.dylib + 3576) [0x206814df8]
+      99  ??? (libdispatch.dylib + 93712) [0x1c053be10]
+        99  ??? (libdispatch.dylib + 49600) [0x1c05311c0]
+          99  ??? (libdispatch.dylib + 46360) [0x1c0530518]
+            99  ??? (libdispatch.dylib + 136524) [0x1c054654c]
+              99  ??? (libdispatch.dylib + 46360) [0x1c0530518]
+                99  ??? (libdispatch.dylib + 133168) [0x1c0545830]
+                  99  ??? (libdispatch.dylib + 16456) [0x1c0529048]
+                    99  ??? (libxpc.dylib + 72652) [0x206869bcc]
+                      99  ??? (libxpc.dylib + 71580) [0x20686979c]
+                        99  ??? (Foundation + 6599156) [0x1b39391f4]
+                          99  ??? (Foundation + 6600584) [0x1b3939788]
+                            99  ??? (Foundation + 6594440) [0x1b3937f88]
+                              99  ??? (Foundation + 670308) [0x1b3391a64]
+                                99  ??? (com.apple.StreamingUnzipService + 91716) [0x1045ea644]
+                                  99  ??? (Foundation + 321536) [0x1b333c800]
+                                    99  ??? (com.apple.StreamingUnzipService + 92268) [0x1045ea86c]
+                                      75  ??? (com.apple.StreamingUnzipService + 75876) [0x1045e6864]
+                                        75  ??? (libsystem_kernel.dylib + 10108) [0x1f617477c]
+                                          1   <Effective Thread QoS Default, Requested Thread QoS Default>
+                                      23  ??? (com.apple.StreamingUnzipService + 76164) [0x1045e6984]
+                                        23  ??? (libsystem_kernel.dylib + 10108) [0x1f617477c]
+                                      1   ??? (libsystem_kernel.dylib + 17720) [0x1f6176538]
+
+  Binary Images:
+           0x1045d4000 -                ???  com.apple.StreamingUnzipService 1.0 (1) <A1402318-9545-3C08-A697-47A4A546AFE4>  /System/Library/PrivateFrameworks/StreamingZip.framework/XPCServices/com.apple.StreamingUnzipService.xpc/com.apple.StreamingUnzipService
+           0x1b32ee000 -        0x1b3c37fff  Foundation                              <E5F615C7-CC5E-3656-8600-41C767812A35>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1c0525000 -        0x1c056bfff  libdispatch.dylib                       <DED4D0A5-1420-32AE-83A6-C31D938A1C9A>  /usr/lib/system/libdispatch.dylib
+           0x1f6172000 -        0x1f61a9feb  libsystem_kernel.dylib                  <C76E6BED-4635-30C6-8F19-FB829BBE1AE1>  /usr/lib/system/libsystem_kernel.dylib
+           0x206814000 -        0x20681ffff  libsystem_pthread.dylib                 <45AC734E-6649-3EE2-A096-3FD66441AB78>  /usr/lib/system/libsystem_pthread.dylib
+           0x206858000 -        0x206898fff  libxpc.dylib                            <AB6DBB4E-D383-3C91-9C2B-3EE44590C928>  /usr/lib/system/libxpc.dylib

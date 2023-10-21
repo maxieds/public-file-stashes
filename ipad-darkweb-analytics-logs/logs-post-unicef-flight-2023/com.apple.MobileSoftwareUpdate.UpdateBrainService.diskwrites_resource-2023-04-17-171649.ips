@@ -1,0 +1,327 @@
+{"app_name":"com.apple.MobileSoftwareUpdate.UpdateBrainService","timestamp":"2023-04-17 17:16:49.00 -0400","app_version":"1.0","slice_uuid":"187D78E5-3BAD-37A2-9807-79387CE92F1A","build_version":"1","bundleID":"com.apple.MobileSoftwareUpdate.UpdateBrainService","duration_ms":"965997","share_with_app_devs":0,"is_first_party":0,"bug_type":"145","os_version":"iPhone OS 16.3.1 (20D67)","roots_installed":0,"incident_id":"CAB614BD-21AB-4FA0-90D0-EC163155815B","name":"com.apple.MobileSoftwareUpdate.UpdateBrainService"}
+Date/Time:        2023-04-17 17:00:40.603 -0400
+End time:         2023-04-17 17:16:46.601 -0400
+OS Version:       iPhone OS 16.3.1 (Build 20D67)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: CAB614BD-21AB-4FA0-90D0-EC163155815B
+
+Data Source:      Microstackshots
+Shared Cache:     202665E3-D47C-3270-A725-558C7C6EA550 slid base address 0x1b2054000, slide 0x32054000
+
+Command:          com.apple.MobileSoftwareUpdate.UpdateBrainService
+Path:             /private/var/db/com.apple.xpc.roleaccountd.staging/com.apple.MobileSoftwareUpdate.UpdateBrainService.16777223.214156.xpc/com.apple.MobileSoftwareUpdate.UpdateBrainService
+Identifier:       com.apple.MobileSoftwareUpdate.UpdateBrainService
+Version:          1.0 (1)
+Resource Coalition ID: 61
+Architecture:     arm64
+Parent:           UNKNOWN [1]
+PID:              300
+
+Event:            disk writes
+Action taken:     none
+Writes:           4295.21 MB of file backed memory dirtied over 966 seconds (4446.40 KB per second average), exceeding limit of 49.71 KB per second over 86400 seconds
+Writes limit:     4294.97 MB
+Limit duration:   86400s
+Writes caused:    4295.21 MB
+Writes duration:  966s
+Duration:         966.00s
+Duration Sampled: 965.47s
+Steps:            441 (10.49 MB/step)
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 2, User -> 3, ThermalPressure -> 0, Combined -> 2
+Free disk space:  41.74 GB/59.59 GB, low space threshold 150 MB
+Low Power Mode:   Enabled
+Vnodes Available: 54.41% (5441/10000)
+
+Preferred User Language: en-US
+Country Code:     US
+Keyboards:        en_US QWERTY
+OS Cryptex File Extents: 29
+
+Heaviest stack for the target process:
+  407  ??? (libsystem_pthread.dylib + 2968) [0x206814b98]
+  407  ??? (libsystem_pthread.dylib + 3516) [0x206814dbc]
+  407  ??? (libdispatch.dylib + 90756) [0x1c053b284]
+  407  ??? (libdispatch.dylib + 88972) [0x1c053ab8c]
+  407  ??? (libdispatch.dylib + 16264) [0x1c0528f88]
+  407  ??? (libdispatch.dylib + 78100) [0x1c0538114]
+  407  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 175224) [0x104782c78]
+  407  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 208864) [0x10478afe0]
+  407  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 178068) [0x104783794]
+  407  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 166556) [0x104780a9c]
+  219  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 188584) [0x1047860a8]
+  209  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 216224) [0x10478cca0]
+  209  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 54164) [0x104765394]
+  209  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1276396) [0x10488f9ec]
+  209  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173144) [0x104876698]
+  209  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173896) [0x104876988]
+  209  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173896) [0x104876988]
+  197  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173896) [0x104876988]
+  184  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173896) [0x104876988]
+  100  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173896) [0x104876988]
+  74  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173852) [0x10487695c]
+  45  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278244) [0x104890124]
+  45  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1211880) [0x10487fde8]
+  37  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1210492) [0x10487f87c]
+  37  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1187104) [0x104879d20]
+  37  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1281680) [0x104890e90]
+  21  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185828) [0x104879824]
+  21  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1188240) [0x10487a190]
+  21  ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+
+
+Powerstats for:   com.apple.MobileSoftwareUpdate.UpdateBrainService (com.apple.MobileSoftwareUpdate.UpdateBrainService) [300]
+UUID:             187D78E5-3BAD-37A2-9807-79387CE92F1A
+Path:             /private/var/db/com.apple.xpc.roleaccountd.staging/com.apple.MobileSoftwareUpdate.UpdateBrainService.16777223.214156.xpc/com.apple.MobileSoftwareUpdate.UpdateBrainService
+Identifier:       com.apple.MobileSoftwareUpdate.UpdateBrainService
+Version:          1.0 (1)
+Resource Coalition ID: 61
+Architecture:     arm64
+Parent:           UNKNOWN [1]
+UID:              0
+Sudden Term:      Tracked (allows idle exit)
+Footprint:        44.83 MB -> 37.50 MB (-7504 KB)
+Pageins:          22545 pages
+Start time:       2023-04-17 17:00:40.885 -0400
+End time:         2023-04-17 17:16:46.355 -0400
+Num samples:      410 (93%)
+Primary state:    401 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Background, Requested Thread QoS Utility, Override Thread QoS Unspecified
+User Activity:    126 samples Idle, 284 samples Active
+Power Source:     109 samples on Battery, 301 samples on AC
+  407  ??? (libsystem_pthread.dylib + 2968) [0x206814b98]
+    407  ??? (libsystem_pthread.dylib + 3516) [0x206814dbc]
+      407  ??? (libdispatch.dylib + 90756) [0x1c053b284]
+        407  ??? (libdispatch.dylib + 88972) [0x1c053ab8c]
+          407  ??? (libdispatch.dylib + 16264) [0x1c0528f88]
+            407  ??? (libdispatch.dylib + 78100) [0x1c0538114]
+              407  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 175224) [0x104782c78]
+                407  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 208864) [0x10478afe0]
+                  407  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 178068) [0x104783794]
+                    407  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 166556) [0x104780a9c]
+                      219  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 188584) [0x1047860a8]
+                        209  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 216224) [0x10478cca0]
+                          209  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 54164) [0x104765394]
+                            209  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1276396) [0x10488f9ec]
+                              209  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173144) [0x104876698]
+                                209  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173896) [0x104876988]
+                                  209  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173896) [0x104876988]
+                                    197  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173896) [0x104876988]
+                                      184  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173896) [0x104876988]
+                                        100  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173896) [0x104876988]
+                                          74   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173852) [0x10487695c]
+                                            45   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278244) [0x104890124]
+                                              45   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1211880) [0x10487fde8]
+                                                37   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1210492) [0x10487f87c]
+                                                  37   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1187104) [0x104879d20]
+                                                    37   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1281680) [0x104890e90]
+                                                      21   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185828) [0x104879824]
+                                                        21   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1188240) [0x10487a190]
+                                                          21   ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                                      16   ??? (libsystem_kernel.dylib + 10108) [0x1f617477c]
+                                                8    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1210596) [0x10487f8e4]
+                                                  8    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1187104) [0x104879d20]
+                                                    8    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1281680) [0x104890e90]
+                                                      5    ??? (libsystem_kernel.dylib + 10108) [0x1f617477c]
+                                                      3    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185828) [0x104879824]
+                                                        3    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1188240) [0x10487a190]
+                                                          3    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                            27   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278256) [0x104890130]
+                                              27   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185248) [0x1048795e0]
+                                                23   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1189056) [0x10487a4c0]
+                                                  23   ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                                2    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                                2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1189268) [0x10487a594]
+                                                  2    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                            2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278312) [0x104890168]
+                                              2    ??? (libsystem_kernel.dylib + 17380) [0x1f61763e4]
+                                          26   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173896) [0x104876988]
+                                            16   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173852) [0x10487695c]
+                                              9    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278244) [0x104890124]
+                                                9    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1211880) [0x10487fde8]
+                                                  6    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1210492) [0x10487f87c]
+                                                    6    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1187104) [0x104879d20]
+                                                      6    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1281680) [0x104890e90]
+                                                        6    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185828) [0x104879824]
+                                                          6    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1188240) [0x10487a190]
+                                                            6    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                                  2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1210652) [0x10487f91c]
+                                                    2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1186968) [0x104879c98]
+                                                      2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1281680) [0x104890e90]
+                                                        2    ??? (libsystem_kernel.dylib + 10108) [0x1f617477c]
+                                                  1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1210596) [0x10487f8e4]
+                                                    1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1187104) [0x104879d20]
+                                                      1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1281680) [0x104890e90]
+                                                        1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185828) [0x104879824]
+                                                          1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1188240) [0x10487a190]
+                                                            1    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                              6    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278256) [0x104890130]
+                                                6    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185248) [0x1048795e0]
+                                                  4    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1189056) [0x10487a4c0]
+                                                    4    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                                  2    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                              1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278312) [0x104890168]
+                                                1    ??? (libsystem_kernel.dylib + 17380) [0x1f61763e4]
+                                            10   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173896) [0x104876988]
+                                              7    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173896) [0x104876988]
+                                                7    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173896) [0x104876988]
+                                                  7    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173852) [0x10487695c]
+                                                    4    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278244) [0x104890124]
+                                                      4    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1211880) [0x10487fde8]
+                                                        4    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1210492) [0x10487f87c]
+                                                          4    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1187104) [0x104879d20]
+                                                            4    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1281680) [0x104890e90]
+                                                              4    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185828) [0x104879824]
+                                                                4    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1188240) [0x10487a190]
+                                                                  4    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                                    2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278256) [0x104890130]
+                                                      2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185248) [0x1048795e0]
+                                                        2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1189056) [0x10487a4c0]
+                                                          2    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                                    1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1279780) [0x104890724]
+                                                      1    ??? (libsystem_kernel.dylib + 19704) [0x1f6176cf8]
+                                              3    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173852) [0x10487695c]
+                                                3    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278244) [0x104890124]
+                                                  3    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1211880) [0x10487fde8]
+                                                    3    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1210492) [0x10487f87c]
+                                                      3    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1187104) [0x104879d20]
+                                                        3    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1281680) [0x104890e90]
+                                                          3    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185828) [0x104879824]
+                                                            3    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1188240) [0x10487a190]
+                                                              3    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                        84   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173852) [0x10487695c]
+                                          58   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278244) [0x104890124]
+                                            58   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1211880) [0x10487fde8]
+                                              53   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1210492) [0x10487f87c]
+                                                53   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1187104) [0x104879d20]
+                                                  53   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1281680) [0x104890e90]
+                                                    36   ??? (libsystem_kernel.dylib + 10108) [0x1f617477c]
+                                                    17   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185828) [0x104879824]
+                                                      17   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1188240) [0x10487a190]
+                                                        17   ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                              5    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1210596) [0x10487f8e4]
+                                                5    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1187104) [0x104879d20]
+                                                  5    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1281680) [0x104890e90]
+                                                    3    ??? (libsystem_kernel.dylib + 10108) [0x1f617477c]
+                                                    2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185828) [0x104879824]
+                                                      2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1188240) [0x10487a190]
+                                                        2    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                                          1    <Effective Thread QoS Utility>
+                                          23   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278256) [0x104890130]
+                                            23   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185248) [0x1048795e0]
+                                              18   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1189056) [0x10487a4c0]
+                                                18   ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                              3    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                              2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1189268) [0x10487a594]
+                                                2    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                          2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278200) [0x1048900f8]
+                                            2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1184576) [0x104879340]
+                                              2    ??? (libsystem_kernel.dylib + 15508) [0x1f6175c94]
+                                          1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1279780) [0x104890724]
+                                            1    ??? (libsystem_kernel.dylib + 19704) [0x1f6176cf8]
+                                      13   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173852) [0x10487695c]
+                                        10   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278244) [0x104890124]
+                                          10   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1211880) [0x10487fde8]
+                                            5    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1210492) [0x10487f87c]
+                                              5    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1187104) [0x104879d20]
+                                                5    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1281680) [0x104890e90]
+                                                  3    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185828) [0x104879824]
+                                                    3    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1188240) [0x10487a190]
+                                                      3    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                                  2    ??? (libsystem_kernel.dylib + 10108) [0x1f617477c]
+                                            4    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1210596) [0x10487f8e4]
+                                              4    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1187104) [0x104879d20]
+                                                4    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1281680) [0x104890e90]
+                                                  4    ??? (libsystem_kernel.dylib + 10108) [0x1f617477c]
+                                            1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1210652) [0x10487f91c]
+                                              1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1186968) [0x104879c98]
+                                                1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1281680) [0x104890e90]
+                                                  1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185828) [0x104879824]
+                                                    1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1188240) [0x10487a190]
+                                                      1    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                        2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278256) [0x104890130]
+                                          2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185248) [0x1048795e0]
+                                            1    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                            1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1189056) [0x10487a4c0]
+                                              1    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                        1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1279844) [0x104890764]
+                                          1    ??? (libsystem_kernel.dylib + 19704) [0x1f6176cf8]
+                                    12   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1173852) [0x10487695c]
+                                      6    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278256) [0x104890130]
+                                        6    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185248) [0x1048795e0]
+                                          6    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1189056) [0x10487a4c0]
+                                            6    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                              1    <User mode>
+                                      5    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1278244) [0x104890124]
+                                        5    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1211880) [0x10487fde8]
+                                          3    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1210492) [0x10487f87c]
+                                            3    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1187104) [0x104879d20]
+                                              3    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1281680) [0x104890e90]
+                                                2    ??? (libsystem_kernel.dylib + 10108) [0x1f617477c]
+                                                1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185828) [0x104879824]
+                                                  1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1188240) [0x10487a190]
+                                                    1    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                          2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1210596) [0x10487f8e4]
+                                            2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1187104) [0x104879d20]
+                                              2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1281680) [0x104890e90]
+                                                2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185828) [0x104879824]
+                                                  2    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1188240) [0x10487a190]
+                                                    2    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+                                      1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1279780) [0x104890724]
+                                        1    ??? (libsystem_kernel.dylib + 19704) [0x1f6176cf8]
+                        10   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 216212) [0x10478cc94]
+                          10   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 55348) [0x104765834]
+                            10   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1290576) [0x104893150]
+                              10   ??? (libsystem_kernel.dylib + 19704) [0x1f6176cf8]
+                      188  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 188496) [0x104786050]
+                        188  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 66340) [0x104768324]
+                          188  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1042340) [0x1048567a4]
+                            188  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 68152) [0x104768a38]
+                              188  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 69808) [0x1047690b0]
+                                188  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1270584) [0x10488e338]
+                                  143  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1124232) [0x10486a788]
+                                    143  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1244456) [0x104887d28]
+                                      143  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1133356) [0x10486cb2c]
+                                        143  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1257484) [0x10488b00c]
+                                          143  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1258604) [0x10488b46c]
+                                            143  ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1259344) [0x10488b750]
+                                              143  ??? (libsystem_kernel.dylib + 11784) [0x1f6174e08]
+                                                5    <Effective Thread QoS Utility>
+                                  45   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1124732) [0x10486a97c]
+                                    45   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1244456) [0x104887d28]
+                                      45   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1133356) [0x10486cb2c]
+                                        45   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1257484) [0x10488b00c]
+                                          45   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1258604) [0x10488b46c]
+                                            45   ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1259344) [0x10488b750]
+                                              45   ??? (libsystem_kernel.dylib + 11784) [0x1f6174e08]
+                                                2    <Effective Thread QoS Utility>
+  3    ??? (libsystem_pthread.dylib + 2980) [0x206814ba4]
+    3    ??? (libsystem_pthread.dylib + 5836) [0x2068156cc]
+      3    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1153828) [0x104871b24]
+        3    ??? (libdispatch.dylib + 31240) [0x1c052ca08]
+          3    ??? (libdispatch.dylib + 16264) [0x1c0528f88]
+            1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1230716) [0x10488477c]
+              1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185248) [0x1048795e0]
+                1    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+            1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1230588) [0x1048846fc]
+              1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1185828) [0x104879824]
+                1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1188240) [0x10487a190]
+                  1    ??? (libsystem_kernel.dylib + 11828) [0x1f6174e34]
+            1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1217624) [0x104881458]
+              1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1220636) [0x10488201c]
+                1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1221180) [0x10488223c]
+                  1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1165520) [0x1048748d0]
+                    1    ??? (<4196A095-46F1-36A0-8822-7B2A9B21CFDE> + 1238176) [0x1048864a0]
+                      1    ??? (libsystem_kernel.dylib + 17720) [0x1f6176538]
+
+  Binary Images:
+           0x104584000 -                ???  com.apple.MobileSoftwareUpdate.UpdateBrainService 1.0 (1) <187D78E5-3BAD-37A2-9807-79387CE92F1A>  /private/var/db/com.apple.xpc.roleaccountd.staging/com.apple.MobileSoftwareUpdate.UpdateBrainService.16777223.214156.xpc/com.apple.MobileSoftwareUpdate.UpdateBrainService
+           0x104758000 -                ???  ???                                                       <4196A095-46F1-36A0-8822-7B2A9B21CFDE>
+           0x1c0525000 -        0x1c056bfff  libdispatch.dylib                                         <DED4D0A5-1420-32AE-83A6-C31D938A1C9A>  /usr/lib/system/libdispatch.dylib
+           0x1f6172000 -        0x1f61a9feb  libsystem_kernel.dylib                                    <C76E6BED-4635-30C6-8F19-FB829BBE1AE1>  /usr/lib/system/libsystem_kernel.dylib
+           0x206814000 -        0x20681ffff  libsystem_pthread.dylib                                   <45AC734E-6649-3EE2-A096-3FD66441AB78>  /usr/lib/system/libsystem_pthread.dylib
