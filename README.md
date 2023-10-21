@@ -30,6 +30,6 @@ VR (most likely some code like the usage of someone versus somebody)?
 
 * [@Kevin - OpenWall Safari Hell Pit Corroboration Preview](https://postimg.cc/gallery/BXyjp93)
 * [Gloriously another @Kevin: Florida (REAP) documents backups and misc artifacts from the darkweb ipad tablet](https://postimg.cc/gallery/3HzqQzKy)
-* [Albuquerque and Yellowstone National Park (Casper WY) archived MotoG7Power phone images and other data](https://postimg.cc/gallery/xQ84B92r)
+* [Albuquerque and Yellowstone National Park (Casper WY) archived MotoG7Power phone images and other data](https://postimg.cc/gallery/xQ84B92r) (the image hosting site is down after making this public; see [this subdirectory](https://github.com/maxieds/public-file-stashes/tree/main/image-gallery-collections/AlbuquerqueYellowstoneData) for the full image contents instead -- no convenient thumbnail preview display)
 * [SJSS Eulogy -- Given by my father, Donald Eugene Schmidt, affectionately: Father Don, Dell Dear -- Friday, May 13, 2022](https://postimg.cc/gallery/FJRGspX)
-* [SMS Session in Albuquerque the Afternoon Elon Musk Purchased Twitter with Saudi Backed Funding Sources (@NP, my apologies for the impoliteness (and^H^Ht the GOP](https://postimg.cc/gallery/S4qyr6gF)
+* [SMS Session in Albuquerque the Afternoon Elon Musk Purchased Twitter with Saudi Backed Funding Sources (@NP, my apologies for the impoliteness (and^H^Ht the GOP)](https://postimg.cc/gallery/S4qyr6gF)
