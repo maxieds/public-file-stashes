@@ -1,0 +1,211 @@
+{"app_name":"Working Copy","timestamp":"2023-03-10 23:36:42.00 -0600","app_version":"5.5.6","slice_uuid":"DA9556DC-9917-39BC-8C5D-5504093F1BD0","adam_id":896694807,"build_version":"8448","bundleID":"com.appliedphasor.working-copy","duration_ms":"138459","share_with_app_devs":0,"is_first_party":0,"bug_type":"202","os_version":"iPhone OS 16.3.1 (20D67)","incident_id":"E5193976-8BD3-445E-9264-C77288C2DE9C","name":"Working Copy","roots_installed":0}
+Date/Time:        2023-03-10 23:33:31.411 -0600
+End time:         2023-03-10 23:35:49.870 -0600
+OS Version:       iPhone OS 16.3.1 (Build 20D67)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: E5193976-8BD3-445E-9264-C77288C2DE9C
+
+Data Source:      Microstackshots
+Shared Cache:     202665E3-D47C-3270-A725-558C7C6EA550 slid base address 0x1c2420000, slide 0x42420000
+
+Command:          Working Copy
+Path:             /private/var/containers/Bundle/Application/3E8B97D4-E6D5-4BEF-8CBC-1B1E6012C63E/Working Copy.app/Working Copy
+Identifier:       com.appliedphasor.working-copy
+Version:          5.5.6 (8448)
+Adam ID:          896694807
+Is First Party:   No
+Beta Identifier:  8401EA96-5773-4622-8C11-D79A3B594E84
+Resource Coalition ID: 480
+Architecture:     arm64
+Parent:           UNKNOWN [1]
+PID:              663
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 138 seconds (65% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     138s
+Duration:         138.46s
+Duration Sampled: 134.57s
+Steps:            81
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 2, User -> 3, ThermalPressure -> 0, Combined -> 2
+Free disk space:  2696.54 MB/59.59 GB, low space threshold 150 MB
+Vnodes Available: 56.76% (5676/10000)
+
+Preferred User Language: en-US, el-US
+Country Code:     US
+Keyboards:        en_US QWERTY, emoji Emoji
+OS Cryptex File Extents: 29
+
+Heaviest stack for the target process:
+  80  ??? (libsystem_pthread.dylib + 2968) [0x216be0b98]
+  80  ??? (libsystem_pthread.dylib + 3576) [0x216be0df8]
+  80  ??? (libdispatch.dylib + 93712) [0x1d0907e10]
+  80  ??? (libdispatch.dylib + 49548) [0x1d08fd18c]
+  80  ??? (libdispatch.dylib + 46656) [0x1d08fc640]
+  80  ??? (libdispatch.dylib + 16264) [0x1d08f4f88]
+  80  ??? (libdispatch.dylib + 9312) [0x1d08f3460]
+  45  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 3824660) [0x1032c1c14]
+  45  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 3820228) [0x1032c0ac4]
+  45  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 3794072) [0x1032ba498]
+  42  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 3820792) [0x1032c0cf8]
+  42  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9963596) [0x10389c84c]
+  42  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9611088) [0x103846750]
+  41  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9613808) [0x1038471f0]
+  34  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9646364) [0x10384f11c]
+  7   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645688) [0x10384ee78]
+
+
+Powerstats for:   Working Copy [663]
+UUID:             DA9556DC-9917-39BC-8C5D-5504093F1BD0
+Path:             /private/var/containers/Bundle/Application/3E8B97D4-E6D5-4BEF-8CBC-1B1E6012C63E/Working Copy.app/Working Copy
+Identifier:       com.appliedphasor.working-copy
+Version:          5.5.6 (8448)
+Adam ID:          896694807
+Is First Party:   No
+Beta Identifier:  8401EA96-5773-4622-8C11-D79A3B594E84
+Resource Coalition ID: 480
+Architecture:     arm64
+Parent:           UNKNOWN [1]
+UID:              501
+Footprint:        153.41 MB -> 200.28 MB (+46.88 MB)
+Pageins:          558 pages
+Start time:       2023-03-10 23:33:35.176 -0600
+End time:         2023-03-10 23:35:49.747 -0600
+Num samples:      81 (100%)
+Primary state:    72 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 81 samples Active
+Power Source:     81 samples on Battery, 0 samples on AC
+  80  ??? (libsystem_pthread.dylib + 2968) [0x216be0b98]
+    80  ??? (libsystem_pthread.dylib + 3576) [0x216be0df8]
+      80  ??? (libdispatch.dylib + 93712) [0x1d0907e10]
+        80  ??? (libdispatch.dylib + 49548) [0x1d08fd18c]
+          80  ??? (libdispatch.dylib + 46656) [0x1d08fc640]
+            80  ??? (libdispatch.dylib + 16264) [0x1d08f4f88]
+              80  ??? (libdispatch.dylib + 9312) [0x1d08f3460]
+                45  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 3824660) [0x1032c1c14]
+                  45  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 3820228) [0x1032c0ac4]
+                    45  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 3794072) [0x1032ba498]
+                      42  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 3820792) [0x1032c0cf8]
+                        42  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9963596) [0x10389c84c]
+                          42  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9611088) [0x103846750]
+                            41  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9613808) [0x1038471f0]
+                              34  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9646364) [0x10384f11c]
+                                7   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645688) [0x10384ee78]
+                                5   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645704) [0x10384ee88]
+                                3   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645740) [0x10384eeac]
+                                3   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645660) [0x10384ee5c]
+                                3   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645780) [0x10384eed4]
+                                  2   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9647816) [0x10384f6c8]
+                                  1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9647384) [0x10384f518]
+                                2   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645724) [0x10384ee9c]
+                                2   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645624) [0x10384ee38]
+                                2   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645612) [0x10384ee2c]
+                                2   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645552) [0x10384edf0]
+                                2   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645792) [0x10384eee0]
+                                  1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9647624) [0x10384f608]
+                                  1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9647408) [0x10384f530]
+                                1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9647432) [0x10384f548]
+                                1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645768) [0x10384eec8]
+                                1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645616) [0x10384ee30]
+                              7   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9646380) [0x10384f12c]
+                                7   ??? (libsystem_kernel.dylib + 7124) [0x20653fbd4]
+                                  4   <Kernel mode>
+                            1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9613848) [0x103847218]
+                              1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9608900) [0x103845ec4]
+                                1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9646852) [0x10384f304]
+                      2   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 3823044) [0x1032c15c4]
+                        1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 2743220) [0x1031b9bb4]
+                          1   ??? (CoreFoundation + 20108) [0x1c92d8e8c]
+                            1   ??? (Foundation + 617448) [0x1c3750be8]
+                              1   ??? (CoreServicesInternal + 9228) [0x1c368940c]
+                                1   ??? (CoreServicesInternal + 32516) [0x1c368ef04]
+                                  1   ??? (CoreServicesInternal + 34572) [0x1c368f70c]
+                                    1   ??? (libsystem_kernel.dylib + 15012) [0x206541aa4]
+                        1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 2742836) [0x1031b9a34]
+                          1   ??? (Foundation + 273984) [0x1c36fce40]
+                            1   ??? (Foundation + 547096) [0x1c373f918]
+                              1   ??? (libsystem_kernel.dylib + 5288) [0x20653f4a8]
+                      1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 3821776) [0x1032c10d0]
+                        1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 2737672) [0x1031b8608]
+                          1   ??? (libsystem_kernel.dylib + 5288) [0x20653f4a8]
+                35  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 2122072) [0x103122158]
+                  35  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9963596) [0x10389c84c]
+                    35  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9611088) [0x103846750]
+                      34  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9613808) [0x1038471f0]
+                        30  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9646364) [0x10384f11c]
+                          6   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645688) [0x10384ee78]
+                          5   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645724) [0x10384ee9c]
+                          3   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645616) [0x10384ee30]
+                          3   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645792) [0x10384eee0]
+                            1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9647732) [0x10384f674]
+                            1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9647660) [0x10384f62c]
+                            1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9647616) [0x10384f600]
+                          3   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645780) [0x10384eed4]
+                            1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9647816) [0x10384f6c8]
+                            1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9647792) [0x10384f6b0]
+                            1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9647560) [0x10384f5c8]
+                          2   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645704) [0x10384ee88]
+                          2   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645612) [0x10384ee2c]
+                          2   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645552) [0x10384edf0]
+                          1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645832) [0x10384ef08]
+                          1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645740) [0x10384eeac]
+                          1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645660) [0x10384ee5c]
+                          1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9645624) [0x10384ee38]
+                        4   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9646380) [0x10384f12c]
+                          4   ??? (libsystem_kernel.dylib + 7124) [0x20653fbd4]
+                            4   <Kernel mode>
+                      1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9613848) [0x103847218]
+                        1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9608900) [0x103845ec4]
+                          1   ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9647284) [0x10384f4b4]
+  1   ??? (dyld + 88416) [0x1e7c40960]
+    1   ??? (Working Copy + 74180) [0x102b961c4]
+      1   ??? (UIKitCore + 3805900) [0x1cb84a2cc]
+        1   ??? (UIKitCore + 3806824) [0x1cb84a668]
+          1   ??? (GraphicsServices + 4968) [0x202c9c368]
+            1   ??? (CoreFoundation + 528048) [0x1c9354eb0]
+              1   ??? (CoreFoundation + 506748) [0x1c934fb7c]
+                1   ??? (CoreFoundation + 418240) [0x1c933a1c0]
+                  1   ??? (CoreFoundation + 926460) [0x1c93b62fc]
+                    1   ??? (CoreFoundation + 876324) [0x1c93a9f24]
+                      1   ??? (UIKitCore + 13239516) [0x1cc1494dc]
+                        1   ??? (UIKitCore + 13243152) [0x1cc14a310]
+                          1   ??? (UIKitCore + 6628784) [0x1cbafb5b0]
+                            1   ??? (QuartzCore + 1401156) [0x1caacd144]
+                              1   ??? (QuartzCore + 167076) [0x1ca99fca4]
+                                1   ??? (UIKitCore + 4166396) [0x1cb8a22fc]
+                                  1   ??? (UIKitCore + 4171344) [0x1cb8a3650]
+                                    1   ??? (UIKitCore + 4160984) [0x1cb8a0dd8]
+                                      1   ??? (UIKitCore + 4614196) [0x1cb90f834]
+                                        1   ??? (UIKitCore + 4613548) [0x1cb90f5ac]
+                                          1   ??? (UIKitCore + 5599216) [0x1cb9ffff0]
+                                            1   ??? (libsystem_blocks.dylib + 7524) [0x216bdcd64]
+                                              1   ??? (libobjc.A.dylib + 25316) [0x1c24d62e4]
+                                                1   ??? (libobjc.A.dylib + 9532) [0x1c24d253c]
+                                                  1   ??? (libobjc.A.dylib + 204272) [0x1c2501df0]
+                                                    1   <Effective Thread QoS User Interactive, Requested Thread QoS User Interactive>
+
+  Binary Images:
+           0x102b84000 -                ???  com.appliedphasor.working-copy 5.5.6 (8448) <DA9556DC-9917-39BC-8C5D-5504093F1BD0>  /private/var/containers/Bundle/Application/3E8B97D4-E6D5-4BEF-8CBC-1B1E6012C63E/Working Copy.app/Working Copy
+           0x102f1c000 -                ???  ???                                         <8AFDF99F-2F87-3A79-B73E-20563F1346BE>
+           0x1c24d0000 -        0x1c2513e1f  libobjc.A.dylib                             <C1140B65-65C7-3A26-BD12-7BC730320EA0>  /usr/lib/libobjc.A.dylib
+           0x1c3687000 -        0x1c36b9fff  CoreServicesInternal                        <D4811056-5533-37F4-A4E2-BBC9DFABD627>  /System/Library/PrivateFrameworks/CoreServicesInternal.framework/CoreServicesInternal
+           0x1c36ba000 -        0x1c4003fff  Foundation                                  <E5F615C7-CC5E-3656-8600-41C767812A35>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1c92d4000 -        0x1c96b9fff  CoreFoundation                              <42CCFC7B-FF32-3D25-8F01-CCB2AD843A8B>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1ca977000 -        0x1cacd5fff  QuartzCore                                  <3F8EDDC2-623F-301F-BA1D-12976C8A60E9>  /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+           0x1cb4a9000 -        0x1ccc9cfff  UIKitCore                                   <CF21AD9C-EFBF-3961-A7C0-54BD30CEFEA9>  /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+           0x1d08f1000 -        0x1d0937fff  libdispatch.dylib                           <DED4D0A5-1420-32AE-83A6-C31D938A1C9A>  /usr/lib/system/libdispatch.dylib
+           0x1e7c2b000 -        0x1e7cae093  dyld                                        <4B042F28-0D14-30EC-A1DE-3DBB10866AD7>  /usr/lib/dyld
+           0x202c9b000 -        0x202ca3fff  GraphicsServices                            <85419099-269B-336D-86B4-0D52D0FF6923>  /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+           0x20653e000 -        0x206575feb  libsystem_kernel.dylib                      <C76E6BED-4635-30C6-8F19-FB829BBE1AE1>  /usr/lib/system/libsystem_kernel.dylib
+           0x216bdb000 -        0x216bdfffa  libsystem_blocks.dylib                      <CE1F323B-A1D1-3140-B7EC-322809AA6A84>  /usr/lib/system/libsystem_blocks.dylib
+           0x216be0000 -        0x216bebfff  libsystem_pthread.dylib                     <45AC734E-6649-3EE2-A096-3FD66441AB78>  /usr/lib/system/libsystem_pthread.dylib

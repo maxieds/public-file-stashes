@@ -1,0 +1,246 @@
+{"app_name":"ArchiveService","timestamp":"2023-03-11 11:01:21.00 -0600","app_version":"13.0","slice_uuid":"ECA2EF17-DCCC-38B7-BCA2-B3035DBED0F5","build_version":"1545.1","bundleID":"com.apple.desktopservices.ArchiveService","duration_ms":"108141","share_with_app_devs":0,"is_first_party":0,"bug_type":"202","os_version":"iPhone OS 16.3.1 (20D67)","roots_installed":0,"incident_id":"4B90F34D-4427-46DF-9448-E234B2882AB4","name":"ArchiveService"}
+Date/Time:        2023-03-11 10:59:31.016 -0600
+End time:         2023-03-11 11:01:19.157 -0600
+OS Version:       iPhone OS 16.3.1 (Build 20D67)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: 4B90F34D-4427-46DF-9448-E234B2882AB4
+
+Data Source:      Microstackshots
+Shared Cache:     202665E3-D47C-3270-A725-558C7C6EA550 slid base address 0x19c010000, slide 0x1c010000
+
+Command:          ArchiveService
+Path:             /System/Library/PrivateFrameworks/DesktopServicesPriv.framework/XPCServices/ArchiveService.xpc/ArchiveService
+Identifier:       com.apple.desktopservices.ArchiveService
+Version:          13.0 (1545.1)
+Resource Coalition ID: 488
+Architecture:     arm64
+PID:              559
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 108 seconds (83% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     108s
+Duration:         108.14s
+Duration Sampled: 94.95s
+Steps:            62
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+OS Cryptex File Extents: 29
+
+Heaviest stack for the target process:
+  35  ??? (libsystem_pthread.dylib + 2968) [0x1f07d0b98]
+  34  ??? (libsystem_pthread.dylib + 3516) [0x1f07d0dbc]
+  34  ??? (libdispatch.dylib + 90756) [0x1aa4f7284]
+  34  ??? (libdispatch.dylib + 88684) [0x1aa4f6a6c]
+  34  ??? (libdispatch.dylib + 27264) [0x1aa4e7a80]
+  34  ??? (libdispatch.dylib + 29720) [0x1aa4e8418]
+  34  ??? (libdispatch.dylib + 16264) [0x1aa4e4f88]
+  34  ??? (libdispatch.dylib + 78100) [0x1aa4f4114]
+  34  ??? (Foundation + 268608) [0x19d2eb940]
+  34  ??? (Foundation + 246312) [0x19d2e6228]
+  34  ??? (Foundation + 247028) [0x19d2e64f4]
+  34  ??? (Foundation + 504128) [0x19d325140]
+  34  ??? (Foundation + 504240) [0x19d3251b0]
+  34  ??? (Foundation + 684128) [0x19d351060]
+  34  ??? (Foundation + 6346284) [0x19d8b762c]
+  34  ??? (Foundation + 894972) [0x19d3847fc]
+  34  ??? (Foundation + 596688) [0x19d33bad0]
+  34  ??? (ArchiveService + 37484) [0x10284126c]
+  34  ??? (ArchiveService + 29240) [0x10283f238]
+  34  ??? (ArchiveService + 50588) [0x10284459c]
+  34  ??? (ArchiveService + 48152) [0x102843c18]
+  34  ??? (ArchiveService + 40068) [0x102841c84]
+  33  ??? (ArchiveService + 49184) [0x102844020]
+  33  ??? (ArchiveService + 42824) [0x102842748]
+  32  ??? (ArchiveService + 41316) [0x102842164]
+  32  ??? (libarchive.2.dylib + 443240) [0x1ed3e7368]
+  32  ??? (libz.1.dylib + 7096) [0x2250ebbb8]
+  6   ??? (libz.1.dylib + 22632) [0x2250ef868]
+
+
+Powerstats for:   ArchiveService [559]
+UUID:             ECA2EF17-DCCC-38B7-BCA2-B3035DBED0F5
+Path:             /System/Library/PrivateFrameworks/DesktopServicesPriv.framework/XPCServices/ArchiveService.xpc/ArchiveService
+Identifier:       com.apple.desktopservices.ArchiveService
+Version:          13.0 (1545.1)
+Resource Coalition ID: 488
+Architecture:     arm64
+Footprint:        2432 KB -> 4960 KB (+2528 KB)
+Start time:       2023-03-11 10:59:43.739 -0600
+End time:         2023-03-11 11:01:18.379 -0600
+Num samples:      36 (58%)
+Primary state:    33 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 36 samples Active
+Power Source:     36 samples on Battery, 0 samples on AC
+  35  ??? (libsystem_pthread.dylib + 2968) [0x1f07d0b98]
+    34  ??? (libsystem_pthread.dylib + 3516) [0x1f07d0dbc]
+      34  ??? (libdispatch.dylib + 90756) [0x1aa4f7284]
+        34  ??? (libdispatch.dylib + 88684) [0x1aa4f6a6c]
+          34  ??? (libdispatch.dylib + 27264) [0x1aa4e7a80]
+            34  ??? (libdispatch.dylib + 29720) [0x1aa4e8418]
+              34  ??? (libdispatch.dylib + 16264) [0x1aa4e4f88]
+                34  ??? (libdispatch.dylib + 78100) [0x1aa4f4114]
+                  34  ??? (Foundation + 268608) [0x19d2eb940]
+                    34  ??? (Foundation + 246312) [0x19d2e6228]
+                      34  ??? (Foundation + 247028) [0x19d2e64f4]
+                        34  ??? (Foundation + 504128) [0x19d325140]
+                          34  ??? (Foundation + 504240) [0x19d3251b0]
+                            34  ??? (Foundation + 684128) [0x19d351060]
+                              34  ??? (Foundation + 6346284) [0x19d8b762c]
+                                34  ??? (Foundation + 894972) [0x19d3847fc]
+                                  34  ??? (Foundation + 596688) [0x19d33bad0]
+                                    34  ??? (ArchiveService + 37484) [0x10284126c]
+                                      34  ??? (ArchiveService + 29240) [0x10283f238]
+                                        34  ??? (ArchiveService + 50588) [0x10284459c]
+                                          34  ??? (ArchiveService + 48152) [0x102843c18]
+                                            34  ??? (ArchiveService + 40068) [0x102841c84]
+                                              33  ??? (ArchiveService + 49184) [0x102844020]
+                                                33  ??? (ArchiveService + 42824) [0x102842748]
+                                                  32  ??? (ArchiveService + 41316) [0x102842164]
+                                                    32  ??? (libarchive.2.dylib + 443240) [0x1ed3e7368]
+                                                      32  ??? (libz.1.dylib + 7096) [0x2250ebbb8]
+                                                        6   ??? (libz.1.dylib + 22632) [0x2250ef868]
+                                                        4   ??? (libz.1.dylib + 23048) [0x2250efa08]
+                                                        4   ??? (libz.1.dylib + 22696) [0x2250ef8a8]
+                                                        4   ??? (libz.1.dylib + 23344) [0x2250efb30]
+                                                          3   ??? (libz.1.dylib + 18268) [0x2250ee75c]
+                                                            2   ??? (libz.1.dylib + 24280) [0x2250efed8]
+                                                            1   ??? (libz.1.dylib + 24328) [0x2250eff08]
+                                                          1   ??? (libz.1.dylib + 20032) [0x2250eee40]
+                                                        2   ??? (libz.1.dylib + 23360) [0x2250efb40]
+                                                        2   ??? (libz.1.dylib + 22500) [0x2250ef7e4]
+                                                        2   ??? (libz.1.dylib + 15312) [0x2250edbd0]
+                                                        2   ??? (libz.1.dylib + 15684) [0x2250edd44]
+                                                          1   <Effective Thread QoS Default>
+                                                        1   ??? (libz.1.dylib + 23384) [0x2250efb58]
+                                                        1   ??? (libz.1.dylib + 23152) [0x2250efa70]
+                                                        1   ??? (libz.1.dylib + 23056) [0x2250efa10]
+                                                        1   ??? (libz.1.dylib + 22604) [0x2250ef84c]
+                                                        1   ??? (libz.1.dylib + 22520) [0x2250ef7f8]
+                                                          1   ??? (libz.1.dylib + 20904) [0x2250ef1a8]
+                                                        1   ??? (libz.1.dylib + 15328) [0x2250edbe0]
+                                                  1   ??? (ArchiveService + 41268) [0x102842134]
+                                                    1   ??? (ArchiveService + 32928) [0x1028400a0]
+                                                      1   ??? (libobjc.A.dylib + 28080) [0x19c0c6db0]
+                                                        1   ??? (libobjc.A.dylib + 37736) [0x19c0c9368]
+                                              1   ??? (ArchiveService + 49240) [0x102844058]
+                                                1   ??? (ArchiveService + 43820) [0x102842b2c]
+                                                  1   ??? (ArchiveService + 39040) [0x102841880]
+                                                    1   ??? (libcopyfile.dylib + 6616) [0x1f06f09d8]
+                                                      1   ??? (libsystem_kernel.dylib + 10652) [0x1e013099c]
+    1   ??? (libsystem_pthread.dylib + 3576) [0x1f07d0df8]
+      1   ??? (libdispatch.dylib + 93712) [0x1aa4f7e10]
+        1   ??? (libdispatch.dylib + 49432) [0x1aa4ed118]
+          1   <Effective Thread QoS Default>
+  1   ??? (libsystem_pthread.dylib + 2960) [0x1f07d0b90]
+    1   <Kernel mode>
+
+  Binary Images:
+           0x102838000 -                ???  com.apple.desktopservices.ArchiveService 13.0 (1545.1) <ECA2EF17-DCCC-38B7-BCA2-B3035DBED0F5>  /System/Library/PrivateFrameworks/DesktopServicesPriv.framework/XPCServices/ArchiveService.xpc/ArchiveService
+           0x19c0c0000 -        0x19c103e1f  libobjc.A.dylib                                        <C1140B65-65C7-3A26-BD12-7BC730320EA0>  /usr/lib/libobjc.A.dylib
+           0x19d2aa000 -        0x19dbf3fff  Foundation                                             <E5F615C7-CC5E-3656-8600-41C767812A35>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1aa4e1000 -        0x1aa527fff  libdispatch.dylib                                      <DED4D0A5-1420-32AE-83A6-C31D938A1C9A>  /usr/lib/system/libdispatch.dylib
+           0x1e012e000 -        0x1e0165feb  libsystem_kernel.dylib                                 <C76E6BED-4635-30C6-8F19-FB829BBE1AE1>  /usr/lib/system/libsystem_kernel.dylib
+           0x1ed37b000 -        0x1ed401ff3  libarchive.2.dylib                                     <9C59CC18-9F4E-35B8-BD26-57266429AF74>  /usr/lib/libarchive.2.dylib
+           0x1f06ef000 -        0x1f06f7ffb  libcopyfile.dylib                                      <74EA5BB9-3355-31DD-8129-B49BAFD0F6D5>  /usr/lib/system/libcopyfile.dylib
+           0x1f07d0000 -        0x1f07dbfff  libsystem_pthread.dylib                                <45AC734E-6649-3EE2-A096-3FD66441AB78>  /usr/lib/system/libsystem_pthread.dylib
+           0x2250ea000 -        0x2250fbff7  libz.1.dylib                                           <D68F282E-5888-35D6-8F5B-A0CB02C5FCCB>  /usr/lib/libz.1.dylib
+
+
+Powerstats for:   LocalStorageFileProvider
+UUID:             3D8286CC-DE5E-3284-A9A2-8089096D76A1
+Path:             /System/Library/Frameworks/FileProvider.framework/PlugIns/LocalStorageFileProvider.appex/LocalStorageFileProvider
+Identifier:       com.apple.FileProvider.LocalStorage
+Version:          1.0 (1)
+Resource Coalition ID: 538
+Architecture:     arm64
+Start time:       2023-03-11 10:59:44.005 -0600
+End time:         2023-03-11 10:59:53.286 -0600
+Num samples:      7 (11%)
+Primary state:    7 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Utility, Requested Thread QoS Utility, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 7 samples Active
+Power Source:     7 samples on Battery, 0 samples on AC
+  7  ??? (libsystem_pthread.dylib + 2968) [0x1f07d0b98]
+    7  ??? (libsystem_pthread.dylib + 3576) [0x1f07d0df8]
+      7  ??? (libdispatch.dylib + 93712) [0x1aa4f7e10]
+        7  ??? (libdispatch.dylib + 49600) [0x1aa4ed1c0]
+          7  ??? (libdispatch.dylib + 46360) [0x1aa4ec518]
+            7  ??? (libdispatch.dylib + 109144) [0x1aa4fba58]
+              7  ??? (libdispatch.dylib + 29720) [0x1aa4e8418]
+                7  ??? (libdispatch.dylib + 16264) [0x1aa4e4f88]
+                  7  ??? (CoreServices + 180396) [0x19de280ac]
+                    7  ??? (CoreServices + 149552) [0x19de20830]
+                      7  ??? (CoreServices + 129980) [0x19de1bbbc]
+                        7  ??? (CoreServices + 133708) [0x19de1ca4c]
+                          7  ??? (LocalStorageFileProvider + 166836) [0x102f1cbb4]
+                            7  ??? (LocalStorageFileProvider + 167900) [0x102f1cfdc]
+                              7  ??? (LocalStorageFileProvider + 169124) [0x102f1d4a4]
+                                6  ??? (LocalStorageFileProvider + 179520) [0x102f1fd40]
+                                  6  ??? (LocalStorageFileProvider + 152740) [0x102f194a4]
+                                    6  ??? (LocalStorageFileProvider + 3564364) [0x10325a34c]
+                                      6  ??? (LocalStorageFileProvider + 2197600) [0x10310c860]
+                                        6  ??? (LocalStorageFileProvider + 7207232) [0x1035d3940]
+                                          6  ??? (FileProvider + 778112) [0x1bd692f80]
+                                            6  ??? (LocalStorageFileProvider + 70348) [0x102f052cc]
+                                              6  ??? (LocalStorageFileProvider + 1258944) [0x1030275c0]
+                                                6  ??? (LocalStorageFileProvider + 3591164) [0x103260bfc]
+                                                  6  ??? (LocalStorageFileProvider + 3593712) [0x1032615f0]
+                                                    6  ??? (LocalStorageFileProvider + 3563672) [0x10325a098]
+                                                      6  ??? (LocalStorageFileProvider + 7988360) [0x103692488]
+                                                        6  ??? (LocalStorageFileProvider + 7186256) [0x1035ce750]
+                                                          6  ??? (LocalStorageFileProvider + 7187772) [0x1035ced3c]
+                                                            6  ??? (LocalStorageFileProvider + 7216480) [0x1035d5d60]
+                                                              6  ??? (FileProvider + 774560) [0x1bd6921a0]
+                                                                6  ??? (FileProvider + 397740) [0x1bd6361ac]
+                                                                  6  ??? (FileProvider + 336292) [0x1bd6271a4]
+                                                                    6  ??? (FileProvider + 398048) [0x1bd6362e0]
+                                                                      6  ??? (LocalStorageFileProvider + 407132) [0x102f5765c]
+                                                                        6  ??? (LocalStorageFileProvider + 7229616) [0x1035d90b0]
+                                                                          6  ??? (LocalStorageFileProvider + 7235572) [0x1035da7f4]
+                                                                            6  ??? (LocalStorageFileProvider + 5499596) [0x103432acc]
+                                                                              6  ??? (LocalStorageFileProvider + 3595408) [0x103261c90]
+                                                                                6  ??? (LocalStorageFileProvider + 3568076) [0x10325b1cc]
+                                                                                  4  ??? (LocalStorageFileProvider + 3573124) [0x10325c584]
+                                                                                    4  ??? (LocalStorageFileProvider + 7201560) [0x1035d2318]
+                                                                                      4  ??? (FileProvider + 124632) [0x1bd5f36d8]
+                                                                                        3  ??? (Foundation + 758216) [0x19d3631c8]
+                                                                                          3  ??? (CoreFoundation + 235036) [0x1a2efd61c]
+                                                                                            3  ??? (CoreFoundation + 613680) [0x1a2f59d30]
+                                                                                              3  ??? (CoreServicesInternal + 5444) [0x19d278544]
+                                                                                                3  ??? (CoreServicesInternal + 29488) [0x19d27e330]
+                                                                                                  3  ??? (libsystem_kernel.dylib + 5200) [0x1e012f450]
+                                                                                        1  ??? (libobjc.A.dylib + 7236) [0x19c0c1c44]
+                                                                                  2  ??? (LocalStorageFileProvider + 3573848) [0x10325c858]
+                                                                                    2  ??? (LocalStorageFileProvider + 6133128) [0x1034cd588]
+                                                                                      2  ??? (LocalStorageFileProvider + 3594660) [0x1032619a4]
+                                                                                        2  ??? (FileProvider + 788648) [0x1bd6958a8]
+                                                                                          2  ??? (FileProvider + 376744) [0x1bd630fa8]
+                                                                                            2  ??? (FileProvider + 787484) [0x1bd69541c]
+                                                                                              2  ??? (libsystem_kernel.dylib + 19792) [0x1e0132d50]
+                                1  ??? (LocalStorageFileProvider + 183704) [0x102f20d98]
+                                  1  ??? (LocalStorageFileProvider + 391196) [0x102f5381c]
+                                    1  ??? (LocalStorageFileProvider + 76892) [0x102f06c5c]
+                                      1  ??? (FileProvider + 788648) [0x1bd6958a8]
+                                        1  ??? (FileProvider + 376744) [0x1bd630fa8]
+                                          1  ??? (FileProvider + 787484) [0x1bd69541c]
+                                            1  ??? (libsystem_kernel.dylib + 19792) [0x1e0132d50]
+
+  Binary Images:
+           0x102ef4000 -                ???  com.apple.FileProvider.LocalStorage 1.0 (1) <3D8286CC-DE5E-3284-A9A2-8089096D76A1>  /System/Library/Frameworks/FileProvider.framework/PlugIns/LocalStorageFileProvider.appex/LocalStorageFileProvider
+           0x19c0c0000 -        0x19c103e1f  libobjc.A.dylib                             <C1140B65-65C7-3A26-BD12-7BC730320EA0>  /usr/lib/libobjc.A.dylib
+           0x19d277000 -        0x19d2a9fff  CoreServicesInternal                        <D4811056-5533-37F4-A4E2-BBC9DFABD627>  /System/Library/PrivateFrameworks/CoreServicesInternal.framework/CoreServicesInternal
+           0x19d2aa000 -        0x19dbf3fff  Foundation                                  <E5F615C7-CC5E-3656-8600-41C767812A35>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x19ddfc000 -        0x19dfeefff  CoreServices                                <12FAF5A9-0D44-3096-91BB-AB43A7296839>  /System/Library/Frameworks/CoreServices.framework/CoreServices
+           0x1a2ec4000 -        0x1a32a9fff  CoreFoundation                              <42CCFC7B-FF32-3D25-8F01-CCB2AD843A8B>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1aa4e1000 -        0x1aa527fff  libdispatch.dylib                           <DED4D0A5-1420-32AE-83A6-C31D938A1C9A>  /usr/lib/system/libdispatch.dylib
+           0x1bd5d5000 -        0x1bd746fff  FileProvider                                <74DA0A7F-EE36-3868-9ABB-8E20823B0F46>  /System/Library/Frameworks/FileProvider.framework/FileProvider
+           0x1e012e000 -        0x1e0165feb  libsystem_kernel.dylib                      <C76E6BED-4635-30C6-8F19-FB829BBE1AE1>  /usr/lib/system/libsystem_kernel.dylib
+           0x1f07d0000 -        0x1f07dbfff  libsystem_pthread.dylib                     <45AC734E-6649-3EE2-A096-3FD66441AB78>  /usr/lib/system/libsystem_pthread.dylib

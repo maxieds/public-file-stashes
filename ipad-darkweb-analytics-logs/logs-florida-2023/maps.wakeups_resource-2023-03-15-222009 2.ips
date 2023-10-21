@@ -1,0 +1,120 @@
+{"app_name":"maps","timestamp":"2023-03-15 22:20:09.00 -0500","app_version":"6.56.0","slice_uuid":"47C8638A-4C47-320B-B4C8-E363617937B9","adam_id":585027354,"build_version":"6.56.2","bundleID":"com.google.Maps","duration_ms":"7617","share_with_app_devs":0,"is_first_party":0,"bug_type":"142","os_version":"iPhone OS 16.3.1 (20D67)","incident_id":"8E369F19-1FC4-41D2-8E52-2EA2E19AE5CB","name":"maps","roots_installed":0}
+Date/Time:        2023-03-15 22:20:00.506 -0500
+End time:         2023-03-15 22:20:08.124 -0500
+OS Version:       iPhone OS 16.3.1 (Build 20D67)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: 8E369F19-1FC4-41D2-8E52-2EA2E19AE5CB
+
+Data Source:      Microstackshots
+Shared Cache:     202665E3-D47C-3270-A725-558C7C6EA550 slid base address 0x1c3788000, slide 0x43788000
+
+Command:          maps
+Path:             /private/var/containers/Bundle/Application/CC9E944C-B5C4-4978-97D2-7CD87C2E434E/maps.app/maps
+Identifier:       com.google.Maps
+Version:          6.56.0 (6.56.2)
+Adam ID:          585027354
+Is First Party:   No
+Beta Identifier:  FE9AA988-4611-4337-B365-8B12C2269170
+Resource Coalition ID: 708
+Architecture:     arm64
+Parent:           UNKNOWN [1]
+PID:              1414
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 8 seconds (5908 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 8s
+Duration:         7.62s
+Duration Sampled: 3.36s
+Steps:            2
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 2, User -> 3, ThermalPressure -> 0, Combined -> 2
+Free disk space:  16.32 GB/59.59 GB, low space threshold 150 MB
+Vnodes Available: 44.68% (4468/10000)
+
+Preferred User Language: en-US, el-US
+Country Code:     US
+Keyboards:        en_US QWERTY
+OS Cryptex File Extents: 29
+
+Heaviest stack for the target process:
+  1  ??? (libsystem_pthread.dylib + 2968) [0x217f48b98]
+  1  ??? (libsystem_pthread.dylib + 3576) [0x217f48df8]
+  1  ??? (libdispatch.dylib + 93712) [0x1d1c6fe10]
+  1  ??? (libdispatch.dylib + 49600) [0x1d1c651c0]
+  1  ??? (libdispatch.dylib + 46656) [0x1d1c64640]
+  1  ??? (libdispatch.dylib + 16264) [0x1d1c5cf88]
+  1  ??? (libdispatch.dylib + 9312) [0x1d1c5b460]
+  1  ??? (maps + 521700) [0x1007035e4]
+  1  ??? (maps + 523116) [0x100703b6c]
+  1  ??? (maps + 606416) [0x1007180d0]
+  1  ??? (maps + 499244) [0x1006fde2c]
+  1  ??? (CoreFoundation + 512240) [0x1ca6b90f0]
+  1  ??? (CoreFoundation + 1030676) [0x1ca737a14]
+  1  ??? (libsystem_kernel.dylib + 10108) [0x2078a877c]
+
+
+Powerstats for:   maps (Google Maps) [1414]
+UUID:             47C8638A-4C47-320B-B4C8-E363617937B9
+Path:             /private/var/containers/Bundle/Application/CC9E944C-B5C4-4978-97D2-7CD87C2E434E/maps.app/maps
+Identifier:       com.google.Maps
+Version:          6.56.0 (6.56.2)
+Adam ID:          585027354
+Is First Party:   No
+Beta Identifier:  FE9AA988-4611-4337-B365-8B12C2269170
+Resource Coalition ID: 708
+Architecture:     arm64
+Parent:           UNKNOWN [1]
+UID:              501
+Footprint:        189.16 MB -> 236.92 MB (+47.77 MB)
+Pageins:          349 pages
+Start time:       2023-03-15 22:20:03.766 -0500
+End time:         2023-03-15 22:20:07.126 -0500
+Num samples:      2 (100%)
+Primary state:    1 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 2 samples Active
+Power Source:     2 samples on Battery, 0 samples on AC
+  1  ??? (libsystem_pthread.dylib + 2968) [0x217f48b98]
+    1  ??? (libsystem_pthread.dylib + 3576) [0x217f48df8]
+      1  ??? (libdispatch.dylib + 93712) [0x1d1c6fe10]
+        1  ??? (libdispatch.dylib + 49600) [0x1d1c651c0]
+          1  ??? (libdispatch.dylib + 46656) [0x1d1c64640]
+            1  ??? (libdispatch.dylib + 16264) [0x1d1c5cf88]
+              1  ??? (libdispatch.dylib + 9312) [0x1d1c5b460]
+                1  ??? (maps + 521700) [0x1007035e4]
+                  1  ??? (maps + 523116) [0x100703b6c]
+                    1  ??? (maps + 606416) [0x1007180d0]
+                      1  ??? (maps + 499244) [0x1006fde2c]
+                        1  ??? (CoreFoundation + 512240) [0x1ca6b90f0]
+                          1  ??? (CoreFoundation + 1030676) [0x1ca737a14]
+                            1  ??? (libsystem_kernel.dylib + 10108) [0x2078a877c]
+                              1  <Effective Thread QoS Utility, Requested Thread QoS Utility>
+  1  ??? (dyld + 88416) [0x1e8fa8960]
+    1  ??? (maps + 118556) [0x1006a0f1c]
+      1  ??? (UIKitCore + 3805900) [0x1ccbb22cc]
+        1  ??? (UIKitCore + 3806824) [0x1ccbb2668]
+          1  ??? (GraphicsServices + 4968) [0x204004368]
+            1  ??? (CoreFoundation + 528048) [0x1ca6bceb0]
+              1  ??? (CoreFoundation + 507648) [0x1ca6b7f00]
+                1  ??? (CoreFoundation + 107076) [0x1ca656244]
+                  1  ??? (libobjc.A.dylib + 209644) [0x1c386b2ec]
+
+  Binary Images:
+           0x100684000 -                ???  com.google.Maps 6.56.0 (6.56.2) <47C8638A-4C47-320B-B4C8-E363617937B9>  /private/var/containers/Bundle/Application/CC9E944C-B5C4-4978-97D2-7CD87C2E434E/maps.app/maps
+           0x1c3838000 -        0x1c387be1f  libobjc.A.dylib                 <C1140B65-65C7-3A26-BD12-7BC730320EA0>  /usr/lib/libobjc.A.dylib
+           0x1ca63c000 -        0x1caa21fff  CoreFoundation                  <42CCFC7B-FF32-3D25-8F01-CCB2AD843A8B>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1cc811000 -        0x1ce004fff  UIKitCore                       <CF21AD9C-EFBF-3961-A7C0-54BD30CEFEA9>  /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+           0x1d1c59000 -        0x1d1c9ffff  libdispatch.dylib               <DED4D0A5-1420-32AE-83A6-C31D938A1C9A>  /usr/lib/system/libdispatch.dylib
+           0x1e8f93000 -        0x1e9016093  dyld                            <4B042F28-0D14-30EC-A1DE-3DBB10866AD7>  /usr/lib/dyld
+           0x204003000 -        0x20400bfff  GraphicsServices                <85419099-269B-336D-86B4-0D52D0FF6923>  /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+           0x2078a6000 -        0x2078ddfeb  libsystem_kernel.dylib          <C76E6BED-4635-30C6-8F19-FB829BBE1AE1>  /usr/lib/system/libsystem_kernel.dylib
+           0x217f48000 -        0x217f53fff  libsystem_pthread.dylib         <45AC734E-6649-3EE2-A096-3FD66441AB78>  /usr/lib/system/libsystem_pthread.dylib

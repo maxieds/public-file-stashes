@@ -1,0 +1,98 @@
+{"app_name":"Working Copy","timestamp":"2023-03-11 00:03:55.00 -0600","app_version":"5.5.6","slice_uuid":"DA9556DC-9917-39BC-8C5D-5504093F1BD0","adam_id":896694807,"build_version":"8448","bundleID":"com.appliedphasor.working-copy","duration_ms":"4219129","share_with_app_devs":0,"is_first_party":0,"bug_type":"145","os_version":"iPhone OS 16.3.1 (20D67)","incident_id":"50030FE7-D394-4FBF-B8A1-56B04828F17D","name":"Working Copy","roots_installed":0}
+Date/Time:        2023-03-10 22:53:35.422 -0600
+End time:         2023-03-11 00:03:54.551 -0600
+OS Version:       iPhone OS 16.3.1 (Build 20D67)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: 50030FE7-D394-4FBF-B8A1-56B04828F17D
+
+Data Source:      Microstackshots
+Shared Cache:     202665E3-D47C-3270-A725-558C7C6EA550 slid base address 0x1c2420000, slide 0x42420000
+
+Command:          Working Copy
+Path:             /private/var/containers/Bundle/Application/3E8B97D4-E6D5-4BEF-8CBC-1B1E6012C63E/Working Copy.app/Working Copy
+Identifier:       com.appliedphasor.working-copy
+Version:          5.5.6 (8448)
+Adam ID:          896694807
+Is First Party:   No
+Beta Identifier:  8401EA96-5773-4622-8C11-D79A3B594E84
+Resource Coalition ID: 480
+Architecture:     arm64
+PID:              1104
+
+Event:            disk writes
+Action taken:     none
+Writes:           4294.98 MB of file backed memory dirtied over 4219 seconds (1017.98 KB per second average), exceeding limit of 49.71 KB per second over 86400 seconds
+Writes limit:     4294.97 MB
+Limit duration:   86400s
+Writes caused:    4294.98 MB
+Writes duration:  4219s
+Duration:         4219.13s
+Duration Sampled: 12.60s
+Steps:            29 (10.49 MB/step)
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+OS Cryptex File Extents: 29
+
+Heaviest stack for the target process:
+  29  ??? (libsystem_pthread.dylib + 2968) [0x216be0b98]
+  29  ??? (libsystem_pthread.dylib + 3576) [0x216be0df8]
+  29  ??? (libdispatch.dylib + 93712) [0x1d0907e10]
+  29  ??? (libdispatch.dylib + 49548) [0x1d08fd18c]
+  29  ??? (libdispatch.dylib + 46656) [0x1d08fc640]
+  29  ??? (libdispatch.dylib + 16264) [0x1d08f4f88]
+  29  ??? (libdispatch.dylib + 9312) [0x1d08f3460]
+  29  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 2125016) [0x100f02cd8]
+  29  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 3829356) [0x1010a2e6c]
+  29  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 3828728) [0x1010a2bf8]
+  29  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9672092) [0x10163559c]
+  29  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9472048) [0x101604830]
+  29  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9625668) [0x10162a044]
+  29  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9624464) [0x101629b90]
+  29  ??? (libsystem_kernel.dylib + 10108) [0x20654077c]
+
+
+Powerstats for:   Working Copy [1104]
+UUID:             DA9556DC-9917-39BC-8C5D-5504093F1BD0
+Path:             /private/var/containers/Bundle/Application/3E8B97D4-E6D5-4BEF-8CBC-1B1E6012C63E/Working Copy.app/Working Copy
+Identifier:       com.appliedphasor.working-copy
+Version:          5.5.6 (8448)
+Adam ID:          896694807
+Is First Party:   No
+Beta Identifier:  8401EA96-5773-4622-8C11-D79A3B594E84
+Resource Coalition ID: 480
+Architecture:     arm64
+Footprint:        84.08 MB -> 100.41 MB (+16.33 MB)
+Pageins:          1218 pages
+Start time:       2023-03-11 00:03:41.897 -0600
+End time:         2023-03-11 00:03:54.495 -0600
+Num samples:      29 (100%)
+Primary state:    29 samples Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 29 samples Active
+Power Source:     29 samples on Battery, 0 samples on AC
+  29  ??? (libsystem_pthread.dylib + 2968) [0x216be0b98]
+    29  ??? (libsystem_pthread.dylib + 3576) [0x216be0df8]
+      29  ??? (libdispatch.dylib + 93712) [0x1d0907e10]
+        29  ??? (libdispatch.dylib + 49548) [0x1d08fd18c]
+          29  ??? (libdispatch.dylib + 46656) [0x1d08fc640]
+            29  ??? (libdispatch.dylib + 16264) [0x1d08f4f88]
+              29  ??? (libdispatch.dylib + 9312) [0x1d08f3460]
+                29  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 2125016) [0x100f02cd8]
+                  29  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 3829356) [0x1010a2e6c]
+                    29  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 3828728) [0x1010a2bf8]
+                      29  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9672092) [0x10163559c]
+                        29  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9472048) [0x101604830]
+                          29  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9625668) [0x10162a044]
+                            29  ??? (<8AFDF99F-2F87-3A79-B73E-20563F1346BE> + 9624464) [0x101629b90]
+                              29  ??? (libsystem_kernel.dylib + 10108) [0x20654077c]
+
+  Binary Images:
+           0x1009e4000 -                ???  com.appliedphasor.working-copy 5.5.6 (8448) <DA9556DC-9917-39BC-8C5D-5504093F1BD0>  /private/var/containers/Bundle/Application/3E8B97D4-E6D5-4BEF-8CBC-1B1E6012C63E/Working Copy.app/Working Copy
+           0x100cfc000 -                ???  ???                                         <8AFDF99F-2F87-3A79-B73E-20563F1346BE>
+           0x1d08f1000 -        0x1d0937fff  libdispatch.dylib                           <DED4D0A5-1420-32AE-83A6-C31D938A1C9A>  /usr/lib/system/libdispatch.dylib
+           0x20653e000 -        0x206575feb  libsystem_kernel.dylib                      <C76E6BED-4635-30C6-8F19-FB829BBE1AE1>  /usr/lib/system/libsystem_kernel.dylib
+           0x216be0000 -        0x216bebfff  libsystem_pthread.dylib                     <45AC734E-6649-3EE2-A096-3FD66441AB78>  /usr/lib/system/libsystem_pthread.dylib
