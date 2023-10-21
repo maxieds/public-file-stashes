@@ -1,0 +1,747 @@
+{"duration_ms":"5362482","share_with_app_devs":0,"roots_installed":0,"bug_type":"145","os_version":"iPhone OS 16.3.1 (20D67)","slice_uuid":"2FA37712-E253-3391-82E5-DC6569CC8AAD","is_first_party":0,"incident_id":"BAD5987C-58F2-419A-B2F9-A640080EDF5E","timestamp":"2023-03-03 15:01:19.00 -0600","app_name":"mediaserverd","name":"mediaserverd"}
+Date/Time:        2023-03-03 13:31:54.275 -0600
+End time:         2023-03-03 15:01:16.756 -0600
+OS Version:       iPhone OS 16.3.1 (Build 20D67)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: BAD5987C-58F2-419A-B2F9-A640080EDF5E
+
+Data Source:      Microstackshots
+Shared Cache:     202665E3-D47C-3270-A725-558C7C6EA550 slid base address 0x187e48000, slide 0x7e48000
+
+Command:          mediaserverd
+Path:             /usr/sbin/mediaserverd
+Resource Coalition ID: 15
+Architecture:     arm64e
+Parent:           launchd [1]
+PID:              33
+
+Event:            disk writes
+Action taken:     none
+Writes:           1073.75 MB of file backed memory dirtied over 5362 seconds (200.23 KB per second average), exceeding limit of 12.43 KB per second over 86400 seconds
+Writes limit:     1073.74 MB
+Limit duration:   86400s
+Writes caused:    1073.75 MB
+Writes duration:  5362s
+Duration:         5362.48s
+Duration Sampled: 5287.32s
+Steps:            295 (10.49 MB/step)
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 3, User -> 3, ThermalPressure -> 0, Combined -> 3
+Free disk space:  31.00 GB/59.59 GB, low space threshold 150 MB
+Vnodes Available: 31.08% (3108/10000)
+
+Preferred User Language: en-US, el-US
+Country Code:     US
+Keyboards:        en_US QWERTY, el_GR Greek
+OS Cryptex File Extents: 29
+
+Heaviest stack for the target process:
+  51  ??? (libsystem_pthread.dylib + 2968) [0x1dc608b98]
+  51  ??? (libsystem_pthread.dylib + 3576) [0x1dc608df8]
+  51  ??? (libdispatch.dylib + 93712) [0x19632fe10]
+  51  ??? (libdispatch.dylib + 49548) [0x19632518c]
+  51  ??? (libdispatch.dylib + 46656) [0x196324640]
+  51  ??? (libdispatch.dylib + 16264) [0x19631cf88]
+  51  ??? (CoreMedia + 138684) [0x199f32dbc]
+  51  ??? (CoreMedia + 137880) [0x199f32a98]
+  51  ??? (CoreMedia + 138012) [0x199f32b1c]
+  30  ??? (MediaToolbox + 2764660) [0x19df66f74]
+  30  ??? (MediaToolbox + 2818704) [0x19df74290]
+  30  ??? (CoreMedia + 239644) [0x199f4b81c]
+  30  ??? (CoreMedia + 43368) [0x199f1b968]
+  30  ??? (CoreMedia + 365092) [0x199f6a224]
+  30  ??? (libsystem_kernel.dylib + 11784) [0x1cbf68e08]
+
+
+Powerstats for:   mediaserverd [33]
+UUID:             2FA37712-E253-3391-82E5-DC6569CC8AAD
+Path:             /usr/sbin/mediaserverd
+Resource Coalition ID: 15
+Architecture:     arm64e
+Parent:           launchd [1]
+UID:              501
+Sudden Term:      Tracked
+Footprint:        121.39 MB -> 128.16 MB (+6928 KB) (max 148.02 MB )
+Pageins:          4020 pages
+Start time:       2023-03-03 13:35:06.772 -0600
+End time:         2023-03-03 15:01:14.098 -0600
+Num samples:      99 (34%)
+Primary state:    99 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Utility, Requested Thread QoS Utility, Override Thread QoS Unspecified
+User Activity:    52 samples Idle, 47 samples Active
+Power Source:     2 samples on Battery, 97 samples on AC
+  51  ??? (libsystem_pthread.dylib + 2968) [0x1dc608b98]
+    51  ??? (libsystem_pthread.dylib + 3576) [0x1dc608df8]
+      51  ??? (libdispatch.dylib + 93712) [0x19632fe10]
+        51  ??? (libdispatch.dylib + 49548) [0x19632518c]
+          51  ??? (libdispatch.dylib + 46656) [0x196324640]
+            51  ??? (libdispatch.dylib + 16264) [0x19631cf88]
+              51  ??? (CoreMedia + 138684) [0x199f32dbc]
+                51  ??? (CoreMedia + 137880) [0x199f32a98]
+                  51  ??? (CoreMedia + 138012) [0x199f32b1c]
+                    30  ??? (MediaToolbox + 2764660) [0x19df66f74]
+                      30  ??? (MediaToolbox + 2818704) [0x19df74290]
+                        30  ??? (CoreMedia + 239644) [0x199f4b81c]
+                          30  ??? (CoreMedia + 43368) [0x199f1b968]
+                            30  ??? (CoreMedia + 365092) [0x199f6a224]
+                              30  ??? (libsystem_kernel.dylib + 11784) [0x1cbf68e08]
+                    21  ??? (MediaToolbox + 2788856) [0x19df6cdf8]
+                      21  ??? (MediaToolbox + 2818704) [0x19df74290]
+                        21  ??? (CoreMedia + 239644) [0x199f4b81c]
+                          21  ??? (CoreMedia + 43368) [0x199f1b968]
+                            21  ??? (CoreMedia + 365092) [0x199f6a224]
+                              21  ??? (libsystem_kernel.dylib + 11784) [0x1cbf68e08]
+  48  ??? (libsystem_pthread.dylib + 2980) [0x1dc608ba4]
+    48  ??? (libsystem_pthread.dylib + 5836) [0x1dc6096cc]
+      48  ??? (CoreMedia + 409392) [0x199f74f30]
+        48  ??? (MediaToolbox + 380880) [0x19dd20fd0]
+          46  ??? (MediaToolbox + 384172) [0x19dd21cac]
+            46  ??? (MediaToolbox + 3146796) [0x19dfc442c]
+              46  ??? (MediaToolbox + 385308) [0x19dd2211c]
+                46  ??? (MediaToolbox + 552960) [0x19dd4b000]
+                  46  ??? (MediaToolbox + 5590872) [0x19e218f58]
+                    46  ??? (MediaToolbox + 5593492) [0x19e219994]
+                      43  ??? (CoreMedia + 239644) [0x199f4b81c]
+                        43  ??? (CoreMedia + 43368) [0x199f1b968]
+                          43  ??? (CoreMedia + 365092) [0x199f6a224]
+                            43  ??? (libsystem_kernel.dylib + 11784) [0x1cbf68e08]
+                      3   ??? (MediaToolbox + 5595780) [0x19e21a284]
+                        3   ??? (CoreMedia + 239644) [0x199f4b81c]
+                          3   ??? (CoreMedia + 43368) [0x199f1b968]
+                            3   ??? (CoreMedia + 365092) [0x199f6a224]
+                              3   ??? (libsystem_kernel.dylib + 11784) [0x1cbf68e08]
+          2   ??? (MediaToolbox + 382804) [0x19dd21754]
+            2   ??? (MediaToolbox + 3148924) [0x19dfc4c7c]
+              2   ??? (MediaToolbox + 385308) [0x19dd2211c]
+                2   ??? (MediaToolbox + 552960) [0x19dd4b000]
+                  2   ??? (MediaToolbox + 5590872) [0x19e218f58]
+                    2   ??? (MediaToolbox + 5593492) [0x19e219994]
+                      2   ??? (CoreMedia + 239644) [0x199f4b81c]
+                        2   ??? (CoreMedia + 43368) [0x199f1b968]
+                          2   ??? (CoreMedia + 365092) [0x199f6a224]
+                            2   ??? (libsystem_kernel.dylib + 11784) [0x1cbf68e08]
+
+  Binary Images:
+           0x102a34000 -                ???  mediaserverd            <2FA37712-E253-3391-82E5-DC6569CC8AAD>  /usr/sbin/mediaserverd
+           0x196319000 -        0x19635ffff  libdispatch.dylib       <DED4D0A5-1420-32AE-83A6-C31D938A1C9A>  /usr/lib/system/libdispatch.dylib
+           0x199f11000 -        0x19a046fff  CoreMedia               <C1E625B3-4744-3B5C-8780-A6E3F98DF647>  /System/Library/Frameworks/CoreMedia.framework/CoreMedia
+           0x19dcc4000 -        0x19e560fff  MediaToolbox            <E3851714-8B18-399D-8F8D-0202FC191E9B>  /System/Library/Frameworks/MediaToolbox.framework/MediaToolbox
+           0x1cbf66000 -        0x1cbf9dfeb  libsystem_kernel.dylib  <C76E6BED-4635-30C6-8F19-FB829BBE1AE1>  /usr/lib/system/libsystem_kernel.dylib
+           0x1dc608000 -        0x1dc613fff  libsystem_pthread.dylib <45AC734E-6649-3EE2-A096-3FD66441AB78>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   cloudphotod
+UUID:             9131F565-A27C-3852-A4B6-4EE44E5C60DC
+Path:             /System/Library/PrivateFrameworks/CloudPhotoLibrary.framework/Support/cloudphotod
+Resource Coalition ID: 498
+Architecture:     arm64e
+Start time:       2023-03-03 13:33:39.942 -0600
+End time:         2023-03-03 14:52:58.155 -0600
+Num samples:      45 (15%)
+Primary state:    45 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Background, Requested Thread QoS Utility, Override Thread QoS Unspecified
+User Activity:    16 samples Idle, 29 samples Active
+Power Source:     9 samples on Battery, 36 samples on AC
+  45  ??? (libsystem_pthread.dylib + 2968) [0x1dc608b98]
+    45  ??? (libsystem_pthread.dylib + 3576) [0x1dc608df8]
+      45  ??? (libdispatch.dylib + 93712) [0x19632fe10]
+        38  ??? (libdispatch.dylib + 49600) [0x1963251c0]
+          38  ??? (libdispatch.dylib + 46360) [0x196324518]
+            38  ??? (libdispatch.dylib + 139096) [0x19633af58]
+              38  ??? (libdispatch.dylib + 16392) [0x19631d008]
+                38  ??? (libxpc.dylib + 68496) [0x1dc65cb90]
+                  38  ??? (libxpc.dylib + 122184) [0x1dc669d48]
+                    38  ??? (Foundation + 6602948) [0x18972e0c4]
+                      38  ??? (Foundation + 470016) [0x189154c00]
+                        38  ??? (Foundation + 661624) [0x189183878]
+                          38  ??? (CoreFoundation + 133916) [0x18ed1cb1c]
+                            38  ??? (CoreFoundation + 476852) [0x18ed706b4]
+                              38  ??? (MediaConversionService + 31328) [0x1d31fda60]
+                                38  ??? (MediaConversionService + 33704) [0x1d31fe3a8]
+                                  38  ??? (CloudPhotoServices + 29844) [0x1d2f3c494]
+                                    37  ??? (Foundation + 446288) [0x18914ef50]
+                                      37  ??? (Foundation + 321536) [0x189130800]
+                                        37  ??? (Foundation + 669260) [0x18918564c]
+                                          37  ??? (libsystem_kernel.dylib + 10108) [0x1cbf6877c]
+                                    1   ??? (libsystem_kernel.dylib + 11692) [0x1cbf68dac]
+        7   ??? (libdispatch.dylib + 49548) [0x19632518c]
+          4   ??? (libdispatch.dylib + 46360) [0x196324518]
+            4   ??? (libdispatch.dylib + 49600) [0x1963251c0]
+              4   ??? (libdispatch.dylib + 46656) [0x196324640]
+                4   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                  4   ??? (libdispatch.dylib + 78100) [0x19632c114]
+                    4   ??? (cloudphotod + 262008) [0x104f1ff78]
+                      2   ??? (cloudphotod + 241620) [0x104f1afd4]
+                        2   ??? (CloudPhotoLibrary + 235300) [0x1b51bd724]
+                          2   ??? (CloudPhotoLibrary + 236096) [0x1b51bda40]
+                            2   ??? (CloudPhotoLibrary + 167644) [0x1b51acedc]
+                              2   ??? (CloudPhotoLibrary + 303384) [0x1b51ce118]
+                                2   ??? (libdispatch.dylib + 79220) [0x19632c574]
+                                  2   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                                    2   ??? (CloudPhotoLibrary + 303560) [0x1b51ce1c8]
+                                      2   ??? (CloudPhotoLibrary + 168220) [0x1b51ad11c]
+                                        2   ??? (CoreFoundation + 646032) [0x18ed99b90]
+                                          2   ??? (CoreFoundation + 79160) [0x18ed0f538]
+                                            2   ??? (CloudPhotoLibrary + 168788) [0x1b51ad354]
+                                              2   ??? (CloudPhotoLibrary + 297560) [0x1b51cca58]
+                                                2   ??? (cloudphotod + 435936) [0x104f4a6e0]
+                                                  2   ??? (Foundation + 254052) [0x189120064]
+                                                    2   ??? (Foundation + 247028) [0x18911e4f4]
+                                                      2   ??? (Foundation + 504128) [0x18915d140]
+                                                        2   ??? (Foundation + 504832) [0x18915d400]
+                                                          2   ??? (libremovefile.dylib + 6520) [0x203284978]
+                                                            2   ??? (libremovefile.dylib + 5592) [0x2032845d8]
+                                                              2   ??? (libsystem_kernel.dylib + 19704) [0x1cbf6acf8]
+                      2   ??? (cloudphotod + 241580) [0x104f1afac]
+                        2   ??? (cloudphotod + 222776) [0x104f16638]
+                          2   ??? (libprequelite.dylib + 29684) [0x1d27073f4]
+                            2   ??? (libprequelite.dylib + 27952) [0x1d2706d30]
+                              2   ??? (libprequelite.dylib + 36892) [0x1d270901c]
+                                2   ??? (libprequelite.dylib + 36548) [0x1d2708ec4]
+                                  2   ??? (libsqlite3.dylib + 280208) [0x1b2ddb690]
+                                    2   ??? (libsqlite3.dylib + 314564) [0x1b2de3cc4]
+                                      2   ??? (libsqlite3.dylib + 147656) [0x1b2dbb0c8]
+                                        2   ??? (libsqlite3.dylib + 363912) [0x1b2defd88]
+                                          2   ??? (libsqlite3.dylib + 447784) [0x1b2e04528]
+                                            2   ??? (libsqlite3.dylib + 787952) [0x1b2e575f0]
+                                              2   ??? (libsqlite3.dylib + 449680) [0x1b2e04c90]
+                                                2   ??? (libsystem_kernel.dylib + 10884) [0x1cbf68a84]
+          3   ??? (libdispatch.dylib + 46656) [0x196324640]
+            3   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+              3   ??? (libdispatch.dylib + 78100) [0x19632c114]
+                2   ??? (CloudPhotoLibrary + 677744) [0x1b5229770]
+                  2   ??? (CloudPhotoLibrary + 676944) [0x1b5229450]
+                    2   ??? (CloudPhotoServices + 22932) [0x1d2f3a994]
+                      2   ??? (CloudPhotoServices + 12188) [0x1d2f37f9c]
+                        2   ??? (CloudPhotoLibrary + 679800) [0x1b5229f78]
+                          2   ??? (CloudPhotoLibrary + 683388) [0x1b522ad7c]
+                            2   ??? (Foundation + 334292) [0x1891339d4]
+                              2   ??? (Foundation + 446288) [0x18914ef50]
+                                2   ??? (Foundation + 321536) [0x189130800]
+                                  2   ??? (Foundation + 669260) [0x18918564c]
+                                    2   ??? (libsystem_kernel.dylib + 10108) [0x1cbf6877c]
+                1   ??? (CloudPhotoServices + 20356) [0x1d2f39f84]
+                  1   ??? (CloudPhotoServices + 19992) [0x1d2f39e18]
+                    1   ??? (CloudPhotoLibrary + 680276) [0x1b522a154]
+                      1   ??? (CloudPhotoLibrary + 683388) [0x1b522ad7c]
+                        1   ??? (Foundation + 334292) [0x1891339d4]
+                          1   ??? (Foundation + 446288) [0x18914ef50]
+                            1   ??? (Foundation + 321536) [0x189130800]
+                              1   ??? (Foundation + 669260) [0x18918564c]
+                                1   ??? (libsystem_kernel.dylib + 10108) [0x1cbf6877c]
+
+  Binary Images:
+           0x104ee0000 -                ???  cloudphotod             <9131F565-A27C-3852-A4B6-4EE44E5C60DC>  /System/Library/PrivateFrameworks/CloudPhotoLibrary.framework/Support/cloudphotod
+           0x1890e2000 -        0x189a2bfff  Foundation              <E5F615C7-CC5E-3656-8600-41C767812A35>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x18ecfc000 -        0x18f0e1fff  CoreFoundation          <42CCFC7B-FF32-3D25-8F01-CCB2AD843A8B>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x196319000 -        0x19635ffff  libdispatch.dylib       <DED4D0A5-1420-32AE-83A6-C31D938A1C9A>  /usr/lib/system/libdispatch.dylib
+           0x1b2d97000 -        0x1b2f36ffb  libsqlite3.dylib        <F762DA61-1376-392F-AD47-F705D3BF6099>  /usr/lib/libsqlite3.dylib
+           0x1b5184000 -        0x1b5352fff  CloudPhotoLibrary       <E4E95317-9D1B-33DC-BA15-4C631D7C9CAC>  /System/Library/PrivateFrameworks/CloudPhotoLibrary.framework/CloudPhotoLibrary
+           0x1cbf66000 -        0x1cbf9dfeb  libsystem_kernel.dylib  <C76E6BED-4635-30C6-8F19-FB829BBE1AE1>  /usr/lib/system/libsystem_kernel.dylib
+           0x1d2700000 -        0x1d2714fff  libprequelite.dylib     <7CB19639-565F-30A0-A92C-643C906E5121>  /usr/lib/libprequelite.dylib
+           0x1d2f35000 -        0x1d2f40fff  CloudPhotoServices      <B438BC24-B1FF-3C42-956D-4AA5D6E7DDE4>  /System/Library/PrivateFrameworks/CloudPhotoServices.framework/CloudPhotoServices
+           0x1d31f6000 -        0x1d322afff  MediaConversionService  <E0BFB5D4-E544-3E0F-B17C-5D0BE5D1810D>  /System/Library/PrivateFrameworks/MediaConversionService.framework/MediaConversionService
+           0x1dc608000 -        0x1dc613fff  libsystem_pthread.dylib <45AC734E-6649-3EE2-A096-3FD66441AB78>  /usr/lib/system/libsystem_pthread.dylib
+           0x1dc64c000 -        0x1dc68cfff  libxpc.dylib            <AB6DBB4E-D383-3C91-9C2B-3EE44590C928>  /usr/lib/system/libxpc.dylib
+           0x203283000 -        0x203285fff  libremovefile.dylib     <641F2BA0-ACB5-3CBB-91A7-ADA5AEE08FE3>  /usr/lib/system/libremovefile.dylib
+
+
+Powerstats for:   cloudd
+UUID:             7CB50CF5-3041-3701-B2F4-A169CFD97D7D
+Path:             /System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd
+Resource Coalition ID: 201
+Architecture:     arm64e
+Start time:       2023-03-03 13:33:52.875 -0600
+End time:         2023-03-03 14:53:05.467 -0600
+Num samples:      35 (12%)
+Primary state:    20 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Background, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    21 samples Idle, 14 samples Active
+Power Source:     2 samples on Battery, 33 samples on AC
+  35  ??? (libsystem_pthread.dylib + 2968) [0x1dc608b98]
+    35  ??? (libsystem_pthread.dylib + 3576) [0x1dc608df8]
+      35  ??? (libdispatch.dylib + 93712) [0x19632fe10]
+        35  ??? (libdispatch.dylib + 49600) [0x1963251c0]
+          29  ??? (libdispatch.dylib + 46360) [0x196324518]
+            29  ??? (libdispatch.dylib + 49600) [0x1963251c0]
+              22  ??? (libdispatch.dylib + 46360) [0x196324518]
+                22  ??? (libdispatch.dylib + 109144) [0x196333a58]
+                  22  ??? (libdispatch.dylib + 29720) [0x196320418]
+                    22  ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                      22  ??? (MMCS + 423056) [0x1d2088490]
+                        22  ??? (MMCS + 425496) [0x1d2088e18]
+                          13  ??? (MMCS + 18072) [0x1d2025698]
+                            13  ??? (MMCS + 16004) [0x1d2024e84]
+                              13  ??? (MMCS + 12496) [0x1d20240d0]
+                                13  ??? (CloudKitDaemon + 1484920) [0x1c139f878]
+                                  13  ??? (CloudKitDaemon + 1795828) [0x1c13eb6f4]
+                                    13  ??? (CloudKitDaemon + 1795496) [0x1c13eb5a8]
+                                      13  ??? (CloudKitDaemon + 1519964) [0x1c13a815c]
+                                        13  ??? (CloudKitDaemon + 1719812) [0x1c13d8e04]
+                                          13  ??? (CloudKitDaemon + 1795300) [0x1c13eb4e4]
+                                            13  ??? (CloudKitDaemon + 1721012) [0x1c13d92b4]
+                                              13  ??? (CloudKit + 631268) [0x1969191e4]
+                                                13  ??? (CloudKit + 630992) [0x1969190d0]
+                                                  13  ??? (CloudKit + 646760) [0x19691ce68]
+                                                    13  ??? (CloudKit + 619392) [0x196916380]
+                                                      13  ??? (CloudKit + 618280) [0x196915f28]
+                                                        13  ??? (CloudKit + 619664) [0x196916490]
+                                                          13  ??? (CloudKit + 618660) [0x1969160a4]
+                                                            13  ??? (CloudKit + 618324) [0x196915f54]
+                                                              13  ??? (CloudKit + 618868) [0x196916174]
+                                                                13  ??? (CloudKit + 1682944) [0x196a19e00]
+                                                                  13  ??? (CloudKit + 1682300) [0x196a19b7c]
+                                                                    13  ??? (CloudKit + 1683912) [0x196a1a1c8]
+                                                                      13  ??? (libsqlite3.dylib + 38016) [0x1b2da0480]
+                                                                        12  ??? (libsqlite3.dylib + 280208) [0x1b2ddb690]
+                                                                          12  ??? (libsqlite3.dylib + 314564) [0x1b2de3cc4]
+                                                                            12  ??? (libsqlite3.dylib + 147656) [0x1b2dbb0c8]
+                                                                              12  ??? (libsqlite3.dylib + 363912) [0x1b2defd88]
+                                                                                12  ??? (libsqlite3.dylib + 447784) [0x1b2e04528]
+                                                                                  12  ??? (libsqlite3.dylib + 787952) [0x1b2e575f0]
+                                                                                    12  ??? (libsqlite3.dylib + 449680) [0x1b2e04c90]
+                                                                                      12  ??? (libsystem_kernel.dylib + 10884) [0x1cbf68a84]
+                                                                                        1   <Effective Thread QoS Default>
+                                                                        1   ??? (libsqlite3.dylib + 281976) [0x1b2ddbd78]
+                                                                          1   ??? (libsqlite3.dylib + 450688) [0x1b2e05080]
+                                                                            1   ??? (libsqlite3.dylib + 669712) [0x1b2e3a810]
+                                                                              1   ??? (libsqlite3.dylib + 534748) [0x1b2e198dc]
+                                                                                1   ??? (libsqlite3.dylib + 449680) [0x1b2e04c90]
+                                                                                  1   ??? (libsystem_kernel.dylib + 10884) [0x1cbf68a84]
+                          9   ??? (MMCS + 17852) [0x1d20255bc]
+                            9   ??? (MMCS + 77164) [0x1d2033d6c]
+                              9   ??? (ChunkingLibrary + 103172) [0x1f0d2b304]
+                                9   ??? (ChunkingLibrary + 101856) [0x1f0d2ade0]
+                                  9   ??? (ChunkingLibrary + 101356) [0x1f0d2abec]
+                                    9   ??? (libsqlite3.dylib + 38016) [0x1b2da0480]
+                                      9   ??? (libsqlite3.dylib + 280208) [0x1b2ddb690]
+                                        9   ??? (libsqlite3.dylib + 339420) [0x1b2de9ddc]
+                                          9   ??? (libsqlite3.dylib + 147656) [0x1b2dbb0c8]
+                                            9   ??? (libsqlite3.dylib + 363912) [0x1b2defd88]
+                                              9   ??? (libsqlite3.dylib + 447784) [0x1b2e04528]
+                                                9   ??? (libsqlite3.dylib + 787952) [0x1b2e575f0]
+                                                  9   ??? (libsqlite3.dylib + 449680) [0x1b2e04c90]
+                                                    9   ??? (libsystem_kernel.dylib + 10884) [0x1cbf68a84]
+                                                      1   <Effective Thread QoS Default>
+              7   ??? (libdispatch.dylib + 46656) [0x196324640]
+                7   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                  7   ??? (libdispatch.dylib + 9312) [0x19631b460]
+                    7   ??? (MMCS + 151516) [0x1d2045fdc]
+                      7   ??? (MMCS + 143524) [0x1d20440a4]
+                        7   ??? (MMCS + 58328) [0x1d202f3d8]
+                          7   ??? (MMCS + 240840) [0x1d205bcc8]
+                            7   ??? (MMCS + 55092) [0x1d202e734]
+                              7   ??? (MMCS + 319948) [0x1d206f1cc]
+                                7   ??? (MMCS + 308204) [0x1d206c3ec]
+                                  7   ??? (MMCS + 349768) [0x1d2076648]
+                                    7   ??? (CloudKitDaemon + 1791588) [0x1c13ea664]
+                                      7   ??? (CloudKitDaemon + 1797076) [0x1c13ebbd4]
+                                        7   ??? (CloudKitDaemon + 1795828) [0x1c13eb6f4]
+                                          7   ??? (CloudKitDaemon + 1795496) [0x1c13eb5a8]
+                                            7   ??? (CloudKitDaemon + 1797748) [0x1c13ebe74]
+                                              7   ??? (CloudKitDaemon + 1812768) [0x1c13ef920]
+                                                7   ??? (CloudKitDaemon + 1811112) [0x1c13ef2a8]
+                                                  7   ??? (CloudKitDaemon + 1725564) [0x1c13da47c]
+                                                    7   ??? (CloudKitDaemon + 1795300) [0x1c13eb4e4]
+                                                      7   ??? (CloudKitDaemon + 1726496) [0x1c13da820]
+                                                        7   ??? (CloudKit + 630992) [0x1969190d0]
+                                                          7   ??? (CloudKit + 646760) [0x19691ce68]
+                                                            7   ??? (CloudKit + 619392) [0x196916380]
+                                                              7   ??? (CloudKit + 618280) [0x196915f28]
+                                                                7   ??? (CloudKit + 619664) [0x196916490]
+                                                                  7   ??? (CloudKit + 618660) [0x1969160a4]
+                                                                    7   ??? (CloudKit + 618324) [0x196915f54]
+                                                                      7   ??? (CloudKit + 618868) [0x196916174]
+                                                                        7   ??? (CloudKit + 1682944) [0x196a19e00]
+                                                                          7   ??? (CloudKit + 1682300) [0x196a19b7c]
+                                                                            7   ??? (CloudKit + 1683912) [0x196a1a1c8]
+                                                                              7   ??? (libsqlite3.dylib + 38016) [0x1b2da0480]
+                                                                                7   ??? (libsqlite3.dylib + 280208) [0x1b2ddb690]
+                                                                                  7   ??? (libsqlite3.dylib + 314564) [0x1b2de3cc4]
+                                                                                    7   ??? (libsqlite3.dylib + 147656) [0x1b2dbb0c8]
+                                                                                      7   ??? (libsqlite3.dylib + 363912) [0x1b2defd88]
+                                                                                        7   ??? (libsqlite3.dylib + 447784) [0x1b2e04528]
+                                                                                          7   ??? (libsqlite3.dylib + 787952) [0x1b2e575f0]
+                                                                                            7   ??? (libsqlite3.dylib + 449680) [0x1b2e04c90]
+                                                                                              7   ??? (libsystem_kernel.dylib + 10884) [0x1cbf68a84]
+                                                                                                7   <Requested Thread QoS Utility>
+          6   ??? (libdispatch.dylib + 46656) [0x196324640]
+            6   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+              6   ??? (libdispatch.dylib + 9312) [0x19631b460]
+                5   ??? (CloudKitDaemon + 2461104) [0x1c148ddb0]
+                  5   ??? (CloudKitDaemon + 2460740) [0x1c148dc44]
+                    5   ??? (CloudKit + 633612) [0x196919b0c]
+                      5   ??? (CloudKit + 619392) [0x196916380]
+                        5   ??? (CloudKit + 618280) [0x196915f28]
+                          5   ??? (CloudKit + 619664) [0x196916490]
+                            5   ??? (CloudKit + 1134376) [0x196993f28]
+                              5   ??? (CloudKit + 618324) [0x196915f54]
+                                5   ??? (CloudKit + 1134636) [0x19699402c]
+                                  5   ??? (CloudKit + 618660) [0x1969160a4]
+                                    5   ??? (CloudKit + 618324) [0x196915f54]
+                                      5   ??? (CloudKit + 618868) [0x196916174]
+                                        5   ??? (CloudKit + 1682944) [0x196a19e00]
+                                          5   ??? (CloudKit + 1682300) [0x196a19b7c]
+                                            5   ??? (CloudKit + 1683912) [0x196a1a1c8]
+                                              5   ??? (libsqlite3.dylib + 38016) [0x1b2da0480]
+                                                4   ??? (libsqlite3.dylib + 280208) [0x1b2ddb690]
+                                                  4   ??? (libsqlite3.dylib + 314564) [0x1b2de3cc4]
+                                                    4   ??? (libsqlite3.dylib + 147656) [0x1b2dbb0c8]
+                                                      4   ??? (libsqlite3.dylib + 363912) [0x1b2defd88]
+                                                        4   ??? (libsqlite3.dylib + 447784) [0x1b2e04528]
+                                                          4   ??? (libsqlite3.dylib + 787952) [0x1b2e575f0]
+                                                            4   ??? (libsqlite3.dylib + 449680) [0x1b2e04c90]
+                                                              4   ??? (libsystem_kernel.dylib + 10884) [0x1cbf68a84]
+                                                                3   <Requested Thread QoS Utility>
+                                                                1   <Effective Thread QoS Utility, Requested Thread QoS Utility>
+                                                1   ??? (libsqlite3.dylib + 281976) [0x1b2ddbd78]
+                                                  1   ??? (libsqlite3.dylib + 450688) [0x1b2e05080]
+                                                    1   ??? (libsqlite3.dylib + 669712) [0x1b2e3a810]
+                                                      1   ??? (libsqlite3.dylib + 534748) [0x1b2e198dc]
+                                                        1   ??? (libsqlite3.dylib + 449680) [0x1b2e04c90]
+                                                          1   ??? (libsystem_kernel.dylib + 10884) [0x1cbf68a84]
+                                                            1   <Requested Thread QoS Utility>
+                1   ??? (CloudKitDaemon + 1795496) [0x1c13eb5a8]
+                  1   ??? (CloudKitDaemon + 1799740) [0x1c13ec63c]
+                    1   ??? (CloudKitDaemon + 1810216) [0x1c13eef28]
+                      1   ??? (CloudKitDaemon + 1804080) [0x1c13ed730]
+                        1   ??? (CloudKitDaemon + 1732952) [0x1c13dc158]
+                          1   ??? (CloudKitDaemon + 1795300) [0x1c13eb4e4]
+                            1   ??? (CloudKitDaemon + 1733608) [0x1c13dc3e8]
+                              1   ??? (CloudKitDaemon + 1730900) [0x1c13db954]
+                                1   ??? (CloudKitDaemon + 1734124) [0x1c13dc5ec]
+                                  1   ??? (CloudKit + 618660) [0x1969160a4]
+                                    1   ??? (CloudKit + 618280) [0x196915f28]
+                                      1   ??? (CloudKit + 618868) [0x196916174]
+                                        1   ??? (CloudKit + 1682944) [0x196a19e00]
+                                          1   ??? (CloudKit + 1682300) [0x196a19b7c]
+                                            1   ??? (CloudKit + 1683912) [0x196a1a1c8]
+                                              1   ??? (libsqlite3.dylib + 38016) [0x1b2da0480]
+                                                1   ??? (libsqlite3.dylib + 280208) [0x1b2ddb690]
+                                                  1   ??? (libsqlite3.dylib + 314564) [0x1b2de3cc4]
+                                                    1   ??? (libsqlite3.dylib + 147656) [0x1b2dbb0c8]
+                                                      1   ??? (libsqlite3.dylib + 363912) [0x1b2defd88]
+                                                        1   ??? (libsqlite3.dylib + 447784) [0x1b2e04528]
+                                                          1   ??? (libsqlite3.dylib + 787952) [0x1b2e575f0]
+                                                            1   ??? (libsqlite3.dylib + 449680) [0x1b2e04c90]
+                                                              1   ??? (libsystem_kernel.dylib + 10884) [0x1cbf68a84]
+                                                                1   <Requested Thread QoS Utility>
+
+  Binary Images:
+           0x100304000 -                ???  cloudd                  <7CB50CF5-3041-3701-B2F4-A169CFD97D7D>  /System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd
+           0x196319000 -        0x19635ffff  libdispatch.dylib       <DED4D0A5-1420-32AE-83A6-C31D938A1C9A>  /usr/lib/system/libdispatch.dylib
+           0x19687f000 -        0x196b13fff  CloudKit                <C8EBDD3A-5D80-3959-A9F7-990AA67508EF>  /System/Library/Frameworks/CloudKit.framework/CloudKit
+           0x1b2d97000 -        0x1b2f36ffb  libsqlite3.dylib        <F762DA61-1376-392F-AD47-F705D3BF6099>  /usr/lib/libsqlite3.dylib
+           0x1c1235000 -        0x1c15fafff  CloudKitDaemon          <C3B6EBD3-F610-3070-9CF2-6EEB43D6E5FA>  /System/Library/PrivateFrameworks/CloudKitDaemon.framework/CloudKitDaemon
+           0x1cbf66000 -        0x1cbf9dfeb  libsystem_kernel.dylib  <C76E6BED-4635-30C6-8F19-FB829BBE1AE1>  /usr/lib/system/libsystem_kernel.dylib
+           0x1d2021000 -        0x1d20c6fff  MMCS                    <0DB6D334-F1BE-31B2-9A79-FB695B8106B4>  /System/Library/PrivateFrameworks/MMCS.framework/MMCS
+           0x1dc608000 -        0x1dc613fff  libsystem_pthread.dylib <45AC734E-6649-3EE2-A096-3FD66441AB78>  /usr/lib/system/libsystem_pthread.dylib
+           0x1f0d12000 -        0x1f0d66ffb  ChunkingLibrary         <93B9BCF1-237E-3625-B1A2-AD8CD6E473FC>  /System/Library/PrivateFrameworks/ChunkingLibrary.framework/ChunkingLibrary
+
+
+Powerstats for:   assetsd
+UUID:             D64F624A-4F34-3BB6-9666-82A10EBCF579
+Path:             /System/Library/Frameworks/AssetsLibrary.framework/Support/assetsd
+Resource Coalition ID: 465
+Architecture:     arm64e
+Start time:       2023-03-03 13:35:03.563 -0600
+End time:         2023-03-03 14:53:45.682 -0600
+Num samples:      16 (5%)
+Primary state:    12 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Background, Requested Thread QoS Utility, Override Thread QoS Unspecified
+User Activity:    9 samples Idle, 7 samples Active
+Power Source:     2 samples on Battery, 14 samples on AC
+  16  ??? (libsystem_pthread.dylib + 2968) [0x1dc608b98]
+    16  ??? (libsystem_pthread.dylib + 3576) [0x1dc608df8]
+      16  ??? (libdispatch.dylib + 93712) [0x19632fe10]
+        13  ??? (libdispatch.dylib + 49600) [0x1963251c0]
+          12  ??? (libdispatch.dylib + 46656) [0x196324640]
+            12  ??? (libdispatch.dylib + 16264) [0x19631cf88]
+              12  ??? (libdispatch.dylib + 9312) [0x19631b460]
+                11  ??? (PhotoLibraryServicesCore + 56148) [0x1a4334b54]
+                  11  ??? (PhotoLibraryServices + 1475740) [0x1a3cff49c]
+                    11  ??? (PhotoLibraryServices + 1387516) [0x1a3ce9bfc]
+                      11  ??? (PhotoLibraryServices + 2578584) [0x1a3e0c898]
+                        11  ??? (PhotoLibraryServices + 2588928) [0x1a3e0f100]
+                          11  ??? (PhotoLibraryServices + 4714520) [0x1a4016018]
+                            11  ??? (PhotoLibraryServices + 4712680) [0x1a40158e8]
+                              11  ??? (PhotoLibraryServices + 4714680) [0x1a40160b8]
+                                11  ??? (libdispatch.dylib + 79220) [0x19632c574]
+                                  11  ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                                    11  ??? (PhotoLibraryServices + 2590040) [0x1a3e0f558]
+                                      11  ??? (PhotoLibraryServices + 26336) [0x1a3b9d6e0]
+                                        11  ??? (CoreData + 19216) [0x196524b10]
+                                          11  ??? (libdispatch.dylib + 79220) [0x19632c574]
+                                            11  ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                                              11  ??? (CoreData + 536056) [0x1965a2df8]
+                                                11  ??? (PhotoLibraryServices + 1751492) [0x1a3d429c4]
+                                                  11  ??? (PhotoLibraryServices + 2589504) [0x1a3e0f340]
+                                                    10  ??? (PhotoLibraryServices + 257628) [0x1a3bd5e5c]
+                                                      7   ??? (CoreData + 577908) [0x1965ad174]
+                                                        7   ??? (CoreData + 153180) [0x19654565c]
+                                                          7   ??? (CoreData + 398880) [0x196581620]
+                                                            7   ??? (CoreData + 1675412) [0x1966b9094]
+                                                              7   ??? (CoreData + 156952) [0x196546518]
+                                                                7   ??? (CoreData + 110732) [0x19653b08c]
+                                                                  7   ??? (CoreData + 179808) [0x19654be60]
+                                                                    7   ??? (CoreData + 180112) [0x19654bf90]
+                                                                      7   ??? (CoreData + 934916) [0x196604404]
+                                                                        7   ??? (libdispatch.dylib + 79220) [0x19632c574]
+                                                                          7   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                                                                            7   ??? (CoreData + 935268) [0x196604564]
+                                                                              7   ??? (CoreData + 247108) [0x19655c544]
+                                                                                7   ??? (CoreData + 248064) [0x19655c900]
+                                                                                  7   ??? (CoreData + 256480) [0x19655e9e0]
+                                                                                    7   ??? (CoreData + 551712) [0x1965a6b20]
+                                                                                      7   ??? (CoreData + 825276) [0x1965e97bc]
+                                                                                        7   ??? (CoreData + 359436) [0x196577c0c]
+                                                                                          4   ??? (libsqlite3.dylib + 280208) [0x1b2ddb690]
+                                                                                            4   ??? (libsqlite3.dylib + 339420) [0x1b2de9ddc]
+                                                                                              4   ??? (libsqlite3.dylib + 147656) [0x1b2dbb0c8]
+                                                                                                4   ??? (libsqlite3.dylib + 363912) [0x1b2defd88]
+                                                                                                  4   ??? (libsqlite3.dylib + 447784) [0x1b2e04528]
+                                                                                                    4   ??? (libsqlite3.dylib + 787952) [0x1b2e575f0]
+                                                                                                      4   ??? (libsqlite3.dylib + 449680) [0x1b2e04c90]
+                                                                                                        4   ??? (libsystem_kernel.dylib + 10884) [0x1cbf68a84]
+                                                                                                          1   <Effective Thread QoS Utility>
+                                                                                          3   ??? (libsqlite3.dylib + 281976) [0x1b2ddbd78]
+                                                                                            3   ??? (libsqlite3.dylib + 450688) [0x1b2e05080]
+                                                                                              3   ??? (libsqlite3.dylib + 669712) [0x1b2e3a810]
+                                                                                                3   ??? (libsqlite3.dylib + 534748) [0x1b2e198dc]
+                                                                                                  3   ??? (libsqlite3.dylib + 449680) [0x1b2e04c90]
+                                                                                                    3   ??? (libsystem_kernel.dylib + 10884) [0x1cbf68a84]
+                                                      3   ??? (CoreData + 579864) [0x1965ad918]
+                                                        3   ??? (CoreData + 410928) [0x196584530]
+                                                          3   ??? (CoreData + 672912) [0x1965c4490]
+                                                            3   ??? (Foundation + 380172) [0x18913ed0c]
+                                                              3   ??? (CoreFoundation + 309688) [0x18ed479b8]
+                                                                3   ??? (CoreFoundation + 792308) [0x18edbd6f4]
+                                                                  3   ??? (CoreFoundation + 910404) [0x18edda444]
+                                                                    3   ??? (CoreFoundation + 226228) [0x18ed333b4]
+                                                                      3   ??? (PhotoLibraryServices + 135044) [0x1a3bb7f84]
+                                                                        3   ??? (PhotoLibraryServices + 112524) [0x1a3bb278c]
+                                                                          3   ??? (PhotoLibraryServices + 4993824) [0x1a405a320]
+                                                                            3   ??? (PhotoLibraryServicesCore + 55792) [0x1a43349f0]
+                                                                              3   ??? (libdispatch.dylib + 79220) [0x19632c574]
+                                                                                3   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                                                                                  3   ??? (PhotoLibraryServicesCore + 55640) [0x1a4334958]
+                                                                                    2   ??? (PhotoLibraryServices + 4994492) [0x1a405a5bc]
+                                                                                      2   ??? (PhotoLibraryServices + 529108) [0x1a3c182d4]
+                                                                                        2   ??? (PhotoLibraryServicesCore + 55792) [0x1a43349f0]
+                                                                                          2   ??? (libdispatch.dylib + 79220) [0x19632c574]
+                                                                                            2   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                                                                                              2   ??? (PhotoLibraryServicesCore + 55640) [0x1a4334958]
+                                                                                                2   ??? (PhotoLibraryServices + 422240) [0x1a3bfe160]
+                                                                                                  2   ??? (PhotoLibraryServices + 143948) [0x1a3bba24c]
+                                                                                                    2   ??? (PhotoLibraryServicesCore + 55792) [0x1a43349f0]
+                                                                                                      2   ??? (libdispatch.dylib + 79220) [0x19632c574]
+                                                                                                        2   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                                                                                                          2   ??? (PhotoLibraryServicesCore + 55640) [0x1a4334958]
+                                                                                                            2   ??? (libsystem_kernel.dylib + 11784) [0x1cbf68e08]
+                                                                                    1   ??? (PhotoLibraryServices + 4994528) [0x1a405a5e0]
+                                                                                      1   ??? (libsystem_kernel.dylib + 19704) [0x1cbf6acf8]
+                                                    1   ??? (PhotoLibraryServices + 257520) [0x1a3bd5df0]
+                                                      1   ??? (PhotoLibraryServices + 4995944) [0x1a405ab68]
+                                                        1   ??? (PhotoLibraryServices + 140748) [0x1a3bb95cc]
+                                                          1   ??? (PhotoLibraryServices + 143948) [0x1a3bba24c]
+                                                            1   ??? (PhotoLibraryServicesCore + 55792) [0x1a43349f0]
+                                                              1   ??? (libdispatch.dylib + 79220) [0x19632c574]
+                                                                1   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                                                                  1   ??? (PhotoLibraryServicesCore + 55640) [0x1a4334958]
+                                                                    1   ??? (libsystem_kernel.dylib + 11784) [0x1cbf68e08]
+                1   ??? (PhotoLibraryServices + 4713880) [0x1a4015d98]
+                  1   ??? (PhotoLibraryServices + 4712712) [0x1a4015908]
+                    1   ??? (PhotoLibraryServices + 2590040) [0x1a3e0f558]
+                      1   ??? (PhotoLibraryServices + 26336) [0x1a3b9d6e0]
+                        1   ??? (CoreData + 19216) [0x196524b10]
+                          1   ??? (libdispatch.dylib + 79220) [0x19632c574]
+                            1   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                              1   ??? (CoreData + 536056) [0x1965a2df8]
+                                1   ??? (PhotoLibraryServices + 1751492) [0x1a3d429c4]
+                                  1   ??? (PhotoLibraryServices + 2589392) [0x1a3e0f2d0]
+                                    1   ??? (Photos + 538688) [0x1a3953840]
+                                      1   ??? (PhotoLibraryServices + 257628) [0x1a3bd5e5c]
+                                        1   ??? (CoreData + 577908) [0x1965ad174]
+                                          1   ??? (CoreData + 153180) [0x19654565c]
+                                            1   ??? (CoreData + 398880) [0x196581620]
+                                              1   ??? (CoreData + 1675412) [0x1966b9094]
+                                                1   ??? (CoreData + 156952) [0x196546518]
+                                                  1   ??? (CoreData + 110732) [0x19653b08c]
+                                                    1   ??? (CoreData + 179808) [0x19654be60]
+                                                      1   ??? (CoreData + 180112) [0x19654bf90]
+                                                        1   ??? (CoreData + 934916) [0x196604404]
+                                                          1   ??? (libdispatch.dylib + 79220) [0x19632c574]
+                                                            1   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                                                              1   ??? (CoreData + 935268) [0x196604564]
+                                                                1   ??? (CoreData + 247108) [0x19655c544]
+                                                                  1   ??? (CoreData + 248064) [0x19655c900]
+                                                                    1   ??? (CoreData + 256480) [0x19655e9e0]
+                                                                      1   ??? (CoreData + 551712) [0x1965a6b20]
+                                                                        1   ??? (CoreData + 825276) [0x1965e97bc]
+                                                                          1   ??? (CoreData + 359436) [0x196577c0c]
+                                                                            1   ??? (libsqlite3.dylib + 280208) [0x1b2ddb690]
+                                                                              1   ??? (libsqlite3.dylib + 339420) [0x1b2de9ddc]
+                                                                                1   ??? (libsqlite3.dylib + 147656) [0x1b2dbb0c8]
+                                                                                  1   ??? (libsqlite3.dylib + 363912) [0x1b2defd88]
+                                                                                    1   ??? (libsqlite3.dylib + 447784) [0x1b2e04528]
+                                                                                      1   ??? (libsqlite3.dylib + 787952) [0x1b2e575f0]
+                                                                                        1   ??? (libsqlite3.dylib + 449680) [0x1b2e04c90]
+                                                                                          1   ??? (libsystem_kernel.dylib + 10884) [0x1cbf68a84]
+                                                                                            1   <Requested Thread QoS Background>
+          1   ??? (libdispatch.dylib + 46360) [0x196324518]
+            1   ??? (libdispatch.dylib + 109144) [0x196333a58]
+              1   ??? (libdispatch.dylib + 29720) [0x196320418]
+                1   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                  1   ??? (libdispatch.dylib + 78100) [0x19632c114]
+                    1   ??? (PhotoLibraryServices + 235012) [0x1a3bd0604]
+                      1   ??? (PhotoLibraryServices + 172116) [0x1a3bc1054]
+                        1   ??? (PhotoLibraryServices + 343612) [0x1a3beae3c]
+                          1   ??? (libsqlite3.dylib + 664132) [0x1b2e39244]
+                            1   ??? (libsqlite3.dylib + 624024) [0x1b2e2f598]
+                              1   ??? (libsqlite3.dylib + 473520) [0x1b2e0a9b0]
+                                1   ??? (libsqlite3.dylib + 474944) [0x1b2e0af40]
+                                  1   ??? (libsqlite3.dylib + 475760) [0x1b2e0b270]
+                                    1   ??? (libsqlite3.dylib + 534748) [0x1b2e198dc]
+                                      1   ??? (libsqlite3.dylib + 449680) [0x1b2e04c90]
+                                        1   ??? (libsystem_kernel.dylib + 10884) [0x1cbf68a84]
+                                          1   <Requested Thread QoS Background>
+        3   ??? (libdispatch.dylib + 49548) [0x19632518c]
+          3   ??? (libdispatch.dylib + 46656) [0x196324640]
+            3   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+              2   ??? (libdispatch.dylib + 9312) [0x19631b460]
+                1   ??? (PhotoLibraryServicesCore + 56148) [0x1a4334b54]
+                  1   ??? (PhotoLibraryServices + 475740) [0x1a3c0b25c]
+                    1   ??? (PhotoLibraryServices + 288816) [0x1a3bdd830]
+                      1   ??? (libsqlite3.dylib + 280208) [0x1b2ddb690]
+                        1   ??? (libsqlite3.dylib + 339420) [0x1b2de9ddc]
+                          1   ??? (libsqlite3.dylib + 147656) [0x1b2dbb0c8]
+                            1   ??? (libsqlite3.dylib + 363912) [0x1b2defd88]
+                              1   ??? (libsqlite3.dylib + 447784) [0x1b2e04528]
+                                1   ??? (libsqlite3.dylib + 787952) [0x1b2e575f0]
+                                  1   ??? (libsqlite3.dylib + 449680) [0x1b2e04c90]
+                                    1   ??? (libsystem_kernel.dylib + 10884) [0x1cbf68a84]
+                1   ??? (PhotoLibraryServices + 56444) [0x1a3ba4c7c]
+                  1   ??? (PhotoLibraryServices + 346900) [0x1a3bebb14]
+                    1   ??? (PhotoLibraryServices + 308632) [0x1a3be2598]
+                      1   ??? (PhotoLibraryServicesCore + 55792) [0x1a43349f0]
+                        1   ??? (libdispatch.dylib + 79220) [0x19632c574]
+                          1   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                            1   ??? (PhotoLibraryServicesCore + 55640) [0x1a4334958]
+                              1   ??? (PhotoLibraryServices + 143948) [0x1a3bba24c]
+                                1   ??? (PhotoLibraryServicesCore + 55792) [0x1a43349f0]
+                                  1   ??? (libdispatch.dylib + 79220) [0x19632c574]
+                                    1   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                                      1   ??? (PhotoLibraryServicesCore + 55640) [0x1a4334958]
+                                        1   ??? (libsystem_kernel.dylib + 11784) [0x1cbf68e08]
+              1   ??? (CoreData + 536056) [0x1965a2df8]
+                1   ??? (PhotoLibraryServices + 1751492) [0x1a3d429c4]
+                  1   ??? (PhotoLibraryServices + 2589504) [0x1a3e0f340]
+                    1   ??? (PhotoLibraryServices + 257628) [0x1a3bd5e5c]
+                      1   ??? (CoreData + 577908) [0x1965ad174]
+                        1   ??? (CoreData + 153180) [0x19654565c]
+                          1   ??? (CoreData + 398880) [0x196581620]
+                            1   ??? (CoreData + 1675412) [0x1966b9094]
+                              1   ??? (CoreData + 156952) [0x196546518]
+                                1   ??? (CoreData + 110732) [0x19653b08c]
+                                  1   ??? (CoreData + 179808) [0x19654be60]
+                                    1   ??? (CoreData + 180112) [0x19654bf90]
+                                      1   ??? (CoreData + 934916) [0x196604404]
+                                        1   ??? (libdispatch.dylib + 79220) [0x19632c574]
+                                          1   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                                            1   ??? (CoreData + 935268) [0x196604564]
+                                              1   ??? (CoreData + 247108) [0x19655c544]
+                                                1   ??? (CoreData + 248064) [0x19655c900]
+                                                  1   ??? (CoreData + 256480) [0x19655e9e0]
+                                                    1   ??? (CoreData + 551712) [0x1965a6b20]
+                                                      1   ??? (CoreData + 825276) [0x1965e97bc]
+                                                        1   ??? (CoreData + 359436) [0x196577c0c]
+                                                          1   ??? (libsqlite3.dylib + 280208) [0x1b2ddb690]
+                                                            1   ??? (libsqlite3.dylib + 339420) [0x1b2de9ddc]
+                                                              1   ??? (libsqlite3.dylib + 147656) [0x1b2dbb0c8]
+                                                                1   ??? (libsqlite3.dylib + 363912) [0x1b2defd88]
+                                                                  1   ??? (libsqlite3.dylib + 447784) [0x1b2e04528]
+                                                                    1   ??? (libsqlite3.dylib + 787952) [0x1b2e575f0]
+                                                                      1   ??? (libsqlite3.dylib + 449680) [0x1b2e04c90]
+                                                                        1   ??? (libsystem_kernel.dylib + 10884) [0x1cbf68a84]
+                                                                          1   <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+
+  Binary Images:
+           0x102fac000 -                ???  assetsd                  <D64F624A-4F34-3BB6-9666-82A10EBCF579>  /System/Library/Frameworks/AssetsLibrary.framework/Support/assetsd
+           0x1890e2000 -        0x189a2bfff  Foundation               <E5F615C7-CC5E-3656-8600-41C767812A35>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x18ecfc000 -        0x18f0e1fff  CoreFoundation           <42CCFC7B-FF32-3D25-8F01-CCB2AD843A8B>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x196319000 -        0x19635ffff  libdispatch.dylib        <DED4D0A5-1420-32AE-83A6-C31D938A1C9A>  /usr/lib/system/libdispatch.dylib
+           0x196520000 -        0x19687efff  CoreData                 <6F0FB04D-C7F1-3BBA-B688-88CFC207ACE9>  /System/Library/Frameworks/CoreData.framework/CoreData
+           0x1a38d0000 -        0x1a3b96fff  Photos                   <282EB446-CE44-3ACD-86A2-A6A9DFDBF6AF>  /System/Library/Frameworks/Photos.framework/Photos
+           0x1a3b97000 -        0x1a4326fff  PhotoLibraryServices     <D8B536BD-C23B-302D-BBBE-17C4008DC4CB>  /System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices
+           0x1a4327000 -        0x1a4419fff  PhotoLibraryServicesCore <3DB62AAE-7EDF-3B27-B335-B1551A13DC5B>  /System/Library/PrivateFrameworks/PhotoLibraryServicesCore.framework/PhotoLibraryServicesCore
+           0x1b2d97000 -        0x1b2f36ffb  libsqlite3.dylib         <F762DA61-1376-392F-AD47-F705D3BF6099>  /usr/lib/libsqlite3.dylib
+           0x1cbf66000 -        0x1cbf9dfeb  libsystem_kernel.dylib   <C76E6BED-4635-30C6-8F19-FB829BBE1AE1>  /usr/lib/system/libsystem_kernel.dylib
+           0x1dc608000 -        0x1dc613fff  libsystem_pthread.dylib  <45AC734E-6649-3EE2-A096-3FD66441AB78>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   logd
+UUID:             C8F3280B-53DC-393E-8FE5-769A695CF8EB
+Path:             /usr/libexec/logd
+Resource Coalition ID: 7
+Architecture:     arm64e
+Start time:       2023-03-03 14:16:42.294 -0600
+End time:         2023-03-03 14:49:53.075 -0600
+Num samples:      15 (5%)
+Primary state:    10 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified
+User Activity:    12 samples Idle, 3 samples Active
+Power Source:     0 samples on Battery, 15 samples on AC
+  15  ??? (libsystem_pthread.dylib + 2968) [0x1dc608b98]
+    15  ??? (libsystem_pthread.dylib + 3576) [0x1dc608df8]
+      15  ??? (libdispatch.dylib + 93712) [0x19632fe10]
+        13  ??? (libdispatch.dylib + 49600) [0x1963251c0]
+          7   ??? (libdispatch.dylib + 46880) [0x196324720]
+            7   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+              7   ??? (libdispatch.dylib + 9312) [0x19631b460]
+                7   ??? (logd + 18816) [0x1041d0980]
+                  7   ??? (logd + 69912) [0x1041dd118]
+                    7   ??? (libdispatch.dylib + 79220) [0x19632c574]
+                      7   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                        7   ??? (logd + 70112) [0x1041dd1e0]
+                          7   ??? (libdispatch.dylib + 79220) [0x19632c574]
+                            7   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+                              6   ??? (logd + 70344) [0x1041dd2c8]
+                                6   ??? (logd + 74460) [0x1041de2dc]
+                                  6   ??? (libsystem_kernel.dylib + 10460) [0x1cbf688dc]
+                              1   ??? (logd + 70484) [0x1041dd354]
+                                1   ??? (logd + 74460) [0x1041de2dc]
+                                  1   ??? (libsystem_kernel.dylib + 10460) [0x1cbf688dc]
+          6   ??? (libdispatch.dylib + 46656) [0x196324640]
+            6   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+              6   ??? (libdispatch.dylib + 78100) [0x19632c114]
+                4   ??? (logd + 62652) [0x1041db4bc]
+                  4   ??? (logd + 60888) [0x1041dadd8]
+                    4   ??? (logd + 74460) [0x1041de2dc]
+                      4   ??? (libsystem_kernel.dylib + 10460) [0x1cbf688dc]
+                        4   <Effective Thread QoS Utility, Requested Thread QoS Utility>
+                2   ??? (CacheDelete + 185300) [0x1ab70a3d4]
+                  1   ??? (logd + 98588) [0x1041e411c]
+                    1   ??? (logd + 79044) [0x1041df4c4]
+                      1   ??? (libsystem_kernel.dylib + 22196) [0x1cbf6b6b4]
+                  1   ??? (logd + 97740) [0x1041e3dcc]
+                    1   ??? (libsystem_kernel.dylib + 10460) [0x1cbf688dc]
+        2   ??? (libdispatch.dylib + 49548) [0x19632518c]
+          2   ??? (libdispatch.dylib + 46656) [0x196324640]
+            2   ??? (libdispatch.dylib + 16264) [0x19631cf88]
+              2   ??? (libdispatch.dylib + 78100) [0x19632c114]
+                1   ??? (logd + 62652) [0x1041db4bc]
+                  1   ??? (logd + 60888) [0x1041dadd8]
+                    1   ??? (logd + 74460) [0x1041de2dc]
+                      1   ??? (libsystem_kernel.dylib + 10460) [0x1cbf688dc]
+                        1   <Effective Thread QoS Utility, Requested Thread QoS Utility>
+                1   ??? (logd + 60888) [0x1041dadd8]
+                  1   ??? (logd + 74460) [0x1041de2dc]
+                    1   ??? (libsystem_kernel.dylib + 10460) [0x1cbf688dc]
+
+  Binary Images:
+           0x1041cc000 -                ???  logd                    <C8F3280B-53DC-393E-8FE5-769A695CF8EB>  /usr/libexec/logd
+           0x196319000 -        0x19635ffff  libdispatch.dylib       <DED4D0A5-1420-32AE-83A6-C31D938A1C9A>  /usr/lib/system/libdispatch.dylib
+           0x1ab6dd000 -        0x1ab721fff  CacheDelete             <F528164F-6AB5-340D-8CEC-3D46FE4F0E86>  /System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete
+           0x1cbf66000 -        0x1cbf9dfeb  libsystem_kernel.dylib  <C76E6BED-4635-30C6-8F19-FB829BBE1AE1>  /usr/lib/system/libsystem_kernel.dylib
+           0x1dc608000 -        0x1dc613fff  libsystem_pthread.dylib <45AC734E-6649-3EE2-A096-3FD66441AB78>  /usr/lib/system/libsystem_pthread.dylib
