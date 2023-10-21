@@ -1,0 +1,199 @@
+{"app_name":"maild","timestamp":"2023-03-10 17:39:55.00 -0600","app_version":"","slice_uuid":"7e8bd265-6d98-3a42-a1fb-452e85ef8bf3","build_version":"","platform":2,"share_with_app_devs":0,"is_first_party":1,"bug_type":"309","os_version":"iPhone OS 16.3.1 (20D67)","roots_installed":0,"incident_id":"79B4C4DE-7B76-41CE-85A1-95A672239DA2","name":"maild"}
+{
+  "uptime" : 120000,
+  "procRole" : "Unspecified",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "iPad12,1",
+  "coalitionID" : 388,
+  "osVersion" : {
+    "isEmbedded" : true,
+    "train" : "iPhone OS 16.3.1",
+    "releaseType" : "User",
+    "build" : "20D67"
+  },
+  "captureTime" : "2023-03-10 17:39:52.5954 -0600",
+  "incident" : "79B4C4DE-7B76-41CE-85A1-95A672239DA2",
+  "pid" : 891,
+  "cpuType" : "ARM-64",
+  "roots_installed" : 0,
+  "bug_type" : "309",
+  "procLaunch" : "2023-03-10 17:39:50.1426 -0600",
+  "procStartAbsTime" : 2914244743258,
+  "procExitAbsTime" : 2914303581156,
+  "procName" : "maild",
+  "procPath" : "\/System\/Library\/PrivateFrameworks\/EmailDaemon.framework\/maild",
+  "parentProc" : "launchd",
+  "parentPid" : 1,
+  "coalitionName" : "com.apple.email.maild",
+  "crashReporterKey" : "861bb89587cb8c5f049598f34a878f1772cedf0e",
+  "wasUnlockedSinceBoot" : 1,
+  "isLocked" : 0,
+  "consecutiveCrashCount" : 1,
+  "throttleTimeout" : 10,
+  "exception" : {"codes":"0x0000000000000000, 0x0000000000000000","rawCodes":[0,0],"type":"EXC_CRASH","signal":"SIGABRT"},
+  "asi" : {"Message":["file system out of space"]},
+  "faultingThread" : 8,
+  "threads" : [{"id":435061,"queue":"com.apple.main-thread","frames":[{"imageOffset":3496,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":0},{"imageOffset":80412,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":0},{"imageOffset":80988,"symbol":"mach_msg_overwrite","symbolLocation":388,"imageIndex":0},{"imageOffset":4844,"symbol":"mach_msg","symbolLocation":24,"imageIndex":0},{"imageOffset":502468,"symbol":"__CFRunLoopServiceMachPort","symbolLocation":160,"imageIndex":1},{"imageOffset":507144,"symbol":"__CFRunLoopRun","symbolLocation":1232,"imageIndex":1},{"imageOffset":528048,"symbol":"CFRunLoopRunSpecific","symbolLocation":612,"imageIndex":1},{"imageOffset":270420,"symbol":"-[NSRunLoop(NSRunLoop) runMode:beforeDate:]","symbolLocation":212,"imageIndex":2},{"imageOffset":270056,"symbol":"-[NSRunLoop(NSRunLoop) run]","symbolLocation":64,"imageIndex":2},{"imageOffset":42212,"imageIndex":3},{"imageOffset":231884,"imageIndex":3},{"imageOffset":88416,"symbol":"start","symbolLocation":2528,"imageIndex":4}]},{"id":435073,"frames":[{"imageOffset":2960,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":5}]},{"id":435075,"frames":[{"imageOffset":2960,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":5}]},{"id":435076,"frames":[{"imageOffset":2960,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":5}]},{"id":435077,"frames":[{"imageOffset":2960,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":5}]},{"id":435113,"frames":[{"imageOffset":3496,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":0},{"imageOffset":80412,"symbol":"mach_msg2_internal","symbolLocation":80,"imageIndex":0},{"imageOffset":80988,"symbol":"mach_msg_overwrite","symbolLocation":388,"imageIndex":0},{"imageOffset":4844,"symbol":"mach_msg","symbolLocation":24,"imageIndex":0},{"imageOffset":502468,"symbol":"__CFRunLoopServiceMachPort","symbolLocation":160,"imageIndex":1},{"imageOffset":507144,"symbol":"__CFRunLoopRun","symbolLocation":1232,"imageIndex":1},{"imageOffset":528048,"symbol":"CFRunLoopRunSpecific","symbolLocation":612,"imageIndex":1},{"imageOffset":270420,"symbol":"-[NSRunLoop(NSRunLoop) runMode:beforeDate:]","symbolLocation":212,"imageIndex":2},{"imageOffset":270056,"symbol":"-[NSRunLoop(NSRunLoop) run]","symbolLocation":64,"imageIndex":2},{"imageOffset":9100,"symbol":"+[ASConcreteAccountActor _runActorThreadWithStartupLock:]","symbolLocation":200,"imageIndex":6},{"imageOffset":374040,"symbol":"__NSThread__start__","symbolLocation":716,"imageIndex":2},{"imageOffset":5836,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":5},{"imageOffset":2980,"symbol":"thread_start","symbolLocation":8,"imageIndex":5}]},{"id":435114,"frames":[{"imageOffset":5756,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":0},{"imageOffset":32920,"symbol":"_pthread_cond_wait","symbolLocation":1276,"imageIndex":5},{"imageOffset":117756,"symbol":"-[NSCondition waitUntilDate:]","symbolLocation":132,"imageIndex":2},{"imageOffset":116596,"symbol":"-[NSConditionLock lockWhenCondition:beforeDate:]","symbolLocation":80,"imageIndex":2},{"imageOffset":6548,"symbol":"-[MFConditionLock lockWhenCondition:beforeDate:]","symbolLocation":96,"imageIndex":7},{"imageOffset":56332,"symbol":"-[MFInvocationQueue _drainQueue:]","symbolLocation":540,"imageIndex":8},{"imageOffset":374040,"symbol":"__NSThread__start__","symbolLocation":716,"imageIndex":2},{"imageOffset":5836,"symbol":"_pthread_start","symbolLocation":148,"imageIndex":5},{"imageOffset":2980,"symbol":"thread_start","symbolLocation":8,"imageIndex":5}]},{"id":435115,"frames":[{"imageOffset":2960,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":5}]},{"triggered":true,"id":435116,"threadState":{"x":[{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":29035334336},{"value":1},{"value":174},{"value":5521700696282409598},{"value":5533521541838576254},{"value":14757395258967641293},{"value":10},{"value":0},{"value":49},{"value":34220658233890696,"symbolLocation":34220650147086336,"symbol":"OBJC_CLASS_$_OS_os_log"},{"value":8086804360,"symbolLocation":0,"symbol":"OBJC_CLASS_$_OS_os_log"},{"value":328},{"value":6168915968},{"value":0},{"value":6},{"value":30979},{"value":6168916192},{"value":4305043456},{"value":7153153273},{"value":8041545728,"symbolLocation":32,"symbol":"google::protobuf::_FileOptions_default_instance_"},{"value":29035346640},{"value":0},{"value":8057708544},{"value":29036319616}],"flavor":"ARM_THREAD_STATE64","lr":{"value":7943172524},"cpsr":{"value":1073741824},"fp":{"value":6168913408},"sp":{"value":6168913376},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":7667783284,"matchesCrashFrame":1},"far":{"value":6766359036}},"queue":"com.apple.email.searchableIndex.dataSource.com.apple.mobilemail.contentIndex","frames":[{"imageOffset":30324,"symbol":"__pthread_kill","symbolLocation":8,"imageIndex":0},{"imageOffset":29100,"symbol":"pthread_kill","symbolLocation":268,"imageIndex":5},{"imageOffset":134284,"symbol":"abort","symbolLocation":180,"imageIndex":9},{"imageOffset":489600,"symbol":"__assert_rtn","symbolLocation":272,"imageIndex":9},{"imageOffset":1444564,"symbol":"-[MFPersistenceDatabaseConnection_iOS _handleFullDatabase]","symbolLocation":248,"imageIndex":8},{"imageOffset":123268,"symbol":"-[MFPersistenceDatabaseConnection_iOS handleSQLResult:message:]","symbolLocation":196,"imageIndex":8},{"imageOffset":956460,"symbol":"-[EDPersistenceDatabaseConnection handleError:message:]","symbolLocation":124,"imageIndex":10},{"imageOffset":14380,"symbol":"-[EDPersistenceDatabase performWithOptions:block:]","symbolLocation":620,"imageIndex":10},{"imageOffset":73108,"symbol":"-[EDPersistenceDatabase performWriteBlock:]","symbolLocation":76,"imageIndex":10},{"imageOffset":1226904,"symbol":"-[EDSearchableIndexPersistence searchableIndex:invalidateItemsGreaterThanTransaction:]","symbolLocation":124,"imageIndex":10},{"imageOffset":1148168,"symbol":"__81-[EDSearchableIndex _dataSourceInvalidateItemsGreaterThanTransaction:completion:]_block_invoke","symbolLocation":48,"imageIndex":10},{"imageOffset":145800,"symbol":"__45-[EDSearchableIndex _dataSourceScheduleWork:]_block_invoke","symbolLocation":36,"imageIndex":10},{"imageOffset":38384,"symbol":"__33-[EFQueueScheduler performBlock:]_block_invoke","symbolLocation":28,"imageIndex":11},{"imageOffset":9312,"symbol":"_dispatch_call_block_and_release","symbolLocation":32,"imageIndex":12},{"imageOffset":16264,"symbol":"_dispatch_client_callout","symbolLocation":20,"imageIndex":12},{"imageOffset":46656,"symbol":"_dispatch_lane_serial_drain","symbolLocation":672,"imageIndex":12},{"imageOffset":49600,"symbol":"_dispatch_lane_invoke","symbolLocation":436,"imageIndex":12},{"imageOffset":93712,"symbol":"_dispatch_workloop_worker_thread","symbolLocation":652,"imageIndex":12},{"imageOffset":3576,"symbol":"_pthread_wqthread","symbolLocation":288,"imageIndex":5},{"imageOffset":2968,"symbol":"start_wqthread","symbolLocation":8,"imageIndex":5}]},{"id":435117,"frames":[{"imageOffset":2960,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":5}]},{"id":435118,"frames":[{"imageOffset":2960,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":5}]}],
+  "usedImages" : [
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 7667752960,
+    "size" : 229356,
+    "uuid" : "c76e6bed-4635-30c6-8f19-fb829bbe1ae1",
+    "path" : "\/usr\/lib\/system\/libsystem_kernel.dylib",
+    "name" : "libsystem_kernel.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6641811456,
+    "size" : 4087808,
+    "uuid" : "42ccfc7b-ff32-3d25-8f01-ccb2ad843a8b",
+    "path" : "\/System\/Library\/Frameworks\/CoreFoundation.framework\/CoreFoundation",
+    "name" : "CoreFoundation"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6545235968,
+    "size" : 9740288,
+    "uuid" : "e5f615c7-cc5e-3656-8600-41c767812a35",
+    "path" : "\/System\/Library\/Frameworks\/Foundation.framework\/Foundation",
+    "name" : "Foundation"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4302536704,
+    "size" : 1228800,
+    "uuid" : "7e8bd265-6d98-3a42-a1fb-452e85ef8bf3",
+    "path" : "\/System\/Library\/PrivateFrameworks\/EmailDaemon.framework\/maild",
+    "name" : "maild"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 7154921472,
+    "size" : 536724,
+    "uuid" : "4b042f28-0d14-30ec-a1de-3dbb10866ad7",
+    "path" : "\/usr\/lib\/dyld",
+    "name" : "dyld"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 7943143424,
+    "size" : 49152,
+    "uuid" : "45ac734e-6649-3ee2-a096-3fd66441ab78",
+    "path" : "\/usr\/lib\/system\/libsystem_pthread.dylib",
+    "name" : "libsystem_pthread.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 8711307264,
+    "size" : 876544,
+    "uuid" : "5295a14d-38b0-3623-aff5-e42089e7b97c",
+    "path" : "\/System\/Library\/PrivateFrameworks\/ExchangeSync.framework\/Frameworks\/DAEAS.framework\/DAEAS",
+    "name" : "DAEAS"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 7231827968,
+    "size" : 335872,
+    "uuid" : "c8356ed0-045b-302a-b55c-a6c7616164fa",
+    "path" : "\/System\/Library\/PrivateFrameworks\/MIME.framework\/MIME",
+    "name" : "MIME"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 7145275392,
+    "size" : 8871936,
+    "uuid" : "bc3d2a0e-ac65-3090-a753-68f28eca9c98",
+    "path" : "\/System\/Library\/PrivateFrameworks\/Message.framework\/Message",
+    "name" : "Message"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6765953024,
+    "size" : 524280,
+    "uuid" : "3cd8c9e0-25fd-3b29-8507-74cdffe7f16c",
+    "path" : "\/usr\/lib\/system\/libsystem_c.dylib",
+    "name" : "libsystem_c.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 7756206080,
+    "size" : 2498560,
+    "uuid" : "29ee6f6a-1f81-3f5c-b9f6-2710d00f8cf1",
+    "path" : "\/System\/Library\/PrivateFrameworks\/EmailDaemon.framework\/EmailDaemon",
+    "name" : "EmailDaemon"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 7295062016,
+    "size" : 573440,
+    "uuid" : "02ccba23-dbff-38eb-99ec-ab2f12d8d665",
+    "path" : "\/System\/Library\/PrivateFrameworks\/EmailFoundation.framework\/EmailFoundation",
+    "name" : "EmailFoundation"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6765662208,
+    "size" : 290816,
+    "uuid" : "ded4d0a5-1420-32ae-83a6-c31d938a1c9a",
+    "path" : "\/usr\/lib\/system\/libdispatch.dylib",
+    "name" : "libdispatch.dylib"
+  }
+],
+  "sharedCache" : {
+  "base" : 6525730816,
+  "size" : 2873016320,
+  "uuid" : "202665e3-d47c-3270-a725-558c7c6ea550"
+},
+  "vmSummary" : "ReadOnly portion of Libraries: Total=925.2M resident=0K(0%) swapped_out_or_unallocated=925.2M(100%)\nWritable regions: Total=50.6M written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=50.6M(100%)\n\n                                VIRTUAL   REGION \nREGION TYPE                        SIZE    COUNT (non-coalesced) \n===========                     =======  ======= \nActivity Tracing                   256K        1 \nDispatch continuations            6144K        1 \nKernel Alloc Once                   32K        1 \nMALLOC                            37.4M       23 \nMALLOC guard page                   64K        4 \nSQLite page cache                  640K        5 \nSTACK GUARD                        176K       11 \nStack                             6448K       11 \nVM_ALLOCATE                         16K        1 \n__AUTH                            2945K      391 \n__AUTH_CONST                      24.4M      631 \n__CTF                               756        1 \n__DATA                            9946K      618 \n__DATA_CONST                      29.4M      638 \n__DATA_DIRTY                      3011K      543 \n__FONT_DATA                        2352        1 \n__LINKEDIT                       299.8M        2 \n__OBJC_CONST                      5480K      426 \n__OBJC_RO                         78.4M        1 \n__OBJC_RW                         2407K        1 \n__TEXT                           625.4M      646 \ndyld private memory                256K        1 \nmapped file                       29.7M        9 \nshared memory                       48K        3 \n===========                     =======  ======= \nTOTAL                              1.1G     3970 \n",
+  "legacyInfo" : {
+  "threadTriggered" : {
+    "queue" : "com.apple.email.searchableIndex.dataSource.com.apple.mobilemail.contentIndex"
+  }
+},
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "601074e4af9bef000c169ea8",
+      "factorPackIds" : {
+        "BIFROST_DEV_1" : "640a1cf412e6873bd91757eb"
+      },
+      "deploymentId" : 240003563
+    },
+    {
+      "rolloutId" : "62fe74515312cd4599bd3c80",
+      "factorPackIds" : {
+        "MYRIAD_BOOSTS" : "62fe74805312cd4599bd3c81"
+      },
+      "deploymentId" : 240000006
+    }
+  ],
+  "experiments" : [
+    {
+      "treatmentId" : "61e265d6-f520-4d3b-bf0a-37a0e7d14223",
+      "experimentId" : "61695b64436117010456876f",
+      "deploymentId" : 400000042
+    },
+    {
+      "treatmentId" : "edcf71d7-f190-4a59-8158-eddd6487eea9",
+      "experimentId" : "63d8844f2cb48e1296b0745b",
+      "deploymentId" : 400000003
+    }
+  ]
+}
+}
