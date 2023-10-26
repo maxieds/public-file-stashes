@@ -2,8 +2,8 @@
 
 ## Archive and enumerate new AR/VR 
 
-<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/DarkWeb-CNETPayPaliOSAppCache-Zuckerberg.png" width="600" />
-<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/DarkWeb-CNETPayPaliOSAppCache-MuskAdReel.png" width="600" />
+<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/DarkWeb-CNETPayPaliOSAppCache-Zuckerberg.png" width="800" />
+<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/DarkWeb-CNETPayPaliOSAppCache-MuskAdReel.png" width="800" />
 
 The Facebook parent company, META (eerily like early TransMETA Linux kernel support from NL), has a primary 
 research area af AR/VR (Augmented Reality and Virtual Reality). This is most certainly NOT an innocent technology. 
@@ -13,6 +13,18 @@ explicitly -- cf. You never really know where you are on/in Facebook, and the pl
 along with user profiles). I viewed three to four big software company API/SDK binary bundles available for download there. 
 These need to be archived for public review. The task includes enumerating phone interfaces and car navigation interfaces 
 (including SXM and --amateur-- radio references in those safari locations). 
+
+A message about the recent VR topics getting so much news recently worth repeating again: 
+*Mitigating the risk of extinction from AI should be a global priority alongside other societal risks such as pandemics and nuclear war.*
+
+<center>
+<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/TheIncredibleHulk-YoureNotGoingToLikeMeWhenImAngry.png" />
+</center>
+
+Someone pointed out to me in Florida earlier this year (2023) that Kush (my beloved cat thing) thinks I'm a superhero. 
+In the sense of me being the hero, or avatar, or lead action figure in a video game, and AI being something that is programmed into the 
+game by developers to automatically sense and fight (profile, target; you all get it) me as the primary character it focuses on disabling, what 
+other scary or ominous warnings out we heed about the roll out of this nasty gaming construct on Earth? 
 
 ## Working topics short list -- full details to add later
 
@@ -40,4 +52,7 @@ These need to be archived for public review. The task includes enumerating phone
 ## Other notes of things to remember or that bother me about the recent technology
 
 * As of this week (in mid October of 2023), Google Play Developer Console is assigning developers of apps homework (like they are children, or kids) to add details that are easily scanned with automated scripts on their end. They also require that all new updates to existing apps target the latest Android SDK -- in effect, forcing an update that is scary in light of my Android Go phone and the AI discussions. One new link they are suggesting is for **deep** (app) links, another imprecisely defined average use case that people need to be aware is going on (cf. App Clips on iOS / ipad as of 2023). See also below.
+  
+<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/ChirpAlarmAt225AM.png" width="500" />
+
 * I have seen a version of [this YouTube video](https://youtu.be/MCk82FwReR4?si=xjQ67evyeiQJKald) (user: Paul Simmons) on someone else's phone with `Remix` functionality and audio that is much different in the last several months. The audio can be sped up and filtere to obtain audio tracks similar to the original (transistor technology, anyone?). I wonder if those versions of this video could be processed with Matlab to see what else is going on chirp-wise outside of the usual human audible spectrum. These new phones and LED/LCD light strips really pissed off my cat who could hear the demons and what they were saying. This is not unlike old SourceForge projects that used CRT monitors (now very much higher power LCD screens) to use bar patterns to produce MP3 quality audio that could be tuned with a frequency scanner they used to sell at RadioShack. There are also some weird things going on with YouTube videos (like the Notorious B.I.G.'s *Sky is the limit* with album cover artwork) with lightening flashes in the background that seem to signify this type of audio source. I think there are TikTok (as in the TikTok *kids*, or adult children of the devil) connectors to the applications that generate this noise. What about variants of what I would assume should be a standard 3.5mm audio headphone jack connector that can be connected in cars with [SXM type navigation firmware](https://youtu.be/kauCzrwGk6A?si=JK76No44yj9IQhZM) (N.b., [my Android Go phone](https://github.com/maxieds/public-file-stashes/tree/main/androidgo-default-install) can tune FM radio and do a lot of GSM dancing to/from different operator sources abroad -- see [this YouTube channel](https://www.youtube.com/@maxieschmidt) for community posts and playlists with some evidence)?
