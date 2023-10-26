@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="android.uid.bluetooth" versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.bluetooth" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <original-package name="com.android.bluetooth"/>
+  <permission label="Access download manager." name="android.permission.ACCESS_BLUETOOTH_SHARE" protectionLevel="0x2" description="Allows the app to access the BluetoothShare manager and use it to transfer files."/>
+  <permission label="Whitelist bluetooth device access." name="com.android.permission.WHITELIST_BLUETOOTH_DEVICE" protectionLevel="0x2" description="Allows the app to temporarily whitelist a Bluetooth device, allowing that device to send files to this device without user confirmation."/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.ACCESS_BLUETOOTH_SHARE"/>
+  <uses-permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.BLUETOOTH"/>
+  <uses-permission name="android.permission.BLUETOOTH_ADMIN"/>
+  <uses-permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+  <uses-permission name="android.permission.BLUETOOTH_MAP"/>
+  <uses-permission name="android.permission.DUMP"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.READ_CONTACTS"/>
+  <uses-permission name="android.permission.WRITE_CONTACTS"/>
+  <uses-permission name="android.permission.READ_CALL_LOG"/>
+  <uses-permission name="android.permission.WRITE_CALL_LOG"/>
+  <uses-permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+  <uses-permission name="android.permission.LISTEN_ALWAYS_REPORTED_SIGNAL_STRENGTH"/>
+  <uses-permission name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission name="android.permission.NFC_HANDOVER_STATUS"/>
+  <uses-permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+  <uses-permission name="android.permission.WRITE_APN_SETTINGS"/>
+  <uses-permission name="android.permission.NET_ADMIN"/>
+  <uses-permission name="android.permission.CALL_PRIVILEGED"/>
+  <uses-permission name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+  <uses-permission name="android.permission.NET_TUNNELING"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.CHANGE_NETWORK_STATE"/>
+  <uses-permission name="android.permission.CONNECTIVITY_INTERNAL"/>
+  <uses-permission name="android.permission.READ_DEVICE_CONFIG"/>
+  <uses-permission name="android.permission.NETWORK_FACTORY"/>
+  <uses-permission name="android.permission.TETHER_PRIVILEGED"/>
+  <uses-permission name="android.permission.MODIFY_PHONE_STATE"/>
+  <uses-permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+  <uses-permission name="android.permission.BLUETOOTH_STACK"/>
+  <uses-permission name="android.permission.INTERACT_ACROSS_USERS"/>
+  <uses-permission name="android.permission.MANAGE_USERS"/>
+  <uses-permission name="android.permission.GET_ACCOUNTS"/>
+  <uses-permission name="android.permission.RECEIVE_SMS"/>
+  <uses-permission name="android.permission.SEND_SMS"/>
+  <uses-permission name="android.permission.READ_SMS"/>
+  <uses-permission name="android.permission.WRITE_SMS"/>
+  <uses-permission name="android.permission.MEDIA_CONTENT_CONTROL"/>
+  <uses-permission name="android.permission.UPDATE_APP_OPS_STATS"/>
+  <uses-permission name="android.permission.MANAGE_APP_OPS_MODES"/>
+  <uses-permission name="android.permission.VIBRATE"/>
+  <uses-permission name="android.permission.DEVICE_POWER"/>
+  <uses-permission name="android.permission.REAL_GET_TASKS"/>
+  <uses-permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+  <uses-permission name="android.permission.UPDATE_DEVICE_STATS"/>
+  <uses-permission name="android.permission.PACKAGE_USAGE_STATS"/>
+  <uses-permission name="android.permission.QUERY_ALL_PACKAGES"/>
+  <uses-permission name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+  <uses-permission name="android.permission.MANAGE_COMPANION_DEVICES"/>
+  <uses-permission name="android.permission.READ_PROFILE"/>
+  <application label="Bluetooth" icon="res/mipmap-anydpi-v21/bt_share.xml" name="com.android.bluetooth.btservice.AdapterApp" persistent="false" supportsRtl="true" extractNativeLibs="true" usesCleartextTraffic="false" defaultToDeviceProtectedStorage="true" directBootAware="true" appComponentFactory="androidx.core.app.CoreComponentFactory" usesNonSdkApi="true">
+    <uses-library name="javax.obex"/>
+    <provider name="com.android.bluetooth.opp.BluetoothOppProvider" exported="true" process="" authorities="com.android.bluetooth.opp">
+      <path-permission permission="android.permission.ACCESS_BLUETOOTH_SHARE" pathPrefix="/btopp"/>
+    </provider>
+    <provider name="com.android.bluetooth.opp.BluetoothOppFileProvider" exported="false" authorities="com.android.bluetooth.opp.fileprovider" grantUriPermissions="true">
+      <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="file_paths"/>
+    </provider>
+    <service name="com.android.bluetooth.btservice.AdapterService" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetooth"/>
+      </intent-filter>
+    </service>
+    <service name="com.android.bluetooth.opp.BluetoothOppService" permission="android.permission.ACCESS_BLUETOOTH_SHARE" enabled="true" process=""/>
+    <receiver name="com.android.bluetooth.opp.BluetoothOppReceiver" enabled="true" exported="true" process="">
+      <intent-filter>
+        <action name="android.btopp.intent.action.OPEN_RECEIVED_FILES"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.android.bluetooth.opp.BluetoothOppHandoverReceiver" permission="com.android.permission.WHITELIST_BLUETOOTH_DEVICE" process="">
+      <intent-filter>
+        <action name="android.btopp.intent.action.WHITELIST_DEVICE"/>
+        <action name="android.btopp.intent.action.STOP_HANDOVER_TRANSFER"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.nfc.handover.intent.action.HANDOVER_SEND"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="*/*"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.nfc.handover.intent.action.HANDOVER_SEND_MULTIPLE"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="*/*"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="bluetooth_opp_launcher" label="Bluetooth" name="com.android.bluetooth.opp.BluetoothOppLauncherActivity" enabled="true" process="">
+      <intent-filter>
+        <action name="android.intent.action.SEND"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="*/*"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.SEND_MULTIPLE"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="*/*"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.btopp.intent.action.OPEN"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.item/vnd.android.btopp"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Material.Dialog.DarkAllowed" name="com.android.bluetooth.opp.BluetoothOppBtEnableActivity" enabled="true" process="" excludeFromRecents="true"/>
+    <activity theme="Theme.Material.Dialog.DarkAllowed" name="com.android.bluetooth.opp.BluetoothOppBtErrorActivity" process="" excludeFromRecents="true"/>
+    <activity theme="Theme.Material.Dialog.DarkAllowed" name="com.android.bluetooth.opp.BluetoothOppBtEnablingActivity" enabled="true" process="" excludeFromRecents="true"/>
+    <activity theme="Theme.Material.Light.Dialog.Alert" name="com.android.bluetooth.opp.BluetoothOppIncomingFileConfirmActivity" enabled="true" process="" excludeFromRecents="true"/>
+    <activity theme="Theme.Material.Dialog.DarkAllowed" name="com.android.bluetooth.opp.BluetoothOppTransferActivity" enabled="true" process="" excludeFromRecents="true"/>
+    <activity theme="Theme.DeviceDefault.Settings" label="" name="com.android.bluetooth.opp.BluetoothOppTransferHistory" enabled="true" process="" excludeFromRecents="true" configChanges="0xa0">
+      <intent-filter>
+        <action name="com.android.bluetooth.action.TransferHistory"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Material.Light.Dialog.Alert" name="com.android.bluetooth.pbap.BluetoothPbapActivity" enabled="true" process="" excludeFromRecents="true"/>
+    <service name="com.android.bluetooth.pbap.BluetoothPbapService" permission="android.permission.BLUETOOTH_PRIVILEGED" enabled="true" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetoothPbap"/>
+      </intent-filter>
+    </service>
+    <service name="com.android.bluetooth.map.BluetoothMapService" enabled="true" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetoothMap"/>
+        <action name="android.btmap.intent.action.SHOW_MAPS_SETTINGS"/>
+        <action name="com.android.bluetooth.map.USER_CONFIRM_TIMEOUT"/>
+      </intent-filter>
+    </service>
+    <activity label="Bluetooth Message Sharing Settings" name="com.android.bluetooth.map.BluetoothMapSettings" enabled="true" process="" excludeFromRecents="true" configChanges="0xa0"/>
+    <provider name="com.android.bluetooth.map.MmsFileProvider" enabled="true" exported="false" authorities="com.android.bluetooth.map.MmsFileProvider" grantUriPermissions="true"/>
+    <service name="com.android.bluetooth.mapclient.MapClientService" enabled="false" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetoothMapClient"/>
+      </intent-filter>
+    </service>
+    <service name="com.android.bluetooth.sap.SapService" enabled="false" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetoothSap"/>
+      </intent-filter>
+    </service>
+    <service name="com.android.bluetooth.gatt.GattService" enabled="true" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetoothGatt"/>
+      </intent-filter>
+    </service>
+    <service name="com.android.bluetooth.hfp.HeadsetService" enabled="true" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetoothHeadset"/>
+      </intent-filter>
+    </service>
+    <service name="com.android.bluetooth.a2dp.A2dpService" enabled="true" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetoothA2dp"/>
+      </intent-filter>
+    </service>
+    <service name="com.android.bluetooth.a2dpsink.A2dpSinkService" enabled="false" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetoothA2dpSink"/>
+      </intent-filter>
+    </service>
+    <service label="Bluetooth Audio" name="com.android.bluetooth.avrcpcontroller.BluetoothMediaBrowserService" enabled="false" exported="true" process="">
+      <intent-filter>
+        <action name="android.media.browse.MediaBrowserService"/>
+      </intent-filter>
+    </service>
+    <activity name="com.android.bluetooth.BluetoothPrefs" enabled="false" exported="false">
+      <intent-filter>
+        <action name="android.intent.action.APPLICATION_PREFERENCES"/>
+      </intent-filter>
+    </activity>
+    <service name="com.android.bluetooth.avrcp.AvrcpTargetService" enabled="true" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetoothAvrcp"/>
+      </intent-filter>
+    </service>
+    <service name="com.android.bluetooth.avrcpcontroller.AvrcpControllerService" enabled="false" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetoothAvrcpController"/>
+      </intent-filter>
+    </service>
+    <provider name="com.android.bluetooth.avrcpcontroller.AvrcpCoverArtProvider" enabled="false" exported="true" process="" authorities="com.android.bluetooth.avrcpcontroller.AvrcpCoverArtProvider" grantUriPermissions="true"/>
+    <service name="com.android.bluetooth.hid.HidHostService" enabled="true" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetoothHidHost"/>
+      </intent-filter>
+    </service>
+    <service name="com.android.bluetooth.hid.HidDeviceService" enabled="true" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetoothHidDevice"/>
+      </intent-filter>
+    </service>
+    <service name="com.android.bluetooth.pan.PanService" enabled="true" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetoothPan"/>
+      </intent-filter>
+    </service>
+    <service name="com.android.bluetooth.hfpclient.HeadsetClientService" enabled="false" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetoothHeadsetClient"/>
+      </intent-filter>
+    </service>
+    <service name="com.android.bluetooth.hfpclient.connserv.HfpClientConnectionService" permission="android.permission.BIND_CONNECTION_SERVICE" enabled="false" process="">
+      <intent-filter>
+        <action name="android.telecom.ConnectionService"/>
+      </intent-filter>
+    </service>
+    <service name="com.android.bluetooth.pbapclient.PbapClientService" enabled="false" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetoothPbapClient"/>
+      </intent-filter>
+    </service>
+    <service name="com.android.bluetooth.hearingaid.HearingAidService" process="">
+      <intent-filter>
+        <action name="android.bluetooth.IBluetoothHearingAid"/>
+      </intent-filter>
+    </service>
+    <service name="com.android.bluetooth.pbapclient.AuthenticationService" enabled="false" exported="true" process="">
+      <intent-filter>
+        <action name="android.accounts.AccountAuthenticator"/>
+      </intent-filter>
+      <meta-data name="android.accounts.AccountAuthenticator" resource="authenticator"/>
+    </service>
+    <service name="androidx.room.MultiInstanceInvalidationService" exported="false" directBootAware="true"/>
+  </application>
+</manifest>
+

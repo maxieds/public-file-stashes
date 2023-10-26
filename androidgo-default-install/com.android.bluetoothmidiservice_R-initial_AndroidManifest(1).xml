@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="1" versionName="R-initial" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.bluetoothmidiservice" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="29"/>
+  <uses-feature name="android.hardware.bluetooth_le" required="true"/>
+  <uses-feature name="android.software.midi" required="true"/>
+  <uses-permission name="android.permission.BLUETOOTH"/>
+  <application label="Bluetooth MIDI Service" extractNativeLibs="true" usesNonSdkApi="true">
+    <service name=".BluetoothMidiService" permission="android.permission.BIND_MIDI_DEVICE_SERVICE">
+      <intent-filter>
+        <action name="android.media.midi.BluetoothMidiService"/>
+      </intent-filter>
+    </service>
+  </application>
+</manifest>
+
