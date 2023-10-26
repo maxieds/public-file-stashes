@@ -2,8 +2,8 @@
 
 ## Archive and enumerate new AR/VR 
 
-<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/DarkWeb-CNETPayPaliOSAppCache-Zuckerberg.png" />
-<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/DarkWeb-CNETPayPaliOSAppCache-MuskAdReel.png" />
+<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/DarkWeb-CNETPayPaliOSAppCache-Zuckerberg.png" width="600" />
+<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/DarkWeb-CNETPayPaliOSAppCache-MuskAdReel.png" width="600" />
 
 The Facebook parent company, META (eerily like early TransMETA Linux kernel support from NL), has a primary 
 research area af AR/VR (Augmented Reality and Virtual Reality). This is most certainly NOT an innocent technology. 
@@ -35,4 +35,9 @@ These need to be archived for public review. The task includes enumerating phone
   (who introduced himself to me earlier while I was writing out details notes in the corner with: *Oh, so you know how to read?*):
   <br/>
   *Yes, indeed you can get back. The directions are relative to the coordinate system of whichever version of Google Maps you ar using. There are instructions to
-  find this building someone stuck to the building map on the wall*. Referenced by: `I-25 + C470E` near 'Denver CO' -- note the no-comma naming convention. 
+  find this building someone stuck to the building map on the wall*. Referenced by: `I-25 + C470E` near 'Denver CO' -- note the no-comma naming convention.
+
+## Other notes of things to remember or that bother me about the recent technology
+
+* As of this week (in mid October of 2023), Google Play Developer Console is assigning developers of apps homework (like they are children, or kids) to add details that are easily scanned with automated scripts on their end. They also require that all new updates to existing apps target the latest Android SDK -- in effect, forcing an update that is scary in light of my Android Go phone and the AI discussions. One new link they are suggesting is for **deep** (app) links, another imprecisely defined average use case that people need to be aware is going on (cf. App Clips on iOS / ipad as of 2023). See also below.
+* I have seen a version of [this YouTube video](https://youtu.be/MCk82FwReR4?si=xjQ67evyeiQJKald) (user: Paul Simmons) on someone else's phone with `Remix` functionality and audio that is much different in the last several months. The audio can be sped up and filtere to obtain audio tracks similar to the original (transistor technology, anyone?). I wonder if those versions of this video could be processed with Matlab to see what else is going on chirp-wise outside of the usual human audible spectrum. These new phones and LED/LCD light strips really pissed off my cat who could hear the demons and what they were saying. This is not unlike old SourceForge projects that used CRT monitors (now very much higher power LCD screens) to use bar patterns to produce MP3 quality audio that could be tuned with a frequency scanner they used to sell at RadioShack. There are also some weird things going on with YouTube videos (like the Notorious B.I.G.'s *Sky is the limit* with album cover artwork) with lightening flashes in the background that seem to signify this type of audio source. I think there are TikTok (as in the TikTok *kids*, or adult children of the devil) connectors to the applications that generate this noise. What about variants of what I would assume should be a standard 3.5mm audio headphone jack connector that can be connected in cars with [SXM type navigation firmware](https://youtu.be/kauCzrwGk6A?si=JK76No44yj9IQhZM) (N.b., [my Android Go phone](https://github.com/maxieds/public-file-stashes/tree/main/androidgo-default-install) can tune FM radio and do a lot of GSM dancing to/from different operator sources abroad -- see [this YouTube channel](https://www.youtube.com/@maxieschmidt) for community posts and playlists with some evidence)?
