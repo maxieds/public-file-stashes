@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="android.uid.phone" versionCode="1" versionName="1.0" compileSdkVersion="30" compileSdkVersionCodename="11" coreApp="true" package="com.sprd.omacp" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="29"/>
+  <uses-permission name="android.permission.VIBRATE"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.RECEIVE_WAP_PUSH"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <application theme="AppTheme" label="OtaOmaHandler" icon="res/drawable-hdpi-v4/ic_launcher.png" process="com.android.phone" extractNativeLibs="false" usesNonSdkApi="true">
+    <service name="com.sprd.omacp.transaction.OtaOmaService" exported="false"/>
+    <receiver name="com.sprd.omacp.transaction.OtaOmaReceiver">
+      <intent-filter>
+        <action name="android.provider.Telephony.WAP_PUSH_RECEIVED"/>
+        <data mimeType="application/vnd.wap.connectivity-wbxml"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="Theme.Dialog" name="com.sprd.omacp.transaction.ConfirmOtaActivity" excludeFromRecents="true"/>
+    <uses-library name="com.unisoc.sdk.common" required="true"/>
+  </application>
+</manifest>
+

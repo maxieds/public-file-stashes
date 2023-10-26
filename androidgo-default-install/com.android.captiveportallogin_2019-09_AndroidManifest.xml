@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="300000000" versionName="2019-09" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.captiveportallogin" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission name="android.permission.READ_DEVICE_CONFIG"/>
+  <uses-permission name="android.permission.MAINLINE_NETWORK_STACK"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+  <application label="CaptivePortalLogin" icon="res/drawable/app_icon.xml" supportsRtl="true" extractNativeLibs="true" usesCleartextTraffic="true" appComponentFactory="androidx.core.app.CoreComponentFactory">
+    <activity theme="AppTheme" label="Sign in to network" name="com.android.captiveportallogin.CaptivePortalLoginActivity" configChanges="0x4a0">
+      <intent-filter>
+        <action name="android.net.conn.CAPTIVE_PORTAL"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <service name="com.android.captiveportallogin.DownloadService" exported="false"/>
+  </application>
+</manifest>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="android.uid.phone" versionCode="1" versionName="1.0" compileSdkVersion="30" compileSdkVersionCodename="11" coreApp="true" package="com.sprd.ImsConnectionManager" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <uses-permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
+  <uses-permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission name="com.spreadtrum.vowifi.permission.ACCESS_CONFIGURATION"/>
+  <protected-broadcast name="com.spreadtrum.ims.vowifi.action.IMS_READY"/>
+  <application name=".ImsConnectionManagerApp" persistent="true" process="com.android.phone" extractNativeLibs="false" defaultToDeviceProtectedStorage="true" directBootAware="true" usesNonSdkApi="true">
+    <receiver name=".ImsConnectionManagerBroadcastReceiver">
+      <intent-filter>
+        <action name="android.intent.action.SIM_STATE_CHANGED"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.spreadtrum.ims.vowifi.action.IMS_READY"/>
+      </intent-filter>
+    </receiver>
+    <service name=".service.ImsConnectionManagerService"/>
+    <uses-library name="com.unisoc.sdk.common" required="true"/>
+  </application>
+</manifest>
+
