@@ -50,6 +50,14 @@ other scary or ominous warnings out we heed about the roll out of this nasty gam
   <br/>
   *Yes, indeed you can get back. The directions are relative to the coordinate system of whichever version of Google Maps you ar using. There are instructions to
   find this building someone stuck to the building map on the wall*. Referenced by: `I-25 + C470E` near 'Denver CO' -- note the no-comma naming convention.
+* Archive copies of (Windows/EXE or Java/jar based binary distributions) RNA software that is available and fairly up-to-date as of the last few years. These include the programs compared in [this listing](https://github.com/gtDMMB/RNAStructViz/wiki/SoftwareComparisions).
+Some other easy-to-find RNA secondary structure editing and manipulation programs and copies of current libraries like ViennaRNA or RNAstructure are often removed from the web after new versions are published
+([see one workaround of this type here](https://github.com/gtDMMB/homebrew-core/tree/master/LocalPatches)).
+The late night pandemic video chat sessions over scotch and Python scripting discussions that led to remarks about how
+these programs facilitate 'playing God' with biology is an important artifact of the time we need to preserve this way.
+Many years from now, people should be able to throwback to the forgotten era of this decade and play God with the universe like
+it's 2020 in America. I assume that any people that do not like the idea based not on what we say, but the way we say it, 
+do not understand what this means clearly enough yet.
 
 ### Notes about things to remember or that bother me about the recent technology
 
