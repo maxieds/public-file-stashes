@@ -1,5 +1,16 @@
 # List of projects related to the archived data
 
+Let's get to one key point about my taking the time to write all this out and post 
+previews of archived documents that pertain to civil actions over much of what my family 
+and myself have been put through over the last decade or more. 
+I am very outspoken about because it's the right thing to do. 
+Time will tell whether longterm progress is worth short-term political convenience for the current election cycle. 
+People who are prone to overreaction to discussions like these freely on the public Internet tend to fall into 
+one of two classes: those who are sensitive to language or the events that are inferred from the discussion; or, 
+those who endorse these misdeeds and anti-social violence with malintent to prevent the disemination of these details 
+and block others from engaging in discourse about malicious technological activities that
+too often go under the radar.  
+
 ## Archive and enumerate new AR/VR 
 
 <img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/DarkWeb-CNETPayPaliOSAppCache-Zuckerberg.png" width="800" />
