@@ -88,7 +88,7 @@ Here are some topical observations about the technology:
 
 ### More points about recent technology underpinnings
 
-<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/Screenshot_20231027-081601.png" height="480" />
+<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/Screenshot_20231027-081601.png" height="480" /><img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/Screenshot_20221109-071329.png" height="480" />
 
 A device hardware and software summary document saved from a factory reset of Android Go 1-2 months ago (early fall of 2023) is 
 now [available here](https://github.com/maxieds/public-file-stashes/blob/main/document-stashes/Device%20Info.pdf). It's listings reflect some bothersome subtle functionality and access points that this section was created to collect some thoughts on:
