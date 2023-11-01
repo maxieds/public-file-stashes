@@ -117,3 +117,133 @@ now [available here](https://github.com/maxieds/public-file-stashes/blob/main/do
 * __CPU hardware:__ Unisoc variant (I assume like the reflashable FPGA ISA ROM binaries due to Intel last year that caused panic and genuine concern from their execs about the discovery of opcodes that will break out of the sandbox in any VM/emulator -- my unspeakable annoyance about simply knowing the password, in the form of suppressed documentation of technology specs, being a substitute for sophistication).
 * __Processor type (multicore spec):__ Listed as a quadcore with 4x1.40GHz units should be power LOADED for this era. The phone is still sluggish and packaged with the new Android Go OS designed to make modern Droid platforms portable to older or cheaper hardware. *Is it possible that the device is really just a thin client that is using cloud VMs to run all it's blessed functionality -- that is, a noisy overnetworked screen (if only I had a brain, one repeats in the Wizard of Oz reproduced within the phone settings)?* N.b., the perverse notion of an `app' as some sort of parasitic spawn (speak of the process) that runs atop your/my (anyone really who is uniquely barcoded up to contextually local uniqueness of reference which may or may not vary with time and other parameters) stack draining resources it consumes seems newer (this year).
 * __CPU governor:__ I have never heard this technical description before. As in (bitch call me) the mayor of my virtual town?
+
+### Attempts at deconvolving the online AI madness mathematically - takeways and suggestions (DRAFT POST IS IN PROGRESS)
+
+#### Remarks and takeaways
+
+Amidst mostly contentless news blurbs about Trump's upcoming trials, it seems that online, 
+the man has the attitude that if he is going to jail (Hell, for the rest of his life), 
+then everyone else is going down with him. All this while the USA government will surely 
+shut down over a last second rule modification from ex-speaker McCarthy to let the 
+party extremists, like Matt Gaetz of Florida, block progress for a long time to stall while 
+Trump is processed in court. Jim Jordan was unable to secure enough votes 
+(of 217 red party only required) because he will pardon Trump. Meanwhile, others throw chaos at the online universe that only some 
+may see, and certainly only to deprive individuals in the opposition from being able to 
+stay in sane contact (phones, email, the works). I have crazy QANON spewing people that refuse to 
+leave me alone in particular - many of whom attended some high school I did not affiliate with 
+almost twenty years ago. 
+
+<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/Gmail_spam_other_ref_entries-v1.png" width="480" /><img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/Gmail_spam_other_ref_entries-v2.png" width="480" />
+
+<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/BingSearchResults-EntriesAboutRecentOnlineActivities-Unsolicited-2023_11_01.png" height="640" /><img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/DotApp-gTLD-GoogleAuthority.png" height="640" />
+
+The apparent onset of AI-based technology on the accounts I use boils down to randomized (disorganized) chaos and Nazi-ism
+**[R1-R4]**. Also, roughly, where you started dictates where you are going, but you will probably not be that far where you land
+from where you began (in the coarse caste system) **[R5]**. The next points list an interpretation that suggests some of the 
+details to schemes.
+
+<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/UHaul_Lucky_No_1729-IMG_0268.png" height="420" /><img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/AndroidGo-SquareThingyQRCode-SN1.png" height="420" />
+
+* I like what Theo de Raadt has done with OpenBSD over the years. He provides cutting edge implementations of protocols and
+  interfaces that get used in production while secretly archiving the (invertible, within reason) encoding schemes
+  (up to export laws for cryptography out of Canada; kind of like Google certificates being banned and Microsoft Windows OS
+  being necessarily open source in China where they remember Vietnam):
+  *So long, and thanks (thx) for all the passwords (a-sholes)!*
+* Note that my phone has not been updated in a while so that the SN2 (presumably encoding to transition to the next level of the
+  scheme is missing; or possibly, I have been selected for termination as a loser in the previous round as one of the top 1-2 percent -
+  no future, no index). 
+* The square-thingy barcode associated with my node is accessed from the `ValidationTools` app, viewing the `TestInfo` output running
+  the main activity. The two serial numbers could be varied with an emulator environment for Android OS
+  (see [these APK binaries](https://github.com/maxieds/public-file-stashes/tree/main/androidgo-default-install)).
+  This can be used to extract encodings with respect to (each of the four?) an encoding of the elements of the finite
+  field used by glyphs, or pix(map) icons that form a seamless wallpaper. 
+* Note that recently, a fourth nation on Earth (India) is reported to have journeyed to the Moon and back.
+  This seems to mark a completion of the `|S_3|=6` stages (reichs) so that we are working with `|S_4|=24`.
+  This gives some clues about the encoding schemes with extra insight from some of the references and topics listed below.
+  The decompositions of the Galois groups (up to isomorphism: pick direct products of `F_{q^k}` for `q` prime and `k`
+  a positive integer.
+* Elon Musk considers the numbers `420 = 4 * 105 = 2^2 * 3 * 5 * 7` and `69 = 13^2` *funny* (dead, digested).
+* The 105-problem introduced for a 1K/USD reward by Ronald Graham requests a proof that there are infinitely many
+  natural numbers `n` such that `n` is simultateously invertible under arithmetic modulo `3,5,7`:
+  `n === 1 (mod 3)`, `n === 1 (mod 5)` and `n === (mod 7)`. The proofs for a M-problem where `M` is squarefree with
+  exactly `k` prime factors are essentially the same. Erdos has work on the case where `k = 2`.
+* Triangulation schemes with elliptic curves (Riemannian sphere coordinate systems) require three points along the curve to
+  completely define it (like Moebius transformations in complex analysis). Now that we have four reference points that are
+  apparent, what coordinate system in 4-D should we assert is used?
+
+#### Parenthetical notes: 
+
+* **[R1]:** In any random variable with a Gaussian distribution, 95-percent of the of values of the variable lie within
+  two standard deviations of the mean (also, quartiles). Normalizing so that the mean is about zero, this means that the so-called
+  top 1-percent to 2-percent who lose (value is reduced by playing in the game) lie in the bottom two (Levels 1 and 2) of five
+  (Levels 3, 4 and 5; with default placement in the Level 3 salary category at Google for employees with a PhD).
+  Incidentally, the process of asserting that debt (or losses) by someone (alternately, gains by someone else, inversely)
+  should be accrued by a geometric doubling rate is anti-Semitic (examples upon polite request).
+* **[R2]:** See the economic models related to normal distributions of population yearly salaries and zero sum game models
+  (random walk) in [this article](https://en.wikipedia.org/wiki/Markov_chain#Applications) -
+  rough timelines and academic affiliations of the credits. 
+* **[R3]:** I have heard intelligent comments about Trump being likened to a modern day Robin Hood.
+* **[R4]:** Fables about needing to wait 300 years for the development of a very different theory to prove the
+  Riemann Hypothesis (classical version, sums over positive integer objects). This and observations like the short novelette by
+  DOnald E. Knuth (favored by someone relevant to all this as generalizing the algebraic construction of integers from whole numbers,
+  rationals from integers, reals from the rationals, complexes from the reals, with other interest points like the quaternions and the
+  surreal numbers) titled *Surreal numbers*. 
+* **[R5]:** Poset constructions with the zero sum game (3-percent) partition the participants at
+  the end of a (fantasy sport) bracket (round) into those that win (gain, or do not lose value; at 3-percent) and those
+  that lose (1/2-percent). The branching factor is `1/2` corresponding to `1/sqrt(2 * pi) * Int_{-inf}^{0} exp(-t^2/2) dt = 1/2`
+  (with a standard normal distribution mean of zero). 
+
+#### Topics (laundry listing)
+
+* 
+* 
+* [FLTreasureHunt.gov](FLTreasureHunt.gov) (search parameters: Schmidt and city Pensacola)
+  1. Theresa and Joesph were listed as relatives in Saint Louis, MO before 2015
+  2. Susan is the first name of the previous house owner
+  3. Jason A Zych is a search result for baseball player (the LinkedIn profiles for former
+     UIUC/CS lecturer Jason Zych were modified late last summer of 2022: The email only
+     profile was removed, and the listings of skills were verbosely extended for the first time
+     in a very long time; See [these directories](https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2020),
+     [here](https://github.com/maxieds/CS225UIUCHistoricalLabCodeLibrary.), or
+     [here](https://github.com/maxieds/ThrowingSomeOldBitsIntoAHoleOnGitHub)).
+     There is a mother (Catherine, or Katherine,
+     as [here](https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2020/blob/master/local-images/DegreeRequirements.png) from [Sam Kamin's](https://github.com/maxieds/InMemoryOfCrazyPrePandemicFlorida/blob/main/MiscQuasiIrrelevancies/WhyDidSamKaminDeleteHisFacebookProfile.png) SLICE server along with [a spoofed MS thesis](https://github.com/maxieds/CS225UIUCHistoricalLabCodeLibrary./commit/c73f745d7d34cb00f453721188365a18a1887136)
+     promoted to doctorate derived from a UIUC well known scholar's surname 
+     first name that is unusual in the Florida list of unclaimed monetary assets).
+  5. Brittany (Ascension company; cf. Jason Zych's medical records software engineer profiles on LinkedIn)
+  6. Ashlee first name sounds familiar from middle school and high school
+  7. Some of these entries are related to life insurance policies?
+  8. Why would there have been cancelled Cox cable/Internet services to claim?
+  9. American Bankers Insurance company was used by someone who arranged my transportation after July of 2022
+     to take out a lien in my name. 
+  10. Note the four digit suffixes on some of the zipcodes. 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+
+#### External references to look over carefully
+
+* Bernstein and Sloane, *Some canonical sequence of integers* (for transformation variants)
+* Rota, *On the foundations of combinatorial theory I: Theory of the Moebius function* 
+* Knuth, *Surreal numbers* (crypto references with Alice and Bill/Bob)
+* Graduate texts in mathematics series book exposing Doug West's famous Ramsey Theory (in logic, or 
+  enumerative combinatorics).
+  1. Similar to the construction in Enumerative Comvinatorics Volume I, page 100
+  2. The 99% lemma (cf. the Gaussian economics models with zero sum games and the 3-percent interpretations)
+* Articles circa 2013 about encryption schemes comprised of **levels** (above, coordinates indexed by special 
+  finite fields), about five of them, with matrix Gaussian distributions (cf. GRH, GUE and random matrix theory)
+* Article from early 2000's by Nathan Ng about the Mertens function: Discussion of the lower parameter exponent and 
+  its history (where the application came up - hint). 
+* Ramanujan's notebooks, volume 6 by Berndt and Andrews
+* Theory of the Riemann Zeta Function (original print copies)
