@@ -118,7 +118,7 @@ now [available here](https://github.com/maxieds/public-file-stashes/blob/main/do
 * __Processor type (multicore spec):__ Listed as a quadcore with 4x1.40GHz units should be power LOADED for this era. The phone is still sluggish and packaged with the new Android Go OS designed to make modern Droid platforms portable to older or cheaper hardware. *Is it possible that the device is really just a thin client that is using cloud VMs to run all it's blessed functionality -- that is, a noisy overnetworked screen (if only I had a brain, one repeats in the Wizard of Oz reproduced within the phone settings)?* N.b., the perverse notion of an `app' as some sort of parasitic spawn (speak of the process) that runs atop your/my (anyone really who is uniquely barcoded up to contextually local uniqueness of reference which may or may not vary with time and other parameters) stack draining resources it consumes seems newer (this year).
 * __CPU governor:__ I have never heard this technical description before. As in (bitch call me) the mayor of my virtual town?
 
-### Attempts at deconvolving the online AI madness mathematically - takeways and suggestions (DRAFT POST IS IN PROGRESS)
+### Attempts at deconvolving the online AI madness mathematically - takeways and suggestions
 
 #### Remarks and takeaways
 
@@ -134,9 +134,9 @@ stay in sane contact (phones, email, the works). I have crazy QANON spewing peop
 leave me alone in particular - many of whom attended some high school I did not affiliate with 
 almost twenty years ago. 
 
-<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/Gmail_spam_other_ref_entries-v1.png" width="480" /><img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/Gmail_spam_other_ref_entries-v2.png" width="480" />
+<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/Gmail_spam_other_ref_entries-v1.png" width="400" /><img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/Gmail_spam_other_ref_entries-v2.png" width="400" />
 
-<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/BingSearchResults-EntriesAboutRecentOnlineActivities-Unsolicited-2023_11_01.png" height="640" /><img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/DotApp-gTLD-GoogleAuthority.png" height="640" />
+<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/BingSearchResults-EntriesAboutRecentOnlineActivities-Unsolicited-2023_11_01.png" height="400" /><img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/DotApp-gTLD-GoogleAuthority.png" height="400" />
 
 The apparent onset of AI-based technology on the accounts I use boils down to randomized (disorganized) chaos and Nazi-ism
 **[R1-R4]**. Also, roughly, where you started dictates where you are going, but you will probably not be that far where you land
@@ -196,8 +196,50 @@ details to schemes.
 
 #### Topics (laundry listing)
 
-* 
-* 
+* Braid groups (constructions) uses in network traversals and as passwords 
+* *Lectures on Generating Functions* by S. K. Lando: Section on multivariate continued fractions (cf. sieve methods for posets;
+  cf. continued fraction algorithms to make modern cryptography, like RSA, decode operations polynomial time on quantum computers)
+* Enumerative Combinatorics Volume I:
+  1. Definition of binomial posets (other convolution type sums in use include those in Riordan's
+     *Combinatorial identities* such as those in [these tables](https://en.wikipedia.org/wiki/Generating_function_transformation)).
+  2. Twelvefold method (cf. deep link types analogy of default/deferred/contextual); Also, use of multisets in the twelvefold method.
+  3. Determinant formulas (matrix inversions over groups) stated in terms of functions (elements of symmetric group, other variants)
+* Lattice constructions in n-D (including projections from higher dimensional spaces to the plane);
+  Reference: The [Tilings Encyclopedia](https://tilings.math.uni-bielefeld.de/) (especially, aperiodic and famous examples)
+* APL prgramming language: Can use to prove the infinitude of the primes (integer subset)
+* NIST/DLMF table: 26.4.1 (examples of common partition transformations, like the M2 numbers)
+* QR codes are location based: Relative to state or the (Q, R) matrix factorizations used? 
+* Caches of pix(map) icons or encodings  
+* *De Santis versus Disney* court cases; Meanings considering articles in Project Euler/Euclid/Guttenberg, or the dual arXiv preprint server listings after 2020
+  (differences observed from [here (original, Cornell)](https://arxiv.org/a/schmidt_m_2.html) to
+  [here (post-2020, Harvard)](https://ui.adsabs.harvard.edu/abs/2017arXiv170600393M/abstract); also,
+  [this url (original)](https://web.archive.org/web/20230000000000*/https://math.gatech.edu/~mschmidt34) compared to caches of
+  [this url (changed in 2021)](https://web.archive.org/web/20230000000000*/https://mschmidt34.math.gatech.edu/)).
+  What about Github 2020 Arctic Vault, CNN Vaults from this time? Github seems to have differences in its accounting depending on how it recognizes the
+  authenticated user [as demonstrated here](https://youtu.be/Tk2mkPI4sK4?si=YL30Uj9HohePXFS1). 
+* Erdos numbers of authors of technical manuscripts (note that Erdos was known for amphetamine abuse and being Hungarian, like the
+  famed Count Dracul, centuries before him). 
+* In the context of zero sum games and fantasy baseball/SXM sport bracketed tournaments: What does the use of *left behind* tend to mean? 
+* Musk stated before the big purchase that he wanted to make Twitter all darkweb. What did he mean? YouTube video listings are partitioned into
+  public/unlisted/private (analogs to Markov chain / AI model types with partially known data to measure). 
+* Amazon listings of coauthored books by Kevin Mitnick and Lucky225 disappeared after 2020 with only entries by Mitnick and William L. Simon together. 
+* You never really know where you are on Facebook. And: *Facebook can delete links*.
+  <br />
+  CS/UIUC ([cs.uiuc.edu](cs.uiuc.edu)) faculty photos of Jason Zych redacted from [archive.org](archive.org) caches of the pages dating from
+  approximately 2004 to as late as 2007. Who determines this hiding of information, and on what grounds
+  (cf. [this convenient example](https://github.com/maxieds/GEyesThemes/releases/download/Codename-BackOrifice53/2.Who.is.Jason.Zych_.Why.was.he.fired.from.UIUC.years.ago_.-.Quora.pdf) and
+  the [release notes it belongs to](https://github.com/maxieds/GEyesThemes/releases))?
+  Teenage photograph of Lucky225 with a profile about actual famous work like on XWindows? 
+* How many disjoint, connected components in the topology of the darkweb (Web x.0?) with AI spanning forests? I requested 100 stars on
+  [this otherwise excellent and timely Android library](https://github.com/maxieds/AndroidFilePickerLight/releases/tag/codename-mousey-v1)
+  only to be thwarted unfairly at the mention when other projects written in scripting language with fewer features
+  obtained 1000's. How easy is it for people to get to the [post that Barack Obama alludes to in his first podcast in 2021](https://github.com/maxieds/ChameleonMiniLiveDebugger/issues/26)?
+  A manuscript editor from 2018 (hostile Jeff Shallit; in obvious connection to Ernie Croot with similar repeat
+  [sleighted comments here](https://github.com/maxieds/MertensFunctionManuscriptMathematics/blob/main/other-correspondence/incidental-rejection-history/2019-03-02-JNT-D-19-00190.pdf))
+  that was unrelated requested to find the best known error term for a classical partial sum.
+  Despite complimentary referee feedback, my inability to locate one as good as that of Walfisz (in original German) using the university library article search engine
+  led him to reject the manuscript based on his personal opinion of my laziness towards researching the error term bounds.
+* ShyNet topic from 1980's Terminator movie series and modern Bluesky (bsky.app instances); What else can we make of the listings in 
 * [FLTreasureHunt.gov](FLTreasureHunt.gov) (search parameters: Schmidt and city Pensacola)
   1. Theresa and Joesph were listed as relatives in Saint Louis, MO before 2015
   2. Susan is the first name of the previous house owner
@@ -217,20 +259,7 @@ details to schemes.
   8. Why would there have been cancelled Cox cable/Internet services to claim?
   9. American Bankers Insurance company was used by someone who arranged my transportation after July of 2022
      to take out a lien in my name. 
-  10. Note the four digit suffixes on some of the zipcodes. 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+  10. Note the four digit suffixes on some of the zipcodes.
 
 #### External references to look over carefully
 
@@ -247,3 +276,4 @@ details to schemes.
   its history (where the application came up - hint). 
 * Ramanujan's notebooks, volume 6 by Berndt and Andrews
 * Theory of the Riemann Zeta Function (original print copies)
+* Book: *The Games People Play* (social psychology perspective on game theory)
