@@ -1,0 +1,7 @@
+service vendor.sprd.broadcastradio-hal2 /vendor/bin/hw/vendor.sprd.hardware.broadcastradio@2.0-service-lazy
+    interface android.hardware.broadcastradio@2.0::IBroadcastRadio default
+    oneshot
+    disabled
+    class hal
+    user audioserver
+    group audio media
