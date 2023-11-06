@@ -1,2 +1,0 @@
-
-com.android.adbdÄ∆Üè:libadb_pairing_auth.so:libadb_pairing_connection.so:libadb_pairing_server.so:libadbconnection_client.soBlibadbd_auth.soBlibadbd_fs.soBlibc.soBlibdl.soB	liblog.soBlibm.soBlibselinux.so

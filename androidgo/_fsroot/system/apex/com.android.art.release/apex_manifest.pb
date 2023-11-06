@@ -1,2 +1,0 @@
-
-com.android.art:libandroidicu.so:libandroidio.so:libdexfile_external.so:libnativebridge.so:libnativehelper.so:libnativeloader.so:	libpac.soBlibadbconnection_client.soBlibc.soBlibdl.soBlibdl_android.soB	liblog.soBlibm.so
