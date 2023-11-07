@@ -45,11 +45,11 @@ other scary or ominous warnings out we heed about the roll out of this nasty gam
 * Google Earth views on the darkweb connection - scary.
 * Caches of variants of darkweb sourced static map data. This includes two+ variants of Google Maps (web searchable with Tesla/car, EV stations and
   other odd nearby location markers listed on the default site) -- one is GPS-like floating point oordinate pair based and another observed involves
-  a reference point (like highway I-25) and an alphanumerica 6--8 digit location identifier (probably some local lookup table caches).
+  a reference point (like highway I-25) and an alphanumerica 6–8 digit location identifier (probably some local lookup table caches).
   Another is a unique way of refering to hard-to-find physical addresses in a format that can be used for Amazon Prime deliveries.
   Other sources of this type of data include: a map set to use in the Ukraine (need to recall naming conventions), standard GPS device or OpenLocation
   map variants, searchable website based map data (mapinfo named site?) based out of a start point
-  (like 'country' source, or moving around the SXM navigation lookups with only 8--12
+  (like 'country' source, or moving around the SXM navigation lookups with only 8–12
   fixed big cities like Los Angeles [as shown within this video](https://youtu.be/kauCzrwGk6A?si=JK76No44yj9IQhZM) and
   strange relative Washington DC directions and clearly marked state/site Owners to tag whom
   people are bound in the territory and options to print directions to Russia useful since telling safari participants you are Russian and of a red
@@ -204,6 +204,16 @@ details to schemes.
      *Combinatorial identities* such as those in [these tables](https://en.wikipedia.org/wiki/Generating_function_transformation)).
   2. Twelvefold method (cf. deep link types analogy of default/deferred/contextual); Also, use of multisets in the twelvefold method.
   3. Determinant formulas (matrix inversions over groups) stated in terms of functions (elements of symmetric group, other variants)
+  4. The poset constructions based on ascents, or ascending set sizes, 
+     are related to somer topics in Romik's article 
+     *Partitions of n into sqrt(n) parts* (2005). On pages 2-4 of the 
+     article, the author estalishes asymptotics for minimal difference 
+     partitions of size `d`. On page 4 (at the end of section 1), 
+     there is a reference to new a use of 
+     [Markov chains](https://en.wikipedia.org/wiki/Markov_chain) 
+     (the AI deployment over the last few weeks has let Wikipedia 
+     suggest applications of this topic that are more timely and 
+     relevant than usual).
 * Lattice constructions in n-D (including projections from higher dimensional spaces to the plane);
   Reference: The [Tilings Encyclopedia](https://tilings.math.uni-bielefeld.de/) (especially, aperiodic and famous examples)
 * APL prgramming language: Can use to prove the infinitude of the primes (integer subset)
