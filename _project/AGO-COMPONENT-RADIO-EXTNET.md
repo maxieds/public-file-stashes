@@ -34,6 +34,21 @@ The format of entries in the file is of the following form:
 A link to the [file is provided here](https://github.com/maxieds/public-file-stashes/blob/main/androidgo/_fsroot/vendor/etc/numeric_operator.xml). 
 The format of entries in the file is of the following form:
 ```bash
+<item>2761=One.al</item>
+<item>54411=Bluesky</item>
+<item>544110=Bluesky Communications</item>
+<item>365840=FLOW</item>
+<item>7227=AR - Movistar</item>
+<item>722310=CLARO AR</item>
+<item>72234=AR PERSONAL</item>
+<item>2835=MTS ARM</item>
+<item>3631=SETAR</item>
+<item>2083=MobiquiThings</item>
+<item>4107=Jazz</item>
+<item>2426=Ice</item>
+<item>2403=Ice.net</item>
+<item>2409=djuice</item>
+<item>24436=DNA - Sonera FI</item>
 <item>311580=U.s.Cellular</item>
 <item>312180=Limitless Mobile</item>
 <item>312720=Southern Linc</item>
@@ -41,8 +56,18 @@ The format of entries in the file is of the following form:
 Some interesting entries in the configuration file mapping integer codes to operator names include: 
 ```bash
 Verizon, Sprint, SoftBank Moble Corp, *USA*, *Sky*, AISatSea, Smart, Free, 
-Southern Linc (where QUINN is noted to be an abbreviation for Queen of the South)
+Southern Linc (where QUINN is noted to be an abbreviation for Queen of the South),
+Jasper, Northstar, PACE, Tampnet, Limitless Wireless, Cincinatti Bell, Highland,
+Smile*, Sky UK Telecom, *BT*, *AMP*, Concho, Iowa Wireless*, Verisign [BIG-BAD-HINT!!!]
 ```
+There are some smelly symptoms of attacks on entire classes of operators like `ru` by country 
+seen in [eccList-conf.xml](https://github.com/maxieds/public-file-stashes/blob/androidgo-system-dirs-full/androidgo/_fsroot/system/etc/eccList-conf.xml). 
+Disabling encryption on cellular networks for large geographic regions is dangerous. The apparent removal of electric-curve-cryptography shown in this 
+configuration file is a problem for others tied to Android (now AndroidGo) phones. The sources for this OS are being deployed along with AI, a lot of extra very 
+permissive and hastily hacked hardware running on these devices to let anyone approved by the OS owners access, and obvious instances of websites (like Github) 
+that partition nodes according to apps and caste classifications which are arbitrary. This occurs partially along different network types (like sattelite interfaces to radio/RF) 
+and may be hacked as low as switches made by Oracle. The deployment in the USA is done intentionally over the last few weeks to coincide with downtimes of communications like voice and 
+email as Donald Trump continues to assert that he cannot be put to trial. 
 
 ## File `volte-conf.xml`: 
 
@@ -74,7 +99,7 @@ types=dun,
 apn=internet,minternet,isp,ppwap,zmms,modem,broadband,ims,mms,mmsc,orangemms,web,hos,multimedia,hms
 ```
 
-### Unusual patterns     to notice
+### Unusual patterns to notice
 
 Some interesting variations of the APNs in the long file include:
 * Empty fields like `apn=""`
@@ -168,9 +193,13 @@ An observation to note is that -- TODO
 
 #### Links to the start of APN definitions for a few countries
 
+The countries below appear directly in the configuration file. Other `en_US` strings for countries 
+like `China` have entries in `numeric_operators.xml` above. Here are the tags 
+
 #### TODO 
 
 #### TODO 
+
 
 
 
@@ -348,3 +377,19 @@ An observation to note is that -- TODO
         authtype="3"
     />
 ```
+
+## Working files lists 
+
+### List of links to working files
+
+* [https://github.com/maxieds/public-file-stashes/blob/androidgo-system-dirs-full/androidgo/_fsroot/system/etc/old-apns-conf.xml](https://github.com/maxieds/public-file-stashes/blob/androidgo-system-dirs-full/androidgo/_fsroot/system/etc/old-apns-conf.xml)
+* [https://github.com/maxieds/public-file-stashes/blob/androidgo-system-dirs-full/androidgo/_fsroot/system/vendor/etc/supl.xml](https://github.com/maxieds/public-file-stashes/blob/androidgo-system-dirs-full/androidgo/_fsroot/system/vendor/etc/supl.xml)
+* [https://github.com/maxieds/public-file-stashes/blob/androidgo-system-dirs-full/androidgo/_fsroot/system/etc/updatable-bcp-packages.txt](https://github.com/maxieds/public-file-stashes/blob/androidgo-system-dirs-full/androidgo/_fsroot/system/etc/updatable-bcp-packages.txt)
+* [https://github.com/maxieds/public-file-stashes/blob/androidgo-system-dirs-full/androidgo/_fsroot/system/vendor/etc/deviceidle.xml](https://github.com/maxieds/public-file-stashes/blob/androidgo-system-dirs-full/androidgo/_fsroot/system/vendor/etc/deviceidle.xml)
+* [https://github.com/maxieds/public-file-stashes/blob/androidgo-system-dirs-full/androidgo/_fsroot/system/vendor/etc/pwctl_config.xml](https://github.com/maxieds/public-file-stashes/blob/androidgo-system-dirs-full/androidgo/_fsroot/system/vendor/etc/pwctl_config.xml)
+
+### Disjoint file sets spread across commits - Screw X Musk and his evil father for half assing this without understanding anything - Why all this? Early leaks of sources of their activities and a HashTag in a commit message that some deranged kid interprets as grounds for physical assault - no more, Trump and company deserve what they finally get
+
+* [https://github.com/maxieds/public-file-stashes/tree/f90abf0ad121e790e99822bafe120a7b14050dda/androidgo/_fsroot/system](https://github.com/maxieds/public-file-stashes/tree/f90abf0ad121e790e99822bafe120a7b14050dda/androidgo/_fsroot/system) - both branches to get the `/system/*` binary file sets
+* [https://github.com/maxieds/public-file-stashes/tree/6233959f48146f5f0ca8731a0309bddd3204d416](https://github.com/maxieds/public-file-stashes/tree/6233959f48146f5f0ca8731a0309bddd3204d416) - the up-to-date contents of the files outside of the AndroidGo hierarchy
+* * [https://github.com/maxieds/public-file-stashes/tree/6b99bc0c20e554dd23c3875c16bcf96d13f9b1f3/androidgo/_fsroot/vendor/etc](https://github.com/maxieds/public-file-stashes/tree/6b99bc0c20e554dd23c3875c16bcf96d13f9b1f3/androidgo/_fsroot/vendor/etc)
