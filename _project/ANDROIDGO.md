@@ -83,7 +83,8 @@ TODO: Subsection on apps
 7. Github/zonghai-li/adb-ios
 8. Can an app link be resolved by loading a dynamic shared library 
    (see the example on line 164 of `/system/apex/com.android.art/etc/ld-config.txt`):
-   ```bash     ###############################################################################
+```bash
+###############################################################################
 # "adbd" APEX namespace
 #
 # This namespace is for libraries within the adbd APEX.
@@ -105,8 +106,10 @@ TODO: Noteworthy apps installed:
 * `/system/app/BadicDreams,BluetoothMIDIService,CertInstaller,CompanionDeviceManager,HTMLViewer,NfcNci,PacProcessor,PlatformCaptivePortalLogin,ValidationTools`
 * `/system/priv-app/CellBroadcastServiceModulePlatform,PlatformNetworkPermission*,MusicFX,MmsService`
 * `/system/vendor/CameraIPControl` (note that the subsirectories in 
-`/vendor/app` - [directory link]() - reflect the default set of apps that are preinstalled on the phone before any updates?/)
-* 
+`/vendor/app` ([directory link](https://github.com/maxieds/public-file-stashes/tree/main/androidgo/_fsroot/vendor/app)) or
+perhaps `/system/vendor/app` ([directory link](https://github.com/maxieds/public-file-stashes/tree/main/androidgo/_fsroot/system/vendor/app))
+reflect the default set of apps that are preinstalled on the phone before any updates. This is concerning because there is integrated IP control of
+so-called cameras (networked subject observers) by enabled by default even in the minimal install. 
 
 TODO: Special hidden apps: 
 1. `updateable-bcp-packages.txt`:
