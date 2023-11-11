@@ -10,7 +10,8 @@ is reproduced as follows (where the IANA version is `2020a`):
 ```
 The file [`/system/apex/com.android.tzdata/etc/tz/tzlookup.xml`](https://github.com/maxieds/public-file-stashes/blob/main/androidgo/_fsroot/system/apex/com.android.tzdata/etc/tz/tzlookup.xml) 
 contains tag entrie with fields (some optional) that include:
-* `defaultBoost="y|n"`: Is this like the common C++ `libboost`? Notice that this makes sense in loading apps like dynamic shared objects at runtime.
+* `defaultBoost="y|n"`: Is this like the common C++ `libboost`? Notice that this makes sense in loading apps like dynamic shared objects at runtime. Kind of like little instances of COVID apps
+  instead of viral library revisions spawned to daemonize the net.
 * `everutc="y|n"`: Whether the timezone obeys the normal fixed offset from UTC all of the time? I have heard comments about `1/2` timezones that do not fit into this model.
 
 The file [`/system/apex/com.android.tzdata/etc/tz/telephonylookup.xml`](https://github.com/maxieds/public-file-stashes/blob/main/androidgo/_fsroot/system/apex/com.android.tzdata/etc/tz/telephonylookup.xml) 
