@@ -207,7 +207,7 @@ com.android.wifi.x
 ```
 
 TODO: Extracting lists of common app handlers:
-1. `/system/etc/dirty-image-objects`: list `app.*` and `com.android.*`
+1. `/system/etc/dirty-image-objects`: list `app.*` and `com.android.*`; angry birds references as a popular frontend to darkweb MineCraft games
 2. `android.software.wallpaper`
 
 TODO: Frameworks: 
