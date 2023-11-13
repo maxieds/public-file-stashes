@@ -33,6 +33,14 @@ about current events that make Trump, et. al. look bad. Do not let these people 
 rug yet again. Barack Obama on regress under Trump (paraphrase): *I fear no evil.* 
 God on the Middle East (Biblical consensus): *Kill every God-damn one of them, save Israel.* 
 
+TODO: Re-type the highlights of X/Twitter funding for Musk to take it over - DM / keep third party 
+disclosure of Trump getting caught, penis slammed shut in the proverbial cookie jar from being used 
+against him in court. Northern California + versions (revisions) of his *platform* being insisted as 
+a legal basis / imprecisely fuzzy boundaries and sliding window where an asserted policy by the respondent (all to 
+common tactic with copyright legalese - more details soon - keyboard presentations being viewed as a way to assert this on victims - it's not what you say, it's how you say it rhetoric is obnoxious) to stall for time in the proceedings. 
+State sentences (independent state-level review boards to overturn four times over) versus federal indictments that can be pardoned or revoked by high enough ranking elected officials in the legislative branch whenever the agenda is covenient to realize at the time. Red haired snowboarder (X / what the sport really means) crazy overreaction to me talking with Liz Cheney for her congressional committee the day daddy bought Twitter led to Paul Pelosi (husband of a fellow committee member, 
+Nancy Pelosi) being murdered (image repositories). Biden / actor / Kamala Harris + dead secret service members (NOT Mike Pence) in a closet under gun fire has only made one public appearance since then to eulogize Tyre Nichols in 2023 - Adam Schiff and Elizabeth Warren on the darkweb according to Fox News - Adam Kinsigner (IL, military man) similarly getting out of the way, out of politics, to make more kids with his wife away from Washington.
+
 ### New issues on Android
 
 TODO: SPRD/Unisoc: behavior partially explained by the 
