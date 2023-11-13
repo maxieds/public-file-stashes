@@ -41,6 +41,10 @@ common tactic with copyright legalese - more details soon - keyboard presentatio
 State sentences (independent state-level review boards to overturn four times over) versus federal indictments that can be pardoned or revoked by high enough ranking elected officials in the legislative branch whenever the agenda is covenient to realize at the time. Red haired snowboarder (X / what the sport really means) crazy overreaction to me talking with Liz Cheney for her congressional committee the day daddy bought Twitter led to Paul Pelosi (husband of a fellow committee member, 
 Nancy Pelosi) being murdered (image repositories). Biden / actor / Kamala Harris + dead secret service members (NOT Mike Pence) in a closet under gun fire has only made one public appearance since then to eulogize Tyre Nichols in 2023 - Adam Schiff and Elizabeth Warren on the darkweb according to Fox News - Adam Kinsigner (IL, military man) similarly getting out of the way, out of politics, to make more kids with his wife away from Washington.
 
+**TODO (tomorrow):** 
+* Upload the full AGO system APK and extracted metadata highlights - ChimeraX + copyright + human trafficking for fun and profit (PLAY store for Google clients is the primary source of business revenue for the analytics devil) + PhoneSky app + phone network configs on-the-fly for big enough clients and resellers in wide deployment abroad
+* Upload the photos and screenshots from the phone (app link handling variants and Wallpaper / BlueSky credits)
+
 ### New issues on Android
 
 TODO: SPRD/Unisoc: behavior partially explained by the 
