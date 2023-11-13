@@ -1,5 +1,38 @@
 # AndroidGo - new platform deployment notes
 
+## Chimera - X - MIME type `application/chimerax`
+
+This is going to get really publicly big, bad and ugly. 
+There was an X-Files episode about this - most about the 
+technology actually, like the tobacco and COVID and HIV virus 
+operations, ability to light / frequency / phone SCREEN activate 
+synthetic substances like methamphetamine. Steve Wozniak said something 
+about it around 2011 with SF-area TED talk (QANON) brainwashing intent 
+and his irreverence on rare display. These people (TRUMP, Musk, Zuckerberg, 
+Google / Eric Trump) are neo-nazis trying to realize the 1980's New World Order 
+rhetoric. Efficient genocide like WWII Hitler in Europe is long gone and 
+diluted by screwed up, inbred old, white, straight men high on too much 
+cocaine (for those who can still afford it) or methamphetamine (the rest of them) 
+who read the shortwave radio broadcasts of Charlie and His Orchestra literally like 
+it is a precise blueprint. Regan or Pablo Escobar would have never screwed up something 
+like January 6, 2021 insomuch as they would have done it quickly with tactical precision 
+before anyone in opposition to their coup could have found out. It's really about something 
+else for these misogynistic lazy men. Trump wants to *PLAY* with you before he kills you. 
+Sophisticated classified technology in the hands of little children is irresponsible and used for 
+what? Sex slavery and free dinner at 7-Eleven afterwards. 
+
+Katie Couric point blank called Trump 
+out for being a significant funding source (money laundering) of the terrorists that carried out 
+9/11 (2001) in primetime coverage on non-cable NBC. 
+The neo-nazis and Republicans then realized that their goals would not be attainable if 
+the public had resolution and awareness at the level of understanding of the coverage by news outlets 
+that happened then. The pro-Trump boards and shareholders of these corporations shut down that avenue 
+for disemenating information at all - no, media bias is not the same thing as allowing 
+(permiting, accepting, confirming, validating) engagement in free discussion and debate 
+about current events that make Trump, et. al. look bad. Do not let these people brush all this under the 
+rug yet again. Barack Obama on regress under Trump (paraphrase): *I fear no evil.* 
+God on the Middle East (Biblical consensus): *Kill every God-damn one of them, save Israel.* 
+
 ### New issues on Android
 
 TODO: SPRD/Unisoc: behavior partially explained by the 
@@ -177,7 +210,15 @@ TODO: Frameworks:
   to abstain from using Twitter (or Google): *Do you think it 
   pisses him (Musk) off more (for you to be) on his platform, or 
   off his platform? I think it pisses him off more to do it on 
-  his platform.* 
+  his platform.*
+* Also, why 2600 Off the Hook (OTH) podcast episodes this summer correctly
+  point out that how you choose to pronounce Elon (the first name of a man
+  who is known to introduce himself to people as the Anglo-Christian Devil)
+  irritates the f-ck out of him (try cadences to verify / accept / confirm
+  this property). WHY? He in his head (like he may say out loud - thinking,
+  in his head, he's thinking) believes that his first name is unpronouncable
+  (much like God's name in the Torah). Does he understand his name? Anyone
+  tried getting a coherent response from him on the topic yet?
 * System/classes: examples encountered; Where to find an 
   ehaustive list and/or documentation about this? 
 * Discussion of `/vendor/etc/parameter-framework/Structure/Policy*`
@@ -246,7 +287,10 @@ TODO: Features defined (enabled/disabled in build) by
       `BBAT.conf`) include: 
       `WIRELESSCHARGE,MAINLOOP`. 
 
-TODO: GSM===GMS
+TODO: GSM===GMS, also slightly obscured references to technology reuses: 
+```bash
+/vendor/lib/egl/libELES_mali.so === GoogleLENS
+```
 
 TODO: Logging done with YLog: `/system/etc/analyzer.py` to 
 parse the logs generated (reproduce scene type descriptions 
@@ -289,7 +333,7 @@ TODO: Uses of: SMART (abbreviation), AMP, Open Mobile ABI, others?
   What about software that can emit a certain frequency (of light) 
   with the screen?
 * Does the app hotswapping extend to dynamic loading of shared 
-  libraries like `libboost`? Most PC compiled programs with this 
+  libraries like `libboost` (boot / booty / human trafficking deceptive code language from anti-clever pseudo-intellectual little boys who talk to much amidst the current events while the crucifiction of Donald Trump is still in progress in Atlanta, Georgia, USA, North America, Earth? Most PC compiled programs with this 
   library have presumably linked a C++ scientific processing source. 
   The following configuration files suggest alternate (covert, of course) uses of the terminology: TODO. 
   My familiarity with Boost was an essay question I was asked 
@@ -301,7 +345,7 @@ TODO: Uses of: SMART (abbreviation), AMP, Open Mobile ABI, others?
   apps in `/vendor/overlay/NetworkStack*.apk` ([link to directory]())?
 * How do he uses of media and DRM (like `drmrpc`) fit in with 
   copyright law? What can we add from this discussion to the 
-  *De Santis versus Disney* debates and coverage?
+  *De Santis versus Disney* debates and coverage? WAY MORE TO ADD THAN THIS SOON!
 * Does the `EV2` field in `TODO` ([directory link]()) 
   have anything to do with the Phillips/NXP 
   DESFire EV2 tag versions over NFC? Note that the fields in a 
@@ -309,7 +353,7 @@ TODO: Uses of: SMART (abbreviation), AMP, Open Mobile ABI, others?
   of the binary (non-ascii text) contents of 
   `TODO` ([file link]()) or `TODO` ([file link]()). 
 * List of binary files not processed: 
-  `*.db`, `*.pcm`, `*/textclassifier/*.model`, `smart_amp*.bin`, binary 
+  `*.db, *.pb, *.tflite, *.pbtext/binary, *.xml (run aapt)`, `*.pcm`, `*/textclassifier/*.model`, `smart_amp*.bin`, binary 
   `/vendor/etc/*.conf` files, `adb.iso`, etc. 
 
 ### More detailed information about the phone software and hardware 
@@ -330,103 +374,9 @@ init.svc.usbd, init.svc.sprd_network_control,
 init.svc.cmd_services, init.svc.audio_server
 ```
 
-#### Commands interpreted by the device (how to invoke this is unclear)
+#### Commands interpreted by the device (how to invoke this is unclear - apparent MMS / MMC / MMI interface over covert always watching eye on bluetooth-USB-WIFI-celldata)
 
 ```bash
-svc, appops, pwctl, ss, fuse, apr, netmon,  ylog_cli, 
-ylogctl, ss, cmd-l
+svc, appops, pwctl, ss, fuse, apr, netmon,  ylog_cli, ylogctl, ss, cmd-l
 ```
-
-#### Obtaining extra information with `fastboot` or `adb`
-
-The phone can be put into a mode that will accept `fastboot` 
-commands over a USB connection by powering the device on with 
-a special keypress combination. On my phone, we have to power the 
-phone completely off, and then power it back on by pressing 
-power and volume-down at the same time. One of the menu options 
-that appears in recovery mode is to this mode (or to enter the 
-bootloader). 
-
-Here are some useful `fastboot` commands: 
-```bash
-## Get (or set) device properties:
-$ fastboot oem <device-info|setbrightness|get_config|
-                set_config|rm_config|esim_erase|esim_atp|uart|
-                HALT|sha1sum|ddrtest|ramdump|dmesg|rma|
-                ramdump_sahara|dump-chipid|check-hw-securiity|
-                get_platform_info|set_platform_info|
-                select-display-panel|off-mode-charge|
-                set_display_power_mode|enable-factory-lock|
-                factoty-lock|continue-factory>
-$ fastboot getvar <battery-status|battery-voltage|boot-mode|
-                   build-mode|cidnum|gencheckpt|imei|meid|modelid|
-                   partition-layout|platform|product|product|
-                   security|serialno|version|version-baseband|
-                   version-bootloader|version-cpld|version-main|
-                   version-microp|version-misc>
-
-## Flashing procedure (outline):
-$ fastboot oem unlock
-$ fastboot flashing unlock
-# ... flashing commands ...
-$ fastboot oem lock
-$ fastboot flashing lock
-$ fastboot reboot [recovery|bootloader]
-
-## Flashing commands: 
-## The supported binary formats are TwRP or a system imge or a 
-## flashable ZIP archive.
-
-$ fastboot flash <OPT-COMPONENT>> <IMG-BIN-BASENAME>.<IMG-BIN-FEXT>
-# ... for: (OPT-COMPONENT, IMG-BIN-FEXT) one of 
-#          (boot, img), (system, img), (recovery, img), 
-#          (cache, img), (modem, bin), (sbll, mbn), (dbi, mbn), 
-#          (aboot, mbn), (rpm, mbn), (tz, mbn), 
-#          (LOGO, bin), (recovery, zip)
-
-$ fastboot -w flashall
-$ fastboot erase <WHICH>
-$ fastbooot flash <wHICH> <WHICH>.img
-# ... for: WHICH one of system, data, cache, userdata
-
-# Alternate way to flash prepared updates:
-$ fastboot update Update.zip
-
-# Boot into a fixed TWRP image:
-$ fastboot boot recovery twrp.img
-```
-Here are some useful `adb` commands:
-```bash
-$ adb settings list [secure|global|system]
-$ adb list <users|permissions|permission-groups|staged-sessions>
-$ adb shell pm list <permission-groups|features|libraries|users>
-$ adb pm list packages
-$ adb dump package <PKG-NAME>
-$ adb shell dumpsys netstats detail
-$ adb dumpsys package com.ex.myapp
-$ adb shell dumpsys <SVC-NAME|bluetooth_manager>
-$ adb shell settings put <secure|global|system> <STG-NAME> <VALUE>
-$ adb shell pm clear com.google.android.providers.media.module
-
-## List content providers and query their contents:
-$ adb shell dumpsys | grep Provider{
-$ adb shell content query --uri content://com.myapp.authority/path 
-      --where column=x -- arg 1 --sort column_name <DESC>
-
-## Download / upload copies of hard-to-get system files: 
-$ adb shell ls -laR
-$ adb push <LOCAL-FILE-PATH> <REMOTE-FILE-PATH>
-$ adb pull <REMOTE-FILE-PATH> <LOCAL-FILE-PATH>
-```
-
-## Apps 
-
-### System apps on my phone
-
-Basicdaydreams, Black, Cinnamon, Circular, CornerCutout, 
-DoubleCutout, Filled, Pac(ket)Processor, Pebble, Punchhole Cutout, 
-Purple, Rounded, Rounded Rectangle, Sounds, Space, Squircle, 
-TallCutout, TaperedRect, Teardrops, Vessel, WaterfallCutout 
-
-### App divisions within the root filesystem
 
