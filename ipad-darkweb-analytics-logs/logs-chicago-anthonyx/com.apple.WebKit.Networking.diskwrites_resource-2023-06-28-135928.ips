@@ -1,0 +1,233 @@
+{"app_name":"com.apple.WebKit.Networking","timestamp":"2023-06-28 13:59:28.00 -0500","app_version":"8615","slice_uuid":"A2C70C18-69E1-3316-A96F-1FE6E8C96580","build_version":"8615.1.26.10.24","bundleID":"com.apple.WebKit.Networking","duration_ms":"3373448","share_with_app_devs":0,"is_first_party":0,"bug_type":"145","os_version":"iPhone OS 16.4.1 (20E252)","roots_installed":0,"incident_id":"E6DFE570-AC1F-461A-B8A4-883766D55F45","name":"com.apple.WebKit.Networking"}
+Date/Time:        2023-06-28 13:03:11.847 -0500
+End time:         2023-06-28 13:59:25.295 -0500
+OS Version:       iPhone OS 16.4.1 (Build 20E252)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: E6DFE570-AC1F-461A-B8A4-883766D55F45
+
+Data Source:      Microstackshots
+Shared Cache:     4F1FAD1F-32AF-3CEA-9C76-FE6EE686419D slid base address 0x1c1f3c000, slide 0x41f3c000
+
+Command:          com.apple.WebKit.Networking
+Path:             /private/preboot/Cryptexes/OS/System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.Networking.xpc/com.apple.WebKit.Networking
+Identifier:       com.apple.WebKit.Networking
+Version:          8615 (8615.1.26.10.24)
+Resource Coalition ID: 495
+Architecture:     arm64e
+Parent:           launchd [1]
+PID:              336
+
+Event:            disk writes
+Action taken:     none
+Writes:           1073.75 MB of file backed memory dirtied over 3373 seconds (318.30 KB per second average), exceeding limit of 12.43 KB per second over 86400 seconds
+Writes limit:     1073.74 MB
+Limit duration:   86400s
+Writes caused:    1073.75 MB
+Writes duration:  3373s
+Duration:         3373.45s
+Duration Sampled: 3365.85s
+Steps:            179 (10.49 MB/step)
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 1, User -> 3, ThermalPressure -> 0, Combined -> 1
+Free disk space:  35.56 GB/59.59 GB, low space threshold 150 MB
+Vnodes Available: 73.44% (14689/20000, 10000 allocated, 10000 soft limit)
+
+Preferred User Language: en-US
+Country Code:     US
+Keyboards:        en_US QWERTY, emoji Emoji
+OS Cryptex File Extents: 9
+
+Heaviest stack for the target process:
+  91  ??? (libsystem_pthread.dylib + 2940) [0x227d9eb7c]
+  83  ??? (libsystem_pthread.dylib + 3548) [0x227d9eddc]
+  83  ??? (libdispatch.dylib + 93404) [0x1d039ccdc]
+  83  ??? (libdispatch.dylib + 49316) [0x1d03920a4]
+  83  ??? (libdispatch.dylib + 46388) [0x1d0391534]
+  83  ??? (libdispatch.dylib + 16044) [0x1d0389eac]
+  82  ??? (JavaScriptCore + 721240) [0x1dc660158]
+  50  ??? (WebKit + 1206596) [0x1dbacd944]
+  50  ??? (WebCore + 14086288) [0x1d9f6d090]
+  50  ??? (WebCore + 14071556) [0x1d9f69704]
+  50  ??? (WebKit + 3880864) [0x1dbd5a7a0]
+  50  ??? (WebKit + 3825440) [0x1dbd4cf20]
+  50  ??? (WebKit + 3881368) [0x1dbd5a998]
+  50  ??? (WebCore + 14131336) [0x1d9f78088]
+  50  ??? (WebCore + 14071140) [0x1d9f69564]
+  50  ??? (WebCore + 13979192) [0x1d9f52e38]
+  50  ??? (WebCore + 31361332) [0x1dafe6934]
+  50  ??? (WebCore + 31347176) [0x1dafe31e8]
+  38  ??? (libsqlite3.dylib + 177776) [0x1edd51670]
+  38  ??? (libsqlite3.dylib + 223856) [0x1edd5ca70]
+  38  ??? (libsqlite3.dylib + 84564) [0x1edd3aa54]
+  38  ??? (libsqlite3.dylib + 246440) [0x1edd622a8]
+  38  ??? (libsqlite3.dylib + 247768) [0x1edd627d8]
+  38  ??? (libsqlite3.dylib + 309524) [0x1edd71914]
+  38  ??? (libsqlite3.dylib + 615648) [0x1eddbc4e0]
+  38  ??? (libsqlite3.dylib + 310312) [0x1edd71c28]
+  38  ??? (libsystem_kernel.dylib + 10592) [0x2072e6960]
+
+
+Powerstats for:   com.apple.WebKit.Networking (com.apple.WebKit.Networking) [336]
+UUID:             A2C70C18-69E1-3316-A96F-1FE6E8C96580
+Path:             /private/preboot/Cryptexes/OS/System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.Networking.xpc/com.apple.WebKit.Networking
+Identifier:       com.apple.WebKit.Networking
+Version:          8615 (8615.1.26.10.24)
+Resource Coalition ID: 495
+Architecture:     arm64e
+Parent:           launchd [1]
+UID:              501
+Sudden Term:      Tracked (allows idle exit)
+Footprint:        11.59 MB -> 31.72 MB (+20.12 MB) (max 166.80 MB )
+Pageins:          29157 pages
+Start time:       2023-06-28 13:03:14.432 -0500
+End time:         2023-06-28 13:59:18.743 -0500
+Num samples:      91 (51%)
+Primary state:    81 samples Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 91 samples Active
+Power Source:     91 samples on Battery, 0 samples on AC
+  91  ??? (libsystem_pthread.dylib + 2940) [0x227d9eb7c]
+    83  ??? (libsystem_pthread.dylib + 3548) [0x227d9eddc]
+      83  ??? (libdispatch.dylib + 93404) [0x1d039ccdc]
+        83  ??? (libdispatch.dylib + 49316) [0x1d03920a4]
+          83  ??? (libdispatch.dylib + 46388) [0x1d0391534]
+            83  ??? (libdispatch.dylib + 16044) [0x1d0389eac]
+              82  ??? (JavaScriptCore + 721240) [0x1dc660158]
+                50  ??? (WebKit + 1206596) [0x1dbacd944]
+                  50  ??? (WebCore + 14086288) [0x1d9f6d090]
+                    50  ??? (WebCore + 14071556) [0x1d9f69704]
+                      50  ??? (WebKit + 3880864) [0x1dbd5a7a0]
+                        50  ??? (WebKit + 3825440) [0x1dbd4cf20]
+                          50  ??? (WebKit + 3881368) [0x1dbd5a998]
+                            50  ??? (WebCore + 14131336) [0x1d9f78088]
+                              50  ??? (WebCore + 14071140) [0x1d9f69564]
+                                50  ??? (WebCore + 13979192) [0x1d9f52e38]
+                                  50  ??? (WebCore + 31361332) [0x1dafe6934]
+                                    50  ??? (WebCore + 31347176) [0x1dafe31e8]
+                                      38  ??? (libsqlite3.dylib + 177776) [0x1edd51670]
+                                        38  ??? (libsqlite3.dylib + 223856) [0x1edd5ca70]
+                                          38  ??? (libsqlite3.dylib + 84564) [0x1edd3aa54]
+                                            38  ??? (libsqlite3.dylib + 246440) [0x1edd622a8]
+                                              38  ??? (libsqlite3.dylib + 247768) [0x1edd627d8]
+                                                38  ??? (libsqlite3.dylib + 309524) [0x1edd71914]
+                                                  38  ??? (libsqlite3.dylib + 615648) [0x1eddbc4e0]
+                                                    38  ??? (libsqlite3.dylib + 310312) [0x1edd71c28]
+                                                      38  ??? (libsystem_kernel.dylib + 10592) [0x2072e6960]
+                                      12  ??? (libsqlite3.dylib + 179300) [0x1edd51c64]
+                                        12  ??? (WebCore + 31346236) [0x1dafe2e3c]
+                                          12  ??? (libsqlite3.dylib + 506268) [0x1edda199c]
+                                            12  ??? (libsqlite3.dylib + 1003136) [0x1ede1ae80]
+                                              12  ??? (libsqlite3.dylib + 379696) [0x1edd82b30]
+                                                12  ??? (libsqlite3.dylib + 310312) [0x1edd71c28]
+                                                  12  ??? (libsystem_kernel.dylib + 10592) [0x2072e6960]
+                24  ??? (libsystem_platform.dylib + 4360) [0x227d08108]
+                7   ??? (libsystem_platform.dylib + 4348) [0x227d080fc]
+                  1   <Non-Frontmost App, Effective Thread QoS Background>
+                1   ??? (WebKit + 1212292) [0x1dbacef84]
+                  1   ??? (WebKit + 3807972) [0x1dbd48ae4]
+                    1   ??? (WebCore + 14040136) [0x1d9f61c48]
+                      1   ??? (WebCore + 14041824) [0x1d9f622e0]
+                        1   ??? (WebKit + 3880864) [0x1dbd5a7a0]
+                          1   ??? (WebKit + 3825440) [0x1dbd4cf20]
+                            1   ??? (WebKit + 3881368) [0x1dbd5a998]
+                              1   ??? (WebCore + 14042380) [0x1d9f6250c]
+                                1   ??? (WebCore + 13967060) [0x1d9f4fed4]
+                                  1   ??? (WebCore + 31345444) [0x1dafe2b24]
+                                    1   ??? (WebCore + 31346444) [0x1dafe2f0c]
+                                      1   ??? (libsqlite3.dylib + 506268) [0x1edda199c]
+                                        1   ??? (libsqlite3.dylib + 1003136) [0x1ede1ae80]
+                                          1   ??? (libsqlite3.dylib + 376964) [0x1edd82084]
+                                            1   ??? (libsystem_kernel.dylib + 16016) [0x2072e7e90]
+              1   ??? (libdispatch.dylib + 77764) [0x1d0398fc4]
+                1   ??? (CFNetwork + 928612) [0x1c9fb8b64]
+                  1   ??? (libsqlite3.dylib + 177776) [0x1edd51670]
+                    1   ??? (libsqlite3.dylib + 223444) [0x1edd5c8d4]
+                      1   ??? (libsqlite3.dylib + 84564) [0x1edd3aa54]
+                        1   ??? (libsqlite3.dylib + 246440) [0x1edd622a8]
+                          1   ??? (libsqlite3.dylib + 247768) [0x1edd627d8]
+                            1   ??? (libsqlite3.dylib + 309524) [0x1edd71914]
+                              1   ??? (libsqlite3.dylib + 615648) [0x1eddbc4e0]
+                                1   ??? (libsqlite3.dylib + 310312) [0x1edd71c28]
+                                  1   ??? (libsystem_kernel.dylib + 10592) [0x2072e6960]
+                                    1   <Effective Thread QoS Utility, Requested Thread QoS Utility>
+    8   ??? (libsystem_pthread.dylib + 3488) [0x227d9eda0]
+      8   ??? (libdispatch.dylib + 90456) [0x1d039c158]
+        8   ??? (libdispatch.dylib + 88388) [0x1d039b944]
+          5   ??? (libdispatch.dylib + 27032) [0x1d038c998]
+            5   ??? (libdispatch.dylib + 29488) [0x1d038d330]
+              5   ??? (libdispatch.dylib + 16044) [0x1d0389eac]
+                5   ??? (JavaScriptCore + 721240) [0x1dc660158]
+                  4   ??? (WebKit + 3651096) [0x1dbd22618]
+                    4   ??? (WebKit + 3596560) [0x1dbd15110]
+                      4   ??? (WebKit + 3528304) [0x1dbd04670]
+                        4   ??? (WebKit + 3529068) [0x1dbd0496c]
+                          4   ??? (JavaScriptCore + 156588) [0x1dc5d63ac]
+                            4   ??? (WebKit + 1525564) [0x1dbb1b73c]
+                              4   ??? (libsystem_platform.dylib + 4360) [0x227d08108]
+                                4   <Effective Thread QoS Background, Requested Thread QoS Background>
+                  1   ??? (WebKit + 3650780) [0x1dbd224dc]
+                    1   ??? (WebKit + 3468056) [0x1dbcf5b18]
+                      1   ??? (WebKit + 1526304) [0x1dbb1ba20]
+                        1   ??? (libsystem_kernel.dylib + 9424) [0x2072e64d0]
+                          1   <Effective Thread QoS Background, Requested Thread QoS Background>
+          3   ??? (libdispatch.dylib + 27184) [0x1d038ca30]
+            3   ??? (libdispatch.dylib + 29488) [0x1d038d330]
+              3   ??? (libdispatch.dylib + 16044) [0x1d0389eac]
+                3   ??? (JavaScriptCore + 721240) [0x1dc660158]
+                  3   ??? (WebKit + 3651096) [0x1dbd22618]
+                    3   ??? (WebKit + 3596560) [0x1dbd15110]
+                      3   ??? (WebKit + 3528304) [0x1dbd04670]
+                        3   ??? (WebKit + 3529068) [0x1dbd0496c]
+                          3   ??? (JavaScriptCore + 156588) [0x1dc5d63ac]
+                            3   ??? (WebKit + 1525564) [0x1dbb1b73c]
+                              3   ??? (libsystem_platform.dylib + 4360) [0x227d08108]
+                                3   <Effective Thread QoS Background, Requested Thread QoS Background>
+
+  Binary Images:
+           0x102fa4000 -                ???  com.apple.WebKit.Networking 8615 (8615.1.26.10.24) <A2C70C18-69E1-3316-A96F-1FE6E8C96580>  /private/preboot/Cryptexes/OS/System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.Networking.xpc/com.apple.WebKit.Networking
+           0x1c9ed6000 -        0x1ca2a0fff  CFNetwork                                          <B2273BE9-538A-3F56-B9C7-801F39550F58>  /System/Library/Frameworks/CFNetwork.framework/CFNetwork
+           0x1d0386000 -        0x1d03ccfff  libdispatch.dylib                                  <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1d91fe000 -        0x1db9a6fff  WebCore                                            <0D14359A-8C46-37C4-BA46-6697327924CB>  /System/Library/PrivateFrameworks/WebCore.framework/WebCore
+           0x1db9a7000 -        0x1dc4fafff  WebKit                                             <F98A4F88-DE1E-3562-9F62-C32C434CA72D>  /System/Library/Frameworks/WebKit.framework/WebKit
+           0x1dc5b0000 -        0x1ddcccfff  JavaScriptCore                                     <B98C0480-7537-3F88-83D7-308DBA0C9005>  /System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore
+           0x1edd26000 -        0x1ede91ff7  libsqlite3.dylib                                   <8F14BC1B-01A9-3D75-BED2-7161583CE74F>  /usr/lib/libsqlite3.dylib
+           0x2072e4000 -        0x20731bff7  libsystem_kernel.dylib                             <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x227d07000 -        0x227d0dfef  libsystem_platform.dylib                           <2E6C66FC-2EB9-34F9-995B-AE0B16E030C4>  /usr/lib/system/libsystem_platform.dylib
+           0x227d9e000 -        0x227da9ff3  libsystem_pthread.dylib                            <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   nsurlsessiond
+UUID:             91B91E97-7422-3975-AE43-33CCA9FFFBCB
+Path:             /usr/libexec/nsurlsessiond
+Resource Coalition ID: 304
+Architecture:     arm64e
+Start time:       2023-06-28 13:09:40.353 -0500
+End time:         2023-06-28 13:19:50.378 -0500
+Num samples:      19 (11%)
+Primary state:    19 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Utility, Requested Thread QoS Utility, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 19 samples Active
+Power Source:     19 samples on Battery, 0 samples on AC
+  19  ??? (libsystem_pthread.dylib + 2940) [0x227d9eb7c]
+    19  ??? (libsystem_pthread.dylib + 3548) [0x227d9eddc]
+      19  ??? (libdispatch.dylib + 93404) [0x1d039ccdc]
+        19  ??? (libdispatch.dylib + 49368) [0x1d03920d8]
+          19  ??? (libdispatch.dylib + 46388) [0x1d0391534]
+            19  ??? (libdispatch.dylib + 16044) [0x1d0389eac]
+              19  ??? (libdispatch.dylib + 8992) [0x1d0388320]
+                19  ??? (nsurlsessiond + 157752) [0x1001c2838]
+                  19  ??? (Foundation + 446140) [0x1c3284ebc]
+                    19  ??? (Foundation + 321924) [0x1c3266984]
+                      19  ??? (Foundation + 669264) [0x1c32bb650]
+                        19  ??? (libsystem_kernel.dylib + 9816) [0x2072e6658]
+
+  Binary Images:
+           0x10019c000 -                ???  nsurlsessiond           <91B91E97-7422-3975-AE43-33CCA9FFFBCB>  /usr/libexec/nsurlsessiond
+           0x1c3218000 -        0x1c3af5fff  Foundation              <35567930-FBC2-374B-B44B-1DDFE3ADA4A1>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1d0386000 -        0x1d03ccfff  libdispatch.dylib       <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x2072e4000 -        0x20731bff7  libsystem_kernel.dylib  <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x227d9e000 -        0x227da9ff3  libsystem_pthread.dylib <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib

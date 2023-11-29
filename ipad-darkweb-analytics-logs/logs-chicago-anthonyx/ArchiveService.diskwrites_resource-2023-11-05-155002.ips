@@ -1,0 +1,207 @@
+{"app_name":"ArchiveService","timestamp":"2023-11-05 15:50:02.00 -0600","app_version":"13.3","slice_uuid":"FAF04622-B9DB-34C0-8F86-CF3169A148E8","build_version":"1563.5.7","bundleID":"com.apple.desktopservices.ArchiveService","duration_ms":"1718812","share_with_app_devs":0,"is_first_party":0,"bug_type":"145","os_version":"iPhone OS 16.4.1 (20E252)","roots_installed":0,"incident_id":"80704679-DFB1-40CF-A934-7ABA79C88B12","name":"ArchiveService"}
+Date/Time:        2023-11-05 15:21:09.903 -0600
+End time:         2023-11-05 15:49:48.715 -0600
+OS Version:       iPhone OS 16.4.1 (Build 20E252)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: 80704679-DFB1-40CF-A934-7ABA79C88B12
+
+Data Source:      Microstackshots
+Shared Cache:     4F1FAD1F-32AF-3CEA-9C76-FE6EE686419D slid base address 0x1a99d0000, slide 0x299d0000
+
+Command:          ArchiveService
+Path:             /System/Library/PrivateFrameworks/DesktopServicesPriv.framework/XPCServices/ArchiveService.xpc/ArchiveService
+Identifier:       com.apple.desktopservices.ArchiveService
+Version:          13.3 (1563.5.7)
+Resource Coalition ID: 464
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+PID:              480
+
+Event:            disk writes
+Action taken:     none
+Writes:           1073.80 MB of file backed memory dirtied over 1719 seconds (624.73 KB per second average), exceeding limit of 12.43 KB per second over 86400 seconds
+Writes limit:     1073.74 MB
+Limit duration:   86400s
+Writes caused:    1073.80 MB
+Writes duration:  1719s
+Duration:         1718.81s
+Duration Sampled: 1716.87s
+Steps:            837 (10.49 MB/step)
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 1, User -> 3, ThermalPressure -> 0, Combined -> 1
+Free disk space:  19.60 GB/59.59 GB, low space threshold 150 MB
+Vnodes Available: 75.63% (15126/20000, 10000 allocated, 10000 soft limit)
+
+Preferred User Language: en-US
+Country Code:     US
+Keyboards:        en_US QWERTY, emoji Emoji
+OS Cryptex File Extents: 9
+
+Heaviest stack for the target process:
+  101  ??? (libsystem_pthread.dylib + 2940) [0x20f832b7c]
+  101  ??? (libsystem_pthread.dylib + 3488) [0x20f832da0]
+  101  ??? (libdispatch.dylib + 90456) [0x1b7e30158]
+  101  ??? (libdispatch.dylib + 88388) [0x1b7e2f944]
+  101  ??? (libdispatch.dylib + 27032) [0x1b7e20998]
+  101  ??? (libdispatch.dylib + 29488) [0x1b7e21330]
+  101  ??? (libdispatch.dylib + 16044) [0x1b7e1deac]
+  101  ??? (libdispatch.dylib + 77764) [0x1b7e2cfc4]
+  101  ??? (Foundation + 268684) [0x1aaced98c]
+  101  ??? (Foundation + 246524) [0x1aace82fc]
+  101  ??? (Foundation + 247240) [0x1aace85c8]
+  101  ??? (Foundation + 504128) [0x1aad27140]
+  101  ??? (Foundation + 504240) [0x1aad271b0]
+  101  ??? (Foundation + 684180) [0x1aad53094]
+  101  ??? (Foundation + 5917388) [0x1ab250acc]
+  101  ??? (Foundation + 894980) [0x1aad86804]
+  101  ??? (Foundation + 596704) [0x1aad3dae0]
+  101  ??? (ArchiveService + 77028) [0x10085ece4]
+  101  ??? (ArchiveService + 68720) [0x10085cc70]
+  101  ??? (ArchiveService + 103624) [0x1008654c8]
+  101  ??? (ArchiveService + 99956) [0x100864674]
+  101  ??? (ArchiveService + 98992) [0x1008642b0]
+  101  ??? (ArchiveService + 104044) [0x10086566c]
+  101  ??? (ArchiveService + 102780) [0x10086517c]
+  101  ??? (libarchive.2.dylib + 441196) [0x1fc349b6c]
+  101  ??? (libarchive.2.dylib + 122476) [0x1fc2fbe6c]
+  101  ??? (libsystem_kernel.dylib + 9816) [0x1eed7a658]
+
+
+Powerstats for:   ArchiveService [480]
+UUID:             FAF04622-B9DB-34C0-8F86-CF3169A148E8
+Path:             /System/Library/PrivateFrameworks/DesktopServicesPriv.framework/XPCServices/ArchiveService.xpc/ArchiveService
+Identifier:       com.apple.desktopservices.ArchiveService
+Version:          13.3 (1563.5.7)
+Resource Coalition ID: 464
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+UID:              501
+Sudden Term:      Tracked (allows idle exit)
+Footprint:        3136 KB -> 3408 KB (+272 KB)
+Pageins:          1 pages
+Start time:       2023-11-05 15:49:34.916 -0600
+End time:         2023-11-05 15:49:48.408 -0600
+Num samples:      101 (12%)
+Primary state:    101 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 101 samples Active
+Power Source:     101 samples on Battery, 0 samples on AC
+  101  ??? (libsystem_pthread.dylib + 2940) [0x20f832b7c]
+    101  ??? (libsystem_pthread.dylib + 3488) [0x20f832da0]
+      101  ??? (libdispatch.dylib + 90456) [0x1b7e30158]
+        101  ??? (libdispatch.dylib + 88388) [0x1b7e2f944]
+          101  ??? (libdispatch.dylib + 27032) [0x1b7e20998]
+            101  ??? (libdispatch.dylib + 29488) [0x1b7e21330]
+              101  ??? (libdispatch.dylib + 16044) [0x1b7e1deac]
+                101  ??? (libdispatch.dylib + 77764) [0x1b7e2cfc4]
+                  101  ??? (Foundation + 268684) [0x1aaced98c]
+                    101  ??? (Foundation + 246524) [0x1aace82fc]
+                      101  ??? (Foundation + 247240) [0x1aace85c8]
+                        101  ??? (Foundation + 504128) [0x1aad27140]
+                          101  ??? (Foundation + 504240) [0x1aad271b0]
+                            101  ??? (Foundation + 684180) [0x1aad53094]
+                              101  ??? (Foundation + 5917388) [0x1ab250acc]
+                                101  ??? (Foundation + 894980) [0x1aad86804]
+                                  101  ??? (Foundation + 596704) [0x1aad3dae0]
+                                    101  ??? (ArchiveService + 77028) [0x10085ece4]
+                                      101  ??? (ArchiveService + 68720) [0x10085cc70]
+                                        101  ??? (ArchiveService + 103624) [0x1008654c8]
+                                          101  ??? (ArchiveService + 99956) [0x100864674]
+                                            101  ??? (ArchiveService + 98992) [0x1008642b0]
+                                              101  ??? (ArchiveService + 104044) [0x10086566c]
+                                                101  ??? (ArchiveService + 102780) [0x10086517c]
+                                                  101  ??? (libarchive.2.dylib + 441196) [0x1fc349b6c]
+                                                    101  ??? (libarchive.2.dylib + 122476) [0x1fc2fbe6c]
+                                                      101  ??? (libsystem_kernel.dylib + 9816) [0x1eed7a658]
+
+  Binary Images:
+           0x10084c000 -                ???  com.apple.desktopservices.ArchiveService 13.3 (1563.5.7) <FAF04622-B9DB-34C0-8F86-CF3169A148E8>  /System/Library/PrivateFrameworks/DesktopServicesPriv.framework/XPCServices/ArchiveService.xpc/ArchiveService
+           0x1aacac000 -        0x1ab589fff  Foundation                                               <35567930-FBC2-374B-B44B-1DDFE3ADA4A1>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1b7e1a000 -        0x1b7e60fff  libdispatch.dylib                                        <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1eed78000 -        0x1eedafff7  libsystem_kernel.dylib                                   <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x1fc2de000 -        0x1fc365fff  libarchive.2.dylib                                       <0552E12D-BFB5-3417-B2F5-1D1960041045>  /usr/lib/libarchive.2.dylib
+           0x20f832000 -        0x20f83dff3  libsystem_pthread.dylib                                  <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   Client
+UUID:             4B2CA629-0E2B-3FFE-8B1F-B294B496FC28
+Path:             /private/var/containers/Bundle/Application/12A9E56D-754E-44F1-8AF5-17E39650E997/Client.app/Client
+Identifier:       org.mozilla.ios.Firefox
+Version:          118.2 (34971)
+Adam ID:          989804926
+Is First Party:   No
+Beta Identifier:  FFBFA04F-7423-415D-985A-4937F457395F
+Resource Coalition ID: 462
+Architecture:     arm64
+Start time:       2023-11-05 15:21:30.493 -0600
+End time:         2023-11-05 15:49:23.602 -0600
+Num samples:      570 (68%)
+Primary state:    569 samples Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated, Override Thread QoS Unspecified
+User Activity:    1 samples Idle, 569 samples Active
+Power Source:     210 samples on Battery, 360 samples on AC
+  568  ??? (libsystem_pthread.dylib + 2940) [0x20f832b7c]
+    565  ??? (libsystem_pthread.dylib + 3488) [0x20f832da0]
+      565  ??? (libdispatch.dylib + 90456) [0x1b7e30158]
+        565  ??? (libdispatch.dylib + 88388) [0x1b7e2f944]
+          565  ??? (libdispatch.dylib + 28556) [0x1b7e20f8c]
+            565  ??? (libdispatch.dylib + 16044) [0x1b7e1deac]
+              565  ??? (libdispatch.dylib + 211488) [0x1b7e4da20]
+                565  ??? (libsystem_kernel.dylib + 11444) [0x1eed7acb4]
+    3    ??? (libsystem_pthread.dylib + 3548) [0x20f832ddc]
+      3    ??? (libdispatch.dylib + 93404) [0x1b7e30cdc]
+        3    ??? (libdispatch.dylib + 49316) [0x1b7e260a4]
+          3    ??? (libdispatch.dylib + 46388) [0x1b7e25534]
+            3    ??? (libdispatch.dylib + 16044) [0x1b7e1deac]
+              3    ??? (libdispatch.dylib + 8992) [0x1b7e1c320]
+                3    ??? (<33B1CBC1-E6C0-383E-99A7-01905BE41097> + 38664) [0x104da5708]
+                  3    ??? (<33B1CBC1-E6C0-383E-99A7-01905BE41097> + 97564) [0x104db3d1c]
+                    3    ??? (<33B1CBC1-E6C0-383E-99A7-01905BE41097> + 59260) [0x104daa77c]
+                      3    ??? (<33B1CBC1-E6C0-383E-99A7-01905BE41097> + 60952) [0x104daae18]
+                        3    ??? (<33B1CBC1-E6C0-383E-99A7-01905BE41097> + 62808) [0x104dab558]
+                          3    ??? (Foundation + 580100) [0x1aad39a04]
+                            3    ??? (Foundation + 580876) [0x1aad39d0c]
+                              3    ??? (Foundation + 585696) [0x1aad3afe0]
+                                3    ??? (Foundation + 5913352) [0x1ab24fb08]
+                                  3    ??? (Foundation + 914520) [0x1aad8b458]
+                                    3    ??? (Foundation + 596704) [0x1aad3dae0]
+                                      3    ??? (<33B1CBC1-E6C0-383E-99A7-01905BE41097> + 65356) [0x104dabf4c]
+                                        3    ??? (<33B1CBC1-E6C0-383E-99A7-01905BE41097> + 66792) [0x104dac4e8]
+                                          3    ??? (<33B1CBC1-E6C0-383E-99A7-01905BE41097> + 64164) [0x104dabaa4]
+                                            3    ??? (Foundation + 1864596) [0x1aae73394]
+                                              3    ??? (Foundation + 1863200) [0x1aae72e20]
+                                                3    ??? (libsystem_kernel.dylib + 9816) [0x1eed7a658]
+  1    ??? (dyld + 89308) [0x1cfe50cdc]
+    1    ??? (dyld + 98180) [0x1cfe52f84]
+      1    ??? (dyld + 91884) [0x1cfe516ec]
+        1    ??? (dyld + 448716) [0x1cfea88cc]
+          1    <Effective Thread QoS User Interactive, Requested Thread QoS User Interactive>
+  1    ??? (libswift_Concurrency.dylib + 298456) [0x1bad08dd8]
+    1    ??? (Client + 5317608) [0x1032363e8]
+      1    ??? (Client + 972476) [0x102e116bc]
+        1    ??? (Client + 5316496) [0x103235f90]
+          1    ??? (Client + 5305408) [0x103233440]
+            1    ??? (Client + 7359928) [0x103428db8]
+              1    ??? (Client + 7358108) [0x10342869c]
+                1    ??? (Foundation + 3969444) [0x1ab0751a4]
+                  1    ??? (Foundation + 3953396) [0x1ab0712f4]
+                    1    ??? (Foundation + 3918776) [0x1ab068bb8]
+                      1    ??? (Foundation + 3969528) [0x1ab0751f8]
+                        1    ??? (Foundation + 446140) [0x1aad18ebc]
+                          1    ??? (Foundation + 321924) [0x1aacfa984]
+                            1    ??? (Foundation + 669264) [0x1aad4f650]
+                              1    ??? (libsystem_kernel.dylib + 9816) [0x1eed7a658]
+
+  Binary Images:
+           0x102d24000 -                ???  org.mozilla.ios.Firefox 118.2 (34971) <4B2CA629-0E2B-3FFE-8B1F-B294B496FC28>  /private/var/containers/Bundle/Application/12A9E56D-754E-44F1-8AF5-17E39650E997/Client.app/Client
+           0x104d9c000 -                ???  ???                                   <33B1CBC1-E6C0-383E-99A7-01905BE41097>
+           0x1aacac000 -        0x1ab589fff  Foundation                            <35567930-FBC2-374B-B44B-1DDFE3ADA4A1>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1b7e1a000 -        0x1b7e60fff  libdispatch.dylib                     <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1bacc0000 -        0x1bad1bffb  libswift_Concurrency.dylib            <5DE04552-D661-3230-B5F1-85D2A034FBC2>  /usr/lib/swift/libswift_Concurrency.dylib
+           0x1cfe3b000 -        0x1cfec0923  dyld                                  <41605DC7-F412-37D1-B51B-FEE1A26701E9>  /usr/lib/dyld
+           0x1eed78000 -        0x1eedafff7  libsystem_kernel.dylib                <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x20f832000 -        0x20f83dff3  libsystem_pthread.dylib               <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib

@@ -1,0 +1,440 @@
+{"app_name":"com.apple.WebKit.Networking","timestamp":"2023-11-20 13:52:28.00 -0600","app_version":"8615","slice_uuid":"A2C70C18-69E1-3316-A96F-1FE6E8C96580","build_version":"8615.1.26.10.24","bundleID":"com.apple.WebKit.Networking","duration_ms":"441844","share_with_app_devs":1,"is_first_party":0,"bug_type":"145","os_version":"iPhone OS 16.4.1 (20E252)","roots_installed":0,"incident_id":"A77005AB-D87D-4881-BB11-D4DB2507089B","name":"com.apple.WebKit.Networking"}
+Date/Time:        2023-11-20 13:45:03.631 -0600
+End time:         2023-11-20 13:52:25.476 -0600
+OS Version:       iPhone OS 16.4.1 (Build 20E252)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: A77005AB-D87D-4881-BB11-D4DB2507089B
+Share With Devs:  Yes
+
+Data Source:      Microstackshots
+Shared Cache:     4F1FAD1F-32AF-3CEA-9C76-FE6EE686419D slid base address 0x1935cc000, slide 0x135cc000
+
+Command:          com.apple.WebKit.Networking
+Path:             /private/preboot/Cryptexes/OS/System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.Networking.xpc/com.apple.WebKit.Networking
+Identifier:       com.apple.WebKit.Networking
+Version:          8615 (8615.1.26.10.24)
+Resource Coalition ID: 396
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+PID:              257
+
+Event:            disk writes
+Action taken:     none
+Writes:           1073.75 MB of file backed memory dirtied over 442 seconds (2430.15 KB per second average), exceeding limit of 12.43 KB per second over 86400 seconds
+Writes limit:     1073.74 MB
+Limit duration:   86400s
+Writes caused:    1073.75 MB
+Writes duration:  442s
+Duration:         441.84s
+Duration Sampled: 441.27s
+Steps:            137 (10.49 MB/step)
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 1, User -> 3, ThermalPressure -> 0, Combined -> 1
+Free disk space:  1497.32 MB/59.59 GB, low space threshold 150 MB
+Vnodes Available: 74.14% (14827/20000, 10000 allocated, 10000 soft limit)
+
+Preferred User Language: en-US
+Country Code:     US
+Keyboards:        en_US QWERTY, emoji Emoji
+OS Cryptex File Extents: 9
+
+Heaviest stack for the target process:
+  99  ??? (libsystem_pthread.dylib + 2940) [0x1f942eb7c]
+  97  ??? (libsystem_pthread.dylib + 3548) [0x1f942eddc]
+  97  ??? (libdispatch.dylib + 93404) [0x1a1a2ccdc]
+  97  ??? (libdispatch.dylib + 49316) [0x1a1a220a4]
+  97  ??? (libdispatch.dylib + 46388) [0x1a1a21534]
+  97  ??? (libdispatch.dylib + 16044) [0x1a1a19eac]
+  97  ??? (JavaScriptCore + 721240) [0x1adcf0158]
+  82  ??? (WebKit + 1206596) [0x1ad15d944]
+  82  ??? (WebCore + 14086288) [0x1ab5fd090]
+  82  ??? (WebCore + 14071556) [0x1ab5f9704]
+  82  ??? (WebKit + 3880864) [0x1ad3ea7a0]
+  82  ??? (WebKit + 3825440) [0x1ad3dcf20]
+  82  ??? (WebKit + 3881368) [0x1ad3ea998]
+  82  ??? (WebCore + 14131336) [0x1ab608088]
+  82  ??? (WebCore + 14071140) [0x1ab5f9564]
+  82  ??? (WebCore + 13979192) [0x1ab5e2e38]
+  82  ??? (WebCore + 31361332) [0x1ac676934]
+  82  ??? (WebCore + 31347176) [0x1ac6731e8]
+  41  ??? (libsqlite3.dylib + 179300) [0x1bf3e1c64]
+  41  ??? (WebCore + 31346236) [0x1ac672e3c]
+  41  ??? (libsqlite3.dylib + 506268) [0x1bf43199c]
+  41  ??? (libsqlite3.dylib + 1003136) [0x1bf4aae80]
+  40  ??? (libsqlite3.dylib + 379696) [0x1bf412b30]
+  40  ??? (libsqlite3.dylib + 310312) [0x1bf401c28]
+  40  ??? (libsystem_kernel.dylib + 10592) [0x1d8976960]
+
+
+Powerstats for:   com.apple.WebKit.Networking (com.apple.WebKit.Networking) [257]
+UUID:             A2C70C18-69E1-3316-A96F-1FE6E8C96580
+Path:             /private/preboot/Cryptexes/OS/System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.Networking.xpc/com.apple.WebKit.Networking
+Identifier:       com.apple.WebKit.Networking
+Version:          8615 (8615.1.26.10.24)
+Resource Coalition ID: 396
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+UID:              501
+Sudden Term:      Tracked (allows idle exit)
+Footprint:        13.78 MB -> 33.50 MB (+19.72 MB) (max 58.62 MB )
+Pageins:          6011 pages
+Start time:       2023-11-20 13:45:57.816 -0600
+End time:         2023-11-20 13:52:25.472 -0600
+Num samples:      99 (72%)
+Primary state:    97 samples Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 99 samples Active
+Power Source:     99 samples on Battery, 0 samples on AC
+  99  ??? (libsystem_pthread.dylib + 2940) [0x1f942eb7c]
+    97  ??? (libsystem_pthread.dylib + 3548) [0x1f942eddc]
+      97  ??? (libdispatch.dylib + 93404) [0x1a1a2ccdc]
+        97  ??? (libdispatch.dylib + 49316) [0x1a1a220a4]
+          97  ??? (libdispatch.dylib + 46388) [0x1a1a21534]
+            97  ??? (libdispatch.dylib + 16044) [0x1a1a19eac]
+              97  ??? (JavaScriptCore + 721240) [0x1adcf0158]
+                82  ??? (WebKit + 1206596) [0x1ad15d944]
+                  82  ??? (WebCore + 14086288) [0x1ab5fd090]
+                    82  ??? (WebCore + 14071556) [0x1ab5f9704]
+                      82  ??? (WebKit + 3880864) [0x1ad3ea7a0]
+                        82  ??? (WebKit + 3825440) [0x1ad3dcf20]
+                          82  ??? (WebKit + 3881368) [0x1ad3ea998]
+                            82  ??? (WebCore + 14131336) [0x1ab608088]
+                              82  ??? (WebCore + 14071140) [0x1ab5f9564]
+                                82  ??? (WebCore + 13979192) [0x1ab5e2e38]
+                                  82  ??? (WebCore + 31361332) [0x1ac676934]
+                                    82  ??? (WebCore + 31347176) [0x1ac6731e8]
+                                      41  ??? (libsqlite3.dylib + 179300) [0x1bf3e1c64]
+                                        41  ??? (WebCore + 31346236) [0x1ac672e3c]
+                                          41  ??? (libsqlite3.dylib + 506268) [0x1bf43199c]
+                                            41  ??? (libsqlite3.dylib + 1003136) [0x1bf4aae80]
+                                              40  ??? (libsqlite3.dylib + 379696) [0x1bf412b30]
+                                                40  ??? (libsqlite3.dylib + 310312) [0x1bf401c28]
+                                                  40  ??? (libsystem_kernel.dylib + 10592) [0x1d8976960]
+                                              1   ??? (libsqlite3.dylib + 376964) [0x1bf412084]
+                                                1   ??? (libsystem_kernel.dylib + 16016) [0x1d8977e90]
+                                      41  ??? (libsqlite3.dylib + 177776) [0x1bf3e1670]
+                                        41  ??? (libsqlite3.dylib + 223856) [0x1bf3eca70]
+                                          41  ??? (libsqlite3.dylib + 84564) [0x1bf3caa54]
+                                            41  ??? (libsqlite3.dylib + 246440) [0x1bf3f22a8]
+                                              41  ??? (libsqlite3.dylib + 247768) [0x1bf3f27d8]
+                                                41  ??? (libsqlite3.dylib + 309524) [0x1bf401914]
+                                                  29  ??? (libsqlite3.dylib + 615648) [0x1bf44c4e0]
+                                                    29  ??? (libsqlite3.dylib + 310312) [0x1bf401c28]
+                                                      29  ??? (libsystem_kernel.dylib + 10592) [0x1d8976960]
+                                                  12  ??? (libsqlite3.dylib + 616372) [0x1bf44c7b4]
+                                                    12  ??? (libsqlite3.dylib + 310312) [0x1bf401c28]
+                                                      12  ??? (libsystem_kernel.dylib + 10592) [0x1d8976960]
+                13  ??? (WebKit + 1217336) [0x1ad160338]
+                  13  ??? (WebCore + 14095328) [0x1ab5ff3e0]
+                    13  ??? (WebKit + 3880864) [0x1ad3ea7a0]
+                      13  ??? (WebKit + 3825440) [0x1ad3dcf20]
+                        13  ??? (WebKit + 3881368) [0x1ad3ea998]
+                          13  ??? (WebCore + 14124540) [0x1ab6065fc]
+                            13  ??? (WebCore + 13997620) [0x1ab5e7634]
+                              13  ??? (WebCore + 31347176) [0x1ac6731e8]
+                                13  ??? (libsqlite3.dylib + 177776) [0x1bf3e1670]
+                                  13  ??? (libsqlite3.dylib + 207428) [0x1bf3e8a44]
+                                    13  ??? (libsqlite3.dylib + 306200) [0x1bf400c18]
+                                      13  ??? (libsqlite3.dylib + 329720) [0x1bf4067f8]
+                                        13  ??? (libsqlite3.dylib + 634560) [0x1bf450ec0]
+                                          13  ??? (libsqlite3.dylib + 621716) [0x1bf44dc94]
+                                            13  ??? (libsqlite3.dylib + 613688) [0x1bf44bd38]
+                                              13  ??? (libsqlite3.dylib + 615648) [0x1bf44c4e0]
+                                                13  ??? (libsqlite3.dylib + 310312) [0x1bf401c28]
+                                                  13  ??? (libsystem_kernel.dylib + 10592) [0x1d8976960]
+                1   ??? (libsystem_platform.dylib + 4348) [0x1f93980fc]
+                1   ??? (libsystem_kernel.dylib + 21548) [0x1d897942c]
+    2   ??? (libsystem_pthread.dylib + 3488) [0x1f942eda0]
+      2   ??? (libdispatch.dylib + 90456) [0x1a1a2c158]
+        2   ??? (libdispatch.dylib + 88388) [0x1a1a2b944]
+          1   ??? (libdispatch.dylib + 27184) [0x1a1a1ca30]
+            1   ??? (libdispatch.dylib + 29488) [0x1a1a1d330]
+              1   ??? (libdispatch.dylib + 16044) [0x1a1a19eac]
+                1   ??? (JavaScriptCore + 721240) [0x1adcf0158]
+                  1   ??? (WebKit + 3651096) [0x1ad3b2618]
+                    1   ??? (WebKit + 3596560) [0x1ad3a5110]
+                      1   ??? (WebKit + 3528304) [0x1ad394670]
+                        1   ??? (WebKit + 3529068) [0x1ad39496c]
+                          1   ??? (JavaScriptCore + 156588) [0x1adc663ac]
+                            1   ??? (WebKit + 1525564) [0x1ad1ab73c]
+                              1   ??? (libsystem_platform.dylib + 4360) [0x1f9398108]
+                                1   <Effective Thread QoS Background, Requested Thread QoS Background>
+          1   ??? (libdispatch.dylib + 27032) [0x1a1a1c998]
+            1   ??? (libdispatch.dylib + 29488) [0x1a1a1d330]
+              1   ??? (libdispatch.dylib + 16044) [0x1a1a19eac]
+                1   ??? (JavaScriptCore + 721240) [0x1adcf0158]
+                  1   ??? (WebKit + 3651096) [0x1ad3b2618]
+                    1   ??? (WebKit + 3596560) [0x1ad3a5110]
+                      1   ??? (WebKit + 3528304) [0x1ad394670]
+                        1   ??? (WebKit + 3529068) [0x1ad39496c]
+                          1   ??? (JavaScriptCore + 156588) [0x1adc663ac]
+                            1   ??? (WebKit + 1525564) [0x1ad1ab73c]
+                              1   ??? (libsystem_platform.dylib + 4360) [0x1f9398108]
+                                1   <Effective Thread QoS Background, Requested Thread QoS Background>
+
+  Binary Images:
+           0x100678000 -                ???  com.apple.WebKit.Networking 8615 (8615.1.26.10.24) <A2C70C18-69E1-3316-A96F-1FE6E8C96580>  /private/preboot/Cryptexes/OS/System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.Networking.xpc/com.apple.WebKit.Networking
+           0x1a1a16000 -        0x1a1a5cfff  libdispatch.dylib                                  <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1aa88e000 -        0x1ad036fff  WebCore                                            <0D14359A-8C46-37C4-BA46-6697327924CB>  /System/Library/PrivateFrameworks/WebCore.framework/WebCore
+           0x1ad037000 -        0x1adb8afff  WebKit                                             <F98A4F88-DE1E-3562-9F62-C32C434CA72D>  /System/Library/Frameworks/WebKit.framework/WebKit
+           0x1adc40000 -        0x1af35cfff  JavaScriptCore                                     <B98C0480-7537-3F88-83D7-308DBA0C9005>  /System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore
+           0x1bf3b6000 -        0x1bf521ff7  libsqlite3.dylib                                   <8F14BC1B-01A9-3D75-BED2-7161583CE74F>  /usr/lib/libsqlite3.dylib
+           0x1d8974000 -        0x1d89abff7  libsystem_kernel.dylib                             <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x1f9397000 -        0x1f939dfef  libsystem_platform.dylib                           <2E6C66FC-2EB9-34F9-995B-AE0B16E030C4>  /usr/lib/system/libsystem_platform.dylib
+           0x1f942e000 -        0x1f9439ff3  libsystem_pthread.dylib                            <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   ANECompilerService (ANECompilerService)
+UUID:             FF136CB7-0286-3917-837F-6B605FE0D14C
+Path:             /System/Library/PrivateFrameworks/AppleNeuralEngine.framework/XPCServices/ANECompilerService.xpc/ANECompilerService
+Identifier:       com.apple.ANECompilerService
+Version:          ??? (1)
+Resource Coalition ID: 513
+Architecture:     arm64e
+Start time:       2023-11-20 13:45:31.692 -0600
+End time:         2023-11-20 13:46:06.751 -0600
+Num samples:      7 (5%)
+Primary state:    4 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Background, Requested Thread QoS User Initiated, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 7 samples Active
+Power Source:     7 samples on Battery, 0 samples on AC
+  7  ??? (libsystem_pthread.dylib + 2940) [0x1f942eb7c]
+    7  ??? (libsystem_pthread.dylib + 3548) [0x1f942eddc]
+      7  ??? (libdispatch.dylib + 93404) [0x1a1a2ccdc]
+        7  ??? (libdispatch.dylib + 49368) [0x1a1a220d8]
+          7  ??? (libdispatch.dylib + 46092) [0x1a1a2140c]
+            7  ??? (libdispatch.dylib + 136248) [0x1a1a37438]
+              7  ??? (libdispatch.dylib + 46092) [0x1a1a2140c]
+                7  ??? (libdispatch.dylib + 132844) [0x1a1a366ec]
+                  7  ??? (libdispatch.dylib + 16236) [0x1a1a19f6c]
+                    7  ??? (libxpc.dylib + 73504) [0x1f9482f20]
+                      7  ??? (libxpc.dylib + 72432) [0x1f9482af0]
+                        7  ??? (Foundation + 6171484) [0x194e8ab5c]
+                          7  ??? (Foundation + 6172912) [0x194e8b0f0]
+                            7  ??? (Foundation + 6166400) [0x194e89780]
+                              7  ??? (Foundation + 711472) [0x194955b30]
+                                7  ??? (CoreFoundation + 134548) [0x19a575d94]
+                                  7  ??? (CoreFoundation + 470260) [0x19a5c7cf4]
+                                    7  ??? (ANECompilerService + 105656) [0x102345cb8]
+                                      7  ??? (libdispatch.dylib + 78888) [0x1a1a29428]
+                                        7  ??? (libdispatch.dylib + 16044) [0x1a1a19eac]
+                                          7  ??? (ANECompilerService + 107012) [0x102346204]
+                                            4  ??? (ANECompilerService + 103772) [0x10234555c]
+                                              4  ??? (ANECompilerService + 98448) [0x102344090]
+                                                3  ??? (ANECompiler + 1599956) [0x1fc1509d4]
+                                                  3  ??? (ANECompiler + 1602836) [0x1fc151514]
+                                                    3  ??? (ANECompiler + 1609520) [0x1fc152f30]
+                                                      3  ??? (ANECompiler + 4139336) [0x1fc3bc948]
+                                                        3  ??? (libsystem_c.dylib + 61404) [0x1a1a6bfdc]
+                                                          3  ??? (libsystem_c.dylib + 42680) [0x1a1a676b8]
+                                                            3  ??? (libsystem_c.dylib + 37680) [0x1a1a66330]
+                                                              3  ??? (libsystem_kernel.dylib + 11444) [0x1d8976cb4]
+                                                                3  <Effective Thread QoS User Initiated>
+                                                1  ??? (ANECompiler + 1599532) [0x1fc15082c]
+                                                  1  ??? (ANECompiler + 1602204) [0x1fc15129c]
+                                                    1  ??? (ANECompiler + 3658024) [0x1fc347128]
+                                                      1  ??? (ANECompiler + 1439912) [0x1fc1298a8]
+                                                        1  ??? (ANECompiler + 2565964) [0x1fc23c74c]
+                                                          1  ??? (ANECompiler + 2567296) [0x1fc23cc80]
+                                                            1  ??? (ANECompiler + 4234944) [0x1fc3d3ec0]
+                                                              1  ??? (ANECompiler + 4235264) [0x1fc3d4000]
+                                                                1  ??? (ANECompiler + 2300704) [0x1fc1fbb20]
+                                                                  1  ??? (ANECompiler + 2574328) [0x1fc23e7f8]
+                                                                    1  ??? (ANECompiler + 5075200) [0x1fc4a1100]
+                                                                      1  ??? (ANECompiler + 3448496) [0x1fc313eb0]
+                                                                        1  ??? (ANECompiler + 191288) [0x1fbff8b38]
+                                                                          1  ??? (ANECompiler + 191388) [0x1fbff8b9c]
+                                                                            1  ??? (ANECompiler + 191624) [0x1fbff8c88]
+                                                                              1  ??? (libsystem_platform.dylib + 4696) [0x1f9398258]
+                                            3  ??? (ANECompilerService + 103344) [0x1023453b0]
+                                              3  ??? (ANECompilerService + 92124) [0x1023427dc]
+                                                3  ??? (Espresso + 4952484) [0x1a81461a4]
+                                                  3  ??? (Espresso + 6005904) [0x1a8247490]
+                                                    3  ??? (Espresso + 361888) [0x1a7ce55a0]
+                                                      3  ??? (Espresso + 594156) [0x1a7d1e0ec]
+                                                        3  ??? (Espresso + 6017596) [0x1a824a23c]
+                                                          3  ??? (Espresso + 6020484) [0x1a824ad84]
+                                                            3  ??? (Espresso + 4487024) [0x1a80d4770]
+                                                              3  ??? (Espresso + 5968960) [0x1a823e440]
+                                                                3  ??? (Espresso + 4603900) [0x1a80f0ffc]
+                                                                  3  ??? (Espresso + 4618512) [0x1a80f4910]
+                                                                    3  ??? (Espresso + 4630664) [0x1a80f7888]
+                                                                      3  ??? (Espresso + 4647340) [0x1a80fb9ac]
+                                                                        3  ??? (Espresso + 6001088) [0x1a82461c0]
+                                                                          3  ??? (libsystem_c.dylib + 61404) [0x1a1a6bfdc]
+                                                                            3  ??? (libsystem_c.dylib + 42680) [0x1a1a676b8]
+                                                                              3  ??? (libsystem_c.dylib + 37680) [0x1a1a66330]
+                                                                                3  ??? (libsystem_kernel.dylib + 11444) [0x1d8976cb4]
+
+  Binary Images:
+           0x10232c000 -                ???  com.apple.ANECompilerService (1) <FF136CB7-0286-3917-837F-6B605FE0D14C>  /System/Library/PrivateFrameworks/AppleNeuralEngine.framework/XPCServices/ANECompilerService.xpc/ANECompilerService
+           0x1948a8000 -        0x195185fff  Foundation                       <35567930-FBC2-374B-B44B-1DDFE3ADA4A1>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x19a555000 -        0x19a93cfff  CoreFoundation                   <6A07CBE8-4F65-3DBC-B59D-C1A188A7B95D>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1a1a16000 -        0x1a1a5cfff  libdispatch.dylib                <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1a1a5d000 -        0x1a1adaff3  libsystem_c.dylib                <72233FDE-DDFE-3E78-B991-2DECE8CD78C5>  /usr/lib/system/libsystem_c.dylib
+           0x1a7c8d000 -        0x1a88aafff  Espresso                         <8519F9AB-E198-3707-A86A-92E3E0C1AF45>  /System/Library/PrivateFrameworks/Espresso.framework/Espresso
+           0x1d8974000 -        0x1d89abff7  libsystem_kernel.dylib           <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x1f9397000 -        0x1f939dfef  libsystem_platform.dylib         <2E6C66FC-2EB9-34F9-995B-AE0B16E030C4>  /usr/lib/system/libsystem_platform.dylib
+           0x1f942e000 -        0x1f9439ff3  libsystem_pthread.dylib          <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+           0x1f9471000 -        0x1f94b2fff  libxpc.dylib                     <7AFE0AEC-5B9F-3E5D-9803-12CA228AD324>  /usr/lib/system/libxpc.dylib
+           0x1fbfca000 -        0x1fc5d1ff7  ANECompiler                      <62CBB0D1-1343-3A7F-8E48-CDED7E514471>  /System/Library/PrivateFrameworks/ANECompiler.framework/ANECompiler
+
+
+Powerstats for:   cloudd
+UUID:             94D1EFD1-E212-3FC2-97AD-B7C296247633
+Path:             /System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd
+Resource Coalition ID: 201
+Architecture:     arm64e
+Start time:       2023-11-20 13:45:23.996 -0600
+End time:         2023-11-20 13:45:32.949 -0600
+Num samples:      7 (5%)
+Primary state:    7 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 7 samples Active
+Power Source:     7 samples on Battery, 0 samples on AC
+  7  ??? (libsystem_pthread.dylib + 2940) [0x1f942eb7c]
+    7  ??? (libsystem_pthread.dylib + 3548) [0x1f942eddc]
+      7  ??? (libdispatch.dylib + 93404) [0x1a1a2ccdc]
+        7  ??? (libdispatch.dylib + 49368) [0x1a1a220d8]
+          7  ??? (libdispatch.dylib + 46388) [0x1a1a21534]
+            7  ??? (libdispatch.dylib + 16044) [0x1a1a19eac]
+              7  ??? (libdispatch.dylib + 77764) [0x1a1a28fc4]
+                7  ??? (CacheDelete + 34892) [0x1b78e084c]
+                  7  ??? (cloudd + 22388) [0x104121774]
+                    7  ??? (cloudd + 24788) [0x1041220d4]
+                      7  ??? (libswiftDispatch.dylib + 4488) [0x1a2c2f188]
+                        7  ??? (libswiftDispatch.dylib + 7240) [0x1a2c2fc48]
+                          7  ??? (libswiftDispatch.dylib + 4316) [0x1a2c2f0dc]
+                            7  ??? (libswiftDispatch.dylib + 7992) [0x1a2c2ff38]
+                              7  ??? (libdispatch.dylib + 78888) [0x1a1a29428]
+                                7  ??? (libdispatch.dylib + 16044) [0x1a1a19eac]
+                                  7  ??? (libswiftDispatch.dylib + 9708) [0x1a2c305ec]
+                                    7  ??? (libswiftDispatch.dylib + 10896) [0x1a2c30a90]
+                                      7  ??? (libswiftDispatch.dylib + 10620) [0x1a2c3097c]
+                                        7  ??? (libswiftDispatch.dylib + 35472) [0x1a2c36a90]
+                                          7  ??? (libswiftDispatch.dylib + 6132) [0x1a2c2f7f4]
+                                            7  ??? (cloudd + 39892) [0x104125bd4]
+                                              7  ??? (cloudd + 39940) [0x104125c04]
+                                                7  ??? (cloudd + 18484) [0x104120834]
+                                                  7  ??? (cloudd + 13256) [0x10411f3c8]
+                                                    7  ??? (CloudKitDaemon + 2436480) [0x1cdcedd80]
+                                                      7  ??? (cloudd + 7492) [0x10411dd44]
+                                                        7  ??? (cloudd + 24564) [0x104121ff4]
+                                                          4  ??? (cloudd + 10644) [0x10411e994]
+                                                            4  ??? (CloudKitDaemon + 306308) [0x1cdae5c84]
+                                                              4  ??? (CloudKitDaemon + 1542204) [0x1cdc1383c]
+                                                                4  ??? (libdispatch.dylib + 78888) [0x1a1a29428]
+                                                                  4  ??? (libdispatch.dylib + 16044) [0x1a1a19eac]
+                                                                    2  ??? (CloudKitDaemon + 1543336) [0x1cdc13ca8]
+                                                                      2  ??? (CloudKitDaemon + 1771220) [0x1cdc4b6d4]
+                                                                        2  ??? (libdispatch.dylib + 78888) [0x1a1a29428]
+                                                                          2  ??? (libdispatch.dylib + 16044) [0x1a1a19eac]
+                                                                            2  ??? (CloudKitDaemon + 1771740) [0x1cdc4b8dc]
+                                                                              2  ??? (CloudKitDaemon + 1774420) [0x1cdc4c354]
+                                                                                2  ??? (CloudKit + 838640) [0x1a2054bf0]
+                                                                                  2  ??? (CloudKit + 665860) [0x1a202a904]
+                                                                                    2  ??? (CloudKit + 839864) [0x1a20550b8]
+                                                                                      2  ??? (CloudKit + 1747176) [0x1a21328e8]
+                                                                                        2  ??? (CloudKit + 665904) [0x1a202a930]
+                                                                                          2  ??? (CloudKit + 1747436) [0x1a21329ec]
+                                                                                            2  ??? (CloudKit + 665860) [0x1a202a904]
+                                                                                              2  ??? (CloudKit + 1747496) [0x1a2132a28]
+                                                                                                2  ??? (CloudKit + 1744668) [0x1a2131f1c]
+                                                                                                  2  ??? (CloudKit + 1744024) [0x1a2131c98]
+                                                                                                    2  ??? (CloudKit + 1745644) [0x1a21322ec]
+                                                                                                      2  ??? (libsqlite3.dylib + 34116) [0x1bf3be544]
+                                                                                                        1  ??? (libsqlite3.dylib + 179300) [0x1bf3e1c64]
+                                                                                                          1  ??? (libsqlite3.dylib + 311320) [0x1bf402018]
+                                                                                                            1  ??? (libsqlite3.dylib + 506268) [0x1bf43199c]
+                                                                                                              1  ??? (libsqlite3.dylib + 1003136) [0x1bf4aae80]
+                                                                                                                1  ??? (libsqlite3.dylib + 379696) [0x1bf412b30]
+                                                                                                                  1  ??? (libsqlite3.dylib + 310312) [0x1bf401c28]
+                                                                                                                    1  ??? (libsystem_kernel.dylib + 10592) [0x1d8976960]
+                                                                                                        1  ??? (libsqlite3.dylib + 177776) [0x1bf3e1670]
+                                                                                                          1  ??? (libsqlite3.dylib + 210124) [0x1bf3e94cc]
+                                                                                                            1  ??? (libsqlite3.dylib + 84564) [0x1bf3caa54]
+                                                                                                              1  ??? (libsqlite3.dylib + 246440) [0x1bf3f22a8]
+                                                                                                                1  ??? (libsqlite3.dylib + 247768) [0x1bf3f27d8]
+                                                                                                                  1  ??? (libsqlite3.dylib + 309524) [0x1bf401914]
+                                                                                                                    1  ??? (libsqlite3.dylib + 615648) [0x1bf44c4e0]
+                                                                                                                      1  ??? (libsqlite3.dylib + 310312) [0x1bf401c28]
+                                                                                                                        1  ??? (libsystem_kernel.dylib + 10592) [0x1d8976960]
+                                                                    2  ??? (CloudKitDaemon + 1542956) [0x1cdc13b2c]
+                                                                      2  ??? (CloudKitDaemon + 1863196) [0x1cdc61e1c]
+                                                                        2  ??? (CloudKitDaemon + 1861928) [0x1cdc61928]
+                                                                          2  ??? (CloudKitDaemon + 1859836) [0x1cdc610fc]
+                                                                            2  ??? (MMCS + 77600) [0x1debebf20]
+                                                                              2  ??? (MMCS + 74888) [0x1debeb488]
+                                                                                2  ??? (ChunkingLibrary + 89960) [0x1feeb3f68]
+                                                                                  2  ??? (ChunkingLibrary + 93152) [0x1feeb4be0]
+                                                                                    1  ??? (ChunkingLibrary + 23592) [0x1feea3c28]
+                                                                                      1  ??? (ChunkingLibrary + 24904) [0x1feea4148]
+                                                                                        1  ??? (ChunkingLibrary + 16284) [0x1feea1f9c]
+                                                                                          1  ??? (libsqlite3.dylib + 34116) [0x1bf3be544]
+                                                                                            1  ??? (libsqlite3.dylib + 177776) [0x1bf3e1670]
+                                                                                              1  ??? (libsqlite3.dylib + 223856) [0x1bf3eca70]
+                                                                                                1  ??? (libsqlite3.dylib + 84564) [0x1bf3caa54]
+                                                                                                  1  ??? (libsqlite3.dylib + 246440) [0x1bf3f22a8]
+                                                                                                    1  ??? (libsqlite3.dylib + 247768) [0x1bf3f27d8]
+                                                                                                      1  ??? (libsqlite3.dylib + 309524) [0x1bf401914]
+                                                                                                        1  ??? (libsqlite3.dylib + 616040) [0x1bf44c668]
+                                                                                                          1  ??? (libsqlite3.dylib + 310312) [0x1bf401c28]
+                                                                                                            1  ??? (libsystem_kernel.dylib + 10592) [0x1d8976960]
+                                                                                    1  ??? (ChunkingLibrary + 20288) [0x1feea2f40]
+                                                                                      1  ??? (ChunkingLibrary + 24316) [0x1feea3efc]
+                                                                                        1  ??? (libsqlite3.dylib + 34116) [0x1bf3be544]
+                                                                                          1  ??? (libsqlite3.dylib + 177776) [0x1bf3e1670]
+                                                                                            1  ??? (libsqlite3.dylib + 223444) [0x1bf3ec8d4]
+                                                                                              1  ??? (libsqlite3.dylib + 84564) [0x1bf3caa54]
+                                                                                                1  ??? (libsqlite3.dylib + 246440) [0x1bf3f22a8]
+                                                                                                  1  ??? (libsqlite3.dylib + 247768) [0x1bf3f27d8]
+                                                                                                    1  ??? (libsqlite3.dylib + 309708) [0x1bf4019cc]
+                                                                                                      1  ??? (libsystem_kernel.dylib + 11400) [0x1d8976c88]
+                                                          3  ??? (cloudd + 10808) [0x10411ea38]
+                                                            3  ??? (CloudKitDaemon + 73324) [0x1cdaace6c]
+                                                              3  ??? (CloudKitDaemon + 13644) [0x1cda9e54c]
+                                                                3  ??? (CloudKitDaemon + 1536928) [0x1cdc123a0]
+                                                                  3  ??? (libdispatch.dylib + 78888) [0x1a1a29428]
+                                                                    3  ??? (libdispatch.dylib + 16044) [0x1a1a19eac]
+                                                                      3  ??? (CloudKitDaemon + 1537956) [0x1cdc127a4]
+                                                                        3  ??? (CloudKitDaemon + 1863724) [0x1cdc6202c]
+                                                                          3  ??? (CloudKitDaemon + 1862436) [0x1cdc61b24]
+                                                                            3  ??? (CloudKitDaemon + 1865252) [0x1cdc62624]
+                                                                              3  ??? (libdispatch.dylib + 78888) [0x1a1a29428]
+                                                                                3  ??? (libdispatch.dylib + 16044) [0x1a1a19eac]
+                                                                                  3  ??? (CloudKitDaemon + 1865348) [0x1cdc62684]
+                                                                                    3  ??? (CloudKitDaemon + 1862744) [0x1cdc61c58]
+                                                                                      3  ??? (MMCS + 80092) [0x1debec8dc]
+                                                                                        3  ??? (ChunkingLibrary + 96100) [0x1feeb5764]
+                                                                                          3  ??? (ChunkingLibrary + 96420) [0x1feeb58a4]
+                                                                                            3  ??? (ChunkingLibrary + 26244) [0x1feea4684]
+                                                                                              3  ??? (libsqlite3.dylib + 500836) [0x1bf430464]
+                                                                                                3  ??? (libsqlite3.dylib + 462984) [0x1bf427088]
+                                                                                                  3  ??? (libsqlite3.dylib + 331272) [0x1bf406e08]
+                                                                                                    3  ??? (libsqlite3.dylib + 332756) [0x1bf4073d4]
+                                                                                                      2  ??? (libsqlite3.dylib + 333520) [0x1bf4076d0]
+                                                                                                        1  ??? (libsqlite3.dylib + 379696) [0x1bf412b30]
+                                                                                                          1  ??? (libsqlite3.dylib + 310312) [0x1bf401c28]
+                                                                                                            1  ??? (libsystem_kernel.dylib + 10592) [0x1d8976960]
+                                                                                                        1  ??? (libsqlite3.dylib + 379192) [0x1bf412938]
+                                                                                                          1  ??? (libsqlite3.dylib + 310728) [0x1bf401dc8]
+                                                                                                            1  ??? (libsystem_kernel.dylib + 12672) [0x1d8977180]
+                                                                                                      1  ??? (libsqlite3.dylib + 333612) [0x1bf40772c]
+                                                                                                        1  ??? (libsqlite3.dylib + 618636) [0x1bf44d08c]
+                                                                                                          1  ??? (libsystem_kernel.dylib + 16016) [0x1d8977e90]
+
+  Binary Images:
+           0x10411c000 -                ???  cloudd                  <94D1EFD1-E212-3FC2-97AD-B7C296247633>  /System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd
+           0x1a1a16000 -        0x1a1a5cfff  libdispatch.dylib       <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1a1f88000 -        0x1a2232fff  CloudKit                <9A4C18B9-A111-3734-BE16-BE4675E2CF25>  /System/Library/Frameworks/CloudKit.framework/CloudKit
+           0x1a2c2e000 -        0x1a2c45fff  libswiftDispatch.dylib  <DC80864D-00E1-36D6-B843-8B68D13EB2CE>  /usr/lib/swift/libswiftDispatch.dylib
+           0x1b78d8000 -        0x1b791cfff  CacheDelete             <0AA87B28-FBF3-321D-BD7A-A605C0305CE1>  /System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete
+           0x1bf3b6000 -        0x1bf521ff7  libsqlite3.dylib        <8F14BC1B-01A9-3D75-BED2-7161583CE74F>  /usr/lib/libsqlite3.dylib
+           0x1cda9b000 -        0x1cde76fff  CloudKitDaemon          <22FF220B-7ECD-3FF6-BB96-629213C780D1>  /System/Library/PrivateFrameworks/CloudKitDaemon.framework/CloudKitDaemon
+           0x1d8974000 -        0x1d89abff7  libsystem_kernel.dylib  <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x1debd9000 -        0x1dec7ffff  MMCS                    <AAEF5B58-123B-3567-9EAD-BD86AC8EB679>  /System/Library/PrivateFrameworks/MMCS.framework/MMCS
+           0x1f942e000 -        0x1f9439ff3  libsystem_pthread.dylib <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+           0x1fee9e000 -        0x1feef2ffb  ChunkingLibrary         <C98218B2-78A0-351A-9698-B4CBA633D8A0>  /System/Library/PrivateFrameworks/ChunkingLibrary.framework/ChunkingLibrary

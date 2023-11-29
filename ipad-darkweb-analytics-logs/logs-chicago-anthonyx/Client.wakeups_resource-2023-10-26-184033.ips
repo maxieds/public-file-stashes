@@ -1,0 +1,166 @@
+{"app_name":"Client","timestamp":"2023-10-26 18:40:33.00 -0500","app_version":"118.2","slice_uuid":"4B2CA629-0E2B-3FFE-8B1F-B294B496FC28","adam_id":989804926,"build_version":"34971","bundleID":"org.mozilla.ios.Firefox","duration_ms":"261229","share_with_app_devs":0,"is_first_party":0,"bug_type":"142","os_version":"iPhone OS 16.4.1 (20E252)","incident_id":"BB597A44-2AA5-4F4F-A4FD-432E8C7839BA","name":"Client","roots_installed":0}
+Date/Time:        2023-10-26 18:36:08.549 -0500
+End time:         2023-10-26 18:40:29.778 -0500
+OS Version:       iPhone OS 16.4.1 (Build 20E252)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: BB597A44-2AA5-4F4F-A4FD-432E8C7839BA
+
+Data Source:      Microstackshots
+Shared Cache:     4F1FAD1F-32AF-3CEA-9C76-FE6EE686419D slid base address 0x1a6fdc000, slide 0x26fdc000
+
+Command:          Client
+Path:             /private/var/containers/Bundle/Application/12A9E56D-754E-44F1-8AF5-17E39650E997/Client.app/Client
+Identifier:       org.mozilla.ios.Firefox
+Version:          118.2 (34971)
+Adam ID:          989804926
+Is First Party:   No
+Beta Identifier:  FFBFA04F-7423-415D-985A-4937F457395F
+Resource Coalition ID: 436
+Architecture:     arm64
+Parent:           UNKNOWN [1]
+PID:              278
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 261 seconds (172 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 261s
+Duration:         261.23s
+Duration Sampled: 118.53s
+Steps:            9
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 2, User -> 3, ThermalPressure -> 0, Combined -> 2
+Free disk space:  23.84 GB/59.59 GB, low space threshold 150 MB
+Vnodes Available: 77.53% (15507/20000, 10000 allocated, 10000 soft limit)
+
+Preferred User Language: en-US
+Country Code:     US
+Keyboards:        en_US QWERTY, emoji Emoji
+HW Keyboard:      Yes
+OS Cryptex File Extents: 9
+
+Heaviest stack for the target process:
+  4  ??? (dyld + 89580) [0x1cd45cdec]
+  4  ??? (Client + 27032) [0x100ca6998]
+  4  ??? (UIKitCore + 3788768) [0x1b036ffe0]
+  4  ??? (UIKitCore + 3789692) [0x1b037037c]
+  4  ??? (GraphicsServices + 4956) [0x1e895335c]
+  4  ??? (CoreFoundation + 521436) [0x1adfe44dc]
+  2  ??? (CoreFoundation + 501044) [0x1adfdf534]
+  1  ??? (CoreFoundation + 107536) [0x1adf7f410]
+
+
+Powerstats for:   Client [278]
+UUID:             4B2CA629-0E2B-3FFE-8B1F-B294B496FC28
+Path:             /private/var/containers/Bundle/Application/12A9E56D-754E-44F1-8AF5-17E39650E997/Client.app/Client
+Identifier:       org.mozilla.ios.Firefox
+Version:          118.2 (34971)
+Adam ID:          989804926
+Is First Party:   No
+Beta Identifier:  FFBFA04F-7423-415D-985A-4937F457395F
+Resource Coalition ID: 436
+Architecture:     arm64
+Parent:           UNKNOWN [1]
+UID:              501
+Footprint:        117.41 MB
+Pageins:          1696 pages
+Start time:       2023-10-26 18:38:25.359 -0500
+End time:         2023-10-26 18:40:23.893 -0500
+Num samples:      9 (100%)
+Primary state:    3 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 9 samples Active
+Power Source:     9 samples on Battery, 0 samples on AC
+  4  ??? (dyld + 89580) [0x1cd45cdec]
+    4  ??? (Client + 27032) [0x100ca6998]
+      4  ??? (UIKitCore + 3788768) [0x1b036ffe0]
+        4  ??? (UIKitCore + 3789692) [0x1b037037c]
+          4  ??? (GraphicsServices + 4956) [0x1e895335c]
+            4  ??? (CoreFoundation + 521436) [0x1adfe44dc]
+              2  ??? (CoreFoundation + 501044) [0x1adfdf534]
+                1  ??? (CoreFoundation + 107760) [0x1adf7f4f0]
+                  1  ??? (CoreFoundation + 590628) [0x1adff5324]
+                    1  ??? (UIKitCore + 4466736) [0x1b0415830]
+                      1  ??? (HangTracer + 16104) [0x1d4961ee8]
+                1  ??? (CoreFoundation + 107536) [0x1adf7f410]
+              2  ??? (CoreFoundation + 500544) [0x1adfdf340]
+                1  ??? (libsystem_kernel.dylib + 8940) [0x1ec3862ec]
+                1  ??? (CoreFoundation + 495892) [0x1adfde114]
+                  1  ??? (libsystem_kernel.dylib + 4552) [0x1ec3851c8]
+                    1  ??? (libsystem_kernel.dylib + 81452) [0x1ec397e2c]
+                      1  ??? (libsystem_kernel.dylib + 3204) [0x1ec384c84]
+                        1  <Kernel mode>
+  3  ??? (libsystem_pthread.dylib + 2940) [0x20ce3eb7c]
+    2  ??? (libsystem_pthread.dylib + 3548) [0x20ce3eddc]
+      2  ??? (libdispatch.dylib + 93404) [0x1b543ccdc]
+        2  ??? (libdispatch.dylib + 49316) [0x1b54320a4]
+          2  ??? (libdispatch.dylib + 46388) [0x1b5431534]
+            2  ??? (libdispatch.dylib + 16044) [0x1b5429eac]
+              1  ??? (JavaScriptCore + 721240) [0x1c1700158]
+                1  ??? (WebKit + 4202668) [0x1c0e490ac]
+                  1  ??? (WebKit + 4175844) [0x1c0e427e4]
+                    1  ??? (libsystem_trace.dylib + 13240) [0x1c510f3b8]
+                      1  ??? (libsystem_trace.dylib + 10300) [0x1c510e83c]
+                        1  ??? (libsystem_trace.dylib + 22636) [0x1c511186c]
+                          1  ??? (libdispatch.dylib + 179456) [0x1b5451d00]
+                            1  ??? (libdispatch.dylib + 185168) [0x1b5453350]
+                              1  ??? (libdispatch.dylib + 233636) [0x1b545f0a4]
+                                1  ??? (libsystem_kernel.dylib + 4552) [0x1ec3851c8]
+                                  1  ??? (libsystem_kernel.dylib + 81452) [0x1ec397e2c]
+                                    1  ??? (libsystem_kernel.dylib + 3204) [0x1ec384c84]
+                                      1  <Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+              1  ??? (libdispatch.dylib + 8992) [0x1b5428320]
+                1  ??? (UIKitCore + 14344428) [0x1b0d810ec]
+                  1  ??? (UIKitCore + 14341076) [0x1b0d803d4]
+                    1  ??? (UIKitCore + 14343772) [0x1b0d80e5c]
+                      1  ??? (UIKitCore + 14343324) [0x1b0d80c9c]
+                        1  ??? (UIKitCore + 2856204) [0x1b028c50c]
+                          1  ??? (FrontBoardServices + 37964) [0x1c3f7d44c]
+                            1  ??? (FrontBoardServices + 38196) [0x1c3f7d534]
+                              1  ??? (FrontBoardServices + 38636) [0x1c3f7d6ec]
+                                1  ??? (BoardServices + 13484) [0x1c401f4ac]
+                                  1  ??? (libxpc.dylib + 66072) [0x20ce91218]
+                                    1  ??? (libdispatch.dylib + 128412) [0x1b544559c]
+                                      1  ??? (libdispatch.dylib + 127256) [0x1b5445118]
+                                        1  ??? (libdispatch.dylib + 126544) [0x1b5444e50]
+                                          1  ??? (libdispatch.dylib + 141604) [0x1b5448924]
+                                            1  ??? (libdispatch.dylib + 143604) [0x1b54490f4]
+                                              1  ??? (libsystem_kernel.dylib + 3204) [0x1ec384c84]
+                                                1  <Kernel mode, Effective Thread QoS Background, Requested Thread QoS Background>
+    1  ??? (libdispatch.dylib + 92756) [0x1b543ca54]
+      1  <Effective Thread QoS Default, Requested Thread QoS Default>
+  2  ??? (libsystem_pthread.dylib + 2952) [0x20ce3eb88]
+    2  ??? (libsystem_pthread.dylib + 5816) [0x20ce3f6b8]
+      1  ??? (JavaScriptCore + 1129020) [0x1c1763a3c]
+        1  ??? (libsystem_kernel.dylib + 5464) [0x1ec385558]
+          1  <Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+      1  ??? (JavaScriptCore + 1128284) [0x1c176375c]
+        1  ??? (JavaScriptCore + 1253060) [0x1c1781ec4]
+          1  ??? (JavaScriptCore + 1256568) [0x1c1782c78]
+            1  ??? (JavaScriptCore + 1090196) [0x1c175a294]
+              1  ??? (JavaScriptCore + 826544) [0x1c1719cb0]
+                1  <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+
+  Binary Images:
+           0x100ca0000 -                ???  org.mozilla.ios.Firefox 118.2 (34971) <4B2CA629-0E2B-3FFE-8B1F-B294B496FC28>  /private/var/containers/Bundle/Application/12A9E56D-754E-44F1-8AF5-17E39650E997/Client.app/Client
+           0x1adf65000 -        0x1ae34cfff  CoreFoundation                        <6A07CBE8-4F65-3DBC-B59D-C1A188A7B95D>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1affd3000 -        0x1b17f5fff  UIKitCore                             <B0858D8E-7220-37BF-873F-ECC2B0A358C3>  /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+           0x1b5426000 -        0x1b546cfff  libdispatch.dylib                     <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1c0a47000 -        0x1c159afff  WebKit                                <F98A4F88-DE1E-3562-9F62-C32C434CA72D>  /System/Library/Frameworks/WebKit.framework/WebKit
+           0x1c1650000 -        0x1c2d6cfff  JavaScriptCore                        <B98C0480-7537-3F88-83D7-308DBA0C9005>  /System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore
+           0x1c3f74000 -        0x1c401bfff  FrontBoardServices                    <4E9B358C-A4C2-3F4B-A88A-2473998E24D8>  /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
+           0x1c401c000 -        0x1c4071fff  BoardServices                         <F2E2A0E8-7F96-30F7-B841-C5BD09D98163>  /System/Library/PrivateFrameworks/BoardServices.framework/BoardServices
+           0x1c510c000 -        0x1c5126fff  libsystem_trace.dylib                 <0C521867-8C9C-32E5-95D7-65AF68798AB2>  /usr/lib/system/libsystem_trace.dylib
+           0x1cd447000 -        0x1cd4cc923  dyld                                  <41605DC7-F412-37D1-B51B-FEE1A26701E9>  /usr/lib/dyld
+           0x1d495e000 -        0x1d4971fff  HangTracer                            <E268E9F8-8C92-3168-BE7D-FE3B14698615>  /System/Library/PrivateFrameworks/HangTracer.framework/HangTracer
+           0x1e8952000 -        0x1e895afff  GraphicsServices                      <B7999F43-84C0-30F9-9096-CCEB457FBE4A>  /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+           0x1ec384000 -        0x1ec3bbff7  libsystem_kernel.dylib                <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x20ce3e000 -        0x20ce49ff3  libsystem_pthread.dylib               <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+           0x20ce81000 -        0x20cec2fff  libxpc.dylib                          <7AFE0AEC-5B9F-3E5D-9803-12CA228AD324>  /usr/lib/system/libxpc.dylib
