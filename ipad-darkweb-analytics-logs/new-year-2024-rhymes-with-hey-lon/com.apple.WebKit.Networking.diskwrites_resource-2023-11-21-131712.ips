@@ -1,0 +1,173 @@
+{"app_name":"com.apple.WebKit.Networking","timestamp":"2023-11-21 13:17:12.00 -0600","app_version":"8615","slice_uuid":"A2C70C18-69E1-3316-A96F-1FE6E8C96580","build_version":"8615.1.26.10.24","bundleID":"com.apple.WebKit.Networking","duration_ms":"553487","share_with_app_devs":1,"is_first_party":0,"bug_type":"145","os_version":"iPhone OS 16.4.1 (20E252)","roots_installed":0,"incident_id":"D9240604-DF1F-41D4-9AAB-2743CA42C096","name":"com.apple.WebKit.Networking"}
+Date/Time:        2023-11-21 13:07:54.846 -0600
+End time:         2023-11-21 13:17:08.333 -0600
+OS Version:       iPhone OS 16.4.1 (Build 20E252)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: D9240604-DF1F-41D4-9AAB-2743CA42C096
+Share With Devs:  Yes
+
+Data Source:      Microstackshots
+Shared Cache:     4F1FAD1F-32AF-3CEA-9C76-FE6EE686419D slid base address 0x1885a4000, slide 0x85a4000
+
+Command:          com.apple.WebKit.Networking
+Path:             /private/preboot/Cryptexes/OS/System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.Networking.xpc/com.apple.WebKit.Networking
+Identifier:       com.apple.WebKit.Networking
+Version:          8615 (8615.1.26.10.24)
+Resource Coalition ID: 444
+Architecture:     arm64e
+Parent:           launchd [1]
+PID:              483
+
+Event:            disk writes
+Action taken:     none
+Writes:           4294.98 MB of file backed memory dirtied over 553 seconds (7759.87 KB per second average), exceeding limit of 49.71 KB per second over 86400 seconds
+Writes limit:     4294.97 MB
+Limit duration:   86400s
+Writes caused:    4294.98 MB
+Writes duration:  553s
+Duration:         553.49s
+Steps:            439 (10.49 MB/step)
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 2, User -> 3, ThermalPressure -> 0, Combined -> 2
+Free disk space:  2253.82 MB/59.59 GB, low space threshold 150 MB
+Vnodes Available: 79.61% (15921/20000, 10000 allocated, 10000 soft limit)
+
+Preferred User Language: en-US
+Country Code:     US
+Keyboards:        en_US QWERTY, emoji Emoji
+OS Cryptex File Extents: 9
+
+Heaviest stack for the target process:
+  408  ??? (libsystem_pthread.dylib + 2940) [0x1ee406b7c]
+  408  ??? (libsystem_pthread.dylib + 3548) [0x1ee406ddc]
+  408  ??? (libdispatch.dylib + 93404) [0x196a04cdc]
+  408  ??? (libdispatch.dylib + 49316) [0x1969fa0a4]
+  408  ??? (libdispatch.dylib + 46388) [0x1969f9534]
+  408  ??? (libdispatch.dylib + 16044) [0x1969f1eac]
+  408  ??? (JavaScriptCore + 721240) [0x1a2cc8158]
+  316  ??? (WebKit + 1206596) [0x1a2135944]
+  316  ??? (WebCore + 14086288) [0x1a05d5090]
+  316  ??? (WebCore + 14071556) [0x1a05d1704]
+  316  ??? (WebKit + 3880864) [0x1a23c27a0]
+  316  ??? (WebKit + 3825440) [0x1a23b4f20]
+  316  ??? (WebKit + 3881368) [0x1a23c2998]
+  316  ??? (WebCore + 14131336) [0x1a05e0088]
+  316  ??? (WebCore + 14071140) [0x1a05d1564]
+  316  ??? (WebCore + 13979192) [0x1a05bae38]
+  316  ??? (WebCore + 31361332) [0x1a164e934]
+  316  ??? (WebCore + 31347176) [0x1a164b1e8]
+  195  ??? (libsqlite3.dylib + 179300) [0x1b43b9c64]
+  195  ??? (WebCore + 31346236) [0x1a164ae3c]
+  195  ??? (libsqlite3.dylib + 506268) [0x1b440999c]
+  195  ??? (libsqlite3.dylib + 1003136) [0x1b4482e80]
+  195  ??? (libsqlite3.dylib + 379696) [0x1b43eab30]
+  195  ??? (libsqlite3.dylib + 310312) [0x1b43d9c28]
+  195  ??? (libsystem_kernel.dylib + 10592) [0x1cd94e960]
+
+
+Powerstats for:   com.apple.WebKit.Networking (com.apple.WebKit.Networking) [483]
+UUID:             A2C70C18-69E1-3316-A96F-1FE6E8C96580
+Path:             /private/preboot/Cryptexes/OS/System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.Networking.xpc/com.apple.WebKit.Networking
+Identifier:       com.apple.WebKit.Networking
+Version:          8615 (8615.1.26.10.24)
+Resource Coalition ID: 444
+Architecture:     arm64e
+Parent:           launchd [1]
+UID:              501
+Sudden Term:      Tracked (allows idle exit)
+Footprint:        28.19 MB -> 44.62 MB (+16.44 MB) (max 64.77 MB )
+Pageins:          4988 pages
+Start time:       2023-11-21 13:07:54.847 -0600
+End time:         2023-11-21 13:17:08.300 -0600
+Num samples:      408 (93%)
+Primary state:    408 samples Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 408 samples Active
+Power Source:     408 samples on Battery, 0 samples on AC
+  408  ??? (libsystem_pthread.dylib + 2940) [0x1ee406b7c]
+    408  ??? (libsystem_pthread.dylib + 3548) [0x1ee406ddc]
+      408  ??? (libdispatch.dylib + 93404) [0x196a04cdc]
+        408  ??? (libdispatch.dylib + 49316) [0x1969fa0a4]
+          408  ??? (libdispatch.dylib + 46388) [0x1969f9534]
+            408  ??? (libdispatch.dylib + 16044) [0x1969f1eac]
+              408  ??? (JavaScriptCore + 721240) [0x1a2cc8158]
+                316  ??? (WebKit + 1206596) [0x1a2135944]
+                  316  ??? (WebCore + 14086288) [0x1a05d5090]
+                    316  ??? (WebCore + 14071556) [0x1a05d1704]
+                      316  ??? (WebKit + 3880864) [0x1a23c27a0]
+                        316  ??? (WebKit + 3825440) [0x1a23b4f20]
+                          316  ??? (WebKit + 3881368) [0x1a23c2998]
+                            316  ??? (WebCore + 14131336) [0x1a05e0088]
+                              316  ??? (WebCore + 14071140) [0x1a05d1564]
+                                316  ??? (WebCore + 13979192) [0x1a05bae38]
+                                  316  ??? (WebCore + 31361332) [0x1a164e934]
+                                    316  ??? (WebCore + 31347176) [0x1a164b1e8]
+                                      195  ??? (libsqlite3.dylib + 179300) [0x1b43b9c64]
+                                        195  ??? (WebCore + 31346236) [0x1a164ae3c]
+                                          195  ??? (libsqlite3.dylib + 506268) [0x1b440999c]
+                                            195  ??? (libsqlite3.dylib + 1003136) [0x1b4482e80]
+                                              195  ??? (libsqlite3.dylib + 379696) [0x1b43eab30]
+                                                195  ??? (libsqlite3.dylib + 310312) [0x1b43d9c28]
+                                                  195  ??? (libsystem_kernel.dylib + 10592) [0x1cd94e960]
+                                      121  ??? (libsqlite3.dylib + 177776) [0x1b43b9670]
+                                        121  ??? (libsqlite3.dylib + 223856) [0x1b43c4a70]
+                                          121  ??? (libsqlite3.dylib + 84564) [0x1b43a2a54]
+                                            121  ??? (libsqlite3.dylib + 246440) [0x1b43ca2a8]
+                                              121  ??? (libsqlite3.dylib + 247768) [0x1b43ca7d8]
+                                                121  ??? (libsqlite3.dylib + 309524) [0x1b43d9914]
+                                                  113  ??? (libsqlite3.dylib + 615648) [0x1b44244e0]
+                                                    113  ??? (libsqlite3.dylib + 310312) [0x1b43d9c28]
+                                                      113  ??? (libsystem_kernel.dylib + 10592) [0x1cd94e960]
+                                                  8    ??? (libsqlite3.dylib + 616372) [0x1b44247b4]
+                                                    8    ??? (libsqlite3.dylib + 310312) [0x1b43d9c28]
+                                                      8    ??? (libsystem_kernel.dylib + 10592) [0x1cd94e960]
+                88   ??? (WebKit + 1217336) [0x1a2138338]
+                  88   ??? (WebCore + 14095328) [0x1a05d73e0]
+                    88   ??? (WebKit + 3880864) [0x1a23c27a0]
+                      88   ??? (WebKit + 3825440) [0x1a23b4f20]
+                        88   ??? (WebKit + 3881368) [0x1a23c2998]
+                          87   ??? (WebCore + 14124540) [0x1a05de5fc]
+                            87   ??? (WebCore + 13997620) [0x1a05bf634]
+                              87   ??? (WebCore + 31347176) [0x1a164b1e8]
+                                87   ??? (libsqlite3.dylib + 177776) [0x1b43b9670]
+                                  87   ??? (libsqlite3.dylib + 207428) [0x1b43c0a44]
+                                    87   ??? (libsqlite3.dylib + 306200) [0x1b43d8c18]
+                                      87   ??? (libsqlite3.dylib + 329720) [0x1b43de7f8]
+                                        87   ??? (libsqlite3.dylib + 634560) [0x1b4428ec0]
+                                          87   ??? (libsqlite3.dylib + 621716) [0x1b4425c94]
+                                            87   ??? (libsqlite3.dylib + 613688) [0x1b4423d38]
+                                              87   ??? (libsqlite3.dylib + 615648) [0x1b44244e0]
+                                                87   ??? (libsqlite3.dylib + 310312) [0x1b43d9c28]
+                                                  87   ??? (libsystem_kernel.dylib + 10592) [0x1cd94e960]
+                          1    ??? (WebCore + 14124396) [0x1a05de56c]
+                            1    ??? (WebCore + 13997172) [0x1a05bf474]
+                              1    ??? (WebCore + 13994876) [0x1a05beb7c]
+                                1    ??? (WebCore + 31347176) [0x1a164b1e8]
+                                  1    ??? (libsqlite3.dylib + 177776) [0x1b43b9670]
+                                    1    ??? (libsqlite3.dylib + 219696) [0x1b43c3a30]
+                                      1    ??? (libsqlite3.dylib + 652456) [0x1b442d4a8]
+                                        1    ??? (libsqlite3.dylib + 656656) [0x1b442e510]
+                                          1    ??? (libsqlite3.dylib + 668740) [0x1b4431444]
+                                            1    ??? (libsqlite3.dylib + 621716) [0x1b4425c94]
+                                              1    ??? (libsqlite3.dylib + 613688) [0x1b4423d38]
+                                                1    ??? (libsqlite3.dylib + 615648) [0x1b44244e0]
+                                                  1    ??? (libsqlite3.dylib + 310312) [0x1b43d9c28]
+                                                    1    ??? (libsystem_kernel.dylib + 10592) [0x1cd94e960]
+                3    ??? (libsystem_platform.dylib + 4360) [0x1ee370108]
+                1    ??? (libsystem_platform.dylib + 4348) [0x1ee3700fc]
+
+  Binary Images:
+           0x100284000 -                ???  com.apple.WebKit.Networking 8615 (8615.1.26.10.24) <A2C70C18-69E1-3316-A96F-1FE6E8C96580>  /private/preboot/Cryptexes/OS/System/Library/Frameworks/WebKit.framework/XPCServices/com.apple.WebKit.Networking.xpc/com.apple.WebKit.Networking
+           0x1969ee000 -        0x196a34fff  libdispatch.dylib                                  <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x19f866000 -        0x1a200efff  WebCore                                            <0D14359A-8C46-37C4-BA46-6697327924CB>  /System/Library/PrivateFrameworks/WebCore.framework/WebCore
+           0x1a200f000 -        0x1a2b62fff  WebKit                                             <F98A4F88-DE1E-3562-9F62-C32C434CA72D>  /System/Library/Frameworks/WebKit.framework/WebKit
+           0x1a2c18000 -        0x1a4334fff  JavaScriptCore                                     <B98C0480-7537-3F88-83D7-308DBA0C9005>  /System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore
+           0x1b438e000 -        0x1b44f9ff7  libsqlite3.dylib                                   <8F14BC1B-01A9-3D75-BED2-7161583CE74F>  /usr/lib/libsqlite3.dylib
+           0x1cd94c000 -        0x1cd983ff7  libsystem_kernel.dylib                             <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x1ee36f000 -        0x1ee375fef  libsystem_platform.dylib                           <2E6C66FC-2EB9-34F9-995B-AE0B16E030C4>  /usr/lib/system/libsystem_platform.dylib
+           0x1ee406000 -        0x1ee411ff3  libsystem_pthread.dylib                            <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
