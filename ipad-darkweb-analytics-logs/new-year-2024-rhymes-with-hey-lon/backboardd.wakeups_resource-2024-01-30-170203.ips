@@ -1,0 +1,562 @@
+{"duration_ms":"255476","share_with_app_devs":1,"roots_installed":0,"bug_type":"142","os_version":"iPhone OS 16.4.1 (20E252)","slice_uuid":"AD80E665-0A4D-375A-ACE2-119734B8521E","is_first_party":0,"incident_id":"69F929EB-183C-4B52-9ACB-D23A4E7ECB71","timestamp":"2024-01-30 17:02:03.00 -0600","app_name":"backboardd","name":"backboardd"}
+Date/Time:        2024-01-30 16:57:47.392 -0600
+End time:         2024-01-30 17:02:02.868 -0600
+OS Version:       iPhone OS 16.4.1 (Build 20E252)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: 69F929EB-183C-4B52-9ACB-D23A4E7ECB71
+Share With Devs:  Yes
+
+Data Source:      Microstackshots
+Shared Cache:     4F1FAD1F-32AF-3CEA-9C76-FE6EE686419D slid base address 0x1c2794000, slide 0x42794000
+
+Command:          backboardd
+Path:             /usr/libexec/backboardd
+Resource Coalition ID: 73
+Architecture:     arm64
+PID:              62
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 255 seconds (176 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 255s
+Duration:         255.48s
+Duration Sampled: 249.61s
+Steps:            94
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+OS Cryptex File Extents: 9
+
+Heaviest stack for the target process:
+  9  ??? (libsystem_pthread.dylib + 2952) [0x2285f6b88]
+  9  ??? (libsystem_pthread.dylib + 5816) [0x2285f76b8]
+  9  ??? (QuartzCore + 2813652) [0x1caeeeed4]
+  8  ??? (QuartzCore + 2767060) [0x1caee38d4]
+  8  ??? (CoreFoundation + 794500) [0x1c97def84]
+  8  ??? (CoreFoundation + 521436) [0x1c979c4dc]
+  4  ??? (CoreFoundation + 500544) [0x1c9797340]
+  4  ??? (CoreFoundation + 495892) [0x1c9796114]
+  4  ??? (libsystem_kernel.dylib + 4552) [0x207b3d1c8]
+  4  ??? (libsystem_kernel.dylib + 81452) [0x207b4fe2c]
+  4  ??? (libsystem_kernel.dylib + 3204) [0x207b3cc84]
+
+
+Powerstats for:   backboardd [62]
+UUID:             AD80E665-0A4D-375A-ACE2-119734B8521E
+Path:             /usr/libexec/backboardd
+Resource Coalition ID: 73
+Architecture:     arm64
+Footprint:        42.11 MB
+Start time:       2024-01-30 16:58:12.089 -0600
+End time:         2024-01-30 17:02:00.876 -0600
+Num samples:      22 (23%)
+Primary state:    7 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 22 samples Active
+Power Source:     22 samples on Battery, 0 samples on AC
+  9   ??? (libsystem_pthread.dylib + 2952) [0x2285f6b88]
+    9   ??? (libsystem_pthread.dylib + 5816) [0x2285f76b8]
+      9   ??? (QuartzCore + 2813652) [0x1caeeeed4]
+        8   ??? (QuartzCore + 2767060) [0x1caee38d4]
+          8   ??? (CoreFoundation + 794500) [0x1c97def84]
+            8   ??? (CoreFoundation + 521436) [0x1c979c4dc]
+              4   ??? (CoreFoundation + 500544) [0x1c9797340]
+                4   ??? (CoreFoundation + 495892) [0x1c9796114]
+                  4   ??? (libsystem_kernel.dylib + 4552) [0x207b3d1c8]
+                    4   ??? (libsystem_kernel.dylib + 81452) [0x207b4fe2c]
+                      4   ??? (libsystem_kernel.dylib + 3204) [0x207b3cc84]
+                        3   <Kernel mode>
+              3   ??? (CoreFoundation + 501576) [0x1c9797748]
+                3   ??? (CoreFoundation + 626472) [0x1c97b5f28]
+                  3   ??? (CoreFoundation + 619064) [0x1c97b4238]
+                    3   ??? (CoreFoundation + 499268) [0x1c9796e44]
+                      3   ??? (QuartzCore + 235596) [0x1cac7984c]
+                        3   ??? (QuartzCore + 232980) [0x1cac78e14]
+                          2   ??? (QuartzCore + 2710724) [0x1caed5cc4]
+                            2   ??? (QuartzCore + 693504) [0x1cace9500]
+                              2   ??? (QuartzCore + 252704) [0x1cac7db20]
+                                2   ??? (QuartzCore + 3015268) [0x1caf20264]
+                                  2   ??? (IOMobileFramebuffer + 7788) [0x1f4775e6c]
+                                    2   ??? (IOKit + 10220) [0x1d159a7ec]
+                                      2   ??? (IOKit + 16560) [0x1d159c0b0]
+                                        2   ??? (libsystem_kernel.dylib + 3204) [0x207b3cc84]
+                                          1   <Kernel mode>
+                          1   ??? (QuartzCore + 1279380) [0x1cad78594]
+              1   ??? (CoreFoundation + 500656) [0x1c97973b0]
+        1   ??? (QuartzCore + 2767664) [0x1caee3b30]
+          1   ??? (CoreFoundation + 794500) [0x1c97def84]
+            1   ??? (CoreFoundation + 521436) [0x1c979c4dc]
+              1   ??? (CoreFoundation + 500544) [0x1c9797340]
+                1   ??? (CoreFoundation + 495892) [0x1c9796114]
+                  1   ??? (libsystem_kernel.dylib + 4552) [0x207b3d1c8]
+                    1   ??? (libsystem_kernel.dylib + 81452) [0x207b4fe2c]
+                      1   ??? (libsystem_kernel.dylib + 3204) [0x207b3cc84]
+  7   ??? (libsystem_pthread.dylib + 2940) [0x2285f6b7c]
+    6   ??? (libsystem_pthread.dylib + 3548) [0x2285f6ddc]
+      6   ??? (libdispatch.dylib + 93404) [0x1d0bf4cdc]
+        5   ??? (libdispatch.dylib + 49316) [0x1d0bea0a4]
+          5   ??? (libdispatch.dylib + 46388) [0x1d0be9534]
+            5   ??? (libdispatch.dylib + 16044) [0x1d0be1eac]
+              5   ??? (libdispatch.dylib + 8992) [0x1d0be0320]
+                2   ??? (CoreBrightness + 145980) [0x1f4547a3c]
+                  2   ??? (CoreFoundation + 79592) [0x1c97306e8]
+                    2   ??? (CoreBrightness + 98352) [0x1f453c030]
+                      2   ??? (IOKit + 18776) [0x1d159c958]
+                        1   ??? (IOKit + 48908) [0x1d15a3f0c]
+                          1   ??? (IOKit + 54812) [0x1d15a561c]
+                            1   ??? (libsystem_kernel.dylib + 3204) [0x207b3cc84]
+                              1   <Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+                        1   ??? (IOKit + 48864) [0x1d15a3ee0]
+                          1   ??? (IOKit + 55644) [0x1d15a595c]
+                            1   ??? (IOKit + 13652) [0x1d159b554]
+                              1   ??? (CoreFoundation + 161612) [0x1c974474c]
+                                1   ??? (IOKit + 125416) [0x1d15b69e8]
+                                  1   ??? (IOKit + 13652) [0x1d159b554]
+                                    1   ??? (CoreFoundation + 161612) [0x1c974474c]
+                                      1   ??? (IOKit + 125372) [0x1d15b69bc]
+                                        1   ??? (IOKit + 14544) [0x1d159b8d0]
+                                          1   ??? (IOKit + 63792) [0x1d15a7930]
+                                            1   ??? (CoreFoundation + 657092) [0x1c97bd6c4]
+                                              1   ??? (CoreFoundation + 532564) [0x1c979f054]
+                                                1   <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+                1   ??? (CoreBrightness + 245312) [0x1f455fe40]
+                  1   ??? (libdispatch.dylib + 78888) [0x1d0bf1428]
+                    1   ??? (libdispatch.dylib + 16044) [0x1d0be1eac]
+                      1   ??? (CoreBrightness + 254164) [0x1f45620d4]
+                        1   ??? (libobjc.A.dylib + 10424) [0x1c28468b8]
+                          1   <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+                1   ??? (CoreBrightness + 94684) [0x1f453b1dc]
+                  1   ??? (CoreBrightness + 190904) [0x1f45529b8]
+                    1   ??? (CoreBrightness + 180476) [0x1f45500fc]
+                      1   ??? (CoreFoundation + 639456) [0x1c97b91e0]
+                        1   ??? (CoreFoundation + 79740) [0x1c973077c]
+                          1   ??? (CoreBrightness + 181096) [0x1f4550368]
+                            1   ??? (CoreFoundation + 96572) [0x1c973493c]
+                              1   ??? (CoreFoundation + 9288) [0x1c971f448]
+                                1   ??? (libobjc.A.dylib + 10280) [0x1c2846828]
+                                  1   <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+                1   ??? (libobjc.A.dylib + 10240) [0x1c2846800]
+                  1   <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+        1   ??? (libdispatch.dylib + 54460) [0x1d0beb4bc]
+          1   ??? (libdispatch.dylib + 16044) [0x1d0be1eac]
+            1   ??? (libdispatch.dylib + 8992) [0x1d0be0320]
+              1   ??? (QuartzCore + 822140) [0x1cad08b7c]
+                1   ??? (QuartzCore + 784788) [0x1cacff994]
+                  1   ??? (CoreFoundation + 727084) [0x1c97ce82c]
+                    1   ??? (libsystem_pthread.dylib + 8764) [0x2285f823c]
+    1   ??? (libsystem_pthread.dylib + 3604) [0x2285f6e14]
+      1   ??? (libdispatch.dylib + 91412) [0x1d0bf4514]
+        1   ??? (libdispatch.dylib + 150632) [0x1d0c02c68]
+          1   ??? (libsystem_kernel.dylib + 3744) [0x207b3cea0]
+            1   ??? (libsystem_kernel.dylib + 3928) [0x207b3cf58]
+  6   ??? (libsystem_pthread.dylib + 2932) [0x2285f6b74]
+    3   <Kernel mode>
+    3   <Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+
+  Binary Images:
+           0x100070000 -                ???  backboardd              <AD80E665-0A4D-375A-ACE2-119734B8521E>  /usr/libexec/backboardd
+           0x1c2844000 -        0x1c2887f9f  libobjc.A.dylib         <95BD232E-3710-30FD-ADB1-7956D55DE41A>  /usr/lib/libobjc.A.dylib
+           0x1c971d000 -        0x1c9b04fff  CoreFoundation          <6A07CBE8-4F65-3DBC-B59D-C1A188A7B95D>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1cac40000 -        0x1cafb9fff  QuartzCore              <0AE8CEB8-0DD6-363F-951D-16AAC60A0951>  /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+           0x1d0bde000 -        0x1d0c24fff  libdispatch.dylib       <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1d1598000 -        0x1d1654fff  IOKit                   <D42A841D-2A05-3B97-A53F-0533B45FC1F5>  /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+           0x1f4524000 -        0x1f46d5fff  CoreBrightness          <D906954C-3683-34C1-8D17-5EE35F047204>  /System/Library/PrivateFrameworks/CoreBrightness.framework/CoreBrightness
+           0x1f4774000 -        0x1f4781fff  IOMobileFramebuffer     <D2CCE008-351E-3781-8774-0ED863D941E7>  /System/Library/PrivateFrameworks/IOMobileFramebuffer.framework/IOMobileFramebuffer
+           0x207b3c000 -        0x207b73ff7  libsystem_kernel.dylib  <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x2285f6000 -        0x228601ff3  libsystem_pthread.dylib <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   mediaserverd
+UUID:             1AAA7E19-B09E-36E9-90C1-752DDCEE26CB
+Path:             /usr/sbin/mediaserverd
+Resource Coalition ID: 15
+Architecture:     arm64
+Start time:       2024-01-30 16:57:52.280 -0600
+End time:         2024-01-30 17:01:57.864 -0600
+Num samples:      42 (45%)
+Primary state:    36 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 42 samples Active
+Power Source:     42 samples on Battery, 0 samples on AC
+  41  ??? (libsystem_pthread.dylib + 2952) [0x2285f6b88]
+    41  ??? (libsystem_pthread.dylib + 5816) [0x2285f76b8]
+      24  ??? (libdispatch.dylib + 87764) [0x1d0bf36d4]
+        24  ??? (libdispatch.dylib + 88388) [0x1d0bf3944]
+          24  ??? (libdispatch.dylib + 49368) [0x1d0bea0d8]
+            24  ??? (libdispatch.dylib + 46388) [0x1d0be9534]
+              24  ??? (libdispatch.dylib + 16044) [0x1d0be1eac]
+                13  ??? (CMCapture + 46780) [0x1e63246bc]
+                  7   ??? (CMCapture + 135216) [0x1e633a030]
+                    6   ??? (CMCapture + 530432) [0x1e639a800]
+                      5   ??? (CoreFoundation + 154972) [0x1c9742d5c]
+                        3   ??? (CoreFoundation + 154972) [0x1c9742d5c]
+                          3   ??? (CoreFoundation + 154312) [0x1c9742ac8]
+                            1   ??? (CoreFoundation + 157616) [0x1c97437b0]
+                              1   ??? (CoreFoundation + 513144) [0x1c979a478]
+                                1   ??? (libsystem_malloc.dylib + 19584) [0x1d7b62c80]
+                                  1   ??? (libsystem_malloc.dylib + 17212) [0x1d7b6233c]
+                                    1   ??? (libsystem_malloc.dylib + 11160) [0x1d7b60b98]
+                            1   ??? (CoreFoundation + 157464) [0x1c9743718]
+                              1   ??? (CoreFoundation + 696552) [0x1c97c70e8]
+                            1   ??? (CoreFoundation + 157204) [0x1c9743614]
+                              1   ??? (CoreFoundation + 519524) [0x1c979bd64]
+                                1   ??? (CoreFoundation + 831024) [0x1c97e7e30]
+                                  1   ??? (CoreFoundation + 514920) [0x1c979ab68]
+                                    1   ??? (CoreFoundation + 547144) [0x1c97a2948]
+                        1   ??? (CoreFoundation + 155284) [0x1c9742e94]
+                          1   ??? (CoreFoundation + 532764) [0x1c979f11c]
+                        1   ??? (CoreFoundation + 154312) [0x1c9742ac8]
+                          1   ??? (CoreFoundation + 157616) [0x1c97437b0]
+                            1   ??? (CoreFoundation + 513144) [0x1c979a478]
+                              1   ??? (libsystem_malloc.dylib + 19584) [0x1d7b62c80]
+                                1   ??? (libsystem_malloc.dylib + 16308) [0x1d7b61fb4]
+                      1   ??? (CoreFoundation + 155284) [0x1c9742e94]
+                        1   ??? (CoreFoundation + 91008) [0x1c9733380]
+                    1   ??? (CMCapture + 530304) [0x1e639a780]
+                      1   ??? (CoreGraphics + 31012) [0x1cb186924]
+                        1   ??? (CoreGraphics + 12592) [0x1cb182130]
+                          1   ??? (CoreFoundation + 91112) [0x1c97333e8]
+                            1   ??? (CoreFoundation + 10072) [0x1c971f758]
+                              1   ??? (CoreFoundation + 533804) [0x1c979f52c]
+                  3   ??? (CMCapture + 135144) [0x1e6339fe8]
+                    3   ??? (CMCapture + 68012) [0x1e63299ac]
+                      3   ??? (CMCapture + 582552) [0x1e63a7398]
+                        2   ??? (CoreFoundation + 154972) [0x1c9742d5c]
+                          2   ??? (CoreFoundation + 154972) [0x1c9742d5c]
+                            2   ??? (CoreFoundation + 154312) [0x1c9742ac8]
+                              1   ??? (CoreFoundation + 157616) [0x1c97437b0]
+                                1   ??? (CoreFoundation + 513144) [0x1c979a478]
+                                  1   ??? (libsystem_malloc.dylib + 19584) [0x1d7b62c80]
+                                    1   ??? (libsystem_malloc.dylib + 16228) [0x1d7b61f64]
+                              1   ??? (CoreFoundation + 157204) [0x1c9743614]
+                                1   ??? (CoreFoundation + 519524) [0x1c979bd64]
+                                  1   ??? (CoreFoundation + 831024) [0x1c97e7e30]
+                                    1   ??? (CoreFoundation + 515036) [0x1c979abdc]
+                        1   ??? (CoreFoundation + 155168) [0x1c9742e20]
+                          1   ??? (CoreFoundation + 605804) [0x1c97b0e6c]
+                            1   ??? (CoreFoundation + 54700) [0x1c972a5ac]
+                              1   ??? (CoreFoundation + 543372) [0x1c97a1a8c]
+                                1   ??? (libobjc.A.dylib + 13216) [0x1c28473a0]
+                                  1   ??? (libsystem_malloc.dylib + 27228) [0x1d7b64a5c]
+                                    1   ??? (libsystem_malloc.dylib + 14488) [0x1d7b61898]
+                                      1   ??? (libsystem_malloc.dylib + 11712) [0x1d7b60dc0]
+                  2   ??? (CMCapture + 135128) [0x1e6339fd8]
+                    2   ??? (CMCapture + 48004) [0x1e6324b84]
+                      2   ??? (CoreFoundation + 97540) [0x1c9734d04]
+                        1   ??? (CoreFoundation + 720940) [0x1c97cd02c]
+                          1   ??? (libsystem_malloc.dylib + 71908) [0x1d7b6f8e4]
+                        1   ??? (CoreFoundation + 720888) [0x1c97ccff8]
+                          1   ??? (libobjc.A.dylib + 10240) [0x1c2846800]
+                  1   ??? (CMCapture + 135928) [0x1e633a2f8]
+                    1   ??? (CMCapture + 48712) [0x1e6324e48]
+                      1   ??? (CMCapture + 2932284) [0x1e65e4e3c]
+                        1   ??? (libobjc.A.dylib + 10368) [0x1c2846880]
+                5   ??? (libdispatch.dylib + 8992) [0x1d0be0320]
+                  5   ??? (CMCapture + 343548) [0x1e636cdfc]
+                    5   ??? (CMCapture + 54976) [0x1e63266c0]
+                      3   ??? (CMCapture + 1749272) [0x1e64c4118]
+                        3   ??? (MediaToolbox + 357932) [0x1d86d862c]
+                          2   ??? (AudioToolboxCore + 1028308) [0x1d4af10d4]
+                            2   ??? (AudioToolboxCore + 492212) [0x1d4a6e2b4]
+                              2   ??? (AudioToolboxCore + 1601512) [0x1d4b7cfe8]
+                                2   ??? (AudioToolboxCore + 1605336) [0x1d4b7ded8]
+                                  2   ??? (AudioToolboxCore + 2147936) [0x1d4c02660]
+                                    2   ??? (AudioCodecs + 139136) [0x2041c3f80]
+                                      2   ??? (AudioCodecs + 1080628) [0x2042a9d34]
+                                        1   ??? (AudioCodecs + 526720) [0x204222980]
+                                          1   ??? (AudioCodecs + 834112) [0x20426da40]
+                                            1   ??? (AudioCodecs + 237240) [0x2041dbeb8]
+                                              1   ??? (AudioCodecs + 1138788) [0x2042b8064]
+                                        1   ??? (AudioCodecs + 518864) [0x204220ad0]
+                          1   ??? (libAudioToolboxUtility.dylib + 7240) [0x1ea75bc48]
+                            1   <Kernel mode>
+                      1   ??? (CMCapture + 2596600) [0x1e6592ef8]
+                        1   ??? (CMCapture + 1043248) [0x1e6417b30]
+                          1   ??? (<B18425E2-1A2C-3BCD-AE1C-88A5ACA446CB> + 64720) [0x103667cd0]
+                            1   ??? (<B18425E2-1A2C-3BCD-AE1C-88A5ACA446CB> + 20900) [0x10365d1a4]
+                              1   ??? (<B18425E2-1A2C-3BCD-AE1C-88A5ACA446CB> + 28576) [0x10365efa0]
+                                1   ??? (<B18425E2-1A2C-3BCD-AE1C-88A5ACA446CB> + 48096) [0x103663be0]
+                                  1   ??? (<B18425E2-1A2C-3BCD-AE1C-88A5ACA446CB> + 58972) [0x10366665c]
+                                    1   ??? (<B18425E2-1A2C-3BCD-AE1C-88A5ACA446CB> + 70220) [0x10366924c]
+                      1   ??? (CMCapture + 72544) [0x1e632ab60]
+                        1   ??? (CoreFoundation + 292184) [0x1c9764558]
+                          1   ??? (CoreFoundation + 797940) [0x1c97dfcf4]
+                            1   ??? (libobjc.A.dylib + 10368) [0x1c2846880]
+                4   ??? (CMCapture + 46756) [0x1e63246a4]
+                  2   ??? (CMCapture + 141204) [0x1e633b794]
+                    2   ??? (CMCapture + 50500) [0x1e6325544]
+                      2   ??? (H10ISP.mediacapture + 73704) [0x23872cfe8]
+                        1   ??? (H10ISP.mediacapture + 25160) [0x238721248]
+                          1   ??? (CoreFoundation + 527872) [0x1c979de00]
+                        1   ??? (H10ISP.mediacapture + 18076) [0x23871f69c]
+                          1   ??? (H10ISP.mediacapture + 75392) [0x23872d680]
+                  2   ??? (CMCapture + 140736) [0x1e633b5c0]
+                    2   ??? (CMCapture + 64648) [0x1e6328c88]
+                      2   ??? (CMCapture + 65972) [0x1e63291b4]
+                        2   ??? (CoreMedia + 132916) [0x1d48dd734]
+                          2   ??? (CoreMedia + 133108) [0x1d48dd7f4]
+                            1   ??? (CoreMedia + 111576) [0x1d48d83d8]
+                              1   ??? (CoreVideo + 222316) [0x1e630946c]
+                                1   ??? (CoreFoundation + 9732) [0x1c971f604]
+                            1   ??? (CoreMedia + 111256) [0x1d48d8298]
+                              1   ??? (CoreFoundation + 504372) [0x1c9798234]
+                2   ??? (CMCapture + 58696) [0x1e6327548]
+                  2   ??? (CMCapture + 58096) [0x1e63272f0]
+                    2   ??? (CMCapture + 54976) [0x1e63266c0]
+                      2   ??? (CMCapture + 64472) [0x1e6328bd8]
+                        2   ??? (CMCapture + 58096) [0x1e63272f0]
+                          2   ??? (CMCapture + 54976) [0x1e63266c0]
+                            1   ??? (CMCapture + 113700) [0x1e6334c24]
+                              1   ??? (CMCapture + 1311176) [0x1e64591c8]
+                                1   ??? (CMCapture + 1329928) [0x1e645db08]
+                                  1   ??? (CoreMedia + 35604) [0x1d48c5b14]
+                                    1   ??? (CoreFoundation + 11828) [0x1c971fe34]
+                            1   ??? (CMCapture + 112616) [0x1e63347e8]
+                              1   ??? (libobjc.A.dylib + 10436) [0x1c28468c4]
+      8   ??? (CoreAudio + 672480) [0x1f4be82e0]
+        8   ??? (CoreAudio + 3659796) [0x1f4ec1814]
+          7   ??? (CoreAudio + 3619088) [0x1f4eb7910]
+            7   ??? (CoreAudio + 3358100) [0x1f4e77d94]
+              6   ??? (<9D3715D2-0E74-3E31-AE12-42AB93984C8A> + 19260) [0x103f64b3c]
+                6   ??? (<9D3715D2-0E74-3E31-AE12-42AB93984C8A> + 11140) [0x103f62b84]
+                  6   ??? (<9D3715D2-0E74-3E31-AE12-42AB93984C8A> + 21572) [0x103f65444]
+                    6   ??? (<9D3715D2-0E74-3E31-AE12-42AB93984C8A> + 290708) [0x103fa6f94]
+                      6   ??? (libAudioDSP.dylib + 7258680) [0x1f57b4238]
+                        6   ??? (libAudioDSP.dylib + 4434792) [0x1f5502b68]
+                          6   ??? (AudioToolboxCore + 2249980) [0x1d4c1b4fc]
+                            6   ??? (AudioToolboxCore + 26772) [0x1d49fc894]
+                              6   ??? (AudioToolboxCore + 31192) [0x1d49fd9d8]
+                                6   ??? (AudioToolboxCore + 30908) [0x1d49fd8bc]
+                                  6   ??? (AudioToolboxCore + 94232) [0x1d4a0d018]
+                                    4   ??? (AudioToolboxCore + 86460) [0x1d4a0b1bc]
+                                      4   ??? (libAudioDSP.dylib + 7258680) [0x1f57b4238]
+                                        3   ??? (libAudioDSP.dylib + 4861684) [0x1f556aef4]
+                                          3   ??? (libAudioDSP.dylib + 7196100) [0x1f57a4dc4]
+                                            3   ??? (libAudioDSP.dylib + 4869640) [0x1f556ce08]
+                                              2   ??? (libAudioDSP.dylib + 5967740) [0x1f5678f7c]
+                                                1   ??? (libAudioDSP.dylib + 5966296) [0x1f56789d8]
+                                                  1   ??? (libAudioDSP.dylib + 4803752) [0x1f555cca8]
+                                                1   ??? (libAudioDSP.dylib + 5965584) [0x1f5678710]
+                                                  1   ??? (libvDSP.dylib + 665936) [0x228f1e950]
+                                              1   ??? (libAudioDSP.dylib + 5968128) [0x1f5679100]
+                                                1   ??? (libAudioDSP.dylib + 6741780) [0x1f5735f14]
+                                                  1   ??? (libAudioDSP.dylib + 7199636) [0x1f57a5b94]
+                                                    1   ??? (libvDSP.dylib + 51256) [0x228e88838]
+                                        1   ??? (libAudioDSP.dylib + 6849840) [0x1f5750530]
+                                          1   ??? (libAudioDSP.dylib + 7196100) [0x1f57a4dc4]
+                                            1   ??? (libAudioDSP.dylib + 6871164) [0x1f575587c]
+                                              1   ??? (libAudioDSP.dylib + 6871768) [0x1f5755ad8]
+                                                1   ??? (libAudioDSP.dylib + 6361404) [0x1f56d913c]
+                                                  1   ??? (libAudioDSP.dylib + 3458172) [0x1f541447c]
+                                    2   ??? (AudioToolboxCore + 85856) [0x1d4a0af60]
+                                      2   ??? (libAudioDSP.dylib + 7256288) [0x1f57b38e0]
+                                        1   ??? (libAudioDSP.dylib + 4828808) [0x1f5562e88]
+                                          1   ??? (libAudioDSP.dylib + 2544832) [0x1f53354c0]
+                                            1   ??? (libAudioDSP.dylib + 2298868) [0x1f52f93f4]
+                                              1   ??? (libAudioDSP.dylib + 2329400) [0x1f5300b38]
+                                                1   ??? (libAudioDSP.dylib + 2330520) [0x1f5300f98]
+                                                  1   ??? (libAudioDSP.dylib + 2223192) [0x1f52e6c58]
+                                                    1   ??? (libAudioDSP.dylib + 2222856) [0x1f52e6b08]
+                                                      1   ??? (libvDSP.dylib + 22532) [0x228e81804]
+                                                        1   ??? (libvDSP.dylib + 11892) [0x228e7ee74]
+                                                          1   ??? (libvDSP.dylib + 36244) [0x228e84d94]
+                                        1   ??? (libAudioDSP.dylib + 2546144) [0x1f53359e0]
+                                          1   ??? (libAudioDSP.dylib + 2544832) [0x1f53354c0]
+                                            1   ??? (libAudioDSP.dylib + 2298868) [0x1f52f93f4]
+                                              1   ??? (libAudioDSP.dylib + 2247376) [0x1f52ecad0]
+                                                1   ??? (libAudioDSP.dylib + 2298960) [0x1f52f9450]
+                                                  1   ??? (libAudioDSP.dylib + 2030520) [0x1f52b7bb8]
+                                                    1   ??? (libAudioDSP.dylib + 2026928) [0x1f52b6db0]
+                                                      1   ??? (libvDSP.dylib + 25112) [0x228e82218]
+              1   ??? (<9D3715D2-0E74-3E31-AE12-42AB93984C8A> + 742536) [0x104015488]
+          1   ??? (CoreAudio + 3618112) [0x1f4eb7540]
+            1   ??? (CoreAudio + 22204) [0x1f4b496bc]
+              1   ??? (CoreAudio + 37528) [0x1f4b4d298]
+                1   ??? (CoreAudio + 3534104) [0x1f4ea2d18]
+                  1   ??? (CoreAudio + 4726840) [0x1f4fc6038]
+      2   ??? (H264H9.videoencoder + 361284) [0x24860a344]
+        2   ??? (CoreFoundation + 794500) [0x1c97def84]
+          2   ??? (CoreFoundation + 521436) [0x1c979c4dc]
+            1   ??? (CoreFoundation + 501576) [0x1c9797748]
+              1   ??? (CoreFoundation + 626472) [0x1c97b5f28]
+                1   ??? (CoreFoundation + 619064) [0x1c97b4238]
+                  1   ??? (CoreFoundation + 499268) [0x1c9796e44]
+                    1   ??? (IOKit + 9820) [0x1d159a65c]
+                      1   ??? (H264H9.videoencoder + 297336) [0x2485fa978]
+                        1   ??? (H264H9.videoencoder + 351760) [0x248607e10]
+                          1   ??? (VideoToolbox + 55736) [0x1d828f9b8]
+                            1   ??? (CMCapture + 2584616) [0x1e6590028]
+                              1   ??? (libdispatch.dylib + 78888) [0x1d0bf1428]
+                                1   ??? (libdispatch.dylib + 16044) [0x1d0be1eac]
+                                  1   ??? (CMCapture + 2585180) [0x1e659025c]
+                                    1   ??? (CMCapture + 58096) [0x1e63272f0]
+                                      1   ??? (CMCapture + 322944) [0x1e6367d80]
+                                        1   ??? (libdispatch.dylib + 68980) [0x1d0beed74]
+                                          1   ??? (libdispatch.dylib + 18988) [0x1d0be2a2c]
+                                            1   ??? (libsystem_kernel.dylib + 3036) [0x207b3cbdc]
+            1   ??? (CoreFoundation + 500544) [0x1c9797340]
+              1   ??? (CoreFoundation + 495892) [0x1c9796114]
+                1   ??? (libsystem_kernel.dylib + 4552) [0x207b3d1c8]
+                  1   ??? (libsystem_kernel.dylib + 81452) [0x207b4fe2c]
+                    1   ??? (libsystem_kernel.dylib + 3204) [0x207b3cc84]
+                      1   <Kernel mode>
+      2   ??? (H10ISP.mediacapture + 194508) [0x23874a7cc]
+        2   ??? (CoreFoundation + 794500) [0x1c97def84]
+          2   ??? (CoreFoundation + 521436) [0x1c979c4dc]
+            2   ??? (CoreFoundation + 501576) [0x1c9797748]
+              2   ??? (CoreFoundation + 626472) [0x1c97b5f28]
+                2   ??? (CoreFoundation + 619064) [0x1c97b4238]
+                  2   ??? (CoreFoundation + 499268) [0x1c9796e44]
+                    2   ??? (IOKit + 9820) [0x1d159a65c]
+                      1   ??? (H10ISP.mediacapture + 59372) [0x2387297ec]
+                        1   ??? (H10ISP.mediacapture + 63156) [0x23872a6b4]
+                          1   ??? (CoreFoundation + 652328) [0x1c97bc428]
+                            1   ??? (CoreFoundation + 877688) [0x1c97f3478]
+                              1   ??? (CoreFoundation + 556736) [0x1c97a4ec0]
+                                1   ??? (CoreFoundation + 653704) [0x1c97bc988]
+                                  1   ??? (CoreFoundation + 520436) [0x1c979c0f4]
+                      1   ??? (H10ISP.mediacapture + 57148) [0x238728f3c]
+                        1   ??? (H10ISP.mediacapture + 155996) [0x23874115c]
+                          1   ??? (IOKit + 14880) [0x1d159ba20]
+                            1   ??? (libsystem_platform.dylib + 4708) [0x228560264]
+      2   ??? (CoreMedia + 404508) [0x1d491fc1c]
+        2   ??? (MediaToolbox + 363592) [0x1d86d9c48]
+          1   ??? (MediaToolbox + 366556) [0x1d86da7dc]
+            1   ??? (MediaToolbox + 3147728) [0x1d89817d0]
+              1   ??? (CoreFoundation + 512036) [0x1c979a024]
+                1   ??? (CoreMedia + 40588) [0x1d48c6e8c]
+                  1   ??? (CoreFoundation + 402720) [0x1c977f520]
+                    1   ??? (CoreFoundation + 172652) [0x1c974726c]
+                      1   ??? (CoreFoundation + 402720) [0x1c977f520]
+                        1   ??? (CoreFoundation + 172624) [0x1c9747250]
+          1   ??? (MediaToolbox + 365280) [0x1d86da2e0]
+            1   ??? (MediaToolbox + 3143704) [0x1d8980818]
+              1   ??? (MediaToolbox + 371452) [0x1d86dbafc]
+                1   ??? (MediaToolbox + 535868) [0x1d8703d3c]
+                  1   ??? (MediaToolbox + 530500) [0x1d8702844]
+                    1   ??? (MediaToolbox + 531292) [0x1d8702b5c]
+                      1   ??? (CoreMedia + 44468) [0x1d48c7db4]
+                        1   ??? (CoreMedia + 360208) [0x1d4914f10]
+                          1   ??? (libsystem_kernel.dylib + 11492) [0x207b3ece4]
+                            1   <Kernel mode>
+      1   ??? (libEmbeddedSystemAUs.dylib + 688480) [0x2334b4160]
+        1   ??? (libAudioToolboxUtility.dylib + 8192) [0x1ea75c000]
+          1   ??? (libAudioToolboxUtility.dylib + 10420) [0x1ea75c8b4]
+            1   ??? (libEmbeddedSystemAUs.dylib + 47964) [0x233417b5c]
+              1   ??? (libEmbeddedSystemAUs.dylib + 11576) [0x23340ed38]
+                1   ??? (AudioToolboxCore + 1028308) [0x1d4af10d4]
+                  1   ??? (AudioToolboxCore + 492212) [0x1d4a6e2b4]
+                    1   ??? (AudioToolboxCore + 2057552) [0x1d4bec550]
+                      1   ??? (AudioToolboxCore + 494324) [0x1d4a6eaf4]
+                        1   ??? (AudioToolboxCore + 1710288) [0x1d4b978d0]
+                          1   ??? (AudioToolboxCore + 37272) [0x1d49ff198]
+                            1   ??? (AudioToolboxCore + 36572) [0x1d49feedc]
+                              1   ??? (AudioToolboxCore + 109760) [0x1d4a10cc0]
+      1   ??? (CoreAudio + 672060) [0x1f4be813c]
+        1   ??? (caulk + 84760) [0x22adfcb18]
+          1   ??? (libsystem_kernel.dylib + 9772) [0x207b3e62c]
+            1   <Kernel mode>
+      1   ??? (CoreMotion + 79592) [0x1d4d066e8]
+        1   ??? (CoreFoundation + 794500) [0x1c97def84]
+          1   ??? (CoreFoundation + 521436) [0x1c979c4dc]
+            1   ??? (CoreFoundation + 500544) [0x1c9797340]
+              1   ??? (CoreFoundation + 495892) [0x1c9796114]
+                1   ??? (libsystem_kernel.dylib + 4552) [0x207b3d1c8]
+                  1   ??? (libsystem_kernel.dylib + 81452) [0x207b4fe2c]
+                    1   ??? (libsystem_kernel.dylib + 3204) [0x207b3cc84]
+                      1   <Kernel mode>
+  1   ??? (libsystem_pthread.dylib + 2932) [0x2285f6b74]
+    1   <Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Interactive>
+
+  Binary Images:
+           0x102b44000 -                ???  mediaserverd                 <1AAA7E19-B09E-36E9-90C1-752DDCEE26CB>  /usr/sbin/mediaserverd
+           0x103658000 -                ???  ???                          <B18425E2-1A2C-3BCD-AE1C-88A5ACA446CB>
+           0x103f60000 -                ???  ???                          <9D3715D2-0E74-3E31-AE12-42AB93984C8A>
+           0x1c2844000 -        0x1c2887f9f  libobjc.A.dylib              <95BD232E-3710-30FD-ADB1-7956D55DE41A>  /usr/lib/libobjc.A.dylib
+           0x1c971d000 -        0x1c9b04fff  CoreFoundation               <6A07CBE8-4F65-3DBC-B59D-C1A188A7B95D>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1cb17f000 -        0x1cb78afff  CoreGraphics                 <A4480BA0-BB39-3523-8867-5378450B262D>  /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+           0x1d0bde000 -        0x1d0c24fff  libdispatch.dylib            <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1d1598000 -        0x1d1654fff  IOKit                        <D42A841D-2A05-3B97-A53F-0533B45FC1F5>  /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+           0x1d48bd000 -        0x1d49f5fff  CoreMedia                    <DC9C021E-2D8A-370F-A004-219996DAA4C4>  /System/Library/Frameworks/CoreMedia.framework/CoreMedia
+           0x1d49f6000 -        0x1d4ca8fff  AudioToolboxCore             <2DD775CB-62D3-3D95-9345-BA667A939326>  /System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore
+           0x1d4cf3000 -        0x1d50fefff  CoreMotion                   <0EE3BD53-A7DD-3267-999D-2E31676C9C5B>  /System/Library/Frameworks/CoreMotion.framework/CoreMotion
+           0x1d7b5e000 -        0x1d7b81ff3  libsystem_malloc.dylib       <39496555-802C-3AB4-A506-6B8C2E3611B9>  /usr/lib/system/libsystem_malloc.dylib
+           0x1d8282000 -        0x1d8680fff  VideoToolbox                 <B938D8DF-6E2D-3E43-A891-CB92E101DDB6>  /System/Library/Frameworks/VideoToolbox.framework/VideoToolbox
+           0x1d8681000 -        0x1d8f4afff  MediaToolbox                 <54BADFE6-59BA-3CA4-B502-D2496B515904>  /System/Library/Frameworks/MediaToolbox.framework/MediaToolbox
+           0x1e62d3000 -        0x1e6318fff  CoreVideo                    <B8BD907A-D04E-337C-8597-A843947BB851>  /System/Library/Frameworks/CoreVideo.framework/CoreVideo
+           0x1e6319000 -        0x1e68aefff  CMCapture                    <D536B11F-FFBF-36AE-86A5-DF689BEC087E>  /System/Library/PrivateFrameworks/CMCapture.framework/CMCapture
+           0x1ea75a000 -        0x1ea78efff  libAudioToolboxUtility.dylib <17892D24-E5A4-3AAA-B426-C974A6651FF1>  /usr/lib/libAudioToolboxUtility.dylib
+           0x1f4b44000 -        0x1f50c7fff  CoreAudio                    <4E53B11C-3A8E-3ECF-8E62-215D0873DB37>  /System/Library/Frameworks/CoreAudio.framework/CoreAudio
+           0x1f50c8000 -        0x1f5983fff  libAudioDSP.dylib            <0A54E4DC-263C-3D26-93CC-9445C5C6F2D5>  /System/Library/Frameworks/AudioToolbox.framework/libAudioDSP.dylib
+           0x2041a2000 -        0x2047a1fdf  AudioCodecs                  <2A391A33-82C5-3C69-AC08-445B7F4B2534>  /System/Library/Frameworks/AudioToolbox.framework/AudioCodecs
+           0x207b3c000 -        0x207b73ff7  libsystem_kernel.dylib       <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x22855f000 -        0x228565fef  libsystem_platform.dylib     <2E6C66FC-2EB9-34F9-995B-AE0B16E030C4>  /usr/lib/system/libsystem_platform.dylib
+           0x2285f6000 -        0x228601ff3  libsystem_pthread.dylib      <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+           0x228e7c000 -        0x228f68fff  libvDSP.dylib                <D0A48414-23D2-32AD-BED9-F9E70F6EE8ED>  /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib
+           0x22ade8000 -        0x22ae10fff  caulk                        <E003D7C0-281E-3800-9423-A343AB781FF7>  /System/Library/PrivateFrameworks/caulk.framework/caulk
+           0x23340c000 -        0x233516ff7  libEmbeddedSystemAUs.dylib   <9241DB85-9EB3-38D2-AD69-55CC64F172D9>  /System/Library/Frameworks/AudioToolbox.framework/libEmbeddedSystemAUs.dylib
+           0x23871b000 -        0x238899fff  H10ISP.mediacapture          <1AFC0443-B283-3E25-B0A7-C35D963D957F>  /System/Library/MediaCapture/H10ISP.mediacapture
+           0x2485b2000 -        0x248667fff  H264H9.videoencoder          <9BFDF336-1B23-33AB-A8D1-6DE3FED967E7>  /System/Library/VideoEncoders/H264H9.videoencoder
+
+
+Powerstats for:   aggregated
+UUID:             78035F35-3A2C-3B70-8877-FEB966646237
+Path:             /System/Library/PrivateFrameworks/AggregateDictionary.framework/Support/aggregated
+Resource Coalition ID: 105
+Architecture:     arm64
+Start time:       2024-01-30 16:59:14.964 -0600
+End time:         2024-01-30 17:01:46.780 -0600
+Num samples:      7 (7%)
+Primary state:    2 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 7 samples Active
+Power Source:     7 samples on Battery, 0 samples on AC
+  5  ??? (libsystem_pthread.dylib + 2940) [0x2285f6b7c]
+    5  ??? (libsystem_pthread.dylib + 3548) [0x2285f6ddc]
+      4  ??? (libdispatch.dylib + 93404) [0x1d0bf4cdc]
+        3  ??? (libdispatch.dylib + 49316) [0x1d0bea0a4]
+          3  ??? (libdispatch.dylib + 46092) [0x1d0be940c]
+            3  ??? (libdispatch.dylib + 136248) [0x1d0bff438]
+              3  ??? (libdispatch.dylib + 46092) [0x1d0be940c]
+                2  ??? (libdispatch.dylib + 132844) [0x1d0bfe6ec]
+                  2  ??? (libdispatch.dylib + 16236) [0x1d0be1f6c]
+                    2  ??? (libxpc.dylib + 73504) [0x22864af20]
+                      2  ??? (libxpc.dylib + 72432) [0x22864aaf0]
+                        2  ??? (Foundation + 6171484) [0x1c4052b5c]
+                          2  ??? (Foundation + 6172912) [0x1c40530f0]
+                            1  ??? (Foundation + 6166788) [0x1c4051904]
+                              1  ??? (Foundation + 670312) [0x1c3b13a68]
+                                1  ??? (CoreBrightness + 100648) [0x1f453c928]
+                                  1  ??? (libdispatch.dylib + 156656) [0x1d0c043f0]
+                                    1  ??? (libsystem_kernel.dylib + 4572) [0x207b3d1dc]
+                                      1  <Kernel mode>
+                            1  ??? (Foundation + 6165524) [0x1c4051414]
+                              1  ??? (Foundation + 6195700) [0x1c40589f4]
+                                1  ??? (Foundation + 6196068) [0x1c4058b64]
+                                  1  ??? (Foundation + 686436) [0x1c3b17964]
+                1  ??? (libdispatch.dylib + 132864) [0x1d0bfe700]
+                  1  ??? (libdispatch.dylib + 11516) [0x1d0be0cfc]
+        1  ??? (libdispatch.dylib + 49368) [0x1d0bea0d8]
+          1  ??? (libdispatch.dylib + 46092) [0x1d0be940c]
+            1  ??? (libdispatch.dylib + 108808) [0x1d0bf8908]
+              1  ??? (libdispatch.dylib + 29488) [0x1d0be5330]
+                1  ??? (libdispatch.dylib + 139236) [0x1d0bfffe4]
+                  1  <Effective Thread QoS Background, Requested Thread QoS Background>
+      1  ??? (libdispatch.dylib + 92912) [0x1d0bf4af0]
+        1  <Effective Thread QoS Background, Requested Thread QoS Background>
+  2  ??? (libsystem_pthread.dylib + 2932) [0x2285f6b74]
+    1  <Kernel mode, Effective Thread QoS Background, Requested Thread QoS Background>
+    1  <Kernel mode>
+
+  Binary Images:
+           0x1026e0000 -                ???  aggregated              <78035F35-3A2C-3B70-8877-FEB966646237>  /System/Library/PrivateFrameworks/AggregateDictionary.framework/Support/aggregated
+           0x1c3a70000 -        0x1c434dfff  Foundation              <35567930-FBC2-374B-B44B-1DDFE3ADA4A1>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1d0bde000 -        0x1d0c24fff  libdispatch.dylib       <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1f4524000 -        0x1f46d5fff  CoreBrightness          <D906954C-3683-34C1-8D17-5EE35F047204>  /System/Library/PrivateFrameworks/CoreBrightness.framework/CoreBrightness
+           0x207b3c000 -        0x207b73ff7  libsystem_kernel.dylib  <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x2285f6000 -        0x228601ff3  libsystem_pthread.dylib <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+           0x228639000 -        0x22867afff  libxpc.dylib            <7AFE0AEC-5B9F-3E5D-9803-12CA228AD324>  /usr/lib/system/libxpc.dylib
