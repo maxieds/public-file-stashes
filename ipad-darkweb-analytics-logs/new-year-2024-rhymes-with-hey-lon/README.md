@@ -1,11 +1,16 @@
 # Directory contents
 
+<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/DarkWeb-CNETPayPaliOSAppCache-MuskAdReel.png" width="800" />
+<img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/DarkWeb-CNETPayPaliOSAppCache-Zuckerberg.png" width="800" />
+
 The directory name comes from discussions about Elon Musk's name pronunciation irritating him because 
 he believes that his first name (like God's) should not be pronouncable: 
 See this [Angel's song](https://youtu.be/fEfLMod-Wqk) and the 
 *Off the Hook* (OTH) [podcasts from 2023](https://www.2600.com/offthehook/). 
 I assume it was the OTH guys plus Uncle Kevin that helped me today. It will go farther than you knew this morning :)
 Thanks, as usual, guys!
+
+<img src="https://github.com/maxieds/public-file-stashes/blob/main/ipad-darkweb-analytics-logs/new-year-2024-rhymes-with-hey-lon/IMG_1164.JPG" width="800" />
 
 With his son (Anthony X) living near me and playing the usual games, see 
 if these trace back to Elon Musk and the ever evolving legal definition of his *PLATFORM*. 
