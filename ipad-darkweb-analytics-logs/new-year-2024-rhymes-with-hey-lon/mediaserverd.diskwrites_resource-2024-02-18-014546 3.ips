@@ -1,0 +1,286 @@
+{"duration_ms":"44880410","share_with_app_devs":1,"roots_installed":0,"bug_type":"145","os_version":"iPhone OS 16.4.1 (20E252)","slice_uuid":"1AAA7E19-B09E-36E9-90C1-752DDCEE26CB","is_first_party":0,"incident_id":"1BCC7596-E000-444B-B931-B778064CAD34","timestamp":"2024-02-18 01:45:46.00 -0600","app_name":"mediaserverd","name":"mediaserverd"}
+Date/Time:        2024-02-17 13:17:42.830 -0600
+End time:         2024-02-18 01:45:43.239 -0600
+OS Version:       iPhone OS 16.4.1 (Build 20E252)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: 1BCC7596-E000-444B-B931-B778064CAD34
+Share With Devs:  Yes
+
+Data Source:      Microstackshots
+Shared Cache:     4F1FAD1F-32AF-3CEA-9C76-FE6EE686419D slid base address 0x19f6b4000, slide 0x1f6b4000
+
+Command:          mediaserverd
+Path:             /usr/sbin/mediaserverd
+Resource Coalition ID: 15
+Architecture:     arm64
+PID:              33
+
+Event:            disk writes
+Action taken:     none
+Writes:           1073.75 MB of file backed memory dirtied over 44880 seconds (23.92 KB per second average), exceeding limit of 12.43 KB per second over 86400 seconds
+Writes limit:     1073.74 MB
+Limit duration:   86400s
+Writes caused:    1073.75 MB
+Writes duration:  44880s
+Duration:         44880.41s
+Duration Sampled: 44289.43s
+Steps:            1189 (10.49 MB/step)
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+OS Cryptex File Extents: 9
+
+Heaviest stack for the target process:
+  104  ??? (libsystem_pthread.dylib + 2952) [0x205516b88]
+  104  ??? (libsystem_pthread.dylib + 5816) [0x2055176b8]
+  104  ??? (CoreMedia + 404508) [0x1b183fc1c]
+  97   ??? (MediaToolbox + 363592) [0x1b55f9c48]
+  97   ??? (MediaToolbox + 366556) [0x1b55fa7dc]
+  97   ??? (MediaToolbox + 3148288) [0x1b58a1a00]
+  97   ??? (MediaToolbox + 367692) [0x1b55fac4c]
+  97   ??? (MediaToolbox + 536796) [0x1b56240dc]
+  97   ??? (MediaToolbox + 5626984) [0x1b5afec68]
+  84   ??? (MediaToolbox + 5629552) [0x1b5aff670]
+  83   ??? (CoreMedia + 231324) [0x1b181579c]
+  83   ??? (CoreMedia + 44468) [0x1b17e7db4]
+  83   ??? (CoreMedia + 360208) [0x1b1834f10]
+  83   ??? (libsystem_kernel.dylib + 11492) [0x1e4a5ece4]
+
+
+Powerstats for:   mediaserverd [33]
+UUID:             1AAA7E19-B09E-36E9-90C1-752DDCEE26CB
+Path:             /usr/sbin/mediaserverd
+Resource Coalition ID: 15
+Architecture:     arm64
+Footprint:        166.11 MB -> 330.89 MB (+164.78 MB) (max 402.09 MB )
+Pageins:          10853 pages
+Start time:       2024-02-17 20:46:39.554 -0600
+End time:         2024-02-18 01:45:39.045 -0600
+Num samples:      104 (9%)
+Primary state:    67 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 104 samples Active
+Power Source:     104 samples on Battery, 0 samples on AC
+  104  ??? (libsystem_pthread.dylib + 2952) [0x205516b88]
+    104  ??? (libsystem_pthread.dylib + 5816) [0x2055176b8]
+      104  ??? (CoreMedia + 404508) [0x1b183fc1c]
+        97   ??? (MediaToolbox + 363592) [0x1b55f9c48]
+          97   ??? (MediaToolbox + 366556) [0x1b55fa7dc]
+            97   ??? (MediaToolbox + 3148288) [0x1b58a1a00]
+              97   ??? (MediaToolbox + 367692) [0x1b55fac4c]
+                97   ??? (MediaToolbox + 536796) [0x1b56240dc]
+                  97   ??? (MediaToolbox + 5626984) [0x1b5afec68]
+                    84   ??? (MediaToolbox + 5629552) [0x1b5aff670]
+                      83   ??? (CoreMedia + 231324) [0x1b181579c]
+                        83   ??? (CoreMedia + 44468) [0x1b17e7db4]
+                          83   ??? (CoreMedia + 360208) [0x1b1834f10]
+                            83   ??? (libsystem_kernel.dylib + 11492) [0x1e4a5ece4]
+                              18   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+                              6    <Effective Thread QoS Utility, Requested Thread QoS Utility>
+                      1    ??? (MediaToolbox + 5631844) [0x1b5afff64]
+                        1    ??? (CoreMedia + 231324) [0x1b181579c]
+                          1    ??? (CoreMedia + 44468) [0x1b17e7db4]
+                            1    ??? (CoreMedia + 360208) [0x1b1834f10]
+                              1    ??? (libsystem_kernel.dylib + 11492) [0x1e4a5ece4]
+                    13   ??? (MediaToolbox + 5629732) [0x1b5aff724]
+                      13   ??? (CoreMedia + 231324) [0x1b181579c]
+                        13   ??? (CoreMedia + 44468) [0x1b17e7db4]
+                          13   ??? (CoreMedia + 360208) [0x1b1834f10]
+                            13   ??? (libsystem_kernel.dylib + 11492) [0x1e4a5ece4]
+                              13   <Effective Thread QoS Utility, Requested Thread QoS Utility>
+        7    ??? (MediaToolbox + 363164) [0x1b55f9a9c]
+          7    ??? (MediaToolbox + 3142560) [0x1b58a03a0]
+            7    ??? (MediaToolbox + 366556) [0x1b55fa7dc]
+              7    ??? (MediaToolbox + 3148288) [0x1b58a1a00]
+                7    ??? (MediaToolbox + 367692) [0x1b55fac4c]
+                  7    ??? (MediaToolbox + 536796) [0x1b56240dc]
+                    7    ??? (MediaToolbox + 5626984) [0x1b5afec68]
+                      7    ??? (MediaToolbox + 5629552) [0x1b5aff670]
+                        7    ??? (CoreMedia + 231324) [0x1b181579c]
+                          7    ??? (CoreMedia + 44468) [0x1b17e7db4]
+                            7    ??? (CoreMedia + 360208) [0x1b1834f10]
+                              7    ??? (libsystem_kernel.dylib + 11492) [0x1e4a5ece4]
+
+  Binary Images:
+           0x10238c000 -                ???  mediaserverd            <1AAA7E19-B09E-36E9-90C1-752DDCEE26CB>  /usr/sbin/mediaserverd
+           0x1b17dd000 -        0x1b1915fff  CoreMedia               <DC9C021E-2D8A-370F-A004-219996DAA4C4>  /System/Library/Frameworks/CoreMedia.framework/CoreMedia
+           0x1b55a1000 -        0x1b5e6afff  MediaToolbox            <54BADFE6-59BA-3CA4-B502-D2496B515904>  /System/Library/Frameworks/MediaToolbox.framework/MediaToolbox
+           0x1e4a5c000 -        0x1e4a93ff7  libsystem_kernel.dylib  <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x205516000 -        0x205521ff3  libsystem_pthread.dylib <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   coresymbolicationd
+UUID:             4B456F54-E5F2-36C0-9FDF-FCB84E474C3B
+Path:             /System/Library/PrivateFrameworks/CoreSymbolication.framework/coresymbolicationd
+Resource Coalition ID: 467
+Architecture:     arm64
+Start time:       2024-02-17 13:27:31.954 -0600
+End time:         2024-02-18 01:08:44.249 -0600
+Num samples:      402 (34%)
+Primary state:    390 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    356 samples Idle, 46 samples Active
+Power Source:     128 samples on Battery, 274 samples on AC
+  402  ??? (libsystem_pthread.dylib + 2940) [0x205516b7c]
+    402  ??? (libsystem_pthread.dylib + 3548) [0x205516ddc]
+      402  ??? (libdispatch.dylib + 93404) [0x1adb14cdc]
+        391  ??? (libdispatch.dylib + 136248) [0x1adb1f438]
+          391  ??? (libdispatch.dylib + 46092) [0x1adb0940c]
+            391  ??? (libdispatch.dylib + 132844) [0x1adb1e6ec]
+              391  ??? (libdispatch.dylib + 16236) [0x1adb01f6c]
+                391  ??? (libxpc.dylib + 73504) [0x20556af20]
+                  391  ??? (libxpc.dylib + 72432) [0x20556aaf0]
+                    391  ??? (coresymbolicationd + 7800) [0x102261e78]
+                      391  ??? (coresymbolicationd + 10256) [0x102262810]
+                        391  ??? (coresymbolicationd + 12216) [0x102262fb8]
+                          391  ??? (coresymbolicationd + 16520) [0x102264088]
+                            391  ??? (coresymbolicationd + 29192) [0x102267208]
+                              391  ??? (coresymbolicationd + 30696) [0x1022677e8]
+                                391  ??? (libsystem_kernel.dylib + 11492) [0x1e4a5ece4]
+                                  1    <User mode>
+        11   ??? (libdispatch.dylib + 49368) [0x1adb0a0d8]
+          11   ??? (libdispatch.dylib + 46388) [0x1adb09534]
+            11   ??? (libdispatch.dylib + 16044) [0x1adb01eac]
+              11   ??? (libdispatch.dylib + 77764) [0x1adb10fc4]
+                11   ??? (CacheDelete + 184144) [0x1c39ecf50]
+                  11   ??? (coresymbolicationd + 18264) [0x102264758]
+                    11   ??? (coresymbolicationd + 12216) [0x102262fb8]
+                      11   ??? (coresymbolicationd + 19372) [0x102264bac]
+                        11   ??? (coresymbolicationd + 28400) [0x102266ef0]
+                          11   ??? (coresymbolicationd + 27092) [0x1022669d4]
+                            11   ??? (coresymbolicationd + 27752) [0x102266c68]
+                              11   ??? (libsystem_kernel.dylib + 12672) [0x1e4a5f180]
+                                8    <Effective Thread QoS Background, Requested Thread QoS Utility>
+                                3    <Effective Thread QoS Utility, Requested Thread QoS Utility>
+
+  Binary Images:
+           0x102260000 -                ???  coresymbolicationd      <4B456F54-E5F2-36C0-9FDF-FCB84E474C3B>  /System/Library/PrivateFrameworks/CoreSymbolication.framework/coresymbolicationd
+           0x1adafe000 -        0x1adb44fff  libdispatch.dylib       <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1c39c0000 -        0x1c3a04fff  CacheDelete             <0AA87B28-FBF3-321D-BD7A-A605C0305CE1>  /System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete
+           0x1e4a5c000 -        0x1e4a93ff7  libsystem_kernel.dylib  <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x205516000 -        0x205521ff3  libsystem_pthread.dylib <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+           0x205559000 -        0x20559afff  libxpc.dylib            <7AFE0AEC-5B9F-3E5D-9803-12CA228AD324>  /usr/lib/system/libxpc.dylib
+
+
+Powerstats for:   AssetCacheLocatorService
+UUID:             34556E88-AD6B-3588-8B95-25D92C7B768A
+Path:             /System/Library/PrivateFrameworks/AssetCacheServices.framework/XPCServices/AssetCacheLocatorService.xpc/AssetCacheLocatorService
+Identifier:       com.apple.AssetCacheLocatorService
+Version:          127 (127)
+Resource Coalition ID: 431
+Architecture:     arm64
+Start time:       2024-02-17 13:40:11.594 -0600
+End time:         2024-02-18 01:08:23.423 -0600
+Num samples:      126 (11%)
+Primary state:    126 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Utility, Requested Thread QoS Utility, Override Thread QoS Unspecified
+User Activity:    113 samples Idle, 13 samples Active
+Power Source:     31 samples on Battery, 95 samples on AC
+  126  ??? (libsystem_pthread.dylib + 2940) [0x205516b7c]
+    126  ??? (libsystem_pthread.dylib + 3548) [0x205516ddc]
+      126  ??? (libdispatch.dylib + 93404) [0x1adb14cdc]
+        126  ??? (libdispatch.dylib + 49368) [0x1adb0a0d8]
+          126  ??? (libdispatch.dylib + 46388) [0x1adb09534]
+            126  ??? (libdispatch.dylib + 16044) [0x1adb01eac]
+              126  ??? (libdispatch.dylib + 8992) [0x1adb00320]
+                126  ??? (AssetCacheLocatorService + 125092) [0x10454e8a4]
+                  126  ??? (AssetCacheLocatorService + 126424) [0x10454edd8]
+                    126  ??? (AssetCacheLocatorService + 89308) [0x104545cdc]
+                      126  ??? (Foundation + 813896) [0x1a0a56b48]
+                        125  ??? (Foundation + 446140) [0x1a09fcebc]
+                          125  ??? (Foundation + 321924) [0x1a09de984]
+                            125  ??? (Foundation + 669264) [0x1a0a33650]
+                              125  ??? (libsystem_kernel.dylib + 9816) [0x1e4a5e658]
+                        1    ??? (Foundation + 445656) [0x1a09fccd8]
+                          1    ??? (Foundation + 534404) [0x1a0a12784]
+                            1    ??? (libsystem_kernel.dylib + 9424) [0x1e4a5e4d0]
+
+  Binary Images:
+           0x104530000 -                ???  com.apple.AssetCacheLocatorService 127 (127) <34556E88-AD6B-3588-8B95-25D92C7B768A>  /System/Library/PrivateFrameworks/AssetCacheServices.framework/XPCServices/AssetCacheLocatorService.xpc/AssetCacheLocatorService
+           0x1a0990000 -        0x1a126dfff  Foundation                                   <35567930-FBC2-374B-B44B-1DDFE3ADA4A1>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1adafe000 -        0x1adb44fff  libdispatch.dylib                            <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1e4a5c000 -        0x1e4a93ff7  libsystem_kernel.dylib                       <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x205516000 -        0x205521ff3  libsystem_pthread.dylib                      <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   logd
+UUID:             CC17D9B1-06DE-3EF1-AA31-A4BEAA1A84E1
+Path:             /usr/libexec/logd
+Resource Coalition ID: 7
+Architecture:     arm64
+Start time:       2024-02-17 13:40:28.556 -0600
+End time:         2024-02-18 01:42:59.232 -0600
+Num samples:      64 (5%)
+Primary state:    55 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Utility, Requested Thread QoS Utility, Override Thread QoS Unspecified
+User Activity:    42 samples Idle, 22 samples Active
+Power Source:     28 samples on Battery, 36 samples on AC
+  64  ??? (libsystem_pthread.dylib + 2940) [0x205516b7c]
+    64  ??? (libsystem_pthread.dylib + 3548) [0x205516ddc]
+      64  ??? (libdispatch.dylib + 93404) [0x1adb14cdc]
+        62  ??? (libdispatch.dylib + 49368) [0x1adb0a0d8]
+          56  ??? (libdispatch.dylib + 46388) [0x1adb09534]
+            56  ??? (libdispatch.dylib + 16044) [0x1adb01eac]
+              55  ??? (libdispatch.dylib + 77764) [0x1adb10fc4]
+                54  ??? (logd + 62592) [0x100917480]
+                  54  ??? (logd + 60812) [0x100916d8c]
+                    53  ??? (logd + 74328) [0x10091a258]
+                      53  ??? (libsystem_kernel.dylib + 10168) [0x1e4a5e7b8]
+                        2   <Effective Thread QoS Default>
+                    1   ??? (logd + 74208) [0x10091a1e0]
+                      1   ??? (logd + 23184) [0x10090da90]
+                        1   ??? (logd + 24180) [0x10090de74]
+                          1   ??? (libsystem_kernel.dylib + 9816) [0x1e4a5e658]
+                1   ??? (CacheDelete + 184144) [0x1c39ecf50]
+                  1   ??? (logd + 106972) [0x1009221dc]
+                    1   ??? (logd + 107496) [0x1009223e8]
+                      1   ??? (libdispatch.dylib + 78888) [0x1adb11428]
+                        1   ??? (libdispatch.dylib + 16044) [0x1adb01eac]
+                          1   ??? (logd + 78624) [0x10091b320]
+                            1   ??? (logd + 75396) [0x10091a684]
+                              1   ??? (libsystem_kernel.dylib + 26792) [0x1e4a628a8]
+              1   ??? (libdispatch.dylib + 8992) [0x1adb00320]
+                1   ??? (logd + 60812) [0x100916d8c]
+                  1   ??? (logd + 74328) [0x10091a258]
+                    1   ??? (libsystem_kernel.dylib + 10168) [0x1e4a5e7b8]
+          6   ??? (libdispatch.dylib + 46612) [0x1adb09614]
+            6   ??? (libdispatch.dylib + 16044) [0x1adb01eac]
+              6   ??? (libdispatch.dylib + 8992) [0x1adb00320]
+                5   ??? (logd + 16572) [0x10090c0bc]
+                  5   ??? (logd + 69796) [0x1009190a4]
+                    5   ??? (libdispatch.dylib + 78888) [0x1adb11428]
+                      5   ??? (libdispatch.dylib + 16044) [0x1adb01eac]
+                        5   ??? (logd + 69996) [0x10091916c]
+                          5   ??? (libdispatch.dylib + 78888) [0x1adb11428]
+                            5   ??? (libdispatch.dylib + 16044) [0x1adb01eac]
+                              4   ??? (logd + 70228) [0x100919254]
+                                4   ??? (logd + 74328) [0x10091a258]
+                                  4   ??? (libsystem_kernel.dylib + 10168) [0x1e4a5e7b8]
+                                    4   <Effective Thread QoS Background, Requested Thread QoS Background>
+                              1   ??? (logd + 70368) [0x1009192e0]
+                                1   ??? (logd + 74328) [0x10091a258]
+                                  1   ??? (libsystem_kernel.dylib + 10168) [0x1e4a5e7b8]
+                                    1   <Effective Thread QoS Background, Requested Thread QoS Background>
+                1   ??? (logd + 60812) [0x100916d8c]
+                  1   ??? (logd + 74328) [0x10091a258]
+                    1   ??? (libsystem_kernel.dylib + 10168) [0x1e4a5e7b8]
+                      1   <Effective Thread QoS User Initiated>
+        2   ??? (libdispatch.dylib + 49316) [0x1adb0a0a4]
+          2   ??? (libdispatch.dylib + 46388) [0x1adb09534]
+            2   ??? (libdispatch.dylib + 16044) [0x1adb01eac]
+              2   ??? (libdispatch.dylib + 77764) [0x1adb10fc4]
+                1   ??? (logd + 62592) [0x100917480]
+                  1   ??? (logd + 60812) [0x100916d8c]
+                    1   ??? (logd + 74328) [0x10091a258]
+                      1   ??? (libsystem_kernel.dylib + 10168) [0x1e4a5e7b8]
+                1   ??? (logd + 60812) [0x100916d8c]
+                  1   ??? (logd + 74328) [0x10091a258]
+                    1   ??? (libsystem_kernel.dylib + 10168) [0x1e4a5e7b8]
+                      1   <Requested Thread QoS Background>
+
+  Binary Images:
+           0x100908000 -                ???  logd                    <CC17D9B1-06DE-3EF1-AA31-A4BEAA1A84E1>  /usr/libexec/logd
+           0x1adafe000 -        0x1adb44fff  libdispatch.dylib       <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1c39c0000 -        0x1c3a04fff  CacheDelete             <0AA87B28-FBF3-321D-BD7A-A605C0305CE1>  /System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete
+           0x1e4a5c000 -        0x1e4a93ff7  libsystem_kernel.dylib  <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x205516000 -        0x205521ff3  libsystem_pthread.dylib <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
