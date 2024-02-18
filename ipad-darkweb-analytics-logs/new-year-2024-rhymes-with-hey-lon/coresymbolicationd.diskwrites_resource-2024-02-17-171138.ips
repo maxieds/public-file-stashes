@@ -1,0 +1,442 @@
+{"duration_ms":"14153500","share_with_app_devs":1,"roots_installed":0,"bug_type":"145","os_version":"iPhone OS 16.4.1 (20E252)","slice_uuid":"4B456F54-E5F2-36C0-9FDF-FCB84E474C3B","is_first_party":0,"incident_id":"E065756C-EE04-4E5C-A97D-F75F89198595","timestamp":"2024-02-17 17:11:38.00 -0600","app_name":"coresymbolicationd","name":"coresymbolicationd"}
+Date/Time:        2024-02-17 13:15:44.139 -0600
+End time:         2024-02-17 17:11:37.639 -0600
+OS Version:       iPhone OS 16.4.1 (Build 20E252)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: E065756C-EE04-4E5C-A97D-F75F89198595
+Share With Devs:  Yes
+
+Data Source:      Microstackshots
+Shared Cache:     4F1FAD1F-32AF-3CEA-9C76-FE6EE686419D slid base address 0x19f6b4000, slide 0x1f6b4000
+
+Command:          coresymbolicationd
+Path:             /System/Library/PrivateFrameworks/CoreSymbolication.framework/coresymbolicationd
+Resource Coalition ID: 467
+Architecture:     arm64e
+Parent:           launchd [1]
+PID:              303
+
+Event:            disk writes
+Action taken:     none
+Writes:           1073.90 MB of file backed memory dirtied over 14153 seconds (75.88 KB per second average), exceeding limit of 12.43 KB per second over 86400 seconds
+Writes limit:     1073.74 MB
+Limit duration:   86400s
+Writes caused:    1073.90 MB
+Writes duration:  14153s
+Duration:         14153.50s
+Duration Sampled: 13444.28s
+Steps:            230 (10.49 MB/step)
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Advisory levels:  Battery -> 3, User -> 3, ThermalPressure -> 0, Combined -> 3
+Free disk space:  350.40 MB/59.59 GB, low space threshold 150 MB
+Vnodes Available: 75.39% (15077/20000, 10000 allocated, 10000 soft limit)
+
+Preferred User Language: en-US
+Country Code:     US
+Keyboards:        en_US QWERTY, emoji Emoji
+OS Cryptex File Extents: 9
+
+Heaviest stack for the target process:
+  94  ??? (libsystem_pthread.dylib + 2940) [0x205516b7c]
+  94  ??? (libsystem_pthread.dylib + 3548) [0x205516ddc]
+  94  ??? (libdispatch.dylib + 93404) [0x1adb14cdc]
+  93  ??? (libdispatch.dylib + 136248) [0x1adb1f438]
+  93  ??? (libdispatch.dylib + 46092) [0x1adb0940c]
+  93  ??? (libdispatch.dylib + 132844) [0x1adb1e6ec]
+  93  ??? (libdispatch.dylib + 16236) [0x1adb01f6c]
+  93  ??? (libxpc.dylib + 73504) [0x20556af20]
+  93  ??? (libxpc.dylib + 72432) [0x20556aaf0]
+  93  ??? (coresymbolicationd + 7800) [0x102261e78]
+  93  ??? (coresymbolicationd + 10256) [0x102262810]
+  93  ??? (coresymbolicationd + 12216) [0x102262fb8]
+  93  ??? (coresymbolicationd + 16520) [0x102264088]
+  93  ??? (coresymbolicationd + 29192) [0x102267208]
+  93  ??? (coresymbolicationd + 30696) [0x1022677e8]
+  93  ??? (libsystem_kernel.dylib + 11492) [0x1e4a5ece4]
+
+
+Powerstats for:   coresymbolicationd [303]
+UUID:             4B456F54-E5F2-36C0-9FDF-FCB84E474C3B
+Path:             /System/Library/PrivateFrameworks/CoreSymbolication.framework/coresymbolicationd
+Resource Coalition ID: 467
+Architecture:     arm64e
+Parent:           launchd [1]
+UID:              0
+Sudden Term:      Tracked (allows idle exit)
+Footprint:        1168 KB -> 1248 KB (+80 KB)
+Pageins:          5551 pages
+Start time:       2024-02-17 13:27:31.954 -0600
+End time:         2024-02-17 17:05:45.337 -0600
+Num samples:      94 (41%)
+Primary state:    92 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    94 samples Idle, 0 samples Active
+Power Source:     55 samples on Battery, 39 samples on AC
+  94  ??? (libsystem_pthread.dylib + 2940) [0x205516b7c]
+    94  ??? (libsystem_pthread.dylib + 3548) [0x205516ddc]
+      94  ??? (libdispatch.dylib + 93404) [0x1adb14cdc]
+        93  ??? (libdispatch.dylib + 136248) [0x1adb1f438]
+          93  ??? (libdispatch.dylib + 46092) [0x1adb0940c]
+            93  ??? (libdispatch.dylib + 132844) [0x1adb1e6ec]
+              93  ??? (libdispatch.dylib + 16236) [0x1adb01f6c]
+                93  ??? (libxpc.dylib + 73504) [0x20556af20]
+                  93  ??? (libxpc.dylib + 72432) [0x20556aaf0]
+                    93  ??? (coresymbolicationd + 7800) [0x102261e78]
+                      93  ??? (coresymbolicationd + 10256) [0x102262810]
+                        93  ??? (coresymbolicationd + 12216) [0x102262fb8]
+                          93  ??? (coresymbolicationd + 16520) [0x102264088]
+                            93  ??? (coresymbolicationd + 29192) [0x102267208]
+                              93  ??? (coresymbolicationd + 30696) [0x1022677e8]
+                                93  ??? (libsystem_kernel.dylib + 11492) [0x1e4a5ece4]
+                                  1   <User mode>
+        1   ??? (libdispatch.dylib + 49368) [0x1adb0a0d8]
+          1   ??? (libdispatch.dylib + 46388) [0x1adb09534]
+            1   ??? (libdispatch.dylib + 16044) [0x1adb01eac]
+              1   ??? (libdispatch.dylib + 77764) [0x1adb10fc4]
+                1   ??? (CacheDelete + 184144) [0x1c39ecf50]
+                  1   ??? (coresymbolicationd + 18264) [0x102264758]
+                    1   ??? (coresymbolicationd + 12216) [0x102262fb8]
+                      1   ??? (coresymbolicationd + 19372) [0x102264bac]
+                        1   ??? (coresymbolicationd + 28400) [0x102266ef0]
+                          1   ??? (coresymbolicationd + 27092) [0x1022669d4]
+                            1   ??? (coresymbolicationd + 27752) [0x102266c68]
+                              1   ??? (libsystem_kernel.dylib + 12672) [0x1e4a5f180]
+                                1   <Effective Thread QoS Background, Requested Thread QoS Utility>
+
+  Binary Images:
+           0x102260000 -                ???  coresymbolicationd      <4B456F54-E5F2-36C0-9FDF-FCB84E474C3B>  /System/Library/PrivateFrameworks/CoreSymbolication.framework/coresymbolicationd
+           0x1adafe000 -        0x1adb44fff  libdispatch.dylib       <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1c39c0000 -        0x1c3a04fff  CacheDelete             <0AA87B28-FBF3-321D-BD7A-A605C0305CE1>  /System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete
+           0x1e4a5c000 -        0x1e4a93ff7  libsystem_kernel.dylib  <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x205516000 -        0x205521ff3  libsystem_pthread.dylib <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+           0x205559000 -        0x20559afff  libxpc.dylib            <7AFE0AEC-5B9F-3E5D-9803-12CA228AD324>  /usr/lib/system/libxpc.dylib
+
+
+Powerstats for:   AssetCacheLocatorService (AssetCacheLocatorService)
+UUID:             34556E88-AD6B-3588-8B95-25D92C7B768A
+Path:             /System/Library/PrivateFrameworks/AssetCacheServices.framework/XPCServices/AssetCacheLocatorService.xpc/AssetCacheLocatorService
+Identifier:       com.apple.AssetCacheLocatorService
+Version:          127 (127)
+Resource Coalition ID: 431
+Architecture:     arm64e
+Start time:       2024-02-17 13:40:11.594 -0600
+End time:         2024-02-17 16:54:21.957 -0600
+Num samples:      22 (10%)
+Primary state:    22 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Utility, Requested Thread QoS Utility, Override Thread QoS Unspecified
+User Activity:    22 samples Idle, 0 samples Active
+Power Source:     11 samples on Battery, 11 samples on AC
+  22  ??? (libsystem_pthread.dylib + 2940) [0x205516b7c]
+    22  ??? (libsystem_pthread.dylib + 3548) [0x205516ddc]
+      22  ??? (libdispatch.dylib + 93404) [0x1adb14cdc]
+        22  ??? (libdispatch.dylib + 49368) [0x1adb0a0d8]
+          22  ??? (libdispatch.dylib + 46388) [0x1adb09534]
+            22  ??? (libdispatch.dylib + 16044) [0x1adb01eac]
+              22  ??? (libdispatch.dylib + 8992) [0x1adb00320]
+                22  ??? (AssetCacheLocatorService + 125092) [0x10454e8a4]
+                  22  ??? (AssetCacheLocatorService + 126424) [0x10454edd8]
+                    22  ??? (AssetCacheLocatorService + 89308) [0x104545cdc]
+                      22  ??? (Foundation + 813896) [0x1a0a56b48]
+                        22  ??? (Foundation + 446140) [0x1a09fcebc]
+                          22  ??? (Foundation + 321924) [0x1a09de984]
+                            22  ??? (Foundation + 669264) [0x1a0a33650]
+                              22  ??? (libsystem_kernel.dylib + 9816) [0x1e4a5e658]
+
+  Binary Images:
+           0x104530000 -                ???  com.apple.AssetCacheLocatorService 127 (127) <34556E88-AD6B-3588-8B95-25D92C7B768A>  /System/Library/PrivateFrameworks/AssetCacheServices.framework/XPCServices/AssetCacheLocatorService.xpc/AssetCacheLocatorService
+           0x1a0990000 -        0x1a126dfff  Foundation                                   <35567930-FBC2-374B-B44B-1DDFE3ADA4A1>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1adafe000 -        0x1adb44fff  libdispatch.dylib                            <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1e4a5c000 -        0x1e4a93ff7  libsystem_kernel.dylib                       <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x205516000 -        0x205521ff3  libsystem_pthread.dylib                      <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   fitcored
+UUID:             DB5EE290-6367-30B3-882A-1AF1AC4CC5A0
+Path:             /System/Library/PrivateFrameworks/SeymourServices.framework/fitcored
+Resource Coalition ID: 357
+Architecture:     arm64
+Start time:       2024-02-17 13:27:29.613 -0600
+End time:         2024-02-17 17:03:51.572 -0600
+Num samples:      22 (10%)
+Primary state:    22 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Background, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    21 samples Idle, 1 samples Active
+Power Source:     11 samples on Battery, 11 samples on AC
+  22  ??? (libsystem_pthread.dylib + 2940) [0x205516b7c]
+    22  ??? (libsystem_pthread.dylib + 3548) [0x205516ddc]
+      22  ??? (libdispatch.dylib + 93404) [0x1adb14cdc]
+        15  ??? (libdispatch.dylib + 54164) [0x1adb0b394]
+          15  ??? (libdispatch.dylib + 49368) [0x1adb0a0d8]
+            15  ??? (libdispatch.dylib + 46388) [0x1adb09534]
+              15  ??? (libdispatch.dylib + 16044) [0x1adb01eac]
+                15  ??? (libdispatch.dylib + 8992) [0x1adb00320]
+                  15  ??? (CFNetwork + 93340) [0x1a7664c9c]
+                    15  ??? (CFNetwork + 133164) [0x1a766e82c]
+                      15  ??? (CFNetwork + 17720) [0x1a7652538]
+                        15  ??? (CFNetwork + 262608) [0x1a768e1d0]
+                          15  ??? (CFNetwork + 111868) [0x1a76694fc]
+                            15  ??? (CFNetwork + 142944) [0x1a7670e60]
+                              15  ??? (CFNetwork + 152236) [0x1a76732ac]
+                                15  ??? (CFNetwork + 137680) [0x1a766f9d0]
+                                  15  ??? (CFNetwork + 250504) [0x1a768b288]
+                                    15  ??? (CFNetwork + 303084) [0x1a7697fec]
+                                      15  ??? (CFNetwork + 300752) [0x1a76976d0]
+                                        15  ??? (CFNetwork + 931236) [0x1a77315a4]
+                                          15  ??? (libdispatch.dylib + 78888) [0x1adb11428]
+                                            15  ??? (libdispatch.dylib + 16044) [0x1adb01eac]
+                                              15  ??? (CFNetwork + 931420) [0x1a773165c]
+                                                14  ??? (CFNetwork + 921748) [0x1a772f094]
+                                                  14  ??? (CFNetwork + 922360) [0x1a772f2f8]
+                                                    8   ??? (libsqlite3.dylib + 34116) [0x1cb4a6544]
+                                                      7   ??? (libsqlite3.dylib + 177776) [0x1cb4c9670]
+                                                        7   ??? (libsqlite3.dylib + 223444) [0x1cb4d48d4]
+                                                          7   ??? (libsqlite3.dylib + 84564) [0x1cb4b2a54]
+                                                            7   ??? (libsqlite3.dylib + 246440) [0x1cb4da2a8]
+                                                              7   ??? (libsqlite3.dylib + 247768) [0x1cb4da7d8]
+                                                                7   ??? (libsqlite3.dylib + 309524) [0x1cb4e9914]
+                                                                  7   ??? (libsqlite3.dylib + 615648) [0x1cb5344e0]
+                                                                    7   ??? (libsqlite3.dylib + 310312) [0x1cb4e9c28]
+                                                                      7   ??? (libsystem_kernel.dylib + 10592) [0x1e4a5e960]
+                                                      1   ??? (libsqlite3.dylib + 179300) [0x1cb4c9c64]
+                                                        1   ??? (libsqlite3.dylib + 311320) [0x1cb4ea018]
+                                                          1   ??? (libsqlite3.dylib + 506268) [0x1cb51999c]
+                                                            1   ??? (libsqlite3.dylib + 1003136) [0x1cb592e80]
+                                                              1   ??? (libsqlite3.dylib + 379856) [0x1cb4fabd0]
+                                                                1   ??? (libsystem_kernel.dylib + 16016) [0x1e4a5fe90]
+                                                    6   ??? (libsqlite3.dylib + 34084) [0x1cb4a6524]
+                                                      6   ??? (libsqlite3.dylib + 35248) [0x1cb4a69b0]
+                                                        6   ??? (libsqlite3.dylib + 35984) [0x1cb4a6c90]
+                                                          6   ??? (libsqlite3.dylib + 38364) [0x1cb4a75dc]
+                                                            6   ??? (libsqlite3.dylib + 48424) [0x1cb4a9d28]
+                                                              6   ??? (libsqlite3.dylib + 52076) [0x1cb4aab6c]
+                                                                6   ??? (libsqlite3.dylib + 700500) [0x1cb549054]
+                                                                  6   ??? (libsqlite3.dylib + 68328) [0x1cb4aeae8]
+                                                                    6   ??? (libsqlite3.dylib + 69032) [0x1cb4aeda8]
+                                                                      6   ??? (libsqlite3.dylib + 86600) [0x1cb4b3248]
+                                                                        6   ??? (libsqlite3.dylib + 88116) [0x1cb4b3834]
+                                                                          6   ??? (libsqlite3.dylib + 92896) [0x1cb4b4ae0]
+                                                                            4   ??? (libsqlite3.dylib + 95032) [0x1cb4b5338]
+                                                                              4   ??? (libsqlite3.dylib + 619416) [0x1cb535398]
+                                                                                4   ??? (libsystem_kernel.dylib + 10592) [0x1e4a5e960]
+                                                                            2   ??? (libsqlite3.dylib + 97060) [0x1cb4b5b24]
+                                                1   ??? (CFNetwork + 921692) [0x1a772f05c]
+                                                  1   ??? (CoreFoundation + 234772) [0x1a6676514]
+                                                    1   ??? (CoreFoundation + 903416) [0x1a67198f8]
+                                                      1   ??? (CoreServicesInternal + 19768) [0x1a0960d38]
+                                                        1   ??? (libsystem_kernel.dylib + 19272) [0x1e4a60b48]
+        7   ??? (libdispatch.dylib + 49368) [0x1adb0a0d8]
+          7   ??? (libdispatch.dylib + 46388) [0x1adb09534]
+            7   ??? (libdispatch.dylib + 16044) [0x1adb01eac]
+              7   ??? (libdispatch.dylib + 77764) [0x1adb10fc4]
+                7   ??? (CFNetwork + 115852) [0x1a766a48c]
+                  7   ??? (CFNetwork + 32084) [0x1a7655d54]
+                    7   ??? (CFNetwork + 161384) [0x1a7675668]
+                      7   ??? (CFNetwork + 388652) [0x1a76ace2c]
+                        7   ??? (CFNetwork + 201572) [0x1a767f364]
+                          7   ??? (CFNetwork + 398196) [0x1a76af374]
+                            7   ??? (CFNetwork + 176392) [0x1a7679108]
+                              7   ??? (CFNetwork + 117596) [0x1a766ab5c]
+                                7   ??? (CFNetwork + 179136) [0x1a7679bc0]
+                                  7   ??? (libsqlite3.dylib + 177776) [0x1cb4c9670]
+                                    7   ??? (libsqlite3.dylib + 183588) [0x1cb4cad24]
+                                      7   ??? (libsqlite3.dylib + 86600) [0x1cb4b3248]
+                                        7   ??? (libsqlite3.dylib + 88116) [0x1cb4b3834]
+                                          7   ??? (libsqlite3.dylib + 92896) [0x1cb4b4ae0]
+                                            5   ??? (libsqlite3.dylib + 97060) [0x1cb4b5b24]
+                                            2   ??? (libsqlite3.dylib + 95032) [0x1cb4b5338]
+                                              2   ??? (libsqlite3.dylib + 619416) [0x1cb535398]
+                                                2   ??? (libsystem_kernel.dylib + 10592) [0x1e4a5e960]
+
+  Binary Images:
+           0x100180000 -                ???  fitcored                <DB5EE290-6367-30B3-882A-1AF1AC4CC5A0>  /System/Library/PrivateFrameworks/SeymourServices.framework/fitcored
+           0x1a095c000 -        0x1a098ffff  CoreServicesInternal    <A9F79466-0776-3197-B832-7EAA73FCF7F1>  /System/Library/PrivateFrameworks/CoreServicesInternal.framework/CoreServicesInternal
+           0x1a663d000 -        0x1a6a24fff  CoreFoundation          <6A07CBE8-4F65-3DBC-B59D-C1A188A7B95D>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1a764e000 -        0x1a7a18fff  CFNetwork               <B2273BE9-538A-3F56-B9C7-801F39550F58>  /System/Library/Frameworks/CFNetwork.framework/CFNetwork
+           0x1adafe000 -        0x1adb44fff  libdispatch.dylib       <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1cb49e000 -        0x1cb609ff7  libsqlite3.dylib        <8F14BC1B-01A9-3D75-BED2-7161583CE74F>  /usr/lib/libsqlite3.dylib
+           0x1e4a5c000 -        0x1e4a93ff7  libsystem_kernel.dylib  <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x205516000 -        0x205521ff3  libsystem_pthread.dylib <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   Spotify
+UUID:             08B4F36D-62E0-31FA-B595-FE12F601B1DA
+Path:             /private/var/containers/Bundle/Application/73A22966-AD38-4F61-B13E-88C9D37709C3/Spotify.app/Spotify
+Identifier:       com.spotify.client
+Version:          8.9.10 (891000606)
+Adam ID:          324684580
+Is First Party:   No
+Beta Identifier:  4865A38E-667D-484A-B07B-9AE601873958
+Resource Coalition ID: 435
+Architecture:     arm64
+Start time:       2024-02-17 13:27:59.952 -0600
+End time:         2024-02-17 16:38:13.800 -0600
+Num samples:      14 (6%)
+Primary state:    9 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    12 samples Idle, 2 samples Active
+Power Source:     10 samples on Battery, 4 samples on AC
+  11  ??? (libsystem_pthread.dylib + 2952) [0x205516b88]
+    11  ??? (libsystem_pthread.dylib + 5816) [0x2055176b8]
+      8   ??? (Foundation + 374324) [0x1a09eb634]
+        8   ??? (Spotify + 427056) [0x104a9c430]
+          8   ??? (Foundation + 270532) [0x1a09d20c4]
+            8   ??? (CoreFoundation + 521436) [0x1a66bc4dc]
+              8   ??? (CoreFoundation + 501188) [0x1a66b75c4]
+                8   ??? (CoreFoundation + 190460) [0x1a666b7fc]
+                  8   ??? (CoreFoundation + 561212) [0x1a66c603c]
+                    8   ??? (CoreFoundation + 833284) [0x1a6708704]
+                      8   ??? (Foundation + 537392) [0x1a0a13330]
+                        8   ??? (Spotify + 499880) [0x104aae0a8]
+                          8   ??? (Spotify + 499776) [0x104aae040]
+                            8   ??? (Spotify + 463020) [0x104aa50ac]
+                              8   ??? (Spotify + 499708) [0x104aadffc]
+                                3   ??? (Spotify + 45080140) [0x107531e4c]
+                                  3   ??? (Spotify + 56191116) [0x107fca88c]
+                                    3   ??? (Spotify + 56191448) [0x107fca9d8]
+                                      3   ??? (Spotify + 12531040) [0x105627560]
+                                        3   ??? (Spotify + 3420308) [0x104d77094]
+                                          3   ??? (Spotify + 90653100) [0x10a0a81ac]
+                                            3   ??? (Spotify + 3442448) [0x104d7c710]
+                                              3   ??? (Spotify + 3442256) [0x104d7c650]
+                                                3   ??? (Spotify + 3441480) [0x104d7c348]
+                                                  3   ??? (Spotify + 1452880) [0x104b96b50]
+                                                    3   ??? (Spotify + 1448572) [0x104b95a7c]
+                                                      3   ??? (Spotify + 1452880) [0x104b96b50]
+                                                        3   ??? (Spotify + 1448868) [0x104b95ba4]
+                                                          3   ??? (Spotify + 6188972) [0x10501afac]
+                                                            3   ??? (Spotify + 6188744) [0x10501aec8]
+                                                              3   ??? (Spotify + 4685880) [0x104eac038]
+                                                                3   ??? (libsystem_kernel.dylib + 9816) [0x1e4a5e658]
+                                2   ??? (Spotify + 47632704) [0x1077a1140]
+                                  2   ??? (Spotify + 22744236) [0x105fe4cac]
+                                    1   ??? (Spotify + 12153368) [0x1055cb218]
+                                      1   ??? (Spotify + 2577716) [0x104ca9534]
+                                        1   ??? (Spotify + 3610320) [0x104da56d0]
+                                          1   ??? (libsystem_kernel.dylib + 9816) [0x1e4a5e658]
+                                    1   ??? (Spotify + 12153108) [0x1055cb114]
+                                      1   ??? (Spotify + 3257880) [0x104d4f618]
+                                        1   ??? (Spotify + 3257460) [0x104d4f474]
+                                          1   ??? (Spotify + 5449004) [0x104f6652c]
+                                            1   ??? (libsystem_kernel.dylib + 9424) [0x1e4a5e4d0]
+                                2   ??? (Spotify + 10105396) [0x1053d7234]
+                                  2   ??? (Spotify + 5729848) [0x104faae38]
+                                    2   ??? (Spotify + 7370496) [0x10513b700]
+                                      2   ??? (Spotify + 4915264) [0x104ee4040]
+                                        2   ??? (Spotify + 4914960) [0x104ee3f10]
+                                          2   ??? (Spotify + 4914732) [0x104ee3e2c]
+                                            2   ??? (libsystem_kernel.dylib + 9816) [0x1e4a5e658]
+                                1   ??? (Spotify + 89885296) [0x109feca70]
+                                  1   ??? (Spotify + 77299668) [0x1093ebfd4]
+                                    1   ??? (Spotify + 77300368) [0x1093ec290]
+                                      1   ??? (Spotify + 77300984) [0x1093ec4f8]
+                                        1   ??? (Spotify + 59024028) [0x10827e29c]
+                                          1   ??? (Spotify + 78980172) [0x10958644c]
+                                            1   ??? (Spotify + 77104464) [0x1093bc550]
+                                              1   ??? (Spotify + 7370496) [0x10513b700]
+                                                1   ??? (Spotify + 4915264) [0x104ee4040]
+                                                  1   ??? (Spotify + 4914960) [0x104ee3f10]
+                                                    1   ??? (Spotify + 4914732) [0x104ee3e2c]
+                                                      1   ??? (libsystem_kernel.dylib + 9816) [0x1e4a5e658]
+      2   ??? (Spotify + 1885948) [0x104c006fc]
+        2   ??? (Spotify + 1885808) [0x104c00670]
+          2   ??? (Spotify + 1885328) [0x104c00490]
+            2   ??? (Spotify + 1885112) [0x104c003b8]
+              2   ??? (Spotify + 1881524) [0x104bff5b4]
+                2   ??? (Spotify + 1881292) [0x104bff4cc]
+                  1   ??? (Spotify + 1881120) [0x104bff420]
+                    1   ??? (Spotify + 11208484) [0x1054e4724]
+                      1   ??? (Spotify + 11208348) [0x1054e469c]
+                        1   ??? (Spotify + 11696324) [0x10555b8c4]
+                          1   ??? (libsystem_c.dylib + 101464) [0x1adb5dc58]
+                            1   ??? (libsystem_kernel.dylib + 19408) [0x1e4a60bd0]
+                              1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+                  1   ??? (Spotify + 1881112) [0x104bff418]
+                    1   ??? (Spotify + 1880968) [0x104bff388]
+                      1   ??? (Spotify + 1880640) [0x104bff240]
+                        1   ??? (libsystem_kernel.dylib + 9816) [0x1e4a5e658]
+                          1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+      1   ??? (Spotify + 68934548) [0x108bf1b94]
+        1   ??? (Spotify + 23276844) [0x106066d2c]
+          1   ??? (Spotify + 23285908) [0x106069094]
+            1   ??? (Spotify + 1370856) [0x104b82ae8]
+              1   ??? (Spotify + 1370492) [0x104b8297c]
+                1   ??? (Spotify + 4914732) [0x104ee3e2c]
+                  1   ??? (libsystem_kernel.dylib + 9816) [0x1e4a5e658]
+                    1   <Frontmost App>
+  3   ??? (libsystem_pthread.dylib + 2940) [0x205516b7c]
+    3   ??? (libsystem_pthread.dylib + 3548) [0x205516ddc]
+      3   ??? (libdispatch.dylib + 93404) [0x1adb14cdc]
+        3   ??? (libdispatch.dylib + 49316) [0x1adb0a0a4]
+          3   ??? (libdispatch.dylib + 46388) [0x1adb09534]
+            3   ??? (libdispatch.dylib + 16044) [0x1adb01eac]
+              3   ??? (CoreData + 528304) [0x1add8afb0]
+                3   ??? (Spotify + 529392) [0x104ab53f0]
+                  3   ??? (Spotify + 4001820) [0x104e0501c]
+                    3   ??? (Spotify + 4590792) [0x104e94cc8]
+                      3   ??? (CoreData + 558692) [0x1add92664]
+                        3   ??? (CoreData + 154448) [0x1add2fb50]
+                          3   ??? (CoreData + 391868) [0x1add69abc]
+                            2   ??? (CoreData + 1658020) [0x1ade9eca4]
+                              2   ??? (CoreData + 158208) [0x1add30a00]
+                                2   ??? (CoreData + 112248) [0x1add25678]
+                                  2   ??? (CoreData + 180912) [0x1add362b0]
+                                    2   ??? (CoreData + 181216) [0x1add363e0]
+                                      2   ??? (CoreData + 913084) [0x1adde8ebc]
+                                        2   ??? (libdispatch.dylib + 78888) [0x1adb11428]
+                                          2   ??? (libdispatch.dylib + 16044) [0x1adb01eac]
+                                            2   ??? (CoreData + 913436) [0x1adde901c]
+                                              2   ??? (CoreData + 248052) [0x1add468f4]
+                                                2   ??? (CoreData + 249008) [0x1add46cb0]
+                                                  2   ??? (CoreData + 257308) [0x1add48d1c]
+                                                    2   ??? (CoreData + 541304) [0x1add8e278]
+                                                      2   ??? (CoreData + 804616) [0x1addce708]
+                                                        2   ??? (CoreData + 353644) [0x1add6056c]
+                                                          2   ??? (libsqlite3.dylib + 177776) [0x1cb4c9670]
+                                                            2   ??? (libsqlite3.dylib + 223856) [0x1cb4d4a70]
+                                                              2   ??? (libsqlite3.dylib + 84564) [0x1cb4b2a54]
+                                                                2   ??? (libsqlite3.dylib + 246440) [0x1cb4da2a8]
+                                                                  2   ??? (libsqlite3.dylib + 247768) [0x1cb4da7d8]
+                                                                    2   ??? (libsqlite3.dylib + 309524) [0x1cb4e9914]
+                                                                      2   ??? (libsqlite3.dylib + 615648) [0x1cb5344e0]
+                                                                        2   ??? (libsqlite3.dylib + 310312) [0x1cb4e9c28]
+                                                                          2   ??? (libsystem_kernel.dylib + 10592) [0x1e4a5e960]
+                                                                            1   <Frontmost App, Effective Thread QoS User Initiated>
+                                                                            1   <Requested Thread QoS User Initiated>
+                            1   ??? (CoreData + 1657988) [0x1ade9ec84]
+                              1   ??? (CoreData + 433844) [0x1add73eb4]
+                                1   ??? (CoreData + 481460) [0x1add7f8b4]
+                                  1   ??? (CoreData + 112248) [0x1add25678]
+                                    1   ??? (CoreData + 180912) [0x1add362b0]
+                                      1   ??? (CoreData + 181216) [0x1add363e0]
+                                        1   ??? (CoreData + 913084) [0x1adde8ebc]
+                                          1   ??? (libdispatch.dylib + 78888) [0x1adb11428]
+                                            1   ??? (libdispatch.dylib + 16044) [0x1adb01eac]
+                                              1   ??? (CoreData + 913436) [0x1adde901c]
+                                                1   ??? (CoreData + 248052) [0x1add468f4]
+                                                  1   ??? (CoreData + 249008) [0x1add46cb0]
+                                                    1   ??? (CoreData + 258060) [0x1add4900c]
+                                                      1   ??? (CoreData + 702332) [0x1addb577c]
+                                                        1   ??? (CoreData + 804616) [0x1addce708]
+                                                          1   ??? (CoreData + 353644) [0x1add6056c]
+                                                            1   ??? (libsqlite3.dylib + 177776) [0x1cb4c9670]
+                                                              1   ??? (libsqlite3.dylib + 223856) [0x1cb4d4a70]
+                                                                1   ??? (libsqlite3.dylib + 84564) [0x1cb4b2a54]
+                                                                  1   ??? (libsqlite3.dylib + 246440) [0x1cb4da2a8]
+                                                                    1   ??? (libsqlite3.dylib + 247768) [0x1cb4da7d8]
+                                                                      1   ??? (libsqlite3.dylib + 309524) [0x1cb4e9914]
+                                                                        1   ??? (libsqlite3.dylib + 615648) [0x1cb5344e0]
+                                                                          1   ??? (libsqlite3.dylib + 310312) [0x1cb4e9c28]
+                                                                            1   ??? (libsystem_kernel.dylib + 10592) [0x1e4a5e960]
+
+  Binary Images:
+           0x104a34000 -                ???  com.spotify.client 8.9.10 (891000606) <08B4F36D-62E0-31FA-B595-FE12F601B1DA>  /private/var/containers/Bundle/Application/73A22966-AD38-4F61-B13E-88C9D37709C3/Spotify.app/Spotify
+           0x1a0990000 -        0x1a126dfff  Foundation                            <35567930-FBC2-374B-B44B-1DDFE3ADA4A1>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1a663d000 -        0x1a6a24fff  CoreFoundation                        <6A07CBE8-4F65-3DBC-B59D-C1A188A7B95D>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1adafe000 -        0x1adb44fff  libdispatch.dylib                     <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1adb45000 -        0x1adbc2ff3  libsystem_c.dylib                     <72233FDE-DDFE-3E78-B991-2DECE8CD78C5>  /usr/lib/system/libsystem_c.dylib
+           0x1add0a000 -        0x1ae06ffff  CoreData                              <97E32747-7518-3DD1-B80A-D6B8395CEEAB>  /System/Library/Frameworks/CoreData.framework/CoreData
+           0x1cb49e000 -        0x1cb609ff7  libsqlite3.dylib                      <8F14BC1B-01A9-3D75-BED2-7161583CE74F>  /usr/lib/libsqlite3.dylib
+           0x1e4a5c000 -        0x1e4a93ff7  libsystem_kernel.dylib                <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x205516000 -        0x205521ff3  libsystem_pthread.dylib               <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
