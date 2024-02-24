@@ -1,5 +1,7 @@
 # Directory contents
 
+The January 6th / Insurrection timed Twitter direct message exchanges (DMs) may be admissible in court from a third party. Try though they might to buy the company, pay off their CEO (Elon Musk) and move it to the pro-Republican Regan-land of Northern California, putting these logs on the public Internet might do them the trick. Trump is guilty as Hell. They deserve what they get... *You ask and you shall receive.* Usually you will find it depends on how you ask. Personally, I'm with Barack Obama: *I fear no evil.*
+
 <img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/DarkWeb-CNETPayPaliOSAppCache-MuskAdReel.png" width="800" />
 <img src="https://github.com/maxieds/public-file-stashes/blob/main/_images/DarkWeb-CNETPayPaliOSAppCache-Zuckerberg.png" width="800" />
 
