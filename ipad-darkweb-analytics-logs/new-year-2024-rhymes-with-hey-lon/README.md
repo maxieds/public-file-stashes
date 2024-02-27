@@ -27,3 +27,5 @@ It is revealing of the attitude and mentality the Trump-era Republicans have had
 1. They want my discussion with the hackers and federal agents observing the antics on my phone and getting a warrant to have Elon Musk surrender his Twitter servers to read as (she said): *Baby Jesus on death row*.
 2. She calls an errata and wants the subtitles of their illicit TikTok (as in the Hitler grandfather clock) feeds to be
    corrected to the more accurate (note parenthtical usage): *Baby Jesus (Musk) on death row*.
+   
+Kevin (guys; a few ticked women in Chitown): *I'm going to pound (HASH-TAG-MARK) on his peni, and pound on his peni, and pound on their penis!* (iterate / repeat)
