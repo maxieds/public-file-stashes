@@ -1,0 +1,472 @@
+{"app_name":"ArchiveService","timestamp":"2024-02-27 09:49:25.00 -0600","app_version":"13.3","slice_uuid":"FAF04622-B9DB-34C0-8F86-CF3169A148E8","build_version":"1563.5.7","bundleID":"com.apple.desktopservices.ArchiveService","duration_ms":"103487","share_with_app_devs":0,"is_first_party":0,"bug_type":"202","os_version":"iPhone OS 16.4.1 (20E252)","roots_installed":0,"incident_id":"DE0B739B-5662-4D74-AFD9-8151731B517E","name":"ArchiveService"}
+Date/Time:        2024-02-27 09:47:40.422 -0600
+End time:         2024-02-27 09:49:23.910 -0600
+OS Version:       iPhone OS 16.4.1 (Build 20E252)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: DE0B739B-5662-4D74-AFD9-8151731B517E
+
+Data Source:      Microstackshots
+Shared Cache:     4F1FAD1F-32AF-3CEA-9C76-FE6EE686419D slid base address 0x198fbc000, slide 0x18fbc000
+
+Command:          ArchiveService
+Path:             /System/Library/PrivateFrameworks/DesktopServicesPriv.framework/XPCServices/ArchiveService.xpc/ArchiveService
+Identifier:       com.apple.desktopservices.ArchiveService
+Version:          13.3 (1563.5.7)
+Resource Coalition ID: 451
+Architecture:     arm64
+PID:              672
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 103 seconds (87% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     103s
+Duration:         103.49s
+Duration Sampled: 102.18s
+Steps:            129
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+OS Cryptex File Extents: 9
+
+Heaviest stack for the target process:
+  96  ??? (libsystem_pthread.dylib + 2940) [0x1fee1eb7c]
+  94  ??? (libsystem_pthread.dylib + 3488) [0x1fee1eda0]
+  94  ??? (libdispatch.dylib + 90456) [0x1a741c158]
+  94  ??? (libdispatch.dylib + 88388) [0x1a741b944]
+  94  ??? (libdispatch.dylib + 27032) [0x1a740c998]
+  94  ??? (libdispatch.dylib + 29488) [0x1a740d330]
+  94  ??? (libdispatch.dylib + 16044) [0x1a7409eac]
+  94  ??? (libdispatch.dylib + 77764) [0x1a7418fc4]
+  94  ??? (Foundation + 268684) [0x19a2d998c]
+  94  ??? (Foundation + 246524) [0x19a2d42fc]
+  94  ??? (Foundation + 247240) [0x19a2d45c8]
+  94  ??? (Foundation + 504128) [0x19a313140]
+  94  ??? (Foundation + 504240) [0x19a3131b0]
+  94  ??? (Foundation + 684180) [0x19a33f094]
+  94  ??? (Foundation + 5917388) [0x19a83cacc]
+  94  ??? (Foundation + 894980) [0x19a372804]
+  94  ??? (Foundation + 596704) [0x19a329ae0]
+  94  ??? (ArchiveService + 77028) [0x100dface4]
+  94  ??? (ArchiveService + 64776) [0x100df7d08]
+  94  ??? (ArchiveService + 90144) [0x100dfe020]
+  94  ??? (ArchiveService + 87720) [0x100dfd6a8]
+  94  ??? (ArchiveService + 79588) [0x100dfb6e4]
+  92  ??? (ArchiveService + 88740) [0x100dfdaa4]
+  91  ??? (ArchiveService + 82344) [0x100dfc1a8]
+  87  ??? (ArchiveService + 80836) [0x100dfbbc4]
+  85  ??? (libarchive.2.dylib + 446896) [0x1eb9371b0]
+  85  ??? (libz.1.dylib + 6060) [0x22511c7ac]
+  19  ??? (libz.1.dylib + 13868) [0x22511e62c]
+
+
+Powerstats for:   ArchiveService [672]
+UUID:             FAF04622-B9DB-34C0-8F86-CF3169A148E8
+Path:             /System/Library/PrivateFrameworks/DesktopServicesPriv.framework/XPCServices/ArchiveService.xpc/ArchiveService
+Identifier:       com.apple.desktopservices.ArchiveService
+Version:          13.3 (1563.5.7)
+Resource Coalition ID: 451
+Architecture:     arm64
+Footprint:        2336 KB -> 12.02 MB (+9968 KB)
+Pageins:          2 pages
+Start time:       2024-02-27 09:47:42.391 -0600
+End time:         2024-02-27 09:49:23.565 -0600
+Num samples:      101 (78%)
+Primary state:    90 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 101 samples Active
+Power Source:     101 samples on Battery, 0 samples on AC
+  96   ??? (libsystem_pthread.dylib + 2940) [0x1fee1eb7c]
+    94   ??? (libsystem_pthread.dylib + 3488) [0x1fee1eda0]
+      94   ??? (libdispatch.dylib + 90456) [0x1a741c158]
+        94   ??? (libdispatch.dylib + 88388) [0x1a741b944]
+          94   ??? (libdispatch.dylib + 27032) [0x1a740c998]
+            94   ??? (libdispatch.dylib + 29488) [0x1a740d330]
+              94   ??? (libdispatch.dylib + 16044) [0x1a7409eac]
+                94   ??? (libdispatch.dylib + 77764) [0x1a7418fc4]
+                  94   ??? (Foundation + 268684) [0x19a2d998c]
+                    94   ??? (Foundation + 246524) [0x19a2d42fc]
+                      94   ??? (Foundation + 247240) [0x19a2d45c8]
+                        94   ??? (Foundation + 504128) [0x19a313140]
+                          94   ??? (Foundation + 504240) [0x19a3131b0]
+                            94   ??? (Foundation + 684180) [0x19a33f094]
+                              94   ??? (Foundation + 5917388) [0x19a83cacc]
+                                94   ??? (Foundation + 894980) [0x19a372804]
+                                  94   ??? (Foundation + 596704) [0x19a329ae0]
+                                    94   ??? (ArchiveService + 77028) [0x100dface4]
+                                      94   ??? (ArchiveService + 64776) [0x100df7d08]
+                                        94   ??? (ArchiveService + 90144) [0x100dfe020]
+                                          94   ??? (ArchiveService + 87720) [0x100dfd6a8]
+                                            94   ??? (ArchiveService + 79588) [0x100dfb6e4]
+                                              92   ??? (ArchiveService + 88740) [0x100dfdaa4]
+                                                91   ??? (ArchiveService + 82344) [0x100dfc1a8]
+                                                  87   ??? (ArchiveService + 80836) [0x100dfbbc4]
+                                                    85   ??? (libarchive.2.dylib + 446896) [0x1eb9371b0]
+                                                      85   ??? (libz.1.dylib + 6060) [0x22511c7ac]
+                                                        19   ??? (libz.1.dylib + 13868) [0x22511e62c]
+                                                        14   ??? (libz.1.dylib + 14264) [0x22511e7b8]
+                                                        9    ??? (libz.1.dylib + 21912) [0x225120598]
+                                                          3    ??? (libz.1.dylib + 16828) [0x22511f1bc]
+                                                            1    ??? (libz.1.dylib + 25500) [0x22512139c]
+                                                            1    ??? (libz.1.dylib + 22868) [0x225120954]
+                                                            1    ??? (libz.1.dylib + 22848) [0x225120940]
+                                                          1    ??? (libz.1.dylib + 18964) [0x22511fa14]
+                                                          1    ??? (libz.1.dylib + 18800) [0x22511f970]
+                                                          1    ??? (libz.1.dylib + 18636) [0x22511f8cc]
+                                                          1    ??? (libz.1.dylib + 18596) [0x22511f8a4]
+                                                          1    ??? (libz.1.dylib + 18428) [0x22511f7fc]
+                                                          1    ??? (libz.1.dylib + 16884) [0x22511f1f4]
+                                                            1    ??? (libz.1.dylib + 22992) [0x2251209d0]
+                                                        7    ??? (libz.1.dylib + 14240) [0x22511e7a0]
+                                                        7    ??? (libz.1.dylib + 13884) [0x22511e63c]
+                                                        4    ??? (libz.1.dylib + 21264) [0x225120310]
+                                                        3    ??? (libz.1.dylib + 21484) [0x2251203ec]
+                                                        3    ??? (libz.1.dylib + 21200) [0x2251202d0]
+                                                        2    ??? (libz.1.dylib + 21788) [0x22512051c]
+                                                        2    ??? (libz.1.dylib + 21664) [0x2251204a0]
+                                                        2    ??? (libz.1.dylib + 21160) [0x2251202a8]
+                                                        1    ??? (libz.1.dylib + 21928) [0x2251205a8]
+                                                          1    ??? (libsystem_platform.dylib + 4452) [0x1fed88164]
+                                                        1    ??? (libz.1.dylib + 21704) [0x2251204c8]
+                                                        1    ??? (libz.1.dylib + 21624) [0x225120478]
+                                                        1    ??? (libz.1.dylib + 21616) [0x225120470]
+                                                        1    ??? (libz.1.dylib + 21540) [0x225120424]
+                                                        1    ??? (libz.1.dylib + 21432) [0x2251203b8]
+                                                        1    ??? (libz.1.dylib + 21232) [0x2251202f0]
+                                                        1    ??? (libz.1.dylib + 21180) [0x2251202bc]
+                                                        1    ??? (libz.1.dylib + 21168) [0x2251202b0]
+                                                        1    ??? (libz.1.dylib + 21088) [0x225120260]
+                                                          1    ??? (libz.1.dylib + 19432) [0x22511fbe8]
+                                                        1    ??? (libz.1.dylib + 14132) [0x22511e734]
+                                                        1    ??? (libz.1.dylib + 13980) [0x22511e69c]
+                                                        1    ??? (libz.1.dylib + 13904) [0x22511e650]
+                                                    2    ??? (libarchive.2.dylib + 447020) [0x1eb93722c]
+                                                      2    ??? (libarchive.2.dylib + 5836) [0x1eb8cb6cc]
+                                                        2    ??? (libarchive.2.dylib + 7272) [0x1eb8cbc68]
+                                                          2    ??? (libsystem_kernel.dylib + 9816) [0x1de366658]
+                                                            2    <Kernel mode>
+                                                  2    ??? (libsystem_kernel.dylib + 6836) [0x1de365ab4]
+                                                    1    <Kernel mode>
+                                                  1    ??? (ArchiveService + 80864) [0x100dfbbe0]
+                                                    1    ??? (ArchiveService + 89056) [0x100dfdbe0]
+                                                      1    ??? (libdispatch.dylib + 156656) [0x1a742c3f0]
+                                                        1    ??? (libsystem_kernel.dylib + 4572) [0x1de3651dc]
+                                                          1    <Kernel mode>
+                                                  1    ??? (ArchiveService + 80768) [0x100dfbb80]
+                                                    1    ??? (libsystem_kernel.dylib + 9424) [0x1de3664d0]
+                                                      1    <Kernel mode>
+                                                1    ??? (ArchiveService + 82016) [0x100dfc060]
+                                                  1    ??? (libarchive.2.dylib + 18132) [0x1eb8ce6d4]
+                                                    1    ??? (libarchive.2.dylib + 17644) [0x1eb8ce4ec]
+                                                      1    ??? (libarchive.2.dylib + 447824) [0x1eb937550]
+                                                        1    ??? (libz.1.dylib + 6060) [0x22511c7ac]
+                                                          1    ??? (libz.1.dylib + 22176) [0x2251206a0]
+                                                            1    ??? (libz.1.dylib + 16828) [0x22511f1bc]
+                                                              1    ??? (libz.1.dylib + 22896) [0x225120970]
+                                              2    ??? (ArchiveService + 88796) [0x100dfdadc]
+                                                1    ??? (ArchiveService + 83380) [0x100dfc5b4]
+                                                  1    ??? (ArchiveService + 82016) [0x100dfc060]
+                                                    1    ??? (libarchive.2.dylib + 18132) [0x1eb8ce6d4]
+                                                      1    ??? (libarchive.2.dylib + 17644) [0x1eb8ce4ec]
+                                                        1    ??? (libarchive.2.dylib + 447824) [0x1eb937550]
+                                                          1    ??? (libz.1.dylib + 6060) [0x22511c7ac]
+                                                            1    ??? (libz.1.dylib + 22176) [0x2251206a0]
+                                                              1    ??? (libz.1.dylib + 16828) [0x22511f1bc]
+                                                                1    ??? (libz.1.dylib + 22956) [0x2251209ac]
+                                                1    ??? (ArchiveService + 82856) [0x100dfc3a8]
+                                                  1    ??? (libsystem_kernel.dylib + 21816) [0x1de369538]
+                                                    1    <Kernel mode>
+    2    ??? (libsystem_pthread.dylib + 3548) [0x1fee1eddc]
+      2    ??? (libdispatch.dylib + 93404) [0x1a741ccdc]
+        2    ??? (libdispatch.dylib + 49368) [0x1a74120d8]
+          1    ??? (libdispatch.dylib + 46696) [0x1a7411668]
+            1    ??? (libdispatch.dylib + 26312) [0x1a740c6c8]
+              1    ??? (libdispatch.dylib + 25860) [0x1a740c504]
+                1    ??? (libsystem_kernel.dylib + 5056) [0x1de3653c0]
+                  1    <Kernel mode>
+          1    ??? (libdispatch.dylib + 46388) [0x1a7411534]
+            1    ??? (libdispatch.dylib + 16044) [0x1a7409eac]
+              1    ??? (libsystem_blocks.dylib + 7524) [0x1fee1ad64]
+                1    ??? (libsystem_blocks.dylib + 8524) [0x1fee1b14c]
+                  1    ??? (libsystem_blocks.dylib + 10960) [0x1fee1bad0]
+  5    ??? (libsystem_pthread.dylib + 2932) [0x1fee1eb74]
+    4    <Kernel mode>
+
+  Binary Images:
+           0x100de8000 -                ???  com.apple.desktopservices.ArchiveService 13.3 (1563.5.7) <FAF04622-B9DB-34C0-8F86-CF3169A148E8>  /System/Library/PrivateFrameworks/DesktopServicesPriv.framework/XPCServices/ArchiveService.xpc/ArchiveService
+           0x19a298000 -        0x19ab75fff  Foundation                                               <35567930-FBC2-374B-B44B-1DDFE3ADA4A1>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1a7406000 -        0x1a744cfff  libdispatch.dylib                                        <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1de364000 -        0x1de39bff7  libsystem_kernel.dylib                                   <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x1eb8ca000 -        0x1eb951fff  libarchive.2.dylib                                       <0552E12D-BFB5-3417-B2F5-1D1960041045>  /usr/lib/libarchive.2.dylib
+           0x1fed87000 -        0x1fed8dfef  libsystem_platform.dylib                                 <2E6C66FC-2EB9-34F9-995B-AE0B16E030C4>  /usr/lib/system/libsystem_platform.dylib
+           0x1fee19000 -        0x1fee1dff8  libsystem_blocks.dylib                                   <95A8F3E3-D392-347B-8A2B-C9F3ACBB74B7>  /usr/lib/system/libsystem_blocks.dylib
+           0x1fee1e000 -        0x1fee29ff3  libsystem_pthread.dylib                                  <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+           0x22511b000 -        0x22512cff7  libz.1.dylib                                             <96C81EC4-6617-3DD0-B035-E2F51653D9E2>  /usr/lib/libz.1.dylib
+
+
+Powerstats for:   Spotify
+UUID:             08B4F36D-62E0-31FA-B595-FE12F601B1DA
+Path:             /private/var/containers/Bundle/Application/73A22966-AD38-4F61-B13E-88C9D37709C3/Spotify.app/Spotify
+Identifier:       com.spotify.client
+Version:          8.9.10 (891000606)
+Adam ID:          324684580
+Is First Party:   No
+Beta Identifier:  4865A38E-667D-484A-B07B-9AE601873958
+Resource Coalition ID: 416
+Architecture:     arm64
+Start time:       2024-02-27 09:47:44.390 -0600
+End time:         2024-02-27 09:48:55.468 -0600
+Num samples:      13 (10%)
+Primary state:    5 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 13 samples Active
+Power Source:     13 samples on Battery, 0 samples on AC
+  6   ??? (libsystem_pthread.dylib + 2952) [0x1fee1eb88]
+    6   ??? (libsystem_pthread.dylib + 5816) [0x1fee1f6b8]
+      3   ??? (Spotify + 89740840) [0x10601d628]
+        3   ??? (Spotify + 462332) [0x100af8dfc]
+          3   ??? (Spotify + 463688) [0x100af9348]
+            3   ??? (Spotify + 463284) [0x100af91b4]
+              3   ??? (Spotify + 463020) [0x100af90ac]
+                3   ??? (Spotify + 499708) [0x100b01ffc]
+                  2   ??? (Spotify + 45079120) [0x103585a50]
+                    2   ??? (Spotify + 23412184) [0x1020dbdd8]
+                      2   ??? (Spotify + 23412744) [0x1020dc008]
+                        2   ??? (Spotify + 23377032) [0x1020d3488]
+                          2   ??? (Spotify + 23373696) [0x1020d2780]
+                            1   ??? (libsystem_platform.dylib + 4452) [0x1fed88164]
+                              1   <Requested Thread QoS Default>
+                            1   ??? (Spotify + 47333812) [0x1037ac1b4]
+                              1   <Requested Thread QoS Default>
+                  1   ??? (Spotify + 45078776) [0x1035858f8]
+                    1   ??? (Spotify + 23390132) [0x1020d67b4]
+                      1   ??? (Spotify + 865648) [0x100b5b570]
+                        1   ??? (Spotify + 461876) [0x100af8c34]
+                          1   ??? (libsystem_kernel.dylib + 9816) [0x1de366658]
+                            1   <Kernel mode, Requested Thread QoS Default>
+      1   ??? (libEmbeddedSystemAUs.dylib + 688480) [0x209cdc160]
+        1   ??? (libAudioToolboxUtility.dylib + 8192) [0x1c0f84000]
+          1   ??? (libAudioToolboxUtility.dylib + 10420) [0x1c0f848b4]
+            1   ??? (libEmbeddedSystemAUs.dylib + 47852) [0x209c3faec]
+              1   ??? (libEmbeddedSystemAUs.dylib + 589124) [0x209cc3d44]
+                1   <Effective Thread QoS Unspecified, Requested Thread QoS Unspecified>
+      1   ??? (Spotify + 2465736) [0x100ce1fc8]
+        1   ??? (Spotify + 2464920) [0x100ce1c98]
+          1   <Requested Thread QoS Default>
+      1   ??? (Spotify + 940524) [0x100b6d9ec]
+        1   ??? (Spotify + 939460) [0x100b6d5c4]
+          1   ??? (libc++.1.dylib + 133664) [0x1ae566a20]
+            1   ??? (libsystem_kernel.dylib + 4420) [0x1de365144]
+              1   <Kernel mode, Requested Thread QoS Default>
+  6   ??? (dyld + 89580) [0x1bf43cdec]
+    6   ??? (Spotify + 180556) [0x100ab414c]
+      6   ??? (UIKitCore + 3788768) [0x1a234ffe0]
+        6   ??? (UIKitCore + 3789692) [0x1a235037c]
+          6   ??? (GraphicsServices + 4956) [0x1da93335c]
+            6   ??? (CoreFoundation + 521436) [0x19ffc44dc]
+              3   ??? (CoreFoundation + 500164) [0x19ffbf1c4]
+                3   ??? (CoreFoundation + 411336) [0x19ffa96c8]
+                  3   ??? (CoreFoundation + 915556) [0x1a0024864]
+                    3   ??? (CoreFoundation + 864776) [0x1a0018208]
+                      3   ??? (UIKitCore + 13307552) [0x1a2c63ea0]
+                        3   ??? (UIKitCore + 13310276) [0x1a2c64944]
+                          3   ??? (UIKitCore + 6610432) [0x1a2600e00]
+                            3   ??? (QuartzCore + 1339844) [0x1a15af1c4]
+                              3   ??? (QuartzCore + 170148) [0x1a14918a4]
+                                3   ??? (Spotify + 11614128) [0x10159b7b0]
+                                  3   ??? (Spotify + 12332780) [0x10164aeec]
+                                    3   ??? (Spotify + 12340452) [0x10164cce4]
+                                      3   ??? (Spotify + 12340364) [0x10164cc8c]
+                                        3   ??? (<76A5D412-FAB2-331F-A72C-9894A8DFADAC> + 1061636) [0x109457304]
+                                          3   ??? (<76A5D412-FAB2-331F-A72C-9894A8DFADAC> + 1061304) [0x1094571b8]
+                                            2   ??? (Spotify + 12447832) [0x101667058]
+                                              2   ??? (<76A5D412-FAB2-331F-A72C-9894A8DFADAC> + 1061636) [0x109457304]
+                                                2   ??? (<76A5D412-FAB2-331F-A72C-9894A8DFADAC> + 1061304) [0x1094571b8]
+                                                  1   ??? (Spotify + 12447272) [0x101666e28]
+                                                    1   ??? (<76A5D412-FAB2-331F-A72C-9894A8DFADAC> + 1061636) [0x109457304]
+                                                      1   ??? (<76A5D412-FAB2-331F-A72C-9894A8DFADAC> + 1061304) [0x1094571b8]
+                                                        1   ??? (Spotify + 12596024) [0x10168b338]
+                                                          1   ??? (Spotify + 67630452) [0x104b07574]
+                                                            1   ??? (<76A5D412-FAB2-331F-A72C-9894A8DFADAC> + 893644) [0x10942e2cc]
+                                                              1   ??? (Spotify + 12596044) [0x10168b34c]
+                                                                1   ??? (Spotify + 67631252) [0x104b07894]
+                                                                  1   ??? (<76A5D412-FAB2-331F-A72C-9894A8DFADAC> + 948724) [0x10943b9f4]
+                                                                    1   ??? (libswiftDispatch.dylib + 4488) [0x1a861f188]
+                                                                      1   ??? (libswiftCore.dylib + 3935276) [0x19a0ccc2c]
+                                                  1   ??? (Spotify + 12447260) [0x101666e1c]
+                                                    1   ??? (<76A5D412-FAB2-331F-A72C-9894A8DFADAC> + 1061636) [0x109457304]
+                                                      1   ??? (<76A5D412-FAB2-331F-A72C-9894A8DFADAC> + 1061304) [0x1094571b8]
+                                                        1   ??? (Spotify + 12595852) [0x10168b28c]
+                                                          1   ??? (Spotify + 67631152) [0x104b07830]
+                                                            1   ??? (<76A5D412-FAB2-331F-A72C-9894A8DFADAC> + 1108288) [0x109462940]
+                                                              1   ??? (<76A5D412-FAB2-331F-A72C-9894A8DFADAC> + 659556) [0x1093f5064]
+                                                                1   ??? (<76A5D412-FAB2-331F-A72C-9894A8DFADAC> + 652228) [0x1093f33c4]
+                                                                  1   ??? (libswiftCore.dylib + 358992) [0x199d63a50]
+                                                                    1   ??? (libswiftCore.dylib + 3971900) [0x19a0d5b3c]
+                                                                      1   ??? (libswiftCore.dylib + 3967672) [0x19a0d4ab8]
+                                                                        1   ??? (libswiftCore.dylib + 3968468) [0x19a0d4dd4]
+                                                                          1   ??? (libswiftCore.dylib + 4038392) [0x19a0e5ef8]
+                                            1   ??? (Spotify + 12447636) [0x101666f94]
+                                              1   ??? (Spotify + 80669008) [0x105776950]
+                                                1   ??? (Spotify + 8757044) [0x1012e1f34]
+                                                  1   ??? (Spotify + 9775568) [0x1013da9d0]
+                                                    1   ??? (Spotify + 9775008) [0x1013da7a0]
+                                                      1   ??? (Foundation + 296856) [0x19a2e0798]
+                                                        1   ??? (Foundation + 286588) [0x19a2ddf7c]
+                                                          1   ??? (CoreFoundation + 370728) [0x19ff9f828]
+                                                            1   ??? (CoreFoundation + 771904) [0x1a0001740]
+                                                              1   ??? (libicucore.A.dylib + 2279396) [0x1a8c357e4]
+                                                                1   ??? (libicucore.A.dylib + 1191236) [0x1a8b2bd44]
+                                                                  1   ??? (libicucore.A.dylib + 1596372) [0x1a8b8ebd4]
+                                                                    1   ??? (libicucore.A.dylib + 1594376) [0x1a8b8e408]
+                                                                      1   ??? (libicucore.A.dylib + 1533572) [0x1a8b7f684]
+                                                                        1   ??? (libicucore.A.dylib + 581180) [0x1a8a96e3c]
+                                                                          1   ??? (libicucore.A.dylib + 772416) [0x1a8ac5940]
+                                                                            1   ??? (libicucore.A.dylib + 2382248) [0x1a8c4e9a8]
+              2   ??? (CoreFoundation + 501576) [0x19ffbf748]
+                2   ??? (CoreFoundation + 626472) [0x19ffddf28]
+                  2   ??? (CoreFoundation + 619064) [0x19ffdc238]
+                    2   ??? (CoreFoundation + 499268) [0x19ffbee44]
+                      1   ??? (UIKitCore + 13307380) [0x1a2c63df4]
+                        1   ??? (libsystem_kernel.dylib + 3944) [0x1de364f68]
+                      1   ??? (QuartzCore + 235596) [0x1a14a184c]
+                        1   ??? (QuartzCore + 784252) [0x1a152777c]
+                          1   ??? (QuartzCore + 239936) [0x1a14a2940]
+              1   ??? (CoreFoundation + 500544) [0x19ffbf340]
+                1   ??? (CoreFoundation + 495892) [0x19ffbe114]
+                  1   ??? (libsystem_kernel.dylib + 4552) [0x1de3651c8]
+                    1   ??? (libsystem_kernel.dylib + 81452) [0x1de377e2c]
+                      1   ??? (libsystem_kernel.dylib + 3204) [0x1de364c84]
+                        1   <Kernel mode>
+  1   ??? (libsystem_pthread.dylib + 2940) [0x1fee1eb7c]
+    1   ??? (libsystem_pthread.dylib + 3604) [0x1fee1ee14]
+      1   ??? (libdispatch.dylib + 91412) [0x1a741c514]
+        1   ??? (libdispatch.dylib + 150428) [0x1a742ab9c]
+          1   ??? (libdispatch.dylib + 71680) [0x1a7417800]
+            1   ??? (libdispatch.dylib + 231800) [0x1a743e978]
+              1   ??? (libsystem_kernel.dylib + 4552) [0x1de3651c8]
+                1   ??? (libsystem_kernel.dylib + 81452) [0x1de377e2c]
+                  1   ??? (libsystem_kernel.dylib + 3204) [0x1de364c84]
+                    1   <Kernel mode>
+
+  Binary Images:
+           0x100a88000 -                ???  com.spotify.client 8.9.10 (891000606) <08B4F36D-62E0-31FA-B595-FE12F601B1DA>  /private/var/containers/Bundle/Application/73A22966-AD38-4F61-B13E-88C9D37709C3/Spotify.app/Spotify
+           0x109354000 -                ???  ???                                   <76A5D412-FAB2-331F-A72C-9894A8DFADAC>
+           0x199d0c000 -        0x19a263fff  libswiftCore.dylib                    <0894B24F-B03F-3A8A-AB52-30F6DAA8D282>  /usr/lib/swift/libswiftCore.dylib
+           0x19a298000 -        0x19ab75fff  Foundation                            <35567930-FBC2-374B-B44B-1DDFE3ADA4A1>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x19ff45000 -        0x1a032cfff  CoreFoundation                        <6A07CBE8-4F65-3DBC-B59D-C1A188A7B95D>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1a1468000 -        0x1a17e1fff  QuartzCore                            <0AE8CEB8-0DD6-363F-951D-16AAC60A0951>  /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+           0x1a1fb3000 -        0x1a37d5fff  UIKitCore                             <B0858D8E-7220-37BF-873F-ECC2B0A358C3>  /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+           0x1a7406000 -        0x1a744cfff  libdispatch.dylib                     <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1a861e000 -        0x1a8635fff  libswiftDispatch.dylib                <DC80864D-00E1-36D6-B843-8B68D13EB2CE>  /usr/lib/swift/libswiftDispatch.dylib
+           0x1a8a09000 -        0x1a8cb6fff  libicucore.A.dylib                    <9BF6D661-B5F6-3755-9B6A-97050BDAA81A>  /usr/lib/libicucore.A.dylib
+           0x1ae546000 -        0x1ae5d2ff7  libc++.1.dylib                        <DB5662CE-22E0-32E0-9F15-2FD7C1CBFE43>  /usr/lib/libc++.1.dylib
+           0x1bf427000 -        0x1bf4ac923  dyld                                  <41605DC7-F412-37D1-B51B-FEE1A26701E9>  /usr/lib/dyld
+           0x1c0f82000 -        0x1c0fb6fff  libAudioToolboxUtility.dylib          <17892D24-E5A4-3AAA-B426-C974A6651FF1>  /usr/lib/libAudioToolboxUtility.dylib
+           0x1da932000 -        0x1da93afff  GraphicsServices                      <B7999F43-84C0-30F9-9096-CCEB457FBE4A>  /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+           0x1de364000 -        0x1de39bff7  libsystem_kernel.dylib                <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x1fed87000 -        0x1fed8dfef  libsystem_platform.dylib              <2E6C66FC-2EB9-34F9-995B-AE0B16E030C4>  /usr/lib/system/libsystem_platform.dylib
+           0x1fee1e000 -        0x1fee29ff3  libsystem_pthread.dylib               <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+           0x209c34000 -        0x209d3eff7  libEmbeddedSystemAUs.dylib            <9241DB85-9EB3-38D2-AD69-55CC64F172D9>  /System/Library/Frameworks/AudioToolbox.framework/libEmbeddedSystemAUs.dylib
+
+
+Powerstats for:   mediaserverd
+UUID:             1AAA7E19-B09E-36E9-90C1-752DDCEE26CB
+Path:             /usr/sbin/mediaserverd
+Resource Coalition ID: 15
+Architecture:     arm64
+Start time:       2024-02-27 09:47:45.390 -0600
+End time:         2024-02-27 09:49:20.496 -0600
+Num samples:      11 (9%)
+Primary state:    10 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 11 samples Active
+Power Source:     11 samples on Battery, 0 samples on AC
+  10  ??? (libsystem_pthread.dylib + 2952) [0x1fee1eb88]
+    10  ??? (libsystem_pthread.dylib + 5816) [0x1fee1f6b8]
+      10  ??? (CoreAudio + 672480) [0x1cb4102e0]
+        10  ??? (CoreAudio + 3659796) [0x1cb6e9814]
+          10  ??? (CoreAudio + 3619088) [0x1cb6df910]
+            10  ??? (CoreAudio + 3358100) [0x1cb69fd94]
+              10  ??? (<9D3715D2-0E74-3E31-AE12-42AB93984C8A> + 19260) [0x1062a4b3c]
+                9   ??? (<9D3715D2-0E74-3E31-AE12-42AB93984C8A> + 12768) [0x1062a31e0]
+                  9   ??? (<9D3715D2-0E74-3E31-AE12-42AB93984C8A> + 21572) [0x1062a5444]
+                    9   ??? (<9D3715D2-0E74-3E31-AE12-42AB93984C8A> + 290708) [0x1062e6f94]
+                      9   ??? (libAudioDSP.dylib + 7258680) [0x1cbfdc238]
+                        9   ??? (libAudioDSP.dylib + 4434792) [0x1cbd2ab68]
+                          9   ??? (AudioToolboxCore + 2249980) [0x1ab4434fc]
+                            9   ??? (AudioToolboxCore + 26772) [0x1ab224894]
+                              9   ??? (AudioToolboxCore + 31192) [0x1ab2259d8]
+                                9   ??? (AudioToolboxCore + 30908) [0x1ab2258bc]
+                                  9   ??? (AudioToolboxCore + 94232) [0x1ab235018]
+                                    7   ??? (AudioToolboxCore + 85856) [0x1ab232f60]
+                                      7   ??? (libAudioDSP.dylib + 7256288) [0x1cbfdb8e0]
+                                        3   ??? (libAudioDSP.dylib + 2546144) [0x1cbb5d9e0]
+                                          3   ??? (libAudioDSP.dylib + 2544832) [0x1cbb5d4c0]
+                                            3   ??? (libAudioDSP.dylib + 2298868) [0x1cbb213f4]
+                                              1   ??? (libsystem_platform.dylib + 4452) [0x1fed88164]
+                                              1   ??? (libAudioDSP.dylib + 2237228) [0x1cbb1232c]
+                                                1   ??? (libvDSP.dylib + 260464) [0x1ff6e3970]
+                                              1   ??? (libAudioDSP.dylib + 2235712) [0x1cbb11d40]
+                                                1   ??? (libAudioDSP.dylib + 2162260) [0x1cbaffe54]
+                                                  1   ??? (libvDSP.dylib + 22532) [0x1ff6a9804]
+                                                    1   ??? (libvDSP.dylib + 11452) [0x1ff6a6cbc]
+                                                      1   ??? (libvDSP.dylib + 29972) [0x1ff6ab514]
+                                        2   ??? (libAudioDSP.dylib + 5824340) [0x1cbe7df54]
+                                          2   ??? (libAudioDSP.dylib + 2298868) [0x1cbb213f4]
+                                            2   ??? (libAudioDSP.dylib + 2204184) [0x1cbb0a218]
+                                              2   ??? (libAudioDSP.dylib + 2162260) [0x1cbaffe54]
+                                                2   ??? (libvDSP.dylib + 22532) [0x1ff6a9804]
+                                                  1   ??? (libvDSP.dylib + 11696) [0x1ff6a6db0]
+                                                    1   ??? (libvDSP.dylib + 29972) [0x1ff6ab514]
+                                                  1   ??? (libvDSP.dylib + 11452) [0x1ff6a6cbc]
+                                                    1   ??? (libvDSP.dylib + 29972) [0x1ff6ab514]
+                                        1   ??? (libAudioDSP.dylib + 5807016) [0x1cbe79ba8]
+                                        1   ??? (libAudioDSP.dylib + 4828808) [0x1cbd8ae88]
+                                          1   ??? (libAudioDSP.dylib + 2544832) [0x1cbb5d4c0]
+                                            1   ??? (libAudioDSP.dylib + 2298868) [0x1cbb213f4]
+                                              1   ??? (libAudioDSP.dylib + 2329400) [0x1cbb28b38]
+                                                1   ??? (libAudioDSP.dylib + 2330504) [0x1cbb28f88]
+                                                  1   ??? (libAudioDSP.dylib + 2331340) [0x1cbb292cc]
+                                                    1   ??? (libAudioDSP.dylib + 2043260) [0x1cbae2d7c]
+                                                      1   ??? (libvDSP.dylib + 262280) [0x1ff6e4088]
+                                    1   ??? (libsystem_platform.dylib + 4452) [0x1fed88164]
+                                    1   ??? (AudioToolboxCore + 1942480) [0x1ab3f83d0]
+                                      1   ??? (AudioToolboxCore + 1030016) [0x1ab319780]
+                                        1   ??? (AudioToolboxCore + 492212) [0x1ab2962b4]
+                                          1   ??? (AudioToolboxCore + 434288) [0x1ab288070]
+                1   ??? (<9D3715D2-0E74-3E31-AE12-42AB93984C8A> + 12496) [0x1062a30d0]
+                  1   ??? (libAudioIssueDetector.dylib + 6312) [0x20fc4f8a8]
+                    1   ??? (AudioToolboxCore + 62712) [0x1ab22d4f8]
+  1   ??? (libsystem_pthread.dylib + 2940) [0x1fee1eb7c]
+    1   ??? (libsystem_pthread.dylib + 3548) [0x1fee1eddc]
+      1   ??? (libdispatch.dylib + 93404) [0x1a741ccdc]
+        1   ??? (libdispatch.dylib + 49316) [0x1a74120a4]
+          1   ??? (libdispatch.dylib + 46092) [0x1a741140c]
+            1   ??? (libdispatch.dylib + 108808) [0x1a7420908]
+              1   ??? (libdispatch.dylib + 29488) [0x1a740d330]
+                1   ??? (libdispatch.dylib + 16044) [0x1a7409eac]
+                  1   ??? (caulk + 105916) [0x201629dbc]
+                    1   ??? (caulk + 7664) [0x201611df0]
+                      1   ??? (<9D3715D2-0E74-3E31-AE12-42AB93984C8A> + 1372432) [0x1063ef110]
+                        1   ??? (libc++.1.dylib + 133664) [0x1ae566a20]
+                          1   ??? (libsystem_kernel.dylib + 4420) [0x1de365144]
+                            1   <Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+
+  Binary Images:
+           0x104c94000 -                ???  mediaserverd                <1AAA7E19-B09E-36E9-90C1-752DDCEE26CB>  /usr/sbin/mediaserverd
+           0x1062a0000 -                ???  ???                         <9D3715D2-0E74-3E31-AE12-42AB93984C8A>
+           0x1a7406000 -        0x1a744cfff  libdispatch.dylib           <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1ab21e000 -        0x1ab4d0fff  AudioToolboxCore            <2DD775CB-62D3-3D95-9345-BA667A939326>  /System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore
+           0x1ae546000 -        0x1ae5d2ff7  libc++.1.dylib              <DB5662CE-22E0-32E0-9F15-2FD7C1CBFE43>  /usr/lib/libc++.1.dylib
+           0x1cb36c000 -        0x1cb8effff  CoreAudio                   <4E53B11C-3A8E-3ECF-8E62-215D0873DB37>  /System/Library/Frameworks/CoreAudio.framework/CoreAudio
+           0x1cb8f0000 -        0x1cc1abfff  libAudioDSP.dylib           <0A54E4DC-263C-3D26-93CC-9445C5C6F2D5>  /System/Library/Frameworks/AudioToolbox.framework/libAudioDSP.dylib
+           0x1de364000 -        0x1de39bff7  libsystem_kernel.dylib      <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x1fed87000 -        0x1fed8dfef  libsystem_platform.dylib    <2E6C66FC-2EB9-34F9-995B-AE0B16E030C4>  /usr/lib/system/libsystem_platform.dylib
+           0x1fee1e000 -        0x1fee29ff3  libsystem_pthread.dylib     <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+           0x1ff6a4000 -        0x1ff790fff  libvDSP.dylib               <D0A48414-23D2-32AD-BED9-F9E70F6EE8ED>  /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib
+           0x201610000 -        0x201638fff  caulk                       <E003D7C0-281E-3800-9423-A343AB781FF7>  /System/Library/PrivateFrameworks/caulk.framework/caulk
+           0x20fc4e000 -        0x20fc9efff  libAudioIssueDetector.dylib <A23AD2A2-A495-397C-BB02-8D85B1A95C84>  /usr/lib/libAudioIssueDetector.dylib

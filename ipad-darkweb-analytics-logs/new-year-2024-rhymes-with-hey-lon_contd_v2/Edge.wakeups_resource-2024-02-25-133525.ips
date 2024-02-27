@@ -1,0 +1,122 @@
+{"app_name":"Edge","timestamp":"2024-02-25 13:35:25.00 -0600","app_version":"121.2277.107","slice_uuid":"4C4C4428-5555-3144-A160-84C4CD4F2CDE","adam_id":1288723196,"build_version":"121.0.2277.107","bundleID":"com.microsoft.msedge","duration_ms":"275167","share_with_app_devs":0,"is_first_party":0,"bug_type":"142","os_version":"iPhone OS 16.4.1 (20E252)","incident_id":"7D811E35-8AD9-400B-AE84-9968AF3CB737","name":"Edge","roots_installed":0}
+Date/Time:        2024-02-25 13:30:48.515 -0600
+End time:         2024-02-25 13:35:23.681 -0600
+OS Version:       iPhone OS 16.4.1 (Build 20E252)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: 7D811E35-8AD9-400B-AE84-9968AF3CB737
+
+Data Source:      Microstackshots
+Shared Cache:     4F1FAD1F-32AF-3CEA-9C76-FE6EE686419D slid base address 0x197120000, slide 0x17120000
+
+Command:          Edge
+Path:             /private/var/containers/Bundle/Application/389AD75F-7797-40D1-9C60-2F08CD5DAC4E/Edge.app/Edge
+Identifier:       com.microsoft.msedge
+Version:          121.2277.107 (121.0.2277.107)
+Adam ID:          1288723196
+Is First Party:   No
+Beta Identifier:  CAC44762-4849-4161-94B1-34EC44AE0FF9
+Resource Coalition ID: 446
+Architecture:     arm64
+PID:              25388
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 275 seconds (164 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 275s
+Duration:         275.17s
+Duration Sampled: 107.16s
+Steps:            2
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+OS Cryptex File Extents: 9
+
+Heaviest stack for the target process:
+  2  ??? (dyld + 89580) [0x1bd5a0dec]
+  2  ??? (Edge + 6308736) [0x1014b8380]
+  2  ??? (Edge + 6308620) [0x1014b830c]
+  2  ??? (<5B24796D-636B-3EA3-890D-8239DCC915EC> + 2269820) [0x1065d627c]
+  2  ??? (UIKitCore + 3788768) [0x1a04b3fe0]
+  2  ??? (UIKitCore + 3789692) [0x1a04b437c]
+  2  ??? (GraphicsServices + 4956) [0x1d8a9735c]
+  2  ??? (CoreFoundation + 521436) [0x19e1284dc]
+  1  ??? (CoreFoundation + 500544) [0x19e123340]
+  1  ??? (CoreFoundation + 495892) [0x19e122114]
+  1  ??? (libsystem_kernel.dylib + 4552) [0x1dc4c91c8]
+  1  ??? (libsystem_kernel.dylib + 81452) [0x1dc4dbe2c]
+  1  ??? (libsystem_kernel.dylib + 3204) [0x1dc4c8c84]
+
+
+Powerstats for:   Edge [25388]
+UUID:             4C4C4428-5555-3144-A160-84C4CD4F2CDE
+Path:             /private/var/containers/Bundle/Application/389AD75F-7797-40D1-9C60-2F08CD5DAC4E/Edge.app/Edge
+Identifier:       com.microsoft.msedge
+Version:          121.2277.107 (121.0.2277.107)
+Adam ID:          1288723196
+Is First Party:   No
+Beta Identifier:  CAC44762-4849-4161-94B1-34EC44AE0FF9
+Resource Coalition ID: 446
+Architecture:     arm64
+Footprint:        166.02 MB
+Pageins:          7 pages
+Start time:       2024-02-25 13:33:21.024 -0600
+End time:         2024-02-25 13:35:08.187 -0600
+Num samples:      2 (100%)
+Primary state:    1 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 2 samples Active
+Power Source:     2 samples on Battery, 0 samples on AC
+  2  ??? (dyld + 89580) [0x1bd5a0dec]
+    2  ??? (Edge + 6308736) [0x1014b8380]
+      2  ??? (Edge + 6308620) [0x1014b830c]
+        2  ??? (<5B24796D-636B-3EA3-890D-8239DCC915EC> + 2269820) [0x1065d627c]
+          2  ??? (UIKitCore + 3788768) [0x1a04b3fe0]
+            2  ??? (UIKitCore + 3789692) [0x1a04b437c]
+              2  ??? (GraphicsServices + 4956) [0x1d8a9735c]
+                2  ??? (CoreFoundation + 521436) [0x19e1284dc]
+                  1  ??? (CoreFoundation + 500544) [0x19e123340]
+                    1  ??? (CoreFoundation + 495892) [0x19e122114]
+                      1  ??? (libsystem_kernel.dylib + 4552) [0x1dc4c91c8]
+                        1  ??? (libsystem_kernel.dylib + 81452) [0x1dc4dbe2c]
+                          1  ??? (libsystem_kernel.dylib + 3204) [0x1dc4c8c84]
+                            1  <Kernel mode>
+                  1  ??? (CoreFoundation + 500164) [0x19e1231c4]
+                    1  ??? (CoreFoundation + 411336) [0x19e10d6c8]
+                      1  ??? (CoreFoundation + 915556) [0x19e188864]
+                        1  ??? (CoreFoundation + 864776) [0x19e17c208]
+                          1  ??? (UIKitCore + 13307552) [0x1a0dc7ea0]
+                            1  ??? (UIKitCore + 13310276) [0x1a0dc8944]
+                              1  ??? (UIKitCore + 6610432) [0x1a0764e00]
+                                1  ??? (UIKitCore + 14354852) [0x1a0ec79a4]
+                                  1  ??? (UIKitCore + 1306928) [0x1a0256130]
+                                    1  ??? (UIKitCore + 1008848) [0x1a020d4d0]
+                                      1  ??? (UIKit + 189272) [0x2269f6358]
+                                        1  ??? (UIKitCore + 1016292) [0x1a020f1e4]
+                                          1  ??? (UIKitCore + 1019680) [0x1a020ff20]
+                                            1  ??? (UIKitCore + 1001136) [0x1a020b6b0]
+                                              1  ??? (UIKitCore + 10216168) [0x1a0ad52e8]
+                                                1  ??? (UIKitCore + 1244432) [0x1a0246d10]
+                                                  1  ??? (UIKitCore + 4606724) [0x1a057bb04]
+                                                    1  ??? (CoreFoundation + 482504) [0x19e11ecc8]
+                                                      1  ??? (libobjc.A.dylib + 66812) [0x1971e04fc]
+                                                        1  ??? (libobjc.A.dylib + 28160) [0x1971d6e00]
+                                                          1  ??? (libobjc.A.dylib + 8356) [0x1971d20a4]
+                                                            1  ??? (libsystem_malloc.dylib + 6900) [0x1ac4ebaf4]
+
+  Binary Images:
+           0x100eb4000 -                ???  com.microsoft.msedge 121.2277.107 (121.0.2277.107) <4C4C4428-5555-3144-A160-84C4CD4F2CDE>  /private/var/containers/Bundle/Application/389AD75F-7797-40D1-9C60-2F08CD5DAC4E/Edge.app/Edge
+           0x1063ac000 -                ???  ???                                                <5B24796D-636B-3EA3-890D-8239DCC915EC>
+           0x1971d0000 -        0x197213f9f  libobjc.A.dylib                                    <95BD232E-3710-30FD-ADB1-7956D55DE41A>  /usr/lib/libobjc.A.dylib
+           0x19e0a9000 -        0x19e490fff  CoreFoundation                                     <6A07CBE8-4F65-3DBC-B59D-C1A188A7B95D>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1a0117000 -        0x1a1939fff  UIKitCore                                          <B0858D8E-7220-37BF-873F-ECC2B0A358C3>  /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+           0x1ac4ea000 -        0x1ac50dff3  libsystem_malloc.dylib                             <39496555-802C-3AB4-A506-6B8C2E3611B9>  /usr/lib/system/libsystem_malloc.dylib
+           0x1bd58b000 -        0x1bd610923  dyld                                               <41605DC7-F412-37D1-B51B-FEE1A26701E9>  /usr/lib/dyld
+           0x1d8a96000 -        0x1d8a9efff  GraphicsServices                                   <B7999F43-84C0-30F9-9096-CCEB457FBE4A>  /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+           0x1dc4c8000 -        0x1dc4ffff7  libsystem_kernel.dylib                             <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x2269c8000 -        0x226aeffff  UIKit                                              <FF587B11-7A45-3DF4-9206-9A006CA7BF4E>  /System/Library/AccessibilityBundles/UIKit.axbundle/UIKit
