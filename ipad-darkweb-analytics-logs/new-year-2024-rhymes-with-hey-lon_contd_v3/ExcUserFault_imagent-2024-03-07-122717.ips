@@ -1,0 +1,77 @@
+{"is_simulated":1,"app_name":"imagent","timestamp":"2024-03-07 12:27:17.00 -0600","app_version":"10.0","slice_uuid":"a73c11a6-90e9-345b-9429-6ff6b793a235","build_version":"1000","platform":2,"bundleID":"com.apple.imagent","share_with_app_devs":0,"is_first_party":1,"bug_type":"308","os_version":"iPhone OS 17.4 (21E219)","roots_installed":0,"name":"imagent","incident_id":"67E6484B-237A-45C1-9821-158F77B79012"}
+{
+  "uptime" : 140000,
+  "procRole" : "Unspecified",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "iPad12,1",
+  "coalitionID" : 85,
+  "osVersion" : {
+    "isEmbedded" : true,
+    "train" : "iPhone OS 17.4",
+    "releaseType" : "User",
+    "build" : "21E219"
+  },
+  "captureTime" : "2024-03-07 12:27:19.2998 -0600",
+  "codeSigningMonitor" : 1,
+  "incident" : "67E6484B-237A-45C1-9821-158F77B79012",
+  "pid" : 70,
+  "cpuType" : "ARM-64",
+  "roots_installed" : 0,
+  "bug_type" : "308",
+  "procStartAbsTime" : 258766770,
+  "procName" : "imagent",
+  "procPath" : "\/System\/Library\/PrivateFrameworks\/IMCore.framework\/imagent.app\/imagent",
+  "bundleInfo" : {"CFBundleShortVersionString":"10.0","CFBundleVersion":"1000","CFBundleIdentifier":"com.apple.imagent"},
+  "parentPid" : 1,
+  "coalitionName" : "com.apple.imagent",
+  "crashReporterKey" : "90f3fc21946ec55a927adb837c225abeb29f8a8a",
+  "ldm" : 1,
+  "wasUnlockedSinceBoot" : 1,
+  "isLocked" : 0,
+  "codeSigningValidationCategory" : 0,
+  "codeSigningTrustLevel" : 0,
+  "isLightWeightCorpse" : 1,
+  "exception" : {"codes":"0x6000000000000007, 0x0000000000000009","reason":9,"message":"namespc 7 reason_code 0x0000000000000009","subtype":"GUARD_TYPE_USER","type":"EXC_GUARD","rawCodes":[6917529027641081863,9],"namespc":7},
+  "termination" : {"flags":518,"code":9,"namespace":"LIBXPC","indicator":"XPC_EXIT_REASON_FAULT"},
+  "faultingThread" : 0,
+  "threads" : [{"triggered":true,"id":677496,"threadState":{"x":[{"value":20480},{"value":195969024},{"value":14785853172076118804},{"value":18313164667011977611},{"value":6638419968},{"value":17459758072327176253},{"value":2677998015176077696},{"value":15734681344},{"value":15734681344},{"value":15670026304},{"value":0},{"value":8406556656},{"value":1},{"value":15670954176},{"value":15670099968},{"value":4340285440},{"value":20480},{"value":6129199776},{"value":8146427889578291892},{"value":15670954176},{"value":15670099968},{"value":0},{"value":0},{"value":6129199984},{"value":15443722186139344008},{"value":0},{"value":4294967296},{"value":0},{"value":15670026304}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4340285440},"cpsr":{"value":0},"fp":{"value":20480},"sp":{"value":2841673088},"esr":{"value":20480,"description":" Address size fault"},"pc":{"value":52,"matchesCrashFrame":0},"far":{"value":0}},"frames":[{"imageOffset":1348845176,"imageIndex":0},{"imageOffset":1678602400,"imageIndex":0},{"imageOffset":1678689384,"imageIndex":0},{"imageOffset":1678691176,"imageIndex":0},{"imageOffset":1394717568,"imageIndex":0},{"imageOffset":268758484,"imageIndex":0},{"imageOffset":268764756,"imageIndex":0},{"imageOffset":1394694888,"imageIndex":0},{"imageOffset":1394698084,"imageIndex":0},{"imageOffset":268758484,"imageIndex":0},{"imageOffset":268764756,"imageIndex":0},{"imageOffset":1394751688,"imageIndex":0},{"imageOffset":155594364,"imageIndex":0},{"imageOffset":154114808,"imageIndex":0},{"imageOffset":154311628,"imageIndex":0},{"imageOffset":153712064,"imageIndex":0},{"imageOffset":153711308,"imageIndex":0},{"imageOffset":153710980,"imageIndex":0},{"imageOffset":153836920,"imageIndex":0},{"imageOffset":156223580,"imageIndex":0},{"imageOffset":268751164,"imageIndex":0},{"imageOffset":268758484,"imageIndex":0},{"imageOffset":268788736,"imageIndex":0},{"imageOffset":268791652,"imageIndex":0},{"imageOffset":268836020,"imageIndex":0},{"imageOffset":268834088,"imageIndex":0},{"imageOffset":1678315296,"imageIndex":0},{"imageOffset":1678315456,"imageIndex":0}]}],
+  "usedImages" : [
+  {
+    "size" : 3025154048,
+    "source" : "S",
+    "base" : 6442450944,
+    "uuid" : "1403ae06-1fe7-31cd-8bd1-7bc23c6e25fe"
+  }
+],
+  "legacyInfo" : {
+  "threadTriggered" : {
+
+  }
+},
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "5fb4245a1bbfe8005e33a1e1",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000021
+    },
+    {
+      "rolloutId" : "5f72dc58705eff005a46b3a9",
+      "factorPackIds" : {
+        "SIRI_VIDEO_APP_SELECTION" : "63d867d28283bf1629655506"
+      },
+      "deploymentId" : 240000015
+    }
+  ],
+  "experiments" : [
+
+  ]
+},
+  "reportNotes" : [
+  "PC register does not match crashing frame (0x34 vs 0x1D065BE78)"
+]
+}
