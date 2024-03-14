@@ -1,0 +1,76 @@
+{"is_simulated":1,"app_name":"siriactionsd","timestamp":"2024-03-08 13:42:40.00 -0600","app_version":"","slice_uuid":"7af26b14-a594-319e-8966-66db13f1ab2c","build_version":"","platform":2,"share_with_app_devs":0,"is_first_party":1,"bug_type":"308","os_version":"iPhone OS 17.4 (21E219)","roots_installed":0,"incident_id":"E6A61405-8FFB-416B-A427-32F9BE01EEFA","name":"siriactionsd"}
+{
+  "uptime" : 41,
+  "procRole" : "Unspecified",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "iPad12,1",
+  "coalitionID" : 289,
+  "osVersion" : {
+    "isEmbedded" : true,
+    "train" : "iPhone OS 17.4",
+    "releaseType" : "User",
+    "build" : "21E219"
+  },
+  "captureTime" : "2024-03-08 13:42:40.0357 -0600",
+  "codeSigningMonitor" : 1,
+  "incident" : "E6A61405-8FFB-416B-A427-32F9BE01EEFA",
+  "pid" : 177,
+  "cpuType" : "ARM-64",
+  "roots_installed" : 0,
+  "bug_type" : "308",
+  "procStartAbsTime" : 378443909,
+  "procName" : "siriactionsd",
+  "procPath" : "\/System\/Library\/PrivateFrameworks\/VoiceShortcuts.framework\/Support\/siriactionsd",
+  "parentPid" : 1,
+  "coalitionName" : "com.apple.siriactionsd",
+  "crashReporterKey" : "90f3fc21946ec55a927adb837c225abeb29f8a8a",
+  "ldm" : 1,
+  "wasUnlockedSinceBoot" : 1,
+  "isLocked" : 0,
+  "codeSigningValidationCategory" : 0,
+  "codeSigningTrustLevel" : 0,
+  "isLightWeightCorpse" : 1,
+  "exception" : {"codes":"0x6000000000000007, 0x0000000000000009","reason":9,"message":"namespc 7 reason_code 0x0000000000000009","subtype":"GUARD_TYPE_USER","type":"EXC_GUARD","rawCodes":[6917529027641081863,9],"namespc":7},
+  "termination" : {"flags":518,"code":9,"namespace":"LIBXPC","indicator":"XPC_EXIT_REASON_FAULT"},
+  "faultingThread" : 0,
+  "threads" : [{"triggered":true,"id":2630,"threadState":{"x":[{"value":0},{"value":384598016},{"value":14785853172076118804},{"value":18313164667011977611},{"value":6827048960},{"value":3734299785396224140},{"value":0},{"value":21073283008},{"value":21073283008},{"value":21072285760},{"value":0},{"value":8595185648},{"value":1},{"value":21073068096},{"value":21072527360},{"value":4339433472},{"value":20480},{"value":6130936480},{"value":2755664215590810292},{"value":21073068096},{"value":21072527360},{"value":0},{"value":0},{"value":6130936688},{"value":9025973420123036808},{"value":0},{"value":4294967296},{"value":0},{"value":21072285760}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4339433472},"cpsr":{"value":0},"fp":{"value":20480},"sp":{"value":3892986112},"esr":{"value":0,"description":" Address size fault"},"pc":{"value":52,"matchesCrashFrame":0},"far":{"value":0}},"frames":[{"imageOffset":1348845176,"imageIndex":0},{"imageOffset":1678602400,"imageIndex":0},{"imageOffset":1678689384,"imageIndex":0},{"imageOffset":1678691176,"imageIndex":0},{"imageOffset":159772080,"imageIndex":0},{"imageOffset":160097696,"imageIndex":0},{"imageOffset":160097128,"imageIndex":0},{"imageOffset":159974600,"imageIndex":0},{"imageOffset":174045524,"imageIndex":0},{"imageOffset":174454288,"imageIndex":0},{"imageOffset":174450788,"imageIndex":0},{"imageOffset":986172,"imageIndex":0},{"imageOffset":996648,"imageIndex":0},{"imageOffset":990844,"imageIndex":0},{"imageOffset":987104,"imageIndex":0},{"imageOffset":966852,"imageIndex":0},{"imageOffset":182612936,"imageIndex":0},{"imageOffset":268758484,"imageIndex":0},{"imageOffset":268764756,"imageIndex":0},{"imageOffset":182612904,"imageIndex":0},{"imageOffset":171972548,"imageIndex":0},{"imageOffset":172046444,"imageIndex":0},{"imageOffset":880428736,"imageIndex":0},{"imageOffset":880426868,"imageIndex":0},{"imageOffset":880080128,"imageIndex":0},{"imageOffset":880080020,"imageIndex":0},{"imageOffset":880147616,"imageIndex":0},{"imageOffset":1174369252,"imageIndex":0},{"imageOffset":1173684600,"imageIndex":0},{"imageOffset":323872612,"imageIndex":0},{"imageOffset":323877320,"imageIndex":0},{"imageOffset":268830868,"imageIndex":0},{"imageOffset":268832924,"imageIndex":0},{"imageOffset":1678315236,"imageIndex":0},{"imageOffset":1678315456,"imageIndex":0}]}],
+  "usedImages" : [
+  {
+    "size" : 3025154048,
+    "source" : "S",
+    "base" : 6442450944,
+    "uuid" : "1403ae06-1fe7-31cd-8bd1-7bc23c6e25fe"
+  }
+],
+  "legacyInfo" : {
+  "threadTriggered" : {
+
+  }
+},
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "5fb4245a1bbfe8005e33a1e1",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000021
+    },
+    {
+      "rolloutId" : "5f72dc58705eff005a46b3a9",
+      "factorPackIds" : {
+        "SIRI_VIDEO_APP_SELECTION" : "63d867d28283bf1629655506"
+      },
+      "deploymentId" : 240000015
+    }
+  ],
+  "experiments" : [
+
+  ]
+},
+  "reportNotes" : [
+  "PC register does not match crashing frame (0x34 vs 0x1D065BE78)"
+]
+}
