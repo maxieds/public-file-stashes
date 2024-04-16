@@ -1,0 +1,82 @@
+{"is_simulated":1,"app_name":"photoanalysisd","timestamp":"2024-04-16 05:00:01.00 -0500","app_version":"","slice_uuid":"0d2804e0-5ec9-3395-8e19-2101ddd2f2ec","build_version":"","platform":2,"share_with_app_devs":0,"is_first_party":1,"bug_type":"308","os_version":"iPhone OS 17.4.1 (21E236)","roots_installed":0,"incident_id":"218FC0D8-55C9-40AB-AD7E-0B9ADD525C7E","name":"photoanalysisd"}
+{
+  "uptime" : 310000,
+  "procRole" : "Unspecified",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "iPad12,1",
+  "coalitionID" : 543,
+  "osVersion" : {
+    "isEmbedded" : true,
+    "train" : "iPhone OS 17.4.1",
+    "releaseType" : "User",
+    "build" : "21E236"
+  },
+  "captureTime" : "2024-04-16 05:00:01.4753 -0500",
+  "codeSigningMonitor" : 1,
+  "incident" : "218FC0D8-55C9-40AB-AD7E-0B9ADD525C7E",
+  "pid" : 30868,
+  "cpuType" : "ARM-64",
+  "roots_installed" : 0,
+  "bug_type" : "308",
+  "procStartAbsTime" : 7029696635224,
+  "procName" : "photoanalysisd",
+  "procPath" : "\/System\/Library\/PrivateFrameworks\/PhotoAnalysis.framework\/Support\/photoanalysisd",
+  "parentPid" : 1,
+  "coalitionName" : "com.apple.photoanalysisd",
+  "crashReporterKey" : "90f3fc21946ec55a927adb837c225abeb29f8a8a",
+  "ldm" : 1,
+  "wasUnlockedSinceBoot" : 1,
+  "isLocked" : 1,
+  "codeSigningValidationCategory" : 0,
+  "codeSigningTrustLevel" : 0,
+  "isLightWeightCorpse" : 1,
+  "exception" : {"codes":"0x6000000000000007, 0x0000000000000009","reason":9,"message":"namespc 7 reason_code 0x0000000000000009","subtype":"GUARD_TYPE_USER","type":"EXC_GUARD","rawCodes":[6917529027641081863,9],"namespc":7},
+  "termination" : {"flags":518,"code":9,"namespace":"LIBXPC","indicator":"XPC_EXIT_REASON_FAULT"},
+  "faultingThread" : 0,
+  "threads" : [{"triggered":true,"id":1187472,"threadState":{"x":[{"value":20480},{"value":16400384},{"value":2536081974882612046},{"value":2371438245753548454},{"value":6458851328},{"value":7490830063108751379},{"value":14064171546093646208},{"value":39260089184},{"value":39260089184},{"value":39282397248},{"value":0},{"value":8226955248},{"value":1},{"value":39259883648},{"value":39258865664},{"value":4298309632},{"value":20480},{"value":6173174432},{"value":12139291171664474804},{"value":39259883648},{"value":39258865664},{"value":0},{"value":0},{"value":6173174640},{"value":4492727110935911560},{"value":0},{"value":4294967296},{"value":0},{"value":39282397248}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4298309632},"cpsr":{"value":0},"fp":{"value":20480},"sp":{"value":604015360},"esr":{"value":20480,"description":" Address size fault"},"pc":{"value":52,"matchesCrashFrame":0},"far":{"value":0}},"frames":[{"imageOffset":1348812408,"imageIndex":0},{"imageOffset":1678569632,"imageIndex":0},{"imageOffset":1678656616,"imageIndex":0},{"imageOffset":1678658408,"imageIndex":0},{"imageOffset":269612244,"imageIndex":0},{"imageOffset":269627780,"imageIndex":0},{"imageOffset":182564112,"imageIndex":0},{"imageOffset":182564256,"imageIndex":0},{"imageOffset":135796708,"imageIndex":0},{"imageOffset":135795056,"imageIndex":0},{"imageOffset":268751164,"imageIndex":0},{"imageOffset":268758484,"imageIndex":0},{"imageOffset":268817828,"imageIndex":0},{"imageOffset":268816824,"imageIndex":0},{"imageOffset":135828764,"imageIndex":0},{"imageOffset":135815704,"imageIndex":0},{"imageOffset":135813480,"imageIndex":0},{"imageOffset":135812812,"imageIndex":0},{"imageOffset":26924,"imageIndex":1},{"imageOffset":728395140,"imageIndex":0}]}],
+  "usedImages" : [
+  {
+    "size" : 3025125376,
+    "source" : "S",
+    "base" : 6442450944,
+    "uuid" : "4e332692-1ef9-3123-a66e-ea24850ae920"
+  },
+  {
+    "size" : 983040,
+    "source" : "P",
+    "base" : 4344102912,
+    "uuid" : "0d2804e0-5ec9-3395-8e19-2101ddd2f2ec"
+  }
+],
+  "legacyInfo" : {
+  "threadTriggered" : {
+
+  }
+},
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "64c17a9925d75a7281053d4c",
+      "factorPackIds" : {
+        "SIRI_AUDIO_DISABLE_MEDIA_ENTITY_SYNC" : "64d29746ad29a465b3bbeace"
+      },
+      "deploymentId" : 240000002
+    },
+    {
+      "rolloutId" : "6425c75e4327780c10cc4252",
+      "factorPackIds" : {
+        "SIRI_HOME_AUTOMATION_INTENT_SELECTION_CACHE" : "642600a457e7664b1698eb32"
+      },
+      "deploymentId" : 240000004
+    }
+  ],
+  "experiments" : [
+
+  ]
+},
+  "reportNotes" : [
+  "PC register does not match crashing frame (0x34 vs 0x1D0653E78)"
+]
+}
