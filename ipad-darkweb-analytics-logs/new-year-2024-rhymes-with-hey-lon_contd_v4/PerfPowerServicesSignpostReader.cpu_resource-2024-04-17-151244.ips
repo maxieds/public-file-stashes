@@ -1,0 +1,348 @@
+{"app_name":"PerfPowerServicesSignpostReader","timestamp":"2024-04-17 15:12:44.00 -0500","app_version":"1.0","slice_uuid":"DA82A769-240E-3916-99D8-95B48279FCD9","build_version":"1","bundleID":"com.apple.PerfPowerServicesSignpostReader","duration_ms":"130117","share_with_app_devs":0,"is_first_party":0,"bug_type":"202","os_version":"iPhone OS 17.4.1 (21E236)","roots_installed":0,"incident_id":"B4429931-FE36-47CC-A8A4-82C5B9A590FE","name":"PerfPowerServicesSignpostReader"}
+Date/Time:        2024-04-17 15:10:30.500 -0500
+End time:         2024-04-17 15:12:40.617 -0500
+OS Version:       iPhone OS 17.4.1 (Build 21E236)
+Architecture:     arm64e
+Report Version:   47
+Incident Identifier: B4429931-FE36-47CC-A8A4-82C5B9A590FE
+
+Data Source:      Microstackshots
+Shared Cache:     4E332692-1EF9-3123-A66E-EA24850AE920 slid base address 0x18d6e4000, slide 0xd6e4000
+
+Command:          PerfPowerServicesSignpostReader
+Path:             /System/Library/PrivateFrameworks/PowerlogCore.framework/XPCServices/PerfPowerServicesSignpostReader.xpc/PerfPowerServicesSignpostReader
+Identifier:       com.apple.PerfPowerServicesSignpostReader
+Version:          1.0 (1)
+Resource Coalition ID: 676
+On Behalf Of:     43 samples UNKNOWN [5298] (43 samples originated by UNKNOWN [310])
+Architecture:     arm64
+PID:              5299
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 130 seconds (69% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     130s
+Duration:         130.12s
+Duration Sampled: 122.86s
+Steps:            45
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+OS Cryptex File Extents: 4298
+
+Heaviest stack for the target process:
+  43  ??? (libsystem_pthread.dylib + 8128) [0x1f176cfc0]
+  43  ??? (libsystem_pthread.dylib + 7968) [0x1f176cf20]
+  43  ??? (libdispatch.dylib + 91432) [0x19d745528]
+  43  ??? (libdispatch.dylib + 93364) [0x19d745cb4]
+  43  ??? (libdispatch.dylib + 48944) [0x19d73af30]
+  43  ??? (libdispatch.dylib + 46080) [0x19d73a400]
+  43  ??? (libdispatch.dylib + 15828) [0x19d732dd4]
+  43  ??? (libdispatch.dylib + 8508) [0x19d73113c]
+  43  ??? (LoggingSupport + 90188) [0x1b237604c]
+  43  ??? (LoggingSupport + 21896) [0x1b2365588]
+  43  ??? (LoggingSupport + 22840) [0x1b2365938]
+  42  ??? (LoggingSupport + 26564) [0x1b23667c4]
+  42  ??? (LoggingSupport + 28468) [0x1b2366f34]
+  42  ??? (LoggingSupport + 28648) [0x1b2366fe8]
+  39  ??? (LoggingSupport + 29068) [0x1b236718c]
+  38  ??? (LoggingSupport + 29284) [0x1b2367264]
+  37  ??? (Foundation + 10248) [0x1946cf808]
+  37  ??? (Foundation + 10592) [0x1946cf960]
+  37  ??? (Foundation + 10248) [0x1946cf808]
+  27  ??? (Foundation + 10740) [0x1946cf9f4]
+  27  ??? (Foundation + 10248) [0x1946cf808]
+  27  ??? (Foundation + 10592) [0x1946cf960]
+  23  ??? (Foundation + 10248) [0x1946cf808]
+  23  ??? (Foundation + 10740) [0x1946cf9f4]
+  16  ??? (Foundation + 11156) [0x1946cfb94]
+  15  ??? (Foundation + 11568) [0x1946cfd30]
+  6   ??? (Foundation + 12464) [0x1946d00b0]
+  3   ??? (Foundation + 15640) [0x1946d0d18]
+  2   ??? (Foundation + 16712) [0x1946d1148]
+  2   ??? (CoreFoundation + 19068) [0x19583aa7c]
+  1   ??? (libsystem_c.dylib + 88360) [0x19d78b928]
+
+
+Powerstats for:   PerfPowerServicesSignpostReader [5299]
+UUID:             DA82A769-240E-3916-99D8-95B48279FCD9
+Path:             /System/Library/PrivateFrameworks/PowerlogCore.framework/XPCServices/PerfPowerServicesSignpostReader.xpc/PerfPowerServicesSignpostReader
+Identifier:       com.apple.PerfPowerServicesSignpostReader
+Version:          1.0 (1)
+Resource Coalition ID: 676
+On Behalf Of:     43 samples UNKNOWN [5298] (43 samples originated by UNKNOWN [310])
+Architecture:     arm64
+Footprint:        23.97 MB -> 25.80 MB (+1872 KB)
+Pageins:          223 pages
+Start time:       2024-04-17 15:10:36.865 -0500
+End time:         2024-04-17 15:12:39.725 -0500
+Num samples:      43 (96%)
+Num threads:      1
+Primary state:    43 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified, e-core
+User Activity:    43 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 43 samples on AC
+  43  ??? (libsystem_pthread.dylib + 8128) [0x1f176cfc0]
+    43  ??? (libsystem_pthread.dylib + 7968) [0x1f176cf20]
+      43  ??? (libdispatch.dylib + 91432) [0x19d745528]
+        43  ??? (libdispatch.dylib + 93364) [0x19d745cb4]
+          43  ??? (libdispatch.dylib + 48944) [0x19d73af30]
+            43  ??? (libdispatch.dylib + 46080) [0x19d73a400]
+              43  ??? (libdispatch.dylib + 15828) [0x19d732dd4]
+                43  ??? (libdispatch.dylib + 8508) [0x19d73113c]
+                  43  ??? (LoggingSupport + 90188) [0x1b237604c]
+                    43  ??? (LoggingSupport + 21896) [0x1b2365588]
+                      43  ??? (LoggingSupport + 22840) [0x1b2365938]
+                        42  ??? (LoggingSupport + 26564) [0x1b23667c4]
+                          42  ??? (LoggingSupport + 28468) [0x1b2366f34]
+                            42  ??? (LoggingSupport + 28648) [0x1b2366fe8]
+                              39  ??? (LoggingSupport + 29068) [0x1b236718c]
+                                38  ??? (LoggingSupport + 29284) [0x1b2367264]
+                                  37  ??? (Foundation + 10248) [0x1946cf808]
+                                    37  ??? (Foundation + 10592) [0x1946cf960]
+                                      37  ??? (Foundation + 10248) [0x1946cf808]
+                                        27  ??? (Foundation + 10740) [0x1946cf9f4]
+                                          27  ??? (Foundation + 10248) [0x1946cf808]
+                                            27  ??? (Foundation + 10592) [0x1946cf960]
+                                              23  ??? (Foundation + 10248) [0x1946cf808]
+                                                23  ??? (Foundation + 10740) [0x1946cf9f4]
+                                                  16  ??? (Foundation + 11156) [0x1946cfb94]
+                                                    15  ??? (Foundation + 11568) [0x1946cfd30]
+                                                      6   ??? (Foundation + 12464) [0x1946d00b0]
+                                                        3   ??? (Foundation + 15640) [0x1946d0d18]
+                                                          2   ??? (Foundation + 16712) [0x1946d1148]
+                                                            2   ??? (CoreFoundation + 19068) [0x19583aa7c]
+                                                              1   ??? (libsystem_c.dylib + 88360) [0x19d78b928]
+                                                                1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                              1   ??? (libsystem_c.dylib + 88356) [0x19d78b924]
+                                                                1   ??? (CoreFoundation + 19204) [0x19583ab04]
+                                                                  1   ??? (CoreFoundation + 5423616) [0x195d62200]
+                                                                    1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                          1   ??? (Foundation + 16880) [0x1946d11f0]
+                                                            1   ??? (libobjc.A.dylib + 62236) [0x18d7db31c]
+                                                              1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                        1   ??? (Foundation + 15788) [0x1946d0dac]
+                                                          1   ??? (libobjc.A.dylib + 7492) [0x18d7cdd44]
+                                                            1   ??? (libobjc.A.dylib + 16064) [0x18d7cfec0]
+                                                              1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                        1   ??? (Foundation + 15744) [0x1946d0d80]
+                                                          1   ??? (CoreFoundation + 298856) [0x19587ef68]
+                                                            1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                        1   ??? (Foundation + 15492) [0x1946d0c84]
+                                                          1   ??? (Foundation + 17716) [0x1946d1534]
+                                                            1   ??? (CoreFoundation + 99244) [0x19584e3ac]
+                                                              1   ??? (CoreFoundation + 99320) [0x19584e3f8]
+                                                                1   ??? (CoreFoundation + 99408) [0x19584e450]
+                                                                  1   ??? (CoreFoundation + 135836) [0x19585729c]
+                                                                    1   ??? (libsystem_malloc.dylib + 47388) [0x1a59f691c]
+                                                                      1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                      5   ??? (Foundation + 12084) [0x1946cff34]
+                                                        2   ??? (Foundation + 16212) [0x1946d0f54]
+                                                          2   ??? (CoreFoundation + 19068) [0x19583aa7c]
+                                                            2   ??? (libsystem_c.dylib + 88356) [0x19d78b924]
+                                                              1   ??? (CoreFoundation + 29400) [0x19583d2d8]
+                                                                1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                              1   ??? (CoreFoundation + 19204) [0x19583ab04]
+                                                                1   ??? (CoreFoundation + 20020) [0x19583ae34]
+                                                                  1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                        1   ??? (Foundation + 16284) [0x1946d0f9c]
+                                                          1   ??? (CoreFoundation + 19068) [0x19583aa7c]
+                                                            1   ??? (libsystem_c.dylib + 88356) [0x19d78b924]
+                                                              1   ??? (CoreFoundation + 19168) [0x19583aae0]
+                                                                1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                        1   ??? (Foundation + 16120) [0x1946d0ef8]
+                                                          1   ??? (CoreFoundation + 19068) [0x19583aa7c]
+                                                            1   ??? (libsystem_c.dylib + 88356) [0x19d78b924]
+                                                              1   ??? (CoreFoundation + 19168) [0x19583aae0]
+                                                                1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                        1   ??? (libobjc.A.dylib + 15544) [0x18d7cfcb8]
+                                                          1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                      1   ??? (Foundation + 19720) [0x1946d1d08]
+                                                        1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                      1   ??? (Foundation + 12536) [0x1946d00f8]
+                                                        1   ??? (libobjc.A.dylib + 30708) [0x18d7d37f4]
+                                                          1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                      1   ??? (Foundation + 11932) [0x1946cfe9c]
+                                                        1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                      1   ??? (libobjc.A.dylib + 15556) [0x18d7cfcc4]
+                                                        1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                    1   ??? (libobjc.A.dylib + 16064) [0x18d7cfec0]
+                                                      1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                  3   ??? (Foundation + 10248) [0x1946cf808]
+                                                    3   ??? (Foundation + 10592) [0x1946cf960]
+                                                      3   ??? (Foundation + 11156) [0x1946cfb94]
+                                                        3   ??? (Foundation + 11568) [0x1946cfd30]
+                                                          2   ??? (Foundation + 12084) [0x1946cff34]
+                                                            1   ??? (libobjc.A.dylib + 167940) [0x18d7f5004]
+                                                              1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                            1   ??? (libobjc.A.dylib + 15556) [0x18d7cfcc4]
+                                                              1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                          1   ??? (Foundation + 12464) [0x1946d00b0]
+                                                            1   ??? (Foundation + 15492) [0x1946d0c84]
+                                                              1   ??? (Foundation + 17508) [0x1946d1464]
+                                                                1   ??? (Foundation + 65900) [0x1946dd16c]
+                                                                  1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                  2   ??? (Foundation + 11236) [0x1946cfbe4]
+                                                    1   ??? (Foundation + 18736) [0x1946d1930]
+                                                      1   ??? (CoreFoundation + 38340) [0x19583f5c4]
+                                                        1   ??? (CoreFoundation + 38936) [0x19583f818]
+                                                          1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                    1   ??? (libobjc.A.dylib + 15428) [0x18d7cfc44]
+                                                      1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                  1   ??? (Foundation + 10104) [0x1946cf778]
+                                                    1   ??? (libobjc.A.dylib + 22144) [0x18d7d1680]
+                                                      1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                  1   ??? (libobjc.A.dylib + 15440) [0x18d7cfc50]
+                                                    1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                              4   ??? (Foundation + 11156) [0x1946cfb94]
+                                                4   ??? (Foundation + 11568) [0x1946cfd30]
+                                                  2   ??? (Foundation + 12084) [0x1946cff34]
+                                                    1   ??? (Foundation + 16284) [0x1946d0f9c]
+                                                      1   ??? (CoreFoundation + 19068) [0x19583aa7c]
+                                                        1   ??? (libsystem_c.dylib + 88356) [0x19d78b924]
+                                                          1   ??? (CoreFoundation + 19204) [0x19583ab04]
+                                                            1   ??? (CoreFoundation + 19596) [0x19583ac8c]
+                                                              1   ??? (CoreFoundation + 28260) [0x19583ce64]
+                                                                1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                    1   ??? (Foundation + 16212) [0x1946d0f54]
+                                                      1   ??? (CoreFoundation + 19068) [0x19583aa7c]
+                                                        1   ??? (libsystem_c.dylib + 88356) [0x19d78b924]
+                                                          1   ??? (CoreFoundation + 19204) [0x19583ab04]
+                                                            1   ??? (CoreFoundation + 20092) [0x19583ae7c]
+                                                              1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                  1   ??? (Foundation + 12536) [0x1946d00f8]
+                                                    1   ??? (libobjc.A.dylib + 30636) [0x18d7d37ac]
+                                                      1   ??? (libobjc.A.dylib + 36508) [0x18d7d4e9c]
+                                                        1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                  1   ??? (Foundation + 12464) [0x1946d00b0]
+                                                    1   ??? (Foundation + 15492) [0x1946d0c84]
+                                                      1   ??? (Foundation + 17508) [0x1946d1464]
+                                                        1   ??? (Foundation + 65792) [0x1946dd100]
+                                                          1   ??? (libobjc.A.dylib + 15360) [0x18d7cfc00]
+                                                            1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                        10  ??? (Foundation + 10592) [0x1946cf960]
+                                          10  ??? (Foundation + 10248) [0x1946cf808]
+                                            10  ??? (Foundation + 10740) [0x1946cf9f4]
+                                              6   ??? (Foundation + 11156) [0x1946cfb94]
+                                                6   ??? (Foundation + 11568) [0x1946cfd30]
+                                                  4   ??? (Foundation + 12084) [0x1946cff34]
+                                                    2   ??? (Foundation + 16212) [0x1946d0f54]
+                                                      2   ??? (CoreFoundation + 19068) [0x19583aa7c]
+                                                        2   ??? (libsystem_c.dylib + 88356) [0x19d78b924]
+                                                          2   ??? (CoreFoundation + 19204) [0x19583ab04]
+                                                            1   ??? (libsystem_platform.dylib + 23824) [0x1f16bbd10]
+                                                              1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                            1   ??? (CoreFoundation + 20304) [0x19583af50]
+                                                              1   ??? (CoreFoundation + 28276) [0x19583ce74]
+                                                                1   ??? (CoreFoundation + 28784) [0x19583d070]
+                                                                  1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                    1   ??? (Foundation + 16284) [0x1946d0f9c]
+                                                      1   ??? (CoreFoundation + 19068) [0x19583aa7c]
+                                                        1   ??? (libsystem_c.dylib + 88356) [0x19d78b924]
+                                                          1   ??? (CoreFoundation + 19204) [0x19583ab04]
+                                                            1   ??? (CoreFoundation + 19712) [0x19583ad00]
+                                                              1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                    1   ??? (Foundation + 16032) [0x1946d0ea0]
+                                                      1   ??? (CoreFoundation + 9224) [0x195838408]
+                                                        1   ??? (CoreFoundation + 11700) [0x195838db4]
+                                                          1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                  2   ??? (Foundation + 12464) [0x1946d00b0]
+                                                    1   ??? (Foundation + 15608) [0x1946d0cf8]
+                                                      1   ??? (Foundation + 18048) [0x1946d1680]
+                                                        1   ??? (Foundation + 19284) [0x1946d1b54]
+                                                          1   ??? (CoreFoundation + 734876) [0x1958e969c]
+                                                            1   ??? (Foundation + 208020) [0x1946ffc94]
+                                                              1   ??? (CoreFoundation + 178324) [0x195861894]
+                                                                1   ??? (CoreFoundation + 114504) [0x195851f48]
+                                                                  1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                    1   ??? (Foundation + 15492) [0x1946d0c84]
+                                                      1   ??? (Foundation + 17508) [0x1946d1464]
+                                                        1   ??? (Foundation + 65792) [0x1946dd100]
+                                                          1   ??? (CoreFoundation + 102900) [0x19584f1f4]
+                                                            1   ??? (CoreFoundation + 29148) [0x19583d1dc]
+                                                              1   ??? (CoreFoundation + 28784) [0x19583d070]
+                                                                1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                              4   ??? (Foundation + 10248) [0x1946cf808]
+                                                4   ??? (Foundation + 10592) [0x1946cf960]
+                                                  4   ??? (Foundation + 11156) [0x1946cfb94]
+                                                    3   ??? (Foundation + 11568) [0x1946cfd30]
+                                                      1   ??? (Foundation + 13548) [0x1946d04ec]
+                                                        1   ??? (Foundation + 17272) [0x1946d1378]
+                                                          1   ??? (Foundation + 17828) [0x1946d15a4]
+                                                            1   ??? (CoreFoundation + 7808) [0x195837e80]
+                                                              1   ??? (CoreFoundation + 11420) [0x195838c9c]
+                                                                1   ??? (CoreFoundation + 11828) [0x195838e34]
+                                                                  1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                      1   ??? (Foundation + 12464) [0x1946d00b0]
+                                                        1   ??? (Foundation + 15492) [0x1946d0c84]
+                                                          1   ??? (Foundation + 17508) [0x1946d1464]
+                                                            1   ??? (Foundation + 65792) [0x1946dd100]
+                                                              1   ??? (CoreFoundation + 108204) [0x1958506ac]
+                                                                1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                      1   ??? (Foundation + 12084) [0x1946cff34]
+                                                        1   ??? (Foundation + 16212) [0x1946d0f54]
+                                                          1   ??? (CoreFoundation + 19068) [0x19583aa7c]
+                                                            1   ??? (libsystem_c.dylib + 88356) [0x19d78b924]
+                                                              1   ??? (CoreFoundation + 19204) [0x19583ab04]
+                                                                1   ??? (libsystem_platform.dylib + 23824) [0x1f16bbd10]
+                                                                  1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                                    1   ??? (libobjc.A.dylib + 16064) [0x18d7cfec0]
+                                                      1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                  1   ??? (libobjc.A.dylib + 15488) [0x18d7cfc80]
+                                    1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                1   ??? (LoggingSupport + 29360) [0x1b23672b0]
+                                  1   ??? (SignpostCollection + 7692) [0x211fdbe0c]
+                                    1   ??? (SignpostCollection + 8480) [0x211fdc120]
+                                      1   ??? (SignpostCollection + 9344) [0x211fdc480]
+                                        1   ??? (LoggingSupport + 38956) [0x1b236982c]
+                                          1   ??? (LoggingSupport + 40472) [0x1b2369e18]
+                                            1   ??? (LoggingSupport + 44532) [0x1b236adf4]
+                                              1   ??? (liblog_signpost.description.dylib + 3188) [0x21ac86c74]
+                                                1   ??? (liblog_signpost.description.dylib + 3304) [0x21ac86ce8]
+                                                  1   ??? (CoreFoundation + 483532) [0x1958ac0cc]
+                                                    1   ??? (CoreFoundation + 483748) [0x1958ac1a4]
+                                                      1   ??? (Foundation + 215680) [0x194701a80]
+                                                        1   ??? (Foundation + 215852) [0x194701b2c]
+                                                          1   ??? (CoreFoundation + 117052) [0x19585293c]
+                                                            1   ??? (CoreFoundation + 117264) [0x195852a10]
+                                                              1   ??? (CoreFoundation + 9988) [0x195838704]
+                                                                1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                              3   ??? (LoggingSupport + 28804) [0x1b2367084]
+                                3   ??? (LoggingSupport + 30400) [0x1b23676c0]
+                                  3   ??? (Foundation + 76796) [0x1946dfbfc]
+                                    3   ??? (CoreFoundation + 117052) [0x19585293c]
+                                      2   ??? (CoreFoundation + 117248) [0x195852a00]
+                                        1   ??? (CoreFoundation + 127092) [0x195855074]
+                                          1   ??? (CoreFoundation + 140948) [0x195858694]
+                                            1   ??? (CoreFoundation + 28784) [0x19583d070]
+                                              1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                        1   ??? (CoreFoundation + 126220) [0x195854d0c]
+                                          1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                                      1   ??? (CoreFoundation + 117172) [0x1958529b4]
+                                        1   ??? (CoreFoundation + 14200) [0x195839778]
+                                          1   ??? (libsystem_malloc.dylib + 37796) [0x1a59f43a4]
+                                            1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+                        1   ??? (LoggingSupport + 25000) [0x1b23661a8]
+                          1   ??? (LoggingSupport + 7112) [0x1b2361bc8]
+                            1   ??? (LoggingSupport + 8452) [0x1b2362104]
+                              1   ??? (LoggingSupport + 9616) [0x1b2362590]
+                                1   <on behalf of UNKNOWN [5298] (originated by UNKNOWN [310])>
+
+  Binary Images:
+           0x102694000 -                ???  com.apple.PerfPowerServicesSignpostReader 1.0 (1) <DA82A769-240E-3916-99D8-95B48279FCD9>  /System/Library/PrivateFrameworks/PowerlogCore.framework/XPCServices/PerfPowerServicesSignpostReader.xpc/PerfPowerServicesSignpostReader
+           0x18d7cc000 -        0x18d819cc3  libobjc.A.dylib                                   <412FD1F4-4107-3443-88EF-B3760778F6A7>  /usr/lib/libobjc.A.dylib
+           0x1946cd000 -        0x195258fff  Foundation                                        <D92E19C1-6299-3E94-8614-C505D5ABCCDB>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x195836000 -        0x195d63fff  CoreFoundation                                    <3A5F992A-D1CD-312E-BD2E-F7C66343A417>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x19d72f000 -        0x19d775fff  libdispatch.dylib                                 <B7D9D0A6-2414-37F2-9D03-1A25A474E2CF>  /usr/lib/system/libdispatch.dylib
+           0x19d776000 -        0x19d7f3fff  libsystem_c.dylib                                 <3B5201C5-15D0-335F-A91D-0C63E1F6C6DC>  /usr/lib/system/libsystem_c.dylib
+           0x1a59eb000 -        0x1a5a20fff  libsystem_malloc.dylib                            <A4FB6302-B859-3C3D-ABDF-CB9BF836CC1B>  /usr/lib/system/libsystem_malloc.dylib
+           0x1b2360000 -        0x1b23cbfff  LoggingSupport                                    <B6E7060F-B079-3086-888A-49D9D301600E>  /System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport
+           0x1f16b6000 -        0x1f16bcfeb  libsystem_platform.dylib                          <E29C0EE4-8118-3A92-BFF8-1C343F8885AD>  /usr/lib/system/libsystem_platform.dylib
+           0x1f176b000 -        0x1f1777fff  libsystem_pthread.dylib                           <A70C0DEF-058C-3CB0-9EC1-453AA7F39DF9>  /usr/lib/system/libsystem_pthread.dylib
+           0x211fda000 -        0x211fe6fff  SignpostCollection                                <C583F702-216A-38B2-ACBD-FFF81B1FD5E4>  /System/Library/PrivateFrameworks/SignpostCollection.framework/SignpostCollection
+           0x21ac86000 -        0x21ac86fff  liblog_signpost.description.dylib                 <0889C6E5-0008-31D9-915E-BF8C0053CAC5>  /usr/lib/log/liblog_signpost.description.dylib
