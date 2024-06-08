@@ -1,0 +1,1132 @@
+{"app_name":"SaveToFiles","timestamp":"2024-06-03 14:24:51.00 -0500","app_version":"1.0","slice_uuid":"8EB50B8E-FD48-31EC-BE22-2F449B12A1C1","build_version":"1","bundleID":"com.apple.DocumentManagerUICore.SaveToFiles","duration_ms":"113800","share_with_app_devs":0,"is_first_party":0,"bug_type":"202","os_version":"iPhone OS 17.4.1 (21E236)","roots_installed":0,"incident_id":"12D256DF-AE5F-47BB-9664-340DF33A2725","name":"SaveToFiles"}
+Date/Time:        2024-06-03 14:22:55.144 -0500
+End time:         2024-06-03 14:24:48.944 -0500
+OS Version:       iPhone OS 17.4.1 (Build 21E236)
+Architecture:     arm64e
+Report Version:   47
+Incident Identifier: 12D256DF-AE5F-47BB-9664-340DF33A2725
+
+Data Source:      Microstackshots
+Shared Cache:     4E332692-1EF9-3123-A66E-EA24850AE920 slid base address 0x181470000, slide 0x1470000
+
+Command:          SaveToFiles
+Path:             /System/Library/PrivateFrameworks/DocumentManagerUICore.framework/PlugIns/SaveToFiles.appex/SaveToFiles
+Identifier:       com.apple.DocumentManagerUICore.SaveToFiles
+Version:          1.0 (1)
+Resource Coalition ID: 544
+On Behalf Of:     19 samples fileproviderd [258] (19 samples originated by SaveToFiles [374])
+Architecture:     arm64e
+Parent:           launchd [1]
+PID:              374
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 114 seconds (79% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     114s
+Duration:         113.80s
+Duration Sampled: 111.78s
+Steps:            83
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Time Since Boot:  108s
+Time Awake Since Boot: 108s
+Time Since Wake:  n/a (machine hasn't slept)
+
+Total CPU Time:   97.030s
+Advisory levels:  Battery -> 1, User -> 3, ThermalPressure -> 0, Combined -> 1
+Free disk space:  1052.74 MB/59.59 GB, low space threshold 150 MB
+Low Power Mode:   Enabled
+Vnodes Available: 78.98% (15796/20000, 10000 allocated, 10000 soft limit)
+
+Preferred User Language: en-US
+Country Code:     US
+Keyboards:        en_US QWERTZ, emoji Emoji
+OS Cryptex File Extents: 4298
+
+Heaviest stack for the target process:
+  21  ??? (dyld + 23940) [0x1acb16d84]
+  21  ??? (Foundation + 7753428) [0x188bbded4]
+  21  ??? (ExtensionFoundation + 96884) [0x198627a74]
+  21  ??? (PlugInKit + 102388) [0x1b574fff4]
+  21  ??? (PlugInKit + 100320) [0x1b574f7e0]
+  21  ??? (PlugInKit + 101156) [0x1b574fb24]
+  21  ??? (PlugInKit + 101528) [0x1b574fc98]
+  21  ??? (Foundation + 981044) [0x188548834]
+  21  ??? (libxpc.dylib + 121284) [0x1e55589c4]
+  21  ??? (libxpc.dylib + 120804) [0x1e55587e4]
+  21  ??? (libxpc.dylib + 110984) [0x1e5556188]
+  21  ??? (libxpc.dylib + 111500) [0x1e555638c]
+  21  ??? (UIKitCore + 2270488) [0x18ba68518]
+  21  ??? (UIKitCore + 2272988) [0x18ba68edc]
+  21  ??? (GraphicsServices + 13536) [0x1cd8eb4e0]
+  21  ??? (CoreFoundation + 211304) [0x1895f5968]
+  17  ??? (CoreFoundation + 213528) [0x1895f6218]
+  17  ??? (CoreFoundation + 226588) [0x1895f951c]
+  17  ??? (libdispatch.dylib + 74168) [0x1914cd1b8]
+  17  ??? (libdispatch.dylib + 75172) [0x1914cd5a4]
+  17  ??? (libdispatch.dylib + 15828) [0x1914bedd4]
+  17  ??? (libdispatch.dylib + 8508) [0x1914bd13c]
+  17  ??? (FileProvider + 635428) [0x1a7c17224]
+  17  ??? (FileProvider + 639132) [0x1a7c1809c]
+  17  ??? (SaveToFiles + 2212420) [0x104e34244]
+  17  ??? (SaveToFiles + 2215684) [0x104e34f04]
+  16  ??? (SaveToFiles + 2696196) [0x104eaa404]
+  8   ??? (SaveToFiles + 2623556) [0x104e98844]
+  8   ??? (libswiftUniformTypeIdentifiers.dylib + 12876) [0x1fb36124c]
+  8   ??? (UniformTypeIdentifiers + 20576) [0x1a0dcc060]
+  8   ??? (CoreServices + 1377320) [0x189506428]
+  7   ??? (CoreServices + 150432) [0x1893daba0]
+  7   ??? (CoreServices + 152808) [0x1893db4e8]
+  7   ??? (CoreFoundation + 436484) [0x18962c904]
+  7   ??? (CoreFoundation + 436772) [0x18962ca24]
+  7   ??? (CoreFoundation + 438136) [0x18962cf78]
+  7   ??? (libicucore.A.dylib + 366600) [0x192e96808]
+  3   ??? (libicucore.A.dylib + 364456) [0x192e95fa8]
+  3   ??? (libicucore.A.dylib + 643156) [0x192eda054]
+  1   ??? (libicucore.A.dylib + 642412) [0x192ed9d6c]
+
+
+Powerstats for:   SaveToFiles [374]
+UUID:             8EB50B8E-FD48-31EC-BE22-2F449B12A1C1
+Path:             /System/Library/PrivateFrameworks/DocumentManagerUICore.framework/PlugIns/SaveToFiles.appex/SaveToFiles
+Identifier:       com.apple.DocumentManagerUICore.SaveToFiles
+Version:          1.0 (1)
+Resource Coalition ID: 544
+On Behalf Of:     19 samples fileproviderd [258] (19 samples originated by SaveToFiles [374])
+Architecture:     arm64e
+Parent:           launchd [1]
+UID:              501
+Footprint:        19.08 MB -> 44.42 MB (+25.34 MB)
+Pageins:          111 pages
+Start time:       2024-06-03 14:22:57.094 -0500
+End time:         2024-06-03 14:24:48.553 -0500
+Num samples:      25 (30%)
+Num threads:      3
+Primary state:    21 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive, Override Thread QoS Unspecified, p-core
+User Activity:    0 samples Idle, 25 samples Active
+Power Source:     25 samples on Battery, 0 samples on AC
+  21  ??? (dyld + 23940) [0x1acb16d84]
+    21  ??? (Foundation + 7753428) [0x188bbded4]
+      21  ??? (ExtensionFoundation + 96884) [0x198627a74]
+        21  ??? (PlugInKit + 102388) [0x1b574fff4]
+          21  ??? (PlugInKit + 100320) [0x1b574f7e0]
+            21  ??? (PlugInKit + 101156) [0x1b574fb24]
+              21  ??? (PlugInKit + 101528) [0x1b574fc98]
+                21  ??? (Foundation + 981044) [0x188548834]
+                  21  ??? (libxpc.dylib + 121284) [0x1e55589c4]
+                    21  ??? (libxpc.dylib + 120804) [0x1e55587e4]
+                      21  ??? (libxpc.dylib + 110984) [0x1e5556188]
+                        21  ??? (libxpc.dylib + 111500) [0x1e555638c]
+                          21  ??? (UIKitCore + 2270488) [0x18ba68518]
+                            21  ??? (UIKitCore + 2272988) [0x18ba68edc]
+                              21  ??? (GraphicsServices + 13536) [0x1cd8eb4e0]
+                                21  ??? (CoreFoundation + 211304) [0x1895f5968]
+                                  17  ??? (CoreFoundation + 213528) [0x1895f6218]
+                                    17  ??? (CoreFoundation + 226588) [0x1895f951c]
+                                      17  ??? (libdispatch.dylib + 74168) [0x1914cd1b8]
+                                        17  ??? (libdispatch.dylib + 75172) [0x1914cd5a4]
+                                          17  ??? (libdispatch.dylib + 15828) [0x1914bedd4]
+                                            17  ??? (libdispatch.dylib + 8508) [0x1914bd13c]
+                                              17  ??? (FileProvider + 635428) [0x1a7c17224]
+                                                17  ??? (FileProvider + 639132) [0x1a7c1809c]
+                                                  17  ??? (SaveToFiles + 2212420) [0x104e34244]
+                                                    17  ??? (SaveToFiles + 2215684) [0x104e34f04]
+                                                      16  ??? (SaveToFiles + 2696196) [0x104eaa404]
+                                                        8   ??? (SaveToFiles + 2623556) [0x104e98844]
+                                                          8   ??? (libswiftUniformTypeIdentifiers.dylib + 12876) [0x1fb36124c]
+                                                            8   ??? (UniformTypeIdentifiers + 20576) [0x1a0dcc060]
+                                                              8   ??? (CoreServices + 1377320) [0x189506428]
+                                                                7   ??? (CoreServices + 150432) [0x1893daba0]
+                                                                  7   ??? (CoreServices + 152808) [0x1893db4e8]
+                                                                    7   ??? (CoreFoundation + 436484) [0x18962c904]
+                                                                      7   ??? (CoreFoundation + 436772) [0x18962ca24]
+                                                                        7   ??? (CoreFoundation + 438136) [0x18962cf78]
+                                                                          7   ??? (libicucore.A.dylib + 366600) [0x192e96808]
+                                                                            3   ??? (libicucore.A.dylib + 364456) [0x192e95fa8]
+                                                                              3   ??? (libicucore.A.dylib + 643156) [0x192eda054]
+                                                                                1   ??? (libicucore.A.dylib + 642412) [0x192ed9d6c]
+                                                                                  1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374])>
+                                                                                1   ??? (libicucore.A.dylib + 641932) [0x192ed9b8c]
+                                                                                  1   ??? (libicucore.A.dylib + 637608) [0x192ed8aa8]
+                                                                                    1   ??? (libsystem_platform.dylib + 23216) [0x1e5447ab0]
+                                                                                      1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374])>
+                                                                                1   ??? (libicucore.A.dylib + 641668) [0x192ed9a84]
+                                                                                  1   ??? (libicucore.A.dylib + 636988) [0x192ed883c]
+                                                                                    1   ??? (libicucore.A.dylib + 38392) [0x192e465f8]
+                                                                                      1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374])>
+                                                                            2   ??? (libicucore.A.dylib + 364896) [0x192e96160]
+                                                                              2   ??? (libicucore.A.dylib + 785288) [0x192efcb88]
+                                                                                2   ??? (libicucore.A.dylib + 806132) [0x192f01cf4]
+                                                                                  1   ??? (libsystem_platform.dylib + 23244) [0x1e5447acc]
+                                                                                    1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374])>
+                                                                                  1   ??? (libicucore.A.dylib + 806412) [0x192f01e0c]
+                                                                                    1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374])>
+                                                                            1   ??? (libsystem_platform.dylib + 2592) [0x1e5442a20]
+                                                                              1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374])>
+                                                                            1   ??? (libicucore.A.dylib + 364696) [0x192e96098]
+                                                                              1   ??? (libicucore.A.dylib + 639104) [0x192ed9080]
+                                                                                1   ??? (libicucore.A.dylib + 636996) [0x192ed8844]
+                                                                                  1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374])>
+                                                                1   ??? (CoreServices + 150464) [0x1893dabc0]
+                                                                  1   ??? (CoreServices + 150668) [0x1893dac8c]
+                                                                    1   ??? (CoreServices + 151324) [0x1893daf1c]
+                                                                      1   ??? (CoreServices + 151640) [0x1893db058]
+                                                                        1   ??? (CoreServices + 151832) [0x1893db118]
+                                                                          1   ??? (CoreServices + 152128) [0x1893db240]
+                                                                            1   ??? (CoreFoundation + 65600) [0x1895d2040]
+                                                                              1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374])>
+                                                        4   ??? (SaveToFiles + 2623412) [0x104e987b4]
+                                                          2   ??? (DocumentManagerExecutables + 198140) [0x2126c55fc]
+                                                            2   ??? (Foundation + 176620) [0x1884841ec]
+                                                              2   ??? (Foundation + 5378132) [0x18897a054]
+                                                                2   ??? (Foundation + 5392312) [0x18897d7b8]
+                                                                  2   ??? (Foundation + 177436) [0x18848451c]
+                                                                    2   ??? (Foundation + 5391256) [0x18897d398]
+                                                                      1   ??? (Foundation + 5379372) [0x18897a52c]
+                                                                        1   ??? (Foundation + 5379628) [0x18897a62c]
+                                                                          1   ??? (Foundation + 2405732) [0x1886a4564]
+                                                                            1   ??? (libicucore.A.dylib + 2246976) [0x193061940]
+                                                                              1   ??? (libicucore.A.dylib + 2032884) [0x19302d4f4]
+                                                                                1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374]), e-core>
+                                                                      1   ??? (Foundation + 5379324) [0x18897a4fc]
+                                                                        1   ??? (libicucore.A.dylib + 970928) [0x192f2a0b0]
+                                                                          1   ??? (libicucore.A.dylib + 971708) [0x192f2a3bc]
+                                                                            1   ??? (libicucore.A.dylib + 984364) [0x192f2d52c]
+                                                                              1   ??? (libicucore.A.dylib + 1403388) [0x192f939fc]
+                                                                                1   ??? (libicucore.A.dylib + 986276) [0x192f2dca4]
+                                                                                  1   ??? (libicucore.A.dylib + 983976) [0x192f2d3a8]
+                                                                                    1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374])>
+                                                          1   ??? (DocumentManagerExecutables + 198092) [0x2126c55cc]
+                                                            1   ??? (Foundation + 933076) [0x18853ccd4]
+                                                              1   ??? (Foundation + 5387628) [0x18897c56c]
+                                                                1   ??? (Foundation + 5392264) [0x18897d788]
+                                                                  1   ??? (Foundation + 193508) [0x1884883e4]
+                                                                    1   ??? (Foundation + 5390956) [0x18897d26c]
+                                                                      1   ??? (Foundation + 5380824) [0x18897aad8]
+                                                                        1   ??? (libicucore.A.dylib + 971868) [0x192f2a45c]
+                                                                          1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374]), e-core>
+                                                          1   ??? (DocumentManagerExecutables + 197440) [0x2126c5340]
+                                                            1   ??? (libsystem_platform.dylib + 2656) [0x1e5442a60]
+                                                              1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374])>
+                                                        3   ??? (SaveToFiles + 2623488) [0x104e98800]
+                                                          3   ??? (DocumentManagerExecutables + 196192) [0x2126c4e60]
+                                                            2   ??? (Foundation + 850460) [0x188528a1c]
+                                                              2   ??? (UIAccessibility + 355288) [0x1a4a3bbd8]
+                                                                2   ??? (Foundation + 227628) [0x18849092c]
+                                                                  1   ??? (CoreFoundation + 377960) [0x18961e468]
+                                                                    1   ??? (CoreFoundation + 381332) [0x18961f194]
+                                                                      1   ??? (CoreFoundation + 381500) [0x18961f23c]
+                                                                        1   ??? (CoreFoundation + 104920) [0x1895db9d8]
+                                                                          1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374]), e-core>
+                                                                  1   ??? (CoreFoundation + 377368) [0x18961e218]
+                                                                    1   ??? (libsystem_blocks.dylib + 10284) [0x1e54f482c]
+                                                                      1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374])>
+                                                            1   ??? (Foundation + 850620) [0x188528abc]
+                                                              1   ??? (UIAccessibility + 355288) [0x1a4a3bbd8]
+                                                                1   ??? (Foundation + 227628) [0x18849092c]
+                                                                  1   ??? (CoreFoundation + 377960) [0x18961e468]
+                                                                    1   ??? (CoreFoundation + 381332) [0x18961f194]
+                                                                      1   ??? (CoreFoundation + 381524) [0x18961f254]
+                                                                        1   ??? (CoreFoundation + 385532) [0x1896201fc]
+                                                                          1   ??? (CoreFoundation + 105968) [0x1895dbdf0]
+                                                                            1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374])>
+                                                        1   ??? (SaveToFiles + 2623428) [0x104e987c4]
+                                                          1   ??? (SaveToFiles + 2624712) [0x104e98cc8]
+                                                            1   ??? (libswiftCore.dylib + 2089212) [0x1880d20fc]
+                                                              1   ??? (libswiftCore.dylib + 2093116) [0x1880d303c]
+                                                                1   ??? (libswiftCore.dylib + 2162100) [0x1880e3db4]
+                                                                  1   ??? (CoreFoundation + 28352) [0x1895c8ec0]
+                                                                    1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374])>
+                                                      1   ??? (SaveToFiles + 2694980) [0x104ea9f44]
+                                                        1   ??? (SaveToFiles + 2466948) [0x104e72484]
+                                                          1   ??? (SaveToFiles + 3216508) [0x104f2947c]
+                                                            1   ??? (DocumentManagerExecutables + 186284) [0x2126c27ac]
+                                                              1   ??? (FileProvider + 197472) [0x1a7bac360]
+                                                                1   ??? (libobjc.A.dylib + 9980) [0x18155a6fc]
+                                                                  1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374])>
+                                  4   ??? (CoreFoundation + 212360) [0x1895f5d88]
+                                    3   ??? (CoreFoundation + 217176) [0x1895f7058]
+                                      3   ??? (CoreFoundation + 223400) [0x1895f88a8]
+                                        3   ??? (CoreFoundation + 226860) [0x1895f962c]
+                                          3   ??? (UIKitCore + 697636) [0x18b8e8524]
+                                            3   ??? (UIKitCore + 697448) [0x18b8e8468]
+                                              3   ??? (UIKitCore + 699768) [0x18b8e8d78]
+                                                3   ??? (UIKitCore + 701024) [0x18b8e9260]
+                                                  3   ??? (QuartzCore + 417380) [0x18ac9ae64]
+                                                    3   ??? (QuartzCore + 418236) [0x18ac9b1bc]
+                                                      3   ??? (QuartzCore + 445364) [0x18aca1bb4]
+                                                        3   ??? (QuartzCore + 420276) [0x18ac9b9b4]
+                                                          3   ??? (QuartzCore + 421424) [0x18ac9be30]
+                                                            3   ??? (UIKitCore + 209144) [0x18b8710f8]
+                                                              2   ??? (UIKitCore + 2013844) [0x18ba29a94]
+                                                                2   ??? (UIKitCore + 2015396) [0x18ba2a0a4]
+                                                                  2   ??? (UIKitCore + 5841648) [0x18bdd02f0]
+                                                                    1   ??? (UIKitCore + 5844392) [0x18bdd0da8]
+                                                                      1   ??? (UIKitCore + 1392588) [0x18b991fcc]
+                                                                        1   ??? (UIKitCore + 1394840) [0x18b992898]
+                                                                          1   ??? (UIKitCore + 1395096) [0x18b992998]
+                                                                            1   ??? (UIKitCore + 5571372) [0x18bd8e32c]
+                                                                              1   ??? (UIKitCore + 1395612) [0x18b992b9c]
+                                                                                1   ??? (UIKitCore + 1397168) [0x18b9931b0]
+                                                                                  1   ??? (CoreAutoLayout + 42152) [0x1aa64c4a8]
+                                                                                    1   ??? (UIKitCore + 18892868) [0x18ca42844]
+                                                                                      1   ??? (UIKitCore + 1418520) [0x18b998518]
+                                                                                        1   ??? (UIKitCore + 333724) [0x18b88f79c]
+                                                                                          1   ??? (CoreAutoLayout + 7608) [0x1aa643db8]
+                                                                                            1   ??? (CoreAutoLayout + 9240) [0x1aa644418]
+                                                                                              1   ??? (CoreAutoLayout + 10164) [0x1aa6447b4]
+                                                                                                1   ??? (CoreAutoLayout + 11164) [0x1aa644b9c]
+                                                                                                  1   ??? (CoreAutoLayout + 11936) [0x1aa644ea0]
+                                                                                                    1   ??? (CoreAutoLayout + 14336) [0x1aa645800]
+                                                                                                      1   ??? (CoreAutoLayout + 14912) [0x1aa645a40]
+                                                                    1   ??? (UIKitCore + 5844228) [0x18bdd0d04]
+                                                                      1   ??? (UIKitCore + 1392588) [0x18b991fcc]
+                                                                        1   ??? (UIKitCore + 1394840) [0x18b992898]
+                                                                          1   ??? (UIKitCore + 1395096) [0x18b992998]
+                                                                            1   ??? (UIKitCore + 1395672) [0x18b992bd8]
+                                                                              1   ??? (UIKitCore + 1397168) [0x18b9931b0]
+                                                                                1   ??? (CoreAutoLayout + 42152) [0x1aa64c4a8]
+                                                                                  1   ??? (UIKitCore + 18892868) [0x18ca42844]
+                                                                                    1   ??? (UIKitCore + 1418520) [0x18b998518]
+                                                                                      1   ??? (UIKitCore + 333724) [0x18b88f79c]
+                                                                                        1   ??? (CoreAutoLayout + 7580) [0x1aa643d9c]
+                                                                                          1   ??? (CoreAutoLayout + 7832) [0x1aa643e98]
+                                                                                            1   ??? (UIKitCore + 183052) [0x18b86ab0c]
+                                                                                              1   ??? (libobjc.A.dylib + 15428) [0x18155bc44]
+                                                              1   ??? (UIKitCore + 2013808) [0x18ba29a70]
+                                                                1   ??? (UIKitCore + 215508) [0x18b8729d4]
+                                                                  1   ??? (UIKitCore + 213472) [0x18b8721e0]
+                                                                    1   ??? (UIKitCore + 214604) [0x18b87264c]
+                                                                      1   ??? (UIKitCore + 1398712) [0x18b9937b8]
+                                                                        1   ??? (UIKitCore + 297012) [0x18b886834]
+                                                                          1   ??? (UIKitCore + 637868) [0x18b8d9bac]
+                                                                            1   ??? (CoreAutoLayout + 42152) [0x1aa64c4a8]
+                                                                              1   ??? (UIKitCore + 638436) [0x18b8d9de4]
+                                                                                1   ??? (UIKitCore + 638676) [0x18b8d9ed4]
+                                                                                  1   ??? (UIKitCore + 639292) [0x18b8da13c]
+                                                                                    1   ??? (UIKitCore + 1674584) [0x18b9d6d58]
+                                                                                      1   ??? (UIKitCore + 270976) [0x18b880280]
+                                                                                        1   ??? (UIKitCore + 1385812) [0x18b990554]
+                                                                                          1   ??? (UIKitCore + 1387344) [0x18b990b50]
+                                                                                            1   ??? (UIKitCore + 1393332) [0x18b9922b4]
+                                                                                              1   ??? (UIKitCore + 2094640) [0x18ba3d630]
+                                                                                                1   ??? (UIKitCore + 2295564) [0x18ba6e70c]
+                                                                                                  1   ??? (UIKitCore + 2296348) [0x18ba6ea1c]
+                                                                                                    1   ??? (UIKitCore + 1401768) [0x18b9943a8]
+                                                                                                      1   ??? (UIKitCore + 2339316) [0x18ba791f4]
+                                                                                                        1   ??? (UIKitCore + 1399700) [0x18b993b94]
+                                                                                                          1   ??? (UIKitCore + 1400124) [0x18b993d3c]
+                                                                                                            1   ??? (UIKitCore + 1400284) [0x18b993ddc]
+                                                                                                              1   ??? (UIKitCore + 1400704) [0x18b993f80]
+                                                                                                                1   ??? (UIKitCore + 917244) [0x18b91defc]
+                                                                                                                  1   ??? (UIKitCore + 917380) [0x18b91df84]
+                                                                                                                    1   ??? (UIKitCore + 917676) [0x18b91e0ac]
+                                                                                                                      1   ??? (UIKit + 115044) [0x2251f5164]
+                                                                                                                        1   ??? (UIKitCore + 917940) [0x18b91e1b4]
+                                                                                                                          1   ??? (UIKitCore + 919528) [0x18b91e7e8]
+                                                                                                                            1   ??? (UIKitCore + 920172) [0x18b91ea6c]
+                                                                                                                              1   ??? (UIKitCore + 922184) [0x18b91f248]
+                                                                                                                                1   ??? (UIFoundation + 10776) [0x19496fa18]
+                                                                                                                                  1   ??? (UIFoundation + 11320) [0x19496fc38]
+                                                                                                                                    1   ??? (CoreText + 116168) [0x18afda5c8]
+                                                                                                                                      1   ??? (CoreText + 116288) [0x18afda640]
+                                                                                                                                        1   ??? (CoreFoundation + 93164) [0x1895d8bec]
+                                                                                                                                          1   <e-core>
+                                    1   ??? (CoreFoundation + 217272) [0x1895f70b8]
+                                      1   ??? (CoreFoundation + 223400) [0x1895f88a8]
+                                        1   ??? (CoreFoundation + 226860) [0x1895f962c]
+                                          1   ??? (UIKitCore + 697636) [0x18b8e8524]
+                                            1   ??? (UIKitCore + 697448) [0x18b8e8468]
+                                              1   ??? (UIKitCore + 699768) [0x18b8e8d78]
+                                                1   ??? (UIKitCore + 701024) [0x18b8e9260]
+                                                  1   ??? (QuartzCore + 417380) [0x18ac9ae64]
+                                                    1   ??? (QuartzCore + 418236) [0x18ac9b1bc]
+                                                      1   ??? (QuartzCore + 445364) [0x18aca1bb4]
+                                                        1   ??? (QuartzCore + 420276) [0x18ac9b9b4]
+                                                          1   ??? (QuartzCore + 421424) [0x18ac9be30]
+                                                            1   ??? (UIKitCore + 209144) [0x18b8710f8]
+                                                              1   ??? (UIKit + 645796) [0x225276aa4]
+                                                                1   ??? (UIKitCore + 1143556) [0x18b955304]
+                                                                  1   ??? (UIKitCore + 2354480) [0x18ba7cd30]
+                                                                    1   ??? (UIKitCore + 2356348) [0x18ba7d47c]
+                                                                      1   ??? (UIKitCore + 1592436) [0x18b9c2c74]
+                                                                        1   ??? (UIKitCore + 1592720) [0x18b9c2d90]
+                                                                          1   ??? (UIKitCore + 7673128) [0x18bf8f528]
+                                                                            1   ??? (UIKitCore + 7673984) [0x18bf8f880]
+                                                                              1   ??? (UIKitCore + 1592756) [0x18b9c2db4]
+                                                                                1   ??? (UIKitCore + 3344060) [0x18bb6e6bc]
+                                                                                  1   ??? (UIKitCore + 65908) [0x18b84e174]
+                                                                                    1   ??? (UIKitCore + 70956) [0x18b84f52c]
+                                                                                      1   ??? (CoreAutoLayout + 42152) [0x1aa64c4a8]
+                                                                                        1   ??? (UIKitCore + 71172) [0x18b84f604]
+                                                                                          1   ??? (UIKitCore + 72572) [0x18b84fb7c]
+                                                                                            1   ??? (UIKitCore + 72572) [0x18b84fb7c]
+                                                                                              1   ??? (UIKitCore + 72572) [0x18b84fb7c]
+                                                                                                1   ??? (UIKitCore + 72572) [0x18b84fb7c]
+                                                                                                  1   ??? (UIKitCore + 73016) [0x18b84fd38]
+                                                                                                    1   ??? (UIKitCore + 1306160) [0x18b97ce30]
+                                                                                                      1   ??? (UIKitCore + 1306412) [0x18b97cf2c]
+                                                                                                        1   ??? (UIKitCore + 231620) [0x18b8768c4]
+                                                                                                          1   ??? (UIKitCore + 844644) [0x18b90c364]
+                                                                                                            1   ??? (UIKitCore + 845348) [0x18b90c624]
+                                                                                                              1   ??? (UIKitCore + 221608) [0x18b8741a8]
+                                                                                                                1   ??? (QuartzCore + 421424) [0x18ac9be30]
+                                                                                                                  1   ??? (UIKitCore + 933572) [0x18b921ec4]
+                                                                                                                    1   ??? (UIKitCore + 209144) [0x18b8710f8]
+                                                                                                                      1   ??? (UIKitCore + 771896) [0x18b8fa738]
+                                                                                                                        1   ??? (UIKit + 1421364) [0x225334034]
+                                                                                                                          1   ??? (UIKitCore + 902432) [0x18b91a520]
+                                                                                                                            1   ??? (UIKitCore + 913044) [0x18b91ce94]
+                                                                                                                              1   ??? (UIKitCore + 1812944) [0x18b9f89d0]
+                                                                                                                                1   ??? (UIKitCore + 851188) [0x18b90dcf4]
+                                                                                                                                  1   ??? (UIKit + 686348) [0x22528090c]
+                                                                                                                                    1   ??? (UIKitCore + 65908) [0x18b84e174]
+                                                                                                                                      1   ??? (UIKitCore + 70956) [0x18b84f52c]
+                                                                                                                                        1   ??? (CoreAutoLayout + 42152) [0x1aa64c4a8]
+                                                                                                                                          1   ??? (UIKitCore + 71172) [0x18b84f604]
+                                                                                                                                            1   ??? (UIKitCore + 73140) [0x18b84fdb4]
+                                                                                                                                              1   ??? (UIKitCore + 364064) [0x18b896e20]
+                                                                                                                                                1   ??? (UIKitCore + 2650696) [0x18bac5248]
+                                                                                                                                                  1   ??? (UIKitCore + 2650836) [0x18bac52d4]
+                                                                                                                                                    1   ??? (UIKitCore + 2066280) [0x18ba36768]
+                                                                                                                                                      1   ??? (UIKitCore + 2066444) [0x18ba3680c]
+                                                                                                                                                        1   ??? (UIKitCore + 917380) [0x18b91df84]
+                                                                                                                                                          1   ??? (UIKitCore + 917676) [0x18b91e0ac]
+                                                                                                                                                            1   ??? (UIKit + 115044) [0x2251f5164]
+                                                                                                                                                              1   ??? (UIKitCore + 918024) [0x18b91e208]
+                                                                                                                                                                1   ??? (UIKitCore + 921844) [0x18b91f0f4]
+                                                                                                                                                                  1   ??? (UIKitCore + 222412) [0x18b8744cc]
+                                                                                                                                                                    1   ??? (UIKitCore + 214604) [0x18b87264c]
+                                                                                                                                                                      1   ??? (UIKitCore + 1398712) [0x18b9937b8]
+                                                                                                                                                                        1   ??? (UIKitCore + 297012) [0x18b886834]
+                                                                                                                                                                          1   ??? (UIKitCore + 637868) [0x18b8d9bac]
+                                                                                                                                                                            1   ??? (CoreAutoLayout + 42152) [0x1aa64c4a8]
+                                                                                                                                                                              1   ??? (UIKitCore + 638436) [0x18b8d9de4]
+                                                                                                                                                                                1   ??? (UIKitCore + 638436) [0x18b8d9de4]
+                                                                                                                                                                                  1   ??? (UIKitCore + 638436) [0x18b8d9de4]
+                                                                                                                                                                                    1   ??? (UIKitCore + 638676) [0x18b8d9ed4]
+                                                                                                                                                                                      1   ??? (UIKitCore + 639292) [0x18b8da13c]
+                                                                                                                                                                                        1   ??? (UIKitCore + 650616) [0x18b8dcd78]
+                                                                                                                                                                                          1   ??? (UIKitCore + 639608) [0x18b8da278]
+                                                                                                                                                                                            1   ??? (UIKitCore + 640152) [0x18b8da498]
+                                                                                                                                                                                              1   ??? (CoreAutoLayout + 34444) [0x1aa64a68c]
+                                                                                                                                                                                                1   ??? (CoreAutoLayout + 35176) [0x1aa64a968]
+                                                                                                                                                                                                  1   ??? (CoreAutoLayout + 39716) [0x1aa64bb24]
+                                                                                                                                                                                                    1   ??? (CoreAutoLayout + 82296) [0x1aa656178]
+                                                                                                                                                                                                      1   ??? (CoreAutoLayout + 82540) [0x1aa65626c]
+                                                                                                                                                                                                        1   ??? (CoreAutoLayout + 14264) [0x1aa6457b8]
+  4   ??? (libsystem_pthread.dylib + 8128) [0x1e54f8fc0]
+    4   ??? (libsystem_pthread.dylib + 7968) [0x1e54f8f20]
+      4   ??? (libdispatch.dylib + 91432) [0x1914d1528]
+        4   ??? (libdispatch.dylib + 93364) [0x1914d1cb4]
+          4   ??? (libdispatch.dylib + 48996) [0x1914c6f64]
+            2   ??? (libdispatch.dylib + 46080) [0x1914c6400]
+              2   ??? (libdispatch.dylib + 15828) [0x1914bedd4]
+                2   ??? (libdispatch.dylib + 8508) [0x1914bd13c]
+                  2   ??? (FileProvider + 582372) [0x1a7c0a2e4]
+                    2   ??? (FileProvider + 750540) [0x1a7c333cc]
+                      2   ??? (FileProvider + 640860) [0x1a7c1875c]
+                        2   ??? (FileProvider + 621904) [0x1a7c13d50]
+                          2   ??? (libdispatch.dylib + 78200) [0x1914ce178]
+                            2   ??? (libdispatch.dylib + 79608) [0x1914ce6f8]
+                              2   ??? (libdispatch.dylib + 15828) [0x1914bedd4]
+                                2   ??? (FileProvider + 622732) [0x1a7c1408c]
+                                  2   ??? (FileProvider + 627288) [0x1a7c15258]
+                                    2   ??? (Foundation + 21664) [0x18845e4a0]
+                                      2   ??? (SaveToFiles + 3023444) [0x104efa254]
+                                        2   ??? (SaveToFiles + 2618236) [0x104e9737c]
+                                          2   ??? (Foundation + 21664) [0x18845e4a0]
+                                            2   ??? (SaveToFiles + 3023444) [0x104efa254]
+                                              2   ??? (SaveToFiles + 2036344) [0x104e09278]
+                                                2   ??? (SaveToFiles + 2039904) [0x104e0a060]
+                                                  2   ??? (DocumentManagerCore + 73516) [0x1fc1e0f2c]
+                                                    2   ??? (DocumentManagerCore + 77936) [0x1fc1e2070]
+                                                      2   ??? (ManagedConfiguration + 782572) [0x1a64400ec]
+                                                        2   ??? (ManagedConfiguration + 22792) [0x1a6386908]
+                                                          2   ??? (CoreServices + 205964) [0x1893e848c]
+                                                            2   ??? (CoreServices + 123448) [0x1893d4238]
+                                                              2   ??? (CoreServices + 124492) [0x1893d464c]
+                                                                2   ??? (CoreServices + 125324) [0x1893d498c]
+                                                                  2   ??? (CoreServices + 126816) [0x1893d4f60]
+                                                                    2   ??? (CoreServices + 127464) [0x1893d51e8]
+                                                                      2   ??? (CoreServices + 128956) [0x1893d57bc]
+                                                                        2   ??? (CoreServices + 53528) [0x1893c3118]
+                                                                          1   ??? (CoreServices + 91668) [0x1893cc614]
+                                                                            1   ??? (CoreServices + 9876) [0x1893b8694]
+                                                                              1   ??? (CoreServices + 156792) [0x1893dc478]
+                                                                                1   ??? (libobjc.A.dylib + 17464) [0x18155c438]
+                                                                                  1   ??? (libobjc.A.dylib + 17552) [0x18155c490]
+                                                                                    1   ??? (libobjc.A.dylib + 18268) [0x18155c75c]
+                                                                                      1   ??? (CoreServices + 1004996) [0x1894ab5c4]
+                                                                                        1   ??? (libobjc.A.dylib + 17464) [0x18155c438]
+                                                                                          1   ??? (libobjc.A.dylib + 17552) [0x18155c490]
+                                                                                            1   ??? (libobjc.A.dylib + 18268) [0x18155c75c]
+                                                                                              1   ??? (CoreServices + 1071804) [0x1894bbabc]
+                                                                                                1   ??? (CoreFoundation + 49924) [0x1895ce304]
+                                                                                                  1   ??? (CoreFoundation + 50168) [0x1895ce3f8]
+                                                                                                    1   ??? (CoreFoundation + 380744) [0x18961ef48]
+                                                                                                      1   ??? (CoreFoundation + 50168) [0x1895ce3f8]
+                                                                                                        1   ??? (CoreFoundation + 53260) [0x1895cf00c]
+                                                                                                          1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374]), Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+                                                                          1   ??? (CoreServices + 63332) [0x1893c5764]
+                                                                            1   ??? (CoreServices + 9876) [0x1893b8694]
+                                                                              1   ??? (CoreServices + 20452) [0x1893bafe4]
+                                                                                1   ??? (CoreServices + 21588) [0x1893bb454]
+                                                                                  1   ??? (CoreServices + 21712) [0x1893bb4d0]
+                                                                                    1   ??? (CoreServices + 21864) [0x1893bb568]
+                                                                                      1   ??? (CoreServices + 22052) [0x1893bb624]
+                                                                                        1   ??? (Foundation + 371864) [0x1884b3c98]
+                                                                                          1   ??? (CoreFoundation + 450048) [0x18962fe00]
+                                                                                            1   ??? (CoreFoundation + 450248) [0x18962fec8]
+                                                                                              1   ??? (CoreFoundation + 84500) [0x1895d6a14]
+                                                                                                1   ??? (CoreFoundation + 50512) [0x1895ce550]
+                                                                                                  1   ??? (CoreFoundation + 52576) [0x1895ced60]
+                                                                                                    1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374]), Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+            2   ??? (libdispatch.dylib + 45700) [0x1914c6284]
+              2   ??? (libdispatch.dylib + 48996) [0x1914c6f64]
+                2   ??? (libdispatch.dylib + 45700) [0x1914c6284]
+                  2   ??? (libdispatch.dylib + 105868) [0x1914d4d8c]
+                    2   ??? (libdispatch.dylib + 111048) [0x1914d61c8]
+                      2   ??? (libdispatch.dylib + 29400) [0x1914c22d8]
+                        2   ??? (libdispatch.dylib + 15828) [0x1914bedd4]
+                          2   ??? (libdispatch.dylib + 77404) [0x1914cde5c]
+                            2   ??? (FileProvider + 498752) [0x1a7bf5c40]
+                              1   ??? (FileProvider + 499768) [0x1a7bf6038]
+                                1   ??? (libdispatch.dylib + 154720) [0x1914e0c60]
+                                  1   ??? (libdispatch.dylib + 156484) [0x1914e1344]
+                                    1   ??? (libsystem_kernel.dylib + 9724) [0x1d1ab65fc]
+                                      1   <Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS Utility>
+                              1   ??? (libobjc.A.dylib + 11332) [0x18155ac44]
+                                1   <Effective Thread QoS User Initiated, Requested Thread QoS Utility, e-core>
+
+  Binary Images:
+           0x104c18000 -                ???  com.apple.DocumentManagerUICore.SaveToFiles 1.0 (1) <8EB50B8E-FD48-31EC-BE22-2F449B12A1C1>  /System/Library/PrivateFrameworks/DocumentManagerUICore.framework/PlugIns/SaveToFiles.appex/SaveToFiles
+           0x181558000 -        0x1815a5cc3  libobjc.A.dylib                                     <412FD1F4-4107-3443-88EF-B3760778F6A7>  /usr/lib/libobjc.A.dylib
+           0x187ed4000 -        0x188423fff  libswiftCore.dylib                                  <EA723E3D-1906-3DAC-A7E9-E108052DFCAA>  /usr/lib/swift/libswiftCore.dylib
+           0x188459000 -        0x188fe4fff  Foundation                                          <D92E19C1-6299-3E94-8614-C505D5ABCCDB>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1893b6000 -        0x1895c1fff  CoreServices                                        <9BE4F970-0BF1-3FB2-84B2-5F0C0264D321>  /System/Library/Frameworks/CoreServices.framework/CoreServices
+           0x1895c2000 -        0x189aeffff  CoreFoundation                                      <3A5F992A-D1CD-312E-BD2E-F7C66343A417>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x18ac35000 -        0x18afbdfff  QuartzCore                                          <A53570F9-DC4A-3B41-9932-B1A081E6E520>  /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+           0x18afbe000 -        0x18b195fff  CoreText                                            <76568A10-7634-33EB-B02C-01185A83BA9A>  /System/Library/Frameworks/CoreText.framework/CoreText
+           0x18b83e000 -        0x18d34efff  UIKitCore                                           <7BF01CFC-23F1-326A-AFD8-AD967FFECE28>  /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+           0x1914bb000 -        0x191501fff  libdispatch.dylib                                   <B7D9D0A6-2414-37F2-9D03-1A25A474E2CF>  /usr/lib/system/libdispatch.dylib
+           0x192e3d000 -        0x1930fdffb  libicucore.A.dylib                                  <B8B24FF1-9BD0-3EFB-A85D-722325F0CB3E>  /usr/lib/libicucore.A.dylib
+           0x19496d000 -        0x194ab4fff  UIFoundation                                        <9B908AF6-F5C3-3470-A91F-7A355737846E>  /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+           0x198610000 -        0x1986cafff  ExtensionFoundation                                 <6A8C5849-CC04-3D5C-B72A-5CD62C9A625D>  /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
+           0x1a0dc7000 -        0x1a0ddafff  UniformTypeIdentifiers                              <CEE50E57-E60A-3E87-A7E0-E2B3C98B92C2>  /System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers
+           0x1a49e5000 -        0x1a4a84fff  UIAccessibility                                     <B7EE8610-F465-359A-92DB-D554ED491BC2>  /System/Library/PrivateFrameworks/UIAccessibility.framework/UIAccessibility
+           0x1a6381000 -        0x1a64b2fff  ManagedConfiguration                                <A812A966-610A-33EE-ABFE-22499E748D7B>  /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
+           0x1a7b7c000 -        0x1a7d11fff  FileProvider                                        <8B431A72-F554-39EB-A6EF-4A519AC6C233>  /System/Library/Frameworks/FileProvider.framework/FileProvider
+           0x1aa642000 -        0x1aa68bfff  CoreAutoLayout                                      <889EAB7C-907B-39F0-A0CD-3277E3CB1B70>  /System/Library/PrivateFrameworks/CoreAutoLayout.framework/CoreAutoLayout
+           0x1acb11000 -        0x1acb9dbe3  dyld                                                <7BE2B757-3B3D-3E91-8CB7-74F3887660C7>  /usr/lib/dyld
+           0x1b5737000 -        0x1b5770fff  PlugInKit                                           <BE22B4FF-18E5-37EB-8E27-BD027CA77576>  /System/Library/PrivateFrameworks/PlugInKit.framework/PlugInKit
+           0x1cd8e8000 -        0x1cd8f0fff  GraphicsServices                                    <4CB7E986-36BF-3801-8F49-5D8C3C4A2127>  /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+           0x1d1ab4000 -        0x1d1aedfef  libsystem_kernel.dylib                              <DB493AF3-63B1-3220-9DD8-DD4F86BDDFC8>  /usr/lib/system/libsystem_kernel.dylib
+           0x1e5442000 -        0x1e5448feb  libsystem_platform.dylib                            <E29C0EE4-8118-3A92-BFF8-1C343F8885AD>  /usr/lib/system/libsystem_platform.dylib
+           0x1e54f2000 -        0x1e54f6ff8  libsystem_blocks.dylib                              <DA2C6FF9-E53F-3E47-AC8A-03526A135B56>  /usr/lib/system/libsystem_blocks.dylib
+           0x1e54f7000 -        0x1e5503fff  libsystem_pthread.dylib                             <A70C0DEF-058C-3CB0-9EC1-453AA7F39DF9>  /usr/lib/system/libsystem_pthread.dylib
+           0x1e553b000 -        0x1e5582fff  libxpc.dylib                                        <042EA33B-3C8F-3FB8-869C-369A3115977C>  /usr/lib/system/libxpc.dylib
+           0x1fb35e000 -        0x1fb36bff5  libswiftUniformTypeIdentifiers.dylib                <BD9CA8F7-7145-333C-8B7B-81B0BDCE4003>  /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib
+           0x1fc1cf000 -        0x1fc202fff  DocumentManagerCore                                 <F50CE4E0-209E-3D31-9FDC-88E6DE13DFE3>  /System/Library/PrivateFrameworks/DocumentManagerCore.framework/DocumentManagerCore
+           0x212695000 -        0x212767fff  DocumentManagerExecutables                          <195702C1-A446-3244-81A4-4FFB0F2FE8A2>  /System/Library/PrivateFrameworks/DocumentManagerExecutables.framework/DocumentManagerExecutables
+           0x2251d9000 -        0x2253a6fff  UIKit                                               <DDE6E0C5-2AC3-3C73-8CFE-BC88DE35BB5F>  /System/Library/AccessibilityBundles/UIKit.axbundle/UIKit
+
+
+Powerstats for:   LocalStorageFileProvider (LocalStorageFileProvider)
+UUID:             FD659EAB-E34C-3A1D-A077-052D68C2BB94
+Path:             /System/Library/Frameworks/FileProvider.framework/PlugIns/LocalStorageFileProvider.appex/LocalStorageFileProvider
+Identifier:       com.apple.FileProvider.LocalStorage
+Version:          1.0 (1)
+Resource Coalition ID: 530
+On Behalf Of:     6 samples fileproviderd [258] (5 samples originated by SaveToFiles [374], 1 sample originated by LocalStorageFileProvider (LocalStorageFileProvider) [359]), 4 samples UNKNOWN [-1] (4 samples originated by LocalStorageFileProvider (LocalStorageFileProvider) [359]), 2 samples SaveToFiles [374] (2 samples originated by SaveToFiles [374])
+Architecture:     arm64e
+Start time:       2024-06-03 14:23:11.504 -0500
+End time:         2024-06-03 14:24:48.875 -0500
+Num samples:      23 (28%)
+Primary state:    12 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Utility, Requested Thread QoS Utility, Override Thread QoS Unspecified, e-core
+User Activity:    0 samples Idle, 23 samples Active
+Power Source:     23 samples on Battery, 0 samples on AC
+  23  ??? (libsystem_pthread.dylib + 8128) [0x1e54f8fc0]
+    23  ??? (libsystem_pthread.dylib + 7968) [0x1e54f8f20]
+      23  ??? (libdispatch.dylib + 91432) [0x1914d1528]
+        23  ??? (libdispatch.dylib + 93364) [0x1914d1cb4]
+          12  ??? (libdispatch.dylib + 54288) [0x1914c8410]
+            12  ??? (libdispatch.dylib + 15828) [0x1914bedd4]
+              12  ??? (libdispatch.dylib + 8508) [0x1914bd13c]
+                8   ??? (FileProvider + 1016672) [0x1a7c74360]
+                  6   ??? (FileProvider + 80612) [0x1a7b8fae4]
+                    6   ??? (CoreFoundation + 1521504) [0x189735760]
+                      6   ??? (CoreFoundation + 204972) [0x1895f40ac]
+                        6   ??? (FileProvider + 1023924) [0x1a7c75fb4]
+                          6   ??? (CoreFoundation + 202040) [0x1895f3538]
+                            6   ??? (CoreFoundation + 202512) [0x1895f3710]
+                              6   ??? (CoreFoundation + 203908) [0x1895f3c84]
+                                4   ??? (FileProvider + 436972) [0x1a7be6aec]
+                                  4   ??? (LocalStorageFileProvider + 200844) [0x104aed08c]
+                                    4   ??? (LocalStorageFileProvider + 198620) [0x104aec7dc]
+                                      4   ??? (LocalStorageFileProvider + 195668) [0x104aebc54]
+                                        2   ??? (LocalStorageFileProvider + 414068) [0x104b21174]
+                                          2   ??? (LocalStorageFileProvider + 107876) [0x104ad6564]
+                                            2   ??? (LocalStorageFileProvider + 145460) [0x104adf834]
+                                              2   ??? (LocalStorageFileProvider + 4330204) [0x104edd2dc]
+                                                1   ??? (LocalStorageFileProvider + 6442140) [0x1050e0c9c]
+                                                  1   ??? (LocalStorageFileProvider + 8638504) [0x1052f9028]
+                                                    1   ??? (FileProvider + 799552) [0x1a7c3f340]
+                                                      1   ??? (FileProvider + 798588) [0x1a7c3ef7c]
+                                                        1   ??? (LocalStorageFileProvider + 57692) [0x104aca15c]
+                                                          1   ??? (LocalStorageFileProvider + 8667948) [0x10530032c]
+                                                            1   ??? (LocalStorageFileProvider + 8675856) [0x105302210]
+                                                              1   ??? (LocalStorageFileProvider + 8623908) [0x1052f5724]
+                                                                1   ??? (LocalStorageFileProvider + 4352960) [0x104ee2bc0]
+                                                                  1   ??? (LocalStorageFileProvider + 4330340) [0x104edd364]
+                                                                    1   ??? (LocalStorageFileProvider + 4329936) [0x104edd1d0]
+                                                                      1   ??? (LocalStorageFileProvider + 9568800) [0x1053dc220]
+                                                                        1   ??? (LocalStorageFileProvider + 8627644) [0x1052f65bc]
+                                                                          1   ??? (LocalStorageFileProvider + 9610264) [0x1053e6418]
+                                                                            1   ??? (LocalStorageFileProvider + 9610452) [0x1053e64d4]
+                                                                              1   ??? (LocalStorageFileProvider + 9570924) [0x1053dca6c]
+                                                                                1   ??? (FileProvider + 794692) [0x1a7c3e044]
+                                                                                  1   ??? (FileProvider + 311840) [0x1a7bc8220]
+                                                                                    1   ??? (libsystem_kernel.dylib + 61624) [0x1d1ac30b8]
+                                                                                      1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374]), Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+                                                1   ??? (LocalStorageFileProvider + 6441936) [0x1050e0bd0]
+                                                  1   ??? (LocalStorageFileProvider + 2377384) [0x104d006a8]
+                                                    1   ??? (LocalStorageFileProvider + 8638504) [0x1052f9028]
+                                                      1   ??? (FileProvider + 798588) [0x1a7c3ef7c]
+                                                        1   ??? (LocalStorageFileProvider + 57692) [0x104aca15c]
+                                                          1   ??? (LocalStorageFileProvider + 8667948) [0x10530032c]
+                                                            1   ??? (LocalStorageFileProvider + 8675856) [0x105302210]
+                                                              1   ??? (LocalStorageFileProvider + 8623908) [0x1052f5724]
+                                                                1   ??? (LocalStorageFileProvider + 4352960) [0x104ee2bc0]
+                                                                  1   ??? (LocalStorageFileProvider + 4330340) [0x104edd364]
+                                                                    1   ??? (LocalStorageFileProvider + 4329936) [0x104edd1d0]
+                                                                      1   ??? (LocalStorageFileProvider + 9568800) [0x1053dc220]
+                                                                        1   ??? (LocalStorageFileProvider + 8627644) [0x1052f65bc]
+                                                                          1   ??? (LocalStorageFileProvider + 9610264) [0x1053e6418]
+                                                                            1   ??? (LocalStorageFileProvider + 9610452) [0x1053e64d4]
+                                                                              1   ??? (LocalStorageFileProvider + 9570924) [0x1053dca6c]
+                                                                                1   ??? (FileProvider + 794692) [0x1a7c3e044]
+                                                                                  1   ??? (FileProvider + 311660) [0x1a7bc816c]
+                                                                                    1   ??? (FileProvider + 227276) [0x1a7bb37cc]
+                                                                                      1   ??? (libsystem_kernel.dylib + 61624) [0x1d1ac30b8]
+                                                                                        1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374]), Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+                                        2   ??? (LocalStorageFileProvider + 414464) [0x104b21300]
+                                          1   ??? (LocalStorageFileProvider + 385380) [0x104b1a164]
+                                            1   ??? (LocalStorageFileProvider + 59552) [0x104aca8a0]
+                                              1   ??? (Foundation + 999928) [0x18854d1f8]
+                                                1   ??? (Foundation + 1000100) [0x18854d2a4]
+                                                  1   ??? (CoreFoundation + 870636) [0x1896968ec]
+                                                    1   ??? (CoreFoundation + 870844) [0x1896969bc]
+                                                      1   ??? (CoreServicesInternal + 50352) [0x1884304b0]
+                                                        1   ??? (CoreServicesInternal + 7784) [0x188425e68]
+                                                          1   ??? (libsystem_kernel.dylib + 9416) [0x1d1ab64c8]
+                                                            1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374]), Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+                                          1   ??? (LocalStorageFileProvider + 384436) [0x104b19db4]
+                                            1   ??? (LocalStorageFileProvider + 64816) [0x104acbd30]
+                                              1   ??? (FileProvider + 809452) [0x1a7c419ec]
+                                                1   ??? (FileProvider + 285888) [0x1a7bc1cc0]
+                                                  1   ??? (FileProvider + 285480) [0x1a7bc1b28]
+                                                    1   ??? (libsystem_kernel.dylib + 7932) [0x1d1ab5efc]
+                                                      1   <on behalf of SaveToFiles [374] (originated by SaveToFiles [374]), Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated, p-core>
+                                2   ??? (FileProvider + 437016) [0x1a7be6b18]
+                                  2   ??? (FileProvider + 81012) [0x1a7b8fc74]
+                                    1   ??? (FileProvider + 129816) [0x1a7b9bb18]
+                                      1   ??? (Foundation + 273376) [0x18849bbe0]
+                                        1   ??? (Foundation + 273616) [0x18849bcd0]
+                                          1   ??? (Foundation + 273828) [0x18849bda4]
+                                            1   ??? (Foundation + 274048) [0x18849be80]
+                                              1   ??? (Foundation + 139936) [0x18847b2a0]
+                                                1   ??? (Foundation + 140264) [0x18847b3e8]
+                                                  1   ??? (Foundation + 132540) [0x1884795bc]
+                                                    1   ??? (FileProvider + 173964) [0x1a7ba678c]
+                                                      1   ??? (Foundation + 63200) [0x1884686e0]
+                                                        1   ??? (Foundation + 63448) [0x1884687d8]
+                                                          1   ??? (CoreFoundation + 72524) [0x1895d3b4c]
+                                                            1   ??? (CoreFoundation + 73052) [0x1895d3d5c]
+                                                              1   ??? (CoreFoundation + 73208) [0x1895d3df8]
+                                                                1   ??? (CoreFoundation + 74884) [0x1895d4484]
+                                                                  1   ??? (CoreFoundation + 40136) [0x1895cbcc8]
+                                                                    1   <on behalf of SaveToFiles [374] (originated by SaveToFiles [374]), Effective Thread QoS User Initiated, Requested Thread QoS User Initiated, p-core>
+                                    1   ??? (FileProvider + 83556) [0x1a7b90664]
+                                      1   ??? (CoreFoundation + 208076) [0x1895f4ccc]
+                                        1   ??? (FileProvider + 790552) [0x1a7c3d018]
+                                          1   ??? (CoreFoundation + 210420) [0x1895f55f4]
+                                            1   ??? (CoreFoundation + 202512) [0x1895f3710]
+                                              1   ??? (CoreFoundation + 203908) [0x1895f3c84]
+                                                1   ??? (Foundation + 273376) [0x18849bbe0]
+                                                  1   ??? (Foundation + 273616) [0x18849bcd0]
+                                                    1   ??? (Foundation + 273828) [0x18849bda4]
+                                                      1   ??? (Foundation + 274048) [0x18849be80]
+                                                        1   ??? (Foundation + 139936) [0x18847b2a0]
+                                                          1   ??? (Foundation + 140264) [0x18847b3e8]
+                                                            1   ??? (Foundation + 132540) [0x1884795bc]
+                                                              1   ??? (FileProvider + 173964) [0x1a7ba678c]
+                                                                1   ??? (Foundation + 63200) [0x1884686e0]
+                                                                  1   ??? (Foundation + 63448) [0x1884687d8]
+                                                                    1   ??? (CoreFoundation + 72524) [0x1895d3b4c]
+                                                                      1   ??? (CoreFoundation + 73052) [0x1895d3d5c]
+                                                                        1   ??? (CoreFoundation + 73208) [0x1895d3df8]
+                                                                          1   ??? (CoreFoundation + 74192) [0x1895d41d0]
+                                                                            1   ??? (libsystem_malloc.dylib + 153656) [0x19979c838]
+                                                                              1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374]), Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+                  1   ??? (FileProvider + 85368) [0x1a7b90d78]
+                    1   ??? (LocalStorageFileProvider + 193212) [0x104aeb2bc]
+                      1   ??? (LocalStorageFileProvider + 191664) [0x104aeacb0]
+                        1   ??? (LocalStorageFileProvider + 192204) [0x104aeaecc]
+                          1   ??? (LocalStorageFileProvider + 107692) [0x104ad64ac]
+                            1   ??? (LocalStorageFileProvider + 144088) [0x104adf2d8]
+                              1   ??? (LocalStorageFileProvider + 4330760) [0x104edd508]
+                                1   ??? (LocalStorageFileProvider + 8638504) [0x1052f9028]
+                                  1   ??? (FileProvider + 798560) [0x1a7c3ef60]
+                                    1   ??? (FileProvider + 799816) [0x1a7c3f448]
+                                      1   ??? (libsystem_kernel.dylib + 61580) [0x1d1ac308c]
+                                        1   <on behalf of fileproviderd [258] (originated by LocalStorageFileProvider (LocalStorageFileProvider) [359]), Effective Thread QoS User Initiated, Requested Thread QoS User Initiated, p-core>
+                  1   ??? (FileProvider + 78972) [0x1a7b8f47c]
+                    1   ??? (LocalStorageFileProvider + 195348) [0x104aebb14]
+                      1   ??? (LocalStorageFileProvider + 193852) [0x104aeb53c]
+                        1   ??? (LocalStorageFileProvider + 194772) [0x104aeb8d4]
+                          1   ??? (LocalStorageFileProvider + 385008) [0x104b19ff0]
+                            1   ??? (LocalStorageFileProvider + 396260) [0x104b1cbe4]
+                              1   ??? (LocalStorageFileProvider + 355012) [0x104b12ac4]
+                                1   ??? (FileProvider + 913244) [0x1a7c5af5c]
+                                  1   ??? (libobjc.A.dylib + 30904) [0x18155f8b8]
+                                    1   ??? (libobjc.A.dylib + 47216) [0x181563870]
+                                      1   ??? (libobjc.A.dylib + 47612) [0x1815639fc]
+                                        1   <on behalf of fileproviderd [258] (originated by SaveToFiles [374]), Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+                4   ??? (FileProvider + 608036) [0x1a7c10724]
+                  4   ??? (FileProvider + 697612) [0x1a7c2650c]
+                    4   ??? (FileProvider + 693772) [0x1a7c2560c]
+                      4   ??? (LocalStorageFileProvider + 480024) [0x104b31318]
+                        4   ??? (LocalStorageFileProvider + 101024) [0x104ad4aa0]
+                          4   ??? (LocalStorageFileProvider + 479836) [0x104b3125c]
+                            4   ??? (FileProvider + 694224) [0x1a7c257d0]
+                              4   ??? (LocalStorageFileProvider + 479196) [0x104b30fdc]
+                                4   ??? (LocalStorageFileProvider + 473156) [0x104b2f844]
+                                  4   ??? (LocalStorageFileProvider + 475456) [0x104b30140]
+                                    4   ??? (LocalStorageFileProvider + 74156) [0x104ace1ac]
+                                      4   ??? (LocalStorageFileProvider + 79740) [0x104acf77c]
+                                        4   ??? (Foundation + 1032096) [0x188554fa0]
+                                          4   ??? (LocalStorageFileProvider + 102540) [0x104ad508c]
+                                            4   ??? (LocalStorageFileProvider + 19544) [0x104ac0c58]
+                                              4   ??? (Foundation + 1032096) [0x188554fa0]
+                                                4   ??? (LocalStorageFileProvider + 28164) [0x104ac2e04]
+                                                  4   ??? (LocalStorageFileProvider + 19544) [0x104ac0c58]
+                                                    4   ??? (Foundation + 1032096) [0x188554fa0]
+                                                      4   ??? (LocalStorageFileProvider + 28164) [0x104ac2e04]
+                                                        3   ??? (LocalStorageFileProvider + 17728) [0x104ac0540]
+                                                          3   ??? (LocalStorageFileProvider + 102284) [0x104ad4f8c]
+                                                            3   ??? (LocalStorageFileProvider + 22528) [0x104ac1800]
+                                                              1   ??? (LocalStorageFileProvider + 393308) [0x104b1c05c]
+                                                                1   ??? (Synapse + 66376) [0x1c2746348]
+                                                                  1   ??? (Synapse + 67032) [0x1c27465d8]
+                                                                    1   ??? (Synapse + 28356) [0x1c273cec4]
+                                                                      1   ??? (CSExattrCrypto + 9672) [0x22a3435c8]
+                                                                        1   ??? (CSExattrCrypto + 9072) [0x22a343370]
+                                                                          1   ??? (CSExattrCrypto + 14456) [0x22a344878]
+                                                                            1   ??? (libsystem_kernel.dylib + 61800) [0x1d1ac3168]
+                                                                              1   <on behalf of UNKNOWN [-1] (originated by LocalStorageFileProvider (LocalStorageFileProvider) [359]), Kernel mode>
+                                                              1   ??? (LocalStorageFileProvider + 385008) [0x104b19ff0]
+                                                                1   ??? (LocalStorageFileProvider + 396588) [0x104b1cd2c]
+                                                                  1   ??? (Foundation + 1032096) [0x188554fa0]
+                                                                    1   ??? (LocalStorageFileProvider + 411720) [0x104b20848]
+                                                                      1   ??? (LocalStorageFileProvider + 57336) [0x104ac9ff8]
+                                                                        1   ??? (LocalStorageFileProvider + 57868) [0x104aca20c]
+                                                                          1   ??? (LocalStorageFileProvider + 8607796) [0x1052f1834]
+                                                                            1   ??? (LocalStorageFileProvider + 8647632) [0x1052fb3d0]
+                                                                              1   ??? (LocalStorageFileProvider + 8667184) [0x105300030]
+                                                                                1   ??? (LocalStorageFileProvider + 68220) [0x104acca7c]
+                                                                                  1   ??? (LocalStorageFileProvider + 57564) [0x104aca0dc]
+                                                                                    1   ??? (FileProvider + 285888) [0x1a7bc1cc0]
+                                                                                      1   ??? (FileProvider + 285480) [0x1a7bc1b28]
+                                                                                        1   ??? (libsystem_kernel.dylib + 7932) [0x1d1ab5efc]
+                                                                                          1   <on behalf of UNKNOWN [-1] (originated by LocalStorageFileProvider (LocalStorageFileProvider) [359]), Kernel mode>
+                                                              1   ??? (LocalStorageFileProvider + 384436) [0x104b19db4]
+                                                                1   ??? (LocalStorageFileProvider + 64816) [0x104acbd30]
+                                                                  1   ??? (FileProvider + 809452) [0x1a7c419ec]
+                                                                    1   ??? (FileProvider + 286152) [0x1a7bc1dc8]
+                                                                      1   ??? (FileProvider + 808112) [0x1a7c414b0]
+                                                                        1   ??? (libsystem_kernel.dylib + 61624) [0x1d1ac30b8]
+                                                                          1   <on behalf of UNKNOWN [-1] (originated by LocalStorageFileProvider (LocalStorageFileProvider) [359])>
+                                                        1   ??? (libsystem_kernel.dylib + 23648) [0x1d1ab9c60]
+                                                          1   <on behalf of UNKNOWN [-1] (originated by LocalStorageFileProvider (LocalStorageFileProvider) [359])>
+          11  ??? (libdispatch.dylib + 48996) [0x1914c6f64]
+            10  ??? (libdispatch.dylib + 45700) [0x1914c6284]
+              10  ??? (libdispatch.dylib + 105868) [0x1914d4d8c]
+                10  ??? (libdispatch.dylib + 111048) [0x1914d61c8]
+                  10  ??? (libdispatch.dylib + 29400) [0x1914c22d8]
+                    10  ??? (libdispatch.dylib + 15828) [0x1914bedd4]
+                      10  ??? (CoreServices + 237260) [0x1893efecc]
+                        10  ??? (CoreServices + 250788) [0x1893f33a4]
+                          10  ??? (CoreServices + 250584) [0x1893f32d8]
+                            10  ??? (CoreServices + 223304) [0x1893ec848]
+                              10  ??? (LocalStorageFileProvider + 159264) [0x104ae2e20]
+                                10  ??? (LocalStorageFileProvider + 160344) [0x104ae3258]
+                                  10  ??? (LocalStorageFileProvider + 162744) [0x104ae3bb8]
+                                    3   ??? (LocalStorageFileProvider + 176156) [0x104ae701c]
+                                      1   ??? (LocalStorageFileProvider + 393308) [0x104b1c05c]
+                                        1   ??? (Synapse + 66376) [0x1c2746348]
+                                          1   ??? (Synapse + 67032) [0x1c27465d8]
+                                            1   ??? (Synapse + 28356) [0x1c273cec4]
+                                              1   ??? (CSExattrCrypto + 9672) [0x22a3435c8]
+                                                1   ??? (CSExattrCrypto + 9072) [0x22a343370]
+                                                  1   ??? (CSExattrCrypto + 14456) [0x22a344878]
+                                                    1   ??? (libsystem_kernel.dylib + 61800) [0x1d1ac3168]
+                                      1   ??? (LocalStorageFileProvider + 385380) [0x104b1a164]
+                                        1   ??? (LocalStorageFileProvider + 59552) [0x104aca8a0]
+                                          1   ??? (Foundation + 999928) [0x18854d1f8]
+                                            1   ??? (Foundation + 1000100) [0x18854d2a4]
+                                              1   ??? (CoreFoundation + 870636) [0x1896968ec]
+                                                1   ??? (CoreFoundation + 870844) [0x1896969bc]
+                                                  1   ??? (CoreServicesInternal + 50352) [0x1884304b0]
+                                                    1   ??? (CoreServicesInternal + 7784) [0x188425e68]
+                                                      1   ??? (libsystem_kernel.dylib + 9416) [0x1d1ab64c8]
+                                      1   ??? (LocalStorageFileProvider + 384436) [0x104b19db4]
+                                        1   ??? (LocalStorageFileProvider + 64816) [0x104acbd30]
+                                          1   ??? (FileProvider + 809452) [0x1a7c419ec]
+                                            1   ??? (FileProvider + 285888) [0x1a7bc1cc0]
+                                              1   ??? (FileProvider + 285480) [0x1a7bc1b28]
+                                                1   ??? (libsystem_kernel.dylib + 7932) [0x1d1ab5efc]
+                                    2   ??? (LocalStorageFileProvider + 172560) [0x104ae6210]
+                                      2   ??? (LocalStorageFileProvider + 144088) [0x104adf2d8]
+                                        2   ??? (LocalStorageFileProvider + 4330760) [0x104edd508]
+                                          2   ??? (LocalStorageFileProvider + 8638504) [0x1052f9028]
+                                            2   ??? (FileProvider + 798588) [0x1a7c3ef7c]
+                                              2   ??? (LocalStorageFileProvider + 57692) [0x104aca15c]
+                                                2   ??? (LocalStorageFileProvider + 8667948) [0x10530032c]
+                                                  2   ??? (LocalStorageFileProvider + 8675856) [0x105302210]
+                                                    2   ??? (LocalStorageFileProvider + 8623908) [0x1052f5724]
+                                                      2   ??? (LocalStorageFileProvider + 4352988) [0x104ee2bdc]
+                                                        2   ??? (LocalStorageFileProvider + 4355300) [0x104ee34e4]
+                                                          2   ??? (LocalStorageFileProvider + 4329936) [0x104edd1d0]
+                                                            2   ??? (LocalStorageFileProvider + 9568800) [0x1053dc220]
+                                                              2   ??? (LocalStorageFileProvider + 8627644) [0x1052f65bc]
+                                                                2   ??? (LocalStorageFileProvider + 9610264) [0x1053e6418]
+                                                                  2   ??? (LocalStorageFileProvider + 9610452) [0x1053e64d4]
+                                                                    2   ??? (LocalStorageFileProvider + 9570924) [0x1053dca6c]
+                                                                      2   ??? (FileProvider + 794692) [0x1a7c3e044]
+                                                                        1   ??? (FileProvider + 311876) [0x1a7bc8244]
+                                                                          1   ??? (libsystem_kernel.dylib + 61624) [0x1d1ac30b8]
+                                                                        1   ??? (FileProvider + 311828) [0x1a7bc8214]
+                                                                          1   ??? (libsystem_kernel.dylib + 61624) [0x1d1ac30b8]
+                                    2   ??? (LocalStorageFileProvider + 175084) [0x104ae6bec]
+                                      1   ??? (LocalStorageFileProvider + 121024) [0x104ad98c0]
+                                        1   ??? (LocalStorageFileProvider + 384436) [0x104b19db4]
+                                          1   ??? (LocalStorageFileProvider + 64816) [0x104acbd30]
+                                            1   ??? (FileProvider + 809452) [0x1a7c419ec]
+                                              1   ??? (FileProvider + 286152) [0x1a7bc1dc8]
+                                                1   ??? (FileProvider + 808112) [0x1a7c414b0]
+                                                  1   ??? (libsystem_kernel.dylib + 61624) [0x1d1ac30b8]
+                                      1   ??? (LocalStorageFileProvider + 120072) [0x104ad9508]
+                                        1   ??? (LocalStorageFileProvider + 71168) [0x104acd600]
+                                          1   ??? (LocalStorageFileProvider + 70920) [0x104acd508]
+                                            1   ??? (LocalStorageFileProvider + 70616) [0x104acd3d8]
+                                              1   ??? (GenerationalStorage + 53768) [0x1d9cea208]
+                                                1   ??? (GenerationalStorage + 53328) [0x1d9cea050]
+                                                  1   ??? (GenerationalStorage + 52328) [0x1d9ce9c68]
+                                                    1   ??? (libsystem_kernel.dylib + 19016) [0x1d1ab8a48]
+                                    1   ??? (LocalStorageFileProvider + 176640) [0x104ae7200]
+                                      1   ??? (libobjc.A.dylib + 17464) [0x18155c438]
+                                        1   ??? (libobjc.A.dylib + 17552) [0x18155c490]
+                                          1   ??? (libobjc.A.dylib + 18268) [0x18155c75c]
+                                            1   ??? (LocalStorageFileProvider + 408000) [0x104b1f9c0]
+                                              1   ??? (LocalStorageFileProvider + 414660) [0x104b213c4]
+                                                1   ??? (CoreFoundation + 50512) [0x1895ce550]
+                                                  1   ??? (CoreFoundation + 54132) [0x1895cf374]
+                                                    1   ??? (CoreFoundation + 50512) [0x1895ce550]
+                                                      1   ??? (CoreServicesInternal + 23212) [0x188429aac]
+                                                        1   ??? (CoreServicesInternal + 23324) [0x188429b1c]
+                                                          1   ??? (CoreFoundation + 52996) [0x1895cef04]
+                                                            1   ??? (CoreFoundation + 28752) [0x1895c9050]
+                                    1   ??? (LocalStorageFileProvider + 172452) [0x104ae61a4]
+                                      1   ??? (Foundation + 645396) [0x1884f6914]
+                                        1   ??? (Foundation + 455320) [0x1884c8298]
+                                          1   ??? (libsystem_kernel.dylib + 9204) [0x1d1ab63f4]
+                                    1   ??? (LocalStorageFileProvider + 172008) [0x104ae5fe8]
+                                      1   ??? (LocalStorageFileProvider + 135108) [0x104adcfc4]
+                                        1   ??? (LocalStorageFileProvider + 71704) [0x104acd818]
+                                          1   ??? (LocalStorageFileProvider + 71468) [0x104acd72c]
+                                            1   ??? (FileProvider + 453536) [0x1a7beaba0]
+                                              1   ??? (FileProvider + 468968) [0x1a7bee7e8]
+                                                1   ??? (CoreFoundation + 208076) [0x1895f4ccc]
+                                                  1   ??? (FileProvider + 790552) [0x1a7c3d018]
+                                                    1   ??? (CoreFoundation + 210420) [0x1895f55f4]
+                                                      1   ??? (CoreFoundation + 202512) [0x1895f3710]
+                                                        1   ??? (CoreFoundation + 203908) [0x1895f3c84]
+                                                          1   ??? (CoreFoundation + 208076) [0x1895f4ccc]
+                                                            1   ??? (Foundation + 495644) [0x1884d201c]
+                                                              1   ??? (Foundation + 273616) [0x18849bcd0]
+                                                                1   ??? (Foundation + 275616) [0x18849c4a0]
+                                                                  1   ??? (Foundation + 140868) [0x18847b644]
+                                                                    1   ??? (Foundation + 141480) [0x18847b8a8]
+                                                                      1   ??? (Foundation + 132540) [0x1884795bc]
+                                                                        1   ??? (Foundation + 327616) [0x1884a8fc0]
+                                                                          1   ??? (Foundation + 131948) [0x18847936c]
+                                                                            1   ??? (Foundation + 132540) [0x1884795bc]
+                                                                              1   ??? (FileProvider + 172856) [0x1a7ba6338]
+                                                                                1   ??? (Foundation + 132540) [0x1884795bc]
+                                                                                  1   ??? (FileProvider + 496344) [0x1a7bf52d8]
+                                                                                    1   ??? (Foundation + 132192) [0x188479460]
+                                                                                      1   ??? (Foundation + 196700) [0x18848905c]
+                                                                                        1   ??? (libobjc.A.dylib + 15544) [0x18155bcb8]
+            1   ??? (libdispatch.dylib + 46080) [0x1914c6400]
+              1   ??? (libdispatch.dylib + 15828) [0x1914bedd4]
+                1   ??? (libdispatch.dylib + 8508) [0x1914bd13c]
+                  1   ??? (LocalStorageFileProvider + 158648) [0x104ae2bb8]
+                    1   ??? (LocalStorageFileProvider + 166432) [0x104ae4a20]
+                      1   ??? (Foundation + 499788) [0x1884d304c]
+                        1   ??? (Foundation + 501928) [0x1884d38a8]
+                          1   ??? (libsystem_kernel.dylib + 9204) [0x1d1ab63f4]
+                            1   <Kernel mode>
+
+  Binary Images:
+           0x104abc000 -                ???  com.apple.FileProvider.LocalStorage 1.0 (1) <FD659EAB-E34C-3A1D-A077-052D68C2BB94>  /System/Library/Frameworks/FileProvider.framework/PlugIns/LocalStorageFileProvider.appex/LocalStorageFileProvider
+           0x181558000 -        0x1815a5cc3  libobjc.A.dylib                             <412FD1F4-4107-3443-88EF-B3760778F6A7>  /usr/lib/libobjc.A.dylib
+           0x188424000 -        0x188458ffb  CoreServicesInternal                        <B54DE584-09DE-3A3C-A284-B2FAA7C25F48>  /System/Library/PrivateFrameworks/CoreServicesInternal.framework/CoreServicesInternal
+           0x188459000 -        0x188fe4fff  Foundation                                  <D92E19C1-6299-3E94-8614-C505D5ABCCDB>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1893b6000 -        0x1895c1fff  CoreServices                                <9BE4F970-0BF1-3FB2-84B2-5F0C0264D321>  /System/Library/Frameworks/CoreServices.framework/CoreServices
+           0x1895c2000 -        0x189aeffff  CoreFoundation                              <3A5F992A-D1CD-312E-BD2E-F7C66343A417>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1914bb000 -        0x191501fff  libdispatch.dylib                           <B7D9D0A6-2414-37F2-9D03-1A25A474E2CF>  /usr/lib/system/libdispatch.dylib
+           0x199777000 -        0x1997acfff  libsystem_malloc.dylib                      <A4FB6302-B859-3C3D-ABDF-CB9BF836CC1B>  /usr/lib/system/libsystem_malloc.dylib
+           0x1a7b7c000 -        0x1a7d11fff  FileProvider                                <8B431A72-F554-39EB-A6EF-4A519AC6C233>  /System/Library/Frameworks/FileProvider.framework/FileProvider
+           0x1c2736000 -        0x1c278cfff  Synapse                                     <6DCB902E-7F8A-3FC7-BC7F-F1D0F721AC3A>  /System/Library/PrivateFrameworks/Synapse.framework/Synapse
+           0x1d1ab4000 -        0x1d1aedfef  libsystem_kernel.dylib                      <DB493AF3-63B1-3220-9DD8-DD4F86BDDFC8>  /usr/lib/system/libsystem_kernel.dylib
+           0x1d9cdd000 -        0x1d9cfefff  GenerationalStorage                         <4BB38AAE-6EAF-305B-911A-BA772A474DC8>  /System/Library/PrivateFrameworks/GenerationalStorage.framework/GenerationalStorage
+           0x1e54f7000 -        0x1e5503fff  libsystem_pthread.dylib                     <A70C0DEF-058C-3CB0-9EC1-453AA7F39DF9>  /usr/lib/system/libsystem_pthread.dylib
+           0x22a341000 -        0x22a34efff  CSExattrCrypto                              <134F52B5-B67C-3850-96AA-4C4EE490B29B>  /System/Library/PrivateFrameworks/CSExattrCrypto.framework/CSExattrCrypto
+
+
+Powerstats for:   searchd
+UUID:             E8A63769-33E6-3662-9591-65CDE82EAB08
+Path:             /System/Library/PrivateFrameworks/Search.framework/searchd
+Resource Coalition ID: 387
+On Behalf Of:     8 samples LocalStorageFileProvider (LocalStorageFileProvider) [359] (8 samples originated by LocalStorageFileProvider (LocalStorageFileProvider) [359])
+Architecture:     arm64e
+Start time:       2024-06-03 14:23:21.349 -0500
+End time:         2024-06-03 14:24:32.502 -0500
+Num samples:      9 (11%)
+Primary state:    9 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified, e-core
+User Activity:    0 samples Idle, 9 samples Active
+Power Source:     9 samples on Battery, 0 samples on AC
+  9  ??? (libsystem_pthread.dylib + 8128) [0x1e54f8fc0]
+    8  ??? (libsystem_pthread.dylib + 7908) [0x1e54f8ee4]
+      8  ??? (libdispatch.dylib + 90268) [0x1914d109c]
+        8  ??? (libdispatch.dylib + 88212) [0x1914d0894]
+          8  ??? (libdispatch.dylib + 26868) [0x1914c18f4]
+            8  ??? (libdispatch.dylib + 29008) [0x1914c2150]
+              8  ??? (libdispatch.dylib + 48996) [0x1914c6f64]
+                8  ??? (libdispatch.dylib + 45700) [0x1914c6284]
+                  8  ??? (libdispatch.dylib + 48996) [0x1914c6f64]
+                    8  ??? (libdispatch.dylib + 46080) [0x1914c6400]
+                      8  ??? (libdispatch.dylib + 15828) [0x1914bedd4]
+                        8  ??? (libdispatch.dylib + 77404) [0x1914cde5c]
+                          8  ??? (MobileSpotlightIndex + 52600) [0x1bdc7cd78]
+                            7  ??? (MobileSpotlightIndex + 53880) [0x1bdc7d278]
+                              7  ??? (MobileSpotlightIndex + 807600) [0x1bdd352b0]
+                                7  ??? (MobileSpotlightIndex + 808104) [0x1bdd354a8]
+                                  7  ??? (MobileSpotlightIndex + 65248) [0x1bdc7fee0]
+                                    7  ??? (SpotlightDaemon + 134376) [0x206eb7ce8]
+                                      7  ??? (MobileSpotlightIndex + 893452) [0x1bdd4a20c]
+                                        7  ??? (MobileSpotlightIndex + 1709008) [0x1bde113d0]
+                                          6  ??? (MobileSpotlightIndex + 918576) [0x1bdd50430]
+                                            2  ??? (MobileSpotlightIndex + 219256) [0x1bdca5878]
+                                              2  ??? (MobileSpotlightIndex + 128984) [0x1bdc8f7d8]
+                                                2  ??? (CoreFoundation + 158380) [0x1895e8aac]
+                                                  1  ??? (MobileSpotlightIndex + 89144) [0x1bdc85c38]
+                                                    1  ??? [0x1c36ae830]
+                                                      1  <on behalf of LocalStorageFileProvider (LocalStorageFileProvider) [359] (originated by LocalStorageFileProvider (LocalStorageFileProvider) [359])>
+                                                  1  ??? (MobileSpotlightIndex + 88992) [0x1bdc85ba0]
+                                                    1  ??? (MobileSpotlightIndex + 91624) [0x1bdc865e8]
+                                                      1  ??? (MobileSpotlightIndex + 95176) [0x1bdc873c8]
+                                                        1  ??? (MobileSpotlightIndex + 97704) [0x1bdc87da8]
+                                                          1  <on behalf of LocalStorageFileProvider (LocalStorageFileProvider) [359] (originated by LocalStorageFileProvider (LocalStorageFileProvider) [359])>
+                                            2  ??? (MobileSpotlightIndex + 217636) [0x1bdca5224]
+                                              2  ??? (CoreFoundation + 155720) [0x1895e8048]
+                                                2  ??? (CoreFoundation + 217836) [0x1895f72ec]
+                                                  2  ??? (CoreFoundation + 224604) [0x1895f8d5c]
+                                                    1  ??? (MobileSpotlightIndex + 238232) [0x1bdcaa298]
+                                                      1  ??? (CoreFoundation + 469068) [0x18963484c]
+                                                        1  ??? (CoreFoundation + 29200) [0x1895c9210]
+                                                          1  <on behalf of LocalStorageFileProvider (LocalStorageFileProvider) [359] (originated by LocalStorageFileProvider (LocalStorageFileProvider) [359])>
+                                                    1  ??? (MobileSpotlightIndex + 237480) [0x1bdca9fa8]
+                                                      1  ??? (CoreFoundation + 27692) [0x1895c8c2c]
+                                                        1  <on behalf of LocalStorageFileProvider (LocalStorageFileProvider) [359] (originated by LocalStorageFileProvider (LocalStorageFileProvider) [359])>
+                                            2  ??? (MobileSpotlightIndex + 221852) [0x1bdca629c]
+                                              1  ??? (MobileSpotlightIndex + 118124) [0x1bdc8cd6c]
+                                                1  ??? (MobileSpotlightIndex + 159356) [0x1bdc96e7c]
+                                                  1  ??? (MobileSpotlightIndex + 2959308) [0x1bdf427cc]
+                                                    1  ??? (MobileSpotlightIndex + 2898172) [0x1bdf338fc]
+                                                      1  ??? (MobileSpotlightIndex + 3143172) [0x1bdf6f604]
+                                                        1  ??? (MobileSpotlightIndex + 2890356) [0x1bdf31a74]
+                                                          1  ??? (MobileSpotlightIndex + 2895404) [0x1bdf32e2c]
+                                                            1  ??? (libsystem_platform.dylib + 3872) [0x1e5442f20]
+                                                              1  <on behalf of LocalStorageFileProvider (LocalStorageFileProvider) [359] (originated by LocalStorageFileProvider (LocalStorageFileProvider) [359])>
+                                              1  ??? (MobileSpotlightIndex + 115240) [0x1bdc8c228]
+                                                1  ??? (MobileSpotlightIndex + 124080) [0x1bdc8e4b0]
+                                                  1  ??? (MobileSpotlightIndex + 180924) [0x1bdc9c2bc]
+                                                    1  ??? (MobileSpotlightIndex + 182644) [0x1bdc9c974]
+                                                      1  ??? (MobileSpotlightIndex + 182984) [0x1bdc9cac8]
+                                                        1  ??? (CoreFoundation + 9540) [0x1895c4544]
+                                                          1  ??? (CoreFoundation + 11076) [0x1895c4b44]
+                                                            1  ??? (CoreFoundation + 75600) [0x1895d4750]
+                                                              1  ??? (CoreFoundation + 28752) [0x1895c9050]
+                                                                1  <on behalf of LocalStorageFileProvider (LocalStorageFileProvider) [359] (originated by LocalStorageFileProvider (LocalStorageFileProvider) [359])>
+                                          1  ??? (MobileSpotlightIndex + 918244) [0x1bdd502e4]
+                                            1  ??? (MobileSpotlightIndex + 178212) [0x1bdc9b824]
+                                              1  ??? (CoreFoundation + 9664) [0x1895c45c0]
+                                                1  <on behalf of LocalStorageFileProvider (LocalStorageFileProvider) [359] (originated by LocalStorageFileProvider (LocalStorageFileProvider) [359])>
+                            1  ??? (MobileSpotlightIndex + 804508) [0x1bdd3469c]
+                              1  ??? (MobileSpotlightIndex + 812576) [0x1bdd36620]
+                                1  ??? (MobileSpotlightIndex + 1465652) [0x1bddd5d34]
+                                  1  ??? (MobileSpotlightIndex + 1473336) [0x1bddd7b38]
+                                    1  ??? (MobileSpotlightIndex + 1591884) [0x1bddf4a4c]
+                                      1  ??? (MobileSpotlightIndex + 1815680) [0x1bde2b480]
+                                        1  ??? (MobileSpotlightIndex + 2577144) [0x1bdee52f8]
+                                          1  ??? (libsystem_kernel.dylib + 13640) [0x1d1ab7548]
+    1  ??? (libsystem_pthread.dylib + 7968) [0x1e54f8f20]
+      1  ??? (libdispatch.dylib + 91432) [0x1914d1528]
+        1  ??? (libdispatch.dylib + 93364) [0x1914d1cb4]
+          1  ??? (libdispatch.dylib + 48996) [0x1914c6f64]
+            1  ??? (libdispatch.dylib + 46080) [0x1914c6400]
+              1  ??? (libdispatch.dylib + 15828) [0x1914bedd4]
+                1  ??? (libdispatch.dylib + 77404) [0x1914cde5c]
+                  1  ??? (SpotlightDaemon + 31672) [0x206e9ebb8]
+                    1  ??? (libdispatch.dylib + 154720) [0x1914e0c60]
+                      1  ??? (libdispatch.dylib + 156484) [0x1914e1344]
+                        1  ??? (libsystem_kernel.dylib + 9724) [0x1d1ab65fc]
+                          1  <on behalf of LocalStorageFileProvider (LocalStorageFileProvider) [359] (originated by LocalStorageFileProvider (LocalStorageFileProvider) [359])>
+
+  Binary Images:
+           0x10060c000 -        0x1006cbfff  searchd                  <E8A63769-33E6-3662-9591-65CDE82EAB08>  /System/Library/PrivateFrameworks/Search.framework/searchd
+           0x1895c2000 -        0x189aeffff  CoreFoundation           <3A5F992A-D1CD-312E-BD2E-F7C66343A417>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1914bb000 -        0x191501fff  libdispatch.dylib        <B7D9D0A6-2414-37F2-9D03-1A25A474E2CF>  /usr/lib/system/libdispatch.dylib
+           0x1bdc70000 -        0x1bdfc4fff  MobileSpotlightIndex     <AE82E959-FF3A-33F5-8493-85E591181BC5>  /System/Library/PrivateFrameworks/MobileSpotlightIndex.framework/MobileSpotlightIndex
+           0x1d1ab4000 -        0x1d1aedfef  libsystem_kernel.dylib   <DB493AF3-63B1-3220-9DD8-DD4F86BDDFC8>  /usr/lib/system/libsystem_kernel.dylib
+           0x1e5442000 -        0x1e5448feb  libsystem_platform.dylib <E29C0EE4-8118-3A92-BFF8-1C343F8885AD>  /usr/lib/system/libsystem_platform.dylib
+           0x1e54f7000 -        0x1e5503fff  libsystem_pthread.dylib  <A70C0DEF-058C-3CB0-9EC1-453AA7F39DF9>  /usr/lib/system/libsystem_pthread.dylib
+           0x206e97000 -        0x206f32fff  SpotlightDaemon          <C5A79532-FE30-3901-BC86-305B69671831>  /System/Library/PrivateFrameworks/SpotlightDaemon.framework/SpotlightDaemon
+
+
+Powerstats for:   pkd
+UUID:             0FB4FA38-7604-3538-A688-4B4E8E84CA9F
+Path:             /usr/libexec/pkd
+Resource Coalition ID: 277
+On Behalf Of:     5 samples UNKNOWN [67] (5 samples originated by UNKNOWN [247])
+Architecture:     arm64e
+Start time:       2024-06-03 14:24:10.470 -0500
+End time:         2024-06-03 14:24:17.282 -0500
+Num samples:      5 (6%)
+Primary state:    5 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified, e-core
+User Activity:    0 samples Idle, 5 samples Active
+Power Source:     5 samples on Battery, 0 samples on AC
+  5  ??? (libsystem_pthread.dylib + 8128) [0x1e54f8fc0]
+    5  ??? (libsystem_pthread.dylib + 7968) [0x1e54f8f20]
+      5  ??? (libdispatch.dylib + 91432) [0x1914d1528]
+        5  ??? (libdispatch.dylib + 93364) [0x1914d1cb4]
+          5  ??? (libdispatch.dylib + 48996) [0x1914c6f64]
+            5  ??? (libdispatch.dylib + 45700) [0x1914c6284]
+              5  ??? (libdispatch.dylib + 134480) [0x1914dbd50]
+                5  ??? (libdispatch.dylib + 45700) [0x1914c6284]
+                  5  ??? (libdispatch.dylib + 131072) [0x1914db000]
+                    5  ??? (libdispatch.dylib + 16020) [0x1914bee94]
+                      5  ??? (libxpc.dylib + 76240) [0x1e554d9d0]
+                        5  ??? (libxpc.dylib + 68996) [0x1e554bd84]
+                          5  ??? (<D3A7C958-1090-3AA9-B946-F53A27C74E12> + 103168) [0x100d05300]
+                            5  ??? (<D3A7C958-1090-3AA9-B946-F53A27C74E12> + 73768) [0x100cfe028]
+                              5  ??? (<D3A7C958-1090-3AA9-B946-F53A27C74E12> + 91064) [0x100d023b8]
+                                5  ??? (CoreFoundation + 218652) [0x1895f761c]
+                                  5  ??? (CoreFoundation + 219380) [0x1895f78f4]
+                                    5  ??? (<D3A7C958-1090-3AA9-B946-F53A27C74E12> + 94616) [0x100d03198]
+                                      5  ??? (<D3A7C958-1090-3AA9-B946-F53A27C74E12> + 44220) [0x100cf6cbc]
+                                        5  ??? (<D3A7C958-1090-3AA9-B946-F53A27C74E12> + 45044) [0x100cf6ff4]
+                                          5  ??? (<D3A7C958-1090-3AA9-B946-F53A27C74E12> + 46704) [0x100cf7670]
+                                            5  ??? (ExtensionFoundation + 90436) [0x198626144]
+                                              3  ??? (ExtensionFoundation + 90920) [0x198626328]
+                                                3  ??? (Foundation + 11156) [0x18845bb94]
+                                                  3  ??? (Foundation + 11568) [0x18845bd30]
+                                                    3  ??? (Foundation + 11920) [0x18845be90]
+                                                      3  ??? (Foundation + 794708) [0x18851b054]
+                                                        2  ??? (Foundation + 11156) [0x18845bb94]
+                                                          2  ??? (Foundation + 11568) [0x18845bd30]
+                                                            2  ??? (Foundation + 11920) [0x18845be90]
+                                                              2  ??? (Foundation + 794708) [0x18851b054]
+                                                                2  ??? (Foundation + 10248) [0x18845b808]
+                                                                  2  ??? (Foundation + 10592) [0x18845b960]
+                                                                    2  ??? (Foundation + 11156) [0x18845bb94]
+                                                                      2  ??? (Foundation + 11568) [0x18845bd30]
+                                                                        2  ??? (Foundation + 12084) [0x18845bf34]
+                                                                          1  ??? (Foundation + 16120) [0x18845cef8]
+                                                                            1  ??? (CoreFoundation + 19068) [0x1895c6a7c]
+                                                                              1  ??? (libsystem_c.dylib + 88356) [0x191517924]
+                                                                                1  ??? (CoreFoundation + 19204) [0x1895c6b04]
+                                                                                  1  ??? (CoreFoundation + 20304) [0x1895c6f50]
+                                                                                    1  ??? (CoreFoundation + 28276) [0x1895c8e74]
+                                                                                      1  ??? (CoreFoundation + 28976) [0x1895c9130]
+                                                                                        1  <on behalf of UNKNOWN [67] (originated by UNKNOWN [247])>
+                                                                          1  ??? (Foundation + 16032) [0x18845cea0]
+                                                                            1  ??? (CoreFoundation + 9224) [0x1895c4408]
+                                                                              1  ??? (CoreFoundation + 13008) [0x1895c52d0]
+                                                                                1  <on behalf of UNKNOWN [67] (originated by UNKNOWN [247])>
+                                                        1  ??? (Foundation + 10248) [0x18845b808]
+                                                          1  ??? (Foundation + 10740) [0x18845b9f4]
+                                                            1  ??? (Foundation + 11156) [0x18845bb94]
+                                                              1  ??? (Foundation + 11568) [0x18845bd30]
+                                                                1  ??? (Foundation + 11920) [0x18845be90]
+                                                                  1  ??? (Foundation + 794708) [0x18851b054]
+                                                                    1  ??? (Foundation + 10248) [0x18845b808]
+                                                                      1  ??? (Foundation + 10592) [0x18845b960]
+                                                                        1  ??? (Foundation + 11156) [0x18845bb94]
+                                                                          1  ??? (Foundation + 11568) [0x18845bd30]
+                                                                            1  ??? (Foundation + 12464) [0x18845c0b0]
+                                                                              1  ??? (Foundation + 15608) [0x18845ccf8]
+                                                                                1  ??? (Foundation + 18128) [0x18845d6d0]
+                                                                                  1  ??? (libobjc.A.dylib + 29760) [0x18155f440]
+                                                                                    1  ??? (dyld + 12236) [0x1acb13fcc]
+                                                                                      1  ??? (dyld + 8552) [0x1acb13168]
+                                                                                        1  <on behalf of UNKNOWN [67] (originated by UNKNOWN [247])>
+                                              2  ??? (ExtensionFoundation + 90724) [0x198626264]
+                                                2  ??? (ExtensionFoundation + 84864) [0x198624b80]
+                                                  2  ??? (ExtensionFoundation + 85412) [0x198624da4]
+                                                    1  ??? (ExtensionFoundation + 92788) [0x198626a74]
+                                                      1  ??? (Foundation + 794708) [0x18851b054]
+                                                        1  ??? (Foundation + 11156) [0x18845bb94]
+                                                          1  ??? (Foundation + 11568) [0x18845bd30]
+                                                            1  ??? (Foundation + 11920) [0x18845be90]
+                                                              1  ??? (Foundation + 794708) [0x18851b054]
+                                                                1  ??? (Foundation + 10248) [0x18845b808]
+                                                                  1  ??? (Foundation + 10592) [0x18845b960]
+                                                                    1  ??? (libobjc.A.dylib + 15428) [0x18155bc44]
+                                                                      1  <on behalf of UNKNOWN [67] (originated by UNKNOWN [247])>
+                                                    1  ??? (ExtensionFoundation + 92748) [0x198626a4c]
+                                                      1  ??? (ExtensionFoundation + 93156) [0x198626be4]
+                                                        1  ??? (ExtensionFoundation + 85252) [0x198624d04]
+                                                          1  ??? (ExtensionFoundation + 85412) [0x198624da4]
+                                                            1  ??? (ExtensionFoundation + 92788) [0x198626a74]
+                                                              1  ??? (Foundation + 794708) [0x18851b054]
+                                                                1  ??? (Foundation + 11236) [0x18845bbe4]
+                                                                  1  ??? (Foundation + 20272) [0x18845df30]
+                                                                    1  ??? (Foundation + 7205496) [0x188b38278]
+                                                                      1  ??? (CoreServices + 181108) [0x1893e2374]
+                                                                        1  ??? (CoreServices + 196540) [0x1893e5fbc]
+                                                                          1  ??? (CoreFoundation + 149952) [0x1895e69c0]
+                                                                            1  <on behalf of UNKNOWN [67] (originated by UNKNOWN [247])>
+
+  Binary Images:
+           0x100c90000 -                ???  pkd                     <0FB4FA38-7604-3538-A688-4B4E8E84CA9F>  /usr/libexec/pkd
+           0x100cec000 -                ???  ???                     <D3A7C958-1090-3AA9-B946-F53A27C74E12>
+           0x181558000 -        0x1815a5cc3  libobjc.A.dylib         <412FD1F4-4107-3443-88EF-B3760778F6A7>  /usr/lib/libobjc.A.dylib
+           0x188459000 -        0x188fe4fff  Foundation              <D92E19C1-6299-3E94-8614-C505D5ABCCDB>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1893b6000 -        0x1895c1fff  CoreServices            <9BE4F970-0BF1-3FB2-84B2-5F0C0264D321>  /System/Library/Frameworks/CoreServices.framework/CoreServices
+           0x1895c2000 -        0x189aeffff  CoreFoundation          <3A5F992A-D1CD-312E-BD2E-F7C66343A417>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1914bb000 -        0x191501fff  libdispatch.dylib       <B7D9D0A6-2414-37F2-9D03-1A25A474E2CF>  /usr/lib/system/libdispatch.dylib
+           0x191502000 -        0x19157ffff  libsystem_c.dylib       <3B5201C5-15D0-335F-A91D-0C63E1F6C6DC>  /usr/lib/system/libsystem_c.dylib
+           0x198610000 -        0x1986cafff  ExtensionFoundation     <6A8C5849-CC04-3D5C-B72A-5CD62C9A625D>  /System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation
+           0x1acb11000 -        0x1acb9dbe3  dyld                    <7BE2B757-3B3D-3E91-8CB7-74F3887660C7>  /usr/lib/dyld
+           0x1e54f7000 -        0x1e5503fff  libsystem_pthread.dylib <A70C0DEF-058C-3CB0-9EC1-453AA7F39DF9>  /usr/lib/system/libsystem_pthread.dylib
+           0x1e553b000 -        0x1e5582fff  libxpc.dylib            <042EA33B-3C8F-3FB8-869C-369A3115977C>  /usr/lib/system/libxpc.dylib
