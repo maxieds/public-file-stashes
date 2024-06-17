@@ -1,5 +1,3 @@
-# Useful clues / hints to interface with an Android device
-
 ## Obtaining extra information with `fastboot` or `adb`
 
 The phone can be put into a mode that will accept `fastboot` 
