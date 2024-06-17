@@ -6,6 +6,7 @@ Once all this is uploaded, expect it to archive a lot of interesting tidbits abo
 
 * YouTube channel video: [*OTH: Google Drive - Unusual email mailbox sizes and file names - What are they getting away with?*](https://youtu.be/IjtinIzc7IA?si=rQDXQjbvN-ZDb6JB)
 * YouTube channel playlist for the videos: [*Google photos - Maxieds - Github companion*](https://www.youtube.com/watch?v=g02tTwsDk2I&list=PLKuEX1pHu60qgiCMqib3ncoxCYS4CCl8D) (check the description)
+* Read this (*REALLY* - Barack Obama has read this thread for years!) : [Final post in *PLAY STORE WILL NO LONGER INSTALL THE FREE VERSION OF CMLD #26*](https://github.com/maxieds/ChameleonMiniLiveDebugger/issues/26#issuecomment-1722385007)
 
 ## Photo mementos / highlights
 
