@@ -5,7 +5,7 @@ Once all this is uploaded, expect it to archive a lot of interesting tidbits abo
 ## Other related links
 
 * YouTube channel video: [*OTH: Google Drive - Unusual email mailbox sizes and file names - What are they getting away with?*](https://youtu.be/IjtinIzc7IA?si=rQDXQjbvN-ZDb6JB)
-* YouTube channel playlist for the videos: [*Google photos - Maxieds - Github companion*](https://www.youtube.com/watch?v=g02tTwsDk2I&list=PLKuEX1pHu60qgiCMqib3ncoxCYS4CCl8D) (check the description)
+* YouTube channel playlist for the videos: [*Google photos - Maxieds - Github companion*](https://www.youtube.com/watch?v=g02tTwsDk2I&list=PLKuEX1pHu60qgiCMqib3ncoxCYS4CCl8D) (check the description). I have more photos and videos saved on old phones - some of them need an expert to recover them after ransomeware was installed on a NOKIA flip phone bought after Highlands (prison in Bogota) at the Pensacola International Airport before a flight on a military aircraft into Tel Aviv UNICEF (Argentina pretty childrens artwork to honor post-Holocaust destruction). How was I tracked there on a Space Force aircraft flying with FBI and Liz Cheney? Elon Musk and [problematic SpaceX surveillance](https://github.com/maxieds/public-file-stashes/blob/main/_project/AGO-COMPONENT-RADIO-EXTNET.md) are likely!
 * Read this (*REALLY* - Barack Obama has read this thread for years!) : [Final post in *PLAY STORE WILL NO LONGER INSTALL THE FREE VERSION OF CMLD #26*](https://github.com/maxieds/ChameleonMiniLiveDebugger/issues/26#issuecomment-1722385007)
 
 ## Photo mementos / highlights
