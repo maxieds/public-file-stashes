@@ -1,4 +1,4 @@
-# Obtaining extra information with `fastboot` or `adb`
+## Obtaining extra information with `fastboot` or `adb`
 
 The phone can be put into a mode that will accept `fastboot` 
 commands over a USB connection by powering the device on with 
@@ -78,4 +78,28 @@ $ adb shell content query --uri content://com.myapp.authority/path
 $ adb shell ls -laR
 $ adb push <LOCAL-FILE-PATH> <REMOTE-FILE-PATH>
 $ adb pull <REMOTE-FILE-PATH> <LOCAL-FILE-PATH>
+```
+
+## More detailed information about the phone software and hardware (Android Go)
+
+### Limited (non-root) command line output with Qute
+
+```bash
+$ pm get-moduleinfo --all
+$ service list
+# ... highlights include: 
+user, uri_grants, servicediscovery, searc, role, netstats, midi, 
+media_session, media_router, lights, mms, dropbox,dreams, 
+device_policy, device_identifiers, audio, biometric, storagestats
+$ getprop/setprop
+# ... highlights include:
+wifi_direct, persist.*, persist.radio.stk.commandqualifier, 
+init.svc.usbd, init.svc.sprd_network_control, 
+init.svc.cmd_services, init.svc.audio_server
+```
+
+### Commands interpreted by the device (how to invoke this is unclear - apparent MMS / MMC / MMI interface over covert always watching eye on bluetooth-USB-WIFI-celldata)
+
+```bash
+svc, appops, pwctl, ss, fuse, apr, netmon,  ylog_cli, ylogctl, ss, cmd-l
 ```

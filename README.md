@@ -21,6 +21,11 @@ A message about the recent VR topics getting so much news recently:
 I think this is all sadly related. The question is what precisely is it that they (far right extremists) mean by the coining of the term 
 VR (most likely some code like the usage of someone versus somebody)?
 
+## Key branches
+
+* [`chimerax-datamine-apkzips` branch](https://github.com/maxieds/public-file-stashes/tree/chimerax-datamine-apkzips): *Hello, again, [Miss Cheney](https://github.com/maxieds/public-file-stashes/tree/main/image-gallery-collections/abq-sandia-lizcheney-sms-session-musk-twitter-buyout)!* The book *Hacks, Leaks, and Revelations* by Micah Lee was recently mentioned on the [2600 Off the Hook](https://www.2600.com/offthehook/) podcast. This book gives a more beginner centric introduction to mining these datasets (APKs that can be unzipped to extract hidden metadata, like [this interesting app heirarchy](https://github.com/maxieds/public-file-stashes/blob/chimerax-datamine-apkzips/androidgo/privapp-apk-res-partial-metadata-coarsely-org/xml/romanesco_backup_contacts_blacklist_account_types.txt2) - Blue/Black Tooth(Berry)/Trees, anyone? - or [this directory](https://github.com/maxieds/public-file-stashes/tree/chimerax-datamine-apkzips/androidgo/privapp-apk-res-partial-metadata-coarsely-org)). There are free PDF copies available on [the website](https://hacksandleaks.com/). 
+* [`androidgo-system-dirs-full` branch](https://github.com/maxieds/public-file-stashes/tree/androidgo-system-dirs-full): *SHOULD* be deprecated, and superceded by `main`
+
 ## Misc links pinned to Github profile
 
 * [Github/maxieds ChameleonMiniLiveDebugger issue &num;26 last post](https://github.com/maxieds/ChameleonMiniLiveDebugger/issues/26#issuecomment-1722385007)

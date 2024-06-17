@@ -1,0 +1,259 @@
+{"app_name":"com.apple.WebKit.Networking","timestamp":"2024-04-06 12:35:56.00 -0500","slice_uuid":"955D019B-5F9C-3359-8BB1-E991FE2A3E16","build_version":"8618.1.15.10.15","bundleID":"com.apple.WebKit.Networking","duration_ms":"1920121","share_with_app_devs":0,"is_first_party":0,"bug_type":"145","os_version":"iPhone OS 17.4.1 (21E236)","roots_installed":0,"name":"com.apple.WebKit.Networking","incident_id":"876C3C1A-3B65-4040-9EF0-816E98339FC5"}
+Date/Time:        2024-04-06 12:03:53.535 -0500
+End time:         2024-04-06 12:35:53.656 -0500
+OS Version:       iPhone OS 17.4.1 (Build 21E236)
+Architecture:     arm64e
+Report Version:   47
+Incident Identifier: 876C3C1A-3B65-4040-9EF0-816E98339FC5
+
+Data Source:      Microstackshots
+Shared Cache:     4E332692-1EF9-3123-A66E-EA24850AE920 slid base address 0x18c02c000, slide 0xc02c000
+
+Command:          com.apple.WebKit.Networking
+Path:             /System/Library/ExtensionKit/Extensions/NetworkingExtension.appex/com.apple.WebKit.Networking
+Identifier:       com.apple.WebKit.Networking
+Version:          ??? (8618.1.15.10.15)
+Resource Coalition ID: 606
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+PID:              33380
+
+Event:            disk writes
+Action taken:     none
+Writes:           4294.97 MB of file backed memory dirtied over 1920 seconds (2236.82 KB per second average), exceeding limit of 49.71 KB per second over 86400 seconds
+Writes limit:     4294.97 MB
+Limit duration:   86400s
+Writes caused:    4294.97 MB
+Writes duration:  1920s
+Duration:         1920.12s
+Duration Sampled: 1918.19s
+Steps:            860 (10.49 MB/step)
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+Time Since Boot:  599674s
+Time Awake Since Boot: 319460s
+Time Since Wake:  284s
+
+Total CPU Time:   432.852s
+Advisory levels:  Battery -> 2, User -> 3, ThermalPressure -> 0, Combined -> 2
+Free disk space:  2065.25 MB/59.59 GB, low space threshold 150 MB
+Vnodes Available: 67.50% (13500/20000, 10000 allocated, 10000 soft limit)
+
+Preferred User Language: en-US
+Country Code:     US
+Keyboards:        en_US QWERTZ, en_US QWERTY
+OS Cryptex File Extents: 4298
+
+Heaviest stack for the target process:
+  418  ??? (libsystem_pthread.dylib + 8128) [0x1f00b4fc0]
+  417  ??? (libsystem_pthread.dylib + 7908) [0x1f00b4ee4]
+  417  ??? (libdispatch.dylib + 90268) [0x19c08d09c]
+  417  ??? (libdispatch.dylib + 88212) [0x19c08c894]
+  417  ??? (libdispatch.dylib + 28524) [0x19c07df6c]
+  417  ??? (libdispatch.dylib + 15828) [0x19c07add4]
+  417  ??? (libdispatch.dylib + 209996) [0x19c0aa44c]
+  417  ??? (libsystem_kernel.dylib + 60084) [0x1dc67eab4]
+
+
+Powerstats for:   com.apple.WebKit.Networking (NetworkingExtension) [33380]
+UUID:             955D019B-5F9C-3359-8BB1-E991FE2A3E16
+Path:             /System/Library/ExtensionKit/Extensions/NetworkingExtension.appex/com.apple.WebKit.Networking
+Identifier:       com.apple.WebKit.Networking
+Version:          ??? (8618.1.15.10.15)
+Resource Coalition ID: 606
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+UID:              501
+Footprint:        20.38 MB -> 21.84 MB (+1504 KB)
+Pageins:          1041 pages
+Start time:       2024-04-06 12:03:54.272 -0500
+End time:         2024-04-06 12:35:52.462 -0500
+Num samples:      418 (49%)
+Num threads:      6
+Primary state:    417 samples Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated, Override Thread QoS Unspecified, e-core
+User Activity:    0 samples Idle, 418 samples Active
+Power Source:     418 samples on Battery, 0 samples on AC
+  418  ??? (libsystem_pthread.dylib + 8128) [0x1f00b4fc0]
+    417  ??? (libsystem_pthread.dylib + 7908) [0x1f00b4ee4]
+      417  ??? (libdispatch.dylib + 90268) [0x19c08d09c]
+        417  ??? (libdispatch.dylib + 88212) [0x19c08c894]
+          417  ??? (libdispatch.dylib + 28524) [0x19c07df6c]
+            417  ??? (libdispatch.dylib + 15828) [0x19c07add4]
+              417  ??? (libdispatch.dylib + 209996) [0x19c0aa44c]
+                417  ??? (libsystem_kernel.dylib + 60084) [0x1dc67eab4]
+                  18   <p-core>
+    1    ??? (libsystem_pthread.dylib + 7968) [0x1f00b4f20]
+      1    ??? (libdispatch.dylib + 91432) [0x19c08d528]
+        1    ??? (libdispatch.dylib + 93364) [0x19c08dcb4]
+          1    ??? (libdispatch.dylib + 48944) [0x19c082f30]
+            1    ??? (libdispatch.dylib + 46080) [0x19c082400]
+              1    ??? (libdispatch.dylib + 15828) [0x19c07add4]
+                1    ??? (JavaScriptCore + 737568) [0x1aa29c120]
+                  1    ??? (WebKit + 2288068) [0x1a95399c4]
+                    1    ??? (WebKit + 2295136) [0x1a953b560]
+                      1    ??? (WebKit + 2320656) [0x1a9541910]
+                        1    ??? (WebKit + 5329244) [0x1a982015c]
+                          1    ??? (WebKit + 5504960) [0x1a984afc0]
+                            1    ??? (WebKit + 5501904) [0x1a984a3d0]
+                              1    ??? (WebCore + 35591124) [0x1a88a53d4]
+                                1    ??? (WebCore + 35593076) [0x1a88a5b74]
+                                  1    ??? (WebCore + 35593576) [0x1a88a5d68]
+                                    1    ??? (libsqlite3.dylib + 36204) [0x1bde65d6c]
+                                      1    ??? (libsqlite3.dylib + 37216) [0x1bde66160]
+                                        1    ??? (libsqlite3.dylib + 39644) [0x1bde66adc]
+                                          1    ??? (libsqlite3.dylib + 49720) [0x1bde69238]
+                                            1    ??? (libsqlite3.dylib + 53572) [0x1bde6a144]
+                                              1    ??? (libsqlite3.dylib + 726220) [0x1bdf0e4cc]
+                                                1    ??? (libsqlite3.dylib + 73232) [0x1bde6ee10]
+                                                  1    ??? (libsqlite3.dylib + 73936) [0x1bde6f0d0]
+                                                    1    ??? (libsqlite3.dylib + 647936) [0x1bdefb300]
+                                                      1    ??? (libsqlite3.dylib + 90860) [0x1bde732ec]
+                                                        1    ??? (libsqlite3.dylib + 95564) [0x1bde7454c]
+                                                          1    ??? (libsqlite3.dylib + 99668) [0x1bde75554]
+                                                            1    <Effective Thread QoS Default, Requested Thread QoS Default, p-core>
+
+  Binary Images:
+           0x10086c000 -                ???  com.apple.WebKit.Networking (8618.1.15.10.15) <955D019B-5F9C-3359-8BB1-E991FE2A3E16>  /System/Library/ExtensionKit/Extensions/NetworkingExtension.appex/com.apple.WebKit.Networking
+           0x19c077000 -        0x19c0bdfff  libdispatch.dylib                             <B7D9D0A6-2414-37F2-9D03-1A25A474E2CF>  /usr/lib/system/libdispatch.dylib
+           0x1a66b4000 -        0x1a930afff  WebCore                                       <BA9E2E14-EF62-345F-A9B0-56D21B62E8B3>  /System/Library/PrivateFrameworks/WebCore.framework/WebCore
+           0x1a930b000 -        0x1aa1e7fff  WebKit                                        <88612A15-F057-343D-B209-D7E518E3C90E>  /System/Library/Frameworks/WebKit.framework/WebKit
+           0x1aa1e8000 -        0x1ab953f1f  JavaScriptCore                                <05EA2199-9E02-38DE-A861-DB68C3407B98>  /System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore
+           0x1bde5d000 -        0x1bdfdeffb  libsqlite3.dylib                              <2FE5663E-F7FA-3AE5-9E0C-BF57F2ABF2EC>  /usr/lib/libsqlite3.dylib
+           0x1dc670000 -        0x1dc6a9fef  libsystem_kernel.dylib                        <DB493AF3-63B1-3220-9DD8-DD4F86BDDFC8>  /usr/lib/system/libsystem_kernel.dylib
+           0x1f00b3000 -        0x1f00bffff  libsystem_pthread.dylib                       <A70C0DEF-058C-3CB0-9EC1-453AA7F39DF9>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   Spotify
+UUID:             08B4F36D-62E0-31FA-B595-FE12F601B1DA
+Path:             /private/var/containers/Bundle/Application/73A22966-AD38-4F61-B13E-88C9D37709C3/Spotify.app/Spotify
+Identifier:       com.spotify.client
+Version:          8.9.10 (891000606)
+Adam ID:          324684580
+Is First Party:   No
+Beta Identifier:  4865A38E-667D-484A-B07B-9AE601873958
+Resource Coalition ID: 633
+Architecture:     arm64
+Start time:       2024-04-06 12:03:56.297 -0500
+End time:         2024-04-06 12:22:37.617 -0500
+Num samples:      430 (50%)
+Primary state:    426 samples Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS Default, Override Thread QoS Unspecified, p-core
+User Activity:    0 samples Idle, 430 samples Active
+Power Source:     430 samples on Battery, 0 samples on AC
+  426  ??? (libsystem_pthread.dylib + 8140) [0x1f00b4fcc]
+    426  ??? (libsystem_pthread.dylib + 10896) [0x1f00b5a90]
+      417  ??? (Spotify + 3702140) [0x104cdbd7c]
+        417  ??? (Spotify + 2464952) [0x104badcb8]
+          417  ??? (Spotify + 462712) [0x1049c4f78]
+            416  ??? (Spotify + 76312656) [0x10921b050]
+              416  ??? (Spotify + 76318580) [0x10921c774]
+                416  ??? (Spotify + 76314364) [0x10921b6fc]
+                  416  ??? (Spotify + 76313384) [0x10921b328]
+                    416  ??? (Spotify + 76310700) [0x10921a8ac]
+                      415  ??? (Spotify + 36347756) [0x106bfdf6c]
+                        415  ??? (Spotify + 73372408) [0x108f4d2f8]
+                          415  ??? (Spotify + 8542432) [0x1051798e0]
+                            415  ??? (Spotify + 9294992) [0x105231490]
+                              415  ??? (libsystem_kernel.dylib + 9680) [0x1dc6725d0]
+                                199  <e-core>
+                      1    ??? (Spotify + 36347808) [0x106bfdfa0]
+                        1    ??? (Spotify + 73372408) [0x108f4d2f8]
+                          1    ??? (Spotify + 8542432) [0x1051798e0]
+                            1    ??? (Spotify + 9294992) [0x105231490]
+                              1    ??? (libsystem_kernel.dylib + 9680) [0x1dc6725d0]
+                                1    <e-core>
+            1    ??? (Spotify + 2370836) [0x104b96d14]
+              1    ??? (Spotify + 2370520) [0x104b96bd8]
+                1    ??? (Spotify + 6945516) [0x104ff3aec]
+                  1    ??? (Spotify + 6269800) [0x104f4eb68]
+                    1    ??? (Spotify + 8542432) [0x1051798e0]
+                      1    ??? (Spotify + 9294992) [0x105231490]
+                        1    ??? (libsystem_kernel.dylib + 9680) [0x1dc6725d0]
+      9    ??? (Foundation + 641692) [0x1930b1a9c]
+        9    ??? (Spotify + 427056) [0x1049bc430]
+          9    ??? (Foundation + 177320) [0x1930404a8]
+            9    ??? (CoreFoundation + 211304) [0x1941b1968]
+              9    ??? (CoreFoundation + 212360) [0x1941b1d88]
+                9    ??? (CoreFoundation + 217176) [0x1941b3058]
+                  9    ??? (CoreFoundation + 223400) [0x1941b48a8]
+                    9    ??? (CoreFoundation + 226860) [0x1941b562c]
+                      9    ??? (Foundation + 869936) [0x1930e9630]
+                        9    ??? (Spotify + 499880) [0x1049ce0a8]
+                          9    ??? (Spotify + 499776) [0x1049ce040]
+                            9    ??? (Spotify + 463020) [0x1049c50ac]
+                              9    ??? (Spotify + 499708) [0x1049cdffc]
+                                9    ??? (Spotify + 3301232) [0x104c79f70]
+                                  9    ??? (Spotify + 2378032) [0x104b98930]
+                                    6    ??? (Spotify + 2373644) [0x104b9780c]
+                                      6    ??? (Spotify + 2371868) [0x104b9711c]
+                                        4    ??? (Spotify + 23618880) [0x105fda540]
+                                          3    ??? (Spotify + 23617260) [0x105fd9eec]
+                                            3    ??? (Spotify + 5187476) [0x104e46794]
+                                              3    ??? (Spotify + 4685880) [0x104dcc038]
+                                                3    ??? (libsystem_kernel.dylib + 9680) [0x1dc6725d0]
+                                          1    ??? (Spotify + 23617276) [0x105fd9efc]
+                                            1    ??? (Spotify + 5187476) [0x104e46794]
+                                              1    ??? (Spotify + 4685880) [0x104dcc038]
+                                                1    ??? (libsystem_kernel.dylib + 9680) [0x1dc6725d0]
+                                        2    ??? (Spotify + 23618984) [0x105fda5a8]
+                                          2    ??? (Spotify + 5187476) [0x104e46794]
+                                            2    ??? (Spotify + 4685880) [0x104dcc038]
+                                              2    ??? (libsystem_kernel.dylib + 9680) [0x1dc6725d0]
+                                    1    ??? (Spotify + 2373388) [0x104b9770c]
+                                      1    ??? (Spotify + 7691708) [0x1050a9dbc]
+                                        1    ??? (Spotify + 3610320) [0x104cc56d0]
+                                          1    ??? (libsystem_kernel.dylib + 9680) [0x1dc6725d0]
+                                    1    ??? (Spotify + 2373324) [0x104b976cc]
+                                      1    ??? (Spotify + 7691708) [0x1050a9dbc]
+                                        1    ??? (Spotify + 3610320) [0x104cc56d0]
+                                          1    ??? (libsystem_kernel.dylib + 9680) [0x1dc6725d0]
+                                    1    ??? (Spotify + 2373260) [0x104b9768c]
+                                      1    ??? (Spotify + 7691380) [0x1050a9c74]
+                                        1    ??? (Spotify + 9286452) [0x10522f334]
+                                          1    ??? (Spotify + 4685880) [0x104dcc038]
+                                            1    ??? (libsystem_kernel.dylib + 9680) [0x1dc6725d0]
+  4    ??? (libsystem_pthread.dylib + 8128) [0x1f00b4fc0]
+    4    ??? (libsystem_pthread.dylib + 7968) [0x1f00b4f20]
+      4    ??? (libdispatch.dylib + 91432) [0x19c08d528]
+        4    ??? (libdispatch.dylib + 93364) [0x19c08dcb4]
+          4    ??? (libdispatch.dylib + 48996) [0x19c082f64]
+            4    ??? (libdispatch.dylib + 46080) [0x19c082400]
+              4    ??? (libdispatch.dylib + 15828) [0x19c07add4]
+                4    ??? (libdispatch.dylib + 77404) [0x19c089e5c]
+                  2    ??? (CFNetwork + 498660) [0x19532fbe4]
+                    2    ??? (CFNetwork + 1639888) [0x1954465d0]
+                      2    ??? (libsqlite3.dylib + 35080) [0x1bde65908]
+                        1    ??? (libsqlite3.dylib + 180864) [0x1bde89280]
+                          1    ??? (libsqlite3.dylib + 314616) [0x1bdea9cf8]
+                            1    ??? (libsqlite3.dylib + 524280) [0x1bdedcff8]
+                              1    ??? (libsqlite3.dylib + 1067760) [0x1bdf61af0]
+                                1    ??? (libsqlite3.dylib + 386060) [0x1bdebb40c]
+                                  1    ??? (libsqlite3.dylib + 313608) [0x1bdea9908]
+                                    1    ??? (libsystem_kernel.dylib + 63516) [0x1dc67f81c]
+                                      1    <Effective Thread QoS Utility, Requested Thread QoS Utility, e-core>
+                        1    ??? (libsqlite3.dylib + 179328) [0x1bde88c80]
+                          1    ??? (libsqlite3.dylib + 224516) [0x1bde93d04]
+                            1    ??? (libsqlite3.dylib + 89204) [0x1bde72c74]
+                              1    ??? (libsqlite3.dylib + 248132) [0x1bde99944]
+                                1    ??? (libsqlite3.dylib + 249212) [0x1bde99d7c]
+                                  1    ??? (libsqlite3.dylib + 312872) [0x1bdea9628]
+                                    1    ??? (libsqlite3.dylib + 636276) [0x1bdef8574]
+                                      1    ??? (libsqlite3.dylib + 313608) [0x1bdea9908]
+                                        1    ??? (libsystem_kernel.dylib + 63516) [0x1dc67f81c]
+                                          1    <Effective Thread QoS Utility, Requested Thread QoS Utility, e-core>
+                  2    ??? (CFNetwork + 496508) [0x19532f37c]
+                    2    ??? (libsystem_kernel.dylib + 9680) [0x1dc6725d0]
+                      2    <Effective Thread QoS Utility, Requested Thread QoS Utility, e-core>
+
+  Binary Images:
+           0x104954000 -                ???  com.spotify.client 8.9.10 (891000606) <08B4F36D-62E0-31FA-B595-FE12F601B1DA>  /private/var/containers/Bundle/Application/73A22966-AD38-4F61-B13E-88C9D37709C3/Spotify.app/Spotify
+           0x193015000 -        0x193ba0fff  Foundation                            <D92E19C1-6299-3E94-8614-C505D5ABCCDB>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x19417e000 -        0x1946abfff  CoreFoundation                        <3A5F992A-D1CD-312E-BD2E-F7C66343A417>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1952b6000 -        0x195692fff  CFNetwork                             <A0DA81AF-6773-3A72-A9A5-264F31047A16>  /System/Library/Frameworks/CFNetwork.framework/CFNetwork
+           0x19c077000 -        0x19c0bdfff  libdispatch.dylib                     <B7D9D0A6-2414-37F2-9D03-1A25A474E2CF>  /usr/lib/system/libdispatch.dylib
+           0x1bde5d000 -        0x1bdfdeffb  libsqlite3.dylib                      <2FE5663E-F7FA-3AE5-9E0C-BF57F2ABF2EC>  /usr/lib/libsqlite3.dylib
+           0x1dc670000 -        0x1dc6a9fef  libsystem_kernel.dylib                <DB493AF3-63B1-3220-9DD8-DD4F86BDDFC8>  /usr/lib/system/libsystem_kernel.dylib
+           0x1f00b3000 -        0x1f00bffff  libsystem_pthread.dylib               <A70C0DEF-058C-3CB0-9EC1-453AA7F39DF9>  /usr/lib/system/libsystem_pthread.dylib

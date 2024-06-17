@@ -1,0 +1,78 @@
+{"is_simulated":1,"app_name":"ScreenshotServicesService","timestamp":"2024-04-13 18:25:53.00 -0500","app_version":"1.0","slice_uuid":"e7031f82-6833-3aea-b98c-253807979582","build_version":"1","platform":2,"bundleID":"com.apple.ScreenshotServicesService","share_with_app_devs":0,"is_first_party":1,"bug_type":"308","os_version":"iPhone OS 17.4.1 (21E236)","roots_installed":0,"name":"ScreenshotServicesService","incident_id":"39B79D1A-3993-43D4-97AE-64E58BEACBE4"}
+{
+  "uptime" : 130000,
+  "procRole" : "Unspecified",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "iPad12,1",
+  "coalitionID" : 652,
+  "osVersion" : {
+    "isEmbedded" : true,
+    "train" : "iPhone OS 17.4.1",
+    "releaseType" : "User",
+    "build" : "21E236"
+  },
+  "captureTime" : "2024-04-13 18:25:52.9804 -0500",
+  "codeSigningMonitor" : 1,
+  "incident" : "39B79D1A-3993-43D4-97AE-64E58BEACBE4",
+  "pid" : 6954,
+  "cpuType" : "ARM-64",
+  "roots_installed" : 0,
+  "bug_type" : "308",
+  "procStartAbsTime" : 1448526175581,
+  "procName" : "ScreenshotServicesService",
+  "procPath" : "\/Applications\/ScreenshotServicesService.app\/ScreenshotServicesService",
+  "bundleInfo" : {"CFBundleShortVersionString":"1.0","CFBundleVersion":"1","CFBundleIdentifier":"com.apple.ScreenshotServicesService"},
+  "storeInfo" : {"deviceIdentifierForVendor":"54201328-79A5-4847-A3AE-2864C133CDEC"},
+  "parentPid" : 1,
+  "coalitionName" : "com.apple.ScreenshotServicesService",
+  "crashReporterKey" : "90f3fc21946ec55a927adb837c225abeb29f8a8a",
+  "ldm" : 1,
+  "wasUnlockedSinceBoot" : 1,
+  "isLocked" : 0,
+  "codeSigningValidationCategory" : 0,
+  "codeSigningTrustLevel" : 0,
+  "isLightWeightCorpse" : 1,
+  "exception" : {"codes":"0x6000000000000007, 0x0000000000000009","reason":9,"message":"namespc 7 reason_code 0x0000000000000009","subtype":"GUARD_TYPE_USER","type":"EXC_GUARD","rawCodes":[6917529027641081863,9],"namespc":7},
+  "termination" : {"flags":518,"code":9,"namespace":"LIBXPC","indicator":"XPC_EXIT_REASON_FAULT"},
+  "faultingThread" : 0,
+  "threads" : [{"triggered":true,"id":598739,"threadState":{"x":[{"value":20480},{"value":16400384},{"value":2536081974882612046},{"value":2371438245753548454},{"value":6458851328},{"value":12672611346620612709},{"value":12986881598070813056},{"value":26570305888},{"value":26570305888},{"value":26508107840},{"value":0},{"value":8226955248},{"value":1},{"value":26508938688},{"value":26508328960},{"value":4376559616},{"value":20480},{"value":6094711456},{"value":16287381306456961716},{"value":26508938688},{"value":26508328960},{"value":0},{"value":0},{"value":6094711664},{"value":3459550669008395400},{"value":0},{"value":4294967296},{"value":0},{"value":26508107840}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4376559616},"cpsr":{"value":0},"fp":{"value":20480},"sp":{"value":740377344},"esr":{"value":20480,"description":" Address size fault"},"pc":{"value":52,"matchesCrashFrame":0},"far":{"value":0}},"frames":[{"imageOffset":1348812408,"imageIndex":0},{"imageOffset":1678569632,"imageIndex":0},{"imageOffset":1678656616,"imageIndex":0},{"imageOffset":1678656420,"imageIndex":0},{"imageOffset":966045720,"imageIndex":0},{"imageOffset":966053088,"imageIndex":0},{"imageOffset":2750201544,"imageIndex":0},{"imageOffset":268751164,"imageIndex":0},{"imageOffset":268758484,"imageIndex":0},{"imageOffset":268788736,"imageIndex":0},{"imageOffset":268791600,"imageIndex":0},{"imageOffset":268836020,"imageIndex":0},{"imageOffset":268834088,"imageIndex":0},{"imageOffset":1678282528,"imageIndex":0},{"imageOffset":1678282688,"imageIndex":0}]}],
+  "usedImages" : [
+  {
+    "size" : 3025125376,
+    "source" : "S",
+    "base" : 6442450944,
+    "uuid" : "4e332692-1ef9-3123-a66e-ea24850ae920"
+  }
+],
+  "legacyInfo" : {
+  "threadTriggered" : {
+
+  }
+},
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "64c17a9925d75a7281053d4c",
+      "factorPackIds" : {
+        "SIRI_AUDIO_DISABLE_MEDIA_ENTITY_SYNC" : "64d29746ad29a465b3bbeace"
+      },
+      "deploymentId" : 240000002
+    },
+    {
+      "rolloutId" : "6425c75e4327780c10cc4252",
+      "factorPackIds" : {
+        "SIRI_HOME_AUTOMATION_INTENT_SELECTION_CACHE" : "642600a457e7664b1698eb32"
+      },
+      "deploymentId" : 240000004
+    }
+  ],
+  "experiments" : [
+
+  ]
+},
+  "reportNotes" : [
+  "PC register does not match crashing frame (0x34 vs 0x1D0653E78)"
+]
+}

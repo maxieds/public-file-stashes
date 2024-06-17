@@ -1,0 +1,522 @@
+{"duration_ms":"150846","share_with_app_devs":0,"roots_installed":0,"bug_type":"202","os_version":"iPhone OS 17.4.1 (21E236)","slice_uuid":"60B0FC38-2162-33ED-915D-B4B20D81F5E7","is_first_party":0,"incident_id":"71799D15-D174-4687-827D-8FCB46EC1824","timestamp":"2024-04-15 18:17:21.00 -0500","app_name":"spotlightknowledged","name":"spotlightknowledged"}
+Date/Time:        2024-04-15 18:14:47.544 -0500
+End time:         2024-04-15 18:17:18.390 -0500
+OS Version:       iPhone OS 17.4.1 (Build 21E236)
+Architecture:     arm64e
+Report Version:   47
+Incident Identifier: 71799D15-D174-4687-827D-8FCB46EC1824
+
+Data Source:      Microstackshots
+Shared Cache:     4E332692-1EF9-3123-A66E-EA24850AE920 slid base address 0x180fa4000, slide 0xfa4000
+
+Command:          spotlightknowledged
+Path:             /System/Library/Frameworks/CoreSpotlight.framework/spotlightknowledged
+Resource Coalition ID: 826
+Architecture:     arm64
+PID:              31482
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 151 seconds (60% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     151s
+Duration:         150.85s
+Duration Sampled: 125.94s
+Steps:            47
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+OS Cryptex File Extents: 4298
+
+Heaviest stack for the target process:
+  35  ??? (libsystem_pthread.dylib + 8128) [0x1e502cfc0]
+  35  ??? (libsystem_pthread.dylib + 7908) [0x1e502cee4]
+  35  ??? (libdispatch.dylib + 90268) [0x19100509c]
+  31  ??? (libdispatch.dylib + 88212) [0x191004894]
+  31  ??? (libdispatch.dylib + 26868) [0x190ff58f4]
+  31  ??? (libdispatch.dylib + 29532) [0x190ff635c]
+  31  ??? (libdispatch.dylib + 15828) [0x190ff2dd4]
+  31  ??? (libdispatch.dylib + 8508) [0x190ff113c]
+  31  ??? (spotlightknowledged + 424272) [0x104663950]
+  31  ??? (spotlightknowledged + 406788) [0x10465f504]
+  31  ??? (spotlightknowledged + 397336) [0x10465d018]
+  31  ??? (spotlightknowledged + 99064) [0x1046142f8]
+  31  ??? (spotlightknowledged + 100920) [0x104614a38]
+  31  ??? (spotlightknowledged + 398224) [0x10465d390]
+  28  ??? (spotlightknowledged + 158040) [0x104622958]
+  28  ??? (spotlightknowledged + 430320) [0x1046650f0]
+  17  ??? (spotlightknowledged + 431884) [0x10466570c]
+  17  ??? (SpotlightLinguistics + 11928) [0x1bdafbe98]
+  17  ??? (libdispatch.dylib + 78532) [0x1910022c4]
+  17  ??? (libdispatch.dylib + 15828) [0x190ff2dd4]
+  17  ??? (SpotlightLinguistics + 12504) [0x1bdafc0d8]
+  17  ??? (CoreNLP + 573080) [0x199217e98]
+  16  ??? (CoreNLP + 470300) [0x1991fed1c]
+  16  ??? (CoreNLP + 573940) [0x1992181f4]
+  16  ??? (SpotlightLinguistics + 13576) [0x1bdafc508]
+  16  ??? (CoreNLP + 573080) [0x199217e98]
+  16  ??? (CoreNLP + 470300) [0x1991fed1c]
+  16  ??? (CoreNLP + 573940) [0x1992181f4]
+  16  ??? (SpotlightLinguistics + 14808) [0x1bdafc9d8]
+  16  ??? (spotlightknowledged + 433108) [0x104665bd4]
+  10  ??? (SpotlightLinguistics + 66476) [0x1bdb093ac]
+  6   ??? (SpotlightLinguistics + 74980) [0x1bdb0b4e4]
+  6   ??? (SpotlightLinguistics + 74008) [0x1bdb0b118]
+  2   ??? (SpotlightLinguistics + 71088) [0x1bdb0a5b0]
+  1   ??? (libsystem_platform.dylib + 11748) [0x1e4f78de4]
+
+
+Powerstats for:   spotlightknowledged [31482]
+UUID:             60B0FC38-2162-33ED-915D-B4B20D81F5E7
+Path:             /System/Library/Frameworks/CoreSpotlight.framework/spotlightknowledged
+Resource Coalition ID: 826
+Architecture:     arm64
+Footprint:        6560 KB -> 10.94 MB (+4640 KB) (max 11.50 MB )
+Pageins:          518 pages
+Start time:       2024-04-15 18:16:00.509 -0500
+End time:         2024-04-15 18:17:17.756 -0500
+Num samples:      35 (74%)
+Num threads:      3
+Primary state:    34 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified, e-core
+User Activity:    35 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 35 samples on AC
+  35  ??? (libsystem_pthread.dylib + 8128) [0x1e502cfc0]
+    35  ??? (libsystem_pthread.dylib + 7908) [0x1e502cee4]
+      35  ??? (libdispatch.dylib + 90268) [0x19100509c]
+        31  ??? (libdispatch.dylib + 88212) [0x191004894]
+          31  ??? (libdispatch.dylib + 26868) [0x190ff58f4]
+            31  ??? (libdispatch.dylib + 29532) [0x190ff635c]
+              31  ??? (libdispatch.dylib + 15828) [0x190ff2dd4]
+                31  ??? (libdispatch.dylib + 8508) [0x190ff113c]
+                  31  ??? (spotlightknowledged + 424272) [0x104663950]
+                    31  ??? (spotlightknowledged + 406788) [0x10465f504]
+                      31  ??? (spotlightknowledged + 397336) [0x10465d018]
+                        31  ??? (spotlightknowledged + 99064) [0x1046142f8]
+                          31  ??? (spotlightknowledged + 100920) [0x104614a38]
+                            31  ??? (spotlightknowledged + 398224) [0x10465d390]
+                              28  ??? (spotlightknowledged + 158040) [0x104622958]
+                                28  ??? (spotlightknowledged + 430320) [0x1046650f0]
+                                  17  ??? (spotlightknowledged + 431884) [0x10466570c]
+                                    17  ??? (SpotlightLinguistics + 11928) [0x1bdafbe98]
+                                      17  ??? (libdispatch.dylib + 78532) [0x1910022c4]
+                                        17  ??? (libdispatch.dylib + 15828) [0x190ff2dd4]
+                                          17  ??? (SpotlightLinguistics + 12504) [0x1bdafc0d8]
+                                            17  ??? (CoreNLP + 573080) [0x199217e98]
+                                              16  ??? (CoreNLP + 470300) [0x1991fed1c]
+                                                16  ??? (CoreNLP + 573940) [0x1992181f4]
+                                                  16  ??? (SpotlightLinguistics + 13576) [0x1bdafc508]
+                                                    16  ??? (CoreNLP + 573080) [0x199217e98]
+                                                      16  ??? (CoreNLP + 470300) [0x1991fed1c]
+                                                        16  ??? (CoreNLP + 573940) [0x1992181f4]
+                                                          16  ??? (SpotlightLinguistics + 14808) [0x1bdafc9d8]
+                                                            16  ??? (spotlightknowledged + 433108) [0x104665bd4]
+                                                              10  ??? (SpotlightLinguistics + 66476) [0x1bdb093ac]
+                                                                6   ??? (SpotlightLinguistics + 74980) [0x1bdb0b4e4]
+                                                                  6   ??? (SpotlightLinguistics + 74008) [0x1bdb0b118]
+                                                                    2   ??? (SpotlightLinguistics + 71088) [0x1bdb0a5b0]
+                                                                      1   ??? (libsystem_platform.dylib + 11748) [0x1e4f78de4]
+                                                                      1   ??? (Lexicon + 475992) [0x1a3452358]
+                                                                        1   ??? (Lexicon + 27380) [0x1a33e4af4]
+                                                                          1   ??? (Lexicon + 20812) [0x1a33e314c]
+                                                                            1   ??? (Lexicon + 20812) [0x1a33e314c]
+                                                                              1   ??? (Lexicon + 20812) [0x1a33e314c]
+                                                                                1   ??? (Lexicon + 20812) [0x1a33e314c]
+                                                                                  1   ??? (Lexicon + 20812) [0x1a33e314c]
+                                                                                    1   ??? (Lexicon + 365652) [0x1a3437454]
+                                                                    1   ??? (SpotlightLinguistics + 71108) [0x1bdb0a5c4]
+                                                                      1   ??? (SpotlightLinguistics + 11112) [0x1bdafbb68]
+                                                                        1   ??? (SpotlightLinguistics + 22680) [0x1bdafe898]
+                                                                          1   ??? (SpotlightLinguistics + 22040) [0x1bdafe618]
+                                                                            1   ??? (SpotlightLinguistics + 27088) [0x1bdaff9d0]
+                                                                              1   ??? (SpotlightLinguistics + 27456) [0x1bdaffb40]
+                                                                                1   ??? (SpotlightLinguistics + 43028) [0x1bdb03814]
+                                                                                  1   ??? (SpotlightLinguistics + 43028) [0x1bdb03814]
+                                                                                    1   ??? (SpotlightLinguistics + 43028) [0x1bdb03814]
+                                                                                      1   ??? (SpotlightLinguistics + 43380) [0x1bdb03974]
+                                                                                        1   ??? (SpotlightLinguistics + 48480) [0x1bdb04d60]
+                                                                    1   ??? (SpotlightLinguistics + 70972) [0x1bdb0a53c]
+                                                                      1   ??? (Foundation + 329104) [0x187fdd590]
+                                                                        1   ??? (CoreFoundation + 131416) [0x189116158]
+                                                                          1   ??? (Foundation + 644376) [0x18802a518]
+                                                                    1   ??? (SpotlightLinguistics + 70892) [0x1bdb0a4ec]
+                                                                      1   ??? (SpotlightLinguistics + 71732) [0x1bdb0a834]
+                                                                        1   ??? (Lexicon + 450504) [0x1a344bfc8]
+                                                                          1   ??? (Lexicon + 28192) [0x1a33e4e20]
+                                                                            1   ??? (Lexicon + 14452) [0x1a33e1874]
+                                                                              1   ??? (CoreFoundation + 28248) [0x1890fce58]
+                                                                    1   ??? (SpotlightLinguistics + 70852) [0x1bdb0a4c4]
+                                                                      1   ??? (SpotlightLinguistics + 8812) [0x1bdafb26c]
+                                                                        1   ??? (SpotlightLinguistics + 101012) [0x1bdb11a94]
+                                                                          1   ??? (CoreNLP + 20188) [0x199190edc]
+                                                                            1   ??? (libicucore.A.dylib + 150024) [0x192995a08]
+                                                                              1   ??? (libicucore.A.dylib + 150644) [0x192995c74]
+                                                                                1   ??? (libicucore.A.dylib + 156296) [0x192997288]
+                                                                                  1   ??? (libicucore.A.dylib + 157412) [0x1929976e4]
+                                                                                    1   ??? (libicucore.A.dylib + 639400) [0x192a0d1a8]
+                                                                2   ??? (SpotlightLinguistics + 75444) [0x1bdb0b6b4]
+                                                                  2   ??? (SpotlightLinguistics + 74008) [0x1bdb0b118]
+                                                                    2   ??? (SpotlightLinguistics + 70892) [0x1bdb0a4ec]
+                                                                      2   ??? (SpotlightLinguistics + 71532) [0x1bdb0a76c]
+                                                                        2   ??? (LanguageModeling + 841844) [0x1a37c0874]
+                                                                          2   ??? (LanguageModeling + 932548) [0x1a37d6ac4]
+                                                                            2   ??? (Lexicon + 450504) [0x1a344bfc8]
+                                                                              2   ??? (Lexicon + 28236) [0x1a33e4e4c]
+                                                                                1   ??? (Lexicon + 46132) [0x1a33e9434]
+                                                                                  1   ??? [0x18ce9a990]
+                                                                                1   ??? (Lexicon + 45968) [0x1a33e9390]
+                                                                                  1   ??? (Lexicon + 42588) [0x1a33e865c]
+                                                                                    1   ??? (Lexicon + 677704) [0x1a3483748]
+                                                                                      1   ??? (Lexicon + 41904) [0x1a33e83b0]
+                                                                                        1   ??? (Lexicon + 29080) [0x1a33e5198]
+                                                                2   ??? (SpotlightLinguistics + 75044) [0x1bdb0b524]
+                                                                  2   ??? (SpotlightLinguistics + 74008) [0x1bdb0b118]
+                                                                    1   ??? (SpotlightLinguistics + 71212) [0x1bdb0a62c]
+                                                                      1   ??? (SpotlightLinguistics + 10980) [0x1bdafbae4]
+                                                                        1   ??? (SpotlightLinguistics + 21844) [0x1bdafe554]
+                                                                          1   ??? (SpotlightLinguistics + 101012) [0x1bdb11a94]
+                                                                            1   ??? (CoreNLP + 20188) [0x199190edc]
+                                                                              1   ??? (libicucore.A.dylib + 150024) [0x192995a08]
+                                                                                1   ??? (libicucore.A.dylib + 150644) [0x192995c74]
+                                                                                  1   ??? (libicucore.A.dylib + 155984) [0x192997150]
+                                                                                    1   ??? (libicucore.A.dylib + 156760) [0x192997458]
+                                                                                      1   ??? (libsystem_malloc.dylib + 20652) [0x1992b00ac]
+                                                                    1   ??? (SpotlightLinguistics + 70852) [0x1bdb0a4c4]
+                                                                      1   ??? (SpotlightLinguistics + 9084) [0x1bdafb37c]
+                                                                        1   ??? (SpotlightLinguistics + 27088) [0x1bdaff9d0]
+                                                                          1   ??? (SpotlightLinguistics + 27628) [0x1bdaffbec]
+                                                                            1   ??? (SpotlightLinguistics + 42352) [0x1bdb03570]
+                                                                              1   ??? (SpotlightLinguistics + 42352) [0x1bdb03570]
+                                                                                1   ??? (SpotlightLinguistics + 42352) [0x1bdb03570]
+                                                                                  1   ??? (SpotlightLinguistics + 42716) [0x1bdb036dc]
+                                                                                    1   ??? (SpotlightLinguistics + 48144) [0x1bdb04c10]
+                                                                                      1   ??? (SpotlightLinguistics + 27020) [0x1bdaff98c]
+                                                                                        1   ??? (libsystem_malloc.dylib + 20652) [0x1992b00ac]
+                                                              6   ??? (SpotlightLinguistics + 66584) [0x1bdb09418]
+                                                                6   ??? (SpotlightLinguistics + 75844) [0x1bdb0b844]
+                                                                  6   ??? (SpotlightLinguistics + 78156) [0x1bdb0c14c]
+                                                                    6   ??? (LanguageModeling + 637568) [0x1a378ea80]
+                                                                      6   ??? (LanguageModeling + 874640) [0x1a37c8890]
+                                                                        6   ??? (LanguageModeling + 870664) [0x1a37c7908]
+                                                                          6   ??? (LanguageModeling + 1429592) [0x1a3850058]
+                                                                            6   ??? (LanguageModeling + 1448780) [0x1a3854b4c]
+                                                                              6   ??? (LanguageModeling + 1675460) [0x1a388c0c4]
+                                                                                6   ??? (LanguageModeling + 1676208) [0x1a388c3b0]
+                                                                                  6   ??? (LanguageModeling + 1670156) [0x1a388ac0c]
+                                                                                    6   ??? (LanguageModeling + 1567112) [0x1a3871988]
+                                                                                      6   ??? (LanguageModeling + 1054500) [0x1a37f4724]
+                                                                                        6   ??? (LanguageModeling + 1815256) [0x1a38ae2d8]
+                                                                                          6   ??? (LanguageModeling + 1815728) [0x1a38ae4b0]
+                                                                                            6   ??? (Montreal + 1836832) [0x1a3690720]
+                                                                                              5   ??? (Montreal + 1813636) [0x1a368ac84]
+                                                                                                5   ??? (Montreal + 1163220) [0x1a35ebfd4]
+                                                                                                  4   ??? (Montreal + 1771116) [0x1a368066c]
+                                                                                                    4   ??? (libBNNS.dylib + 2653632) [0x1f9487dc0]
+                                                                                                      4   ??? (libBNNS.dylib + 31208) [0x1f92079e8]
+                                                                                                        4   ??? (libdispatch.dylib + 96880) [0x191006a70]
+                                                                                                          4   ??? (libdispatch.dylib + 96384) [0x191006880]
+                                                                                                            4   ??? (libdispatch.dylib + 100560) [0x1910078d0]
+                                                                                                              4   ??? (libdispatch.dylib + 22100) [0x190ff4654]
+                                                                                                                4   ??? (libdispatch.dylib + 15828) [0x190ff2dd4]
+                                                                                                                  4   ??? (libdispatch.dylib + 98868) [0x191007234]
+                                                                                                                    4   ??? (libdispatch.dylib + 15892) [0x190ff2e14]
+                                                                                                                      4   ??? (libBNNS.dylib + 78196) [0x1f9213174]
+                                                                                                                        4   ??? (libBNNS.dylib + 2130820) [0x1f9408384]
+                                                                                                                          2   ??? (libBNNS.dylib + 2054796) [0x1f93f5a8c]
+                                                                                                                          1   ??? (libBNNS.dylib + 2054768) [0x1f93f5a70]
+                                                                                                                          1   ??? (libBNNS.dylib + 2054708) [0x1f93f5a34]
+                                                                                                  1   ??? (Montreal + 1770612) [0x1a3680474]
+                                                                                              1   ??? (Montreal + 1011320) [0x1a35c6e78]
+                                                                                                1   ??? (Montreal + 1770292) [0x1a3680334]
+                                                                                                  1   ??? (libBNNS.dylib + 2653632) [0x1f9487dc0]
+                                                                                                    1   ??? (libBNNS.dylib + 31444) [0x1f9207ad4]
+                                                                                                      1   ??? (libBNNS.dylib + 76024) [0x1f92128f8]
+                                                                                                        1   ??? (libsystem_platform.dylib + 2824) [0x1e4f76b08]
+                                              1   ??? (CoreNLP + 470012) [0x1991febfc]
+                                                1   ??? (CoreNLP + 468632) [0x1991fe698]
+                                                  1   ??? (CoreNLP + 148632) [0x1991b0498]
+                                                    1   ??? (CoreNLP + 12388) [0x19918f064]
+                                                      1   ??? (CoreNLP + 12724) [0x19918f1b4]
+                                                        1   ??? (CoreNLP + 13076) [0x19918f314]
+                                                          1   ??? (CoreNLP + 13864) [0x19918f628]
+                                                            1   ??? (libicucore.A.dylib + 258556) [0x1929b01fc]
+                                                              1   ??? (libicucore.A.dylib + 285440) [0x1929b6b00]
+                                                                1   ??? (libicucore.A.dylib + 285672) [0x1929b6be8]
+                                                                  1   ??? (libicucore.A.dylib + 259652) [0x1929b0644]
+                                                                    1   ??? (libicucore.A.dylib + 260552) [0x1929b09c8]
+                                                                      1   ??? (libicucore.A.dylib + 866216) [0x192a447a8]
+                                                                        1   ??? (CoreFoundation + 612696) [0x18918b958]
+                                                                          1   ??? (CoreFoundation + 29148) [0x1890fd1dc]
+                                                                            1   ??? (CoreFoundation + 28752) [0x1890fd050]
+                                  11  ??? (spotlightknowledged + 431492) [0x104665584]
+                                    11  ??? (DataDetectorsCore + 57656) [0x1a308f138]
+                                      11  ??? (DataDetectorsCore + 50136) [0x1a308d3d8]
+                                        11  ??? (DataDetectorsCore + 57852) [0x1a308f1fc]
+                                          11  ??? (DataDetectorsCore + 54724) [0x1a308e5c4]
+                                            10  ??? (DataDetectorsCore + 7724) [0x1a3082e2c]
+                                              10  ??? (DataDetectorsCore + 10528) [0x1a3083920]
+                                                10  ??? (DataDetectorsCore + 10528) [0x1a3083920]
+                                                  10  ??? (DataDetectorsCore + 10528) [0x1a3083920]
+                                                    6   ??? (DataDetectorsCore + 10528) [0x1a3083920]
+                                                      4   ??? (DataDetectorsCore + 10528) [0x1a3083920]
+                                                        3   ??? (DataDetectorsCore + 10528) [0x1a3083920]
+                                                          2   ??? (DataDetectorsCore + 10528) [0x1a3083920]
+                                                            2   ??? (DataDetectorsCore + 10528) [0x1a3083920]
+                                                              1   ??? (DataDetectorsCore + 10628) [0x1a3083984]
+                                                                1   ??? (DataDetectorsCore + 16424) [0x1a3085028]
+                                                              1   ??? (DataDetectorsCore + 10528) [0x1a3083920]
+                                                                1   ??? (DataDetectorsCore + 10528) [0x1a3083920]
+                                                                  1   ??? (DataDetectorsCore + 10528) [0x1a3083920]
+                                                                    1   ??? (DataDetectorsCore + 10528) [0x1a3083920]
+                                                                      1   ??? (DataDetectorsCore + 10528) [0x1a3083920]
+                                                                        1   ??? (DataDetectorsCore + 10528) [0x1a3083920]
+                                                                          1   ??? (DataDetectorsCore + 9236) [0x1a3083414]
+                                                          1   ??? (DataDetectorsCore + 10628) [0x1a3083984]
+                                                            1   ??? (DataDetectorsCore + 16384) [0x1a3085000]
+                                                        1   ??? (DataDetectorsCore + 9056) [0x1a3083360]
+                                                          1   ??? (DataDetectorsCore + 12132) [0x1a3083f64]
+                                                            1   ??? (DataDetectorsCore + 18692) [0x1a3085904]
+                                                              1   ??? (DataDetectorsCore + 23244) [0x1a3086acc]
+                                                      1   ??? (DataDetectorsCore + 10628) [0x1a3083984]
+                                                        1   ??? (DataDetectorsCore + 16828) [0x1a30851bc]
+                                                      1   ??? (DataDetectorsCore + 9372) [0x1a308349c]
+                                                    1   ??? (DataDetectorsCore + 10496) [0x1a3083900]
+                                                      1   ??? (DataDetectorsCore + 16828) [0x1a30851bc]
+                                                    1   ??? (DataDetectorsCore + 9416) [0x1a30834c8]
+                                                    1   ??? (DataDetectorsCore + 9232) [0x1a3083410]
+                                                    1   ??? (DataDetectorsCore + 9068) [0x1a308336c]
+                                            1   ??? (DataDetectorsCore + 7160) [0x1a3082bf8]
+                                              1   ??? (DataDetectorsCore + 26232) [0x1a3087678]
+                                                1   ??? (DataDetectorsCore + 18276) [0x1a3085764]
+                                                  1   ??? (DataDetectorsCore + 21060) [0x1a3086244]
+                                                    1   ??? (DataDetectorsCore + 26812) [0x1a30878bc]
+                                                      1   ??? (CoreNLP + 24092) [0x199191e1c]
+                                                        1   ??? (CoreFoundation + 52996) [0x189102f04]
+                                                          1   ??? (CoreFoundation + 28752) [0x1890fd050]
+                              3   ??? (spotlightknowledged + 158108) [0x10462299c]
+                                3   ??? (spotlightknowledged + 409692) [0x10466005c]
+                                  3   ??? (spotlightknowledged + 354824) [0x104652a08]
+                                    1   ??? (CoreFoundation + 296696) [0x18913e6f8]
+                                      1   ??? (CoreFoundation + 38340) [0x1890ff5c4]
+                                        1   ??? (CoreFoundation + 38812) [0x1890ff79c]
+                                    1   ??? (libobjc.A.dylib + 15428) [0x18108fc44]
+                                    1   ??? (libobjc.A.dylib + 15400) [0x18108fc28]
+        4   ??? (libdispatch.dylib + 88684) [0x191004a6c]
+          4   ??? (libdispatch.dylib + 15828) [0x190ff2dd4]
+            4   ??? (libdispatch.dylib + 94856) [0x191006288]
+              4   ??? (libdispatch.dylib + 22100) [0x190ff4654]
+                4   ??? (libdispatch.dylib + 15828) [0x190ff2dd4]
+                  4   ??? (libdispatch.dylib + 98868) [0x191007234]
+                    4   ??? (libdispatch.dylib + 15892) [0x190ff2e14]
+                      4   ??? (libBNNS.dylib + 78196) [0x1f9213174]
+                        4   ??? (libBNNS.dylib + 2130820) [0x1f9408384]
+                          1   ??? (libBNNS.dylib + 2055148) [0x1f93f5bec]
+                            1   <Kernel mode>
+                          1   ??? (libBNNS.dylib + 2054824) [0x1f93f5aa8]
+                          1   ??? (libBNNS.dylib + 2054796) [0x1f93f5a8c]
+                          1   ??? (libBNNS.dylib + 2054708) [0x1f93f5a34]
+
+  Binary Images:
+           0x1045fc000 -                ???  spotlightknowledged      <60B0FC38-2162-33ED-915D-B4B20D81F5E7>  /System/Library/Frameworks/CoreSpotlight.framework/spotlightknowledged
+           0x18108c000 -        0x1810d9cc3  libobjc.A.dylib          <412FD1F4-4107-3443-88EF-B3760778F6A7>  /usr/lib/libobjc.A.dylib
+           0x187f8d000 -        0x188b18fff  Foundation               <D92E19C1-6299-3E94-8614-C505D5ABCCDB>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1890f6000 -        0x189623fff  CoreFoundation           <3A5F992A-D1CD-312E-BD2E-F7C66343A417>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x190fef000 -        0x191035fff  libdispatch.dylib        <B7D9D0A6-2414-37F2-9D03-1A25A474E2CF>  /usr/lib/system/libdispatch.dylib
+           0x192971000 -        0x192c31ffb  libicucore.A.dylib       <B8B24FF1-9BD0-3EFB-A85D-722325F0CB3E>  /usr/lib/libicucore.A.dylib
+           0x19918c000 -        0x1992aafff  CoreNLP                  <10E3B96F-2BDE-310D-B360-3177409E52C6>  /System/Library/PrivateFrameworks/CoreNLP.framework/CoreNLP
+           0x1992ab000 -        0x1992e0fff  libsystem_malloc.dylib   <A4FB6302-B859-3C3D-ABDF-CB9BF836CC1B>  /usr/lib/system/libsystem_malloc.dylib
+           0x1a3081000 -        0x1a30bdfff  DataDetectorsCore        <BDAAE3C1-9B0C-3D32-A8F1-FAE110ECE4D3>  /System/Library/PrivateFrameworks/DataDetectorsCore.framework/DataDetectorsCore
+           0x1a33de000 -        0x1a34cfff7  Lexicon                  <8D643A5B-8970-34E6-A6A8-60B99F6022B1>  /System/Library/PrivateFrameworks/Lexicon.framework/Lexicon
+           0x1a34d0000 -        0x1a36f2fff  Montreal                 <3AC26F7B-72C8-330A-9E7C-8543CFA0F162>  /System/Library/PrivateFrameworks/Montreal.framework/Montreal
+           0x1a36f3000 -        0x1a392afff  LanguageModeling         <591606B8-B38B-3E81-B03C-378C3FB27717>  /System/Library/PrivateFrameworks/LanguageModeling.framework/LanguageModeling
+           0x1bdaf9000 -        0x1bdb14ffb  SpotlightLinguistics     <A654EDFF-1902-3486-8D29-4AAED1B61CE4>  /System/Library/PrivateFrameworks/SpotlightLinguistics.framework/SpotlightLinguistics
+           0x1e4f76000 -        0x1e4f7cfeb  libsystem_platform.dylib <E29C0EE4-8118-3A92-BFF8-1C343F8885AD>  /usr/lib/system/libsystem_platform.dylib
+           0x1e502b000 -        0x1e5037fff  libsystem_pthread.dylib  <A70C0DEF-058C-3CB0-9EC1-453AA7F39DF9>  /usr/lib/system/libsystem_pthread.dylib
+           0x1f9200000 -        0x1f9ad5fa7  libBNNS.dylib            <B017161B-B11B-3150-833E-C03AA7FAC776>  /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib
+
+
+Powerstats for:   searchd
+UUID:             E8A63769-33E6-3662-9591-65CDE82EAB08
+Path:             /System/Library/PrivateFrameworks/Search.framework/searchd
+Resource Coalition ID: 391
+On Behalf Of:     3 samples spotlightknowledged [31482] (3 samples originated by spotlightknowledged [31482])
+Architecture:     arm64
+Start time:       2024-04-15 18:15:16.847 -0500
+End time:         2024-04-15 18:15:26.780 -0500
+Num samples:      3 (6%)
+Primary state:    3 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified, e-core
+User Activity:    3 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 3 samples on AC
+  3  ??? (libsystem_pthread.dylib + 8128) [0x1e502cfc0]
+    3  ??? (libsystem_pthread.dylib + 7908) [0x1e502cee4]
+      3  ??? (libdispatch.dylib + 90268) [0x19100509c]
+        3  ??? (libdispatch.dylib + 88212) [0x191004894]
+          3  ??? (libdispatch.dylib + 26868) [0x190ff58f4]
+            3  ??? (libdispatch.dylib + 29008) [0x190ff6150]
+              3  ??? (libdispatch.dylib + 48996) [0x190ffaf64]
+                3  ??? (libdispatch.dylib + 45700) [0x190ffa284]
+                  3  ??? (libdispatch.dylib + 48996) [0x190ffaf64]
+                    3  ??? (libdispatch.dylib + 46080) [0x190ffa400]
+                      3  ??? (libdispatch.dylib + 15828) [0x190ff2dd4]
+                        3  ??? (libdispatch.dylib + 77404) [0x191001e5c]
+                          3  ??? (MobileSpotlightIndex + 52600) [0x1bd7b0d78]
+                            2  ??? (MobileSpotlightIndex + 804272) [0x1bd8685b0]
+                              1  ??? (MobileSpotlightIndex + 868396) [0x1bd87802c]
+                                1  ??? (MobileSpotlightIndex + 873852) [0x1bd87957c]
+                                  1  ??? (MobileSpotlightIndex + 877488) [0x1bd87a3b0]
+                                    1  ??? (MobileSpotlightIndex + 882156) [0x1bd87b5ec]
+                                      1  ??? (MobileSpotlightIndex + 887260) [0x1bd87c9dc]
+                                        1  ??? (MobileSpotlightIndex + 159356) [0x1bd7cae7c]
+                                          1  ??? (MobileSpotlightIndex + 2959308) [0x1bda767cc]
+                                            1  ??? (MobileSpotlightIndex + 2898172) [0x1bda678fc]
+                                              1  ??? (MobileSpotlightIndex + 3143172) [0x1bdaa3604]
+                                                1  ??? (MobileSpotlightIndex + 2892884) [0x1bda66454]
+                                                  1  ??? (MobileSpotlightIndex + 2417252) [0x1bd9f2264]
+                                                    1  ??? (libsystem_kernel.dylib + 65716) [0x1d15f80b4]
+                                                      1  <on behalf of spotlightknowledged [31482] (originated by spotlightknowledged [31482])>
+                              1  ??? (MobileSpotlightIndex + 867916) [0x1bd877e4c]
+                                1  ??? (MobileSpotlightIndex + 872272) [0x1bd878f50]
+                                  1  ??? (MobileSpotlightIndex + 939088) [0x1bd889450]
+                                    1  ??? (MobileSpotlightIndex + 2601020) [0x1bda1f03c]
+                                      1  ??? (MobileSpotlightIndex + 1464984) [0x1bd909a98]
+                                        1  ??? (MobileSpotlightIndex + 1469060) [0x1bd90aa84]
+                                          1  ??? (MobileSpotlightIndex + 1477932) [0x1bd90cd2c]
+                                            1  ??? (MobileSpotlightIndex + 1625164) [0x1bd930c4c]
+                                              1  ??? (MobileSpotlightIndex + 1363496) [0x1bd8f0e28]
+                                                1  ??? (MobileSpotlightIndex + 110204) [0x1bd7bee7c]
+                                                  1  ??? (MobileSpotlightIndex + 2411140) [0x1bd9f0a84]
+                                                    1  ??? (MobileSpotlightIndex + 2412480) [0x1bd9f0fc0]
+                                                      1  ??? (libsystem_kernel.dylib + 7932) [0x1d15e9efc]
+                                                        1  <on behalf of spotlightknowledged [31482] (originated by spotlightknowledged [31482])>
+                            1  ??? (MobileSpotlightIndex + 53880) [0x1bd7b1278]
+                              1  ??? (MobileSpotlightIndex + 807600) [0x1bd8692b0]
+                                1  ??? (MobileSpotlightIndex + 808104) [0x1bd8694a8]
+                                  1  ??? (MobileSpotlightIndex + 65248) [0x1bd7b3ee0]
+                                    1  ??? (SpotlightDaemon + 134376) [0x2069ebce8]
+                                      1  ??? (MobileSpotlightIndex + 893452) [0x1bd87e20c]
+                                        1  ??? (MobileSpotlightIndex + 1709008) [0x1bd9453d0]
+                                          1  ??? (MobileSpotlightIndex + 918576) [0x1bd884430]
+                                            1  ??? (MobileSpotlightIndex + 209820) [0x1bd7d739c]
+                                              1  ??? (MetadataUtilities + 15604) [0x1a766dcf4]
+                                                1  ??? (MobileSpotlightIndex + 894144) [0x1bd87e4c0]
+                                                  1  ??? (CoreFoundation + 10412) [0x1890f88ac]
+                                                    1  <on behalf of spotlightknowledged [31482] (originated by spotlightknowledged [31482])>
+
+  Binary Images:
+           0x1025b8000 -                ???  searchd                 <E8A63769-33E6-3662-9591-65CDE82EAB08>  /System/Library/PrivateFrameworks/Search.framework/searchd
+           0x1890f6000 -        0x189623fff  CoreFoundation          <3A5F992A-D1CD-312E-BD2E-F7C66343A417>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x190fef000 -        0x191035fff  libdispatch.dylib       <B7D9D0A6-2414-37F2-9D03-1A25A474E2CF>  /usr/lib/system/libdispatch.dylib
+           0x1a766a000 -        0x1a76affff  MetadataUtilities       <E2D9B8D6-E2A1-3B71-B636-F96F51FCE09C>  /System/Library/PrivateFrameworks/MetadataUtilities.framework/MetadataUtilities
+           0x1bd7a4000 -        0x1bdaf8fff  MobileSpotlightIndex    <AE82E959-FF3A-33F5-8493-85E591181BC5>  /System/Library/PrivateFrameworks/MobileSpotlightIndex.framework/MobileSpotlightIndex
+           0x1d15e8000 -        0x1d1621fef  libsystem_kernel.dylib  <DB493AF3-63B1-3220-9DD8-DD4F86BDDFC8>  /usr/lib/system/libsystem_kernel.dylib
+           0x1e502b000 -        0x1e5037fff  libsystem_pthread.dylib <A70C0DEF-058C-3CB0-9EC1-453AA7F39DF9>  /usr/lib/system/libsystem_pthread.dylib
+           0x2069cb000 -        0x206a66fff  SpotlightDaemon         <C5A79532-FE30-3901-BC86-305B69671831>  /System/Library/PrivateFrameworks/SpotlightDaemon.framework/SpotlightDaemon
+
+
+Powerstats for:   Spotify
+UUID:             08B4F36D-62E0-31FA-B595-FE12F601B1DA
+Path:             /private/var/containers/Bundle/Application/73A22966-AD38-4F61-B13E-88C9D37709C3/Spotify.app/Spotify
+Identifier:       com.spotify.client
+Version:          8.9.10 (891000606)
+Adam ID:          324684580
+Is First Party:   No
+Beta Identifier:  4865A38E-667D-484A-B07B-9AE601873958
+Resource Coalition ID: 481
+Architecture:     arm64
+Start time:       2024-04-15 18:15:22.150 -0500
+End time:         2024-04-15 18:16:45.532 -0500
+Num samples:      3 (6%)
+Primary state:    2 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Default, Requested Thread QoS User Interactive, Override Thread QoS Unspecified, e-core
+User Activity:    3 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 3 samples on AC
+  2  ??? (dyld + 23940) [0x1ac64ad84]
+    2  ??? (Spotify + 180556) [0x10091c14c]
+      2  ??? (UIKitCore + 2270488) [0x18b59c518]
+        2  ??? (UIKitCore + 2272988) [0x18b59cedc]
+          2  ??? (GraphicsServices + 13536) [0x1cd41f4e0]
+            2  ??? (CoreFoundation + 211304) [0x189129968]
+              1  ??? (CoreFoundation + 213528) [0x18912a218]
+                1  ??? (CoreFoundation + 226588) [0x18912d51c]
+                  1  ??? (libdispatch.dylib + 74168) [0x1910011b8]
+                    1  ??? (libdispatch.dylib + 74932) [0x1910014b4]
+                      1  ??? (libdispatch.dylib + 105868) [0x191008d8c]
+                        1  ??? (libdispatch.dylib + 111048) [0x19100a1c8]
+                          1  ??? (libdispatch.dylib + 29400) [0x190ff62d8]
+                            1  ??? (libdispatch.dylib + 15828) [0x190ff2dd4]
+                              1  ??? (AVFCore + 710728) [0x19aa71848]
+                                1  ??? (AVFCore + 711128) [0x19aa719d8]
+                                  1  ??? (Spotify + 16775420) [0x1018ef8fc]
+                                    1  ??? (Spotify + 16788028) [0x1018f2a3c]
+                                      1  ??? (Spotify + 16675200) [0x1018d7180]
+                                        1  ??? (Spotify + 16769048) [0x1018ee018]
+                                          1  ??? (Spotify + 16679376) [0x1018d81d0]
+                                            1  ??? (Spotify + 16769936) [0x1018ee390]
+                                              1  ??? (Spotify + 16740600) [0x1018e70f8]
+                                                1  ??? (Spotify + 16753276) [0x1018ea27c]
+                                                  1  ??? (Spotify + 16740672) [0x1018e7140]
+                                                    1  ??? (libobjc.A.dylib + 10020) [0x18108e724]
+              1  ??? (CoreFoundation + 213388) [0x18912a18c]
+                1  ??? (CoreFoundation + 225668) [0x18912d184]
+                  1  ??? (CoreFoundation + 709512) [0x1891a3388]
+                    1  ??? (CoreFoundation + 710372) [0x1891a36e4]
+                      1  ??? (Foundation + 7675104) [0x1886dece0]
+                        1  ??? (Spotify + 16787848) [0x1018f2988]
+                          1  ??? (Spotify + 16788028) [0x1018f2a3c]
+                            1  ??? (Spotify + 16675200) [0x1018d7180]
+                              1  ??? (Spotify + 16769048) [0x1018ee018]
+                                1  ??? (Spotify + 16679376) [0x1018d81d0]
+                                  1  ??? (Spotify + 16769936) [0x1018ee390]
+                                    1  ??? (Spotify + 16740600) [0x1018e70f8]
+                                      1  ??? (Spotify + 16737704) [0x1018e65a8]
+                                        1  ??? (Spotify + 16702644) [0x1018ddcb4]
+                                          1  ??? (CoreFoundation + 483532) [0x18916c0cc]
+                                            1  ??? (CoreFoundation + 483712) [0x18916c180]
+                                              1  ??? (libobjc.A.dylib + 70724) [0x18109d444]
+                                                1  ??? (libobjc.A.dylib + 71140) [0x18109d5e4]
+                                                  1  ??? (libobjc.A.dylib + 71992) [0x18109d938]
+                                                    1  ??? (dyld + 8192) [0x1ac647000]
+                                                      1  ??? (dyld + 8248) [0x1ac647038]
+                                                        1  ??? (dyld + 8484) [0x1ac647124]
+  1  ??? (libsystem_pthread.dylib + 8140) [0x1e502cfcc]
+    1  ??? (libsystem_pthread.dylib + 10896) [0x1e502da90]
+      1  ??? (Foundation + 641692) [0x188029a9c]
+        1  ??? (Spotify + 427056) [0x100958430]
+          1  ??? (Foundation + 177320) [0x187fb84a8]
+            1  ??? (CoreFoundation + 211304) [0x189129968]
+              1  ??? (CoreFoundation + 212360) [0x189129d88]
+                1  ??? (CoreFoundation + 217176) [0x18912b058]
+                  1  ??? (CoreFoundation + 223400) [0x18912c8a8]
+                    1  ??? (CoreFoundation + 226860) [0x18912d62c]
+                      1  ??? (Foundation + 869936) [0x188061630]
+                        1  ??? (Spotify + 499880) [0x10096a0a8]
+                          1  ??? (Spotify + 499776) [0x10096a040]
+                            1  ??? (Spotify + 463020) [0x1009610ac]
+                              1  ??? (Spotify + 499708) [0x100969ffc]
+                                1  ??? (Spotify + 3420308) [0x100c33094]
+                                  1  ??? (Spotify + 6797924) [0x100f6ba64]
+                                    1  ??? (Spotify + 4115580) [0x100cdcc7c]
+                                      1  ??? (Spotify + 53892892) [0x103c5571c]
+                                        1  ??? (Spotify + 53893132) [0x103c5580c]
+                                          1  ??? (Spotify + 7185816) [0x100fca598]
+                                            1  ??? (Spotify + 470336) [0x100962d40]
+                                              1  ??? (Spotify + 139952) [0x1009122b0]
+                                                1  ??? (Spotify + 890012) [0x1009c949c]
+                                                  1  ??? (Spotify + 889736) [0x1009c9388]
+                                                    1  ??? (Spotify + 610444) [0x10098508c]
+                                                      1  <Requested Thread QoS Default, p-core>
+
+  Binary Images:
+           0x1008f0000 -                ???  com.spotify.client 8.9.10 (891000606) <08B4F36D-62E0-31FA-B595-FE12F601B1DA>  /private/var/containers/Bundle/Application/73A22966-AD38-4F61-B13E-88C9D37709C3/Spotify.app/Spotify
+           0x18108c000 -        0x1810d9cc3  libobjc.A.dylib                       <412FD1F4-4107-3443-88EF-B3760778F6A7>  /usr/lib/libobjc.A.dylib
+           0x187f8d000 -        0x188b18fff  Foundation                            <D92E19C1-6299-3E94-8614-C505D5ABCCDB>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1890f6000 -        0x189623fff  CoreFoundation                        <3A5F992A-D1CD-312E-BD2E-F7C66343A417>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x18b372000 -        0x18ce82fff  UIKitCore                             <7BF01CFC-23F1-326A-AFD8-AD967FFECE28>  /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+           0x190fef000 -        0x191035fff  libdispatch.dylib                     <B7D9D0A6-2414-37F2-9D03-1A25A474E2CF>  /usr/lib/system/libdispatch.dylib
+           0x19a9c4000 -        0x19ac03fff  AVFCore                               <DB8F1D52-203C-3F25-B7A6-E8C67D358044>  /System/Library/PrivateFrameworks/AVFCore.framework/AVFCore
+           0x1ac645000 -        0x1ac6d1be3  dyld                                  <7BE2B757-3B3D-3E91-8CB7-74F3887660C7>  /usr/lib/dyld
+           0x1cd41c000 -        0x1cd424fff  GraphicsServices                      <4CB7E986-36BF-3801-8F49-5D8C3C4A2127>  /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+           0x1e502b000 -        0x1e5037fff  libsystem_pthread.dylib               <A70C0DEF-058C-3CB0-9EC1-453AA7F39DF9>  /usr/lib/system/libsystem_pthread.dylib

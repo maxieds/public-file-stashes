@@ -1,0 +1,175 @@
+{"app_name":"Edge","timestamp":"2024-02-23 09:41:52.00 -0600","app_version":"121.2277.107","slice_uuid":"4C4C4428-5555-3144-A160-84C4CD4F2CDE","adam_id":1288723196,"build_version":"121.0.2277.107","bundleID":"com.microsoft.msedge","duration_ms":"281441","share_with_app_devs":0,"is_first_party":0,"bug_type":"142","os_version":"iPhone OS 16.4.1 (20E252)","incident_id":"5D7429BF-53D0-4CB7-862C-1BA10A97C4C2","name":"Edge","roots_installed":0}
+Date/Time:        2024-02-23 09:37:06.950 -0600
+End time:         2024-02-23 09:41:48.391 -0600
+OS Version:       iPhone OS 16.4.1 (Build 20E252)
+Architecture:     arm64e
+Report Version:   40
+Incident Identifier: 5D7429BF-53D0-4CB7-862C-1BA10A97C4C2
+
+Data Source:      Microstackshots
+Shared Cache:     4F1FAD1F-32AF-3CEA-9C76-FE6EE686419D slid base address 0x197120000, slide 0x17120000
+
+Command:          Edge
+Path:             /private/var/containers/Bundle/Application/389AD75F-7797-40D1-9C60-2F08CD5DAC4E/Edge.app/Edge
+Identifier:       com.microsoft.msedge
+Version:          121.2277.107 (121.0.2277.107)
+Adam ID:          1288723196
+Is First Party:   No
+Beta Identifier:  CAC44762-4849-4161-94B1-34EC44AE0FF9
+Resource Coalition ID: 446
+Architecture:     arm64
+PID:              2564
+
+Event:            wakeups
+Action taken:     none
+Wakeups:          45001 wakeups over the last 281 seconds (160 wakeups per second average), exceeding limit of 150 wakeups per second over 300 seconds
+Wakeups limit:    45000
+Limit duration:   300s
+Wakeups caused:   45001
+Wakeups duration: 281s
+Duration:         281.44s
+Duration Sampled: 215.53s
+Steps:            9
+
+Hardware model:   iPad12,1
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+OS Cryptex File Extents: 9
+
+Heaviest stack for the target process:
+  6  ??? (dyld + 89580) [0x1bd5a0dec]
+  6  ??? (Edge + 6308736) [0x1029d0380]
+  6  ??? (Edge + 6308620) [0x1029d030c]
+  6  ??? (<5B24796D-636B-3EA3-890D-8239DCC915EC> + 2269820) [0x1079de27c]
+  6  ??? (UIKitCore + 3788768) [0x1a04b3fe0]
+  6  ??? (UIKitCore + 3789692) [0x1a04b437c]
+  6  ??? (GraphicsServices + 4956) [0x1d8a9735c]
+  6  ??? (CoreFoundation + 521436) [0x19e1284dc]
+  4  ??? (CoreFoundation + 500164) [0x19e1231c4]
+  4  ??? (CoreFoundation + 411336) [0x19e10d6c8]
+  4  ??? (CoreFoundation + 915556) [0x19e188864]
+  4  ??? (CoreFoundation + 864776) [0x19e17c208]
+  4  ??? (UIKitCore + 13307552) [0x1a0dc7ea0]
+  3  ??? (UIKitCore + 13310276) [0x1a0dc8944]
+  3  ??? (UIKitCore + 6610432) [0x1a0764e00]
+  2  ??? (UIKitCore + 5232116) [0x1a06145f4]
+  2  ??? (QuartzCore + 295796) [0x19f614374]
+  1  ??? (QuartzCore + 386592) [0x19f62a620]
+  1  ??? (QuartzCore + 114396) [0x19f5e7edc]
+  1  ??? (CoreFoundation + 512036) [0x19e126024]
+  1  ??? (libsystem_kernel.dylib + 2868) [0x1dc4c8b34]
+
+
+Powerstats for:   Edge [2564]
+UUID:             4C4C4428-5555-3144-A160-84C4CD4F2CDE
+Path:             /private/var/containers/Bundle/Application/389AD75F-7797-40D1-9C60-2F08CD5DAC4E/Edge.app/Edge
+Identifier:       com.microsoft.msedge
+Version:          121.2277.107 (121.0.2277.107)
+Adam ID:          1288723196
+Is First Party:   No
+Beta Identifier:  CAC44762-4849-4161-94B1-34EC44AE0FF9
+Resource Coalition ID: 446
+Architecture:     arm64
+Footprint:        159.62 MB
+Pageins:          2375 pages
+Start time:       2024-02-23 09:37:35.718 -0600
+End time:         2024-02-23 09:41:11.253 -0600
+Num samples:      9 (100%)
+Primary state:    4 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive, Override Thread QoS Unspecified
+User Activity:    0 samples Idle, 9 samples Active
+Power Source:     9 samples on Battery, 0 samples on AC
+  6  ??? (dyld + 89580) [0x1bd5a0dec]
+    6  ??? (Edge + 6308736) [0x1029d0380]
+      6  ??? (Edge + 6308620) [0x1029d030c]
+        6  ??? (<5B24796D-636B-3EA3-890D-8239DCC915EC> + 2269820) [0x1079de27c]
+          6  ??? (UIKitCore + 3788768) [0x1a04b3fe0]
+            6  ??? (UIKitCore + 3789692) [0x1a04b437c]
+              6  ??? (GraphicsServices + 4956) [0x1d8a9735c]
+                6  ??? (CoreFoundation + 521436) [0x19e1284dc]
+                  4  ??? (CoreFoundation + 500164) [0x19e1231c4]
+                    4  ??? (CoreFoundation + 411336) [0x19e10d6c8]
+                      4  ??? (CoreFoundation + 915556) [0x19e188864]
+                        4  ??? (CoreFoundation + 864776) [0x19e17c208]
+                          4  ??? (UIKitCore + 13307552) [0x1a0dc7ea0]
+                            3  ??? (UIKitCore + 13310276) [0x1a0dc8944]
+                              3  ??? (UIKitCore + 6610432) [0x1a0764e00]
+                                2  ??? (UIKitCore + 5232116) [0x1a06145f4]
+                                  2  ??? (QuartzCore + 295796) [0x19f614374]
+                                    1  ??? (QuartzCore + 386592) [0x19f62a620]
+                                      1  ??? (QuartzCore + 114396) [0x19f5e7edc]
+                                        1  ??? (CoreFoundation + 512036) [0x19e126024]
+                                          1  ??? (libsystem_kernel.dylib + 2868) [0x1dc4c8b34]
+                                    1  ??? (QuartzCore + 385984) [0x19f62a3c0]
+                                      1  ??? (QuartzCore + 192084) [0x19f5fae54]
+                                        1  ??? (QuartzCore + 121384) [0x19f5e9a28]
+                                          1  ??? (QuartzCore + 42156) [0x19f5d64ac]
+                                            1  ??? (UIKitCore + 20404) [0x1a011bfb4]
+                                              1  ??? (UIKitCore + 22532) [0x1a011c804]
+                                                1  ??? (UIKitCore + 23833792) [0x1a17d1cc0]
+                                1  ??? (UIKitCore + 14354852) [0x1a0ec79a4]
+                                  1  ??? (UIKitCore + 1306928) [0x1a0256130]
+                                    1  ??? (UIKitCore + 1008848) [0x1a020d4d0]
+                                      1  ??? (UIKit + 189272) [0x2269f6358]
+                                        1  ??? (UIKitCore + 1016292) [0x1a020f1e4]
+                                          1  ??? (UIKitCore + 1019680) [0x1a020ff20]
+                                            1  ??? (UIKitCore + 1001136) [0x1a020b6b0]
+                                              1  ??? (UIKitCore + 10216168) [0x1a0ad52e8]
+                                                1  ??? (UIKitCore + 1241692) [0x1a024625c]
+                                                  1  ??? (UIKitCore + 1072452) [0x1a021cd44]
+                                                    1  ??? (Foundation + 228360) [0x198433c08]
+                                                      1  ??? (libobjc.A.dylib + 104416) [0x1971e97e0]
+                            1  ??? (UIKitCore + 13309684) [0x1a0dc86f4]
+                              1  ??? (UIKitCore + 13855312) [0x1a0e4da50]
+                                1  ??? (UIKitCore + 13310816) [0x1a0dc8b60]
+                                  1  ??? (QuartzCore + 112784) [0x19f5e7890]
+                  1  ??? (CoreFoundation + 500868) [0x19e123484]
+                    1  ??? (libsystem_kernel.dylib + 2928) [0x1dc4c8b70]
+                      1  <Kernel mode>
+                  1  ??? (CoreFoundation + 500544) [0x19e123340]
+                    1  ??? (CoreFoundation + 495892) [0x19e122114]
+                      1  ??? (libsystem_kernel.dylib + 4552) [0x1dc4c91c8]
+                        1  ??? (libsystem_kernel.dylib + 81452) [0x1dc4dbe2c]
+                          1  ??? (libsystem_kernel.dylib + 3204) [0x1dc4c8c84]
+                            1  <Kernel mode>
+  2  ??? (libsystem_pthread.dylib + 2952) [0x1fcf82b88]
+    2  ??? (libsystem_pthread.dylib + 5816) [0x1fcf836b8]
+      2  ??? (JavaScriptCore + 1128284) [0x1b18a775c]
+        2  ??? (JavaScriptCore + 1253060) [0x1b18c5ec4]
+          1  ??? (JavaScriptCore + 1256576) [0x1b18c6c80]
+            1  <Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+          1  ??? (JavaScriptCore + 1256480) [0x1b18c6c20]
+            1  ??? (libsystem_kernel.dylib + 55396) [0x1dc4d5864]
+              1  ??? (libsystem_kernel.dylib + 3204) [0x1dc4c8c84]
+                1  <Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+  1  ??? (libsystem_pthread.dylib + 2940) [0x1fcf82b7c]
+    1  ??? (libsystem_pthread.dylib + 3548) [0x1fcf82ddc]
+      1  ??? (libdispatch.dylib + 93404) [0x1a5580cdc]
+        1  ??? (libdispatch.dylib + 49316) [0x1a55760a4]
+          1  ??? (libdispatch.dylib + 46092) [0x1a557540c]
+            1  ??? (libdispatch.dylib + 108808) [0x1a5584908]
+              1  ??? (libdispatch.dylib + 29488) [0x1a5571330]
+                1  ??? (libdispatch.dylib + 16044) [0x1a556deac]
+                  1  ??? (WebKit + 10279588) [0x1b1558aa4]
+                    1  ??? (WebKit + 10338308) [0x1b1567004]
+                      1  ??? (JavaScriptCore + 758904) [0x1b184d478]
+                        1  ??? (JavaScriptCore + 869596) [0x1b18684dc]
+                          1  <Effective Thread QoS Default, Requested Thread QoS Default>
+
+  Binary Images:
+           0x1023cc000 -                ???  com.microsoft.msedge 121.2277.107 (121.0.2277.107) <4C4C4428-5555-3144-A160-84C4CD4F2CDE>  /private/var/containers/Bundle/Application/389AD75F-7797-40D1-9C60-2F08CD5DAC4E/Edge.app/Edge
+           0x1077b4000 -                ???  ???                                                <5B24796D-636B-3EA3-890D-8239DCC915EC>
+           0x1971d0000 -        0x197213f9f  libobjc.A.dylib                                    <95BD232E-3710-30FD-ADB1-7956D55DE41A>  /usr/lib/libobjc.A.dylib
+           0x1983fc000 -        0x198cd9fff  Foundation                                         <35567930-FBC2-374B-B44B-1DDFE3ADA4A1>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x19e0a9000 -        0x19e490fff  CoreFoundation                                     <6A07CBE8-4F65-3DBC-B59D-C1A188A7B95D>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x19f5cc000 -        0x19f945fff  QuartzCore                                         <0AE8CEB8-0DD6-363F-951D-16AAC60A0951>  /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+           0x1a0117000 -        0x1a1939fff  UIKitCore                                          <B0858D8E-7220-37BF-873F-ECC2B0A358C3>  /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+           0x1a556a000 -        0x1a55b0fff  libdispatch.dylib                                  <B74732B5-D7FE-34A4-9346-41945701F020>  /usr/lib/system/libdispatch.dylib
+           0x1b0b8b000 -        0x1b16defff  WebKit                                             <F98A4F88-DE1E-3562-9F62-C32C434CA72D>  /System/Library/Frameworks/WebKit.framework/WebKit
+           0x1b1794000 -        0x1b2eb0fff  JavaScriptCore                                     <B98C0480-7537-3F88-83D7-308DBA0C9005>  /System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore
+           0x1bd58b000 -        0x1bd610923  dyld                                               <41605DC7-F412-37D1-B51B-FEE1A26701E9>  /usr/lib/dyld
+           0x1d8a96000 -        0x1d8a9efff  GraphicsServices                                   <B7999F43-84C0-30F9-9096-CCEB457FBE4A>  /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+           0x1dc4c8000 -        0x1dc4ffff7  libsystem_kernel.dylib                             <5998C9AE-C77E-3681-BD6C-0883C89297CF>  /usr/lib/system/libsystem_kernel.dylib
+           0x1fcf82000 -        0x1fcf8dff3  libsystem_pthread.dylib                            <B1EE57E1-4484-3714-BA1A-104330CA10C6>  /usr/lib/system/libsystem_pthread.dylib
+           0x2269c8000 -        0x226aeffff  UIKit                                              <FF587B11-7A45-3DF4-9206-9A006CA7BF4E>  /System/Library/AccessibilityBundles/UIKit.axbundle/UIKit

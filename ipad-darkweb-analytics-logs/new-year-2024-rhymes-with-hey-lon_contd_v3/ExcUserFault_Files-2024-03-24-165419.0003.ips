@@ -1,0 +1,78 @@
+{"is_simulated":1,"app_name":"Files","timestamp":"2024-03-24 16:54:19.00 -0500","app_version":"1.0","slice_uuid":"dc140f77-a848-34b0-956c-8f5700420998","build_version":"305.5.4","platform":2,"bundleID":"com.apple.DocumentsApp","share_with_app_devs":0,"is_first_party":1,"bug_type":"308","os_version":"iPhone OS 17.4 (21E219)","roots_installed":0,"name":"Files","incident_id":"9D491562-7E1B-4A8D-8E60-1D2ABD4AA495"}
+{
+  "uptime" : 320000,
+  "procRole" : "Unspecified",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "iPad12,1",
+  "coalitionID" : 601,
+  "osVersion" : {
+    "isEmbedded" : true,
+    "train" : "iPhone OS 17.4",
+    "releaseType" : "User",
+    "build" : "21E219"
+  },
+  "captureTime" : "2024-03-24 16:54:19.7426 -0500",
+  "codeSigningMonitor" : 1,
+  "incident" : "9D491562-7E1B-4A8D-8E60-1D2ABD4AA495",
+  "pid" : 34045,
+  "cpuType" : "ARM-64",
+  "roots_installed" : 0,
+  "bug_type" : "308",
+  "procStartAbsTime" : 7825902020340,
+  "procName" : "Files",
+  "procPath" : "\/private\/var\/containers\/Bundle\/Application\/1EA5542B-0706-4906-BB26-11FF09B6AFFB\/Files.app\/Files",
+  "bundleInfo" : {"CFBundleShortVersionString":"1.0","CFBundleVersion":"305.5.4","CFBundleIdentifier":"com.apple.DocumentsApp"},
+  "storeInfo" : {"deviceIdentifierForVendor":"54201328-79A5-4847-A3AE-2864C133CDEC"},
+  "parentPid" : 1,
+  "coalitionName" : "com.apple.DocumentsApp",
+  "crashReporterKey" : "90f3fc21946ec55a927adb837c225abeb29f8a8a",
+  "ldm" : 1,
+  "wasUnlockedSinceBoot" : 1,
+  "isLocked" : 0,
+  "codeSigningValidationCategory" : 0,
+  "codeSigningTrustLevel" : 0,
+  "isLightWeightCorpse" : 1,
+  "exception" : {"codes":"0x6000000000000007, 0x0000000000000009","reason":9,"message":"namespc 7 reason_code 0x0000000000000009","subtype":"GUARD_TYPE_USER","type":"EXC_GUARD","rawCodes":[6917529027641081863,9],"namespc":7},
+  "termination" : {"flags":518,"code":9,"namespace":"LIBXPC","indicator":"XPC_EXIT_REASON_FAULT"},
+  "faultingThread" : 0,
+  "threads" : [{"triggered":true,"id":1343521,"threadState":{"x":[{"value":20480},{"value":160645120},{"value":14785853172076118804},{"value":18313164667011977611},{"value":6603096064},{"value":1791754422340157477},{"value":4035254959676748160},{"value":19764642048},{"value":19764642048},{"value":19793199168},{"value":0},{"value":8371232752},{"value":1},{"value":19764483328},{"value":19763924992},{"value":4300767232},{"value":20480},{"value":6169438880},{"value":537512206456074932},{"value":19764483328},{"value":19763924992},{"value":0},{"value":0},{"value":6169439088},{"value":11749040959864806536},{"value":0},{"value":4294967296},{"value":0},{"value":19793199168}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4300767232},"cpsr":{"value":0},"fp":{"value":20480},"sp":{"value":2587004800},"esr":{"value":20480,"description":" Address size fault"},"pc":{"value":52,"matchesCrashFrame":0},"far":{"value":0}},"frames":[{"imageOffset":1348845176,"imageIndex":0},{"imageOffset":1678602400,"imageIndex":0},{"imageOffset":1678689384,"imageIndex":0},{"imageOffset":1678689188,"imageIndex":0},{"imageOffset":966053912,"imageIndex":0},{"imageOffset":966061280,"imageIndex":0},{"imageOffset":2750250696,"imageIndex":0},{"imageOffset":268751164,"imageIndex":0},{"imageOffset":268758484,"imageIndex":0},{"imageOffset":268788736,"imageIndex":0},{"imageOffset":268791600,"imageIndex":0},{"imageOffset":268836020,"imageIndex":0},{"imageOffset":268834088,"imageIndex":0},{"imageOffset":1678315296,"imageIndex":0},{"imageOffset":1678315456,"imageIndex":0}]}],
+  "usedImages" : [
+  {
+    "size" : 3025154048,
+    "source" : "S",
+    "base" : 6442450944,
+    "uuid" : "1403ae06-1fe7-31cd-8bd1-7bc23c6e25fe"
+  }
+],
+  "legacyInfo" : {
+  "threadTriggered" : {
+
+  }
+},
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "5fb4245a1bbfe8005e33a1e1",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000021
+    },
+    {
+      "rolloutId" : "5f72dc58705eff005a46b3a9",
+      "factorPackIds" : {
+        "SIRI_VIDEO_APP_SELECTION" : "63d867d28283bf1629655506"
+      },
+      "deploymentId" : 240000015
+    }
+  ],
+  "experiments" : [
+
+  ]
+},
+  "reportNotes" : [
+  "PC register does not match crashing frame (0x34 vs 0x1D065BE78)"
+]
+}
