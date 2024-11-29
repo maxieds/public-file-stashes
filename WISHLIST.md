@@ -45,4 +45,9 @@ Restaurants to visit when it's safe for me to eat out again:
 
 Recipes:
 * How to make hard apple cider on food stamps
-* Baked mac and cheese
+* Baked mac and cheese (see [main directory](https://github.com/maxieds/public-file-stashes/tree/main/document-stashes/recipes))
+
+SHEvil Apples prompts:
+* From the woman who brought Barack Obama **FUCK TRUMP!!!** (see [reference here](https://github.com/maxieds/ChameleonMiniLiveDebugger/issues/26#issuecomment-1722385007))...
+* Chia Obama grew no hair in Florida...
+* AI Joe called you a b-tch again mom... (I had to corrupt one of Michelle's kids who helped me merge the chimera binaries for failing to get me a lawyer - I did write BO about it over his web form. In general, If I *NEED* to piss him off (*DON'T PISS ME OFF*), I know how to get in contact.)
