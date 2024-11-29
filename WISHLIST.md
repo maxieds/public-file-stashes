@@ -9,7 +9,10 @@ Clips I want for my [YouTube channel](https://www.youtube.com/@maxieschmidt) ([c
 4. NASCAR yellow gorilla mask mob - witnessed in person + in SOB Yellowstone in 2022; NASCAR commentary show on ESPN in 2013;
 
 Clips to add to my [Youtube topical / misc playlist](https://www.youtube.com/watch?v=cmpRLQZkTb8&list=PLKuEX1pHu60pPObUmaxQAfSkJpgPuVVpA):
-* HBH@Sheridan: Bad Trump era tweets (oersonal video recording)
+* Katie Couric on NBC confronting Trump about involvement in 9/11/2001 funding, essentially daring him to come on to deny the allegations
+  (she went through something similar from a stalker in her high school - not a coincidence - cover up your webcam is a weak man's version
+  of the retaliation:() 
+* HBH@Sheridan: Bad Trump era tweets (personal video recording)
 * Wierd Al: Oreo (as in, Apple and Oreo the snack cookie)
 * Green Day: She (live in Chiago, 1994)
 * El Stabero (sp?): Why do women prefer the drummer (good man)
