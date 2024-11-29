@@ -40,6 +40,16 @@ Clips to add to my [Youtube topical / misc playlist](https://www.youtube.com/wat
 Restaurants to visit when it's safe for me to eat out again:
 * Jimmy John's: Veggie, extra long
 * IHOP: Omlette, eggs benedict
+* Red Robin (Jason; Spike, his twin brother, the English bulldog with a Sid Vicioud collar):
+  How did my (late) husband decide he wanted to get married? Well, I put a fried egg on his homemade
+  hamburger. He expressed the sentiment to me as follows: I could get used to this.
+  <br/>
+  *(To Junior's moms - Spike, wipe that stupid smirk off your face)*
+  Well, well, well, well; it appears you two may have sex again before you
+  die after all; **I did not approve of that request!** Drat! What is a boy (evil) genious to do?
+  <br/>
+  You two jackasses put him on Cartoon Network in animated form?
+  That and Bad Toro as a pitcher's wind-up...
 * Good Reuben sandwich
 * Blue Moon
 
