@@ -52,6 +52,8 @@ Restaurants to visit when it's safe for me to eat out again:
   That and Bad Toro as a pitcher's wind-up...
 * Good Reuben sandwich
 * Blue Moon
+* 7-Eleven : Pizza; The guys made me hungry this week (there's a Youtube video on [my channel](https://www.youtube.com/@maxieschmidt/community))
+* Wing Stop: Heard it's good 
 
 Recipes:
 * How to make hard apple cider on food stamps
