@@ -36,6 +36,9 @@ Clips to add to my [Youtube topical / misc playlist](https://www.youtube.com/wat
 * Soul Asylum: Black Gold + Sexual Healing (live)
 * Killers: Jenny was a friend of mine (ditto, very personable)
 * Celine Dion: Because you loved me
+* Why women prefer the drummer (ElStab)
+* Soundgarden: Jesus Christ Pose
+* Lily Allen: Fuck You
 
 Restaurants to visit when it's safe for me to eat out again:
 * Jimmy John's: Veggie, extra long
