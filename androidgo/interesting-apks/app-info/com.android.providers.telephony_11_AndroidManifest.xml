@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="android.uid.phone" versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" coreApp="true" package="com.android.providers.telephony" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <uses-permission name="android.permission.RECEIVE_SMS"/>
+  <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.READ_DEVICE_CONFIG"/>
+  <uses-permission name="android.permission.INTERACT_ACROSS_USERS"/>
+  <uses-permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+  <uses-permission name="android.permission.USE_RESERVED_DISK"/>
+  <uses-permission name="android.permission.READ_COMPAT_CHANGE_CONFIG"/>
+  <uses-permission name="android.permission.LOG_COMPAT_CHANGE"/>
+  <protected-broadcast name="android.provider.action.EXTERNAL_PROVIDER_CHANGE"/>
+  <protected-broadcast name="android.intent.action.CONTENT_CHANGED"/>
+  <uses-permission name="android.permission.MODIFY_PHONE_STATE"/>
+  <uses-permission name="android.permission.ACCESS_MESSAGES_ON_ICC"/>
+  <application label="Phone and Messaging Storage" icon="res/mipmap-hdpi-v4/ic_launcher_phone.png" allowClearUserData="false" process="com.android.phone" backupAgent="TelephonyBackupAgent" restoreAnyVersion="true" fullBackupOnly="true" extractNativeLibs="true" usesCleartextTraffic="true" defaultToDeviceProtectedStorage="true" directBootAware="true" backupInForeground="true" usesNonSdkApi="true" forceQueryable="true">
+    <provider name="TelephonyProvider" exported="true" multiprocess="false" authorities="telephony" singleUser="true"/>
+    <provider name="SmsProvider" readPermission="android.permission.READ_SMS" exported="true" multiprocess="false" authorities="sms" singleUser="true"/>
+    <provider name="SmsChangesProvider" readPermission="android.permission.READ_SMS" exported="true" multiprocess="false" authorities="sms-changes" singleUser="true"/>
+    <provider name="MmsProvider" readPermission="android.permission.READ_SMS" exported="true" multiprocess="false" authorities="mms" singleUser="true">
+      <grant-uri-permission pathPrefix="/part/"/>
+      <grant-uri-permission pathPrefix="/drm/"/>
+    </provider>
+    <provider name="MmsSmsProvider" readPermission="android.permission.READ_SMS" exported="true" multiprocess="false" authorities="mms-sms" singleUser="true"/>
+    <provider name="CarrierProvider" writePermission="android.permission.MODIFY_PHONE_STATE" exported="true" multiprocess="false" authorities="carrier_information" singleUser="true"/>
+    <provider name="HbpcdLookupProvider" writePermission="android.permission.MODIFY_PHONE_STATE" exported="true" multiprocess="false" authorities="hbpcd_lookup" singleUser="true"/>
+    <provider name="CarrierIdProvider" exported="true" multiprocess="false" authorities="carrier_id" singleUser="true"/>
+    <service name=".TelephonyBackupAgent$DeferredSmsMmsRestoreService" exported="false"/>
+  </application>
+</manifest>
+

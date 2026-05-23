@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="android.uid.system" versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" coreApp="true" package="com.android.inputdevices" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <application label="Input Devices" allowClearUserData="false" process="system" extractNativeLibs="true" defaultToDeviceProtectedStorage="true" directBootAware="true">
+    <receiver label="Android keyboard" name=".InputDeviceReceiver">
+      <intent-filter>
+        <action name="android.hardware.input.action.QUERY_KEYBOARD_LAYOUTS"/>
+      </intent-filter>
+      <meta-data name="android.hardware.input.metadata.KEYBOARD_LAYOUTS" resource="keyboard_layouts"/>
+    </receiver>
+  </application>
+</manifest>
+

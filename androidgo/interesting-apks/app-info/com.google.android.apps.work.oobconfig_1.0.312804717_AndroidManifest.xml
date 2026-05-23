@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="173" versionName="1.0.312804717" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.google.android.apps.work.oobconfig" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="25" targetSdkVersion="29"/>
+  <permission name="com.google.android.apps.work.oobconfig.ACCESS_FILES" protectionLevel="0x2"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.CHANGE_NETWORK_STATE"/>
+  <uses-permission name="android.permission.CONNECTIVITY_INTERNAL"/>
+  <uses-permission name="android.permission.DISPATCH_PROVISIONING_MESSAGE"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.MANAGE_USERS"/>
+  <uses-permission name="android.permission.MASTER_CLEAR"/>
+  <uses-permission name="android.permission.MODIFY_PHONE_STATE"/>
+  <uses-permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+  <uses-permission name="com.google.android.c2dm.permission.RECEIVE"/>
+  <uses-permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+  <uses-permission name="com.google.android.apps.work.oobconfig.ACCESS_FILES"/>
+  <uses-permission name="com.google.android.setupwizard.SETUP_COMPAT_SERVICE"/>
+  <uses-permission name="android.permission.MANAGE_CARRIER_OEM_UNLOCK_STATE"/>
+  <application label="Device setup" icon="res/AY.png" name="com.google.android.apps.work.oobconfig.OobConfigApplication" allowClearUserData="false" allowBackup="false" supportsRtl="true">
+    <meta-data name="com.google.android.gms.version" value="10298000"/>
+    <activity label="Support" name="com.google.android.apps.work.oobconfig.zerotouch.WebViewActivity" process=":webview"/>
+    <activity theme="SudThemeGlif.Light" name="com.google.android.apps.work.oobconfig.zerotouch.SuwActivity" permission="android.permission.DISPATCH_PROVISIONING_MESSAGE">
+      <intent-filter>
+        <action name="com.google.android.apps.work.oobconfig.action.LAUNCH_ZERO_TOUCH"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="SudThemeGlif.Light" name="com.google.android.apps.work.oobconfig.zerotouch.FactoryResetActivity"/>
+    <service name="com.google.android.apps.work.oobconfig.zerotouch.FactoryResetJobService" permission="android.permission.BIND_JOB_SERVICE" exported="true"/>
+    <service name="com.google.android.apps.work.oobconfig.NetworkJobService" permission="android.permission.BIND_JOB_SERVICE" exported="true"/>
+    <service name="com.google.android.apps.work.oobconfig.ProvisioningDataService" permission="android.permission.BIND_JOB_SERVICE" exported="false"/>
+    <receiver name="com.google.android.apps.work.oobconfig.BootCompletedReceiver">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.apps.work.oobconfig.gcm.GcmJobService" permission="android.permission.BIND_JOB_SERVICE" exported="true"/>
+    <receiver name="com.google.android.gms.gcm.GcmReceiver" permission="com.google.android.c2dm.permission.SEND" exported="true">
+      <intent-filter>
+        <action name="com.google.android.c2dm.intent.RECEIVE"/>
+        <action name="com.google.android.c2dm.intent.REGISTRATION"/>
+        <category name="com.google.android.apps.work.oobconfig"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.apps.work.oobconfig.gcm.ProvisioningConfigChangedGcmListenerService" exported="false">
+      <intent-filter>
+        <action name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+    </service>
+    <receiver name="com.google.android.apps.work.oobconfig.simlock.SimChangeReceiver" enabled="true">
+      <intent-filter>
+        <action name="android.intent.action.SIM_STATE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.apps.work.oobconfig.BusinessLogicJobService" permission="android.permission.BIND_JOB_SERVICE" exported="true"/>
+    <service name="com.google.android.apps.work.oobconfig.gservices.GservicesChangedObserverService" permission="android.permission.BIND_JOB_SERVICE" exported="true"/>
+    <service name="com.google.android.apps.work.oobconfig.ContentUriChangedJobService" permission="android.permission.BIND_JOB_SERVICE" exported="true"/>
+    <provider name="com.google.android.apps.work.oobconfig.provider.OobFileProvider" permission="com.google.android.apps.work.oobconfig.ACCESS_FILES" exported="false" authorities="com.google.android.apps.work.oobconfig.fileprovider" grantUriPermissions="true">
+      <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="oob_config_file_provider"/>
+    </provider>
+    <receiver name="com.google.android.apps.work.oobconfig.DialerCodeReceiver" exported="true">
+      <intent-filter>
+        <action name="android.telephony.action.SECRET_CODE"/>
+        <data scheme="android_secret_code" host="7465625"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.gms.common.api.GoogleApiActivity" exported="false"/>
+    <receiver name="com.google.android.gms.measurement.AppMeasurementReceiver" enabled="true" exported="false"/>
+    <service name="com.google.android.gms.measurement.AppMeasurementService" enabled="true" exported="false"/>
+    <receiver name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" permission="android.permission.INSTALL_PACKAGES" enabled="true">
+      <intent-filter>
+        <action name="com.android.vending.INSTALL_REFERRER"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.firebase.iid.FirebaseInstanceIdReceiver" permission="com.google.android.c2dm.permission.SEND" exported="true">
+      <intent-filter>
+        <action name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" exported="false"/>
+    <service name="com.google.firebase.iid.FirebaseInstanceIdService" exported="true">
+      <intent-filter priority="-500">
+        <action name="com.google.firebase.INSTANCE_ID_EVENT"/>
+      </intent-filter>
+    </service>
+  </application>
+</manifest>
+

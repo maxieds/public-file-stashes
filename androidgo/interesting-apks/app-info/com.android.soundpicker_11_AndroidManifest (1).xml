@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="android.media" versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.soundpicker" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <uses-permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.RECEIVE_DEVICE_CUSTOMIZATION_READY"/>
+  <uses-permission name="android.permission.WRITE_SETTINGS"/>
+  <application label="Sounds" allowBackup="false" supportsRtl="true" extractNativeLibs="true" appComponentFactory="androidx.core.app.CoreComponentFactory" usesNonSdkApi="true">
+    <receiver name="com.android.soundpicker.RingtoneReceiver">
+      <intent-filter>
+        <action name="android.intent.action.DEVICE_CUSTOMIZATION_READY"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.android.soundpicker.RingtoneOverlayService"/>
+    <activity theme="PickerDialogTheme" name="com.android.soundpicker.RingtonePickerActivity" enabled="true" excludeFromRecents="true">
+      <intent-filter>
+        <action name="android.intent.action.RINGTONE_PICKER"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>
+

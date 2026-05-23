@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.wallpaper" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <permission name="com.android.wallpaper.NOTIFY_ROTATING_WALLPAPER_CHANGED" protectionLevel="0x2"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.READ_MEDIA_IMAGES"/>
+  <uses-permission name="android.permission.READ_WALLPAPER_INTERNAL"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.BIND_WALLPAPER"/>
+  <uses-permission name="android.permission.SET_WALLPAPER"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="com.android.wallpaper.NOTIFY_ROTATING_WALLPAPER_CHANGED"/>
+  <application label="Wallpapers" icon="res/mipmap-anydpi-v26/product_logo_wallpapers_launcher_color_48.xml" name="com.android.wallpaper.picker.WallpapersApplication" allowBackup="true" restoreAnyVersion="true" supportsRtl="true" requiredForAllUsers="true" extractNativeLibs="false" appComponentFactory="androidx.core.app.CoreComponentFactory" usesNonSdkApi="true">
+    <meta-data name="com.android.wallpaper.asset.WallpaperGlideModule" value="GlideModule"/>
+    <activity theme="WallpaperTheme.NoBackground" label="Wallpapers" name="com.android.wallpaper.picker.TopLevelPickerActivity" resizeableActivity="false">
+      <intent-filter>
+        <action name="android.intent.action.SET_WALLPAPER"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity-alias label="Wallpapers" name="com.android.wallpaper.picker.CategoryPickerActivity" targetActivity="com.android.wallpaper.picker.TopLevelPickerActivity">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity-alias>
+    <activity theme="WallpaperTheme" label="Wallpapers" name="com.android.wallpaper.picker.individual.IndividualPickerActivity" parentActivityName="com.android.wallpaper.picker.TopLevelPickerActivity" resizeableActivity="false">
+      <intent-filter>
+        <action name="com.android.wallpaper.picker.DEEP_LINK"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="WallpaperTheme.Preview" name="com.android.wallpaper.picker.PreviewActivity" resizeableActivity="false"/>
+    <activity theme="WallpaperTheme.Preview" name="com.android.wallpaper.picker.StandalonePreviewActivity" resizeableActivity="false">
+      <intent-filter>
+        <action name="android.service.wallpaper.CROP_AND_SET_WALLPAPER"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="image/*"/>
+      </intent-filter>
+    </activity>
+    <activity theme="WallpaperTheme.Preview" name="com.android.wallpaper.picker.ViewOnlyPreviewActivity" resizeableActivity="false"/>
+    <service label="Rotating Image Wallpaper" name="com.android.wallpaper.module.NoBackupImageWallpaper" permission="android.permission.BIND_WALLPAPER" enabled="false" process=":live_wallpaper">
+      <intent-filter>
+        <action name="android.service.wallpaper.WallpaperService"/>
+      </intent-filter>
+      <meta-data name="android.service.wallpaper" resource="no_backup_image_wallpaper"/>
+    </service>
+    <activity name="androidx.slice.compat.SlicePermissionActivity" excludeFromRecents="true"/>
+  </application>
+</manifest>
+

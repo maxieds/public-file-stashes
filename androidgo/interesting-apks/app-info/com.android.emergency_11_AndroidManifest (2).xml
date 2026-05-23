@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="com.android.emergency.uid" versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.emergency" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <uses-permission name="android.permission.CALL_PHONE"/>
+  <uses-permission name="android.permission.CALL_PRIVILEGED"/>
+  <uses-permission name="android.permission.READ_CONTACTS"/>
+  <uses-permission name="android.permission.MANAGE_USERS"/>
+  <queries>
+    <intent>
+      <action name="android.media.action.IMAGE_CAPTURE"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.GET_CONTENT"/>
+      <data mimeType="image/*"/>
+    </intent>
+  </queries>
+  <queries>
+    <intent>
+      <action name="android.media.action.IMAGE_CAPTURE"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.GET_CONTENT"/>
+      <data mimeType="image/*"/>
+    </intent>
+  </queries>
+  <uses-permission name="android.permission.READ_CALL_LOG"/>
+  <application label="Emergency information" icon="res/mipmap-hdpi-v4/ic_local_hospital_24dp.png" supportsRtl="true" extractNativeLibs="true" defaultToDeviceProtectedStorage="true" directBootAware="true" appComponentFactory="androidx.core.app.CoreComponentFactory" usesNonSdkApi="true">
+    <activity theme="AppThemeEmergency" icon="res/drawable/ic_launcher_settings.xml" name="com.android.emergency.view.ViewInfoActivity" taskAffinity="com.android.settings" launchMode="2" showWhenLocked="true">
+      <intent-filter>
+        <action name="android.telephony.action.EMERGENCY_ASSISTANCE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="AppTheme" icon="res/drawable/ic_launcher_settings.xml" name="com.android.emergency.edit.EditInfoActivity" taskAffinity="com.android.settings" launchMode="2">
+      <intent-filter>
+        <action name="android.settings.EDIT_EMERGENCY_INFO"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity-alias label="Emergency information" name="com.android.emergency.edit.EditInfoSuggestion" exported="true" targetActivity="com.android.emergency.edit.EditInfoActivity">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="com.android.settings.suggested.category.FIRST_IMPRESSION"/>
+      </intent-filter>
+      <meta-data name="com.android.settings.dismiss" value="11,15,30"/>
+      <meta-data name="com.android.settings.title" resource="settings_suggestion_title"/>
+      <meta-data name="com.android.settings.summary" resource="settings_suggestion_body"/>
+      <meta-data name="com.android.settings.icon" resource="ic_local_hospital_24dp"/>
+    </activity-alias>
+    <activity theme="Theme.NoDisplay" name="com.android.emergency.EmergencyDialerTrampoline" exported="true" excludeFromRecents="true">
+      <intent-filter>
+        <action name="android.intent.action.DIAL_EMERGENCY"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.DIAL_EMERGENCY"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data scheme="tel"/>
+      </intent-filter>
+    </activity>
+    <activity theme="AppTheme" label="Medical information" icon="res/drawable/ic_launcher_settings.xml" name="com.android.emergency.edit.EditMedicalInfoActivity" taskAffinity="com.android.settings" launchMode="2" parentActivityName="com.android.emergency.edit.EditInfoActivity">
+      <intent-filter>
+        <action name="android.emergency.EDIT_MEDICAL_INFO"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <provider name="com.android.emergency.EmergencySearchIndexablesProvider" permission="android.permission.READ_SEARCH_INDEXABLES" exported="true" multiprocess="false" authorities="com.android.emergency" grantUriPermissions="true">
+      <intent-filter>
+        <action name="android.content.action.SEARCH_INDEXABLES_PROVIDER"/>
+      </intent-filter>
+    </provider>
+    <provider name="androidx.core.content.FileProvider" exported="false" authorities="com.android.emergency.files" grantUriPermissions="true">
+      <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="file_paths"/>
+    </provider>
+  </application>
+</manifest>
+

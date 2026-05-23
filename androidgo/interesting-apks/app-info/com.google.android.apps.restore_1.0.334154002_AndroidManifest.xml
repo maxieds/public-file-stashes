@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="9568" versionName="1.0.334154002" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.google.android.apps.restore" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="28" targetSdkVersion="29"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission name="android.permission.BACKUP"/>
+  <uses-permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.READ_CONTACTS"/>
+  <uses-permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.WRITE_CONTACTS"/>
+  <uses-permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
+  <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+  <uses-permission name="com.android.vending.setup.PLAY_SETUP_SERVICE"/>
+  <uses-permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+  <uses-permission name="com.google.android.setupwizard.READ_DEVICE_ORIGIN_FIRST_PARTY"/>
+  <uses-permission name="com.google.android.setupwizard.SETUP_COMPAT_SERVICE"/>
+  <uses-permission name="com.google.android.setupwizard.WRITE_DEVICE_ORIGIN"/>
+  <permission name="com.google.android.apps.restore.RESET_FLOW_PERMISSION" protectionLevel="0x2"/>
+  <application label="Android Setup" icon="res/drawable-hdpi-v4/quantum_ic_restore_googblue_48.png" name="com.google.android.apps.pixelmigrate.component.MigrateApplication" allowBackup="false" supportsRtl="true" extractNativeLibs="false" requestLegacyExternalStorage="true">
+    <activity theme="SudThemeGlif.Light" label="Android Setup" icon="res/drawable-hdpi-v4/quantum_ic_restore_googblue_48.png" name="com.google.android.apps.pixelmigrate.component.FlowChoiceActivity">
+      <intent-filter>
+        <action name="com.google.android.apps.restore.ACTION_FLOW_CHOICE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="SudThemeGlif.Light" label="Android Setup" icon="res/drawable-hdpi-v4/quantum_ic_restore_googblue_48.png" name="com.google.android.apps.pixelmigrate.common.component.WorkProfileSetupActivity">
+      <intent-filter>
+        <action name="com.google.android.apps.restore.WORK_PROFILE_SETUP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="SudThemeGlif.Light" label="Android Setup" icon="res/drawable-hdpi-v4/quantum_ic_restore_googblue_48.png" name="com.google.android.apps.pixelmigrate.component.RestoreChoiceActivity">
+      <intent-filter>
+        <action name="com.google.android.apps.restore.ACTION_RESTORE_CHOICE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="SudThemeGlif.Light" label="Android Setup" icon="res/drawable-hdpi-v4/quantum_ic_restore_googblue_48.png" name="com.google.android.apps.pixelmigrate.cloudrestore.component.CloudRestoreFlowActivity">
+      <intent-filter>
+        <action name="com.google.android.apps.pixelmigrate.ACTION_CLOUD_RESTORE_FLOW"/>
+        <action name="com.google.android.apps.restore.ACTION_CLOUD_RESTORE_FLOW"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="SudThemeGlif.Light" label="Android Setup" icon="res/drawable-hdpi-v4/quantum_ic_restore_googblue_48.png" name="com.google.android.apps.pixelmigrate.cloudrestore.component.KeyRecoveryLockScreenEntryActivity" exported="true" launchMode="1"/>
+    <activity theme="SudThemeGlif.Light" label="Android Setup" icon="res/drawable-hdpi-v4/quantum_ic_restore_googblue_48.png" name="com.google.android.apps.pixelmigrate.component.StubLauncherActivity" enabled="false" exported="true" launchMode="1" screenOrientation="14">
+      <intent-filter priority="1000">
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.HOME"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="SudThemeGlif.Light" label="Data Transfer Tool" icon="res/drawable-hdpi-v4/quantum_ic_restore_googblue_48.png" name="com.google.android.apps.pixelmigrate.cloudrestore.component.AddAccountActivity" exported="true">
+      <intent-filter>
+        <action name="com.google.android.apps.restore.ADD_ACCOUNT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="SudThemeGlif.Light" label="Data Transfer Tool" icon="res/drawable-hdpi-v4/quantum_ic_restore_googblue_48.png" name="com.google.android.apps.pixelmigrate.cloudrestore.component.AppPickerHostActivity" exported="true">
+      <intent-filter>
+        <action name="com.google.android.apps.restore.APP_PICKER_ADD_ACCOUNT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <service name="com.google.android.apps.pixelmigrate.cloudrestore.component.CloudRestoreService"/>
+    <receiver name="com.google.android.apps.pixelmigrate.component.ResetFlowReceiver" permission="com.google.android.apps.restore.RESET_FLOW_PERMISSION">
+      <intent-filter>
+        <action name="com.google.android.apps.pixelmigrate.RESET_FLOW"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.apps.pixelmigrate.component.LauncherRestoreStartReceiver" permission="android.permission.BACKUP" enabled="false">
+      <intent-filter>
+        <action name="com.google.android.apps.pixelmigrate.BROADCAST_LAUCHER_RESTORE_START"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.apps.pixelmigrate.component.LauncherRestoreFinishReceiver" permission="android.permission.BACKUP">
+      <intent-filter>
+        <action name="com.google.android.apps.pixelmigrate.BROADCAST_LAUCHER_RESTORE_FINISH"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.apps.pixelmigrate.component.PhenotypeUpdateReceiver" permission="com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST" exported="true">
+      <intent-filter>
+        <action name="com.google.android.gms.phenotype.UPDATE"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.apps.pixelmigrate.cloudrestore.googleone.GoogleOneNotificationClickReceiver" enabled="true" exported="false"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.apps.pixelmigrate" resource="com_google_android_apps_pixelmigrate_phenotype"/>
+    <service name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService" enabled="false" exported="false" process="">
+      <intent-filter>
+        <action name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"/>
+      </intent-filter>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.apps.pixelmigrate" resource="com_google_android_apps_pixelmigrate_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.apps.restore" resource="com_google_android_apps_restore_registration_info"/>
+    </service>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.apps.restore" resource="com_google_android_apps_restore_phenotype"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.gms.common.api.GoogleApiActivity" exported="false"/>
+    <meta-data name="com.google.android.gms.version" value="203212000"/>
+    <service name="com.google.firebase.components.ComponentDiscoveryService" exported="false">
+      <meta-data name="com.google.firebase.components:com.google.firebase.crash.component.FirebaseCrashRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.iid.Registrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+    </service>
+    <service name="com.google.android.gms.nearby.exposurenotification.WakeUpService" permission="com.google.android.gms.nearby.exposurenotification.EXPOSURE_CALLBACK" exported="true"/>
+    <activity theme="Theme.AppCompat.Light.DarkActionBar" label="PRIMES Events" name="com.google.android.libraries.performance.primes.debug.PrimesEventActivity" exported="false">
+      <intent-filter>
+        <action name="com.google.android.primes.action.DEBUG_PRIMES_EVENTS"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <receiver name="com.google.firebase.iid.FirebaseInstanceIdReceiver" permission="com.google.android.c2dm.permission.SEND" exported="true">
+      <intent-filter>
+        <action name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+    </receiver>
+    <provider name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" exported="false" multiprocess="true" authorities="com.google.android.apps.restore.lifecycle-process"/>
+  </application>
+</manifest>
+

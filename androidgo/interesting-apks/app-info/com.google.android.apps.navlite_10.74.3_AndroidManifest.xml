@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="com.google.android.apps.navlite" versionCode="27" versionName="10.74.3" compileSdkVersion="31" compileSdkVersionCodename="S" package="com.google.android.apps.navlite" platformBuildVersionCode="31" platformBuildVersionName="S">
+  <uses-sdk minSdkVersion="19" targetSdkVersion="31"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.GET_ACCOUNTS"/>
+  <uses-permission name="android.permission.MANAGE_ACCOUNTS"/>
+  <uses-permission name="android.permission.USE_CREDENTIALS"/>
+  <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-feature name="android.hardware.location.gps" required="false"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+  <uses-permission name="android.permission.VIBRATE"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE"/>
+  <queries>
+    <package name="com.google.android.apps.mapslite"/>
+    <package name="com.google.android.gms"/>
+    <intent>
+      <action name="android.intent.action.VIEW"/>
+      <data scheme="http"/>
+    </intent>
+    <package name="com.google.android.apps.maps"/>
+  </queries>
+  <uses-feature glEsVersion="0x20000" required="true"/>
+  <application label="Navigation for Maps Go" icon="res/N_.xml" name="com.google.android.apps.gmm.navgo.application.NavGoApplication" hardwareAccelerated="false" largeHeap="true" supportsRtl="true" extractNativeLibs="false">
+    <meta-data name="com.google.android.gms.version" value="212412000"/>
+    <meta-data name="com.google.location.beacon.ENV" value="PRODUCTION"/>
+    <meta-data name="com.google.location.beacon.API_KEY" value="AIzaSyCgtTpOu5c2KpLV83B_RT6TwPP6Ng0EJb8"/>
+    <meta-data name="com.google.android.geo.API_KEY" value="AIzaSyCgtTpOu5c2KpLV83B_RT6TwPP6Ng0EJb8"/>
+    <activity theme="SplashTheme" name="com.google.android.apps.gmm.navgo.NavGoActivity" launchMode="2" configChanges="0x480" alwaysRetainTaskState="true"/>
+    <activity-alias name="com.google.android.apps.navlite.NavLiteActivity" exported="true" targetActivity="com.google.android.apps.gmm.navgo.NavGoActivity">
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="http"/>
+        <data scheme="https"/>
+        <data pathPrefix="/maps/dir//"/>
+        <data host="www.google.ad"/>
+        <data host="www.google.ae"/>
+        <data host="www.google.as"/>
+        <data host="www.google.at"/>
+        <data host="www.google.ba"/>
+        <data host="www.google.be"/>
+        <data host="www.google.bf"/>
+        <data host="www.google.bg"/>
+        <data host="www.google.bi"/>
+        <data host="www.google.bj"/>
+        <data host="www.google.bs"/>
+        <data host="www.google.bt"/>
+        <data host="www.google.by"/>
+        <data host="www.google.ca"/>
+        <data host="www.google.cat"/>
+        <data host="www.google.cd"/>
+        <data host="www.google.cf"/>
+        <data host="www.google.cg"/>
+        <data host="www.google.ch"/>
+        <data host="www.google.ci"/>
+        <data host="www.google.cl"/>
+        <data host="www.google.cm"/>
+        <data host="www.google.cn"/>
+        <data host="www.google.co.ao"/>
+        <data host="www.google.co.bw"/>
+        <data host="www.google.co.ck"/>
+        <data host="www.google.co.cr"/>
+        <data host="www.google.co.id"/>
+        <data host="www.google.co.il"/>
+        <data host="www.google.co.in"/>
+        <data host="www.google.co.jp"/>
+        <data host="www.google.co.ke"/>
+        <data host="www.google.co.kr"/>
+        <data host="www.google.co.ls"/>
+        <data host="www.google.co.ma"/>
+        <data host="www.google.co.mz"/>
+        <data host="www.google.co.nz"/>
+        <data host="www.google.co.th"/>
+        <data host="www.google.co.tz"/>
+        <data host="www.google.co.ug"/>
+        <data host="www.google.co.uk"/>
+        <data host="www.google.co.ve"/>
+        <data host="www.google.co.vi"/>
+        <data host="www.google.co.za"/>
+        <data host="www.google.co.zm"/>
+        <data host="www.google.co.zw"/>
+        <data host="www.google.com"/>
+        <data host="www.google.com.ag"/>
+        <data host="www.google.com.ai"/>
+        <data host="www.google.com.ar"/>
+        <data host="www.google.com.au"/>
+        <data host="www.google.com.bd"/>
+        <data host="www.google.com.bh"/>
+        <data host="www.google.com.bn"/>
+        <data host="www.google.com.bo"/>
+        <data host="www.google.com.br"/>
+        <data host="www.google.com.bz"/>
+        <data host="www.google.com.co"/>
+        <data host="www.google.com.cu"/>
+        <data host="www.google.com.do"/>
+        <data host="www.google.com.ec"/>
+        <data host="www.google.com.eg"/>
+        <data host="www.google.com.et"/>
+        <data host="www.google.com.fj"/>
+        <data host="www.google.com.gh"/>
+        <data host="www.google.com.gi"/>
+        <data host="www.google.com.gt"/>
+        <data host="www.google.com.hk"/>
+        <data host="www.google.com.iq"/>
+        <data host="www.google.com.jm"/>
+        <data host="www.google.com.kh"/>
+        <data host="www.google.com.kw"/>
+        <data host="www.google.com.lb"/>
+        <data host="www.google.com.ly"/>
+        <data host="www.google.com.mm"/>
+        <data host="www.google.com.mt"/>
+        <data host="www.google.com.mx"/>
+        <data host="www.google.com.my"/>
+        <data host="www.google.com.na"/>
+        <data host="www.google.com.ng"/>
+        <data host="www.google.com.ni"/>
+        <data host="www.google.com.np"/>
+        <data host="www.google.com.om"/>
+        <data host="www.google.com.pa"/>
+        <data host="www.google.com.pe"/>
+        <data host="www.google.com.pg"/>
+        <data host="www.google.com.ph"/>
+        <data host="www.google.com.pr"/>
+        <data host="www.google.com.py"/>
+        <data host="www.google.com.qa"/>
+        <data host="www.google.com.sa"/>
+        <data host="www.google.com.sb"/>
+        <data host="www.google.com.sg"/>
+        <data host="www.google.com.sl"/>
+        <data host="www.google.com.sv"/>
+        <data host="www.google.com.tr"/>
+        <data host="www.google.com.tw"/>
+        <data host="www.google.com.ua"/>
+        <data host="www.google.com.uy"/>
+        <data host="www.google.com.vc"/>
+        <data host="www.google.cv"/>
+        <data host="www.google.cz"/>
+        <data host="www.google.de"/>
+        <data host="www.google.dj"/>
+        <data host="www.google.dk"/>
+        <data host="www.google.dm"/>
+        <data host="www.google.dz"/>
+        <data host="www.google.ee"/>
+        <data host="www.google.es"/>
+        <data host="www.google.fi"/>
+        <data host="www.google.fm"/>
+        <data host="www.google.fr"/>
+        <data host="www.google.ga"/>
+        <data host="www.google.ge"/>
+        <data host="www.google.gg"/>
+        <data host="www.google.gl"/>
+        <data host="www.google.gm"/>
+        <data host="www.google.gp"/>
+        <data host="www.google.gr"/>
+        <data host="www.google.gy"/>
+        <data host="www.google.hn"/>
+        <data host="www.google.hr"/>
+        <data host="www.google.ht"/>
+        <data host="www.google.hu"/>
+        <data host="www.google.ie"/>
+        <data host="www.google.im"/>
+        <data host="www.google.iq"/>
+        <data host="www.google.is"/>
+        <data host="www.google.it"/>
+        <data host="www.google.it.ao"/>
+        <data host="www.google.je"/>
+        <data host="www.google.jo"/>
+        <data host="www.google.kg"/>
+        <data host="www.google.ki"/>
+        <data host="www.google.kz"/>
+        <data host="www.google.la"/>
+        <data host="www.google.li"/>
+        <data host="www.google.lk"/>
+        <data host="www.google.lt"/>
+        <data host="www.google.lu"/>
+        <data host="www.google.lv"/>
+        <data host="www.google.mg"/>
+        <data host="www.google.mk"/>
+        <data host="www.google.ml"/>
+        <data host="www.google.mn"/>
+        <data host="www.google.ms"/>
+        <data host="www.google.mu"/>
+        <data host="www.google.mv"/>
+        <data host="www.google.mw"/>
+        <data host="www.google.ne"/>
+        <data host="www.google.ng"/>
+        <data host="www.google.nl"/>
+        <data host="www.google.no"/>
+        <data host="www.google.nr"/>
+        <data host="www.google.nu"/>
+        <data host="www.google.pl"/>
+        <data host="www.google.pn"/>
+        <data host="www.google.pt"/>
+        <data host="www.google.ro"/>
+        <data host="www.google.rs"/>
+        <data host="www.google.ru"/>
+        <data host="www.google.rw"/>
+        <data host="www.google.sc"/>
+        <data host="www.google.se"/>
+        <data host="www.google.sh"/>
+        <data host="www.google.si"/>
+        <data host="www.google.sk"/>
+        <data host="www.google.sm"/>
+        <data host="www.google.sn"/>
+        <data host="www.google.so"/>
+        <data host="www.google.st"/>
+        <data host="www.google.td"/>
+        <data host="www.google.tg"/>
+        <data host="www.google.tk"/>
+        <data host="www.google.tl"/>
+        <data host="www.google.tn"/>
+        <data host="www.google.to"/>
+        <data host="www.google.tt"/>
+        <data host="www.google.vg"/>
+        <data host="www.google.vu"/>
+        <data host="www.google.ws"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="http"/>
+        <data scheme="https"/>
+        <data host="navlite.app.goo.gl"/>
+      </intent-filter>
+    </activity-alias>
+    <activity theme="SplashTheme" name="com.google.android.apps.gmm.navgo.KillSwitchActivity" configChanges="0x480"/>
+    <service name="com.google.android.libraries.geo.navcore.service.base.NavigationService" foregroundServiceType="0x8"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.personalization.footprints" resource="com_google_android_libraries_personalization_footprints_phenotype"/>
+    <service name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService" enabled="false" exported="false" process="">
+      <intent-filter>
+        <action name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"/>
+      </intent-filter>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.personalization.footprints" resource="com_google_android_libraries_personalization_footprints_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.consent.flows.footprints" resource="com_google_android_libraries_consent_flows_footprints_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.lighter.android" resource="com_google_lighter_android_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.consent.flows.location" resource="com_google_android_libraries_consent_flows_location_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.onegoogle" resource="com_google_android_libraries_onegoogle_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_registration_info"/>
+    </service>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.consent.flows.footprints" resource="com_google_android_libraries_consent_flows_footprints_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.lighter.android" resource="com_google_lighter_android_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.consent.flows.location" resource="com_google_android_libraries_consent_flows_location_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.onegoogle" resource="com_google_android_libraries_onegoogle_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_phenotype"/>
+    <activity name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" enabled="false" exported="false" process=":playcore_missing_splits_activity" stateNotNeeded="true" launchMode="3"/>
+    <activity theme="Theme.PlayCore.Transparent" name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" enabled="false" exported="false" stateNotNeeded="true"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" exported="false" excludeFromRecents="true"/>
+    <service name="com.google.android.gms.auth.api.signin.RevocationBoundService" permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" exported="true" visibleToInstantApps="true"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.gms.common.api.GoogleApiActivity" exported="false"/>
+    <service name="com.google.firebase.components.ComponentDiscoveryService" exported="false">
+      <meta-data name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.iid.Registrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+    </service>
+    <uses-library name="org.apache.http.legacy" required="false"/>
+    <activity label="ReportAbuseActivity" name="com.google.android.libraries.abuse.reporting.ReportAbuseActivity" exported="true"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.libraries.onegoogle.accountmenu.accountlayer.AddAccountActivity" exported="false"/>
+    <receiver name="com.google.android.libraries.performance.primes.transmitter.LifeboatReceiver" exported="false" process=":primes_lifeboat"/>
+    <receiver name="com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver" exported="true" process="">
+      <intent-filter>
+        <action name="android.accounts.action.ACCOUNT_REMOVED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver" permission="com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST" exported="true" process="">
+      <intent-filter>
+        <action name="com.google.android.gms.phenotype.UPDATE"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.social.peoplekit.thirdparty.viewcontrollers.ThirdPartyReceiver" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.PACKAGE_FULLY_REMOVED"/>
+        <action name="android.intent.action.PACKAGE_REMOVED"/>
+        <data scheme="package"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.firebase.iid.FirebaseInstanceIdReceiver" permission="com.google.android.c2dm.permission.SEND" exported="true">
+      <intent-filter>
+        <action name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.firebase.messaging.FirebaseMessagingService" exported="false" directBootAware="true">
+      <intent-filter priority="-500">
+        <action name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <provider name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" exported="false" multiprocess="true" authorities="com.google.android.apps.navlite.lifecycle-process"/>
+    <provider name="androidx.startup.InitializationProvider" exported="false" authorities="com.google.android.apps.navlite.androidx-startup">
+      <meta-data name="androidx.work.WorkManagerInitializer" value="androidx.startup"/>
+    </provider>
+    <service name="androidx.work.impl.background.systemalarm.SystemAlarmService" enabled="false" exported="false" directBootAware="false"/>
+    <service name="androidx.work.impl.background.systemjob.SystemJobService" permission="android.permission.BIND_JOB_SERVICE" enabled="true" exported="true" directBootAware="false"/>
+    <service name="androidx.work.impl.foreground.SystemForegroundService" enabled="true" exported="false" directBootAware="false"/>
+    <receiver name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" enabled="true" exported="false" directBootAware="false"/>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.ACTION_POWER_CONNECTED"/>
+        <action name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.BATTERY_OKAY"/>
+        <action name="android.intent.action.BATTERY_LOW"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.DEVICE_STORAGE_LOW"/>
+        <action name="android.intent.action.DEVICE_STORAGE_OK"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.net.conn.CONNECTIVITY_CHANGE"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.RescheduleReceiver" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.TIME_SET"/>
+        <action name="android.intent.action.TIMEZONE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.diagnostics.DiagnosticsReceiver" permission="android.permission.DUMP" enabled="true" exported="true" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>
+

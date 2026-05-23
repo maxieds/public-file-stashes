@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="com.google.android.calendar.uid.shared" versionCode="2017220820" versionName="2023.30.0-550377034-release" sharedUserLabel="Calendar" compileSdkVersion="34" compileSdkVersionCodename="VanillaIceCream" package="com.google.android.calendar" platformBuildVersionCode="34" platformBuildVersionName="VanillaIceCream">
+  <uses-sdk minSdkVersion="21" targetSdkVersion="33"/>
+  <permission name="com.google.android.calendar.permission.C2D_MESSAGE" protectionLevel="0x2"/>
+  <permission name="com.google.android.calendar.permission.READ_OOBE" protectionLevel="0x2"/>
+  <uses-permission name="android.permission.GET_ACCOUNTS" maxSdkVersion="22"/>
+  <uses-permission name="android.permission.MANAGE_ACCOUNTS" maxSdkVersion="22"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.VIBRATE"/>
+  <uses-permission name="android.permission.READ_CONTACTS"/>
+  <uses-permission name="android.permission.READ_CALENDAR"/>
+  <uses-permission name="android.permission.WRITE_CALENDAR"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.USE_CREDENTIALS"/>
+  <uses-permission name="android.permission.READ_SYNC_SETTINGS"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission name="android.permission.READ_SYNC_STATS"/>
+  <uses-permission name="android.permission.WRITE_SYNC_SETTINGS"/>
+  <uses-permission name="com.google.android.googleapps.permission.GOOGLE_AUTH"/>
+  <uses-permission name="android.permission.SUBSCRIBED_FEEDS_READ"/>
+  <uses-permission name="android.permission.SUBSCRIBED_FEEDS_WRITE"/>
+  <uses-permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+  <uses-permission name="com.google.android.c2dm.permission.RECEIVE"/>
+  <uses-permission name="com.google.android.calendar.permission.C2D_MESSAGE"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="com.google.android.gm.permission.READ_GMAIL"/>
+  <uses-permission name="com.google.android.gm.exchange.BIND"/>
+  <uses-permission name="com.google.android.hangouts.START_HANGOUT"/>
+  <uses-permission name="android.permission.GET_PACKAGE_SIZE"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE" maxSdkVersion="30"/>
+  <uses-permission name="android.permission.INTERACT_ACROSS_PROFILES"/>
+  <uses-permission name="android.permission.SCHEDULE_EXACT_ALARM" maxSdkVersion="32"/>
+  <uses-permission name="android.permission.USE_EXACT_ALARM"/>
+  <uses-permission name="android.permission.POST_NOTIFICATIONS"/>
+  <uses-permission-sdk-23 name="android.permission.CALL_PHONE"/>
+  <uses-feature name="android.hardware.location" required="false"/>
+  <uses-feature name="android.hardware.location.network" required="false"/>
+  <uses-feature glEsVersion="0x10000" required="false"/>
+  <queries>
+    <package name="com.google.android.apps.dynamite"/>
+    <package name="com.google.android.gm"/>
+    <package name="com.google.android.syncadapters.calendar"/>
+    <package name="com.google.android.apps.tasks"/>
+    <package name="com.google.android.calendar"/>
+    <package name="com.google.android.apps.meetings"/>
+    <package name="com.google.android.apps.tachyon"/>
+    <package name="com.google.android.apps.docs"/>
+    <intent>
+      <action name="android.intent.action.SENDTO"/>
+      <data scheme="mailto"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.INSERT"/>
+      <data mimeType="vnd.android.cursor.item/event"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.VIEW"/>
+      <data scheme="https" host="chat.google.com"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.VIEW"/>
+      <data mimeType="vnd.google.android.hangouts/*"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.INSERT"/>
+      <data mimeType="vnd.android.cursor.dir/contact"/>
+    </intent>
+    <package name="com.android.contacts"/>
+    <intent>
+      <action name="android.intent.action.VIEW"/>
+      <category name="android.intent.category.BROWSABLE"/>
+      <data scheme="https"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.CALL"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.DIAL"/>
+    </intent>
+    <intent>
+      <action name="com.google.android.gsf.GOOGLE_APPS_LOCATION_SETTINGS"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.VIEW"/>
+      <category name="android.intent.category.BROWSABLE"/>
+      <data scheme="https" host="docs.google.com"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.VIEW"/>
+      <category name="android.intent.category.BROWSABLE"/>
+      <data scheme="https" host="drive.google.com"/>
+    </intent>
+    <package name="com.google.android.gms"/>
+    <package name="com.android.vending"/>
+    <package name="com.google.android.gm.lite"/>
+    <package name="com.google.android.gm.exchange"/>
+    <package name="com.google.corp.bizapps.rews.campus.android"/>
+    <package name="com.google.android.apps.docs.editors.docs"/>
+    <package name="com.google.android.apps.docs.editors.sheets"/>
+    <package name="com.google.android.apps.docs.editors.slides"/>
+    <package name="com.google.android.apps.docs.editors.drawings"/>
+    <intent>
+      <action name="android.intent.action.VIEW"/>
+      <category name="android.intent.category.BROWSABLE"/>
+      <data scheme="http" host="www.example.com"/>
+    </intent>
+    <intent>
+      <action name="android.support.customtabs.action.CustomTabsService"/>
+    </intent>
+  </queries>
+  <permission name="com.google.android.calendar.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" protectionLevel="0x2"/>
+  <application label="Calendar" icon="res/D42.xml" name="com.google.android.calendar.CalendarApplication" taskAffinity="google.android.task.calendar" backupAgent="com.google.android.calendar.backup.CalendarBackupAgent" allowBackup="true" restoreAnyVersion="true" hardwareAccelerated="true" supportsRtl="true" requiredAccountType="*" usesCleartextTraffic="false" roundIcon="res/D42.xml" appComponentFactory="androidx.core.app.CoreComponentFactory" crossProfile="true" gwpAsanMode="1" localeConfig="res/Br.xml" enableOnBackInvokedCallback="true">
+    <uses-library name="org.apache.http.legacy" required="false"/>
+    <meta-data name="com.google.android.gms.version" value="233010000"/>
+    <meta-data name="com.google.android.partnersetup.RLZ_BOUNTY_ACCESS_POINT" value="Y0,Y8"/>
+    <meta-data name="android.allow_multiple_resumed_activities" value="true"/>
+    <meta-data name="intent_api_version" value="1"/>
+    <activity theme="SplashScreen" name="com.google.android.calendar.AllInOneCalendarActivity" exported="false" launchMode="2" windowSoftInputMode="0x20"/>
+    <activity theme="EventInfoActivityGmTheme" name="com.google.android.calendar.event.EventInfoActivity" exported="false" taskAffinity="com.google.android.calendar.event.EventInfoActivity" launchMode="2" autoRemoveFromRecents="true">
+      <intent-filter>
+        <action name="android.provider.calendar.action.VIEW_MANAGED_PROFILE_CALENDAR_EVENT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EventInfoActivityGmTheme" name="com.google.android.calendar.event.CrossProfileEventInfoActivity" exported="false" taskAffinity="com.google.android.calendar.event.EventInfoActivity" launchMode="0" autoRemoveFromRecents="true"/>
+    <activity theme="LaunchTheme" name="com.android.calendar.event.LaunchInfoActivity" exported="true" taskAffinity="com.android.calendar.event.LaunchInfoActivity" excludeFromRecents="true" visibleToInstantApps="true">
+      <intent-filter>
+        <action name="android.intent.action.EDIT"/>
+        <action name="android.intent.action.INSERT"/>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.item/event"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.EDIT"/>
+        <action name="android.intent.action.INSERT"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.dir/event"/>
+      </intent-filter>
+      <intent-filter priority="50" autoVerify="false">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="http"/>
+        <data scheme="https"/>
+        <data host="www.google.com"/>
+        <data pathPrefix="/calendar/event"/>
+        <data pathPrefix="/calendar/mevent"/>
+        <data pathPrefix="/calendar/render"/>
+        <data pathPattern="/calendar"/>
+        <data pathPattern="/calendar/"/>
+        <data pathPattern="/calendar/hosted/.*/event"/>
+      </intent-filter>
+      <intent-filter priority="50" autoVerify="false">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="http"/>
+        <data scheme="https"/>
+        <data host="calendar.google.com"/>
+        <data pathPrefix="/calendar/event"/>
+        <data pathPrefix="/calendar/task"/>
+        <data pathPattern="/calendar/u/.*/event"/>
+        <data pathPrefix="/calendar/mevent"/>
+        <data pathPattern="/calendar/u/.*/mevent"/>
+        <data pathPrefix="/calendar/render"/>
+        <data pathPrefix="/calendar/u/.*/render"/>
+        <data pathPattern="/calendar/hosted/.*/event"/>
+        <data pathPattern="/calendar/hosted/.*/render"/>
+        <data pathPattern=""/>
+        <data pathPattern="/"/>
+        <data pathPattern="/calendar"/>
+        <data pathPattern="/calendar/"/>
+        <data pathPattern="/calendar/u/."/>
+        <data pathPattern="/calendar/u/.."/>
+      </intent-filter>
+    </activity>
+    <activity-alias name="com.android.calendar.AllInOneActivity" exported="true" launchMode="2" targetActivity="com.android.calendar.event.LaunchInfoActivity" windowSoftInputMode="0x20">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.LAUNCHER"/>
+        <category name="android.intent.category.APP_CALENDAR"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data mimeType="time/epoch"/>
+        <data host="com.android.calendar"/>
+        <data scheme="content"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.google.android.calendar.EVENT_INSERT"/>
+        <action name="com.google.android.calendar.EVENT_VIEW"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.google.android.calendar.FIND_TIME"/>
+        <action name="com.google.android.calendar.AD_HOC_SCHEDULE_INSERT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="android.app.shortcuts" resource="launcher_shortcuts"/>
+      <meta-data name="com.google.android.calendar.dynamic_icons" resource="calendar_icons_dynamic"/>
+      <meta-data name="com.google.android.calendar.dynamic_icons_nexus_round" resource="calendar_icons_dynamic_nexus_round"/>
+    </activity-alias>
+    <activity-alias name="com.android.calendar.LaunchActivity" exported="true" targetActivity="com.android.calendar.event.LaunchInfoActivity"/>
+    <activity-alias label="Settings" name="com.google.android.calendar.timely.settings.CalendarPublicPreferenceActvity" exported="true" targetActivity="com.android.calendar.event.LaunchInfoActivity">
+      <intent-filter>
+        <action name="android.intent.action.MANAGE_NETWORK_USAGE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.NOTIFICATION_PREFERENCES"/>
+      </intent-filter>
+    </activity-alias>
+    <activity-alias name="com.google.android.calendar.ICalLauncher" exported="true" launchMode="2" targetActivity="com.android.calendar.event.LaunchInfoActivity">
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data scheme="http"/>
+        <data scheme="https"/>
+        <data scheme="content"/>
+        <data scheme="file"/>
+        <data scheme=""/>
+        <data host="*"/>
+        <data pathPattern=".*\.ics"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data scheme="http"/>
+        <data scheme="https"/>
+        <data scheme="content"/>
+        <data scheme="file"/>
+        <data scheme=""/>
+        <data host="*"/>
+        <data mimeType="text/calendar"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data scheme="http"/>
+        <data scheme="https"/>
+        <data scheme="content"/>
+        <data scheme="file"/>
+        <data scheme=""/>
+        <data host="*"/>
+        <data mimeType="application/ics"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data scheme="http"/>
+        <data scheme="https"/>
+        <data scheme="content"/>
+        <data scheme="file"/>
+        <data scheme=""/>
+        <data host="*"/>
+        <data mimeType="application/octet-stream"/>
+        <data pathPattern=".*\.ics"/>
+      </intent-filter>
+    </activity-alias>
+    <meta-data name="android.app.default_searchable" value="com.google.android.calendar.AlternateSearchActivity"/>
+    <activity theme="CalendarGmTheme.NoActionBar" label="Search my calendars" name="com.google.android.calendar.AlternateSearchActivity" exported="false" launchMode="1" windowSoftInputMode="0x2">
+      <intent-filter>
+        <action name="android.intent.action.SEARCH"/>
+        <action name="com.google.android.gms.actions.SEARCH_ACTION"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="android.app.searchable" resource="alternate_searchable"/>
+    </activity>
+    <activity theme="QuickResponseTheme" label="Email response" name="com.google.android.calendar.quickresponse.QuickResponseActivity" exported="false" excludeFromRecents="true" launchMode="3"/>
+    <activity theme="CalendarGmTheme.NoActionBar" name="com.google.android.calendar.launch.oobe.WhatsNewFullScreen" exported="false"/>
+    <activity theme="CalendarGmTheme.NoActionBar" name="com.google.android.calendar.ical.ICalActivity" exported="false" taskAffinity="" excludeFromRecents="true" launchMode="2"/>
+    <activity theme="NotificationActionTrampolineThemeLaunch" name="com.google.android.calendar.alerts.NotificationActionTrampoline" exported="false" excludeFromRecents="true" launchMode="3"/>
+    <service name="com.google.android.calendar.timely.CalendarOobeService" permission="com.google.android.calendar.permission.READ_OOBE" exported="true"/>
+    <receiver name="com.google.android.calendar.SyncUpgradeReceiver" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.MY_PACKAGE_REPLACED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.calendar.AllPrefsUpgradeReceiver" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.MY_PACKAGE_REPLACED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.apps.calendar.sync.SyncOnUnlockReceiver" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.apps.calendar.removeaccountdata.AccountDataCleaner" exported="true">
+      <intent-filter>
+        <action name="android.accounts.LOGIN_ACCOUNTS_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.calendar.alerts.DismissAlarmsService" exported="false"/>
+    <receiver label="Calendar schedule" name="com.android.calendar.widget.CalendarAppWidgetProvider" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.TIMEZONE_CHANGED"/>
+        <action name="android.intent.action.DATE_CHANGED"/>
+        <action name="android.intent.action.TIME_SET"/>
+        <action name="android.intent.action.LOCALE_CHANGED"/>
+        <action name="com.google.android.calendar.widget.MIDNIGHT"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.PROVIDER_CHANGED"/>
+        <data scheme="content"/>
+        <data host="com.android.calendar"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.google.android.calendar.ACTION_CALENDAR_PROVIDER_CHANGED"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.google.android.calendar.APPWIDGET_SCHEDULED_UPDATE"/>
+        <data scheme="content"/>
+        <data host="com.android.calendar"/>
+        <data mimeType="vnd.android.data/update"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.appwidget.action.APPWIDGET_UPDATE"/>
+        <action name="com.google.android.calendar.APPWIDGET_CALLER_IS_SYNCADAPTER"/>
+        <action name="com.google.android.calendar.APPWIDGET_NEXT_UPDATE"/>
+        <action name="com.google.android.calendar.APPWIDGET_REMINDER_CHANGED"/>
+        <action name="com.google.android.calendar.APPWIDGET_TASK_CHANGED"/>
+        <action name="com.google.android.calendar.APPWIDGET_CROSS_PROFILE_CHANGED"/>
+        <action name="com.google.android.timely.intent.action.REMINDER_SETTINGS_CHANGED"/>
+        <action name="com.google.android.timely.intent.action.TASK_SETTINGS_CHANGED"/>
+      </intent-filter>
+      <meta-data name="android.appwidget.provider" resource="appwidgetschedule_info"/>
+    </receiver>
+    <receiver name="com.google.android.calendar.widgetschedule.ScheduleViewWidgetLifeboatReceiver" exported="false">
+      <intent-filter>
+        <action name="com.google.android.calendar.APPWIDGET_LIFEBOAT"/>
+        <data scheme="widget"/>
+        <data host="com.android.calendar"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.calendar.widgetschedule.ScheduleViewWidgetDataReceiver" exported="false">
+      <intent-filter>
+        <action name="com.google.android.calendar.APPWIDGET_REFRESH_MODEL"/>
+        <data scheme="content"/>
+        <data host="com.android.calendar"/>
+        <data mimeType="vnd.android.data/update"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.calendar.widgetschedule.ScheduleViewWidgetService" permission="android.permission.BIND_REMOTEVIEWS" exported="false"/>
+    <service name="com.google.android.calendar.alerts.ReminderNotificationsActionService" exported="false"/>
+    <service name="com.google.android.calendar.alerts.RemindersListenerService" exported="true">
+      <intent-filter>
+        <action name="com.google.android.gms.reminders.BIND_LISTENER"/>
+      </intent-filter>
+    </service>
+    <receiver name="com.google.android.calendar.alerts.RemindersBroadcastReceiver" exported="false"/>
+    <provider name="androidx.core.content.FileProvider" exported="false" authorities="com.google.android.calendar.fileprovider" grantUriPermissions="true">
+      <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="file_paths"/>
+    </provider>
+    <activity theme="FindTimeTheme" label="Find a time" name="com.google.android.calendar.event.FindTimeActivity" exported="false"/>
+    <activity theme="RoomBookingTheme" label="Room booking screen" name="com.google.android.calendar.timely.rooms.controller.RoomBookingActivity" exported="false" windowSoftInputMode="0x2"/>
+    <activity theme="PrivacyPolicyTheme" name="com.google.android.calendar.PrivacyPolicyActivity" exported="true" windowSoftInputMode="0x2"/>
+    <service name="com.google.calendar.v2a.shared.sync.impl.android.PlatformSyncShell$SyncAdapterService" enabled="true" exported="false">
+      <intent-filter>
+        <action name="android.content.SyncAdapter"/>
+      </intent-filter>
+      <meta-data name="android.content.SyncAdapter" resource="syncadapterv2a"/>
+    </service>
+    <provider label="Google Calendar" name="com.google.calendar.v2a.shared.sync.impl.android.PlatformSyncShell$Provider" exported="false" authorities="com.google.android.calendar" syncable="true"/>
+    <receiver name="com.google.calendar.v2a.shared.sync.impl.android.accounts.AccountsBroadcastReceiver" enabled="true" exported="true">
+      <intent-filter>
+        <action name="android.accounts.LOGIN_ACCOUNTS_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver label="Calendar month view" name="com.google.android.calendar.widgetmonth.MonthViewWidgetProvider" exported="true">
+      <intent-filter>
+        <action name="android.appwidget.action.APPWIDGET_UPDATE"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.DATE_CHANGED"/>
+        <action name="android.intent.action.TIME_SET"/>
+        <action name="android.intent.action.TIMEZONE_CHANGED"/>
+      </intent-filter>
+      <meta-data name="android.appwidget.provider" resource="appwidgetmonth_info"/>
+    </receiver>
+    <receiver name="com.google.android.calendar.widgetmonth.MonthViewWidgetModelRefresher" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.LOCALE_CHANGED"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.PROVIDER_CHANGED"/>
+        <data scheme="content"/>
+        <data host="com.android.calendar"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.google.android.calendar.ACTION_CALENDAR_PROVIDER_CHANGED"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.google.android.calendar.APPWIDGET_CALLER_IS_SYNCADAPTER"/>
+        <action name="com.google.android.calendar.APPWIDGET_REMINDER_CHANGED"/>
+        <action name="com.google.android.calendar.APPWIDGET_TASK_CHANGED"/>
+        <action name="com.google.android.calendar.APPWIDGET_CROSS_PROFILE_CHANGED"/>
+        <action name="com.google.android.timely.intent.action.REMINDER_SETTINGS_CHANGED"/>
+        <action name="com.google.android.timely.intent.action.TASK_SETTINGS_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="CalendarGmTheme.NoActionBar" name="com.google.android.calendar.launch.RequestPermissionsActivity" exported="false" launchMode="2" windowSoftInputMode="0x20"/>
+    <provider label="Tasks in Calendar" name="com.google.android.apps.calendar.vagabond.tasks.impl.sync.PlatformSync$Provider" exported="false" authorities="com.google.android.calendar.tasks" syncable="true"/>
+    <service name="com.google.android.apps.calendar.vagabond.tasks.impl.sync.PlatformSync$SyncService" exported="false">
+      <intent-filter>
+        <action name="android.content.SyncAdapter"/>
+      </intent-filter>
+      <meta-data name="android.content.SyncAdapter" resource="tasks_sync_adapter"/>
+    </service>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.calendar" resource="com_google_android_calendar_phenotype_release"/>
+    <service name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService" enabled="false" exported="false" process="">
+      <intent-filter>
+        <action name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"/>
+      </intent-filter>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.calendar" resource="com_google_android_calendar_registration_info_release"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.notifications" resource="com_google_android_libraries_notifications_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.social.connections" resource="com_google_android_libraries_social_connections_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.social.connections" resource="com_google_android_libraries_social_connections_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.auth_account" resource="com_google_android_gms_auth_account_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.feedback" resource="com_google_android_gms_feedback_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.ulr" resource="com_google_android_gms_ulr_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.usagereporting" resource="com_google_android_gms_usagereporting_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.notifications.platform" resource="com_google_android_libraries_notifications_platform_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.internal.growth.growthkit" resource="com_google_android_libraries_internal_growth_growthkit_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:hub_android.device" resource="hub_android_device_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.mdi.sync" resource="com_google_android_libraries_mdi_sync_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.mdi.sync" resource="com_google_android_libraries_mdi_sync_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.onegoogle" resource="com_google_android_libraries_onegoogle_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.user.peoplesheet" resource="com_google_android_libraries_user_peoplesheet_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.user.peoplesheet" resource="com_google_android_libraries_user_peoplesheet_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.social.peopleintelligence" resource="com_google_android_libraries_social_peopleintelligence_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.social.peopleintelligence" resource="com_google_android_libraries_social_peopleintelligence_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.surveys" resource="com_google_android_libraries_surveys_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.apps.tasks.shared.android" resource="com_google_apps_tasks_shared_android_registration_info_prod"/>
+    </service>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.notifications" resource="com_google_android_libraries_notifications_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.social.connections" resource="com_google_android_libraries_social_connections_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.notifications.platform" resource="com_google_android_libraries_notifications_platform_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.internal.growth.growthkit" resource="com_google_android_libraries_internal_growth_growthkit_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:hub_android.device" resource="hub_android_device_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.mdi.sync" resource="com_google_android_libraries_mdi_sync_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.onegoogle" resource="com_google_android_libraries_onegoogle_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.user.peoplesheet" resource="com_google_android_libraries_user_peoplesheet_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.social.peopleintelligence" resource="com_google_android_libraries_social_peopleintelligence_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.surveys" resource="com_google_android_libraries_surveys_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.apps.tasks.shared.android" resource="com_google_apps_tasks_shared_android_phenotype_prod"/>
+    <activity theme="AddNoteTheme" name="com.google.android.apps.calendar.addnote.AddNoteActivity" exported="false" windowSoftInputMode="0x10"/>
+    <service name="com.google.android.syncadapters.calendar.CalendarSyncAdapterService" exported="false">
+      <intent-filter>
+        <action name="android.content.SyncAdapter"/>
+      </intent-filter>
+      <meta-data name="android.content.SyncAdapter" resource="syncadapter"/>
+    </service>
+    <activity theme="Theme.AppCompat" name="com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseRedirectUriReceiverActivity" exported="true" excludeFromRecents="true">
+      <intent-filter autoVerify="true">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="https" host="client-side-encryption.google.com" path="/oidc/calendar/native/callback"/>
+      </intent-filter>
+      <intent-filter autoVerify="true">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="https" host="krahsc.google.com" path="/oidc/calendar/native/callback"/>
+      </intent-filter>
+    </activity>
+    <meta-data name="android.content.APP_RESTRICTIONS" resource="app_restrictions"/>
+    <activity theme="CalendarGmTheme.NoActionBar" label="Dial in numbers" name="com.google.android.apps.calendar.meetings.activity.ConferencePhoneNumbersActivity" exported="false">
+      <intent-filter>
+        <action name="ConferencePhoneNumbersActivity.intent.action.Launch"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="CalendarGmTheme.NoActionBar" name="com.google.android.apps.calendar.notificationpermission.RequestNotificationPermissionsActivity" exported="false" launchMode="2" windowSoftInputMode="0x20"/>
+    <receiver name="com.google.android.apps.calendar.panlingual.impl.PanlingualBroadcastReceiver" exported="false">
+      <intent-filter>
+        <action name="android.intent.action.MY_PACKAGE_REPLACED"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="ProposeNewTimeTheme" name="com.google.android.apps.calendar.proposenewtime.ProposeNewTimeActivity" exported="false" windowSoftInputMode="0x10"/>
+    <service name="com.google.android.apps.calendar.tickles.impl.SyncForegroundService" exported="false" foregroundServiceType="0x1"/>
+    <receiver name="com.google.android.apps.calendar.usernotifications.NotificationsRelevantUpdatesReceiver" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.PROVIDER_CHANGED"/>
+        <data scheme="content"/>
+        <data host="com.android.calendar"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.google.android.calendar.ACTION_CALENDAR_PROVIDER_CHANGED_FOR_NOTIFICATIONS"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.TIME_SET"/>
+        <action name="android.intent.action.DATE_CHANGED"/>
+        <action name="android.intent.action.TIMEZONE_CHANGED"/>
+        <action name="android.intent.action.LOCALE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.apps.calendar.usernotificationsframework.common.UserNotificationBroadcastReceiver" exported="false">
+      <intent-filter>
+        <action name="com.google.android.calendar.intent.action.CHECK_NOTIFICATIONS"/>
+        <action name="com.google.android.calendar.intent.action.CHECK_NOTIFICATIONS_WHEN_AWAKE"/>
+        <action name="com.google.android.calendar.intent.action.UPDATE_NOTIFICATION"/>
+        <action name="com.google.android.calendar.intent.action.MIDNIGHT"/>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.MY_PACKAGE_REPLACED"/>
+        <action name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.enterprise.connectedapps.CrossProfileConnector_Service" exported="false"/>
+    <receiver name="com.google.android.apps.calendar.vitals.notification.impl.AlarmBroadcastReceiver" exported="false">
+      <intent-filter>
+        <action name="com.google.android.apps.calendar.vitals.notification.impl.MIDNIGHT_ALARM"/>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.MY_PACKAGE_REPLACED"/>
+      </intent-filter>
+    </receiver>
+    <activity name="com.google.android.gms.gmscompliance.ui.UncertifiedDeviceActivity" exported="false"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.gms.common.api.GoogleApiActivity" exported="false"/>
+    <activity theme="HatsLibPromptTheme" name="com.google.android.libraries.hats20.SurveyPromptActivity" exported="false" excludeFromRecents="true" windowSoftInputMode="0x20"/>
+    <activity theme="TransparentActivity" name="com.google.android.libraries.hats20.ShowSurveyActivity" exported="false">
+      <intent-filter>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <receiver name="com.google.android.libraries.notifications.entrypoints.accountchanged.AccountChangedReceiver" exported="true">
+      <intent-filter>
+        <action name="android.accounts.LOGIN_ACCOUNTS_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver" exported="true">
+      <intent-filter>
+        <action name="android.app.action.APP_BLOCK_STATE_CHANGED"/>
+        <action name="android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"/>
+        <action name="android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.notifications.entrypoints.gcm.GcmBroadcastReceiver" permission="com.google.android.c2dm.permission.SEND" exported="true">
+      <intent-filter priority="99">
+        <action name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.libraries.notifications.entrypoints.scheduled.ScheduledTaskService" permission="android.permission.BIND_JOB_SERVICE" exported="false"/>
+    <receiver name="com.google.android.libraries.notifications.entrypoints.systemtray.SystemTrayBroadcastReceiver" exported="false"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.libraries.notifications.entrypoints.systemtray.SystemTrayActivity" exported="false"/>
+    <receiver name="com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.MY_PACKAGE_REPLACED"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.libraries.notifications.platform.executor.impl.GnpExecutorApiService" exported="false"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.libraries.onegoogle.accountmanagement.AddAccountActivity" exported="false"/>
+    <receiver name="com.google.android.libraries.performance.primes.transmitter.LifeboatReceiver" exported="false" process=":primes_lifeboat"/>
+    <receiver name="com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver" exported="true" process="">
+      <intent-filter>
+        <action name="android.accounts.action.ACCOUNT_REMOVED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver" permission="com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST" exported="true" process="">
+      <intent-filter>
+        <action name="com.google.android.gms.phenotype.UPDATE"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="Theme.AppCompat.DayNight" label="Third Party Notices" name="com.google.android.libraries.social.licenses.LicenseMenuActivity" exported="true"/>
+    <activity theme="Theme.AppCompat.DayNight" label="Third Party Notices" name="com.google.android.libraries.social.licenses.LicenseActivity" exported="false"/>
+    <activity theme="SurveysTransparentActivity" name="com.google.android.libraries.surveys.internal.view.SurveyActivity" exported="true" process="" excludeFromRecents="true" launchMode="1" configChanges="0x5a0" windowSoftInputMode="0x10">
+      <meta-data name="distractionOptimized" value="true"/>
+    </activity>
+    <activity theme="PeopleSheetDayNight" name="com.google.android.libraries.user.peoplesheet.ui.view.PeopleSheetActivity" exported="false" windowSoftInputMode="0x20"/>
+    <activity name="com.google.apps.security.cse.xplat.identity.oidc.appauth.android.AuthCompleteActivity" exported="false" excludeFromRecents="true" launchMode="2"/>
+    <activity theme="Theme.AppCompat.NoActionBar" name="com.google.apps.security.cse.xplat.identity.oidc.appauth.android.CseAuthorizationManagementActivity" exported="false" excludeFromRecents="true" launchMode="2"/>
+    <activity theme="Theme.AppCompat.NoActionBar" name="com.google.calendar.v2a.android.debug.SyncConsoleActivity" exported="false"/>
+    <service name="com.google.firebase.components.ComponentDiscoveryService" exported="false">
+      <meta-data name="com.google.firebase.components:com.google.firebase.iid.Registrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+    </service>
+    <provider name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" exported="false" multiprocess="true" authorities="com.google.android.calendar.lifecycle-process"/>
+    <uses-library name="androidx.window.extensions" required="false"/>
+    <uses-library name="androidx.window.sidecar" required="false"/>
+    <service name="androidx.work.impl.background.systemalarm.SystemAlarmService" enabled="false" exported="false" directBootAware="false"/>
+    <service name="androidx.work.impl.background.systemjob.SystemJobService" permission="android.permission.BIND_JOB_SERVICE" enabled="true" exported="true" directBootAware="false"/>
+    <service name="androidx.work.impl.foreground.SystemForegroundService" enabled="true" exported="false" directBootAware="false"/>
+    <receiver name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" enabled="true" exported="false" directBootAware="false"/>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.ACTION_POWER_CONNECTED"/>
+        <action name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.BATTERY_OKAY"/>
+        <action name="android.intent.action.BATTERY_LOW"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.DEVICE_STORAGE_LOW"/>
+        <action name="android.intent.action.DEVICE_STORAGE_OK"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.net.conn.CONNECTIVITY_CHANGE"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.RescheduleReceiver" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.TIME_SET"/>
+        <action name="android.intent.action.TIMEZONE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.diagnostics.DiagnosticsReceiver" permission="android.permission.DUMP" enabled="true" exported="true" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+      </intent-filter>
+    </receiver>
+    <meta-data name="com.google.android.backup.api_key" value="AEdPqrEAAAAIPz70fPFN-Vh8aLIBafEEbpyQlT1Tr5WXGoJ2Vw"/>
+    <service name="com.google.android.calendar.jobservices.CalendarProviderObserverForNotificationsJobService" permission="android.permission.BIND_JOB_SERVICE" exported="false"/>
+    <service name="com.google.android.calendar.jobservices.CalendarProviderObserverJobService" permission="android.permission.BIND_JOB_SERVICE" exported="false"/>
+    <activity theme="RecurrencePickerTheme" label="Recurrence picker" name="com.google.android.calendar.recurrencepicker.RecurrencePickerActivity" exported="false" windowSoftInputMode="0x10"/>
+    <activity theme="PreferenceTheme.Compat" label="Settings" name="com.google.android.calendar.settings.SettingsActivity" exported="false" windowSoftInputMode="0x2"/>
+    <activity theme="RoomInfoTheme" label="Room details" name="com.google.android.calendar.timely.rooms.infoactivity.RoomInfoActivity" exported="false"/>
+    <receiver name="com.google.android.calendar.utils.notification.NotificationChannelLocaleChangeBroadcastReceiver" exported="false">
+      <intent-filter>
+        <action name="android.intent.action.LOCALE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="TimeZonePickerActivity" label="Time zone picker" name="com.android.timezonepicker.fullscreen.TimeZonePickerActivity" exported="false" windowSoftInputMode="0x10"/>
+    <service name="com.google.assistant.appactions.widgets.pinappwidget.PinAppWidgetService" enabled="true" exported="true">
+      <intent-filter>
+        <action name="com.google.android.assistant.appactions.widgets.PIN_APP_WIDGET"/>
+      </intent-filter>
+    </service>
+    <receiver name="com.google.assistant.appactions.widgets.pinappwidget.PinAppWidgetBroadcastReceiver" exported="false">
+      <intent-filter>
+        <action name="com.google.android.assistant.appactions.widgets.COMPLETE_PIN_APP_WIDGET"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.build.data.PropertiesServiceHolder" enabled="false" exported="false" process="">
+      <intent-filter>
+        <action name="com.google.android.build.data.Properties"/>
+      </intent-filter>
+      <meta-data name="com.google.android.build.data.properties" resource="build_data"/>
+    </service>
+  </application>
+</manifest>
+

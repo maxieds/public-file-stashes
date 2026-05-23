@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.settings.intelligence" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="29"/>
+  <uses-permission name="android.permission.READ_DEVICE_CONFIG"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.GET_PACKAGE_SIZE"/>
+  <uses-permission name="android.permission.READ_SEARCH_INDEXABLES"/>
+  <uses-permission name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission name="android.permission.MODIFY_PHONE_STATE"/>
+  <uses-permission name="android.permission.MANAGE_FINGERPRINT"/>
+  <application label="Settings Suggestions" icon="res/mipmap-anydpi-v21/ic_launcher.xml" supportsRtl="true" extractNativeLibs="true" appComponentFactory="androidx.core.app.CoreComponentFactory">
+    <service name="com.android.settings.intelligence.suggestions.SuggestionService" permission="android.permission.BIND_SETTINGS_SUGGESTIONS_SERVICE" exported="true"/>
+    <activity theme="Theme.Settings.NoActionBar" name="com.android.settings.intelligence.search.SearchActivity" exported="true" configChanges="0x5a0">
+      <intent-filter priority="-1">
+        <action name="com.android.settings.action.SETTINGS_SEARCH"/>
+        <action name="android.settings.APP_SEARCH_SETTINGS"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <provider name="com.android.car.ui.core.CarUiInstaller" exported="false" process="" authorities="com.android.settings.intelligence.CarUiInstaller" directBootAware="true"/>
+  </application>
+</manifest>
+

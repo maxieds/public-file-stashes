@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="android.uid.phone" versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.stk" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <original-package name="com.android.stk"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.REAL_GET_TASKS"/>
+  <uses-permission name="android.permission.RECEIVE_STK_COMMANDS"/>
+  <uses-permission name="android.permission.SET_ACTIVITY_WATCHER"/>
+  <uses-permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+  <uses-permission name="android.permission.USER_ACTIVITY"/>
+  <uses-permission name="android.permission.VIBRATE"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <application label="SIM Toolkit" icon="res/drawable-anydpi-v26/ic_launcher_sim_toolkit.xml" name="com.android.stk.StkApp" process="com.android.phone" taskAffinity="android.task.stk" clearTaskOnLaunch="true" extractNativeLibs="true" resizeableActivity="false" defaultToDeviceProtectedStorage="true" directBootAware="true" appComponentFactory="androidx.core.app.CoreComponentFactory" usesNonSdkApi="true">
+    <activity theme="Theme.Translucent.NoTitleBar" label="SIM Toolkit" name="com.android.stk.StkMain" enabled="false" exported="true" taskAffinity="android.task.stk.StkLauncherActivity" autoRemoveFromRecents="true">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity-alias theme="Theme.Translucent.NoTitleBar" label="SIM Toolkit" icon="res/drawable-anydpi-v26/ic_launcher_sim_toolkit.xml" name="com.android.stk.StkMainAlias" enabled="false" exported="true" targetActivity="com.android.stk.StkMain" autoRemoveFromRecents="true">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity-alias>
+    <activity theme="Theme.Translucent.NoTitleBar" label="USIM Toolkit1" icon="res/drawable-hdpi-v4/ic_launcher_sim1_toolkit_ex.png" name="com.android.stk.StkMain1" enabled="false" exported="true" autoRemoveFromRecents="true">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Translucent.NoTitleBar" label="USIM Toolkit2" icon="res/drawable-hdpi-v4/ic_launcher_sim2_toolkit_ex.png" name="com.android.stk.StkMain2" enabled="false" exported="true" autoRemoveFromRecents="true">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.StkScreen" label="SIM Toolkit" name="com.android.stk.StkLauncherActivity" exported="false" taskAffinity="android.task.stk.StkLauncherActivity" autoRemoveFromRecents="true">
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <action name="android.intent.action.PICK"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.StkScreen" label="SIM Toolkit" icon="res/drawable-anydpi-v26/ic_launcher_sim_toolkit.xml" name="com.android.stk.StkMenuActivity" exported="false" taskAffinity="android.task.stk.StkLauncherActivity" configChanges="0x4a7" autoRemoveFromRecents="true">
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <action name="android.intent.action.PICK"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.StkAppCompat" label="SIM Toolkit" icon="res/drawable-anydpi-v26/ic_launcher_sim_toolkit.xml" name="com.android.stk.StkInputActivity" exported="false" taskAffinity="android.task.stk.StkLauncherActivity" configChanges="0x4a4" autoRemoveFromRecents="true">
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <action name="android.intent.action.EDIT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Transparent" name="com.android.stk.StkDialogActivity" exported="false" taskAffinity="android.task.stk.StkLauncherActivity" configChanges="0x4a4" autoRemoveFromRecents="true" resumeWhilePausing="true"/>
+    <activity theme="Transparent" name="com.android.stk.ToneDialog" exported="false" taskAffinity="android.task.stk.StkLauncherActivity" autoRemoveFromRecents="true"/>
+    <activity theme="Theme.StkScreen" name="com.android.stk.StkMessageActivity" exported="false"/>
+    <receiver name="com.android.stk.StkCmdReceiver">
+      <intent-filter>
+        <action name="com.android.internal.stk.command"/>
+        <action name="com.android.internal.stk.session_end"/>
+        <action name="com.android.internal.stk.icc_status_change"/>
+        <action name="com.android.internal.stk.alpha_notify"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.android.stk.BootCompletedReceiver">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.USER_INITIALIZE"/>
+        <action name="android.telephony.action.SIM_CARD_STATE_CHANGED"/>
+        <action name="android.telephony.action.SIM_APPLICATION_STATE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.android.stk.StkAppService"/>
+  </application>
+</manifest>
+

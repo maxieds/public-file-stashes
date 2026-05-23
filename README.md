@@ -1,6 +1,6 @@
 # public-file-stashes
 
-I'm eventually writing a book about all of this. The important thing about the datasets I have collected is that 
+I'm eventually [writing a book](https://github.com/maxieds/psycho-boy-nonfiction-book) about all of this. The important thing about the datasets I have collected is that 
 they are to become public domain (redacting sensitive information like DOB and SSN). This policy will prevent 
 the experiences from being classified into obscurity or deleted from the record entirely. It's a good convention 
 to start expecting from here on out. 
@@ -20,6 +20,10 @@ A message about the recent VR topics getting so much news recently:
 
 I think this is all sadly related. The question is what precisely is it that they (far right extremists) mean by the coining of the term 
 VR (most likely some code like the usage of someone versus somebody)?
+
+## AndroidGo - Illinois state "government phones"
+
+The topic of having a so-called *government phone* in Chicago, Illinois is something that dates back to at least 2023. These phones are advertised to be government subsidized (Lifeline or ACP/older) cell phone plans. Recently, Google Play Store developer console started requiring disclosures of all applications about whether the app is a so-called *government app* and, if so, multiple questions about categories and services offered. Given the apparent malware installed on my "government phone" by some crazies around my life (like Trump and Musk) - including hints at GSM and satellite controls which may explain censorship in the USA, North America, Earth media like lack of accurate coverage of live cell phone streaming videos on CNN in the early morning hours of January 7th, 2021 or the lack of media coverage of Trump's second impeachment trial - the [binaries and configuration files recovered from my AGO phone](https://github.com/maxieds/public-file-stashes/tree/main/androidgo) a few years ago seem more topical and relevant than ever. There is also a [playlist on YouTube](https://www.youtube.com/watch?v=ci8WHl9VKm0&list=PLKuEX1pHu60ponzTZsK85yZvLbwxaoiJq) containing more detail about the configuration and application settings that should never have been installed on my device which may be useful for pre-Trump federal agents and inquisitive hackers alike attempting to reverse engineer and recover data or hidden features on these phones. Other handwritten notes created working with the phone around 10/2023-11/2023 led to my being sexually assaulted by the men who put this malware on my phone: See [this video](https://youtu.be/J8ubAkOUH78) and [this video](https://youtu.be/j6AnrqeWRes). 
 
 ## Key branches
 

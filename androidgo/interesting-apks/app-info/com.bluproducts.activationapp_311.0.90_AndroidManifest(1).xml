@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="90" versionName="311.0.90" compileSdkVersion="29" compileSdkVersionCodename="10" package="com.bluproducts.activationapp" platformBuildVersionCode="29" platformBuildVersionName="10">
+  <uses-sdk minSdkVersion="26" targetSdkVersion="30"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+  <uses-permission name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+  <uses-permission name="android.permission.BLUETOOTH"/>
+  <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE" maxSdkVersion="18"/>
+  <uses-permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+  <uses-permission name="android.permission.RECORD_AUDIO"/>
+  <uses-permission name="android.permission.MANAGE_USERS"/>
+  <uses-permission name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission name="android.permission.LOCAL_MAC_ADDRESS"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="com.google.android.c2dm.permission.RECEIVE"/>
+  <uses-permission name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+  <uses-permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+  <application theme="AppTheme.Translucent" label="BLU Alerts" icon="res/uF.xml" name="com.bluproducts.activationapp.app.BluApplication" allowBackup="true" supportsRtl="true" extractNativeLibs="false" appComponentFactory="androidx.core.app.CoreComponentFactory">
+    <receiver name="com.bluproducts.activationapp.SuwCustomizationReceiver">
+      <intent-filter order="5">
+        <action name="com.android.setupwizard.action.PARTNER_CUSTOMIZATION"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.bluproducts.activationapp.Services.MyFirebaseMessagingService" exported="false" stopWithTask="false">
+      <intent-filter>
+        <action name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <meta-data name="net.hockeyapp.android.appIdentifier" value="35c3c71146dd4068a49e950462a3f060"/>
+    <meta-data name="com.google.android.gms.version" value="12451000"/>
+    <service name="com.bluproducts.activationapp.jobscheduler.WizardService" permission="android.permission.BIND_JOB_SERVICE" exported="true"/>
+    <provider name="androidx.core.content.FileProvider" exported="false" authorities="com.bluproducts.activationapp.provider" grantUriPermissions="true">
+      <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="provider_paths"/>
+    </provider>
+    <receiver name="com.bluproducts.activationapp.autostart" permission="android.permission.RECEIVE_BOOT_COMPLETED">
+      <intent-filter order="2">
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.QUICKBOOT_POWERON"/>
+        <action name="android.intent.action.MY_PACKAGE_REPLACED"/>
+        <action name="android.intent.action.ACTION_POWER_CONNECTED"/>
+        <action name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="AppTheme.Transparent" name="com.bluproducts.activationapp.popup.Notifications" exported="true">
+      <intent-filter>
+        <action name="com.bluproducts.activationapp.POPUP"/>
+      </intent-filter>
+    </activity>
+    <activity name="com.bluproducts.activationapp.ui.activity.factory.FactoryActivity" excludeFromRecents="true" launchMode="1" immersive="true"/>
+    <activity theme="AppTheme.Transparenty" name="com.bluproducts.activationapp.ui.activity.about.AboutActivity" excludeFromRecents="true" launchMode="1" immersive="true">
+      <intent-filter priority="5" order="3">
+        <action name="android.intent.action.DEVICE_INITIALIZATION_WIZARD"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.settings.SET_BLUOOBE"/>
+        <action name="android.settings.SET_BLUOOBE_NOT_ACCOUNT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.android.setupwizard.action.PARTNER_CUSTOMIZATION"/>
+      </intent-filter>
+    </activity>
+    <activity name="com.bluproducts.activationapp.ui.activity.privacy.PrivacyActivity"/>
+    <activity name="com.bluproducts.activationapp.ui.activity.update.UpdateActivity" taskAffinity="com.android.wizard">
+      <intent-filter>
+        <action name="android.settings.SET_BLUOOBEKEEP"/>
+        <action name="android.settings.SET_BLUOOBE_NOT_ACCOUNTKEEP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity name="com.bluproducts.activationapp.ui.activity.subscribe.NoScreenSubscribeActivity" taskAffinity="com.android.wizard">
+      <intent-filter>
+        <action name="android.settings.SET_BLUOOBEKEEPNOSCREEN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity name="com.bluproducts.activationapp.ui.activity.subscribe.SubscribeActivity" taskAffinity="com.android.wizard"/>
+    <activity theme="AppTheme" name="com.bluproducts.activationapp.ui.activity.webview.WebViewActivity"/>
+    <activity theme="SettingsTheme" label="BLU Privacy" name="com.bluproducts.activationapp.ui.activity.settings.SettingsActivity">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <action name="com.android.settings.SCHEDULE_POWER_ON_OFF_SETTING"/>
+        <action name="com.android.settings.action.EXTRA_SETTINGS"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.android.settings.category" value="com.android.settings.category.ia.privacy"/>
+      <meta-data name="com.android.settings.title" resource="app_name2"/>
+      <meta-data name="com.android.settings.summary" resource="summary_app"/>
+    </activity>
+    <receiver name="com.google.firebase.iid.FirebaseInstanceIdReceiver" permission="com.google.android.c2dm.permission.SEND" exported="true">
+      <intent-filter>
+        <action name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.firebase.messaging.FirebaseMessagingService" exported="false" directBootAware="true">
+      <intent-filter priority="-500">
+        <action name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <service name="com.google.firebase.components.ComponentDiscoveryService" exported="false" directBootAware="true">
+      <meta-data name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+    </service>
+    <activity name="net.hockeyapp.android.UpdateActivity"/>
+    <activity name="net.hockeyapp.android.FeedbackActivity"/>
+    <activity name="net.hockeyapp.android.PaintActivity"/>
+    <activity name="net.hockeyapp.android.LoginActivity"/>
+    <activity name="net.hockeyapp.android.ExpiryInfoActivity"/>
+    <service name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" exported="false">
+      <meta-data name="backend:com.google.android.datatransport.cct.CctBackendFactory" value="cct"/>
+    </service>
+    <provider name="com.google.firebase.provider.FirebaseInitProvider" exported="false" authorities="com.bluproducts.activationapp.firebaseinitprovider" initOrder="100" directBootAware="true"/>
+    <receiver name="com.google.android.gms.measurement.AppMeasurementReceiver" enabled="true" exported="false"/>
+    <service name="com.google.android.gms.measurement.AppMeasurementService" enabled="true" exported="false"/>
+    <service name="com.google.android.gms.measurement.AppMeasurementJobService" permission="android.permission.BIND_JOB_SERVICE" enabled="true" exported="false"/>
+    <activity theme="Theme.Translucent" name="com.google.android.gms.ads.AdActivity" exported="false" configChanges="0xfb0"/>
+    <service name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" permission="android.permission.BIND_JOB_SERVICE" exported="false"/>
+    <receiver name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" exported="false"/>
+  </application>
+</manifest>
+

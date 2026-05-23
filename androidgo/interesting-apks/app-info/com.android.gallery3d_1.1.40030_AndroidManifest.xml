@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="40030" versionName="1.1.40030" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.gallery3d" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="29"/>
+  <original-package name="com.android.gallery3d"/>
+  <permission name="com.android.gallery3d.permission.GALLERY_PROVIDER2" protectionLevel="0x3"/>
+  <uses-permission name="android.permission.ACCESS_MEDIA_LOCATION"/>
+  <uses-permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.CAMERA"/>
+  <uses-permission name="android.permission.GET_ACCOUNTS"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.MANAGE_ACCOUNTS"/>
+  <uses-permission name="android.permission.NFC"/>
+  <uses-permission name="android.permission.READ_SYNC_SETTINGS"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.RECORD_AUDIO"/>
+  <uses-permission name="android.permission.SET_WALLPAPER"/>
+  <uses-permission name="android.permission.USE_CREDENTIALS"/>
+  <uses-permission name="android.permission.VIBRATE"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission name="android.permission.WRITE_SYNC_SETTINGS"/>
+  <uses-permission name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+  <uses-permission name="com.android.gallery3d.permission.GALLERY_PROVIDER2"/>
+  <uses-permission name="android.permission.GET_TASKS"/>
+  <uses-permission name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission name="com.android.email.permission.ACCESS_PROVIDER"/>
+  <uses-permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <supports-screens anyDensity="true" smallScreens="false" normalScreens="true" largeScreens="true"/>
+  <uses-permission name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+  <uses-permission name="android.permission.SET_MEDIA_KEY_LISTENER"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission name="android.permission.ACCESS_ALL_DOWNLOADS"/>
+  <uses-permission name="android.permission.STOP_APP_SWITCHES"/>
+  <application theme="Theme.Gallery" label="Photo Edit" icon="res/mipmap-anydpi-v26/ic_launcher.xml" name="com.android.gallery3d.app.GalleryAppImpl" process="com.photo.edit.gallery3d" restoreAnyVersion="true" hardwareAccelerated="true" largeHeap="true" supportsRtl="true" extractNativeLibs="false" usesCleartextTraffic="true" resizeableActivity="false" appComponentFactory="androidx.core.app.CoreComponentFactory" usesNonSdkApi="true" requestLegacyExternalStorage="true" usesCleartextHttp="true">
+    <uses-library name="com.google.android.media.effects" required="false"/>
+    <uses-library name="org.apache.http.legacy" required="false"/>
+    <provider name="com.sprd.gallery3d.app.VideoBookmarkProvider" authorities="com.sprd.gallery3d.app.VideoBookmarkProvider2"/>
+    <provider name="androidx.core.content.FileProvider" exported="false" authorities="com.android.gallery3d.fileprovider2" grantUriPermissions="true">
+      <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="provider_paths"/>
+    </provider>
+    <activity theme="MovieActivityStyle" label="Video Player" icon="res/mipmap-anydpi-v26/ic_launcher_video.xml" name="com.android.gallery3d.app.MovieActivity" taskAffinity="com.android.gallery3d.app.MovieActivity" configChanges="0x24fc"/>
+    <activity theme="GalleryV2GMSTheme" label="Gallery Editor" name="com.android.gallery3d.v2.app.GalleryActivity2" exported="true" configChanges="0x4a0" resizeableActivity="false"/>
+    <activity-alias label="Gallery" name="com.cooliris.media.Gallery" configChanges="0x4a0" targetActivity="com.android.gallery3d.v2.app.GalleryActivity2"/>
+    <activity theme="Theme.NoDisplay" name="com.android.gallery3d.app.Gallery"/>
+    <activity theme="Theme.NoDisplay" label="Camera" icon="res/mipmap-hdpi-v4/ic_launcher_camera.png" name="com.android.camera.CameraActivity" taskAffinity="com.android.camera.CameraActivity"/>
+    <activity-alias label="Camera" name="com.android.camera.CameraLauncher" targetActivity="com.android.camera.CameraActivity"/>
+    <activity label="Gallery" name="com.android.gallery3d.ingest.IngestActivity" taskAffinity="" launchMode="3" configChanges="0x480"/>
+    <service name="com.android.gallery3d.ingest.IngestService"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.android.gallery3d.app.Wallpaper" configChanges="0x4a0">
+      <meta-data name="android.wallpaper.preview" resource="wallpaper_picker_preview"/>
+    </activity>
+    <activity label="Trim video" name="com.android.gallery3d.app.TrimVideo"/>
+    <provider name="com.android.gallery3d.filtershow.provider.SharedImageProvider" readPermission="com.android.gallery3d.filtershow.permission.READ" writePermission="com.android.gallery3d.filtershow.permission.WRITE" authorities="com.android.gallery3d.filtershow.provider.SharedImageProvider2" grantUriPermissions="true"/>
+    <service name="com.android.gallery3d.filtershow.pipeline.ProcessingService" exported="false"/>
+    <activity theme="Theme.FilterShow" label="Photo Editor" name="com.android.gallery3d.filtershow.FilterShowActivity" launchMode="1" screenOrientation="1" configChanges="0x120"/>
+    <activity theme="Theme.Crop" label="Crop" name="com.android.gallery3d.filtershow.crop.CropActivity" configChanges="0x4a0"/>
+    <activity theme="Theme.Gallery" name="com.android.gallery3d.settings.GallerySettings" configChanges="0x4a0"/>
+    <provider name="com.android.gallery3d.provider.GalleryProvider" permission="com.android.gallery3d.permission.GALLERY_PROVIDER2" exported="true" authorities="com.android.gallery3d.provider2" syncable="false" grantUriPermissions="true"/>
+    <provider name="com.android.photos.data.PhotoProvider" exported="false" authorities="com.android.gallery3d.photoprovider2" syncable="false"/>
+    <activity theme="Theme.NoDisplay" name="com.android.gallery3d.gadget.WidgetClickHandler"/>
+    <activity theme="Theme.GalleryNewUI" name="com.android.gallery3d.app.DialogPicker" configChanges="0x4a0"/>
+    <activity theme="Theme.GalleryNewUI" name="com.android.gallery3d.app.AlbumPicker" configChanges="0x4a0"/>
+    <activity theme="Theme.Gallery.Dialog" name="com.android.gallery3d.gadget.WidgetTypeChooser" configChanges="0x4a0"/>
+    <activity name="com.android.gallery3d.app.FlipSettingsActivity" configChanges="0x4a0"/>
+    <receiver label="Photo Gallery" name="com.android.gallery3d.gadget.PhotoAppWidgetProvider"/>
+    <receiver name="com.android.gallery3d.app.PackagesMonitor"/>
+    <service name="com.android.gallery3d.app.PackagesMonitor$AsyncService"/>
+    <service name="com.android.gallery3d.gadget.WidgetService" permission="android.permission.BIND_REMOTEVIEWS"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.android.gallery3d.gadget.WidgetConfigure" configChanges="0x4a0"/>
+    <service name="com.android.gallery3d.app.BatchService"/>
+    <receiver name="com.android.gallery3d.app.GalleryStorageReceiver"/>
+    <service name="com.android.camera.MediaSaveService"/>
+    <activity theme="Theme.Material.Light" label="Bookmarks" icon="res/mipmap-anydpi-v26/ic_launcher_video.xml" name="com.sprd.gallery3d.app.MovieBookmarks" configChanges="0x4a0"/>
+    <activity theme="Theme.Material.Light.Dialog" label="Edit" icon="res/mipmap-anydpi-v26/ic_launcher_video.xml" name="com.sprd.gallery3d.app.EditBookmark" configChanges="0x4a0"/>
+    <provider name="com.sprd.gallery3d.app.MovieViewContentProvider" exported="false" authorities="com.sprd.gallery3d2"/>
+    <activity theme="NewVideoStyle" label="Video Player" icon="res/mipmap-anydpi-v26/ic_launcher_video.xml" name="com.sprd.gallery3d.app.NewVideoActivity" taskAffinity="com.sprd.gallery3d.app.NewVideoActivity" stateNotNeeded="true" configChanges="0x4a0"/>
+    <activity label="Video Player" icon="res/mipmap-anydpi-v26/ic_launcher_video.xml" name="com.sprd.gallery3d.app.VideoActivity" taskAffinity="com.sprd.gallery3d.app.VideoActivity" stateNotNeeded="true" configChanges="0x4a0"/>
+    <activity name="com.sprd.gallery3d.app.NewVideoPermissionsActivity" taskAffinity="com.sprd.gallery3d.app.NewVideoActivity" configChanges="0x4a0"/>
+    <activity name="com.sprd.gallery3d.app.PickVideosPermissionsActivity" configChanges="0x4a0"/>
+    <activity name="com.sprd.gallery3d.app.GalleryPermissionsActivity" configChanges="0x4a0"/>
+    <activity name="com.sprd.gallery3d.app.PickPhotosPermissionsActivity" configChanges="0x4a0"/>
+    <activity name="com.sprd.gallery3d.app.CropPermissionsActivity" taskAffinity="com.sprd.gallery3d.app.CropPermissionsActivity" launchMode="2" configChanges="0x4a0"/>
+    <activity name="com.sprd.gallery3d.app.MoviePermissionsActivity" taskAffinity="com.android.gallery3d.app.MovieActivity" launchMode="2" configChanges="0x4a0"/>
+    <service name="com.android.gallery3d.app.FloatPlayerService"/>
+    <activity theme="Theme.NoDisplay" name="com.sprd.gallery3d.app.Video" taskAffinity="com.sprd.gallery3d.app.NewVideoActivity" launchMode="2" configChanges="0x4a0"/>
+    <service name="com.sprd.gallery3d.app.FloatWindowAIDLService"/>
+    <activity theme="ProxySetTheme" label="Settings" icon="res/mipmap-anydpi-v26/ic_launcher_video.xml" name="com.sprd.gallery3d.app.MovieViewProxySet"/>
+    <meta-data name="service_name" value="com.sprd.gallery3d.appbackup.GalleryBackupService"/>
+    <meta-data name="agent_name" value="Gallery"/>
+    <service name="com.sprd.gallery3d.appbackup.GalleryBackupService" exported="true"/>
+    <activity name="com.sprd.gallery3d.burstphoto.BurstActivity" configChanges="0x4a0"/>
+    <activity theme="Theme.GalleryNewUI" name="com.android.gallery3d.app.DetailsActivity" configChanges="0x4a0" showWhenLocked="true"/>
+    <activity name="com.sprd.gallery3d.blending.ReplaceActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="com.android.sprd.gallery3d.imageblending"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="blendingImage/jpeg"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Refocus" name="com.sprd.gallery3d.refocusimage.RefocusEditActivity" screenOrientation="1" configChanges="0x4a0" showWhenLocked="true">
+      <intent-filter>
+        <action name="com.android.sprd.gallery3d.refocusedit"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.android.gallery3d.v2.widget.WidgetConfigure" configChanges="0x4a0">
+      <intent-filter>
+        <action name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+      </intent-filter>
+    </activity>
+    <activity theme="GalleryV2Theme" name="com.android.gallery3d.v2.widget.AlbumPicker" configChanges="0x4a0"/>
+    <activity theme="GalleryV2Theme" name="com.android.gallery3d.v2.widget.DialogPicker" configChanges="0x4a0"/>
+    <provider name="com.android.gallery3d.v2.trash.db.TrashProvider" authorities="com.android.gallery3d.v2.trash.db.TrashProvider"/>
+    <provider name="com.android.gallery3d.v2.discover.db.DiscoverProvider" authorities="com.android.gallery3d.v2.discover.db.DiscoverProvider"/>
+    <activity theme="GalleryV2Theme" name="com.sprd.gallery3d.app.SDCardPermissionActivity" configChanges="0x4a0"/>
+    <activity theme="MotionTheme" label="Motion photo" name="com.android.gallery3d.v2.app.MotionActivity" screenOrientation="1" configChanges="0x4a0"/>
+    <activity name="com.sprd.gallery3d.smarterase.SmartEraseActivity" screenOrientation="1" configChanges="0x4a0"/>
+    <provider name="com.android.gallery3d.v2.media.extras.MediaExtrasProvider" authorities="com.android.gallery3d.v2.media.extras.MediaExtrasProvider"/>
+    <activity theme="Theme.AppCompat.NoActionBar" name="com.sprd.gallery3d.portrait.PortraitBlendActivity" screenOrientation="1"/>
+    <activity theme="Theme.AppCompat.NoActionBar" name="com.sprd.gallery3d.portrait.BackgroundMusicActivity" screenOrientation="1"/>
+  </application>
+</manifest>
+

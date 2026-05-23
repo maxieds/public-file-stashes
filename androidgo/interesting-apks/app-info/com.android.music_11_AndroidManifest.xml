@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.music" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <original-package name="com.android.music"/>
+  <uses-sdk minSdkVersion="30" targetSdkVersion="29"/>
+  <uses-permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <application label="Android Open Source Music Player" launchMode="1" allowBackup="true" supportsRtl="true" extractNativeLibs="true">
+    <activity theme="Theme.Dialog" name="AudioPreview" exported="true" taskAffinity="" excludeFromRecents="true">
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data scheme="file"/>
+        <data mimeType="audio/*"/>
+        <data mimeType="application/ogg"/>
+        <data mimeType="application/x-ogg"/>
+        <data mimeType="application/itunes"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="http"/>
+        <data mimeType="audio/*"/>
+        <data mimeType="application/ogg"/>
+        <data mimeType="application/x-ogg"/>
+        <data mimeType="application/itunes"/>
+      </intent-filter>
+      <intent-filter priority="-1">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="content"/>
+        <data mimeType="audio/*"/>
+        <data mimeType="application/ogg"/>
+        <data mimeType="application/x-ogg"/>
+        <data mimeType="application/itunes"/>
+      </intent-filter>
+    </activity>
+    <activity label="Choose music track" name="com.android.music.MusicPicker" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.GET_CONTENT"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.OPENABLE"/>
+        <data mimeType="audio/*"/>
+        <data mimeType="application/ogg"/>
+        <data mimeType="application/x-ogg"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.PICK"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.OPENABLE"/>
+        <data mimeType="vnd.android.cursor.dir/audio"/>
+      </intent-filter>
+    </activity>
+    <service label="Android Open Source Music Playback Service" name="com.android.music.MediaPlaybackService" exported="true">
+      <intent-filter>
+        <action name="android.media.browse.MediaBrowserService"/>
+      </intent-filter>
+    </service>
+  </application>
+</manifest>
+

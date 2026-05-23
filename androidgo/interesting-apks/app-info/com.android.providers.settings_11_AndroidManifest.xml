@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="android.uid.system" versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" coreApp="true" package="com.android.providers.settings" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <application label="Settings Storage" icon="res/mipmap-hdpi-v4/ic_launcher_settings.png" allowClearUserData="false" process="system" backupAgent="com.android.providers.settings.SettingsBackupAgent" killAfterRestore="false" restoreAnyVersion="true" extractNativeLibs="true" defaultToDeviceProtectedStorage="true" directBootAware="true" usesNonSdkApi="true" forceQueryable="true">
+    <provider name="com.android.providers.settings.SettingsProvider" exported="true" multiprocess="false" authorities="settings" initOrder="100" singleUser="true" visibleToInstantApps="true"/>
+    <service name="com.android.providers.settings.WriteFallbackSettingsFilesJobService" permission="android.permission.BIND_JOB_SERVICE" exported="true"/>
+  </application>
+</manifest>
+

@@ -1,0 +1,73 @@
+--------- beginning of crash
+07-10 08:08:49.017 F/libc    (22068): Fatal signal 31 (SIGSYS), code 1 (SYS_SECCOMP) in tid 22068 (dmesg), pid 22068 (dmesg)
+07-10 08:08:49.073 F/DEBUG   (22071): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-10 08:08:49.073 F/DEBUG   (22071): Native Crash TIME: 7190667
+07-10 08:08:49.073 F/DEBUG   (22071): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-10 08:08:49.073 F/DEBUG   (22071): Build fingerprint: 'BLU/C5L_Max/C0170WW:11/RP1A.201005.001/28143:user/release-keys'
+07-10 08:08:49.074 F/DEBUG   (22071): Revision: '0'
+07-10 08:08:49.074 F/DEBUG   (22071): ABI: 'arm'
+07-10 08:08:49.076 F/DEBUG   (22071): Timestamp: 2023-07-10 08:08:49-0500
+07-10 08:08:49.076 F/DEBUG   (22071): pid: 22068, tid: 22068, name: dmesg  >>> dmesg <<<
+07-10 08:08:49.077 F/DEBUG   (22071): uid: 10209
+07-10 08:08:49.077 F/DEBUG   (22071): signal 31 (SIGSYS), code 1 (SYS_SECCOMP), fault addr --------
+07-10 08:08:49.077 F/DEBUG   (22071): Cause: seccomp prevented call to disallowed arm system call 103
+07-10 08:08:49.077 F/DEBUG   (22071):     r0  0000000a  r1  00000000  r2  00000000  r3  00000000
+07-10 08:08:49.077 F/DEBUG   (22071):     r4  beb23370  r5  00000000  r6  0d28db08  r7  00000067
+07-10 08:08:49.077 F/DEBUG   (22071):     r8  ac7192b4  r9  0d28bae8  r10 0d28db08  r11 00000000
+07-10 08:08:49.077 F/DEBUG   (22071):     ip  00000001  sp  beb23368  lr  0d26eed7  pc  ac6f9e5c
+07-10 08:08:49.103 F/DEBUG   (22071): backtrace:
+07-10 08:08:49.103 F/DEBUG   (22071):       #00 pc 0009be5c  /apex/com.android.runtime/lib/bionic/libc.so (klogctl+12) (BuildId: 58a173c6b457a368ea5ab855aaa7a660)
+07-10 08:08:49.103 F/DEBUG   (22071):       #01 pc 0003ced3  /system/bin/toybox (dmesg_main+330) (BuildId: 63fb5722e22da491996dd60ee08d3656)
+07-10 08:08:49.104 F/DEBUG   (22071):       #02 pc 00027fa7  /system/bin/toybox (toy_exec_which+38) (BuildId: 63fb5722e22da491996dd60ee08d3656)
+07-10 08:08:49.104 F/DEBUG   (22071):       #03 pc 00027c6b  /system/bin/toybox (toybox_main+26) (BuildId: 63fb5722e22da491996dd60ee08d3656)
+07-10 08:08:49.104 F/DEBUG   (22071):       #04 pc 00028003  /system/bin/toybox (main+58) (BuildId: 63fb5722e22da491996dd60ee08d3656)
+07-10 08:08:49.104 F/DEBUG   (22071):       #05 pc 0005d439  /apex/com.android.runtime/lib/bionic/libc.so (__libc_init+68) (BuildId: 58a173c6b457a368ea5ab855aaa7a660)
+07-10 08:09:30.545 F/libc    (22348): Fatal signal 31 (SIGSYS), code 1 (SYS_SECCOMP) in tid 22348 (dmesg), pid 22348 (dmesg)
+07-10 08:09:30.589 F/DEBUG   (22352): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-10 08:09:30.590 F/DEBUG   (22352): Native Crash TIME: 7232184
+07-10 08:09:30.590 F/DEBUG   (22352): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-10 08:09:30.590 F/DEBUG   (22352): Build fingerprint: 'BLU/C5L_Max/C0170WW:11/RP1A.201005.001/28143:user/release-keys'
+07-10 08:09:30.590 F/DEBUG   (22352): Revision: '0'
+07-10 08:09:30.590 F/DEBUG   (22352): ABI: 'arm'
+07-10 08:09:30.591 F/DEBUG   (22352): Timestamp: 2023-07-10 08:09:30-0500
+07-10 08:09:30.591 F/DEBUG   (22352): pid: 22348, tid: 22348, name: dmesg  >>> dmesg <<<
+07-10 08:09:30.591 F/DEBUG   (22352): uid: 10209
+07-10 08:09:30.591 F/DEBUG   (22352): signal 31 (SIGSYS), code 1 (SYS_SECCOMP), fault addr --------
+07-10 08:09:30.592 F/DEBUG   (22352): Cause: seccomp prevented call to disallowed arm system call 103
+07-10 08:09:30.592 F/DEBUG   (22352):     r0  0000000a  r1  00000000  r2  00000000  r3  00000000
+07-10 08:09:30.592 F/DEBUG   (22352):     r4  bee32370  r5  00000000  r6  0d56cb08  r7  00000067
+07-10 08:09:30.592 F/DEBUG   (22352):     r8  aa54a2b4  r9  0d56aae8  r10 0d56cb08  r11 00000000
+07-10 08:09:30.592 F/DEBUG   (22352):     ip  00000001  sp  bee32368  lr  0d54ded7  pc  aa52ae5c
+07-10 08:09:30.609 F/DEBUG   (22352): backtrace:
+07-10 08:09:30.609 F/DEBUG   (22352):       #00 pc 0009be5c  /apex/com.android.runtime/lib/bionic/libc.so (klogctl+12) (BuildId: 58a173c6b457a368ea5ab855aaa7a660)
+07-10 08:09:30.609 F/DEBUG   (22352):       #01 pc 0003ced3  /system/bin/toybox (dmesg_main+330) (BuildId: 63fb5722e22da491996dd60ee08d3656)
+07-10 08:09:30.609 F/DEBUG   (22352):       #02 pc 00027fa7  /system/bin/toybox (toy_exec_which+38) (BuildId: 63fb5722e22da491996dd60ee08d3656)
+07-10 08:09:30.609 F/DEBUG   (22352):       #03 pc 00027c6b  /system/bin/toybox (toybox_main+26) (BuildId: 63fb5722e22da491996dd60ee08d3656)
+07-10 08:09:30.610 F/DEBUG   (22352):       #04 pc 00028003  /system/bin/toybox (main+58) (BuildId: 63fb5722e22da491996dd60ee08d3656)
+07-10 08:09:30.610 F/DEBUG   (22352):       #05 pc 0005d439  /apex/com.android.runtime/lib/bionic/libc.so (__libc_init+68) (BuildId: 58a173c6b457a368ea5ab855aaa7a660)
+--------- beginning of system
+07-10 08:10:42.950 I/ActivityThread(22004): smart_link is  not supported!!!
+07-10 08:10:54.845 I/ActivityThread(22004): smart_link is  not supported!!!
+--------- beginning of main
+07-10 08:11:31.856 I/gralloc (22004): gralloc_unregister_buffer hnd=0x99b2ddc0, share_fd=114, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1920, flags=4, usage=0xb00, size=1843200, width=480, height=960, internalWidth=480, internalHeight=960, stride=480, base=0x8863b000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:11:31.857 I/gralloc (22004): gralloc_unregister_buffer hnd=0x99ed39c0, share_fd=118, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1920, flags=4, usage=0xb00, size=1843200, width=480, height=960, internalWidth=480, internalHeight=960, stride=480, base=0x88479000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:11:31.857 I/gralloc (22004): gralloc_unregister_buffer hnd=0x8ad9b540, share_fd=104, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1920, flags=4, usage=0xb00, size=1843200, width=480, height=960, internalWidth=480, internalHeight=960, stride=480, base=0x88fa5000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:11:31.858 W/libEGL  (22004): EGLNativeWindowType 0xb63fac08 disconnect failed
+07-10 08:11:31.860 D/mali_winsys(22004): EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+07-10 08:11:31.866 I/gralloc (22004): gralloc_register_buffer hnd=0x99ed30c0, share_fd=109, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1920, flags=4, usage=0xb00, size=1843200, width=480, height=960, internalWidth=480, internalHeight=960, stride=480, base=0x88fa5000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:11:31.867 E/m.tortel.syslo(22004): Shared attribute region not available to be mapped
+07-10 08:11:31.885 I/gralloc (22004): gralloc_register_buffer hnd=0x99b2ddc0, share_fd=112, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1920, flags=4, usage=0xb00, size=1843200, width=480, height=960, internalWidth=480, internalHeight=960, stride=480, base=0x88cda000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:11:31.885 E/m.tortel.syslo(22004): Shared attribute region not available to be mapped
+07-10 08:11:31.904 I/gralloc (22004): gralloc_register_buffer hnd=0x99ed4080, share_fd=113, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1920, flags=4, usage=0xb00, size=1843200, width=480, height=960, internalWidth=480, internalHeight=960, stride=480, base=0x88b18000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:11:31.904 E/m.tortel.syslo(22004): Shared attribute region not available to be mapped
+07-10 08:11:42.122 D/mali_winsys(22004): EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+07-10 08:11:42.133 I/gralloc (22004): gralloc_register_buffer hnd=0x99b22e40, share_fd=115, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1280, flags=4, usage=0xb00, size=675840, width=312, height=528, internalWidth=312, internalHeight=528, stride=320, base=0x89496000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:11:42.133 E/m.tortel.syslo(22004): Shared attribute region not available to be mapped
+07-10 08:11:42.203 I/gralloc (22004): gralloc_register_buffer hnd=0x99b23200, share_fd=116, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1280, flags=4, usage=0xb00, size=675840, width=312, height=528, internalWidth=312, internalHeight=528, stride=320, base=0x88a73000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:11:42.204 E/m.tortel.syslo(22004): Shared attribute region not available to be mapped
+07-10 08:11:42.224 I/gralloc (22004): gralloc_unregister_buffer hnd=0x99b22e40, share_fd=115, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1280, flags=4, usage=0xb00, size=675840, width=312, height=528, internalWidth=312, internalHeight=528, stride=320, base=0x89496000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:11:42.224 I/gralloc (22004): gralloc_unregister_buffer hnd=0x99b23200, share_fd=116, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1280, flags=4, usage=0xb00, size=675840, width=312, height=528, internalWidth=312, internalHeight=528, stride=320, base=0x88a73000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:11:42.225 W/libEGL  (22004): EGLNativeWindowType 0x994c6c08 disconnect failed
+07-10 08:11:48.157 V/SysLog  (22004): Path: /data/user/0/com.tortel.syslog/cache/logs/2023-07-10_08.11/
+07-10 08:11:48.173 V/SysLog  (22004): Done grabbing logs
+07-10 08:11:48.235 E/Dialog  (22004): show dialog view=DecorView@63917c7[FragmentMainActivity]

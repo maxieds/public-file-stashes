@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="android.uid.system" versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" coreApp="true" package="com.android.location.fused" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <uses-permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+  <uses-permission name="android.permission.UPDATE_DEVICE_STATS"/>
+  <uses-permission name="android.permission.INSTALL_LOCATION_PROVIDER"/>
+  <uses-permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+  <application label="Fused Location" process="system" extractNativeLibs="true" defaultToDeviceProtectedStorage="true" directBootAware="true" usesNonSdkApi="true">
+    <uses-library name="com.android.location.provider"/>
+    <service name="com.android.location.fused.FusedLocationService" permission="android.permission.WRITE_SECURE_SETTINGS" exported="true">
+      <intent-filter>
+        <action name="com.android.location.service.FusedLocationProvider"/>
+      </intent-filter>
+      <meta-data name="serviceVersion" value="0"/>
+      <meta-data name="serviceIsMultiuser" value="true"/>
+    </service>
+  </application>
+</manifest>
+

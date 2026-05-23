@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.soundrecorder" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <original-package name="com.android.soundrecorder"/>
+  <uses-permission name="android.permission.RECORD_AUDIO"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+  <uses-permission name="android.permission.MODIFY_PHONE_STATE"/>
+  <uses-permission name="android.permission.DISABLE_KEYGUARD"/>
+  <uses-permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+  <uses-permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.BLUETOOTH"/>
+  <uses-permission name="android.permission.BLUETOOTH_ADMIN"/>
+  <uses-permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission name="android.permission.SET_MEDIA_KEY_LISTENER"/>
+  <application label="Sound Recorder" icon="res/mipmap-anydpi-v26/ic_launcher.xml" supportsRtl="true" extractNativeLibs="false" usesCleartextTraffic="false" resizeableActivity="false" appComponentFactory="androidx.core.app.CoreComponentFactory" usesNonSdkApi="true">
+    <activity theme="AppTheme.Base" name="com.sprd.soundrecorder.RecorderActivity" launchMode="1" screenOrientation="1" configChanges="0x5a0">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.provider.MediaStore.RECORD_SOUND"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <service name="com.sprd.soundrecorder.service.RecordingService" exported="true" foregroundServiceType="0x80">
+      <intent-filter>
+        <action name="com.android.soundrecorder.timerrecord.START"/>
+      </intent-filter>
+    </service>
+    <activity theme="AppTheme" label="Recordings" name="com.sprd.soundrecorder.RecordListActivity" screenOrientation="1" configChanges="0x4a0">
+      <intent-filter>
+        <action name="com.android.soundrecorder.EXTRA_FILE_LIST"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="AppTheme" name="com.sprd.soundrecorder.MultiChooseActivity" screenOrientation="1" configChanges="0x24a4"/>
+    <activity theme="Theme.SoundPicker" label="Please select recording file" name="com.sprd.soundrecorder.SoundPicker" screenOrientation="1" configChanges="0x4a3"/>
+    <activity theme="Theme.SoundRecorder" label="Recording play" name="com.sprd.soundrecorder.RecordFilePlayActivity" screenOrientation="1" configChanges="0x6a0"/>
+    <activity theme="Theme.RecordingFileList" label="Settings" name="com.sprd.soundrecorder.SettingActivity" screenOrientation="1" configChanges="0x4a0"/>
+    <receiver name="com.sprd.soundrecorder.RecorderReceiver">
+      <intent-filter>
+        <action name="com.android.soundrecorder.timerrecord.START"/>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.LOCALE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>
+

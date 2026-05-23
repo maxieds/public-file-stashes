@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="30" versionName="11-6684105" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.google.android.feedback" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="29"/>
+  <uses-permission name="android.permission.READ_LOGS"/>
+  <uses-permission name="android.permission.PACKAGE_USAGE_STATS"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+  <application label="Market Feedback Agent" hardwareAccelerated="true" extractNativeLibs="false" usesNonSdkApi="true">
+    <uses-library name="org.apache.http.legacy" required="false"/>
+    <activity theme="Theme.DeviceDefault.DialogWhenLarge" label="Send feedback" name=".FeedbackActivity" excludeFromRecents="true" launchMode="2" windowSoftInputMode="0x2">
+      <intent-filter>
+        <action name="android.intent.action.APP_ERROR"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.DeviceDefault.DialogWhenLarge" label="Preview feedback" name=".PreviewActivity" excludeFromRecents="true"/>
+    <activity theme="Theme.DeviceDefault.DialogWhenLarge" name=".ShowTextActivity" excludeFromRecents="true"/>
+    <activity theme="Theme.DeviceDefault.DialogWhenLarge" name=".ShowStringListActivity" excludeFromRecents="true"/>
+    <activity theme="TosTheme" name=".ShowTosActivity" excludeFromRecents="true"/>
+    <service name=".SendService"/>
+    <service name=".BugReportService">
+      <intent-filter>
+        <action name="android.intent.action.BUG_REPORT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </service>
+  </application>
+</manifest>
+

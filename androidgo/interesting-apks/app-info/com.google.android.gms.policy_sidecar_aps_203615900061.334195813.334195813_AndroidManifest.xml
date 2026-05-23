@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="203615900" versionName="203615900061.334195813.334195813" compileSdkVersion="30" compileSdkVersionCodename="S" package="com.google.android.gms.policy_sidecar_aps" platformBuildVersionCode="30" platformBuildVersionName="S">
+  <uses-sdk minSdkVersion="28" targetSdkVersion="30"/>
+  <application extractNativeLibs="false">
+    <receiver name="com.google.android.gms.apk.ModuleQueryReceiver" permission="com.google.android.gms.chimera.permission.QUERY_MODULES" exported="true" visibleToInstantApps="true">
+      <intent-filter>
+        <action name="com.google.android.gms.chimera.module.QUERY"/>
+      </intent-filter>
+    </receiver>
+    <meta-data name="com.google.android.gms.version" value="203615000"/>
+  </application>
+</manifest>
+

@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="android.uid.system" versionCode="2" versionName="2.0" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.sprd.engineermode" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <uses-permission name="android.permission.CAMERA"/>
+  <uses-permission name="android.permission.MASTER_CLEAR"/>
+  <uses-permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.CHANGE_CONFIGURATION"/>
+  <uses-permission name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission name="android.permission.MODIFY_PHONE_STATE"/>
+  <uses-permission name="android.permission.CALL_PHONE"/>
+  <uses-permission name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission name="android.permission.CHANGE_WIFI_STATE"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <uses-permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission name="android.permission.REBOOT"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.ACCESS_BROADCAST_RADIO"/>
+  <uses-permission name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission name="android.permission.CONTROL_INCALL_EXPERIENCE"/>
+  <uses-permission name="android.permission.BLUETOOTH"/>
+  <application label="EngineerMode" name="com.sprd.engineermode.EMApplication" allowBackup="false" extractNativeLibs="true" resizeableActivity="false" appComponentFactory="androidx.core.app.CoreComponentFactory" usesNonSdkApi="true">
+    <uses-library name="com.broadcom.bt" required="false"/>
+    <activity theme="AppCompat" label="EngineerMode" name="com.sprd.engineermode.EngineerModeActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="EngineerMode" name="com.sprd.engineermode.EngineerModeActivity_2" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="EngineerMode" name="com.sprd.engineermode.gcf.GcfActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="EngineerMode" name="com.sprd.engineermode.gcf.IotActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="EngineerMode" name="com.sprd.engineermode.gcf.OperatorActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="EngineerMode" name="com.sprd.engineermode.gcf.AutoTestBySIMActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="EngineerMode" name="com.sprd.engineermode.gcf.ManualDeltaNVActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="Usage Top 5 Process" name="com.sprd.engineermode.debuglog.UsageTop5ProcessActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Cpu Usage" name="com.sprd.engineermode.debuglog.CpuUsageActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Version Info" name="com.sprd.engineermode.cgversioninfo" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Version Info" name="com.sprd.engineermode.yulongversioninfo" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Phone Information" name="com.sprd.engineermode.debuglog.PhoneInfoActivity" launchMode="3" screenOrientation="1">
+      <intent-filter>
+        <action name="engineermode.intent.action.PHONE_INFO_SHOW"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Bluetooth" name="com.sprd.engineermode.debuglog.BluetoothActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Enable BIH" name="com.sprd.engineermode.debuglog.BinEnableSimSeleActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Frequency Setting" name="com.sprd.engineermode.debuglog.TWFrequencyActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="com.sprd.engineermode.action.TWFREQUENCY"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Community Capability" name="com.sprd.engineermode.debuglog.CommunityCapActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <receiver name="com.sprd.engineermode.debuglog.EMMTBFReceiver">
+      <intent-filter>
+        <action name="com.sprd.engineermode.action.MTBF"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="EngAppActivityTheme" label="APN Setting" name="com.sprd.engineermode.debuglog.SIMSelectForAPNActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.SIMSELECT_APN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="GPRS" name="com.sprd.engineermode.telephony.SIMSelectActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.SIMSELECT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Net Info" name="com.sprd.engineermode.telephony.NetInfoActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="HSPA Setting" name="com.sprd.engineermode.telephony.HspaSettingActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Unlock Freq" name="com.sprd.engineermode.telephony.UnlockFreqActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Lock Cell" name="com.sprd.engineermode.telephony.LockCellActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Unlock Cell" name="com.sprd.engineermode.telephony.UnlockCellActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Text Info" name="com.sprd.engineermode.telephony.TextInfoActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Diversity" name="com.sprd.engineermode.telephony.DiversityPrefActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Vamos" name="com.sprd.engineermode.telephony.VamosActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Dialog" name="com.sprd.engineermode.DeviceInfoActivity" screenOrientation="1" configChanges="0x4a3">
+      <intent-filter>
+        <action name="com.sprd.engineermode.action.DEVICE_INFO"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="GSM IQ" name="com.sprd.engineermode.debuglog.GSMIQActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <receiver name="com.sprd.engineermode.LteBroadcastReceiver">
+      <intent-filter>
+        <action name="android.engineermode.action.ACTION_LTE_READY"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.sprd.engineermode.EMStartReceiver">
+      <intent-filter priority="1000">
+        <action name="android.provider.Telephony.SECRET_CODE"/>
+        <data scheme="android_secret_code" host="83781"/>
+        <data scheme="android_secret_code" host="83782"/>
+        <data scheme="android_secret_code" host="33284"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.provider.Telephony.SECRET_CODE"/>
+        <data scheme="android_secret_code" host="759"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.provider.Telephony.SECRET_CODE"/>
+        <data scheme="android_secret_code" host="837868"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.provider.Telephony.SECRET_CODE"/>
+        <data scheme="android_secret_code" host="837866"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.provider.Telephony.SECRET_CODE"/>
+        <data scheme="android_secret_code" host="0000"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.provider.Telephony.SECRET_CODE"/>
+        <data scheme="android_secret_code" host="1688"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="EngAppActivityTheme" label="Power On Info" name="com.sprd.engineermode.debuglog.PowerOnInfoActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Power Off Info" name="com.sprd.engineermode.debuglog.PowerOffInfoActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Battery Life Info" name="com.sprd.engineermode.debuglog.BatteryLifeInfoActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="VoLTE Setting" name="com.sprd.engineermode.telephony.volte.IPSecSettingActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Holo.Light.Dialog" label="Info" name="com.sprd.engineermode.debuglog.SensorsIDActivity" excludeFromRecents="true">
+      <intent-filter>
+        <action name="com.sprd.engineermode.dialog"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <uses-library name="com.unisoc.sdk.common" required="true"/>
+    <activity theme="EngAppActivityTheme" label="BandSelect" name="com.unisoc.engineermode.modules.telephony.band.core.BandModeSetActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="com.sprd.engineermode.action.BANDMODESET"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="LTE" name="com.unisoc.engineermode.modules.telephony.networkmode.core.LTEActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.LTEActivity"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="NetModeSetSIMActivity" name="com.unisoc.engineermode.modules.telephony.networkmode.core.NetModeSIMActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.NetModeSIMActivity"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Network Mode" name="com.unisoc.engineermode.modules.telephony.networkmode.core.NetModeSelectActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.NetModeSelection"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Network Mode" name="com.unisoc.engineermode.modules.telephony.networkmode.core.NetModeSelectActivity1" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.NetModeSelection1"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Frequency Point" name="com.unisoc.engineermode.modules.telephony.networkmode.core.FrequencyPointActivity">
+      <intent-filter>
+        <action name="android.engineermode.action.FrequencyPointActivity"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Net Info" name="com.unisoc.engineermode.modules.telephony.netinfo.core.NetInfoSimSelectActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.SIMSELECT_NETINFO"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="ue_nw cap" name="com.unisoc.engineermode.modules.telephony.netinfo.core.UeNwCapActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.UE_NW"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="ue cap" name="com.unisoc.engineermode.modules.telephony.netinfo.core.UeCapActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.UECAP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" name="com.unisoc.engineermode.modules.telephony.netinfo.core.NetInfoSimNetworkTypeActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.NETINFOSIMNETWORKTYPE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="LTE" name="com.unisoc.engineermode.modules.telephony.netinfo.core.UeCapLteActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="WCDMA" name="com.unisoc.engineermode.modules.telephony.netinfo.core.UeCapWcdmaActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="CDMA 2000" name="com.unisoc.engineermode.modules.telephony.netinfo.core.UeCapC2kActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="GSM" name="com.unisoc.engineermode.modules.telephony.netinfo.core.UeCapGsmActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="volte" name="com.unisoc.engineermode.modules.telephony.netinfo.core.UeCapVolteActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" name="com.unisoc.engineermode.modules.telephony.netinfo.core.CdmaDoShowActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.CDMADOSHOW"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" name="com.unisoc.engineermode.modules.telephony.netinfo.core.Cdma1XShowActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.CDMA1XSHOW"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" name="com.unisoc.engineermode.modules.telephony.netinfo.core.TdscdmaShowActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.TDSCDMASHOW"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" name="com.unisoc.engineermode.modules.telephony.netinfo.core.WcdmaShowActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.WCDMASHOW"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" name="com.unisoc.engineermode.modules.telephony.netinfo.core.GsmShowActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.GSMSHOW"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" name="com.unisoc.engineermode.modules.telephony.netinfo.core.LteShowActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.LTESHOW"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Query the ability of UE supports" name="com.unisoc.engineermode.modules.telephony.uecat.CategaryActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <receiver name="com.unisoc.engineermode.modules.telephony.common.NotificationBroadcastReceiver">
+      <intent-filter>
+        <action name="notification_cancelled"/>
+        <action name="notification_clicked"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="EngAppActivityTheme" label="CSFB2GSM_DELAY" name="com.unisoc.engineermode.modules.telephony.csfb2gsmdelay.Csfb2GsmDelayActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="NetInfoStatistics" name="com.unisoc.engineermode.modules.telephony.netinfostatistics.core.SIMSelectForNetStatiActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.SIMSELECT_NETSTATI"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="AppCompat" label="NetInfoDetails" name="com.unisoc.engineermode.modules.telephony.netinfostatistics.core.NetinfoStatisticsActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.NETINFOSTATI"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="GPRS" name="com.unisoc.engineermode.modules.telephony.gprsset.GPRSSetActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.GPRSSET"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Fast Dormancy" name="com.unisoc.engineermode.modules.telephony.fastdormancy.FDActivity">
+      <intent-filter>
+        <action name="android.engineermode.action.FDActivity"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="App Settings" name="com.unisoc.engineermode.modules.telephony.appsettings.AppSettingsPrefActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="PS Related" name="com.unisoc.engineermode.modules.telephony.psrelated.PSRelatedPrefActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Sim Select" name="com.unisoc.engineermode.modules.telephony.psrelated.SimSelectHelperActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="AOC Settings" name="com.unisoc.engineermode.modules.telephony.psrelated.AOCSettingsPrefActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Lock CDMA 2000 Freq" name="com.unisoc.engineermode.modules.telephony.psrelated.LockC2KFreqActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.LOCKC2KFREQUENCY"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Lock Freq" name="com.unisoc.engineermode.modules.telephony.psrelated.LockFreqActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.LOCKFREQUENCY"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Lock Freq" name="com.unisoc.engineermode.modules.telephony.psrelated.GLockFrequencyActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.GSMFREQUENCY"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="UE Settings" name="com.unisoc.engineermode.modules.telephony.volte.UESettingsActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="Temporary Settings" name="com.unisoc.engineermode.modules.telephony.volte.TemporarySettingsActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="Operator Settings SIM" name="com.unisoc.engineermode.modules.telephony.volte.OperatorSettingsSIM" screenOrientation="1">
+      <intent-filter>
+        <action name="com.sprd.engineermode.action.OPERATORSETTINGSSIM"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="PLMN White List" name="com.unisoc.engineermode.modules.telephony.volte.PlmnSettingsActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="Development Settings" name="com.unisoc.engineermode.modules.telephony.volte.DevelopmentSettingsActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="VoLTE Setting" name="com.unisoc.engineermode.modules.telephony.volte.VolteSettingsActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="PDP TEST" name="com.unisoc.engineermode.modules.telephony.iotandpdp.IotAndPdpActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="NVItemList" name="com.unisoc.engineermode.modules.telephony.nvitemlist.NVItemListActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="NXP" name="com.unisoc.engineermode.modules.telephony.nxplist.NxpListActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="Released White List" name="com.unisoc.engineermode.modules.telephony.volte.WhiteListActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="Adb shell" name="com.unisoc.engineermode.modules.debuglog.adbshell.AdbShellCMDActivity" screenOrientation="1" windowSoftInputMode="0x20"/>
+    <activity theme="EngAppActivityTheme" label="Power Log" name="com.unisoc.engineermode.modules.debuglog.systeminfo.PowerLogActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Version Info" name="com.unisoc.engineermode.modules.debuglog.systeminfo.VersionInfoDetailActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Version Info" name="com.unisoc.engineermode.modules.debuglog.systeminfo.VersionInfoActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="CFT Result" name="com.unisoc.engineermode.modules.debuglog.cftresult.CFTResultActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.engineermode.action.SAMPLECODE"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Ping packages" name="com.unisoc.engineermode.modules.debuglog.designfortest.pingpackages.PingActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="IOT PDP" name="com.unisoc.engineermode.modules.debuglog.designfortest.pdntest.IotAndPdnActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="AT CGDSCONT TEST" name="com.unisoc.engineermode.modules.debuglog.designfortest.pdntest.DdedicateCgdPdpActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="AT CGEQOS TEST" name="com.unisoc.engineermode.modules.debuglog.designfortest.pdntest.DdedicateCgePdpActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="AT CGTFT TEST" name="com.unisoc.engineermode.modules.debuglog.designfortest.pdntest.DdedicateCgtPdpActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="AT CGACT TEST" name="com.unisoc.engineermode.modules.debuglog.designfortest.pdntest.DdedicateCgaPdpActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Gprs attach/detach Service" name="com.unisoc.engineermode.modules.debuglog.designfortest.gprsservice.GPRSAttachServiceActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Power Dissipation Setting" name="com.unisoc.engineermode.modules.debuglog.powerdissipationsetting.PDSActivityForZero" screenOrientation="1"/>
+    <activity theme="Theme.Dialog" label="CPU Freq Setting" name="com.unisoc.engineermode.modules.debuglog.powerdissipationsetting.CpuFreqListActivity"/>
+    <activity theme="EngAppActivityTheme" label="AI IP" name="com.unisoc.engineermode.modules.debuglog.aiip.AIIPSettingActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="MIPI Log" name="com.unisoc.engineermode.modules.debuglog.mipilog.MIPILogSettingActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Performance Utils" name="com.unisoc.engineermode.modules.debuglog.performanceutils.AndroidUtilsActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="System Settings" name="com.unisoc.engineermode.modules.debuglog.systemsettings.SystemSettingActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Launcher debug" name="com.unisoc.engineermode.modules.debuglog.launcherdebug.LauncherDebugSettingActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Modem Assert Info" name="com.unisoc.engineermode.modules.debuglog.switchmachineinfo.ModemAssertInfoActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <receiver name="com.unisoc.engineermode.modules.debuglog.switchmachineinfo.ModemAssertInfoActivity$ModemAssertReceiver">
+      <intent-filter>
+        <action name="com.android.modemassert.MODEM_STAT_CHANGE"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="Theme.Holo.Light" label="PreCheckApk" name="com.unisoc.engineermode.modules.debuglog.precheck.PreCheckApkActivity" configChanges="0x4a3">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Holo.Light" name="com.unisoc.engineermode.modules.debuglog.precheck.ViewItemVersionActivity">
+      <intent-filter>
+        <action name="com.engineermode.debuglog.itemversion"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Thermal" name="com.unisoc.engineermode.modules.debuglog.thermal.ThermalSettingActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="ThroughPut" name="com.unisoc.engineermode.modules.debuglog.throughput.GROActivity"/>
+    <activity theme="EngAppActivityTheme" label="SMS center number" name="com.unisoc.engineermode.modules.debuglog.smscenternumber.SmsCenterNumberActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" name="com.unisoc.engineermode.modules.debuglog.common.SwitchBaseActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="CTA Security Debug" name="com.unisoc.engineermode.modules.debuglog.ctasecurity.CtaSecurityActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="BT" name="com.unisoc.engineermode.modules.connectivity.bt.BTActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="BT Non-signaling TEST" name="com.unisoc.engineermode.modules.connectivity.bt.BTNOSIGNALActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Non Signaling TX" name="com.unisoc.engineermode.modules.connectivity.bt.BTTXActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Non-signaling RX" name="com.unisoc.engineermode.modules.connectivity.bt.BTRXActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Non Signaling BLE TX" name="com.unisoc.engineermode.modules.connectivity.bt.BTBLETXActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Non Signaling BLE RX" name="com.unisoc.engineermode.modules.connectivity.bt.BTBLERXActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="TX MOD CW" name="com.unisoc.engineermode.modules.connectivity.bt.TxModeCwActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="FM" name="com.unisoc.engineermode.modules.connectivity.fm.FMActivity" screenOrientation="1" configChanges="0x40002004"/>
+    <activity theme="EngAppActivityTheme" label="FM" name="com.unisoc.engineermode.modules.connectivity.fm.FMRdsBlerActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="FM Noise Scan" name="com.unisoc.engineermode.modules.connectivity.fm.FMNoiseScanActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="FM Reg Mode" name="com.unisoc.engineermode.modules.connectivity.fm.FMRegModeActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="FM Tune Mode" name="com.unisoc.engineermode.modules.connectivity.fm.FmTuneActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="FM Audio Mode" name="com.unisoc.engineermode.modules.connectivity.fm.FMAudioActivity" screenOrientation="1"/>
+    <activity theme="EngAppActivityTheme" label="Wifi" name="com.unisoc.engineermode.modules.connectivity.wifi.WifiEUTActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Wifi TX" name="com.unisoc.engineermode.modules.connectivity.wifi.WifiTXActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Wifi RX" name="com.unisoc.engineermode.modules.connectivity.wifi.WifiRXActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Wifi REG_WR" name="com.unisoc.engineermode.modules.connectivity.wifi.WifiREGWRActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Wifi Certification" name="com.unisoc.engineermode.modules.connectivity.wifi.WifiTestActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="De Sense PLL" name="com.unisoc.engineermode.modules.hardware.desensepll.DeSensePLLActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Antenna Settings" name="com.unisoc.engineermode.modules.hardware.antennaset.AntennaSettingsActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Antenna Settings" name="com.unisoc.engineermode.modules.hardware.antennaset.AntennaSettingsActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="RF Max Send Power" name="com.unisoc.engineermode.modules.hardware.rfsendpower.SendPowerPrefActivity" screenOrientation="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="EngAppActivityTheme" label="Coulometer Power Test" name="com.unisoc.engineermode.modules.hardware.coulometerpower.CoulometerPowerTestActivity"/>
+    <activity theme="EngAppActivityTheme" label="Coulometer Power Test" name="com.unisoc.engineermode.modules.hardware.coulometerpower.CoulometerPowerResultActivity">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <receiver name="com.unisoc.engineermode.modules.hardware.coulometerpower.CoulometerPowerReceiver"/>
+    <service name="com.unisoc.engineermode.modules.hardware.coulometerpower.CoulometerPowerService">
+      <intent-filter>
+        <action name="android.engineermode.action.COULOMETER_SERVICE"/>
+      </intent-filter>
+    </service>
+    <activity theme="EngAppActivityTheme" label="Camera FPS" name="com.unisoc.engineermode.modules.hardware.camerafps.CameraFPSActivity"/>
+  </application>
+</manifest>
+

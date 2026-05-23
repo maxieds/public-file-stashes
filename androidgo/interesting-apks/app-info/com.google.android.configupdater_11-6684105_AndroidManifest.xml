@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="30" versionName="11-6684105" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.google.android.configupdater" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="29"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+  <uses-permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+  <uses-permission name="android.permission.UPDATE_CONFIG"/>
+  <application label="ConfigUpdater" name="com.google.android.configupdater.ConfigUpdaterApplication" allowBackup="false" extractNativeLibs="false" appComponentFactory="androidx.core.app.CoreComponentFactory">
+    <receiver name="com.google.android.configupdater.MainReceiver">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.configupdater.MainJobService" permission="android.permission.BIND_JOB_SERVICE" exported="true"/>
+    <receiver name="com.google.android.configupdater.CertPin.CertPinUpdateRequestReceiver">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.DOWNLOAD_COMPLETE"/>
+        <action name="com.google.android.configupdater.GSERVICES_CHANGED"/>
+        <action name="com.google.android.configupdater.CertPin.UPDATE_CERT_PINS"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.configupdater.IntentFirewall.IntentFirewallUpdateRequestReceiver">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.DOWNLOAD_COMPLETE"/>
+        <action name="com.google.android.configupdater.GSERVICES_CHANGED"/>
+        <action name="com.google.android.configupdater.IntentFirewall.UPDATE_INTENT_FIREWALL"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.configupdater.SmsShortCodes.SmsShortCodesUpdateRequestReceiver">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.DOWNLOAD_COMPLETE"/>
+        <action name="com.google.android.configupdater.GSERVICES_CHANGED"/>
+        <action name="com.google.android.configupdater.SmsShortCodes.UPDATE_SMS_SHORT_CODES"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.configupdater.NetworkWatchlist.NetworkWatchlistUpdateRequestReceiver">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.DOWNLOAD_COMPLETE"/>
+        <action name="com.google.android.configupdater.PHENOTYPE_CHANGED"/>
+        <action name="com.google.android.configupdater.NetworkWatchlist.UPDATE_NETWORK_WATCHLIST"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.configupdater.ApnDb.ApnDbUpdateRequestReceiver" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.DOWNLOAD_COMPLETE"/>
+        <action name="com.google.android.configupdater.GSERVICES_CHANGED"/>
+        <action name="com.google.android.configupdater.ApnDb.UPDATE_APN_DB"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.configupdater.CarrierProvisioningUrls.CarrierProvisioningUrlsUpdateRequestReceiver">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.DOWNLOAD_COMPLETE"/>
+        <action name="com.google.android.configupdater.GSERVICES_CHANGED"/>
+        <action name="com.google.android.configupdater.CarrierProvisioningUrls.UPDATE_CARRIER_PROVISIONING_URLS"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.configupdater.CTLogs.CTLogsUpdateRequestReceiver">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.DOWNLOAD_COMPLETE"/>
+        <action name="com.google.android.configupdater.GSERVICES_CHANGED"/>
+        <action name="com.google.android.configupdater.CTLogs.UPDATE_CT_LOGS"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.configupdater.LangId.LangIdUpdateRequestReceiver">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.DOWNLOAD_COMPLETE"/>
+        <action name="com.google.android.configupdater.GSERVICES_CHANGED"/>
+        <action name="com.google.android.configupdater.LangId.UPDATE_LANG_ID"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.configupdater.SmartSelection.SmartSelectionUpdateRequestReceiver">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.DOWNLOAD_COMPLETE"/>
+        <action name="com.google.android.configupdater.GSERVICES_CHANGED"/>
+        <action name="com.google.android.configupdater.SmartSelection.UPDATE_SMART_SELECTION"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.configupdater.ConversationActions.ConversationActionsUpdateRequestReceiver">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.DOWNLOAD_COMPLETE"/>
+        <action name="com.google.android.configupdater.GSERVICES_CHANGED"/>
+        <action name="com.google.android.configupdater.ConversationActions.UPDATE_CONVERSATION_ACTIONS"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.configupdater.CarrierId.CarrierIdUpdateRequestReceiver">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.DOWNLOAD_COMPLETE"/>
+        <action name="com.google.android.configupdater.PHENOTYPE_CHANGED"/>
+        <action name="com.google.android.configupdater.CarrierId.UPDATE_CARRIER_ID_DB"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.configupdater.EmergencyNumberDb.EmergencyNumberDbUpdateRequestReceiver">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.DOWNLOAD_COMPLETE"/>
+        <action name="com.google.android.configupdater.PHENOTYPE_CHANGED"/>
+        <action name="com.google.android.configupdater.EmergencyNumberDb.UPDATE_EMERGENCY_NUMBER_DB"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.configupdater.PhenotypeBroadcastReceiver" permission="com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST" exported="true">
+      <intent-filter>
+        <action name="com.google.android.gms.phenotype.UPDATE"/>
+        <action name="com.google.android.configupdater.DELAYED_FLAG_COMMIT"/>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+      </intent-filter>
+    </receiver>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml" resource="phenotype"/>
+    <provider name="androidx.core.content.FileProvider" exported="false" authorities="com.google.android.configupdater.fileprovider" grantUriPermissions="true">
+      <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="filepaths"/>
+    </provider>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.gms.common.api.GoogleApiActivity" exported="false"/>
+    <meta-data name="com.google.android.gms.version" value="11732000"/>
+  </application>
+</manifest>
+

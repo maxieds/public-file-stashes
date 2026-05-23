@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="210437204" versionName="googletts.google-speech-apk_20230710.01_p1.547324553" compileSdkVersion="34" compileSdkVersionCodename="VanillaIceCream" package="com.google.android.tts" platformBuildVersionCode="34" platformBuildVersionName="VanillaIceCream">
+  <uses-sdk minSdkVersion="26" targetSdkVersion="34"/>
+  <uses-feature name="android.hardware.touchscreen" required="false"/>
+  <uses-feature name="android.hardware.screen.portrait" required="false"/>
+  <uses-feature name="android.software.leanback" required="false"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+  <uses-permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.GET_PACKAGE_SIZE"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.QUERY_ALL_PACKAGES"/>
+  <uses-permission name="android.permission.RECORD_AUDIO"/>
+  <uses-permission name="android.permission.UPDATE_APP_OPS_STATS"/>
+  <uses-permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+  <uses-permission name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <attribution label="Speech Recognition and Synthesis from Google" tag="transcription.voice_recognition"/>
+  <permission name="com.google.android.tts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" protectionLevel="0x2"/>
+  <queries>
+    <provider name="com.android.car.ui.plugin.PluginNameProvider" authorities="com.android.car.ui.plugin"/>
+  </queries>
+  <application theme="SettingsTheme" label="Speech Recognition and Synthesis from Google" icon="res/eQ.png" name="com.google.android.apps.speech.tts.googletts.GoogleTTSRoot_Application" taskAffinity="" launchMode="3" backupAgent="com.google.android.apps.speech.tts.googletts.settings.TTSBackupAgent" installLocation="1" restoreAnyVersion="true" supportsRtl="true" fullBackupOnly="true" extractNativeLibs="true" fullBackupContent="res/Qq.xml" usesCleartextTraffic="false" roundIcon="res/kd.png" appComponentFactory="androidx.core.app.CoreComponentFactory" forceQueryable="true" dataExtractionRules="res/ok.xml">
+    <service name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService" enabled="false" exported="false" process="">
+      <intent-filter>
+        <action name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"/>
+      </intent-filter>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.search.audio.device" resource="com_google_android_libraries_search_audio_device_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.auth_account" resource="com_google_android_gms_auth_account_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.feedback" resource="com_google_android_gms_feedback_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.gms.icing.mdd" resource="com_google_android_gms_icing_mdd_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.usagereporting" resource="com_google_android_gms_usagereporting_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.search.device" resource="com_google_android_libraries_search_device_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.apps.search.transcription.device" resource="com_google_android_apps_search_transcription_device_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.apps.search.transcription.device" resource="com_google_android_apps_search_transcription_device_registration_info_release"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.apps.search.transcription.uidevice" resource="com_google_android_apps_search_transcription_uidevice_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.apps.search.transcription.uidevice" resource="com_google_android_apps_search_transcription_uidevice_registration_info_release"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.tts" resource="com_google_android_tts_registration_info"/>
+    </service>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.gms.icing.mdd" resource="com_google_android_gms_icing_mdd_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.apps.search.transcription.device" resource="com_google_android_apps_search_transcription_device_phenotype_release"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.apps.search.transcription.uidevice" resource="com_google_android_apps_search_transcription_uidevice_phenotype_release"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.tts" resource="com_google_android_tts_phenotype"/>
+    <provider name="com.google.android.apps.search.transcription.recording.AudioRecordingProvider$AudioRecordingFileProvider" exported="false" process=":search" authorities="com.google.android.tts.AudioRecordingProvider" grantUriPermissions="true">
+      <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="transcription_audio_recording_file_path"/>
+    </provider>
+    <activity theme="IntentApiCustom" label=" " name="com.google.android.apps.search.transcription.ui.TranscriptionActivity" exported="false" process=":search" taskAffinity="com.google.android.voicesearch.intentapi" excludeFromRecents="true" configChanges="0x4f0"/>
+    <activity-alias name="com.google.android.apps.speech.tts.googletts.service.GoogleTTSActivity" enabled="false" exported="true" targetActivity="com.google.android.apps.search.transcription.ui.TranscriptionActivity">
+      <intent-filter priority="1">
+        <action name="android.speech.action.RECOGNIZE_SPEECH"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity-alias>
+    <activity theme="Theme.VoiceImeTransparent" name="com.google.android.apps.search.transcription.voiceime.permissions.PermissionsActivity" exported="false" process=":search" taskAffinity="" excludeFromRecents="true"/>
+    <meta-data name="com.google.android.tts.config.BuildType" value="RELEASE"/>
+    <uses-native-library name="libedgetpu_util.so" required="false"/>
+    <uses-native-library name="libedgetpu_client.google.so" required="false"/>
+    <service label="Speech Recognition and Synthesis from Google" name="com.google.android.apps.speech.tts.googletts.service.GoogleTTSRecognitionService" enabled="false" exported="true" directBootAware="true">
+      <intent-filter>
+        <action name="android.speech.RecognitionService"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="android.speech" resource="language_pack_settings"/>
+    </service>
+    <service name="com.google.android.apps.search.transcription.recognition.grpc.GoogleAsrService" exported="true"/>
+    <service name="com.google.android.libraries.mdi.download.foreground.sting.ForegroundDownloadService" enabled="false" exported="false" foregroundServiceType="0x1"/>
+    <activity theme="Theme.Asr.Settings" label="Speech Recognition and Synthesis from Google" name="com.google.android.apps.speech.tts.googletts.settings.asr.SettingsActivity" enabled="false" exported="false">
+      <intent-filter>
+        <action name=".settings.asr.SettingsActivity"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Asr.Settings" label="Add a language" name="com.google.android.apps.speech.tts.googletts.settings.asr.AddLanguagesActivity" enabled="false" exported="false">
+      <intent-filter>
+        <action name=".settings.asr.AddLanguagesActivity"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.NoDisplay" name="com.google.android.apps.speech.tts.googletts.settings.asr.ForceEnableTntComponentsActivity" exported="true">
+      <intent-filter>
+        <action name="android.speech.tts.FORCE_ENABLE_TNT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="distractionOptimized" value="true"/>
+    </activity>
+    <receiver name="com.google.android.apps.speech.tts.googletts.local.voicepack.VoicepackUpdater_Receiver" exported="false">
+      <intent-filter>
+        <action name="android.intent.action.MY_PACKAGE_REPLACED"/>
+        <action name="android.intent.action.LOCALE_CHANGED"/>
+        <action name="android.intent.action.PACKAGE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <uses-native-library name="libedgetpu_util.so" required="false"/>
+    <uses-native-library name="libedgetpu_client.google.so" required="false"/>
+    <service label="Speech Recognition and Synthesis from Google" name="com.google.android.apps.speech.tts.googletts.service.GoogleTtsService" exported="true" directBootAware="true">
+      <intent-filter priority="100">
+        <action name="android.intent.action.TTS_SERVICE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="android.speech.tts" resource="tts_engine"/>
+    </service>
+    <activity theme="Theme.NoDisplay" name="com.google.android.apps.speech.tts.googletts.settings.CheckVoiceData" exported="true" directBootAware="true">
+      <intent-filter>
+        <action name="android.speech.tts.engine.CHECK_TTS_DATA"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.NoDisplay" name="com.google.android.apps.speech.tts.googletts.settings.GetSampleText" exported="true" directBootAware="true">
+      <intent-filter>
+        <action name="android.speech.tts.engine.GET_SAMPLE_TEXT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Google TTS Options" name="com.google.android.apps.speech.tts.googletts.settings.EngineSettings" exported="false">
+      <intent-filter>
+        <action name=".settings.EngineSettings"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Google TTS voice data" name="com.google.android.apps.speech.tts.googletts.local.voicepack.ui.VoiceDataInstallActivity" exported="true" directBootAware="true">
+      <intent-filter>
+        <action name="android.speech.tts.engine.INSTALL_TTS_DATA"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity name="com.google.android.apps.speech.tts.googletts.local.voicepack.ui.MultipleVoicesActivity" exported="false"/>
+    <activity label="Anonymous usage reports" name="com.google.android.apps.speech.tts.googletts.settings.AnalyticsActivity" exported="false"/>
+    <service name="com.google.android.libraries.micore.superpacks.scheduling.DownloadJobService" permission="android.permission.BIND_JOB_SERVICE" exported="false"/>
+    <service label="Google Voice Typing" name="com.google.android.apps.speech.tts.googletts.settings.asr.voiceime.VoiceInputMethodService" permission="android.permission.BIND_INPUT_METHOD" enabled="false" exported="true">
+      <intent-filter>
+        <action name="android.view.InputMethod"/>
+      </intent-filter>
+      <meta-data name="android.view.im" resource="transcription_app_ime_method"/>
+    </service>
+    <activity theme="Theme.Asr.Settings" label="Google Voice Typing" name="com.google.android.apps.speech.tts.googletts.settings.asr.voiceime.ui.VoiceImeSettingsActivity" exported="false" excludeFromRecents="true"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.gms.common.api.GoogleApiActivity" exported="false"/>
+    <meta-data name="com.google.android.gms.version" value="232810000"/>
+    <service name="com.google.android.libraries.directboot.DirectBootHelperService" enabled="false" exported="false" process="" directBootAware="false"/>
+    <receiver name="com.google.android.libraries.performance.primes.transmitter.LifeboatReceiver" exported="false" process=":primes_lifeboat"/>
+    <receiver name="com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver" exported="true" process="">
+      <intent-filter>
+        <action name="android.accounts.action.ACCOUNT_REMOVED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver" permission="com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST" exported="true" process="">
+      <intent-filter>
+        <action name="com.google.android.gms.phenotype.UPDATE"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="Theme.AppCompat.DayNight" label="Third Party Notices" name="com.google.android.libraries.social.licenses.LicenseMenuActivity" exported="true"/>
+    <activity theme="Theme.AppCompat.DayNight" label="Third Party Notices" name="com.google.android.libraries.social.licenses.LicenseActivity" exported="false"/>
+    <receiver name="com.google.android.libraries.speech.modelmanager.languagepack.legacy.LanguagePackDetailsReceiver_Receiver" enabled="false" exported="true">
+      <intent-filter>
+        <action name="android.speech.action.GET_LANGUAGE_DETAILS"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="Theme.GoogleMaterial.DayNight.Dialog.Alert" name="com.google.android.libraries.speech.modelmanager.languagepack.legacy.DownloadActivity" enabled="false" exported="true" excludeFromRecents="true">
+      <intent-filter>
+        <action name="com.google.recognition.action.DOWNLOAD_LANGUAGE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <service name="com.google.android.libraries.speech.modelmanager.languagepack.ui.grpc.DownloadActivityStarterService" process=""/>
+    <activity theme="Theme.GoogleMaterial.DayNight.Dialog.Alert" name="com.google.android.libraries.speech.modelmanager.languagepack.ui.DownloadActivity" process="" excludeFromRecents="true"/>
+    <service name="com.google.apps.tiktok.concurrent.AndroidFuturesService" exported="false"/>
+    <service name="com.google.apps.tiktok.concurrent.InternalForegroundService" exported="false" foregroundServiceType="0x800"/>
+    <receiver name="com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver" permission="com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST" exported="true">
+      <intent-filter>
+        <action name="com.google.android.gms.phenotype.UPDATE"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.frameworks.client.data.android.server.tiktok.MainProcessEndpointService" exported="false"/>
+    <uses-library name="androidx.window.extensions" required="false"/>
+    <uses-library name="androidx.window.sidecar" required="false"/>
+    <service name="androidx.work.impl.background.systemalarm.SystemAlarmService" enabled="false" exported="false" directBootAware="false"/>
+    <service name="androidx.work.impl.background.systemjob.SystemJobService" permission="android.permission.BIND_JOB_SERVICE" enabled="true" exported="true" directBootAware="false"/>
+    <service name="androidx.work.impl.foreground.SystemForegroundService" enabled="true" exported="false" directBootAware="false"/>
+    <receiver name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" enabled="true" exported="false" directBootAware="false"/>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.ACTION_POWER_CONNECTED"/>
+        <action name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.BATTERY_OKAY"/>
+        <action name="android.intent.action.BATTERY_LOW"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.DEVICE_STORAGE_LOW"/>
+        <action name="android.intent.action.DEVICE_STORAGE_OK"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.net.conn.CONNECTIVITY_CHANGE"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.RescheduleReceiver" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.TIME_SET"/>
+        <action name="android.intent.action.TIMEZONE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.diagnostics.DiagnosticsReceiver" permission="android.permission.DUMP" enabled="true" exported="true" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+      </intent-filter>
+    </receiver>
+    <provider name="com.android.car.ui.core.CarUiInstaller" exported="false" process="" authorities="com.google.android.tts.CarUiInstaller" directBootAware="true"/>
+    <provider name="com.android.car.ui.core.SearchResultsProvider" readPermission="com.android.car.ui.READ_SEARCH_RESULTS" exported="true" process="" authorities="com.google.android.tts.SearchResultsProvider"/>
+    <service name="com.google.android.build.data.PropertiesServiceHolder" enabled="false" exported="false" process="">
+      <intent-filter>
+        <action name="com.google.android.build.data.Properties"/>
+      </intent-filter>
+      <meta-data name="com.google.android.build.data.properties" resource="build_data"/>
+    </service>
+    <meta-data name="com.android.stamp.source" value="https://play.google.com/store"/>
+    <meta-data name="com.android.stamp.type" value="STAMP_TYPE_DISTRIBUTION_APK"/>
+    <meta-data name="com.android.vending.splits" resource="splits0"/>
+    <meta-data name="com.android.vending.derived.apk.id" value="2"/>
+  </application>
+</manifest>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="android.uid.phone" versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" coreApp="true" package="com.android.unisoc.telephony.server" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <protected-broadcast name="android.intent.action.SIM_STATE_CHANGED"/>
+  <protected-broadcast name="android.intent.action.SIMLOCK_STATE_CHANGED"/>
+  <application name="RadioInteractorApp" persistent="true" process="com.android.phone" extractNativeLibs="true" directBootAware="true" usesNonSdkApi="true">
+    <service name="com.android.unisoc.telephony.server.RadioInteractorService" exported="true">
+      <intent-filter>
+        <action name="com.android.unisoc.telephony.server.RADIOINTERACTOR_SERVICE"/>
+      </intent-filter>
+    </service>
+  </application>
+</manifest>
+

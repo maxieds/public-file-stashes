@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="10400" versionName="1.4" installLocation="0" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.musicfx" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <uses-permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+  <uses-permission name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+  <uses-permission name="android.permission.BLUETOOTH"/>
+  <application theme="Theme.NoTitleBar" label="MusicFX" icon="res/drawable-hdpi-v4/icon.png" allowBackup="false" supportsRtl="true" extractNativeLibs="true" usesNonSdkApi="true">
+    <activity theme="Theme.Material.Light" label="Equalizer" name=".ActivityMusic">
+      <intent-filter>
+        <action name="android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.CATEGORY_CONTENT_MUSIC"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Holo.Dialog.Alert" name=".ControlPanelPicker" excludeFromRecents="true"/>
+    <receiver name=".ControlPanelReceiver">
+      <intent-filter>
+        <action name="android.media.action.OPEN_AUDIO_EFFECT_CONTROL_SESSION"/>
+        <action name="android.media.action.CLOSE_AUDIO_EFFECT_CONTROL_SESSION"/>
+        <action name="AudioEffect.ACTION_SET_PARAM"/>
+        <action name="AudioEffect.ACTION_GET_PARAM"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="Compatibility$Receiver">
+      <intent-filter>
+        <action name="android.intent.action.PACKAGE_ADDED"/>
+        <data scheme="package"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.PACKAGE_REPLACED"/>
+        <data scheme="package"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.PACKAGE_REMOVED"/>
+        <data scheme="package"/>
+      </intent-filter>
+    </receiver>
+    <service name="Compatibility$Service" exported="false"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="Compatibility$Redirector">
+      <intent-filter priority="2147483647">
+        <action name="android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.vpndialogs" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <uses-permission name="android.permission.CONTROL_VPN"/>
+  <uses-permission name="android.permission.CONTROL_ALWAYS_ON_VPN"/>
+  <uses-permission name="android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS"/>
+  <application label="VpnDialogs" allowBackup="false" extractNativeLibs="true" usesNonSdkApi="true">
+    <activity theme="Theme.DeviceDefault.Dialog.Alert.DayNight" name=".ConfirmDialog">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.DeviceDefault.Dialog.Alert.DayNight" name=".PlatformVpnConfirmDialog" exported="true" excludeFromRecents="true" noHistory="true"/>
+    <activity theme="Theme.DeviceDefault.Dialog.Alert.DayNight" name=".ManageDialog" permission="android.permission.NETWORK_SETTINGS" exported="true" excludeFromRecents="true" noHistory="true"/>
+    <activity theme="Theme.DeviceDefault.Dialog.Alert.DayNight" label="Can't connect to always-on VPN" name=".AlwaysOnDisconnectedDialog" permission="android.permission.NETWORK_SETTINGS" exported="true" excludeFromRecents="true" noHistory="true"/>
+  </application>
+</manifest>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="android.uid.system" versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.spreadtrum.vce" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <uses-permission name="android.permission.CAMERA"/>
+  <uses-feature name="android.hardware.camera"/>
+  <uses-feature name="android.hardware.camera.front" required="true"/>
+  <uses-feature name="android.hardware.camera.any" required="true"/>
+  <uses-feature name="android.hardware.camera.autofocus"/>
+  <uses-permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
+  <application name="VceDaemon" persistent="true" allowBackup="false" extractNativeLibs="false" defaultToDeviceProtectedStorage="true" directBootAware="true" usesNonSdkApi="true">
+    <receiver name=".VceBroadcastReceiver">
+      <intent-filter>
+        <action name="android.intent.action.SIM_STATE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <service name=".VceService" enabled="true" exported="true"/>
+  </application>
+</manifest>
+

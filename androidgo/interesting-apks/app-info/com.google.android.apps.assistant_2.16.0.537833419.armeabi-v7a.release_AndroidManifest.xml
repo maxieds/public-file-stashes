@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="25983" versionName="2.16.0.537833419.armeabi-v7a.release" compileSdkVersion="34" compileSdkVersionCodename="VanillaIceCream" package="com.google.android.apps.assistant" platformBuildVersionCode="34" platformBuildVersionName="VanillaIceCream">
+  <uses-sdk minSdkVersion="26" targetSdkVersion="33"/>
+  <uses-feature name="android.hardware.bluetooth" required="false"/>
+  <uses-feature name="android.hardware.faketouch" required="false"/>
+  <uses-feature name="android.hardware.microphone" required="false"/>
+  <uses-feature name="android.hardware.telephony" required="false"/>
+  <uses-feature name="android.hardware.wifi" required="false"/>
+  <uses-feature name="android.hardware.screen.portrait" required="false"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission name="android.permission.CHANGE_WIFI_STATE"/>
+  <uses-permission name="android.permission.BLUETOOTH" maxSdkVersion="30"/>
+  <uses-permission name="android.permission.BLUETOOTH_ADMIN" maxSdkVersion="30"/>
+  <uses-permission name="android.permission.BLUETOOTH_SCAN"/>
+  <uses-permission name="android.permission.BLUETOOTH_CONNECT"/>
+  <uses-permission name="android.permission.CALL_PHONE"/>
+  <uses-permission name="android.permission.CALL_PRIVILEGED"/>
+  <uses-permission name="android.permission.GET_ACCOUNTS"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.MEDIA_CONTENT_CONTROL"/>
+  <uses-permission name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission name="android.permission.READ_SMS"/>
+  <uses-permission name="android.permission.READ_CONTACTS"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.RECORD_AUDIO"/>
+  <uses-permission name="android.permission.SEND_SMS"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.WRITE_SMS"/>
+  <uses-permission name="com.android.alarm.permission.SET_ALARM"/>
+  <uses-permission name="com.google.android.c2dm.permission.RECEIVE"/>
+  <uses-permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+  <uses-permission name="com.google.android.providers.gsf.permission.WRITE_GSERVICES"/>
+  <uses-permission name="android.permission.GET_PACKAGE_SIZE"/>
+  <uses-permission name="android.permission.QUERY_ALL_PACKAGES"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+  <uses-feature name="android.hardware.ram.low" required="true"/>
+  <permission name="com.google.android.apps.now.OPT_IN_WIZARD" protectionLevel="0x3"/>
+  <queries>
+    <package name="com.google.android.apps.searchlite"/>
+    <package name="com.google.android.googlequicksearchbox"/>
+    <package name="com.google.android.apps.googleassistant"/>
+    <package name="com.google.android.apps.meetings"/>
+    <package name="com.google.android.apps.tachyon"/>
+    <package name="com.google.android.gm"/>
+  </queries>
+  <permission name="com.google.android.apps.assistant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" protectionLevel="0x2"/>
+  <application label="Google Assistant" icon="res/Cb.png" name="com.google.android.apps.assistant.go.AssistantLiteApp_Application" taskAffinity="" supportsRtl="true" extractNativeLibs="false" roundIcon="res/Cb.png" appComponentFactory="androidx.core.app.CoreComponentFactory">
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.apps.assistant" resource="com_google_android_apps_assistant_phenotype"/>
+    <service name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService" enabled="false" exported="false" process="">
+      <intent-filter>
+        <action name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"/>
+      </intent-filter>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.apps.assistant" resource="com_google_android_apps_assistant_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.consent.flows.footprints" resource="com_google_android_libraries_consent_flows_footprints_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.auth_account" resource="com_google_android_gms_auth_account_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.feedback" resource="com_google_android_gms_feedback_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.gcm" resource="com_google_android_gms_gcm_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.usagereporting" resource="com_google_android_gms_usagereporting_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.mdi.sync" resource="com_google_android_libraries_mdi_sync_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.mdi.sync" resource="com_google_android_libraries_mdi_sync_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.onegoogle" resource="com_google_android_libraries_onegoogle_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.assistant.symbiote" resource="com_google_android_libraries_assistant_symbiote_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.assistant.symbiote" resource="com_google_android_libraries_assistant_symbiote_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.search.user" resource="com_google_android_libraries_search_user_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.search.rendering.xuikit.device" resource="com_google_android_libraries_search_rendering_xuikit_device_registration_info"/>
+    </service>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.consent.flows.footprints" resource="com_google_android_libraries_consent_flows_footprints_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.mdi.sync" resource="com_google_android_libraries_mdi_sync_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.onegoogle" resource="com_google_android_libraries_onegoogle_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.assistant.symbiote" resource="com_google_android_libraries_assistant_symbiote_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.search.rendering.xuikit.device" resource="com_google_android_libraries_search_rendering_xuikit_device_phenotype"/>
+    <activity theme="Theme.AppCompat.Light.NoActionBar" name="com.google.android.apps.assistant.go.explore.ExploreActivity" exported="false" taskAffinity=".ExploreActivity" launchMode="1" screenOrientation="1" windowSoftInputMode="0x10"/>
+    <activity theme="MainActivity.TransparentTheme" label="Assistant" icon="res/Cb.png" name="com.google.android.apps.assistant.go.MainActivity" exported="true" launchMode="2" screenOrientation="1" windowSoftInputMode="0x10" roundIcon="res/Cb.png">
+      <intent-filter>
+        <action name="android.intent.action.ASSIST"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.LAUNCHER"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.VOICE_COMMAND"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.speech.action.WEB_SEARCH"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.google.assistant.actions.LAUNCH_ONBOARDING"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.android.systemui.action_assist_icon" resource="quantum_ic_mic_googblue_48"/>
+    </activity>
+    <service name="com.google.android.apps.assistant.go.notification.AssistantGoFirebaseMessagingService" exported="false">
+      <intent-filter>
+        <action name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <activity theme="Theme.AppCompat.Light.NoActionBar" name="com.google.android.apps.assistant.go.notification.NotificationHandlingActivity" exported="false" taskAffinity="" excludeFromRecents="true" screenOrientation="1"/>
+    <provider name="com.google.firebase.provider.FirebaseInitProvider" exported="false" authorities="com.google.android.apps.assistant.firebaseinitprovider" initOrder="100"/>
+    <service name="com.google.firebase.components.ComponentDiscoveryService" exported="false" directBootAware="true">
+      <meta-data name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+    </service>
+    <activity theme="OnboardingActivity.Theme" label="Assistant" icon="res/Cb.png" name="com.google.android.apps.assistant.go.onboarding.OnboardingActivity" exported="false" launchMode="2" screenOrientation="1" configChanges="0x2484" roundIcon="res/Cb.png"/>
+    <activity theme="SuwActivity.Theme" name="com.google.android.apps.assistant.go.onboarding.SuwActivity" exported="false" screenOrientation="1"/>
+    <activity-alias name="com.google.android.apps.assistant.go.onboarding.SetupWizardActivity" permission="com.google.android.apps.now.OPT_IN_WIZARD" exported="true" screenOrientation="1" targetActivity="com.google.android.apps.assistant.go.onboarding.SuwActivity">
+      <intent-filter>
+        <action name="com.google.android.apps.gsa.opa.OPA_OPT_IN_WRAPPED"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity-alias>
+    <meta-data name="com.google.android.gms.version" value="232312000"/>
+    <activity theme="Theme.AppCompat.Light.NoActionBar" label="Assistant" icon="res/Cb.png" name="com.google.android.apps.assistant.go.reminders.RemindersListActivity" exported="false" launchMode="2" screenOrientation="1" roundIcon="res/Cb.png"/>
+    <activity-alias label="Assistant" icon="res/Cb.png" name="com.google.android.apps.assistant.go.reminders.EnterRemindersListActivityFromDeeplink" exported="false" targetActivity="com.google.android.apps.assistant.go.reminders.RemindersListActivity" roundIcon="res/Cb.png">
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="googleassistant" host="android" path="/app/link/list_reminders"/>
+      </intent-filter>
+    </activity-alias>
+    <service name="com.google.android.apps.assistant.go.reminders.RemindersListenerService" exported="true">
+      <intent-filter>
+        <action name="com.google.android.gms.reminders.BIND_LISTENER"/>
+      </intent-filter>
+    </service>
+    <activity theme="Theme.AppCompat.Light.NoActionBar" name="com.google.android.apps.assistant.go.settings.SettingsActivity" exported="false" screenOrientation="1" configChanges="0x4">
+      <intent-filter>
+        <action name="com.google.assistant.actions.ASSISTANT_SETTINGS"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.gms.common.api.GoogleApiActivity" exported="false"/>
+    <service name="com.google.android.libraries.assistant.symbiote.verification.impl.VerificationService" exported="true">
+      <intent-filter>
+        <action name="com.google.android.apps.assistant.go.verification.VERIFICATION_SERVICE"/>
+      </intent-filter>
+    </service>
+    <service name="com.google.android.libraries.directboot.DirectBootHelperService" enabled="false" exported="false" process="" directBootAware="false"/>
+    <activity theme="Theme.Translucent.NoTitleBar.Fullscreen" name="com.google.android.libraries.gsa.conversation.clientop.communication.callexecutor.PermissionsRequestActivity" exported="false" process=":search" taskAffinity="" excludeFromRecents="true" autoRemoveFromRecents="true"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.libraries.onegoogle.accountmanagement.AddAccountActivity" exported="false"/>
+    <receiver name="com.google.android.libraries.performance.primes.transmitter.LifeboatReceiver" exported="false" process=":primes_lifeboat"/>
+    <receiver name="com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver" exported="true" process="">
+      <intent-filter>
+        <action name="android.accounts.action.ACCOUNT_REMOVED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver" permission="com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST" exported="true" process="">
+      <intent-filter>
+        <action name="com.google.android.gms.phenotype.UPDATE"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="Theme.AppCompat.DayNight" label="Third Party Notices" name="com.google.android.libraries.social.licenses.LicenseMenuActivity" exported="true"/>
+    <activity theme="Theme.AppCompat.DayNight" label="Third Party Notices" name="com.google.android.libraries.social.licenses.LicenseActivity" exported="false"/>
+    <receiver name="com.google.apps.tiktok.account.data.device.DeviceAccountsChangedReceiver_Receiver" exported="true">
+      <intent-filter>
+        <action name="android.accounts.LOGIN_ACCOUNTS_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="Theme.TikTok.DayNight.ModalAccountSelector" name="com.google.apps.tiktok.account.ui.modalselector.SelectAccountActivity" exported="false"/>
+    <service name="com.google.apps.tiktok.concurrent.AndroidFuturesService" exported="false"/>
+    <service name="com.google.apps.tiktok.concurrent.InternalForegroundService" exported="false" foregroundServiceType="0x800"/>
+    <receiver name="com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver" exported="true">
+      <intent-filter>
+        <action name="com.google.android.gms.phenotype.UPDATE"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.firebase.iid.FirebaseInstanceIdReceiver" permission="com.google.android.c2dm.permission.SEND" exported="true">
+      <intent-filter>
+        <action name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.firebase.messaging.FirebaseMessagingService" exported="false" directBootAware="true">
+      <intent-filter priority="-500">
+        <action name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <uses-library name="androidx.window.extensions" required="false"/>
+    <uses-library name="androidx.window.sidecar" required="false"/>
+    <service name="androidx.work.impl.background.systemalarm.SystemAlarmService" enabled="false" exported="false" directBootAware="false"/>
+    <service name="androidx.work.impl.background.systemjob.SystemJobService" permission="android.permission.BIND_JOB_SERVICE" enabled="true" exported="true" directBootAware="false"/>
+    <service name="androidx.work.impl.foreground.SystemForegroundService" enabled="true" exported="false" directBootAware="false"/>
+    <receiver name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" enabled="true" exported="false" directBootAware="false"/>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.ACTION_POWER_CONNECTED"/>
+        <action name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.BATTERY_OKAY"/>
+        <action name="android.intent.action.BATTERY_LOW"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.DEVICE_STORAGE_LOW"/>
+        <action name="android.intent.action.DEVICE_STORAGE_OK"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.net.conn.CONNECTIVITY_CHANGE"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.RescheduleReceiver" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.TIME_SET"/>
+        <action name="android.intent.action.TIMEZONE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.diagnostics.DiagnosticsReceiver" permission="android.permission.DUMP" enabled="true" exported="true" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.build.data.PropertiesServiceHolder" enabled="false" exported="false" process="">
+      <intent-filter>
+        <action name="com.google.android.build.data.Properties"/>
+      </intent-filter>
+      <meta-data name="com.google.android.build.data.properties" resource="build_data"/>
+    </service>
+  </application>
+</manifest>
+

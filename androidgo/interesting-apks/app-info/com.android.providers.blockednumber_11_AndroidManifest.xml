@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="android.uid.shared" versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.providers.blockednumber" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <application label="Blocked Numbers Storage" process="android.process.acore" backupAgent=".BlockedNumberBackupAgent" allowBackup="true" killAfterRestore="false" extractNativeLibs="true" usesCleartextTraffic="false" defaultToDeviceProtectedStorage="true" directBootAware="true" usesNonSdkApi="true" forceQueryable="true">
+    <meta-data name="com.google.android.backup.api_key" value="AEdPqrEAAAAIRdCykcev-SjrWshQG1Fq5-ZbktewFXgOnb3U5g"/>
+    <provider name="BlockedNumberProvider" exported="true" multiprocess="false" authorities="com.android.blockednumber"/>
+  </application>
+</manifest>
+

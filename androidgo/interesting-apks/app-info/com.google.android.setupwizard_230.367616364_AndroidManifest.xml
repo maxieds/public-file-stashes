@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="10842" versionName="230.367616364" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.google.android.setupwizard" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="29" targetSdkVersion="30"/>
+  <uses-permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+  <uses-permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+  <uses-permission name="android.permission.BACKUP"/>
+  <uses-permission name="android.permission.CAMERA"/>
+  <uses-permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+  <uses-permission name="android.permission.CHANGE_CONFIGURATION"/>
+  <uses-permission name="android.permission.CHANGE_WIFI_STATE"/>
+  <uses-permission name="android.permission.CHANGE_NETWORK_STATE"/>
+  <uses-permission name="android.permission.CONNECTIVITY_INTERNAL"/>
+  <uses-permission name="android.permission.DISPATCH_PROVISIONING_MESSAGE"/>
+  <uses-permission name="android.permission.DISABLE_KEYGUARD"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.LOCAL_MAC_ADDRESS"/>
+  <uses-permission name="android.permission.MANAGE_ACCESSIBILITY"/>
+  <uses-permission name="android.permission.MANAGE_ACCOUNTS"/>
+  <uses-permission name="android.permission.MANAGE_FINGERPRINT"/>
+  <uses-permission name="android.permission.MANAGE_USB"/>
+  <uses-permission name="android.permission.MANAGE_USERS"/>
+  <uses-permission name="android.permission.MASTER_CLEAR"/>
+  <uses-permission name="android.permission.MODIFY_PHONE_STATE"/>
+  <uses-permission name="android.permission.NETWORK_SETUP_WIZARD"/>
+  <uses-permission name="android.permission.NOTIFICATION_DURING_SETUP"/>
+  <uses-permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+  <uses-permission name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+  <uses-permission name="android.permission.PEERS_MAC_ADDRESS"/>
+  <uses-permission name="android.permission.PERFORM_CDMA_PROVISIONING"/>
+  <uses-permission name="android.permission.READ_CONTACTS"/>
+  <uses-permission name="android.permission.READ_PROFILE"/>
+  <uses-permission name="android.permission.REBOOT"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.REQUEST_NETWORK_SCORES"/>
+  <uses-permission name="android.permission.SET_TIME"/>
+  <uses-permission name="android.permission.SET_TIME_ZONE"/>
+  <uses-permission name="android.permission.SHUTDOWN"/>
+  <uses-permission name="android.permission.STATUS_BAR"/>
+  <uses-permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+  <uses-permission name="android.permission.UPDATE_LOCK_TASK_PACKAGES"/>
+  <uses-permission name="android.permission.USE_BIOMETRIC"/>
+  <uses-permission name="android.permission.USE_COLORIZED_NOTIFICATIONS"/>
+  <uses-permission name="android.permission.USE_CREDENTIALS"/>
+  <uses-permission name="android.permission.USE_FINGERPRINT"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.WRITE_APN_SETTINGS"/>
+  <uses-permission name="android.permission.WRITE_CONTACTS"/>
+  <uses-permission name="android.permission.WRITE_PROFILE"/>
+  <uses-permission name="android.permission.MODIFY_SETTINGS_OVERRIDEABLE_BY_RESTORE"/>
+  <uses-permission name="com.android.vending.TOS_ACKED"/>
+  <uses-permission name="com.google.android.apps.now.OPT_IN_WIZARD"/>
+  <uses-permission name="com.google.android.googleapps.permission.GOOGLE_AUTH"/>
+  <uses-permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+  <uses-permission name="com.google.android.providers.settings.permission.READ_GSETTINGS"/>
+  <uses-permission name="com.google.android.providers.settings.permission.WRITE_GSETTINGS"/>
+  <uses-permission name="com.google.android.setupwizard.READ_DEVICE_ORIGIN_FIRST_PARTY"/>
+  <uses-permission name="com.google.android.setupwizard.SETUP"/>
+  <uses-permission name="com.google.android.setupwizard.SETUP_COMPAT_SERVICE"/>
+  <uses-permission name="com.google.android.setupwizard.PARTNER_SETUP"/>
+  <uses-permission name="android.permission.WRITE_SYNC_SETTINGS"/>
+  <uses-permission name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+  <uses-permission name="android.permission.CALL_PHONE"/>
+  <uses-permission name="android.permission.PROCESS_OUTGOING_CALLS"/>
+  <uses-permission name="android.permission.INVOKE_CARRIER_SETUP"/>
+  <uses-permission name="com.android.vending.setup.PLAY_SETUP_SERVICE"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+  <uses-permission name="android.permission.QUERY_ALL_PACKAGES"/>
+  <uses-permission name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
+  <uses-feature name="android.hardware.camera" required="false"/>
+  <uses-feature name="android.hardware.camera.front" required="false"/>
+  <uses-feature name="android.hardware.camera.autofocus" required="false"/>
+  <permission name="com.google.android.setupwizard.READ_DEVICE_ORIGIN_FIRST_PARTY" protectionLevel="0x0"/>
+  <permission name="com.google.android.setupwizard.READ_DEVICE_ORIGIN" protectionLevel="0x12"/>
+  <permission name="com.google.android.setupwizard.WRITE_DEVICE_ORIGIN" protectionLevel="0x12"/>
+  <permission name="com.google.android.setupwizard.READ_DEFERRED_SETUP_REASON" protectionLevel="0x12"/>
+  <permission name="com.google.android.setupwizard.PARTNER_SETUP" protectionLevel="0x12"/>
+  <permission name="com.google.android.setupwizard.SETUP" protectionLevel="0x2"/>
+  <permission name="com.google.android.setupwizard.SETUP_COMPAT_SERVICE" protectionLevel="0x0"/>
+  <application theme="SudThemeGlif.Light" label="Android Setup" icon="res/GU.xml" name="com.google.android.setupwizard.SetupWizardApplication" allowClearUserData="false" taskAffinity="com.android.wizard" allowBackup="false" hardwareAccelerated="true" supportsRtl="true" extractNativeLibs="false" usesCleartextTraffic="true">
+    <uses-library name="org.apache.http.legacy" required="false"/>
+    <meta-data name="android.SETUP_VERSION" value="eclair_1"/>
+    <meta-data name="android.nfc.disable_beam_default" value="true"/>
+    <meta-data name="com.google.android.gms.version" value="204708000"/>
+    <meta-data name="com.google.android.gms.vision.DEPENDENCIES" value="barcode"/>
+    <meta-data name="android.max_aspect" value="2.4"/>
+    <meta-data name="android.app.extra.PROVISIONING_DISCLAIMER_HEADER" resource="google"/>
+    <meta-data name="android.app.extra.PROVISIONING_DISCLAIMER_CONTENT" resource="google_provisioning_disclaimer_content"/>
+    <receiver name="com.google.android.setupwizard.util.SetupWizardUserInitReceiver">
+      <intent-filter>
+        <action name="android.intent.action.USER_INITIALIZE"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.setupwizard.deferred.ComponentStateMitigationReceiver" enabled="true" exported="false" directBootAware="true">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.setupwizard.deferred.PostSetupLifecycleBootReceiver" enabled="false" exported="false" directBootAware="true">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.setupwizard.PackageUpdatedBroadcastReceiver" enabled="false" exported="false" directBootAware="true">
+      <intent-filter>
+        <action name="android.intent.action.MY_PACKAGE_REPLACED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.setupwizard.deferred.DeferredNotificationDismissedReceiver" exported="false"/>
+    <service name="com.google.android.setupwizard.restore.RestoreService" enabled="false" exported="false"/>
+    <service name="com.google.android.setupwizard.logging.ScreenOnClock" enabled="false" exported="false" directBootAware="true"/>
+    <service name="com.google.android.setupwizard.logging.ClearcutLogsUploaderService" permission="android.permission.BIND_JOB_SERVICE" enabled="true" exported="false"/>
+    <service name="com.google.android.setupwizard.deferred.DeferredSetupScheduler" permission="android.permission.BIND_JOB_SERVICE"/>
+    <service name="com.google.android.setupwizard.deferred.DeferredSetupNotificationSchedulerService" permission="android.permission.BIND_JOB_SERVICE"/>
+    <service name="com.google.android.setupwizard.deferred.DeferredCleanUpJobService" permission="android.permission.BIND_JOB_SERVICE"/>
+    <service name="com.google.android.setupwizard.deviceorigin.provider.DeviceOriginWipeOutJobService" permission="android.permission.BIND_JOB_SERVICE"/>
+    <service name="com.google.android.setupwizard.deferred.DeferredOngoingService" enabled="false" exported="false" directBootAware="true"/>
+    <service name="com.google.android.setupwizard.initialsetup.InitialOngoingService" enabled="false" exported="false" directBootAware="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.initialsetup.STOP"/>
+      </intent-filter>
+    </service>
+    <service name="com.google.android.setupwizard.carrier.PartnerSetupService" permission="com.google.android.setupwizard.PARTNER_SETUP" enabled="false" exported="true" directBootAware="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.PartnerSetupService.BIND"/>
+      </intent-filter>
+    </service>
+    <service name="com.google.android.setupwizard.compat.SetupCompatService" enabled="false" exported="true">
+      <intent-filter>
+        <action name="com.google.android.setupcompat.SetupCompatService.BIND"/>
+      </intent-filter>
+    </service>
+    <service name="com.google.android.setupwizard.util.NetworkInterceptService" permission="android.permission.MANAGE_PROFILE_AND_DEVICE_OWNERS" enabled="false" exported="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.NetworkInterceptService.BIND"/>
+      </intent-filter>
+    </service>
+    <activity theme="NoDisplay" label="" name="com.google.android.setupwizard.SetupWizardActivity" excludeFromRecents="true" launchMode="2" configChanges="0x7b3" immersive="true" directBootAware="true">
+      <intent-filter priority="5">
+        <action name="android.intent.action.MAIN"/>
+        <action name="android.intent.action.DEVICE_INITIALIZATION_WIZARD"/>
+        <category name="android.intent.category.HOME"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.SETUP_WIZARD"/>
+      </intent-filter>
+    </activity>
+    <activity theme="NoDisplay" label="" name="com.google.android.setupwizard.WizardManagerActivity" enabled="false" exported="true" excludeFromRecents="true" configChanges="0x7b3" immersive="true" directBootAware="true">
+      <intent-filter>
+        <action name="com.android.wizard.LOAD"/>
+        <action name="com.android.wizard.NEXT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="NoDisplay" label="" name="com.google.android.setupwizard.SetupWizardTestActivity" exported="false" launchMode="3" configChanges="0x7b3" immersive="true" directBootAware="true"/>
+    <activity label="Android Setup" name="com.google.android.setupwizard.deferred.DeferredSetupWizardActivity" exported="true" taskAffinity="com.android.wizard" configChanges="0x7b3" immersive="true"/>
+    <activity theme="NoDisplay" label="" icon="res/Nk.xml" name="com.google.android.setupwizard.deferred.DeferredTrampolineActivity" enabled="true" exported="true" taskAffinity="" configChanges="0x7b3">
+      <intent-filter priority="1">
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.android.setupwizard.START_DEFERRED_SETUP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity-alias name="com.google.android.setupwizard.deferred.DeferredSettingsSuggestionActivity" enabled="false" exported="true" targetActivity="com.google.android.setupwizard.deferred.DeferredTrampolineActivity">
+      <intent-filter priority="1">
+        <action name="android.intent.action.MAIN"/>
+        <category name="com.android.settings.suggested.category.DEFERRED_SETUP"/>
+      </intent-filter>
+      <meta-data name="com.android.settings.title" resource="deferred_setup_wizard_title"/>
+      <meta-data name="com.android.settings.icon" resource="ic_deferred_setup_suggestion_icon"/>
+      <meta-data name="com.android.settings.summary" resource="deferred_setup_wizard_reason_default"/>
+      <meta-data name="com.android.settings.dismiss" value="0,1"/>
+      <meta-data name="com.android.settings.custom_view" resource="deferred_setup_settings_suggestion_banner"/>
+      <meta-data name="com.android.settings.summary_uri" value="content://com.google.android.setupwizard.deferred/getsummary"/>
+    </activity-alias>
+    <activity theme="NoDisplay" label="" name="com.google.android.setupwizard.SetupWizardExitActivity" enabled="false" exported="false" excludeFromRecents="true" configChanges="0x7b3" immersive="true" directBootAware="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.EXIT"/>
+        <action name="com.android.setupwizard.FOUR_CORNER_EXIT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="InvisibleNoTitle" label="" name="com.google.android.setupwizard.util.WebDialogActivity" enabled="false" exported="true" excludeFromRecents="true" immersive="true" directBootAware="true">
+      <intent-filter priority="5">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="http"/>
+        <data scheme="https"/>
+      </intent-filter>
+    </activity>
+    <activity theme="NoDisplay" label="" name="com.google.android.setupwizard.util.SecureInterceptActivity" enabled="false" exported="true" excludeFromRecents="true" immersive="true">
+      <intent-filter priority="5">
+        <action name="android.intent.action.WEB_SEARCH"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+      </intent-filter>
+      <intent-filter priority="5">
+        <action name="android.speech.action.VOICE_SEARCH_RESULTS"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter priority="5">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter priority="5">
+        <action name="android.nfc.action.NDEF_DISCOVERED"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter priority="5">
+        <action name="android.intent.action.MEDIA_SEARCH"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter priority="5">
+        <action name="android.intent.action.SEARCH"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter priority="5">
+        <action name="android.intent.action.SEND"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Hi there" name="com.google.android.setupwizard.user.WelcomeActivity" enabled="false" exported="false" configChanges="0x2027" immersive="true" directBootAware="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.WELCOME"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity name="com.google.android.setupwizard.deferred.DeferredSetupWelcomeActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.DEFERRED_WELCOME"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Set up new user" name="com.google.android.setupwizard.user.UserWarningActivity" enabled="false" exported="false" immersive="true" directBootAware="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.USER_WARNING"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.user.DeviceOwnerUserSetupCompleteActivity" permission="android.permission.BIND_DEVICE_ADMIN" enabled="true" exported="true" immersive="true" directBootAware="true">
+      <intent-filter>
+        <action name="android.app.action.STATE_USER_SETUP_COMPLETE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Connecting mobile service…" name="com.google.android.setupwizard.carrier.MobileDataActivity" enabled="false" exported="false" launchMode="1" immersive="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.ACTIVATE_MOBILE_DATA"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.carrier.CarrierSetupWrapper" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.CARRIER_SETUP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.account.PaiWrapper" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.SELECT_PAI"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.carrier.EsimSetupWrapper" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.ESIM_SETUP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.carrier.SlotsSelectionActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.SLOTS_SELECTION"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Couldn’t connect" name="com.google.android.setupwizard.network.NetworkTimeoutActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.NETWORK_TIMEOUT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Connect to Wi‑Fi" name="com.google.android.setupwizard.network.WifiActivity" enabled="false" exported="true" windowSoftInputMode="0x30" immersive="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.WIFI_SETTINGS"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter priority="5">
+        <action name="android.net.wifi.PICK_WIFI_NETWORK"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Connect to Wi‑Fi" name="com.google.android.setupwizard.network.NetworkActivity" enabled="false" exported="false" windowSoftInputMode="0x30" immersive="true" recreateOnConfigChanges="0x3">
+      <intent-filter>
+        <action name="com.android.setupwizard.NETWORK_SETTINGS"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.account.AccountSetupWrapper" enabled="false" exported="false" screenOrientation="14" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.ACCOUNT_SETUP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="{accounts, plural, =1{Account added} other{Accounts added}}" name="com.google.android.setupwizard.account.AccountExistsActivity" enabled="false" exported="false" immersive="true"/>
+    <activity label="" name="com.google.android.setupwizard.user.LockScreenWrapper" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.LOCK_SCREEN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.user.BiometricLockWrapper" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.BIOMETRIC"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Copy your data" name="com.google.android.setupwizard.restore.IosSetupActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.IOS_SETUP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.user.AssistGestureWrapper" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.ASSIST_GESTURE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Just a sec…" name="com.google.android.setupwizard.restore.ChooseRestoreTokenWrapper" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.RESTORE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.restore.GetRestoreFlowActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.GET_RESTORE_FLOW"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Restoring…" name="com.google.android.setupwizard.restore.RestoreProgressActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.RESTORE_PROGRESS"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.restore.D2dMigrationWrapper" enabled="false" exported="false" screenOrientation="14" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.USB_MIGRATION"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.restore.D2dMigrationAfterAccountWrapper" enabled="false" exported="false" screenOrientation="14" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.D2D_MIGRATION_AFTER_ACCOUNT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.restore.D2dMigrationFinalHoldWrapper" enabled="false" exported="false" screenOrientation="14" configChanges="0x40000200" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.USB_MIGRATION_FINAL_HOLD"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.restore.DemoModeWrapper" enabled="false" exported="false" screenOrientation="14" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.DEMO_MODE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Just a sec…" name="com.google.android.setupwizard.account.CheckFrpActivity" enabled="false" exported="false" immersive="true" directBootAware="true"/>
+    <activity label="" name="com.google.android.setupwizard.user.GoogleServicesWrapper" enabled="false" exported="true" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.GOOGLE_SERVICES"/>
+        <action name="com.google.android.setupwizard.VENDOR_SETUP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Add your work account" name="com.google.android.setupwizard.user.WorkProfileSetupActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.WORK_PROFILE_SETUP_ACTIVITY"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Date &amp; time" name="com.google.android.setupwizard.time.DateTimeActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.DATE_TIME"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity name="com.google.android.setupwizard.carrier.SimMissingActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.SIM_MISSING"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity name="com.google.android.setupwizard.carrier.SimReadyActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.SIM_READY"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Download your SIM" name="com.google.android.setupwizard.carrier.EsimIntroActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.ESIM_INTRO"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Set up SIM cards" name="com.google.android.setupwizard.carrier.SimSetupActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.SIM_SETUP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity name="com.google.android.setupwizard.update.OtaUpdateActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.OTA_UPDATE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.update.PostCheckinAndUpdateActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.POST_CHECKIN_AND_UPDATE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Just a sec…" name="com.google.android.setupwizard.ProgressActivity" enabled="false" exported="false" launchMode="1" immersive="true" directBootAware="true"/>
+    <activity-alias name="com.google.android.setupwizard.update.CompleteInFlightUpdates" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.COMPLETE_IN_FLIGHT_UPDATES"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.update.CompleteInFlightUpdatesFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="update"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.user.LoadLauncherLayout" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.LOAD_LAUNCHER_LAYOUT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.user.LoadLauncherLayoutFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="default"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.account.FinalHold" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.FINAL_HOLD"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.account.FinalHoldFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="final_hold"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.restore.RemoveRestoreToken" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.REMOVE_RESTORE_TOKEN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.restore.RemoveRestoreTokenFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="default"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.restore.StartRestore" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.START_RESTORE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.restore.StartRestoreFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="default"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.restore.CheckRestoreToken" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.CHECK_RESTORE_TOKEN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.restore.CheckRestoreTokenFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="default"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.user.SaveUserName" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.SAVE_USER_NAME"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.user.SaveUserNameFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="default"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.time.DateTimeCheck" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.DATE_TIME_CHECK"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.time.DateTimeCheckFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="default"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.network.NetworkCheck" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.NETWORK_CHECK"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.network.NetworkCheckFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="connection"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.account.AccountCheck" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.ACCOUNT_CHECK"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.account.AccountCheckFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="account"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.network.GmsCheckin" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.GMS_CHECKIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.network.GmsCheckinFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="update"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.network.CompatCheckinAndEarlyUpdate" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.PRE_CHECKIN_AND_UPDATE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.update.CompatCheckinAndUpdateFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="connection"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.network.ProvisioningProfileCheckerFragment" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.android.setupwizard.PROV_PROFILE_CHECKING"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.network.ProvisioningProfileCheckerFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="connection"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.network.CaptivePortal" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.android.setupwizard.CAPTIVE_PORTAL"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.network.CaptivePortalFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="connection"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.network.ConsolidateCaptivePortal" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.android.setupwizard.CONSOLIDATE_CAPTIVE_PORTAL"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.network.CaptivePortalFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="update"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.account.GmsAccountCheckin" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.GMS_ACCOUNT_CHECKIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.network.GmsCheckinFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="account"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.account.LoadAddAccountIntent" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.LOAD_ADD_ACCOUNT_INTENT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.account.LoadAddAccountIntentFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="default"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.update.OtaUpdateCheck" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.OTA_UPDATE_CHECK"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.update.OtaUpdateCheckFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="update"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.update.CompatEarlyUpdate" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.COMPAT_EARLY_UPDATE"/>
+        <category name="android.intent.catgory.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.ProgressFragment" value="com.google.android.setupwizard.update.CompatCheckinAndUpdateFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="update"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.update.EarlyUpdate" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.EARLY_UPDATE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.update.EarlyUpdateFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="update"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.account.AuthEarlyUpdateRollback" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.AUTH_EARLY_UPDATE_ROLLBACK"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.account.AuthEarlyUpdateRollbackFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="update"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.account.CheckUserUnlock" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.android.setupwizard.CHECK_USER_UNLOCK"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.user.CheckUserUnlockFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="default"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.account.CheckFrp" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.CHECK_FRP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.account.CheckFrpFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="default"/>
+    </activity-alias>
+    <activity-alias name="com.google.android.setupwizard.user.ExitToSupportActivity" enabled="false" exported="false" targetActivity="com.google.android.setupwizard.ProgressActivity">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.SET_EXIT_ACTION"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_FRAGMENT" value="com.google.android.setupwizard.user.SetExitActionFragment"/>
+      <meta-data name="com.google.android.setupwizard.PROGRESS_ILLUSTRATION_TYPE" value="default"/>
+    </activity-alias>
+    <activity label="Scanning for a QR code…" name="com.google.android.setupwizard.qrprovision.QrScanActivity" enabled="false" exported="false" screenOrientation="14" immersive="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.QR_CODE_SCAN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity name="com.google.android.setupwizard.user.DeviceOwnerWarningActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.DEVICE_OWNER_WARNING"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity name="com.google.android.setupwizard.user.WorkSetupInterruptedActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.WORK_SETUP_INTERRUPTED"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity name="com.google.android.setupwizard.user.FactoryResetActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.FACTORY_RESET"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Anything else?" name="com.google.android.setupwizard.user.SuggestedActionsActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.SUGGESTED_ACTIONS"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.user.ZeroTouchWrapper" enabled="false" exported="false" screenOrientation="14" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.ZERO_TOUCH_SETUP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.account.OpaWrapper" enabled="false" exported="false" screenOrientation="14" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.OPA_OPT_IN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.account.PaymentsWrapper" enabled="false" exported="false" screenOrientation="14" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.PAYMENTS"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Add your work account" name="com.google.android.setupwizard.restore.WorkProfileSetupWrapper" enabled="false" exported="false" screenOrientation="14" immersive="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.WORK_PROFILE_SETUP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.restore.ChooseWhatToRestoreWrapper" enabled="false" exported="false" screenOrientation="14" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.CHOOSE_WHAT_TO_RESTORE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.account.KidPostSetupWrapper" enabled="false" exported="false" screenOrientation="14" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.KID_POST_SETUP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.user.DecisionPointWrapper" enabled="false" exported="false" screenOrientation="14" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.HALFWAY_DECISION"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity name="com.google.android.setupwizard.user.DecisionPointActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.HALFWAY_DECISION_WRAPPED"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Save battery with Dark theme" name="com.google.android.setupwizard.user.DarkModeActivity" enabled="true" exported="true" configChanges="0x200" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.DAY_NIGHT_MODE_SETUP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="Android Setup" name="com.google.android.setupwizard.predeferred.PreDeferredSetupWizardActivity" exported="true" taskAffinity="com.android.wizard" configChanges="0x7b3" immersive="true"/>
+    <activity label="App updates are ready" name="com.google.android.setupwizard.predeferred.ConnectToWifiActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.PROMPT_CONNECT_TO_WIFI"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity name="com.google.android.setupwizard.predeferred.PreDeferredProgressActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.android.setupwizard.PREDEFERRED_PROGRESS"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity label="" name="com.google.android.setupwizard.provision.EnterpriseSetupWrapper" enabled="false" exported="false" screenOrientation="14" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.ENTERPRISE_SETUP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="NoDisplay" label="" name="com.google.android.setupwizard.provision.PreEnterpriseSetupActivity" enabled="false" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.PRE_ENTERPRISE_SETUP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity name="com.google.android.setupwizard.provision.TransitionToPersonalProfileSetupActivity" exported="false" immersive="true">
+      <intent-filter>
+        <action name="com.google.android.setupwizard.TRANSITION_TO_PERSONAL_PROFILE_SETUP"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <service name="com.google.android.setupwizard.predeferred.PreDeferredLifecycleScheduler" permission="android.permission.BIND_JOB_SERVICE"/>
+    <service name="com.google.android.setupwizard.predeferred.PreDeferredServiceScheduler" permission="android.permission.BIND_JOB_SERVICE"/>
+    <service name="com.google.android.setupwizard.predeferred.PreDeferredUpdateService"/>
+    <provider name="com.google.android.setupwizard.deviceorigin.provider.DeviceOriginProvider" writePermission="com.google.android.setupwizard.WRITE_DEVICE_ORIGIN" exported="true" process=":remote" authorities="com.google.android.setupwizard.deviceorigin"/>
+    <provider name="com.google.android.setupwizard.deferred.DeferredSuggestionSummaryProvider" readPermission="com.google.android.setupwizard.READ_DEFERRED_SETUP_REASON" exported="true" authorities="com.google.android.setupwizard.deferred">
+      <intent-filter>
+        <action name="com.android.settings.action.SUGGESTION_STATE_PROVIDER"/>
+      </intent-filter>
+    </provider>
+    <provider name="com.google.android.setupwizard.partner.PartnerCustomizationProvider" exported="true" authorities="com.google.android.setupwizard.partner" directBootAware="true"/>
+    <provider name="com.google.android.setupwizard.phenotype.PhenotypeProvider" readPermission="com.google.android.setupwizard.PARTNER_SETUP" enabled="false" exported="true" authorities="com.google.android.setupwizard.phenotype"/>
+    <provider name="com.google.android.setupwizard.SetupWizardStateProvider" exported="false" authorities="com.google.android.setupwizard" directBootAware="true"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.setupwizard" resource="com_google_android_setupwizard_phenotype"/>
+    <service name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService" enabled="false" exported="false" process="">
+      <intent-filter>
+        <action name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"/>
+      </intent-filter>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.setupwizard" resource="com_google_android_setupwizard_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_registration_info"/>
+    </service>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_phenotype"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.gms.common.api.GoogleApiActivity" exported="false"/>
+  </application>
+</manifest>
+

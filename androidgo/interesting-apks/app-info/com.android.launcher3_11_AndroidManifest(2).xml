@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.launcher3" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <permission name="com.android.launcher3.permission.HOTSEAT_EDU" protectionLevel="0x3" permissionGroup="android.permission-group.SYSTEM_TOOLS"/>
+  <uses-permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS"/>
+  <uses-permission name="android.permission.EXPAND_STATUS_BAR"/>
+  <uses-permission name="android.permission.VIBRATE"/>
+  <uses-permission name="android.permission.QUERY_ALL_PACKAGES"/>
+  <uses-permission name="android.permission.ALLOW_SLIPPERY_TOUCHES"/>
+  <uses-permission name="com.android.launcher3.permission.HOTSEAT_EDU"/>
+  <permission label="install shortcuts" name="com.android.launcher.permission.INSTALL_SHORTCUT" protectionLevel="0x1" permissionGroup="android.permission-group.SYSTEM_TOOLS" description="Allows an app to add shortcuts without user intervention."/>
+  <uses-permission name="android.permission.CALL_PHONE"/>
+  <uses-permission name="android.permission.SET_WALLPAPER"/>
+  <uses-permission name="android.permission.SET_WALLPAPER_HINTS"/>
+  <uses-permission name="android.permission.BIND_APPWIDGET"/>
+  <uses-permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.REQUEST_DELETE_PACKAGES"/>
+  <uses-permission name="android.permission.READ_DEVICE_CONFIG"/>
+  <uses-permission name="android.permission.READ_CALL_LOG"/>
+  <uses-permission name="android.permission.READ_SMS"/>
+  <uses-permission name="com.android.email.permission.ACCESS_PROVIDER"/>
+  <uses-permission name="android.permission.READ_CALENDAR"/>
+  <uses-permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+  <permission label="read Home settings and shortcuts" name="com.android.launcher3.permission.READ_SETTINGS" protectionLevel="0x3" permissionGroup="android.permission-group.SYSTEM_TOOLS" description="Allows the app to read the settings and shortcuts in Home."/>
+  <permission label="write Home settings and shortcuts" name="com.android.launcher3.permission.WRITE_SETTINGS" protectionLevel="0x3" permissionGroup="android.permission-group.SYSTEM_TOOLS" description="Allows the app to change the settings and shortcuts in Home."/>
+  <uses-permission name="com.android.launcher3.permission.READ_SETTINGS"/>
+  <uses-permission name="com.android.launcher3.permission.WRITE_SETTINGS"/>
+  <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.READ_PHONE_STATE"/>
+  <application theme="AppTheme" label="Quickstep" icon="res/drawable-anydpi-v26/ic_launcher_home.xml" backupAgent="com.android.launcher3.LauncherBackupAgent" restoreAnyVersion="true" hardwareAccelerated="true" largeHeap="false" supportsRtl="true" fullBackupOnly="true" extractNativeLibs="false" fullBackupContent="res/xml/backupscheme.xml" backupInForeground="true" appComponentFactory="androidx.core.app.CoreComponentFactory" usesNonSdkApi="true">
+    <service name="com.android.quickstep.TouchInteractionService" permission="android.permission.STATUS_BAR_SERVICE" directBootAware="true">
+      <intent-filter>
+        <action name="android.intent.action.QUICKSTEP_SERVICE"/>
+      </intent-filter>
+    </service>
+    <activity theme="LauncherTheme" name="com.android.quickstep.RecentsActivity" taskAffinity="" clearTaskOnLaunch="true" stateNotNeeded="true" excludeFromRecents="true" launchMode="2" screenOrientation="-1" configChanges="0xdf3" resumeWhilePausing="true" resizeableActivity="true"/>
+    <provider name="com.android.quickstep.LauncherSearchIndexablesProvider" permission="android.permission.READ_SEARCH_INDEXABLES" exported="true" multiprocess="true" authorities="com.android.launcher3" grantUriPermissions="true">
+      <intent-filter>
+        <action name="android.content.action.SEARCH_INDEXABLES_PROVIDER"/>
+      </intent-filter>
+    </provider>
+    <provider name="androidx.core.content.FileProvider" exported="false" authorities="com.android.launcher3.overview.fileprovider" grantUriPermissions="true">
+      <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="overview_file_provider_paths"/>
+    </provider>
+    <service name="com.android.launcher3.uioverrides.dynamicui.WallpaperManagerCompatVL$ColorExtractionService"/>
+    <activity theme="ProxyActivityTheme" name="com.android.launcher3.proxy.ProxyActivityStarter" exported="false" clearTaskOnLaunch="true" launchMode="2"/>
+    <activity name="com.android.quickstep.interaction.GestureSandboxActivity" excludeFromRecents="true" screenOrientation="1" autoRemoveFromRecents="true">
+      <intent-filter>
+        <action name="com.android.quickstep.action.GESTURE_SANDBOX"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.NoDisplay" name="com.android.launcher3.hybridhotseat.HotseatEduActivity" permission="com.android.launcher3.permission.HOTSEAT_EDU" clearTaskOnLaunch="true" launchMode="2" noHistory="true">
+      <intent-filter>
+        <action name="com.android.launcher3.action.SHOW_HYBRID_HOTSEAT_EDU"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.DeviceDefault.Light.Dialog.Alert" label="Add to Home screen" name="com.android.launcher3.dragndrop.AddItemActivity" enabled="false" excludeFromRecents="true" autoRemoveFromRecents="true"/>
+    <activity name="com.android.launcher3.uioverrides.QuickstepLauncher" enabled="true" taskAffinity="" clearTaskOnLaunch="true" stateNotNeeded="true" launchMode="2" screenOrientation="-1" configChanges="0xdf3" windowSoftInputMode="0x20" resumeWhilePausing="true" resizeableActivity="true">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.HOME"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.MONKEY"/>
+        <category name="android.intent.category.LAUNCHER_APP"/>
+      </intent-filter>
+      <meta-data name="com.android.launcher3.grid.control" value="com.android.launcher3.grid_control"/>
+    </activity>
+    <receiver name="com.android.launcher3.InstallShortcutReceiver" permission="com.android.launcher.permission.INSTALL_SHORTCUT" enabled="false">
+      <intent-filter>
+        <action name="com.android.launcher.action.INSTALL_SHORTCUT"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.android.launcher3.SessionCommitReceiver">
+      <intent-filter>
+        <action name="android.content.pm.action.SESSION_COMMITTED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.android.launcher3.AppWidgetsRestoredReceiver">
+      <intent-filter>
+        <action name="android.appwidget.action.APPWIDGET_HOST_RESTORED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.sprd.ext.LauncherDebugEnableReceiver">
+      <intent-filter>
+        <action name="com.android.launcher.action.UNISOC_LAUNCHER3"/>
+      </intent-filter>
+    </receiver>
+    <service label="Show notification dots" name="com.android.launcher3.notification.NotificationListener" permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" enabled="false">
+      <intent-filter>
+        <action name="android.service.notification.NotificationListenerService"/>
+      </intent-filter>
+    </service>
+    <meta-data name="android.nfc.disable_beam_default" value="true"/>
+    <activity theme="HomeSettingsTheme" label="Home screen" name="com.sprd.ext.multimode.settings.MultiModeSettingActivity" screenOrientation="1"/>
+    <provider name="com.android.launcher3.LauncherProvider" readPermission="com.android.launcher3.permission.READ_SETTINGS" writePermission="com.android.launcher3.permission.WRITE_SETTINGS" exported="true" authorities="com.android.launcher3.settings"/>
+    <provider name="com.android.launcher3.graphics.GridOptionsProvider" enabled="false" exported="true" authorities="com.android.launcher3.grid_control"/>
+    <activity theme="HomeSettingsTheme" label="Home settings" name="com.android.launcher3.settings.SettingsActivity" configChanges="0x980" autoRemoveFromRecents="true" resizeableActivity="false">
+      <intent-filter>
+        <action name="android.intent.action.APPLICATION_PREFERENCES"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <provider name="com.android.launcher3.testing.TestInformationProvider" readPermission="android.permission.WRITE_SECURE_SETTINGS" writePermission="android.permission.WRITE_SECURE_SETTINGS" enabled="false" exported="true" authorities="com.android.launcher3.TestInfo"/>
+    <activity theme="AppTheme" name="com.android.launcher3.secondarydisplay.SecondaryDisplayLauncher" enabled="true" launchMode="1">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.SECONDARY_HOME"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>
+

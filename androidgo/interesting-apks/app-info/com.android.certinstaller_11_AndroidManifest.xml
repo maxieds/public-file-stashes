@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.certinstaller" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <original-package name="com.android.certinstaller"/>
+  <permission name="com.android.certinstaller.INSTALL_AS_USER" protectionLevel="0x2"/>
+  <uses-permission name="android.permission.CHANGE_WIFI_STATE"/>
+  <uses-permission name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission name="android.permission.MANAGE_USERS"/>
+  <uses-permission name="android.permission.ACCESS_ALL_DOWNLOADS"/>
+  <uses-permission name="android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS"/>
+  <application label="Certificate Installer" allowBackup="false" extractNativeLibs="true" usesNonSdkApi="true">
+    <activity theme="Transparent" name=".CertInstallerMain" configChanges="0x4a0">
+      <intent-filter>
+        <action name="android.credentials.INSTALL"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="application/x-x509-ca-cert"/>
+        <data mimeType="application/x-x509-user-cert"/>
+        <data mimeType="application/x-x509-server-cert"/>
+        <data mimeType="application/x-pkcs12"/>
+        <data mimeType="application/x-pem-file"/>
+        <data mimeType="application/pkix-cert"/>
+        <data mimeType="application/x-wifi-config"/>
+      </intent-filter>
+    </activity>
+    <activity-alias name=".InstallCertAsUser" permission="com.android.certinstaller.INSTALL_AS_USER" targetActivity=".CertInstallerMain">
+      <intent-filter>
+        <action name="android.credentials.INSTALL_AS_USER"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity-alias>
+    <activity theme="Transparent" name=".CertInstaller" exported="false" configChanges="0xa0"/>
+    <activity theme="Transparent" name=".WiFiInstaller" exported="false" configChanges="0xa0"/>
+    <activity theme="Transparent" name=".CredentialsInstallDialog" exported="false" configChanges="0xa0"/>
+  </application>
+</manifest>
+

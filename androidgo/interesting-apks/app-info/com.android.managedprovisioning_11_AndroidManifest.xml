@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.managedprovisioning" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <permission name="android.permission.PROVISION_MANAGED_DEVICE_SILENTLY" protectionLevel="0x402"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission name="android.permission.MANAGE_USERS"/>
+  <uses-permission name="android.permission.MANAGE_PROFILE_AND_DEVICE_OWNERS"/>
+  <uses-permission name="android.permission.MANAGE_ACCOUNTS"/>
+  <uses-permission name="android.permission.INSTALL_PACKAGES"/>
+  <uses-permission name="android.permission.DELETE_PACKAGES"/>
+  <uses-permission name="android.permission.INTERACT_ACROSS_USERS"/>
+  <uses-permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+  <uses-permission name="android.permission.BIND_DEVICE_ADMIN"/>
+  <uses-permission name="android.permission.MANAGE_DEVICE_ADMINS"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission name="android.permission.MANAGE_APP_OPS_MODES"/>
+  <uses-permission name="android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS"/>
+  <uses-permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+  <uses-permission name="android.permission.CHANGE_CONFIGURATION"/>
+  <uses-permission name="android.permission.CHANGE_WIFI_STATE"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.MASTER_CLEAR"/>
+  <uses-permission name="android.permission.NFC"/>
+  <uses-permission name="android.permission.SET_TIME"/>
+  <uses-permission name="android.permission.SET_TIME_ZONE"/>
+  <uses-permission name="android.permission.CRYPT_KEEPER"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.SHUTDOWN"/>
+  <uses-permission name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+  <uses-permission name="android.permission.PERFORM_CDMA_PROVISIONING"/>
+  <uses-permission name="android.permission.ACCESS_PDB_STATE"/>
+  <uses-permission name="android.permission.PEERS_MAC_ADDRESS"/>
+  <uses-permission name="android.permission.NETWORK_MANAGED_PROVISIONING"/>
+  <uses-permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+  <uses-permission name="android.permission.MARK_DEVICE_ORGANIZATION_OWNED"/>
+  <uses-permission name="android.permission.USE_COLORIZED_NOTIFICATIONS"/>
+  <uses-permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+  <uses-permission name="com.google.android.setupwizard.SETUP_COMPAT_SERVICE"/>
+  <uses-permission name="android.permission.CONFIGURE_INTERACT_ACROSS_PROFILES"/>
+  <uses-permission name="android.permission.QUERY_ALL_PACKAGES"/>
+  <application label="Work Setup" allowClearUserData="false" hardwareAccelerated="true" supportsRtl="true" extractNativeLibs="false" usesCleartextTraffic="true" appComponentFactory="androidx.core.app.CoreComponentFactory" usesNonSdkApi="true">
+    <activity theme="SudThemeGlifV3.Light" name="com.android.managedprovisioning.provisioning.ProvisioningActivity" excludeFromRecents="true" launchMode="1" immersive="true"/>
+    <activity theme="SudThemeGlifV3.Light" name="com.android.managedprovisioning.provisioning.AdminIntegratedFlowPrepareActivity" excludeFromRecents="true" launchMode="1" immersive="true"/>
+    <activity theme="SudThemeGlifV3.Light" name="com.android.managedprovisioning.preprovisioning.PreProvisioningActivity" excludeFromRecents="true" launchMode="1" immersive="true">
+      <intent-filter priority="10">
+        <action name="android.app.action.PROVISION_MANAGED_PROFILE"/>
+        <action name="android.app.action.PROVISION_MANAGED_USER"/>
+        <action name="android.app.action.PROVISION_MANAGED_DEVICE"/>
+        <action name="android.app.action.PROVISION_MANAGED_SHAREABLE_DEVICE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity-alias name="com.android.managedprovisioning.PreProvisioningActivityAfterEncryption" exported="false" targetActivity="com.android.managedprovisioning.preprovisioning.PreProvisioningActivity">
+      <intent-filter priority="10">
+        <action name="com.android.managedprovisioning.action.RESUME_PROVISIONING"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity-alias>
+    <activity-alias name="com.android.managedprovisioning.PreProvisioningActivityViaTrustedApp" permission="android.permission.DISPATCH_PROVISIONING_MESSAGE" exported="true" targetActivity="com.android.managedprovisioning.preprovisioning.PreProvisioningActivity">
+      <intent-filter priority="10">
+        <action name="android.app.action.PROVISION_MANAGED_DEVICE_FROM_TRUSTED_SOURCE"/>
+        <action name="android.app.action.PROVISION_FINANCED_DEVICE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity-alias>
+    <activity-alias name="com.android.managedprovisioning.PreProvisioningActivityViaNfc" permission="android.permission.DISPATCH_NFC_MESSAGE" exported="true" targetActivity="com.android.managedprovisioning.preprovisioning.PreProvisioningActivity">
+      <intent-filter priority="10">
+        <action name="android.nfc.action.NDEF_DISCOVERED"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="application/com.android.managedprovisioning"/>
+      </intent-filter>
+    </activity-alias>
+    <activity theme="NonGlifTheme" name="com.android.managedprovisioning.preprovisioning.terms.TermsActivity" excludeFromRecents="true" launchMode="1" immersive="true"/>
+    <activity name="com.android.managedprovisioning.preprovisioning.EncryptDeviceActivity" launchMode="1" immersive="true"/>
+    <service name="com.android.managedprovisioning.provisioning.SilentDeviceOwnerProvisioningService"/>
+    <receiver name="com.android.managedprovisioning.provisioning.SilentDeviceOwnerProvisioningReceiver" permission="android.permission.PROVISION_MANAGED_DEVICE_SILENTLY">
+      <intent-filter priority="10">
+        <action name="android.app.action.PROVISION_MANAGED_DEVICE_SILENTLY"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="NonGlifTheme" name="com.android.managedprovisioning.preprovisioning.WebActivity" process=":webview" launchMode="1" immersive="true"/>
+    <activity theme="Theme.NoDisplay" name="com.android.managedprovisioning.TrampolineActivity" excludeFromRecents="true"/>
+    <activity theme="Theme.NoDisplay" name="com.android.managedprovisioning.preprovisioning.PostEncryptionActivity" enabled="false" taskAffinity=":PostEncryptionActivity" excludeFromRecents="true" noHistory="true">
+      <intent-filter priority="10">
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.HOME"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="SudThemeGlifV3.Light" name="com.android.managedprovisioning.transition.TransitionActivity" immersive="true"/>
+    <service name="com.android.managedprovisioning.provisioning.ProvisioningService"/>
+    <service name="com.android.managedprovisioning.finalization.SendDpcBroadcastService"/>
+    <service name="com.android.managedprovisioning.ota.OtaService"/>
+    <receiver name="com.android.managedprovisioning.BootReminder">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.android.managedprovisioning.ota.PreBootListener">
+      <intent-filter>
+        <action name="android.intent.action.PRE_BOOT_COMPLETED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.android.managedprovisioning.manageduser.ManagedUserCreationListener">
+      <intent-filter>
+        <action name="android.app.action.MANAGED_USER_CREATED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.android.managedprovisioning.task.CrossProfileIntentFiltersSetter$RestrictionChangedReceiver">
+      <intent-filter>
+        <action name="android.app.action.DATA_SHARING_RESTRICTION_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="SudThemeGlifV3.Light" name="com.android.managedprovisioning.finalization.FinalizationPostSuwActivity" exported="true" excludeFromRecents="true" noHistory="true" immersive="true">
+      <intent-filter>
+        <action name="android.app.action.PROVISION_FINALIZATION"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="SudThemeGlifV3.Light" name="com.android.managedprovisioning.finalization.FinalizationInsideSuwActivity" exported="true" excludeFromRecents="true" launchMode="1" immersive="true">
+      <intent-filter>
+        <action name="android.app.action.PROVISION_FINALIZATION_INSIDE_SUW"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="SudThemeGlifV3.Light" name="com.android.managedprovisioning.provisioning.LandingActivity" immersive="true"/>
+    <activity theme="SudThemeGlifV3.Light" name="com.android.managedprovisioning.provisioning.FinancedDeviceLandingActivity" immersive="true"/>
+    <activity theme="SudThemeGlifV3.Light" name="com.android.managedprovisioning.finalization.FinalScreenActivity" immersive="true"/>
+    <service name="com.android.managedprovisioning.analytics.ProcessMetricsJobService" permission="android.permission.BIND_JOB_SERVICE"/>
+    <provider name="com.android.car.ui.core.CarUiInstaller" exported="false" process="" authorities="com.android.car.ui.CarUiInstaller" directBootAware="true"/>
+  </application>
+</manifest>
+

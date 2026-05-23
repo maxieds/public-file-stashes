@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="2099" versionName="1.0.8.arm" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.google.android.apps.speechservices" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="24" targetSdkVersion="29"/>
+  <permission label="Recorded audio access" name="com.google.android.apps.speechservices.AUDIO_FILE_ACCESS" protectionLevel="0x2" description="Can access the recorded audio utterances for notes to self, and for raw audio analysis."/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+  <permission name="com.google.android.apps.speechservices.permission.FLUSH_LOGS" protectionLevel="0x2"/>
+  <uses-permission name="android.permission.GET_PACKAGE_SIZE"/>
+  <uses-feature name="android.hardware.microphone" required="true"/>
+  <uses-feature name="android.hardware.touchscreen" required="false"/>
+  <uses-permission name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission name="android.permission.CHANGE_WIFI_STATE"/>
+  <uses-permission name="android.permission.CHANGE_NETWORK_STATE"/>
+  <uses-permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.GET_ACCOUNTS"/>
+  <uses-permission name="android.permission.RECORD_AUDIO"/>
+  <uses-permission name="com.android.alarm.permission.SET_ALARM"/>
+  <uses-permission name="com.google.android.googleapps.permission.GOOGLE_AUTH.cp"/>
+  <uses-permission name="com.google.android.googleapps.permission.GOOGLE_AUTH"/>
+  <uses-permission name="com.google.android.apps.speechservices.AUDIO_FILE_ACCESS"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-feature glEsVersion="0x20000" required="true"/>
+  <queries>
+    <package name="com.google.intelligence.sense"/>
+  </queries>
+  <application label="Google Speech Services" icon="res/6h.png" name="com.google.android.apps.gsa.binaries.speechservices.SpeechServicesRoot_Application" process=":search" hardwareAccelerated="true" resizeableActivity="false">
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_registration_info"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.gms.common.api.GoogleApiActivity" exported="false" process=":search"/>
+    <service name="com.google.apps.tiktok.concurrent.InternalForegroundService" exported="false" process=":search"/>
+    <service name="androidx.work.impl.foreground.SystemForegroundService" enabled="true" exported="false" process=":search" directBootAware="false"/>
+    <service name="androidx.work.impl.background.systemalarm.SystemAlarmService" enabled="false" exported="false" process=":search" directBootAware="false"/>
+    <service name="androidx.work.impl.background.systemjob.SystemJobService" permission="android.permission.BIND_JOB_SERVICE" enabled="true" exported="true" process=":search" directBootAware="false"/>
+    <receiver name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" enabled="true" exported="false" process=":search" directBootAware="false"/>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" enabled="false" exported="false" process=":search" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.ACTION_POWER_CONNECTED"/>
+        <action name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" enabled="false" exported="false" process=":search" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.BATTERY_OKAY"/>
+        <action name="android.intent.action.BATTERY_LOW"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" enabled="false" exported="false" process=":search" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.DEVICE_STORAGE_LOW"/>
+        <action name="android.intent.action.DEVICE_STORAGE_OK"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" enabled="false" exported="false" process=":search" directBootAware="false">
+      <intent-filter>
+        <action name="android.net.conn.CONNECTIVITY_CHANGE"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.RescheduleReceiver" enabled="false" exported="false" process=":search" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.TIME_SET"/>
+        <action name="android.intent.action.TIMEZONE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" enabled="false" exported="false" process=":search" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.diagnostics.DiagnosticsReceiver" permission="android.permission.DUMP" enabled="true" exported="true" process=":search" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="Theme.AppCompat.DayNight" label="Open source licenses" name="com.google.android.libraries.social.licenses.LicenseActivity" exported="false" process=":default"/>
+    <activity theme="Theme.AppCompat.DayNight" label="Open source licenses" name="com.google.android.libraries.social.licenses.LicenseMenuActivity" exported="false" process=":default"/>
+    <activity theme="Theme.Hub" label="Google speech" name="com.google.android.apps.gsa.binaries.speechservices.app.settings.SpeechSettingsActivity" exported="false" process=":search" excludeFromRecents="true">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.NoDisplay" label="Google speech" name="com.google.android.apps.gsa.binaries.speechservices.app.settings.PublicSpeechSettingsActivity" exported="true" process=":search" excludeFromRecents="true">
+      <intent-filter>
+        <action name="com.google.android.speechservices.action.SPEECH_SETTINGS"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <provider name="com.google.android.apps.gsa.contentprovider.CommonContentProvider" exported="false" process=":search" authorities="com.google.android.apps.speechservices.CommonContentProvider" grantUriPermissions="true"/>
+    <service name="com.google.android.apps.gsa.eventlogger.EventLoggerService" permission="com.google.android.apps.speechservices.permission.FLUSH_LOGS" exported="true" process=":search">
+      <intent-filter>
+        <action name="com.google.android.apps.gsa.GSA_FLUSH_LOGS"/>
+        <action name="com.google.android.apps.gsa.ACTION_RECORD_GSA_CLIENT_EVENT"/>
+      </intent-filter>
+    </service>
+    <activity theme="IntentApiActivityCustom" name="com.google.android.apps.gsa.intentapi.repackaged.IntentApiActivity" exported="false" process=":search" taskAffinity="com.google.android.voicesearch.intentapi" excludeFromRecents="true" configChanges="0x4f0"/>
+    <activity-alias theme="IntentApiActivityCustom" name="com.google.android.voicesearch.intentapi.IntentApiActivity" exported="true" process=":search" taskAffinity="com.google.android.voicesearch.intentapi" excludeFromRecents="true" configChanges="0x4f0" targetActivity="com.google.android.apps.gsa.intentapi.repackaged.IntentApiActivity">
+      <intent-filter>
+        <action name="android.speech.action.RECOGNIZE_SPEECH"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity-alias>
+    <service name="com.google.android.hotword.service.HotwordService" exported="true" process=":search">
+      <intent-filter>
+        <action name="com.google.android.googlequicksearchbox.HOTWORD_SERVICE"/>
+      </intent-filter>
+    </service>
+    <activity theme="IntentApiCustom" name="com.google.android.voicesearch.intentapi.LegacyIntentApiActivity" exported="false" process=":search" taskAffinity="com.google.android.voicesearch.intentapi" excludeFromRecents="true" configChanges="0x4f0"/>
+    <receiver name="com.google.android.voicesearch.intentapi.IntentApiReceiver" exported="true" process=":search">
+      <intent-filter>
+        <action name="android.speech.action.GET_LANGUAGE_DETAILS"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.apps.gsa.search.core.service.SearchService" exported="false" process=":search" foregroundServiceType="0xc8"/>
+    <service label="Basic Google recognition" name="com.google.android.voicesearch.serviceapi.GoogleRecognitionService" exported="true" process=":search">
+      <intent-filter>
+        <action name="android.speech.RecognitionService"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="android.speech" resource="recognizer"/>
+    </service>
+    <activity theme="Theme.NoDisplay" name="com.google.android.apps.gsa.settingsui.VoiceSearchPreferences" exported="true" process=":search" excludeFromRecents="true" noHistory="true">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <service name="com.google.android.apps.gsa.shared.util.keepalive.StandaloneKeepAlive$KeepAliveService" exported="false" process=":search"/>
+    <service name="com.google.android.apps.gsa.shared.util.keepalive.StandaloneKeepAlive$ForegroundService" exported="false" process=":search" foregroundServiceType="0xc8"/>
+    <activity theme="Theme.Translucent.NoTitleBar.Fullscreen" name="com.google.android.apps.gsa.shared.util.permissions.ProxyActivity" exported="false" process=":search" taskAffinity="" excludeFromRecents="true" autoRemoveFromRecents="true"/>
+    <receiver name="com.google.android.apps.gsa.silentfeedback.SilentFeedbackReceiver" exported="false" process=":crash_report"/>
+    <provider name="com.google.android.apps.gsa.speech.audio.AudioProvider" permission="com.google.android.apps.speechservices.AUDIO_FILE_ACCESS" exported="true" process=":search" authorities="com.google.android.apps.speechservices.AudioProvider" grantUriPermissions="true"/>
+    <service name="com.google.android.apps.gsa.staticplugins.feedback.service.FeedbackService" exported="false" process=":search"/>
+    <service name="com.google.android.apps.gsa.tasks.BackgroundTasksJobService" permission="android.permission.BIND_JOB_SERVICE" exported="false" process=":search"/>
+    <service name="com.google.android.apps.gsa.tasks.BackgroundTasksAlarmService" exported="false" process=":search"/>
+    <receiver name="com.google.android.apps.gsa.tasks.AlarmWakefulBroadcastReceiver" exported="false" process=":search"/>
+    <service name="com.google.android.apps.gsa.unifiedime.UnifiedImeService" exported="true" process=":search">
+      <intent-filter>
+        <action name="com.google.android.apps.gsa.UNIFIED_IME_SERVICE"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </service>
+    <receiver name="com.google.android.apps.gsa.voiceime.alternates.SuggestionSpanBroadcastReceiver" enabled="true" exported="true" process=":search">
+      <intent-filter>
+        <action name="android.text.style.SUGGESTION_PICKED"/>
+      </intent-filter>
+    </receiver>
+    <service label="Google voice typing" name="com.google.android.voicesearch.ime.VoiceInputMethodService" permission="android.permission.BIND_INPUT_METHOD" exported="true" process=":search">
+      <intent-filter>
+        <action name="android.view.InputMethod"/>
+      </intent-filter>
+      <meta-data name="android.view.im" resource="ime_method"/>
+    </service>
+    <meta-data name="com.google.android.gms.version" value="202612000"/>
+    <uses-library name="org.apache.http.legacy" required="false"/>
+    <service name="com.google.android.libraries.directboot.DirectBootHelperService" enabled="false" exported="false" process="" directBootAware="false"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.mdi.download" resource="mdd_lib_phenotype"/>
+    <receiver name="com.google.android.libraries.phenotype.client.stable.PhenotypeStickyAccount$AccountRemovedBroadcastReceiver" exported="true" process="">
+      <intent-filter>
+        <action name="android.accounts.action.ACCOUNT_REMOVED"/>
+      </intent-filter>
+    </receiver>
+  </application>
+  <compatible-screens>
+    <screen screenSize="200" screenDensity="120"/>
+    <screen screenSize="300" screenDensity="120"/>
+    <screen screenSize="400" screenDensity="120"/>
+    <screen screenSize="500" screenDensity="120"/>
+  </compatible-screens>
+</manifest>
+

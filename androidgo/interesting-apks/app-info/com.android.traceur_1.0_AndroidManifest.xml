@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="2" versionName="1.0" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.traceur" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="29"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.STATUS_BAR"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission name="android.permission.MANAGE_USERS"/>
+  <uses-feature name="android.software.leanback" required="false"/>
+  <uses-feature name="android.hardware.touchscreen" required="false"/>
+  <application label="System Tracing" banner="res/drawable-xhdpi-v4/banner.png" extractNativeLibs="true" appComponentFactory="androidx.core.app.CoreComponentFactory" usesNonSdkApi="true">
+    <activity theme="Theme.Settings" label="System Tracing" name="com.android.traceur.MainActivity" launchMode="2" description="Record system activity and analyze it later to improve performance">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.INFO"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.android.settings.action.IA_SETTINGS"/>
+      </intent-filter>
+      <meta-data name="com.android.settings.category" value="com.android.settings.category.ia.development"/>
+      <meta-data name="com.android.settings.summary" resource="record_system_activity"/>
+      <meta-data name="com.android.settings.order" value="10"/>
+      <meta-data name="com.android.settings.profile" value="primary_profile_only"/>
+    </activity>
+    <activity theme="TvTheme" label="System Tracing" name="com.android.traceur.MainTvActivity" launchMode="2" description="Record system activity and analyze it later to improve performance">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.LEANBACK_LAUNCHER"/>
+        <category name="android.intent.category.INFO"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.DeviceDefault.Light.Dialog.Alert" name="com.android.traceur.UserConsentActivityDialog" exported="false" excludeFromRecents="true" finishOnCloseSystemDialogs="true"/>
+    <receiver name="com.android.traceur.Receiver" permission="android.permission.DUMP" systemUserOnly="true">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.USER_FOREGROUND"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.android.traceur.StopTraceService" exported="true"/>
+    <service name="com.android.traceur.TraceService" exported="false"/>
+    <service label="Record trace" icon="res/drawable-nodpi-v4/bugfood_icon.xml" name="com.android.traceur.QsService" permission="android.permission.BIND_QUICK_SETTINGS_TILE" enabled="false">
+      <intent-filter>
+        <action name="android.service.quicksettings.action.QS_TILE"/>
+      </intent-filter>
+    </service>
+    <provider name="androidx.core.content.FileProvider" exported="false" authorities="com.android.traceur.files" grantUriPermissions="true">
+      <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="file_paths"/>
+    </provider>
+    <provider name="com.android.traceur.StorageProvider" permission="android.permission.MANAGE_DOCUMENTS" enabled="false" exported="true" authorities="com.android.traceur.documents" grantUriPermissions="true">
+      <intent-filter>
+        <action name="android.content.action.DOCUMENTS_PROVIDER"/>
+      </intent-filter>
+    </provider>
+    <provider name="com.android.traceur.SearchProvider" permission="android.permission.READ_SEARCH_INDEXABLES" exported="true" multiprocess="false" authorities="com.android.traceur" grantUriPermissions="true">
+      <intent-filter>
+        <action name="android.content.action.SEARCH_INDEXABLES_PROVIDER"/>
+      </intent-filter>
+    </provider>
+  </application>
+</manifest>
+

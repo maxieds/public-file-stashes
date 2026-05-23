@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="12250736" versionName="1.9.0.473991075 release" compileSdkVersion="33" compileSdkVersionCodename="UpsideDownCake" package="com.google.android.apps.photosgo" platformBuildVersionCode="33" platformBuildVersionName="UpsideDownCake">
+  <uses-sdk minSdkVersion="26" targetSdkVersion="33"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.READ_EXTERNAL_STORAGE" maxSdkVersion="32"/>
+  <uses-permission name="android.permission.READ_MEDIA_IMAGES"/>
+  <uses-permission name="android.permission.READ_MEDIA_VIDEO"/>
+  <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+  <uses-permission name="android.permission.GET_PACKAGE_SIZE"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.SET_WALLPAPER"/>
+  <uses-permission name="android.permission.ACCESS_MEDIA_LOCATION"/>
+  <queries>
+    <package name="com.google.android.apps.photos"/>
+    <intent>
+      <action name="com.google.android.apps.photosgo.OEM_PROVIDER"/>
+    </intent>
+    <provider authorities="com.sprd.android.providers"/>
+    <intent>
+      <action name="android.intent.action.EDIT"/>
+      <data mimeType="image/*"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.EDIT"/>
+      <data mimeType="video/*"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.ATTACH_DATA"/>
+      <data mimeType="image/*"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.SEND"/>
+      <data mimeType="image/*"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.SEND"/>
+      <data mimeType="video/*"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.SEND_MULTIPLE"/>
+      <data mimeType="image/*"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.SEND"/>
+      <data mimeType="image/*"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.SEND"/>
+      <data mimeType="video/*"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.SEND_MULTIPLE"/>
+      <data mimeType="image/*"/>
+    </intent>
+    <intent>
+      <action name="android.service.wallpaper.CROP_AND_SET_WALLPAPER"/>
+      <data mimeType="image/*"/>
+    </intent>
+  </queries>
+  <application theme="AppTheme" label="Gallery" icon="res/0W.xml" name="com.google.android.apps.photosgo.PhotosGo_Application" taskAffinity="" allowBackup="false" supportsRtl="true" usesCleartextTraffic="false" requestLegacyExternalStorage="true">
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.gms.clearcut_client" resource="com_google_android_gms_clearcut_client_phenotype"/>
+    <service name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService" enabled="false" exported="false" process="">
+      <intent-filter>
+        <action name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"/>
+      </intent-filter>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.gms.clearcut_client" resource="com_google_android_gms_clearcut_client_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.apps.photosgo" resource="com_google_android_apps_photosgo_registration_info_release"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_registration_info"/>
+    </service>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.apps.photosgo" resource="com_google_android_apps_photosgo_phenotype_release"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_phenotype"/>
+    <receiver name="com.google.android.apps.photosgo.appevents.locale.LocaleChangeListener_Receiver" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.LOCALE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="AppTheme" name="com.google.android.apps.photosgo.assassin.AssassinActivity" exported="false" launchMode="0" configChanges="0xd80"/>
+    <activity theme="AppTheme.LoadingEditor" name="com.google.android.apps.photosgo.editor.ExternalEditorActivity" exported="true" launchMode="0" configChanges="0xd80">
+      <intent-filter>
+        <action name="android.intent.action.EDIT"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="image/*"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="action_nextgen_edit"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="image/*"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.android.camera.action.CROP"/>
+        <data mimeType="image/*"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.ALTERNATIVE"/>
+        <category name="android.intent.category.SELECTED_ALTERNATIVE"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.android.camera.action.TRIM"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data scheme="content"/>
+        <data mimeType="video/*"/>
+      </intent-filter>
+    </activity>
+    <provider name="androidx.core.content.FileProvider" exported="false" authorities="com.google.android.apps.photosgo.fileprovider" grantUriPermissions="true">
+      <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="file_paths"/>
+    </provider>
+    <activity theme="AppTheme.SplashScreen" label="Gallery" name="com.google.android.apps.photosgo.home.HomeActivity" exported="true" launchMode="0" configChanges="0xd80">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.LAUNCHER"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.APP_GALLERY"/>
+        <category name="android.intent.category.INFO"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.google.android.apps.photosgo.home.START_JOBS"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <receiver name="com.google.android.apps.photosgo.notification.receiver.NotificationDismissReceiver_Receiver" enabled="true" exported="false">
+      <intent-filter>
+        <action name="com.google.android.apps.photosgo.notification.NOTIFICATION_CANCELLED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.apps.photosgo.notification.receiver.NotificationStateChangedReceiver_Receiver" enabled="true" exported="false">
+      <intent-filter>
+        <action name="android.app.action.APP_BLOCK_STATE_CHANGED"/>
+        <action name="android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"/>
+        <action name="android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="AppTheme.LoadingOneUp" name="com.google.android.apps.photosgo.oneup.ExternalOneUpActivity" exported="true" launchMode="0" configChanges="0xd80">
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <action name="com.android.camera.action.REVIEW"/>
+        <action name="android.provider.action.REVIEW"/>
+        <action name="android.provider.action.REVIEW_SECURE"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme=""/>
+        <data scheme="http"/>
+        <data scheme="https"/>
+        <data scheme="content"/>
+        <data scheme="file"/>
+        <data mimeType="image/*"/>
+        <data mimeType="video/*"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.dir/image"/>
+        <data mimeType="vnd.android.cursor.dir/video"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="rtsp"/>
+      </intent-filter>
+    </activity>
+    <activity theme="AppTheme" name="com.google.android.apps.photosgo.oneup.secure.unlock.UnlockActivity" exported="false"/>
+    <activity theme="AppTheme.LoadingPicker" name="com.google.android.apps.photosgo.picker.ExternalPickerActivity" exported="true" launchMode="0" configChanges="0xd80">
+      <intent-filter>
+        <action name="android.intent.action.PICK"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="image/*"/>
+        <data mimeType="video/*"/>
+        <data mimeType="vnd.android.cursor.dir/image"/>
+        <data mimeType="vnd.android.cursor.dir/video"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.GET_CONTENT"/>
+        <category name="android.intent.category.OPENABLE"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="image/*"/>
+        <data mimeType="video/*"/>
+        <data mimeType="vnd.android.cursor.dir/image"/>
+      </intent-filter>
+    </activity>
+    <activity theme="AppTheme" label="Settings" name="com.google.android.apps.photosgo.settings.SettingsActivity" exported="false"/>
+    <receiver name="com.google.android.apps.photosgo.sharing.database.StockShareReceiver_Receiver" exported="false">
+      <intent-filter>
+        <action name="com.google.android.apps.photosgo.sharing.STOCK_SHARE"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.apps.photosgo.storage.VolumeStateListener_Receiver" exported="false">
+      <intent-filter>
+        <action name="android.intent.action.MEDIA_MOUNTED"/>
+        <action name="android.intent.action.MEDIA_UNMOUNTED"/>
+        <data scheme="file"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="AppTheme.LoadingSetWallpaper" name="com.google.android.apps.photosgo.wallpaper.SetWallpaperActivity" exported="true" launchMode="0" configChanges="0xda0">
+      <intent-filter label="Wallpaper">
+        <action name="android.intent.action.ATTACH_DATA"/>
+        <data mimeType="image/*"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.SET_WALLPAPER"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="AppTheme.LoadingSetWallpaper" name="com.google.android.apps.photosgo.wallpaper.CropAndSetWallpaperActivity" exported="false" launchMode="0" configChanges="0xda0">
+      <intent-filter label="Wallpaper">
+        <action name="android.service.wallpaper.CROP_AND_SET_WALLPAPER"/>
+        <data mimeType="image/*"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.gms.common.api.GoogleApiActivity" exported="false"/>
+    <meta-data name="com.google.android.gms.version" value="223800000"/>
+    <service name="com.google.android.libraries.directboot.DirectBootHelperService" enabled="false" exported="false" process="" directBootAware="false"/>
+    <receiver name="com.google.android.libraries.performance.primes.transmitter.LifeboatReceiver" exported="false" process=":primes_lifeboat"/>
+    <receiver name="com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver" exported="true" process="">
+      <intent-filter>
+        <action name="android.accounts.action.ACCOUNT_REMOVED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver" permission="com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST" exported="true" process="">
+      <intent-filter>
+        <action name="com.google.android.gms.phenotype.UPDATE"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.libraries.social.async.BackgroundTaskService" exported="false"/>
+    <service name="com.google.android.libraries.social.async.BackgroundTaskJobService" permission="android.permission.BIND_JOB_SERVICE" exported="false"/>
+    <activity theme="Theme.AppCompat.DayNight" label="Third Party Notices" name="com.google.android.libraries.social.licenses.LicenseMenuActivity" exported="true"/>
+    <activity theme="Theme.AppCompat.DayNight" label="Third Party Notices" name="com.google.android.libraries.social.licenses.LicenseActivity" exported="false"/>
+    <service name="com.google.apps.tiktok.concurrent.AndroidFuturesService" exported="false"/>
+    <service name="com.google.apps.tiktok.concurrent.InternalForegroundService" exported="false"/>
+    <receiver name="com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver" exported="true">
+      <intent-filter>
+        <action name="com.google.android.gms.phenotype.UPDATE"/>
+      </intent-filter>
+    </receiver>
+    <uses-library name="androidx.window.extensions" required="false"/>
+    <uses-library name="androidx.window.sidecar" required="false"/>
+    <service name="androidx.work.impl.background.systemalarm.SystemAlarmService" enabled="false" exported="false" directBootAware="false"/>
+    <service name="androidx.work.impl.background.systemjob.SystemJobService" permission="android.permission.BIND_JOB_SERVICE" enabled="true" exported="true" directBootAware="false"/>
+    <service name="androidx.work.impl.foreground.SystemForegroundService" enabled="true" exported="false" directBootAware="false"/>
+    <receiver name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" enabled="true" exported="false" directBootAware="false"/>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.ACTION_POWER_CONNECTED"/>
+        <action name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.BATTERY_OKAY"/>
+        <action name="android.intent.action.BATTERY_LOW"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.DEVICE_STORAGE_LOW"/>
+        <action name="android.intent.action.DEVICE_STORAGE_OK"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.net.conn.CONNECTIVITY_CHANGE"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.RescheduleReceiver" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.TIME_SET"/>
+        <action name="android.intent.action.TIMEZONE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.diagnostics.DiagnosticsReceiver" permission="android.permission.DUMP" enabled="true" exported="true" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.build.data.PropertiesServiceHolder" enabled="false" exported="false" process="">
+      <intent-filter>
+        <action name="com.google.android.build.data.Properties"/>
+      </intent-filter>
+      <meta-data name="com.google.android.build.data.properties" resource="build_data"/>
+    </service>
+  </application>
+  <compatible-screens>
+    <screen screenSize="200" screenDensity="240"/>
+    <screen screenSize="300" screenDensity="240"/>
+    <screen screenSize="400" screenDensity="240"/>
+    <screen screenSize="500" screenDensity="240"/>
+  </compatible-screens>
+</manifest>
+

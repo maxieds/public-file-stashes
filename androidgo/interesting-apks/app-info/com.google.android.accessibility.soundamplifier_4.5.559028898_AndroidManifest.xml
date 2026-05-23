@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="199891" versionName="4.5.559028898" compileSdkVersion="34" compileSdkVersionCodename="VanillaIceCream" package="com.google.android.accessibility.soundamplifier" platformBuildVersionCode="34" platformBuildVersionName="VanillaIceCream">
+  <uses-sdk minSdkVersion="28" targetSdkVersion="34"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.CAMERA"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE_MICROPHONE"/>
+  <uses-permission name="android.permission.GET_PACKAGE_SIZE"/>
+  <uses-permission name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+  <uses-permission name="android.permission.POST_NOTIFICATIONS"/>
+  <uses-permission name="android.permission.QUERY_ALL_PACKAGES"/>
+  <uses-permission name="android.permission.READ_GSERVICES"/>
+  <uses-permission name="android.permission.RECORD_AUDIO"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="com.google.android.gms.permission.AD_ID"/>
+  <uses-permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+  <uses-permission name="com.google.android.providers.gsf.permission.WRITE_GSERVICES"/>
+  <uses-permission name="com.google.android.accessibility.soundamplifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+  <permission name="com.google.android.accessibility.soundamplifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" protectionLevel="0x2"/>
+  <application label="Sound Amplifier" icon="res/Ek.xml" name="com.google.android.accessibility.soundamplifier.SoundAmplifierApplication" allowBackup="false" installLocation="1" supportsRtl="true" extractNativeLibs="false" usesCleartextTraffic="false" resizeableActivity="true" appComponentFactory="androidx.core.app.CoreComponentFactory" allowAudioPlaybackCapture="false">
+    <meta-data name="com.google.android.gms.version" value="233500000"/>
+    <activity theme="AppTheme" name="com.google.android.accessibility.soundamplifier.ui.SoundAmplifierSettingActivity" exported="true" clearTaskOnLaunch="true" launchMode="2">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.INFO"/>
+        <category name="android.intent.category.ACCESSIBILITY_SHORTCUT_TARGET"/>
+      </intent-filter>
+      <meta-data name="android.accessibilityshortcut.target" resource="sound_amplifier_app"/>
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+      <meta-data name="hasIcon" value="true"/>
+    </activity>
+    <activity-alias name="com.google.android.accessibility.soundamplifier.LauncherActivity" enabled="false" exported="true" targetActivity="com.google.android.accessibility.soundamplifier.ui.SoundAmplifierSettingActivity">
+      <intent-filter>
+        <category name="android.intent.category.LAUNCHER"/>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity-alias>
+    <service name="com.google.android.accessibility.soundamplifier.SoundAmplifierService" permission="android.permission.BIND_ACCESSIBILITY_SERVICE" enabled="false" exported="false">
+      <intent-filter>
+        <action name="android.accessibilityservice.AccessibilityService"/>
+      </intent-filter>
+      <meta-data name="android.accessibilityservice" resource="sound_amplifier_service"/>
+    </service>
+    <service name="com.google.android.accessibility.soundamplifier.service.SoundAmplifierService" exported="false" stopWithTask="false" foregroundServiceType="0x80"/>
+    <service label="Sound Amplifier" icon="res/WP.xml" name="com.google.android.accessibility.soundamplifier.SoundAmplifierTileService" permission="android.permission.BIND_QUICK_SETTINGS_TILE" enabled="true" exported="true">
+      <intent-filter>
+        <action name="android.service.quicksettings.action.QS_TILE"/>
+      </intent-filter>
+      <meta-data name="android.service.quicksettings.ACTIVE_TILE" value="true"/>
+    </service>
+    <receiver name="com.google.android.accessibility.soundamplifier.SoundAmplifierTileServiceReceiver" enabled="false" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.LOCALE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.gms.measurement.AppMeasurementJobService" permission="android.permission.BIND_JOB_SERVICE" enabled="true" exported="false"/>
+    <service name="com.google.android.gms.measurement.AppMeasurementService" enabled="true" exported="false"/>
+    <receiver name="com.google.android.gms.measurement.AppMeasurementReceiver" enabled="true" exported="false">
+      <intent-filter>
+        <action name="com.google.android.gms.measurement.UPLOAD"/>
+        <action name="com.android.vending.INSTALL_REFERRER"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService" enabled="false" exported="false" process="">
+      <intent-filter>
+        <action name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"/>
+      </intent-filter>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.feedback" resource="com_google_android_gms_feedback_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.measurement" resource="com_google_android_gms_measurement_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.usagereporting" resource="com_google_android_gms_usagereporting_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_registration_info"/>
+    </service>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_phenotype"/>
+    <activity theme="DialogActivityTheme" name="com.google.android.accessibility.soundamplifier.ui.dialog.AccessibilitySettingsDialogActivity" exported="false" configChanges="0xd80" autoRemoveFromRecents="true"/>
+    <activity theme="DialogActivityTheme" name="com.google.android.accessibility.soundamplifier.ui.dialog.EnrollmentVoiceLostDialogActivity" exported="false" configChanges="0xd80" autoRemoveFromRecents="true"/>
+    <activity theme="DialogActivityTheme" name="com.google.android.accessibility.soundamplifier.ui.dialog.FailedMicRequestDialogActivity" exported="false" configChanges="0xd80" autoRemoveFromRecents="true"/>
+    <activity theme="DialogActivityTheme" name="com.google.android.accessibility.soundamplifier.ui.dialog.LandingDialogActivity" exported="false" configChanges="0xd80" autoRemoveFromRecents="true"/>
+    <activity theme="DialogActivityTheme" name="com.google.android.accessibility.soundamplifier.ui.dialog.L2LTutorialDialogActivity" exported="false" configChanges="0xd80" autoRemoveFromRecents="true"/>
+    <activity theme="DialogActivityTheme" name="com.google.android.accessibility.soundamplifier.ui.dialog.PermissionDialogActivity" exported="false" configChanges="0xd80" autoRemoveFromRecents="true"/>
+    <activity theme="DialogActivityTheme" name="com.google.android.accessibility.soundamplifier.ui.dialog.RemoveEnrollVoiceDialogActivity" exported="false" configChanges="0xd80" autoRemoveFromRecents="true"/>
+    <activity theme="DialogActivityTheme" name="com.google.android.accessibility.soundamplifier.ui.dialog.ShowAppIconDialogActivity" exported="false" configChanges="0xd80" autoRemoveFromRecents="true"/>
+    <activity theme="DialogActivityTheme" name="com.google.android.accessibility.soundamplifier.ui.dialog.UnplugDialogActivity" exported="false" configChanges="0xd80" autoRemoveFromRecents="true"/>
+    <activity theme="DialogActivityTheme" name="com.google.android.accessibility.soundamplifier.ui.dialog.UserFeedbackDialogActivity" exported="false" configChanges="0xd80" autoRemoveFromRecents="true"/>
+    <uses-library name="org.apache.http.legacy" required="false"/>
+    <activity theme="HelpActivityTheme" name="com.google.android.accessibility.soundamplifier.ui.helpandfeedback.HelpAndFeedbackActivity" exported="false"/>
+    <activity theme="Theme.DeviceDefault" name="com.google.userfeedback.android.api.UserFeedbackActivity" exported="false" excludeFromRecents="true" windowSoftInputMode="0x10"/>
+    <activity theme="Theme.DeviceDefault" name="com.google.userfeedback.android.api.PreviewActivity" exported="false" excludeFromRecents="true"/>
+    <activity theme="Theme.DeviceDefault" name="com.google.userfeedback.android.api.ShowTextActivity" exported="false" excludeFromRecents="true"/>
+    <activity theme="Theme.DeviceDefault" name="com.google.userfeedback.android.api.ShowStringListActivity" exported="false" excludeFromRecents="true"/>
+    <service name="com.google.userfeedback.android.api.SendUserFeedbackService" exported="false"/>
+    <activity theme="AppTheme" name="com.google.android.accessibility.soundamplifier.ui.onboarding.ConversationModeOnboardingActivity" exported="false"/>
+    <activity theme="AppTheme" name="com.google.android.accessibility.soundamplifier.ui.onboarding.PromoActivity" exported="false"/>
+    <activity theme="SettingsTheme" name="com.google.android.accessibility.soundamplifier.ui.SettingsPreferenceActivity" exported="false">
+      <intent-filter>
+        <action name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.gms.common.api.GoogleApiActivity" exported="false"/>
+    <service name="com.google.firebase.components.ComponentDiscoveryService" exported="false">
+      <meta-data name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+    </service>
+    <receiver name="com.google.android.libraries.performance.primes.transmitter.LifeboatReceiver" exported="false" process=":primes_lifeboat"/>
+    <receiver name="com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver" exported="true" process="">
+      <intent-filter>
+        <action name="android.accounts.action.ACCOUNT_REMOVED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver" permission="com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST" exported="true" process="">
+      <intent-filter>
+        <action name="com.google.android.gms.phenotype.UPDATE"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="Theme.AppCompat.DayNight" label="Third Party Notices" name="com.google.android.libraries.social.licenses.LicenseMenuActivity" exported="true"/>
+    <activity theme="Theme.AppCompat.DayNight" label="Third Party Notices" name="com.google.android.libraries.social.licenses.LicenseActivity" exported="false"/>
+    <service name="androidx.camera.core.impl.MetadataHolderService" enabled="false" exported="false">
+      <meta-data name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+    </service>
+    <uses-library name="androidx.window.extensions" required="false"/>
+    <uses-library name="androidx.window.sidecar" required="false"/>
+    <service name="com.google.android.build.data.PropertiesServiceHolder" enabled="false" exported="false" process="">
+      <intent-filter>
+        <action name="com.google.android.build.data.Properties"/>
+      </intent-filter>
+      <meta-data name="com.google.android.build.data.properties" resource="build_data"/>
+    </service>
+  </application>
+</manifest>
+

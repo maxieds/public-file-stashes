@@ -1,0 +1,65 @@
+--------- beginning of system
+07-10 08:08:38.292 I/ActivityThread(22004): smart_link is  not supported!!!
+--------- beginning of crash
+07-10 08:08:49.017 F/libc    (22068): Fatal signal 31 (SIGSYS), code 1 (SYS_SECCOMP) in tid 22068 (dmesg), pid 22068 (dmesg)
+07-10 08:08:49.073 F/DEBUG   (22071): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-10 08:08:49.073 F/DEBUG   (22071): Native Crash TIME: 7190667
+07-10 08:08:49.073 F/DEBUG   (22071): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-10 08:08:49.073 F/DEBUG   (22071): Build fingerprint: 'BLU/C5L_Max/C0170WW:11/RP1A.201005.001/28143:user/release-keys'
+07-10 08:08:49.074 F/DEBUG   (22071): Revision: '0'
+07-10 08:08:49.074 F/DEBUG   (22071): ABI: 'arm'
+07-10 08:08:49.076 F/DEBUG   (22071): Timestamp: 2023-07-10 08:08:49-0500
+07-10 08:08:49.076 F/DEBUG   (22071): pid: 22068, tid: 22068, name: dmesg  >>> dmesg <<<
+07-10 08:08:49.077 F/DEBUG   (22071): uid: 10209
+07-10 08:08:49.077 F/DEBUG   (22071): signal 31 (SIGSYS), code 1 (SYS_SECCOMP), fault addr --------
+07-10 08:08:49.077 F/DEBUG   (22071): Cause: seccomp prevented call to disallowed arm system call 103
+07-10 08:08:49.077 F/DEBUG   (22071):     r0  0000000a  r1  00000000  r2  00000000  r3  00000000
+07-10 08:08:49.077 F/DEBUG   (22071):     r4  beb23370  r5  00000000  r6  0d28db08  r7  00000067
+07-10 08:08:49.077 F/DEBUG   (22071):     r8  ac7192b4  r9  0d28bae8  r10 0d28db08  r11 00000000
+07-10 08:08:49.077 F/DEBUG   (22071):     ip  00000001  sp  beb23368  lr  0d26eed7  pc  ac6f9e5c
+07-10 08:08:49.103 F/DEBUG   (22071): backtrace:
+07-10 08:08:49.103 F/DEBUG   (22071):       #00 pc 0009be5c  /apex/com.android.runtime/lib/bionic/libc.so (klogctl+12) (BuildId: 58a173c6b457a368ea5ab855aaa7a660)
+07-10 08:08:49.103 F/DEBUG   (22071):       #01 pc 0003ced3  /system/bin/toybox (dmesg_main+330) (BuildId: 63fb5722e22da491996dd60ee08d3656)
+07-10 08:08:49.104 F/DEBUG   (22071):       #02 pc 00027fa7  /system/bin/toybox (toy_exec_which+38) (BuildId: 63fb5722e22da491996dd60ee08d3656)
+07-10 08:08:49.104 F/DEBUG   (22071):       #03 pc 00027c6b  /system/bin/toybox (toybox_main+26) (BuildId: 63fb5722e22da491996dd60ee08d3656)
+07-10 08:08:49.104 F/DEBUG   (22071):       #04 pc 00028003  /system/bin/toybox (main+58) (BuildId: 63fb5722e22da491996dd60ee08d3656)
+07-10 08:08:49.104 F/DEBUG   (22071):       #05 pc 0005d439  /apex/com.android.runtime/lib/bionic/libc.so (__libc_init+68) (BuildId: 58a173c6b457a368ea5ab855aaa7a660)
+--------- beginning of main
+07-10 08:09:15.305 D/SysLog  (22004): Loading settings
+07-10 08:09:15.507 D/SysLog  (22004): Setting the checkboxes
+07-10 08:09:15.507 D/SysLog  (22004): Checking for root
+07-10 08:09:15.508 D/SysLog  (22004): Checking if last_kmsg and radio are available
+07-10 08:09:15.525 I/ActivityThread(22004): smart_link is  not supported!!!
+07-10 08:09:15.595 D/mali_winsys(22004): EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+07-10 08:09:15.649 I/gralloc (22004): gralloc_register_buffer hnd=0x8ad9d280, share_fd=85, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1920, flags=4, usage=0xb00, size=1843200, width=480, height=960, internalWidth=480, internalHeight=960, stride=480, base=0x89cf3000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:09:15.650 E/m.tortel.syslo(22004): Shared attribute region not available to be mapped
+07-10 08:09:15.665 D/SysLog  (22004): Enabling log button: true
+07-10 08:09:15.667 D/SysLog  (22004): Root not available
+07-10 08:09:15.669 D/SysLog  (22004): Enabling log button: true
+07-10 08:09:15.689 I/gralloc (22004): gralloc_register_buffer hnd=0x8ae21c80, share_fd=91, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1920, flags=4, usage=0xb00, size=1843200, width=480, height=960, internalWidth=480, internalHeight=960, stride=480, base=0x89b31000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:09:15.690 E/m.tortel.syslo(22004): Shared attribute region not available to be mapped
+07-10 08:09:15.785 I/gralloc (22004): gralloc_register_buffer hnd=0x8ae203c0, share_fd=94, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1920, flags=4, usage=0xb00, size=1843200, width=480, height=960, internalWidth=480, internalHeight=960, stride=480, base=0x8996f000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:09:15.786 E/m.tortel.syslo(22004): Shared attribute region not available to be mapped
+07-10 08:09:21.234 D/mali_winsys(22004): EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+07-10 08:09:21.258 I/gralloc (22004): gralloc_register_buffer hnd=0x99ed3900, share_fd=93, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1280, flags=4, usage=0xb00, size=675840, width=312, height=528, internalWidth=312, internalHeight=528, stride=320, base=0x8a7f7000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:09:21.259 E/m.tortel.syslo(22004): Shared attribute region not available to be mapped
+07-10 08:09:21.274 I/gralloc (22004): gralloc_register_buffer hnd=0x99ed3c00, share_fd=98, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1280, flags=4, usage=0xb00, size=675840, width=312, height=528, internalWidth=312, internalHeight=528, stride=320, base=0x8a752000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:09:21.274 E/m.tortel.syslo(22004): Shared attribute region not available to be mapped
+07-10 08:09:21.322 I/gralloc (22004): gralloc_unregister_buffer hnd=0x99ed3900, share_fd=93, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1280, flags=4, usage=0xb00, size=675840, width=312, height=528, internalWidth=312, internalHeight=528, stride=320, base=0x8a7f7000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:09:21.322 I/gralloc (22004): gralloc_unregister_buffer hnd=0x99ed3c00, share_fd=98, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1280, flags=4, usage=0xb00, size=675840, width=312, height=528, internalWidth=312, internalHeight=528, stride=320, base=0x8a752000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:09:21.323 W/libEGL  (22004): EGLNativeWindowType 0x8a9ab008 disconnect failed
+07-10 08:09:21.325 D/mali_winsys(22004): EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+07-10 08:09:21.329 I/gralloc (22004): gralloc_register_buffer hnd=0x8ae22580, share_fd=93, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1280, flags=4, usage=0xb00, size=675840, width=312, height=528, internalWidth=312, internalHeight=528, stride=320, base=0x8a7f7000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:09:21.329 E/m.tortel.syslo(22004): Shared attribute region not available to be mapped
+07-10 08:09:21.353 I/gralloc (22004): gralloc_register_buffer hnd=0x8ae22c40, share_fd=99, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1280, flags=4, usage=0xb00, size=675840, width=312, height=528, internalWidth=312, internalHeight=528, stride=320, base=0x8a752000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:09:21.354 E/m.tortel.syslo(22004): Shared attribute region not available to be mapped
+07-10 08:09:22.837 I/gralloc (22004): gralloc_register_buffer hnd=0x8ae22d00, share_fd=97, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1280, flags=4, usage=0xb00, size=675840, width=312, height=528, internalWidth=312, internalHeight=528, stride=320, base=0x8a54b000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:09:22.837 E/m.tortel.syslo(22004): Shared attribute region not available to be mapped
+07-10 08:09:23.771 I/gralloc (22004): gralloc_unregister_buffer hnd=0x8ae22d00, share_fd=97, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1280, flags=4, usage=0xb00, size=675840, width=312, height=528, internalWidth=312, internalHeight=528, stride=320, base=0x8a54b000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:09:23.771 I/gralloc (22004): gralloc_unregister_buffer hnd=0x8ae22c40, share_fd=99, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1280, flags=4, usage=0xb00, size=675840, width=312, height=528, internalWidth=312, internalHeight=528, stride=320, base=0x8a752000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:09:23.771 I/gralloc (22004): gralloc_unregister_buffer hnd=0x8ae22580, share_fd=93, share_attr_fd=-1, magic=51647890, format=1, internal_format=1, byte_stride=1280, flags=4, usage=0xb00, size=675840, width=312, height=528, internalWidth=312, internalHeight=528, stride=320, base=0x8a7f7000, writeOwner=0, attr_base=0xffffffff, yuv_info=1, fd=-1, buf_idx=0, offset=0, min_pgsz=4096, phyaddr=0
+07-10 08:09:23.772 W/libEGL  (22004): EGLNativeWindowType 0x8a9ab008 disconnect failed
+07-10 08:09:30.273 V/SysLog  (22004): Path: /data/user/0/com.tortel.syslog/cache/logs/2023-07-10_08.09/
+07-10 08:09:30.293 V/SysLog  (22004): Done grabbing logs
+07-10 08:09:30.352 E/Dialog  (22004): show dialog view=DecorView@e46ce1a[FragmentMainActivity]
+07-10 08:09:30.392 D/mali_winsys(22004): EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000

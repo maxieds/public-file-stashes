@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="3063884" versionName="4.14.23.551708978" compileSdkVersion="34" compileSdkVersionCodename="VanillaIceCream" package="com.google.android.contacts" platformBuildVersionCode="34" platformBuildVersionName="VanillaIceCream">
+  <uses-sdk minSdkVersion="26" targetSdkVersion="34"/>
+  <uses-permission name="android.permission.READ_CONTACTS"/>
+  <uses-permission name="android.permission.WRITE_CONTACTS"/>
+  <uses-permission name="android.permission.GET_ACCOUNTS"/>
+  <uses-permission name="android.permission.GET_ACCOUNTS_PRIVILEGED" maxSdkVersion="25"/>
+  <uses-permission name="android.permission.MANAGE_ACCOUNTS"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.CALL_PHONE"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.NFC"/>
+  <uses-permission name="android.permission.READ_PHONE_NUMBERS"/>
+  <uses-permission name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission name="android.permission.USE_CREDENTIALS"/>
+  <uses-permission name="android.permission.VIBRATE"/>
+  <uses-permission name="android.permission.READ_SYNC_SETTINGS"/>
+  <uses-permission name="android.permission.READ_EXTERNAL_STORAGE" maxSdkVersion="28"/>
+  <uses-permission name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+  <uses-permission name="android.permission.WRITE_SYNC_SETTINGS"/>
+  <uses-permission name="android.permission.READ_SYNC_STATS"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+  <uses-permission name="com.google.android.c2dm.permission.RECEIVE"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission name="android.permission.HIDE_OVERLAY_WINDOWS"/>
+  <uses-permission name="android.permission.SET_DEFAULT_ACCOUNT_FOR_CONTACTS"/>
+  <uses-permission name="android.permission.ACCESS_RCS_USER_CAPABILITY_EXCHANGE"/>
+  <uses-permission name="android.permission.POST_NOTIFICATIONS"/>
+  <uses-permission name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+  <uses-feature name="android.hardware.telephony" required="false"/>
+  <queries>
+    <package name="com.android.providers.contacts"/>
+    <package name="com.google.android.gms"/>
+    <provider authorities="com.google.contacts.gal.provider"/>
+    <intent>
+      <action name="android.accounts.AccountAuthenticator"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.VIEW"/>
+      <data mimeType="vnd.android.cursor.item/*" scheme="content" host="com.android.contacts"/>
+    </intent>
+    <intent>
+      <action name="com.android.camera.action.CROP"/>
+      <data mimeType="image/*"/>
+    </intent>
+    <intent>
+      <action name="android.speech.action.RECOGNIZE_SPEECH"/>
+    </intent>
+    <package name="com.google.android.apps.maps"/>
+    <package name="com.google.android.apps.safetyhub"/>
+    <intent>
+      <action name="android.intent.action.SENDTO"/>
+      <data scheme="imto"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.SENDTO"/>
+      <data scheme="xmpp"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.SENDTO"/>
+      <data scheme="mailto"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.SENDTO"/>
+      <data scheme="smsto"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.VIEW"/>
+      <data scheme="geo"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.VIEW"/>
+      <data scheme="content" host="com.android.calendar"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.VIEW"/>
+      <data scheme="https"/>
+    </intent>
+    <package name="com.android.dialer"/>
+    <package name="com.google.android.dialer"/>
+    <package name="com.google.android.apps.tachyon"/>
+    <intent>
+      <action name="android.intent.action.CALL"/>
+      <data scheme="tel"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.DIAL"/>
+      <data scheme="tel"/>
+    </intent>
+    <intent>
+      <action name="com.android.dialer.LAUNCH_PRE_CALL"/>
+      <data scheme="tel"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.CALL"/>
+      <data scheme="sip"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.DIAL"/>
+      <data scheme="sip"/>
+    </intent>
+    <intent>
+      <action name="com.android.dialer.LAUNCH_PRE_CALL"/>
+      <data scheme="sip"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.CALL"/>
+      <data scheme="voicemail"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.DIAL"/>
+      <data scheme="voicemail"/>
+    </intent>
+    <intent>
+      <action name="android.media.action.IMAGE_CAPTURE"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.CREATE_DOCUMENT"/>
+      <data mimeType="text/x-vcard"/>
+      <category name="android.intent.category.OPENABLE"/>
+    </intent>
+    <intent>
+      <action name="com.google.android.apps.tachyon.action.CALL"/>
+      <data scheme="tel"/>
+    </intent>
+    <intent>
+      <action name="com.google.android.gms.matchstick.call.action.CALL"/>
+      <data scheme="tel"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.PICK"/>
+      <data mimeType="image/*"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.GET_CONTENT"/>
+      <data mimeType="image/*"/>
+    </intent>
+    <intent>
+      <action name="android.intent.action.VIEW"/>
+    </intent>
+  </queries>
+  <uses-feature glEsVersion="0x20000" required="true"/>
+  <permission name="com.google.android.contacts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" protectionLevel="0x2"/>
+  <application theme="Theme.Contacts" label="Contacts" icon="res/ET.xml" name="com.google.android.apps.contacts.app.GoogleContactsApplication" taskAffinity="" backupAgent="com.google.android.apps.contacts.util.GoogleContactsBackupAgent" allowBackup="true" restoreAnyVersion="true" hardwareAccelerated="true" supportsRtl="true" fullBackupOnly="false" fullBackupContent="res/Qq.xml" usesCleartextTraffic="false" appComponentFactory="androidx.core.app.CoreComponentFactory" gwpAsanMode="1" dataExtractionRules="res/ok.xml">
+    <profileable shell="true"/>
+    <service name="com.google.android.apps.contacts.util.EmptyService" exported="false"/>
+    <meta-data name="supports_per_number_preferred_account" value="true"/>
+    <meta-data name="android.nfc.disable_beam_default" value="true"/>
+    <meta-data name="com.google.android.gms.version" value="233012000"/>
+    <meta-data name="com.google.android.backup.api_key" value="AEdPqrEAAAAIQUDOOnQpeQ2szgh8puyHccgGLRY8QdkfmZuEYg"/>
+    <meta-data name="asset_statements" resource="asset_statements"/>
+    <property name="android.window.PROPERTY_ACTIVITY_EMBEDDING_SPLITS_ENABLED" value="true"/>
+    <service name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService" enabled="false" exported="false" process="">
+      <intent-filter>
+        <action name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"/>
+      </intent-filter>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.contacts" resource="com_google_android_contacts_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.contacts" resource="com_google_android_contacts_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.notifications" resource="com_google_android_libraries_notifications_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.social.connections" resource="com_google_android_libraries_social_connections_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.social.connections" resource="com_google_android_libraries_social_connections_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.auth_account" resource="com_google_android_gms_auth_account_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.feedback" resource="com_google_android_gms_feedback_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.fido" resource="com_google_android_gms_fido_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.ulr" resource="com_google_android_gms_ulr_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.gms.usagereporting" resource="com_google_android_gms_usagereporting_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.notifications.platform" resource="com_google_android_libraries_notifications_platform_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.internal.growth.growthkit" resource="com_google_android_libraries_internal_growth_growthkit_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.mdi.sync" resource="com_google_android_libraries_mdi_sync_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.mdi.sync" resource="com_google_android_libraries_mdi_sync_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.onegoogle" resource="com_google_android_libraries_onegoogle_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.user.profile.photopicker" resource="com_google_android_libraries_user_profile_photopicker_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.user.profile.photopicker" resource="com_google_android_libraries_user_profile_photopicker_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.heterodyne_info.binarypb:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_heterodyne_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_registration_info"/>
+      <meta-data name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.surveys" resource="com_google_android_libraries_surveys_registration_info"/>
+    </service>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.contacts" resource="com_google_android_contacts_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.notifications" resource="com_google_android_libraries_notifications_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.social.connections" resource="com_google_android_libraries_social_connections_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.consentverifier" resource="com_google_android_libraries_consentverifier_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.notifications.platform" resource="com_google_android_libraries_notifications_platform_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.internal.growth.growthkit" resource="com_google_android_libraries_internal_growth_growthkit_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.mdi.sync" resource="com_google_android_libraries_mdi_sync_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.onegoogle" resource="com_google_android_libraries_onegoogle_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.user.profile.photopicker" resource="com_google_android_libraries_user_profile_photopicker_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.performance.primes" resource="com_google_android_libraries_performance_primes_phenotype"/>
+    <meta-data name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.surveys" resource="com_google_android_libraries_surveys_phenotype"/>
+    <activity theme="Theme.Contacts.LaunchScreen" name="com.google.android.apps.contacts.activities.PeopleActivity" exported="true" launchMode="1" alwaysRetainTaskState="true" visibleToInstantApps="true"/>
+    <activity-alias name="com.android.contacts.DialtactsContactsEntryActivity" exported="true" targetActivity="com.google.android.apps.contacts.activities.PeopleActivity"/>
+    <activity-alias name="com.android.contacts.activities.ContactsFrontDoor" exported="true" targetActivity="com.google.android.apps.contacts.activities.PeopleActivity"/>
+    <activity-alias name="com.android.contacts.ContactsListActivity" exported="false" targetActivity="com.google.android.apps.contacts.activities.PeopleActivity"/>
+    <activity-alias name="com.android.contacts.activities.PeopleActivity" exported="true" targetActivity="com.google.android.apps.contacts.activities.PeopleActivity">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.LAUNCHER"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <category name="android.intent.category.APP_CONTACTS"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.android.contacts.action.LIST_DEFAULT"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.TAB"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.android.contacts.action.LIST_CONTACTS"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.TAB"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.android.contacts.action.LIST_ALL_CONTACTS"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.TAB"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.android.contacts.action.LIST_CONTACTS_WITH_PHONES"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.TAB"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.android.contacts.action.LIST_FREQUENT"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.TAB"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.android.contacts.action.LIST_STREQUENT"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.TAB"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.SEARCH"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.dir/contact"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.SEARCH"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.dir/person"/>
+        <data mimeType="vnd.android.cursor.dir/contact"/>
+        <data mimeType="vnd.android.cursor.dir/raw_contact"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.item/group"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.EDIT"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.item/group"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.INSERT"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.dir/group"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.google.android.contacts.action.SUGGESTIONS"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.provider.Contacts.SEARCH_SUGGESTION_CLICKED"/>
+        <data mimeType="vnd.android.cursor.item/*" scheme="content" host="com.android.contacts"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <meta-data name="android.app.searchable" resource="searchable"/>
+      <meta-data name="android.app.shortcuts" resource="shortcuts"/>
+    </activity-alias>
+    <activity name="com.google.android.apps.contacts.activities.ContactSelectionActivity" exported="true" clearTaskOnLaunch="true" launchMode="1" uiOptions="0x1" visibleToInstantApps="true">
+      <meta-data name="android.app.shortcuts.new_config" value="true"/>
+      <intent-filter>
+        <action name="android.intent.action.PICK"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.dir/contact"/>
+        <data mimeType="vnd.android.cursor.dir/person"/>
+        <data mimeType="vnd.android.cursor.dir/phone_v2"/>
+        <data mimeType="vnd.android.cursor.dir/phone"/>
+        <data mimeType="vnd.android.cursor.dir/postal-address_v2"/>
+        <data mimeType="vnd.android.cursor.dir/postal-address"/>
+        <data mimeType="vnd.android.cursor.dir/email_v2"/>
+        <data mimeType="vnd.android.cursor.dir/group"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.GET_CONTENT"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.item/contact"/>
+        <data mimeType="vnd.android.cursor.item/person"/>
+        <data mimeType="vnd.android.cursor.item/phone_v2"/>
+        <data mimeType="vnd.android.cursor.item/phone"/>
+        <data mimeType="vnd.android.cursor.item/postal-address_v2"/>
+        <data mimeType="vnd.android.cursor.item/postal-address"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.android.contacts.action.JOIN_CONTACT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity-alias label="Direct dial" name="alias.DialShortcut" exported="true" targetActivity="com.google.android.apps.contacts.activities.ContactSelectionActivity">
+      <intent-filter>
+        <action name="android.intent.action.CREATE_SHORTCUT"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.CAR_MODE"/>
+      </intent-filter>
+    </activity-alias>
+    <activity-alias label="Direct dial" name="alias.DialShortcutCli" exported="true" targetActivity="com.google.android.apps.contacts.activities.ContactSelectionActivity">
+      <intent-filter>
+        <action name="com.motorola.intent.action.CREATE_CLI_SHORTCUT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity-alias>
+    <activity-alias label="Message" name="alias.MessageShortcutCli" enabled="false" exported="true" targetActivity="com.google.android.apps.contacts.activities.ContactSelectionActivity">
+      <intent-filter>
+        <action name="com.motorola.intent.action.CREATE_CLI_SHORTCUT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity-alias>
+    <activity-alias label="Direct message" name="alias.MessageShortcut" exported="true" targetActivity="com.google.android.apps.contacts.activities.ContactSelectionActivity">
+      <intent-filter>
+        <action name="android.intent.action.CREATE_SHORTCUT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity-alias>
+    <activity-alias label="Contact" name="com.android.contacts.ContactShortcut" exported="true" targetActivity="com.google.android.apps.contacts.activities.ContactSelectionActivity">
+      <intent-filter>
+        <action name="android.intent.action.CREATE_SHORTCUT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity-alias>
+    <activity label="Select label" name="com.google.android.apps.contacts.activities.GroupSelectionActivity" exported="false"/>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.activities.ShowOrCreateActivity" exported="true">
+      <intent-filter>
+        <action name="com.android.contacts.action.SHOW_OR_CREATE_CONTACT"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data scheme="mailto"/>
+        <data scheme="tel"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.activities.NonPhoneActivity" exported="true">
+      <intent-filter priority="-1">
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+      </intent-filter>
+      <intent-filter priority="-1">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="tel"/>
+      </intent-filter>
+      <intent-filter priority="-1">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data mimeType="vnd.android.cursor.dir/calls"/>
+      </intent-filter>
+    </activity>
+    <activity name="com.google.android.apps.contacts.activities.OnboardingSignInActivity" exported="false" launchMode="1"/>
+    <service name="com.google.android.apps.contacts.assistant.SuggestionsService" exported="true"/>
+    <receiver name="com.google.android.apps.contacts.common.dark.GoogleThemeSettingReceiver" exported="true">
+      <intent-filter>
+        <action name="com.google.android.comms.action.THEME_CHANGE"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="com.google.android.comms.action.CHECK_THEME"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.apps.contacts.common.notification.NotificationIntentReceiver" exported="false"/>
+    <activity theme="Theme.Contacts.LaunchScreen" name="com.google.android.apps.contacts.common.notification.NotificationTrampolineActivity" exported="false" excludeFromRecents="true" launchMode="2"/>
+    <provider name="com.google.android.apps.contacts.common.provider.ContentNotifyStubProvider" exported="false" authorities="com.google.android.contacts.assistant;com.google.android.contacts.quickcontact"/>
+    <provider name="androidx.core.content.FileProvider" exported="false" authorities="com.google.android.contacts.files" grantUriPermissions="true">
+      <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="file_paths"/>
+    </provider>
+    <activity theme="Theme.Contacts" name="com.google.android.apps.contacts.ecc.EccActivity" exported="false" launchMode="1"/>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.editor.ContactEditorAccountsChangedActivity" exported="false" windowSoftInputMode="0x10"/>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.editor.ContactEditorSpringBoardActivity"/>
+    <activity theme="Theme.Contacts" name="com.google.android.apps.contacts.editor.EditorActivity" exported="false" windowSoftInputMode="0x10"/>
+    <activity theme="Theme.Contacts" name="com.google.android.apps.contacts.editor.LegacyContactEditorActivity" exported="false" windowSoftInputMode="0x10"/>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.editor.EditorShortcutSpringBoardActivity" exported="false"/>
+    <activity theme="Theme.Contacts.NoUi" label="Contact photo" name="com.google.android.apps.contacts.editor.AttachPhotoActivity" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.ATTACH_DATA"/>
+        <data mimeType="image/*"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.editorlite.InsertOrEditActivity" exported="false"/>
+    <activity-alias name="com.android.contacts.activities.CompactContactEditorActivity" exported="true" targetActivity="com.google.android.apps.contacts.editorlite.InsertOrEditActivity">
+      <intent-filter priority="-1">
+        <action name="android.intent.action.INSERT"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.dir/person"/>
+        <data mimeType="vnd.android.cursor.dir/contact"/>
+        <data mimeType="vnd.android.cursor.dir/raw_contact"/>
+      </intent-filter>
+      <intent-filter priority="-1">
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity-alias>
+    <activity-alias name="com.google.android.apps.contacts.editorlite.ContactsEditorlite" exported="true" targetActivity="com.google.android.apps.contacts.editorlite.InsertOrEditActivity">
+      <intent-filter>
+        <action name="android.intent.action.INSERT_OR_EDIT"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.item/person"/>
+        <data mimeType="vnd.android.cursor.item/contact"/>
+        <data mimeType="vnd.android.cursor.item/raw_contact"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.INSERT"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.dir/person"/>
+        <data mimeType="vnd.android.cursor.dir/contact"/>
+        <data mimeType="vnd.android.cursor.dir/raw_contact"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.EDIT"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.item/person"/>
+        <data mimeType="vnd.android.cursor.item/contact"/>
+        <data mimeType="vnd.android.cursor.item/raw_contact"/>
+      </intent-filter>
+    </activity-alias>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.gnp.chime.ChimeNotificationActivity" exported="false" excludeFromRecents="true" noHistory="true"/>
+    <activity theme="Theme.Contacts" name="com.google.android.apps.contacts.group.GroupMembersActivity" exported="false" excludeFromRecents="true"/>
+    <activity label="Contacts to display" name="com.google.android.apps.contacts.list.AccountFilterActivity" exported="false" parentActivityName="com.google.android.apps.contacts.activities.PeopleActivity"/>
+    <activity label="Customize view" name="com.google.android.apps.contacts.list.CustomContactListFilterActivity" exported="false"/>
+    <activity theme="Theme.Contacts" name="com.google.android.apps.contacts.moments.peopleprompts.PeoplePromptsManagementActivity" exported="false"/>
+    <service name="com.google.android.apps.contacts.operation.ContactsService" permission="android.permission.BIND_JOB_SERVICE"/>
+    <provider name="com.google.android.apps.contacts.othercontacts.OtherContactsProvider" readPermission="android.permission.BIND_DIRECTORY_SEARCH" enabled="true" exported="true" authorities="com.google.android.contacts.othercontacts">
+      <meta-data name="android.content.ContactDirectory" value="true"/>
+    </provider>
+    <activity theme="Theme.Contacts.LaunchScreen" name="com.google.android.apps.contacts.permission.RequestPermissionsActivity" exported="false"/>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.permission.RequestStoragePermissionsActivity" exported="false"/>
+    <activity label="Settings" name="com.google.android.apps.contacts.preference.ContactsPreferenceActivity" exported="false" launchMode="1"/>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.preference.SetDefaultAccountActivity" exported="true" excludeFromRecents="true">
+      <intent-filter>
+        <action name="android.provider.action.SET_DEFAULT_ACCOUNT"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Contacts" name="com.google.android.apps.contacts.quickcontact.QuickContactActivity" exported="true" excludeFromRecents="true" knownActivityEmbeddingCerts="@2130903047">
+      <intent-filter>
+        <action name="com.android.contacts.action.QUICK_CONTACT"/>
+        <action name="android.provider.action.QUICK_CONTACT"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.item/raw_contact"/>
+        <data mimeType="vnd.android.cursor.item/contact"/>
+        <data mimeType="vnd.android.cursor.item/person"/>
+      </intent-filter>
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <data mimeType="vnd.android.cursor.item/person"/>
+        <data mimeType="vnd.android.cursor.item/contact"/>
+        <data mimeType="vnd.android.cursor.item/raw_contact"/>
+      </intent-filter>
+    </activity>
+    <receiver name="com.google.android.apps.contacts.quickcontact.ShortcutBroadcastReceiver" exported="false">
+      <intent-filter>
+        <action name="com.google.android.contacts.quickContactShortcutPinned"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.apps.contacts.receiver.LocaleChangeReceiver" exported="false">
+      <intent-filter>
+        <action name="android.intent.action.LOCALE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.apps.contacts.receiver.OnBootOrUpgradeReceiver" exported="false">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.MY_PACKAGE_REPLACED"/>
+      </intent-filter>
+    </receiver>
+    <provider name="com.google.android.apps.contacts.sdn.provider.SdnProvider" readPermission="android.permission.BIND_DIRECTORY_SEARCH" enabled="true" exported="true" authorities="com.google.android.contacts.sdn.provider">
+      <meta-data name="android.content.ContactDirectory" value="true"/>
+    </provider>
+    <activity theme="Theme.Contacts" name="com.google.android.apps.contacts.sdn.SdnActivity" exported="true"/>
+    <service name="com.google.android.apps.contacts.service.foreground.ForegroundOperationServiceImpl" exported="false" foregroundServiceType="0x1"/>
+    <service name="com.google.android.apps.contacts.service.save.ContactSaveJobIntentService" permission="android.permission.BIND_JOB_SERVICE" exported="false"/>
+    <service name="com.google.android.apps.contacts.shortcut.ShortcutJobService" permission="android.permission.BIND_JOB_SERVICE" exported="false"/>
+    <service name="com.google.android.apps.contacts.sim.service.SimImportService" exported="false" foregroundServiceType="0x800"/>
+    <activity theme="Theme.Contacts" label="Import contacts" name="com.google.android.apps.contacts.sim.SimImportActivity"/>
+    <activity theme="Theme.Contacts" name="com.google.android.apps.contacts.starredcontacts.StarredContactsActivity" exported="true">
+      <intent-filter>
+        <action name="com.android.contacts.action.LIST_STARRED"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.TAB"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Contacts" name="com.google.android.apps.contacts.starredcontacts.AddStarredContactsActivity"/>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.vcard.ImportVCardActivity" exported="true" configChanges="0x4a0">
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <data mimeType="text/directory"/>
+        <data mimeType="text/vcard"/>
+        <data mimeType="text/x-vcard"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.vcard.NfcImportVCardActivity" permission="android.permission.DISPATCH_NFC_MESSAGE" exported="true" configChanges="0x4a0">
+      <intent-filter>
+        <action name="android.nfc.action.NDEF_DISCOVERED"/>
+        <data mimeType="text/vcard"/>
+        <data mimeType="text/x-vcard"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.vcard.CancelActivity" exported="false" launchMode="2"/>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.vcard.SelectAccountActivity" exported="false"/>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.vcard.ExportVCardActivity" exported="false"/>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.vcard.ShareVCardActivity" exported="false"/>
+    <service name="com.google.android.apps.contacts.vcard.VCardService" exported="false" foregroundServiceType="0x1"/>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.vcard.preview.PreviewActivity" exported="false" excludeFromRecents="true" launchMode="1"/>
+    <activity name="com.google.android.apps.contacts.videocalling.services.duo.DuoKitActivity" exported="false" excludeFromRecents="true" noHistory="true"/>
+    <receiver label="Favorite Contacts" name="com.google.android.apps.contacts.widget.favoritecontactsgrid.FavoriteContactsGridWidgetReceiver" enabled="false" exported="false">
+      <intent-filter>
+        <action name="android.appwidget.action.APPWIDGET_UPDATE"/>
+      </intent-filter>
+      <meta-data name="android.appwidget.provider" resource="favorite_contacts_grid_widget_info"/>
+    </receiver>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.widget.favoritecontactsgrid.ui.FavoriteContactsGridWidgetConfigActivity" exported="true" excludeFromRecents="true" noHistory="true">
+      <intent-filter>
+        <action name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.widget.singlecontact.ui.SingleContactWidgetAddPhoneNumberActivity" exported="false"/>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.widget.singlecontact.ui.SingleContactWidgetConfigActivity" exported="true" excludeFromRecents="true">
+      <intent-filter>
+        <action name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.widget.singlecontact.ui.SingleContactWidgetChoosePrimaryPhoneNumberActivity" exported="false" excludeFromRecents="true"/>
+    <receiver label="Individual Contact" name="com.google.android.apps.contacts.widget.singlecontact.SingleContactWidgetProvider" enabled="false" exported="false">
+      <intent-filter>
+        <action name="android.appwidget.action.APPWIDGET_UPDATE"/>
+      </intent-filter>
+      <meta-data name="android.appwidget.provider" resource="single_contact_widget_info"/>
+    </receiver>
+    <receiver label="Individual Contact" name="com.google.android.apps.contacts.widget.singlecontact.SingleContactWidgetProviderV1" enabled="true" exported="false"/>
+    <receiver label="Individual Contact" name="com.google.android.apps.contacts.widget.singlecontact.SingleContactWidgetProviderV2" enabled="false" exported="false"/>
+    <receiver name="com.google.android.apps.contacts.widget.logging.ContactsAppWidgetLoggingReceiver" enabled="true" exported="false"/>
+    <activity theme="Theme.Contacts.NoUi" name="com.google.android.apps.contacts.widget.logging.ContactsAppWidgetTrampolineActivity" exported="false" excludeFromRecents="true" launchMode="2"/>
+    <activity theme="Theme.Contacts" name="com.google.android.apps.contacts.wizard.CleanupWizardActivity" excludeFromRecents="true" launchMode="2"/>
+    <activity theme="Theme.PlayCore.Transparent" name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" exported="false" stateNotNeeded="true"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" exported="false" excludeFromRecents="true"/>
+    <service name="com.google.android.gms.auth.api.signin.RevocationBoundService" permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" exported="true" visibleToInstantApps="true"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.gms.common.api.GoogleApiActivity" exported="false"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.gms.duokit.DuoKitContainerActivity" exported="false" configChanges="0xd80"/>
+    <uses-library name="org.apache.http.legacy" required="false"/>
+    <receiver name="com.google.android.libraries.internal.growth.growthkit.inject.GrowthKitBootCompletedBroadcastReceiver" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.QUICKBOOT_POWERON"/>
+        <action name="android.intent.action.MY_PACKAGE_REPLACED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.internal.growth.growthkit.internal.debug.TestingToolsBroadcastReceiver" exported="true">
+      <intent-filter>
+        <action name="com.google.android.libraries.internal.growth.growthkit.ADD_PROMO"/>
+        <action name="com.google.android.libraries.internal.growth.growthkit.ADD_PREVIEW_PROMO"/>
+        <action name="com.google.android.libraries.internal.growth.growthkit.LOG_DEBUG_DATA"/>
+        <action name="com.google.android.libraries.internal.growth.growthkit.SYNC"/>
+        <action name="com.google.android.libraries.internal.growth.growthkit.CLEAR_COUNTERS"/>
+        <action name="com.google.android.libraries.internal.growth.growthkit.FETCH_PROMOTIONS"/>
+        <action name="com.google.android.libraries.internal.growth.growthkit.FETCH_EVAL_RESULTS"/>
+        <action name="com.google.android.libraries.internal.growth.growthkit.GET_REGISTRATION_STATE"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.libraries.internal.growth.growthkit.internal.jobs.impl.GrowthKitJobService" permission="android.permission.BIND_JOB_SERVICE" exported="false"/>
+    <service name="com.google.android.libraries.internal.growth.growthkit.internal.jobs.impl.GrowthKitBelowLollipopJobService" exported="false"/>
+    <provider name="com.google.mlkit.common.internal.MlKitInitProvider" exported="false" authorities="com.google.android.contacts.mlkitinitprovider" initOrder="99"/>
+    <service name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService" exported="false" directBootAware="true">
+      <meta-data name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+    </service>
+    <receiver name="com.google.android.libraries.notifications.entrypoints.accountchanged.AccountChangedReceiver" exported="true">
+      <intent-filter>
+        <action name="android.accounts.LOGIN_ACCOUNTS_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.notifications.entrypoints.blockstatechanged.BlockStateChangedReceiver" exported="true">
+      <intent-filter>
+        <action name="android.app.action.APP_BLOCK_STATE_CHANGED"/>
+        <action name="android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"/>
+        <action name="android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.notifications.entrypoints.gcm.GcmBroadcastReceiver" permission="com.google.android.c2dm.permission.SEND" exported="true">
+      <intent-filter priority="99">
+        <action name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.libraries.notifications.entrypoints.scheduled.ScheduledTaskService" permission="android.permission.BIND_JOB_SERVICE" exported="false"/>
+    <receiver name="com.google.android.libraries.notifications.entrypoints.systemtray.SystemTrayBroadcastReceiver" exported="false"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.libraries.notifications.entrypoints.systemtray.SystemTrayActivity" exported="false"/>
+    <receiver name="com.google.android.libraries.notifications.platform.entrypoints.localechanged.LocaleChangedReceiver" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.LOCALE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.notifications.platform.entrypoints.restart.RestartReceiver" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.notifications.platform.entrypoints.timezonechanged.TimezoneChangedReceiver" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.TIMEZONE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.notifications.platform.entrypoints.update.UpdateReceiver" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.MY_PACKAGE_REPLACED"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.libraries.notifications.platform.executor.impl.GnpExecutorApiService" exported="false"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.libraries.onegoogle.accountmanagement.AddAccountActivity" exported="false"/>
+    <receiver name="com.google.android.libraries.performance.primes.transmitter.LifeboatReceiver" exported="false" process=":primes_lifeboat"/>
+    <receiver name="com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver" exported="true" process="">
+      <intent-filter>
+        <action name="android.accounts.action.ACCOUNT_REMOVED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver" permission="com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST" exported="true" process="">
+      <intent-filter>
+        <action name="com.google.android.gms.phenotype.UPDATE"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="PlacesAutocompleteOverlay" label="Pick a place" name="com.google.android.libraries.places.widget.AutocompleteActivity" exported="false" windowSoftInputMode="0x10"/>
+    <activity theme="Theme.AppCompat.DayNight" label="Third Party Notices" name="com.google.android.libraries.social.licenses.LicenseMenuActivity" exported="true"/>
+    <activity theme="Theme.AppCompat.DayNight" label="Third Party Notices" name="com.google.android.libraries.social.licenses.LicenseActivity" exported="false"/>
+    <activity theme="SurveysTransparentActivity" name="com.google.android.libraries.surveys.internal.view.SurveyActivity" exported="true" process="" excludeFromRecents="true" launchMode="1" configChanges="0x5a0" windowSoftInputMode="0x10">
+      <meta-data name="distractionOptimized" value="true"/>
+    </activity>
+    <activity theme="Theme.PhotoPicker.Dark" name="com.google.android.libraries.user.profile.photopicker.art.edit.ArtEditActivity" exported="false"/>
+    <provider name="com.google.android.libraries.user.profile.photopicker.common.fileprovider.PhotoPickerFileProvider" exported="false" authorities="com.google.android.contacts.photopicker_images" grantUriPermissions="true">
+      <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="picker_file_provider_path"/>
+    </provider>
+    <activity theme="Theme.PhotoPicker.Dark" label="Crop &amp; rotate" name="com.google.android.libraries.user.profile.photopicker.edit.EditActivity" exported="false"/>
+    <activity theme="Theme.PhotoPicker.DayNight" label="Profile picture" name="com.google.android.libraries.user.profile.photopicker.picker.intentonly.PhotoPickerIntentActivity" exported="false"/>
+    <activity theme="Theme.PhotoPicker.DayNight" label="Profile picture" name="com.google.android.libraries.user.profile.photopicker.picker.PhotoPickerActivity" exported="false"/>
+    <service name="com.google.firebase.components.ComponentDiscoveryService" exported="false">
+      <meta-data name="com.google.firebase.components:com.google.firebase.iid.Registrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+    </service>
+    <service name="androidx.core.widget.RemoteViewsCompatService" permission="android.permission.BIND_REMOTEVIEWS"/>
+    <activity name="androidx.glance.appwidget.action.ActionTrampolineActivity" enabled="true" exported="false" excludeFromRecents="true"/>
+    <activity theme="Widget.Glance.AppWidget.CallbackTrampoline" name="androidx.glance.appwidget.action.InvisibleActionTrampolineActivity" enabled="true" exported="false" taskAffinity="androidx.glance.appwidget.ListAdapterCallbackTrampoline" launchMode="3" noHistory="true"/>
+    <receiver name="androidx.glance.appwidget.action.ActionCallbackBroadcastReceiver" enabled="true" exported="false"/>
+    <receiver name="androidx.glance.appwidget.MyPackageReplacedReceiver" enabled="true" exported="false">
+      <intent-filter>
+        <action name="android.intent.action.MY_PACKAGE_REPLACED"/>
+      </intent-filter>
+    </receiver>
+    <service name="androidx.glance.appwidget.GlanceRemoteViewsService" permission="android.permission.BIND_REMOTEVIEWS" exported="true"/>
+    <provider name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" exported="false" multiprocess="true" authorities="com.google.android.contacts.lifecycle-process"/>
+    <uses-library name="androidx.window.extensions" required="false"/>
+    <uses-library name="androidx.window.sidecar" required="false"/>
+    <service name="androidx.work.impl.background.systemalarm.SystemAlarmService" enabled="false" exported="false" directBootAware="false"/>
+    <service name="androidx.work.impl.background.systemjob.SystemJobService" permission="android.permission.BIND_JOB_SERVICE" enabled="true" exported="true" directBootAware="false"/>
+    <service name="androidx.work.impl.foreground.SystemForegroundService" enabled="true" exported="false" directBootAware="false"/>
+    <receiver name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" enabled="true" exported="false" directBootAware="false"/>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.ACTION_POWER_CONNECTED"/>
+        <action name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.BATTERY_OKAY"/>
+        <action name="android.intent.action.BATTERY_LOW"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.DEVICE_STORAGE_LOW"/>
+        <action name="android.intent.action.DEVICE_STORAGE_OK"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.net.conn.CONNECTIVITY_CHANGE"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.RescheduleReceiver" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.TIME_SET"/>
+        <action name="android.intent.action.TIMEZONE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.diagnostics.DiagnosticsReceiver" permission="android.permission.DUMP" enabled="true" exported="true" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.android.build.data.PropertiesServiceHolder" enabled="false" exported="false" process="">
+      <intent-filter>
+        <action name="com.google.android.build.data.Properties"/>
+      </intent-filter>
+      <meta-data name="com.google.android.build.data.properties" resource="build_data"/>
+    </service>
+  </application>
+  <compatible-screens>
+    <screen screenSize="200" screenDensity="240"/>
+    <screen screenSize="300" screenDensity="240"/>
+    <screen screenSize="400" screenDensity="240"/>
+    <screen screenSize="500" screenDensity="240"/>
+    <screen screenSize="200" screenDensity="213"/>
+    <screen screenSize="300" screenDensity="213"/>
+    <screen screenSize="400" screenDensity="213"/>
+    <screen screenSize="500" screenDensity="213"/>
+  </compatible-screens>
+</manifest>
+

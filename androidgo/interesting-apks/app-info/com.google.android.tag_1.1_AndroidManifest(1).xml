@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="101" versionName="1.1" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.google.android.tag" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <uses-permission name="android.permission.CALL_PHONE"/>
+  <uses-permission name="android.permission.NFC"/>
+  <uses-permission name="android.permission.READ_CONTACTS"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.QUERY_ALL_PACKAGES"/>
+  <uses-feature name="android.hardware.nfc" required="true"/>
+  <application label="Tags" icon="res/drawable-hdpi-v4/ic_launcher_nfc.png" extractNativeLibs="true" appComponentFactory="androidx.core.app.CoreComponentFactory">
+    <activity label="New tag collected" name="com.android.apps.tag.TagViewer" permission="android.permission.NFC" priority="-10" launchMode="1">
+      <intent-filter>
+        <action name="android.nfc.action.TECH_DISCOVERED"/>
+      </intent-filter>
+      <meta-data name="android.nfc.action.TECH_DISCOVERED" resource="filter_nfc"/>
+      <intent-filter>
+        <action name="android.intent.action.VIEW"/>
+        <data mimeType="vnd.android.cursor.item/ndef_msg"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <provider name="androidx.core.content.FileProvider" exported="false" authorities="com.android.apps.tag.provider" grantUriPermissions="true">
+      <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="provider_paths"/>
+    </provider>
+  </application>
+</manifest>
+

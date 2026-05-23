@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="90040500" versionName="9.4.050-6390" compileSdkVersion="33" compileSdkVersionCodename="13" package="com.dti.blu" platformBuildVersionCode="33" platformBuildVersionName="13">
+  <uses-sdk minSdkVersion="23" targetSdkVersion="33"/>
+  <uses-permission name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.REORDER_TASKS"/>
+  <uses-permission name="android.permission.STATUS_BAR"/>
+  <permission name="com.kochava.preinstall.READ_PERMISSION_KOCHAVA" protectionLevel="0x0"/>
+  <permission name="com.singular.preinstall.READ_PERMISSION_SINGULAR" protectionLevel="0x0"/>
+  <uses-permission name="android.permission.POST_NOTIFICATIONS"/>
+  <uses-permission name="com.google.android.c2dm.permission.RECEIVE"/>
+  <uses-permission name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+  <uses-permission name="com.google.android.gms.permission.AD_ID"/>
+  <uses-permission name="android.permission.INSTALL_PACKAGES"/>
+  <uses-permission name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+  <uses-permission name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+  <uses-permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+  <uses-permission name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+  <uses-permission name="android.permission.GET_PACKAGE_SIZE"/>
+  <uses-permission name="android.permission.QUERY_ALL_PACKAGES"/>
+  <uses-permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+  <uses-permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+  <uses-permission name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+  <uses-permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+  <permission name="com.dti.blu.permission.APP_EVENTS" protectionLevel="0x2"/>
+  <permission name="com.digitalturbine.ignite.ACCESS_LOG" protectionLevel="0x2"/>
+  <permission name="com.digitalturbine.ignite.ACCESS_SHARED_PREFS" protectionLevel="0x2"/>
+  <permission name="com.digitalturbine.ignite.provider.ACCESS_DATA" protectionLevel="0x2"/>
+  <uses-permission name="com.dti.blu.permission.APP_EVENTS"/>
+  <uses-feature name="android.software.leanback" required="false"/>
+  <application theme="AppTheme" label="Mobile Services" icon="res/drawable-hdpi-v4/ob_launcher_icon.webp" name="com.digitalturbine.igniteui.MainAndroidApplicationInstance" allowClearUserData="true" allowBackup="false" supportsRtl="true" extractNativeLibs="false" usesCleartextTraffic="false" resizeableActivity="false" appComponentFactory="androidx.core.app.CoreComponentFactory">
+    <meta-data name="android.max_aspect" value="3.0"/>
+    <meta-data name="delivery_metrics_exported_to_big_query_enabled" value="true"/>
+    <activity theme="AppTheme.NoActionBar" name="com.digitalturbine.igniteui.activity.IgniteLauncherLoadingActivity" enabled="false" exported="true" taskAffinity="com.dti.blu.IgniteLauncherLoadingActivity" launchMode="2" screenOrientation="1">
+      <intent-filter priority="4">
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.HOME"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="AppTheme.NoActionBar" name="com.digitalturbine.igniteui.activity.AfterWizardActivity" enabled="false" exported="false" taskAffinity="com.dti.blu.AfterWizardActivity" launchMode="2" screenOrientation="1">
+      <intent-filter priority="4">
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.HOME"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="IgniteDialog" label="" name="com.digitalturbine.igniteui.activity.OptOutDialogHolderActivity" exported="true" excludeFromRecents="true">
+      <intent-filter autoVerify="true">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="dt" host="optout.dtignite.com"/>
+      </intent-filter>
+    </activity>
+    <activity theme="AppTheme.NoActionBar" label="" name="com.digitalturbine.igniteui.activity.app_info.MbaAppInfoActivity" exported="true" configChanges="0x480"/>
+    <activity theme="AppTheme.IntervalWizardOptOut" label="" name="com.digitalturbine.igniteui.activity.IntervalWizardOptOutActivity" exported="true" screenOrientation="1" configChanges="0x520"/>
+    <activity theme="AppTheme.NoActionBar" label="Mobile Services" name="com.digitalturbine.igniteui.MainActivity" exported="true" taskAffinity="com.dti.blu.MainActivity" screenOrientation="1" configChanges="0x520">
+      <intent-filter autoVerify="true">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="dt" host="wizard.dtignite.com"/>
+      </intent-filter>
+    </activity>
+    <activity theme="AppTheme.NoActionBar" label="oss info" name="com.digitalturbine.igniteui.activity.OssInfoActivity" exported="true" screenOrientation="10" configChanges="0x520">
+      <intent-filter autoVerify="true">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="dt" host="notice.dtignite.com"/>
+      </intent-filter>
+    </activity>
+    <activity theme="AppTheme.NoActionBar" label="" name="com.digitalturbine.igniteui.menu.ModalActivity" exported="false"/>
+    <activity theme="IgniteAppDetailsDialog" label="" name="com.digitalturbine.igniteui.appdetails.ui.activity.AppDetailsActivity" exported="false" taskAffinity="com.dti.blu.DeepLink"/>
+    <activity theme="IgniteDialog" label="App Installer" icon="res/drawable-hdpi-v4/ob_launcher_icon.webp" name="com.digitalturbine.igniteui.activity.deeplink.DeepLinkActivity" enabled="false" exported="true" taskAffinity="com.dti.blu.DeepLink" excludeFromRecents="true" configChanges="0x5a0">
+      <intent-filter autoVerify="true">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="http" host="sti.dtignite.com" pathPrefix="/v2/sti/"/>
+      </intent-filter>
+      <intent-filter autoVerify="true">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="https" host="sti.dtignite.com" pathPrefix="/v2/sti/"/>
+      </intent-filter>
+      <intent-filter autoVerify="true">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="dt" host="sti.dtignite.com" pathPrefix="/v2/sti/"/>
+      </intent-filter>
+      <intent-filter autoVerify="true">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="http" host="delivers.dtignite.com" pathPrefix="/v2/delivers/"/>
+      </intent-filter>
+      <intent-filter autoVerify="true">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="https" host="delivers.dtignite.com" pathPrefix="/v2/delivers/"/>
+      </intent-filter>
+      <intent-filter autoVerify="true">
+        <action name="android.intent.action.VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.BROWSABLE"/>
+        <data scheme="dt" host="delivers.dtignite.com" pathPrefix="/v2/delivers/"/>
+      </intent-filter>
+    </activity>
+    <activity theme="AppTheme.Transparent" label="" name="com.digitalturbine.igniteui.activity.AppDetailsWebViewActivity" exported="false" configChanges="0x5a0"/>
+    <activity theme="AppTheme.NoActionBar" label="" name="com.digitalturbine.igniteui.activity.PrivacyPolicyActivity" exported="false" configChanges="0x1a0"/>
+    <provider name="androidx.startup.InitializationProvider" exported="false" authorities="com.dti.blu.androidx-startup">
+      <meta-data name="com.digitalturbine.igniteui.startup.IgniteUiInitializer" value="androidx.startup"/>
+    </provider>
+    <provider name="com.digitalturbine.igniteui.provider.AdjustContentProvider" enabled="true" exported="true" authorities="com.dti.blu.attribution.adjust">
+      <intent-filter>
+        <action name="com.attribution.REFERRAL_PROVIDER"/>
+      </intent-filter>
+    </provider>
+    <provider name="com.digitalturbine.igniteui.provider.AppsFlyerContentProvider" enabled="true" exported="true" authorities="com.oem.attribution">
+      <intent-filter>
+        <action name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+      </intent-filter>
+    </provider>
+    <provider name="com.digitalturbine.igniteui.provider.KochavaContentProvider" readPermission="com.kochava.preinstall.READ_PERMISSION_KOCHAVA" enabled="true" exported="true" authorities="com.kochava.preinstall"/>
+    <provider name="com.digitalturbine.igniteui.provider.SingularContentProvider" readPermission="com.singular.preinstall.READ_PERMISSION_SINGULAR" enabled="true" exported="true" authorities="com.singular.preinstall"/>
+    <receiver name="com.digitalturbine.igniteui.receiver.CancelNotificationBroadcastReceiver" enabled="true" exported="false"/>
+    <receiver name="com.digitalturbine.igniteui.receiver.SilentInstallNotificationManagerBroadcastReceiver" enabled="true" exported="false"/>
+    <receiver name="com.digitalturbine.igniteui.receiver.NotificationActionsBroadcastReceiver" enabled="true" exported="false"/>
+    <receiver name="com.digitalturbine.igniteui.receiver.GlobalNotificationBroadcastReceiver" enabled="true" exported="false"/>
+    <receiver name="com.digitalturbine.igniteui.receiver.UserDismissNotificationBroadcastReceiver" enabled="true" exported="false"/>
+    <receiver name="com.digitalturbine.igniteui.receiver.NotificationAlarmReceiver" enabled="true" exported="false"/>
+    <receiver name="com.digitalturbine.igniteui.receiver.LocaleChangedBroadcastReceiver" enabled="true" exported="false">
+      <intent-filter>
+        <action name="android.intent.action.LOCALE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.digitalturbine.igniteui.mba.MbaNotificationService" enabled="true" exported="false"/>
+    <provider name="com.squareup.picasso.PicassoProvider" exported="false" authorities="com.dti.blu.com.squareup.picasso"/>
+    <receiver name="com.google.firebase.iid.FirebaseInstanceIdReceiver" permission="com.google.android.c2dm.permission.SEND" exported="true">
+      <intent-filter>
+        <action name="com.google.android.c2dm.intent.RECEIVE"/>
+      </intent-filter>
+    </receiver>
+    <service name="com.google.firebase.messaging.FirebaseMessagingService" exported="false" directBootAware="true">
+      <intent-filter priority="-500">
+        <action name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <service name="com.google.firebase.components.ComponentDiscoveryService" exported="false" directBootAware="true">
+      <meta-data name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+      <meta-data name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" value="com.google.firebase.components.ComponentRegistrar"/>
+    </service>
+    <receiver name="com.google.android.gms.measurement.AppMeasurementReceiver" enabled="true" exported="false"/>
+    <service name="com.google.android.gms.measurement.AppMeasurementService" enabled="true" exported="false"/>
+    <service name="com.google.android.gms.measurement.AppMeasurementJobService" permission="android.permission.BIND_JOB_SERVICE" enabled="true" exported="false"/>
+    <service name="androidx.room.MultiInstanceInvalidationService" exported="false" directBootAware="true"/>
+    <activity theme="Theme.Translucent.NoTitleBar" name="com.google.android.gms.common.api.GoogleApiActivity" exported="false"/>
+    <provider name="com.google.firebase.provider.FirebaseInitProvider" exported="false" authorities="com.dti.blu.firebaseinitprovider" initOrder="100" directBootAware="true"/>
+    <meta-data name="com.google.android.gms.version" value="12451000"/>
+    <provider name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" exported="false" multiprocess="true" authorities="com.dti.blu.lifecycle-process"/>
+    <service name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" exported="false">
+      <meta-data name="backend:com.google.android.datatransport.cct.CctBackendFactory" value="cct"/>
+    </service>
+    <service name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" permission="android.permission.BIND_JOB_SERVICE" exported="false"/>
+    <receiver name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" exported="false"/>
+    <service name="com.digitalturbine.ignite.suspend.service.DataUsageRecorderService" exported="false" process="com.digitalturbine.ignite.suspend.DataUsageRecorderService"/>
+    <service name="com.LogiaGroup.LogiaDeck.Services.ReporterService" enabled="true" exported="false"/>
+    <service name="com.digitalturbine.ignite.IgniteService" enabled="true" exported="false"/>
+    <service name="com.digitalturbine.ignite.push.FcmMessageIntentService" permission="android.permission.BIND_JOB_SERVICE" enabled="true" exported="false"/>
+    <service name="com.LogiaGroup.LogiaDeck.Services.AppReminderService" permission="android.permission.BIND_JOB_SERVICE" enabled="true" exported="false"/>
+    <service name="com.LogiaGroup.LogiaDeck.Services.ConnectivityIntentService" permission="android.permission.BIND_JOB_SERVICE" exported="false"/>
+    <service name="com.digitalturbine.ignite.push.IgniteFirebaseMessagingService" exported="false">
+      <intent-filter>
+        <action name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+    <service name="com.digitalturbine.ignite.cl.IgniteRemoteService" enabled="true" exported="true">
+      <intent-filter>
+        <action name="com.digitalturbine.ignite.cl.IgniteRemoteService"/>
+      </intent-filter>
+    </service>
+    <receiver name="com.LogiaGroup.LogiaDeck.Receivers.LogiaDeckImplReceiver" enabled="true" exported="false">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED"/>
+        <action name="android.intent.action.REBOOT"/>
+        <action name="android.intent.action.MY_PACKAGE_REPLACED"/>
+        <action name="com.dt.ignite.startService"/>
+        <action name="com.dt.ignite.BOOT_NOTIFICATION_DELETED"/>
+        <action name="com.dt.ignite.PUSH_NOTIFICATION_DELETED"/>
+        <action name="com.dt.ignite.APP_NOT_OPENED_NOTIFICATION_CLICKED"/>
+        <action name="com.dt.ignite.APP_NOT_OPENED_NOTIFICATION_DELETED"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.LogiaGroup.LogiaDeck.Receivers.UninstallBroadCastReceiver" enabled="true" exported="false">
+      <intent-filter>
+        <action name="android.intent.action.PACKAGE_FULLY_REMOVED"/>
+        <action name="android.intent.action.PACKAGE_REMOVED"/>
+        <data scheme="package"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.LogiaGroup.LogiaDeck.Receivers.FirstLaunchBroadCastReceiver" enabled="true" exported="false">
+      <intent-filter>
+        <action name="android.intent.action.PACKAGE_FIRST_LAUNCH"/>
+        <data scheme="package"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.digitalturbine.ignite.receiver.TimeSetReceiver" enabled="true" exported="false">
+      <intent-filter>
+        <action name="android.intent.action.TIME_SET"/>
+      </intent-filter>
+    </receiver>
+    <receiver name="com.digitalturbine.ignite.receiver.SimChangedReceiver" enabled="true" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.SIM_STATE_CHANGED"/>
+        <action name="android.intent.action.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <activity theme="IgniteThemes.TermsActivity" name="com.LogiaGroup.LogiaDeck.Activities.TermsActivity" exported="false" excludeFromRecents="true"/>
+    <activity theme="IgniteThemes.DummyNotificationActivity" name="com.LogiaGroup.LogiaDeck.Activities.DummyNotificationActivity" exported="false" excludeFromRecents="true"/>
+    <activity theme="IgniteThemes.NotificationPermissionPromptActivity" name="com.LogiaGroup.LogiaDeck.Activities.NotificationPermissionPromptActivity" exported="false" excludeFromRecents="true"/>
+    <activity theme="IgniteThemes.AppsListActivity" name="com.LogiaGroup.LogiaDeck.Activities.AppsListActivity" exported="false" excludeFromRecents="false" screenOrientation="1" configChanges="0x5a0"/>
+    <activity theme="Theme.NoTitleBar" name="com.LogiaGroup.LogiaDeck.Activities.DescriptionActivity" exported="false" excludeFromRecents="true"/>
+    <activity theme="IgniteThemes.PreferenceTheme" name="com.LogiaGroup.LogiaDeck.Activities.PreferencesScreenActivity" exported="false" excludeFromRecents="true" screenOrientation="1"/>
+    <activity theme="IgniteThemes.PreInstallDialogActivity" label="" name="com.LogiaGroup.LogiaDeck.Activities.PreInstallDialogActivity" exported="false" excludeFromRecents="true"/>
+    <activity theme="IgniteThemes.TermsActivity" label="" name="com.digitalturbine.ignite.helper.HibernationHelper$ExitActivity" excludeFromRecents="true"/>
+    <service name="com.digitalturbine.ignite.jobs.heartbeat.HeartbeatService" enabled="true" exported="false"/>
+    <service name="com.digitalturbine.ignite.jobs.heartbeat.DataCounterService" enabled="true" exported="false"/>
+    <receiver name="com.digitalturbine.ignite.jobs.reachability.ConnectivityChangeBroadcastReceiver"/>
+    <receiver name="com.LogiaGroup.LogiaDeck.Receivers.SubscriptionChangedReceiver"/>
+    <receiver name="com.digitalturbine.ignite.receiver.WakeupBroadcastReceiver" enabled="true" exported="false"/>
+    <receiver name="com.digitalturbine.ignite.receiver.PostInstallActionsReceiver" enabled="true" exported="false"/>
+    <receiver name="com.digitalturbine.ignite.util.PersistentNotificationBroadcastReceiver" enabled="true" exported="false"/>
+    <receiver name="com.digitalturbine.ignite.notification.advanced.NotificationBroadcastReceiver" enabled="true" exported="false"/>
+    <receiver name="com.digitalturbine.ignite.notification.advanced.NotificationDismissBroadcastReceiver" enabled="true" exported="false"/>
+    <receiver name="com.digitalturbine.ignite.push.FCMTokenRefreshTaskBroadcastReceiver" enabled="true" exported="false"/>
+    <receiver name="com.digitalturbine.ignite.suspend.receiver.IgniteSuspendBroadcastReceiver"/>
+    <receiver name="com.digitalturbine.ignite.appinstaller.LollipopInstallReceiver" enabled="true" exported="false"/>
+    <provider name="com.digitalturbine.ignite.provider.IgniteContentProvider" permission="com.digitalturbine.ignite.provider.ACCESS_DATA" enabled="true" exported="false" authorities="com.digitalturbine.ignite.provider.IgniteContentProvider"/>
+    <provider name="com.digitalturbine.ignite.content.DtiContentProvider" permission="com.digitalturbine.ignite.ACCESS_LOG" enabled="true" exported="true" authorities="com.digitalturbine.ignite.contentprovider"/>
+    <provider name="com.digitalturbine.ignite.provider.IgniteSharedPrefContentProvider" permission="com.digitalturbine.ignite.ACCESS_SHARED_PREFS" enabled="true" exported="true" authorities="com.digitalturbine.ignite.provider.IgniteSharedPrefContentProvider"/>
+    <activity theme="CustomFolderRoundedDialog" label="Apps Folder" icon="res/drawable-hdpi-v4/ic_folder_open_black.webp" name="com.digitalturbine.ignitefolder.ui.activity.SmartFolderActivity" enabled="false" exported="true" taskAffinity="com.dti.blu.SmartFolderActivity" excludeFromRecents="true" launchMode="2" configChanges="0x4a0">
+      <intent-filter autoVerify="true">
+        <action name="com.digitalturbine.igniteui.INTENT_ACTION_OPEN_FOLDER"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <activity theme="PreferenceTheme" name="com.digitalturbine.ignitefolder.ui.activity.SettingActivity" configChanges="0x4a0" parentActivityName="com.digitalturbine.ignitefolder.ui.activity.SmartFolderActivity">
+      <meta-data name="android.support.PARENT_ACTIVITY" value="com.digitalturbine.ignitefolder.ui.activity.SmartFolderActivity"/>
+    </activity>
+  </application>
+</manifest>
+

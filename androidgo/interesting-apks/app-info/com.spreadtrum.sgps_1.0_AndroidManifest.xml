@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest sharedUserId="android.uid.system" versionCode="1" versionName="1.0" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.spreadtrum.sgps" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <uses-permission name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+  <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.WAKE_LOCK"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.CONTROL_INCALL_EXPERIENCE"/>
+  <application label="SGPS" icon="res/mipmap-anydpi-v26/ic_launcher.xml" extractNativeLibs="false" usesNonSdkApi="true">
+    <activity label="SGPS" name=".SgpsActivity" exported="true" screenOrientation="1" windowSoftInputMode="0x20" resizeableActivity="false">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="android.intent.category.ALTERNATIVE"/>
+        <category name="android.intent.category.SELECTED_ALTERNATIVE"/>
+      </intent-filter>
+    </activity>
+    <receiver name="SgpsTestBroadcastReceiver">
+      <intent-filter priority="1000">
+        <action name="android.provider.Telephony.SECRET_CODE"/>
+        <data scheme="android_secret_code" host="2266"/>
+      </intent-filter>
+    </receiver>
+    <service name=".SgpsService" exported="false"/>
+  </application>
+</manifest>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="30" versionName="11" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.hotspot2.osulogin" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission name="android.permission.CHANGE_WIFI_STATE"/>
+  <uses-permission name="android.permission.INTERNET"/>
+  <application label="OsuLogin" enabled="true" configChanges="0x4a0" supportsRtl="true" extractNativeLibs="false" networkSecurityConfig="res/xml/network_security_config.xml" appComponentFactory="androidx.core.app.CoreComponentFactory">
+    <activity theme="AppTheme" label="Online Sign Up" name="com.android.hotspot2.osulogin.OsuLoginActivity" configChanges="0x4a0">
+      <intent-filter>
+        <action name="android.net.wifi.action.PASSPOINT_LAUNCH_OSU_VIEW"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>
+

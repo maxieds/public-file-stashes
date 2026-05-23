@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest versionCode="1" versionName="1.0" compileSdkVersion="30" compileSdkVersionCodename="11" package="com.android.egg" platformBuildVersionCode="30" platformBuildVersionName="11">
+  <uses-sdk minSdkVersion="30" targetSdkVersion="30"/>
+  <uses-permission name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+  <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission name="android.permission.BIND_CONTROLS"/>
+  <application label="Android R Easter Egg" icon="res/drawable/icon.xml" extractNativeLibs="true" appComponentFactory="androidx.core.app.CoreComponentFactory" usesNonSdkApi="true">
+    <activity theme="QuaresTheme" label="Icon Quiz" icon="res/drawable/q_icon.xml" name="com.android.egg.quares.QuaresActivity" exported="true">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="AppTheme" label="PAINT.APK" icon="res/drawable/p_icon.xml" name="com.android.egg.paint.PaintActivity" exported="true" configChanges="0x6a0">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+      </intent-filter>
+    </activity>
+    <activity theme="Theme.Material.NoActionBar" label="Android R Easter Egg" name="com.android.egg.neko.NekoLand" exported="true">
+      <intent-filter>
+        <action name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+    <service name="com.android.egg.neko.NekoService" permission="android.permission.BIND_JOB_SERVICE" enabled="true" exported="true"/>
+    <activity theme="Theme.Material.Light.Dialog.NoActionBar" name="com.android.egg.neko.NekoLockedActivity" exported="true" excludeFromRecents="true" showOnLockScreen="true"/>
+    <activity theme="Theme.NoDisplay" name="com.android.egg.neko.NekoActivationActivity" exported="true" excludeFromRecents="true">
+      <intent-filter>
+        <action name="android.intent.action.MAIN"/>
+        <category name="android.intent.category.DEFAULT"/>
+        <category name="com.android.internal.category.PLATLOGO"/>
+      </intent-filter>
+    </activity>
+    <service label="????" icon="res/drawable/stat_icon.xml" name="com.android.egg.neko.NekoTile" permission="android.permission.BIND_QUICK_SETTINGS_TILE" enabled="false">
+      <intent-filter>
+        <action name="android.service.quicksettings.action.QS_TILE"/>
+      </intent-filter>
+    </service>
+    <service label="Cat Controls" icon="res/drawable/ic_fullcat_icon.xml" name="com.android.egg.neko.NekoControlsService" permission="android.permission.BIND_CONTROLS" enabled="false" exported="true">
+      <intent-filter>
+        <action name="android.service.controls.ControlsProviderService"/>
+      </intent-filter>
+    </service>
+    <provider name="androidx.core.content.FileProvider" exported="false" authorities="com.android.egg.fileprovider" grantUriPermissions="true">
+      <meta-data name="android.support.FILE_PROVIDER_PATHS" resource="filepaths"/>
+    </provider>
+  </application>
+</manifest>
+
